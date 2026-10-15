@@ -39,6 +39,15 @@
     },
     {
       "status": "af",
+      "titel": "Muziek bij de borrel en daarna",
+      "label": "Muziek · dj voor events",
+      "tekst": "Dj-sets voor corporate events, skylounges en cocktailbars: van ontspannen achtergrond tot dansvloer.",
+      "beeld": "img/case-djsets.jpg",
+      "alt": "Maarten Versteeg, zittend op een flightcase",
+      "link": "dj-sets.html"
+    },
+    {
+      "status": "af",
       "titel": "Een systeem dat kan meegroeien",
       "label": "Advies · aankoopbegeleiding",
       "tekst": "Systeemadvies voor een licht- en geluidsverhuurbedrijf.",
