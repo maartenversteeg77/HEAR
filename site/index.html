@@ -74,29 +74,33 @@
   <section class="werk" aria-labelledby="werk-kop">
     <div class="werk-kop">
       <h2 id="werk-kop">Uitgelicht werk</h2>
-      <a class="tekstlink" href="cases.html">Alle cases</a>
+      <div class="werk-pijlen">
+        <button type="button" data-richting="-1" aria-label="Vorige cases">←</button>
+        <button type="button" data-richting="1" aria-label="Volgende cases">→</button>
+      </div>
     </div>
-    <div class="werk-rij">
-      <a class="werk-kaart" href="productpresentatie.html">
-        <img src="img/case-modemerk.jpg" alt="Productpresentatie van schoenen op plateaus in blauw licht" loading="lazy">
-        <span class="label">Corporate · productpresentatie</span>
-        <h3>Licht dat de presentatie draagt</h3>
-        <p>Van gerichte productverlichting overdag naar een warme dansvloer 's avonds.</p>
-      </a>
-      <a class="werk-kaart" href="ade-dj.html">
-        <img src="img/case-ade.jpg" alt="DJ-booth in een skatehal tijdens ADE" loading="lazy">
-        <span class="label">Dance · venue · ADE</span>
-        <h3>Een skatehal als dansvloer</h3>
-        <p>Eén avond omgebouwd voor een pop-upevent, met vrijwel geen soundcheck nodig.</p>
-      </a>
-      <a class="werk-kaart" href="cases.html">
-        <img src="img/case-creativegrounds.jpg" alt="DJ en saxofonist op een tuinfeest" loading="lazy">
-        <span class="label">Corporate · tuinfeest</span>
-        <h3>Jubileum ondernemersnetwerk</h3>
-        <p>Een luxe tuinfeest midden in een woonwijk, zonder overlast voor de buurt.</p>
-      </a>
+    <div class="werk-rij" id="werk-rij">
+      <a class="werk-kaart werk-alle" href="cases.html"><span>Alle cases</span><span class="pijl" aria-hidden="true">→</span></a>
     </div>
   </section>
+  <script>
+    (function(){
+      var rij=document.getElementById('werk-rij'), alle=rij.querySelector('.werk-alle');
+      fetch('cases.json').then(function(r){return r.json()}).then(function(d){
+        d.cases.filter(function(c){return c.status==='af'}).forEach(function(c){
+          var a=document.createElement('a'); a.className='werk-kaart'; a.href=c.link;
+          a.innerHTML='<img loading="lazy" alt=""><span class="label"></span><h3></h3><p></p>';
+          a.querySelector('img').src=c.beeld; a.querySelector('img').alt=c.alt;
+          a.querySelector('.label').textContent=c.label; a.querySelector('h3').textContent=c.titel; a.querySelector('p').textContent=c.tekst;
+          rij.insertBefore(a,alle);
+        });
+        rij.scrollLeft=0;
+      });
+      document.querySelectorAll('.werk-pijlen button').forEach(function(k){
+        k.addEventListener('click',function(){ var kaart=rij.querySelector('.werk-kaart'); var stap=kaart?kaart.getBoundingClientRect().width+22:400; rij.scrollBy({left:stap*k.dataset.richting,behavior:'smooth'}); });
+      });
+    })();
+  </script>
 
   <section class="over" aria-labelledby="over-kop">
     <img src="img/tegel-over-hear.jpg" alt="Maarten Versteeg achter de draaitafels, buiten in de avondzon" loading="lazy">

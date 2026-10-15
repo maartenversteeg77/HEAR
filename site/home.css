@@ -89,13 +89,20 @@ body.menu-open{overflow:hidden}
 .werk{background:var(--wit);color:var(--zwart);padding:clamp(30px,4vw,60px) var(--rand) clamp(70px,8vw,120px)}
 .werk-kop{display:flex;justify-content:space-between;align-items:baseline;gap:20px;margin-bottom:28px}
 .werk-kop h2{font:300 clamp(30px,3vw,44px)/1 var(--kop);margin:0}
-.werk-rij{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
-.werk-kaart{display:block;text-decoration:none}
+.werk-rij{overflow-anchor:none;display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-right:calc(-1 * var(--rand));padding-right:var(--rand)}
+.werk-rij::-webkit-scrollbar{display:none}
+.werk-kaart{flex:0 0 calc((100% - 44px) / 3.25);scroll-snap-align:start;display:block;text-decoration:none}
 .werk-kaart img{width:100%;aspect-ratio:4/5;object-fit:cover;margin-bottom:18px;transition:opacity .3s}
 .werk-kaart:hover img{opacity:.85}
 .werk-kaart .label{color:#5c5c57}
 .werk-kaart h3{font:400 clamp(22px,2vw,28px)/1.1 var(--kop);margin:10px 0 8px}
 .werk-kaart p{margin:0;font-size:15px;line-height:1.5;color:#4a4a46}
+.werk-alle{display:flex;flex-direction:column;justify-content:space-between;aspect-ratio:4/5;align-self:flex-start;background:var(--zwart);color:var(--wit);padding:28px}
+.werk-alle span:first-child{font:300 clamp(28px,2.6vw,40px)/1.05 var(--kop)}
+.werk-alle .pijl{font-size:32px;color:var(--koraal)}
+.werk-pijlen{display:flex;gap:10px}
+.werk-pijlen button{width:46px;height:46px;border:1px solid var(--zwart);background:transparent;color:var(--zwart);font-size:18px;cursor:pointer;border-radius:50%}
+.werk-pijlen button:hover{background:var(--zwart);color:var(--wit)}
 
 /* ---------- over HEAR (zwart) ---------- */
 .over{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr)}
@@ -139,8 +146,8 @@ body.menu-open{overflow:hidden}
   .rijen a{grid-template-columns:1fr auto;gap:8px 16px}
   .rij-tekst{grid-column:1;grid-row:2}
   .pijl{grid-row:1/3;grid-column:2;align-self:center}
-  .werk-rij{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;margin-right:calc(-1 * var(--rand));padding-right:var(--rand);scrollbar-width:none}
-  .werk-kaart{flex:0 0 78%;scroll-snap-align:start}
+  .werk-kaart{flex:0 0 78%}
+  .werk-pijlen{display:none}
   .over{grid-template-columns:1fr}
   .over img{min-height:0;aspect-ratio:1/1}
   .voet-kolommen{grid-template-columns:1fr 1fr}

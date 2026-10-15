@@ -1,0 +1,59 @@
+{
+  "_uitleg": "Bron voor de cases-slider op de homepage. Volgorde = volgorde op de site. Alleen status 'af' wordt getoond.",
+  "cases": [
+    {
+      "status": "af",
+      "titel": "Licht dat de presentatie draagt",
+      "label": "Corporate · productpresentatie",
+      "tekst": "Van gerichte productverlichting overdag naar een warme dansvloer 's avonds.",
+      "beeld": "img/case-modemerk.jpg",
+      "alt": "Productpresentatie van schoenen op plateaus in blauw licht",
+      "link": "productpresentatie.html"
+    },
+    {
+      "status": "af",
+      "titel": "Een skatehal als dansvloer",
+      "label": "Dance · venue · ADE",
+      "tekst": "Eén avond omgebouwd voor een pop-upevent, met vrijwel geen soundcheck nodig.",
+      "beeld": "img/case-ade.jpg",
+      "alt": "DJ-booth in een skatehal tijdens ADE",
+      "link": "ade-dj.html"
+    },
+    {
+      "status": "af",
+      "titel": "Jubileum ondernemersnetwerk",
+      "label": "Corporate · tuinfeest",
+      "tekst": "Een luxe tuinfeest midden in een woonwijk, zonder overlast voor de buurt.",
+      "beeld": "img/case-creativegrounds.jpg",
+      "alt": "DJ en saxofonist op een tuinfeest",
+      "link": "jubileum-ondernemersnetwerk.html"
+    },
+    {
+      "status": "af",
+      "titel": "Netwerkevent voor een gemeente",
+      "label": "Corporate · 500 gasten",
+      "tekst": "Van lezingen en workshops naar een ontspannen cocktail hour.",
+      "beeld": "img/case-gemeente.jpg",
+      "alt": "Gesprek op een podium voor publiek",
+      "link": "gemeentelijk-netwerkevent.html"
+    },
+    {
+      "status": "af",
+      "titel": "Een systeem dat kan meegroeien",
+      "label": "Advies · aankoopbegeleiding",
+      "tekst": "Systeemadvies voor een licht- en geluidsverhuurbedrijf.",
+      "beeld": "img/case-systeemadvies.jpg",
+      "alt": "Luidsprekers op een stack",
+      "link": "systeemadvies.html"
+    },
+    {
+      "status": "af",
+      "titel": "Een zaal als kleurrijke dansvloer",
+      "label": "Privé · 150 gasten",
+      "tekst": "Een persoonlijk feest voor vrienden en relaties, met meerdere dj's.",
+      "beeld": "img/case-prive.jpg",
+      "alt": "Gasten op een dansvloer onder kleurrijk licht",
+      "link": "prive-event.html"
+    }
+  ]
+}
