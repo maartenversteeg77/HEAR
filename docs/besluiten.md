@@ -49,7 +49,7 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 ### Vormgeving
 - Kleuren volgen het huisstijldocument (Branding DEF): zwart en gebroken wit als basis, accent mag hoofdkleur van een vlak zijn, max. twee kleuren per vlak. Geen crème/beige.
 - Homepage v1 (15 okt): zwarte hero met booth-foto en groot HEAR-merk, koraal statementvlak, tegels op gebroken wit, koraal als WhatsApp-knop. Koraal alleen op donker of als vlak met zwarte tekst (op gebroken wit te weinig contrast voor kleine tekst).
-- Homepage-opbouw (16 okt): hero · statement · Voor wie (ingang per bezoekerstype, geen herhaling van het menu) · Uitgelicht werk (3 cases met label) · Over HEAR · afsluiter met WhatsApp · uitgebreide footer met alle onderdelen (laat diepte zien). Hero: één knop (WhatsApp); ondertitel staat onder het merk.
+- Homepage-opbouw (16 okt, herzien): topnavigatie vervangen door hamburgermenu; na het statement een compacte navigatiebalk met zes onderdelen + korte uitleg (Doelgroepen · Voorbeeldcases · Principes · Diensten en producten · Merken en techniek · Over HEAR). Variant met grote regels (B) afgewezen: te veel ruimte. Daarna: Uitgelicht werk (3 cases met label) · Over HEAR · afsluiter met WhatsApp · uitgebreide footer met alle onderdelen (laat diepte zien). Hero: één knop (WhatsApp); ondertitel staat onder het merk.
 - Letters: Advent Pro voor koppen, Helvetica/Arial voor lopende tekst.
 - Referentie die aanspreekt: musicandpower.com (zwarte basis, groot merk over beeld, gelaagde blokken).
 - Eén consistente letter, tenzij die voor bezoekers niet goed leesbaar is.

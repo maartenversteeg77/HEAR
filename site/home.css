@@ -23,12 +23,29 @@ img{display:block;max-width:100%}
 /* label: kleine letter, ruime spatiëring */
 .label{font:600 11px/1 var(--tekst);letter-spacing:.2em;text-transform:uppercase}
 
-/* ---------- topbalk ---------- */
-.top{position:absolute;inset:0 0 auto 0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:26px var(--rand)}
+/* ---------- topbalk met hamburger ---------- */
+.top{position:absolute;inset:0 0 auto 0;z-index:30;display:flex;align-items:center;justify-content:space-between;padding:24px var(--rand)}
 .top .merk img{width:118px;height:auto}
-.top nav{display:flex;gap:26px;flex-wrap:wrap;justify-content:flex-end}
-.top nav a{text-decoration:none;font:500 12px/1 var(--tekst);letter-spacing:.16em;text-transform:uppercase;opacity:.85}
-.top nav a:hover{opacity:1;color:var(--koraal)}
+.menuknop{width:46px;height:46px;border:0;background:transparent;color:var(--wit);cursor:pointer;display:grid;place-content:center;gap:9px;padding:0}
+.menuknop span{display:block;width:30px;height:1.5px;background:currentColor;transition:transform .25s}
+.menuknop[aria-expanded="true"] span:first-child{transform:translateY(5.25px) rotate(45deg)}
+.menuknop[aria-expanded="true"] span:last-child{transform:translateY(-5.25px) rotate(-45deg)}
+body.menu-open .top{position:fixed}
+body.menu-open{overflow:hidden}
+.menu{position:fixed;inset:0;z-index:20;background:var(--zwart);overflow-y:auto;padding:120px var(--rand) 60px}
+.menu nav{display:flex;flex-direction:column;border-top:1px solid #333432}
+.menu a{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:6px 30px;align-items:baseline;padding:20px 0;border-bottom:1px solid #333432;text-decoration:none}
+.menu a span{font:300 clamp(30px,4vw,52px)/1.05 var(--kop)}
+.menu a small{font-size:15px;color:#a9a8a3}
+.menu a:hover span{color:var(--koraal)}
+
+/* ---------- navigatiebalk (op de plek van Ontdek HEAR) ---------- */
+.navbalk{background:var(--wit);color:var(--zwart);display:grid;grid-template-columns:repeat(6,minmax(0,1fr));border-bottom:1px solid #cfcdc6}
+.navbalk a{display:flex;flex-direction:column;gap:8px;padding:30px 22px 32px;text-decoration:none;border-left:1px solid #cfcdc6;transition:background .2s}
+.navbalk a:first-child{border-left:0;padding-left:var(--rand)}
+.navbalk span{font:400 clamp(19px,1.5vw,23px)/1.1 var(--kop)}
+.navbalk small{font-size:13px;line-height:1.4;color:#5c5c57}
+.navbalk a:hover{background:#ebe9e3}
 
 /* ---------- WhatsApp-knop ---------- */
 .wa{display:inline-flex;align-items:center;gap:12px;background:var(--koraal);color:var(--zwart);text-decoration:none;
@@ -106,10 +123,13 @@ img{display:block;max-width:100%}
 
 /* ---------- klein scherm ---------- */
 @media (max-width:900px){
-  .top{padding:18px var(--rand)}
-  .top .merk{display:none}
-  .top nav{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;gap:20px;scrollbar-width:none;width:100%}
-  .top nav a{white-space:nowrap;font-size:11px}
+  .top{padding:16px var(--rand)}
+  .top .merk img{width:92px}
+  .menu{padding-top:96px}
+  .menu a{grid-template-columns:1fr;padding:16px 0}
+  .navbalk{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .navbalk a,.navbalk a:first-child{padding:22px var(--rand) 24px;border-left:0;border-top:1px solid #cfcdc6}
+  .navbalk a:nth-child(even){border-left:1px solid #cfcdc6}
   .hero{grid-template-columns:1fr;--overlap:14vw}
   .hero-beeld{order:1;min-height:0;height:66svh}
   .hero-beeld::after{background:linear-gradient(0deg,var(--zwart) 0,rgba(25,26,25,0) 45%)}
