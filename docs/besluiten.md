@@ -11,7 +11,8 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 
 ### Positionering
 - Bereik op de site: **150–1.500 gasten**. Capaciteit begint feitelijk bij 100–150, maar de site moet het niet klein laten ogen.
-- "Binnen bereik" gaat niet over prijs maar over schaal: wat je op festivals ziet, kan ook bij een event voor 200 gasten.
+- Homepage-kop (werkversie): **Festivalkwaliteit, op de schaal van jouw event.** Vervangt "Hoogwaardige AV, binnen bereik".
+- "Binnen bereik" ging niet over prijs maar over schaal: wat je op festivals ziet, kan ook bij een event voor 200 gasten.
 - "Festivalwaardig" / "festival grade" betekent: hoge kwaliteit die tegen een stootje kan. Het betekent niet schreeuwerig.
 - Geen prijzen op de site.
 
@@ -43,7 +44,7 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - ADE-case: bronvermelding wordt "Artist management Rivo".
 - DJ-sets-case: het citaat is echt (Architects in Music). De vermelding "Redactionele samenvatting" is een fout en gaat eruit.
 - Privé-event (Ronald Pronk): blijft. Ronald heeft toestemming gegeven. De case laat ook zien dat privé de uitzondering is.
-- Tuinfeest-case heet voortaan **Jubileum ondernemersnetwerk** (CreativeGround). Eén beeld op de tegel, het andere op de casepagina.
+- Tuinfeest-case heet voortaan **Jubileum ondernemersnetwerk** (CreativeGrounds, 5-jarig bestaan, 150 ondernemers). Citaat binnen; naam van de spreker volgt. Eén beeld op de tegel, het andere op de casepagina.
 
 ### Vormgeving
 - Eén consistente letter, tenzij die voor bezoekers niet goed leesbaar is.
