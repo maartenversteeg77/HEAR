@@ -40,7 +40,7 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - Elke case krijgt een label (doelgroep/type).
 - "Cases" op de verzamelpagina wordt een klein navigatie-element (rode kleine letter), geen grote kop.
 - Resultaat en citaat inhoudelijk en qua toon uit elkaar halen. Het citaat is spreektaal, uit iemands mond.
-- Het huidige label "Experience" bedoelt: de beoogde klantbeleving. Ligt dicht tegen Resultaat aan; indeling wordt herzien.
+- **Indeling casepagina: In het kort · Opdracht · Aanpak · Resultaat · Citaat.** De beoogde klantbeleving (voorheen "Experience") valt onder Opdracht. Aanpak = wat wij deden. Resultaat = wat er feitelijk gebeurde, zakelijke toon. Citaat = hoe het voelde, spreektaal van de klant, met naam en rol.
 - ADE-case: bronvermelding wordt "Artist management Rivo".
 - DJ-sets-case: het citaat is echt (Architects in Music). De vermelding "Redactionele samenvatting" is een fout en gaat eruit.
 - Privé-event (Ronald Pronk): blijft. Ronald heeft toestemming gegeven. De case laat ook zien dat privé de uitzondering is.
@@ -51,7 +51,6 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - Beeldgebruik wordt nog volledig herzien: nu te veel dubbelingen.
 
 ## Open punten
-- Indeling van de case-pagina (Opdracht · Aanpak · Resultaat · Citaat?) — voorstel ligt bij Maarten.
 - Labelset voor cases.
 - Founder story noemt nog "100 tot 1.500 personen"; aanpassen naar 150–1.500?
 - Plek van DJ-sets, radio-mixes en eigen producties (bij Cases of apart).
