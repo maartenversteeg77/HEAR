@@ -47,6 +47,10 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - Tuinfeest-case heet voortaan **Jubileum ondernemersnetwerk** (CreativeGrounds, 5-jarig bestaan, 150 ondernemers). Citaat binnen; naam van de spreker volgt. Eén beeld op de tegel, het andere op de casepagina.
 
 ### Vormgeving
+- Kleuren volgen het huisstijldocument (Branding DEF): zwart en gebroken wit als basis, accent mag hoofdkleur van een vlak zijn, max. twee kleuren per vlak. Geen crème/beige.
+- Homepage v1 (15 okt): zwarte hero met booth-foto en groot HEAR-merk, koraal statementvlak, tegels op gebroken wit, koraal als WhatsApp-knop. Koraal alleen op donker of als vlak met zwarte tekst (op gebroken wit te weinig contrast voor kleine tekst).
+- Letters: Advent Pro voor koppen, Helvetica/Arial voor lopende tekst.
+- Referentie die aanspreekt: musicandpower.com (zwarte basis, groot merk over beeld, gelaagde blokken).
 - Eén consistente letter, tenzij die voor bezoekers niet goed leesbaar is.
 - Beeldgebruik wordt nog volledig herzien: nu te veel dubbelingen.
 
@@ -54,4 +58,5 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - Labelset voor cases.
 - Founder story noemt nog "100 tot 1.500 personen"; aanpassen naar 150–1.500?
 - Plek van DJ-sets, radio-mixes en eigen producties (bij Cases of apart).
-- Contactroute en plaatsing van de WhatsApp-knoppen.
+- WhatsApp-nummer nog nodig (knoppen staan er, zonder nummer).
+- Overige pagina's nog in de oude stijl; worden een voor een omgezet.
