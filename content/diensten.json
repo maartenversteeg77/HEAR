@@ -20,7 +20,7 @@
         {
           "label": "Spelers en mixer",
           "tekst": [
-            "Twee AlphaTheta CDJ-3000X mediaspelers, gekoppeld via een netwerk, zodat dj's van usb én van elkaars spelers kunnen draaien. Als mixer kies je tussen de AlphaTheta DJM-V10 (zes kanalen, met effecten) en de Euphonia, een rotary mixer met een warmer, analoger karakter. Technics SL-1200 draaitafels zijn op aanvraag beschikbaar."
+            "Twee Pioneer DJ CDJ-3000X mediaspelers, gekoppeld via een netwerk, zodat dj's van usb én van elkaars spelers kunnen draaien. Als mixer kies je tussen de Pioneer DJ DJM-V10 (zes kanalen, met effecten) en de AlphaTheta Euphonia, een rotary mixer met een warmer, analoger karakter. Technics SL-1200 draaitafels zijn op aanvraag beschikbaar."
           ]
         },
         {
@@ -32,12 +32,12 @@
             },
             {
               "beeld": "img/diensten/cdj-3000x.jpg",
-              "naam": "AlphaTheta CDJ-3000X",
+              "naam": "Pioneer DJ CDJ-3000X",
               "regel": "Mediaspeler, twee stuks, via netwerk gekoppeld"
             },
             {
               "beeld": "img/diensten/djm-v10.jpg",
-              "naam": "AlphaTheta DJM-V10",
+              "naam": "Pioneer DJ DJM-V10",
               "regel": "Zes kanalen, met effecten"
             },
             {
