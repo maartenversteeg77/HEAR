@@ -56,10 +56,10 @@ body.menu-open{overflow:hidden}
 /* ---------- hero: beeld over de volle breedte, groot merk erover ---------- */
 .home .top .merk{visibility:hidden}  /* op de homepage alleen het grote merk */
 .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
-.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 35%}
 .hero::after{content:"";position:absolute;inset:0;background:
-  linear-gradient(0deg,var(--zwart) 0,rgba(25,26,25,.85) 30%,rgba(25,26,25,.25) 62%,rgba(25,26,25,.35) 100%),
-  linear-gradient(90deg,rgba(25,26,25,.55) 0,rgba(25,26,25,0) 55%)}
+  linear-gradient(0deg,var(--zwart) 0,rgba(25,26,25,.55) 22%,rgba(25,26,25,.12) 55%,rgba(25,26,25,.3) 100%),
+  linear-gradient(90deg,rgba(25,26,25,.6) 0,rgba(25,26,25,0) 50%)}
 .hero-inhoud{position:relative;z-index:2;width:100%;padding:120px var(--rand) clamp(48px,6vw,88px)}
 .hero-logo{width:min(100%,1180px);height:auto;margin:0 0 clamp(48px,7vw,110px)}
 .hero-blok{max-width:min(100%,58ch)}
