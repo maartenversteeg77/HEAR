@@ -50,7 +50,7 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - Resultaat en citaat inhoudelijk en qua toon uit elkaar halen. Het citaat is spreektaal, uit iemands mond.
 - **Indeling casepagina: In het kort · Opdracht · Aanpak · Resultaat · Citaat.** De beoogde klantbeleving (voorheen "Experience") valt onder Opdracht. Aanpak = wat wij deden. Resultaat = wat er feitelijk gebeurde, zakelijke toon. Citaat = hoe het voelde, spreektaal van de klant, met naam en rol.
 - ADE-case: bronvermelding wordt "Artist management Rivo".
-- DJ-sets-case: het citaat is echt (Architects in Music). De vermelding "Redactionele samenvatting" is een fout en gaat eruit.
+- DJ-sets-case: het citaat is echt (Architects in Music). Bron vervangen door "Architects in Music — A full circle event company with a focus on hospitality" (16 okt).
 - Privé-event (Ronald Pronk): blijft. Ronald heeft toestemming gegeven. De case laat ook zien dat privé de uitzondering is.
 - Uitgelicht werk op de homepage = slider met alle afgeronde cases, gevoed vanuit `site/cases.json` (één regel per case; volgorde = volgorde op site; alleen status "af" wordt getoond). Dubbeling met de casespagina is akkoord: die is het visuele overzicht. Halve cases worden nergens getoond.
 - Tuinfeest-case heet voortaan **Jubileum ondernemersnetwerk** (CreativeGrounds, 5-jarig bestaan, 150 ondernemers). Citaat binnen; naam van de spreker volgt. Tegel: dansvloerfoto; casepagina: dj en saxofonist (16 okt: saxofonist was te dominant op de tegel).
