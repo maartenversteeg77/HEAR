@@ -110,3 +110,11 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - Headerbeeld homepage: lichter blauwe versie met lichtbundels (img/hero-dansvloer-blauw.jpg); op mobiel uitsnede naar links zodat het felle punt naast de payoff valt (16 okt).
 - Over HEAR: kop "Founder story – Maarten Versteeg", ondertitel "DJ sinds 1993 · Communicatiespecialist sinds 2000 · Founder HEAR"; hoofdfoto met mixer en koptelefoon (img/maarten-mixer.jpg), adviseursfoto bij de alinea over communicatieadvies (img/maarten-adviseur.jpg). Oude foto (442px, onscherp) niet meer gebruikt (16 okt).
 - Founder story: tekst losser gemaakt op stijl, inhoud gelijk (akkoord Maarten); opening "Ik ben Maarten." (16 okt).
+
+## 16 okt — Dienstenpagina's gevuld
+- Acht dienstenpagina's gebouwd uit content/diensten.json (scripts/bouw-diensten.py): kernzin, vullend kopbeeld, intro, blokken per merk/product/werkwijze, productrij met beelden, verwijzingen onderaan. Geen vaste drietrap meer.
+- Bronnen: Concept assortiment-presentatie (zonder prijzen), RCF KX-filosofie en KXL 4-A/SUB 9000-handleidingen, Brooklyn Audio-ontwerpfilosofie en Prospect-spec, ADJ-specs (Par Z150 RGBA Plus, ElectraPix Par 7, Focus CMY Compact), J-torenontwerp.
+- Beelden rechtgezet: vintage lighting toont nu de Astrodisco (was dj-foto); booth toont de booth van bovenaf; artiesten toont dj + saxofonist; AV as a service toont een gala-opstelling. Productbeelden uit de presentatie staan in img/diensten/.
+- Dienstenoverzicht: nummers "01 · DIENSTEN" van de tegels; ondertitel vervangen; "In het kort" (dubbel) weg.
+- djs-live.html (oude doelgroeppagina, nergens meer gelinkt) verwijderd; inhoud zit in artiesten.html.
+- TE VERIFIËREN door Maarten: ADJ Focus CMY Compact en Chauvet "Force X" als eigen assortiment; herkomst/rechten van gala.jpg, dansvloer.jpg (Holland Festival), beams.jpg; tegeltitels nog Engels (footer Nederlands).
