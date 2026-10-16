@@ -20,7 +20,7 @@ body.pagina.menu-open .top{position:fixed}
 .eyebrow{font:600 11px/1 var(--tekst);letter-spacing:.2em;text-transform:uppercase;color:var(--zacht);margin:0}
 
 /* beelden */
-.casehero,.detail-image{margin:0 calc(-1 * var(--rand));height:clamp(300px,48vw,640px);overflow:hidden;background:var(--zwart)}
+.casehero,.detail-image{margin:0 calc(-1 * var(--rand));height:clamp(300px,44vw,78vh);overflow:hidden;background:var(--zwart)}
 .casehero>div{height:100%}
 .casehero img,.detail-image img{width:100%;height:100%;object-fit:cover}
 .casehero.prive-event img{object-position:center 72%}
