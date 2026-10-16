@@ -182,3 +182,9 @@ body.menu-open{overflow:hidden}
 .v-titel{min-height:2.1em;text-wrap:balance}
 .werk-kaart p{text-wrap:pretty}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* zwarte kopbalk boven de hero; de foto begint eronder (16 okt) */
+.home .top{position:relative;background:var(--zwart)}
+.home .hero{min-height:calc(100svh - 82px)}
+.home .hero-inhoud{min-height:calc(100svh - 82px);padding-top:clamp(36px,4vw,56px)}
+@media (max-width:900px){.home .hero,.home .hero-inhoud{min-height:calc(100svh - 78px)}}

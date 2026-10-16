@@ -86,3 +86,5 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - Citaten turquoise vlak; casesoverzicht als kaarten zoals de slider; Merken blijft bestaan maar staat niet in de navigatie.
 - Terug-links van cases wijzen naar cases.html; "Doelgroepen" heet in de terug-link "Voor wie".
 - Productlancering: uitgelichte quote zonder naam als turquoise band over de volle breedte.
+- Homepage: zwarte kopbalk boven de hero; de foto begint eronder in plaats van eronder door te lopen (16 okt).
+- Proef netwerkevent: klantquote als turquoise tekstballon midden tussen de tekst, buiten de lijnenstructuur, naam eronder (16 okt).
