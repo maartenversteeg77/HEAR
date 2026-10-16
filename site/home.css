@@ -181,3 +181,5 @@ body.menu-open{overflow:hidden}
 .werk-kaart h3{min-height:2.2em;text-wrap:balance}
 .v-titel{min-height:2.1em;text-wrap:balance}
 .werk-kaart p{text-wrap:pretty}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.hero-logo{display:block}
