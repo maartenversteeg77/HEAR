@@ -27,7 +27,7 @@
 </header>
 <div class="menu" id="menu" hidden>
   <nav aria-label="Hoofdmenu">
-      <a href="doelgroepen.html"><span>Voor wie is HEAR</span><small>Bureaus en bedrijven, venues, dance-events en artiesten</small></a>
+      <a href="doelgroepen.html"><span>Voor wie is HEAR</span><small>Corporate en reclamebureaus, venue owners en dance events</small></a>
       <a href="cases.html"><span>Voorbeeldcases</span><small>Events die tot de verbeelding spreken</small></a>
       <a href="principes.html"><span>Principes</span><small>De manier waarop wij werken</small></a>
       <a href="diensten.html"><span>Diensten en producten</span><small>De etalage: licht, geluid, merken en techniek</small></a>
@@ -87,7 +87,7 @@
           var a=document.createElement('a'); a.className='werk-kaart'; a.href=c.link;
           a.innerHTML='<img loading="lazy" alt=""><span class="label"></span><h3></h3><p></p>';
           a.querySelector('img').src=c.beeld; a.querySelector('img').alt=c.alt; if(c.positie) a.querySelector('img').style.objectPosition=c.positie;
-          a.querySelector('.label').textContent=c.label; a.querySelector('h3').textContent=c.titel; a.querySelector('p').textContent=c.tekst;
+          a.querySelector('.label').textContent=(c.doelgroepen||[]).map(function(k){return d.doelgroepen[k].naam}).join(' · '); a.querySelector('h3').textContent=c.titel; a.querySelector('p').textContent=c.tekst;
           rij.insertBefore(a,alle);
         });
         rij.scrollLeft=0;
@@ -99,7 +99,7 @@
   </script>
 
   <section class="verder" aria-label="Verder op de site">
-    <a href="doelgroepen.html"><span class="v-titel">Voor wie is HEAR</span><span class="v-tekst">Bureaus en bedrijven, venues, dance-events en artiesten</span><span class="pijl" aria-hidden="true">→</span></a>
+    <a href="doelgroepen.html"><span class="v-titel">Voor wie is HEAR</span><span class="v-tekst">Corporate en reclamebureaus, venue owners en dance events</span><span class="pijl" aria-hidden="true">→</span></a>
     <a href="principes.html"><span class="v-titel">Principes</span><span class="v-tekst">De manier waarop wij werken</span><span class="pijl" aria-hidden="true">→</span></a>
     <a href="diensten.html"><span class="v-titel">Diensten en producten</span><span class="v-tekst">De etalage: licht, geluid, merken en techniek</span><span class="pijl" aria-hidden="true">→</span></a>
   </section>
@@ -134,7 +134,7 @@
       <p><a href="mailto:maarten@hear.nl">maarten@hear.nl</a></p>
     </div>
     <nav aria-label="Werk"><p class="label">Werk</p><a href="cases.html">Cases</a><a href="over-hear.html">Over HEAR</a></nav>
-    <nav aria-label="Voor wie"><p class="label">Voor wie</p><a href="corporate.html">Bureaus en bedrijven</a><a href="venue-owners.html">Venues</a><a href="dance-events.html">Dance-events</a><a href="djs-live.html">DJ's en live muzikanten</a></nav>
+    <nav aria-label="Voor wie"><p class="label">Voor wie</p><a href="corporate.html">Corporate en reclamebureaus</a><a href="venue-owners.html">Venue owners</a><a href="dance-events.html">Dance events</a></nav>
     <nav aria-label="Diensten"><p class="label">Diensten</p><a href="booth-dj-gear.html">Booth en dj-gear</a><a href="high-end-audio.html">High-end audio</a><a href="atmospheric-lighting.html">Sfeerverlichting</a><a href="dancefloor-lighting.html">Dansvloerverlichting</a><a href="vintage-lighting.html">90's vintage licht</a><a href="av-as-a-service.html">Advies en AV as a service</a><a href="artiesten.html">Artiesten</a><a href="special-projects.html">Special projects</a></nav>
     <nav aria-label="Principes"><p class="label">Principes</p><a href="partnership.html">Partnership</a><a href="aesthetics.html">Uitstraling</a><a href="smart-solutions.html">Slimme oplossingen</a><a href="warm-sound.html">Warm geluid</a></nav>
   </div>

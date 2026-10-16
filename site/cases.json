@@ -1,69 +1,99 @@
 {
-  "_uitleg": "Bron voor de cases-slider op de homepage. Volgorde = volgorde op de site. Alleen status 'af' wordt getoond. Optioneel 'positie': welk deel van het beeld zichtbaar blijft in de tegel (bijv. '50% 12%' = bovenkant).",
+  "_uitleg": "Bron voor de cases-slider op de homepage en het casesoverzicht (scripts/bouw-cases.py). Volgorde = volgorde op de site. Alleen status 'af' wordt getoond. 'doelgroepen' verwijst naar de sleutels hieronder; die worden de labels, met link naar de Voor wie-pagina. Optioneel 'positie': welk deel van het beeld zichtbaar blijft in de tegel (bijv. '50% 0%' = bovenkant).",
+  "doelgroepen": {
+    "corporate": {
+      "naam": "Corporate en reclamebureaus",
+      "link": "corporate.html"
+    },
+    "venue": {
+      "naam": "Venue owners",
+      "link": "venue-owners.html"
+    },
+    "dance": {
+      "naam": "Dance events",
+      "link": "dance-events.html"
+    }
+  },
   "cases": [
     {
       "status": "af",
       "titel": "Licht en geluid voor productlancering",
-      "label": "Corporate · productpresentatie",
       "tekst": "Van gerichte productverlichting overdag naar een warme dansvloer 's avonds.",
       "beeld": "img/case-productpresentatie.jpg",
       "alt": "Sneakers op verlichte plateaus onder theaterspots, in een hal met blauw licht",
-      "link": "productpresentatie.html"
+      "link": "productpresentatie.html",
+      "doelgroepen": [
+        "corporate"
+      ]
     },
     {
       "status": "af",
       "titel": "Transformatie: van skatehal tot dansvloer",
-      "label": "Dance · venue · ADE",
       "tekst": "Eén avond omgebouwd voor een pop-upevent, met vrijwel geen soundcheck nodig.",
       "beeld": "img/case-ade.jpg",
       "alt": "DJ-booth in een skatehal tijdens ADE",
-      "link": "ade-dj.html"
+      "link": "ade-dj.html",
+      "doelgroepen": [
+        "dance",
+        "venue"
+      ]
     },
     {
       "status": "af",
       "titel": "Jubileum ondernemersnetwerk",
-      "label": "Corporate · tuinfeest",
       "tekst": "Een luxe tuinfeest midden in een woonwijk, zonder overlast voor de buurt.",
       "beeld": "img/case-creativegrounds.jpg",
       "alt": "Gasten dansen met een glas wijn in de hand, een saxofonist speelt op de voorgrond",
-      "link": "jubileum-ondernemersnetwerk.html"
+      "link": "jubileum-ondernemersnetwerk.html",
+      "doelgroepen": [
+        "corporate"
+      ]
     },
     {
       "status": "af",
       "titel": "Seminar en netwerkevent",
-      "label": "Corporate · 500 gasten",
       "tekst": "Van lezingen en workshops naar een ontspannen cocktail hour.",
       "beeld": "img/case-gemeente.jpg",
       "alt": "Gesprek op een podium voor publiek",
-      "link": "gemeentelijk-netwerkevent.html"
+      "link": "gemeentelijk-netwerkevent.html",
+      "doelgroepen": [
+        "corporate"
+      ]
     },
     {
       "status": "af",
       "titel": "Een reis door 40 jaar elektronische muziek",
-      "label": "Muziek · dj voor events",
       "tekst": "Dj-sets voor corporate events, skylounges en cocktailbars: van ontspannen achtergrond tot dansvloer.",
       "beeld": "img/case-djsets.jpg",
       "alt": "Maarten Versteeg, zittend op een flightcase",
       "link": "dj-sets.html",
-      "positie": "50% 0%"
+      "positie": "50% 0%",
+      "doelgroepen": [
+        "venue",
+        "corporate"
+      ]
     },
     {
       "status": "af",
       "titel": "Advies over het beste soundsystem voor jouw ruimte",
-      "label": "Advies · aankoopbegeleiding",
       "tekst": "Systeemadvies voor een licht- en geluidsverhuurbedrijf.",
       "beeld": "img/case-systeemadvies.jpg",
       "alt": "Luidsprekers op een stack",
-      "link": "systeemadvies.html"
+      "link": "systeemadvies.html",
+      "doelgroepen": [
+        "dance"
+      ]
     },
     {
       "status": "af",
       "titel": "Van industriële ruimte naar intieme sfeer",
-      "label": "Privé · 150 gasten",
       "tekst": "Een persoonlijk feest voor vrienden en relaties, met meerdere dj's.",
       "beeld": "img/case-prive.jpg",
       "alt": "Gasten op een dansvloer onder kleurrijk licht",
-      "link": "prive-event.html"
+      "link": "prive-event.html",
+      "doelgroepen": [
+        "dance"
+      ]
     }
   ]
 }

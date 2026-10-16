@@ -166,3 +166,12 @@ body.pagina.menu-open .top{position:fixed}
 .heel{white-space:nowrap}
 .casehead h1.kernzin{text-wrap:balance}
 .casehero.gemeentelijk-netwerkevent img{object-position:center 18%}
+/* tegel met doelgroeplabels: de titel is de hoofdlink over de hele tegel, de labels linken naar Voor wie */
+.case-tegel{position:relative}
+.tegel-link{color:inherit;text-decoration:none}
+.tegel-link::after{content:"";position:absolute;inset:0;z-index:1}
+.case-tekst .labels{grid-column:1/-1;margin:0;display:flex;flex-wrap:wrap;gap:4px 14px;font:600 11px/1.5 var(--tekst);letter-spacing:.16em;text-transform:uppercase}
+.case-tekst .labels a{position:relative;z-index:2;color:var(--zwart);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;text-decoration-color:rgba(25,26,25,.4)}
+.case-tekst .labels a:hover{text-decoration-color:var(--zwart)}
+.visual-grid.drie{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:900px){.visual-grid.drie{grid-template-columns:1fr}}
