@@ -158,3 +158,9 @@ body.pagina.menu-open .top{position:fixed}
 .case-tegel:hover img{opacity:.9}
 @media (max-width:1000px){.case-overzicht{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.case-overzicht{grid-template-columns:1fr;gap:26px}.case-tekst h2{min-height:0}}
+
+/* landingspagina's: geen aparte kop meer; de kernzin (samengevoegd met 'in het kort') staat groot in het zwart */
+.casehead h1.kernzin{font:300 clamp(30px,3.6vw,54px)/1.12 var(--kop);max-width:26ch;margin:24px 0 0}
+.casehero+.case-sections,.detail-image+.topic-group{padding-top:clamp(36px,5vw,70px)}
+.heel{white-space:nowrap}
+.casehead h1.kernzin{text-wrap:balance}
