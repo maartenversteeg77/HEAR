@@ -119,3 +119,4 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - djs-live.html (oude doelgroeppagina, nergens meer gelinkt) verwijderd; inhoud zit in artiesten.html.
 - TE VERIFIËREN door Maarten: ADJ Focus CMY Compact en Chauvet "Force X" als eigen assortiment; herkomst/rechten van gala.jpg, dansvloer.jpg (Holland Festival), beams.jpg; tegeltitels nog Engels (footer Nederlands).
 - Dienstenpagina's: openen met de productrij (geen vullend kopbeeld), intro over de volle breedte; RCF-beelden van Maarten toegevoegd (KXL 4-A, KX-serie) (16 okt).
+- Principepagina's gevuld uit content/principes.json (scripts/bouw-principes.py), zelfde opbouw als diensten; Nederlandse namen: Partnership, Uitstraling, Slimme oplossingen, Warm geluid. Bronnen: presentatie-filosofie, Lighting Plan-ontwerpprincipes, Abbey-propositie, Maartens website-uitgangspunten (17 okt).

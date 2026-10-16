@@ -7,7 +7,7 @@ site = root / "site"
 data = json.loads((root / "content" / "principes.json").read_text())
 idx = (site / "index.html").read_text()
 kop = idx[idx.index('<header class="top">'):idx.index('</script>') + 9]
-kop = kop.replace('href="diensten.html">', 'href="principes.html" aria-current="page">', 1)
+kop = kop.replace('href="principes.html">', 'href="principes.html" aria-current="page">', 1)
 voet = idx[idx.index('<footer class="voet">'):idx.index('</footer>') + 9]
 e = lambda t: html.escape(t, quote=True)
 def heel(t):  # koppeltekenwoorden niet afbreken
