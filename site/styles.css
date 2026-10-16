@@ -204,3 +204,5 @@ em,i,cite,address,dfn,var{font-style:normal}
 /* knop in de tekst (bijv. SoundCloud) */
 .knoprij{margin:22px 0 0!important}
 .wa.sc{background:var(--turquoise)}
+.pagina .tekstlink{color:var(--zwart)}
+.pagina .tekstlink:hover{color:var(--koraal)}
