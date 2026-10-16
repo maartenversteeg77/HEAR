@@ -3,8 +3,8 @@ status: concept
 titel: Jubileum ondernemersnetwerk
 label: Corporate            # voorstel; labelset nog vast te stellen
 meta: Tuinfeest · 150 ondernemers
-tegelbeeld: dj-en-saxofonist.jpg
-paginabeeld: dansvloer-saxofonist.jpg
+tegelbeeld: dansvloer-saxofonist.jpg
+paginabeeld: dj-en-saxofonist.jpg
 ---
 
 # Jubileum ondernemersnetwerk

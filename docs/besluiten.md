@@ -45,7 +45,7 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - DJ-sets-case: het citaat is echt (Architects in Music). De vermelding "Redactionele samenvatting" is een fout en gaat eruit.
 - Privé-event (Ronald Pronk): blijft. Ronald heeft toestemming gegeven. De case laat ook zien dat privé de uitzondering is.
 - Uitgelicht werk op de homepage = slider met alle afgeronde cases, gevoed vanuit `site/cases.json` (één regel per case; volgorde = volgorde op site; alleen status "af" wordt getoond). Dubbeling met de casespagina is akkoord: die is het visuele overzicht. Halve cases worden nergens getoond.
-- Tuinfeest-case heet voortaan **Jubileum ondernemersnetwerk** (CreativeGrounds, 5-jarig bestaan, 150 ondernemers). Citaat binnen; naam van de spreker volgt. Eén beeld op de tegel, het andere op de casepagina.
+- Tuinfeest-case heet voortaan **Jubileum ondernemersnetwerk** (CreativeGrounds, 5-jarig bestaan, 150 ondernemers). Citaat binnen; naam van de spreker volgt. Tegel: dansvloerfoto; casepagina: dj en saxofonist (16 okt: saxofonist was te dominant op de tegel).
 
 ### Vormgeving
 - Kleuren volgen het huisstijldocument (Branding DEF): zwart en gebroken wit als basis, accent mag hoofdkleur van een vlak zijn, max. twee kleuren per vlak. Geen crème/beige.
@@ -55,6 +55,7 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - Referentie die aanspreekt: musicandpower.com (zwarte basis, groot merk over beeld, gelaagde blokken).
 - Eén consistente letter, tenzij die voor bezoekers niet goed leesbaar is.
 - Beeldgebruik wordt nog volledig herzien: nu te veel dubbelingen.
+- Productpresentatie-case: geanonimiseerd beeld (16 okt): matte vloer, collectie herkleurd naar jonger en kleurrijker. Oorspronkelijke merkfoto van de site gehaald.
 
 ## Open punten
 - Labelset voor cases.
