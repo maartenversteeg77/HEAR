@@ -201,3 +201,6 @@ em,i,cite,address,dfn,var{font-style:normal}
 .visual-grid .visual-card>img{object-position:center 30%}
 /* kernzin op landingspagina's: breder, zodat hij op twee regels past */
 .casehead h1.kernzin{max-width:40ch}
+/* knop in de tekst (bijv. SoundCloud) */
+.knoprij{margin:22px 0 0!important}
+.wa.sc{background:var(--turquoise)}

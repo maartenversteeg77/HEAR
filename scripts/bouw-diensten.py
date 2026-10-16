@@ -20,7 +20,7 @@ def blok(b):
             f'<figcaption><strong>{e(p["naam"])}</strong>{e(p["regel"])}</figcaption></figure>'
             for p in b["producten"])
         return f'<section class="producten" aria-label="Producten">{items}</section>'
-    ps = "".join(f"<p>{e(t)}</p>" for t in b["tekst"])
+    ps = "".join(f"<p>{e(t)}</p>" for t in b["tekst"]) + b.get("html_na", "")
     return f'<article class="case-section"><h2>{e(b["label"]).upper()}</h2><div>{ps}</div></article>'
 
 for pg in data["paginas"]:
