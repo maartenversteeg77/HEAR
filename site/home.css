@@ -177,3 +177,7 @@ body.menu-open{overflow:hidden}
 }
 .over h2.label{font:600 11px/1 var(--tekst);letter-spacing:.2em;text-transform:uppercase;color:var(--koraal);margin:0 0 22px;max-width:none}
 .over .over-tekst{font:300 clamp(24px,2.3vw,36px)/1.25 var(--kop);color:var(--wit);max-width:30ch;margin:0 0 26px}
+/* koppen in reeksen altijd twee regels hoog, geen los woord op de tweede regel */
+.werk-kaart h3{min-height:2.2em;text-wrap:balance}
+.v-titel{min-height:2.1em;text-wrap:balance}
+.werk-kaart p{text-wrap:pretty}
