@@ -206,3 +206,4 @@ em,i,cite,address,dfn,var{font-style:normal}
 .wa.sc{background:var(--turquoise)}
 .pagina .tekstlink{color:var(--zwart)}
 .pagina .tekstlink:hover{color:var(--koraal)}
+.casehead .kop-knop{margin:28px 0 0}
