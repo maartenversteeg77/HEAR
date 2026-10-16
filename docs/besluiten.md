@@ -6,7 +6,8 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 
 ### Werkwijze en infrastructuur
 - De site wordt zelf gebouwd en beheerd, zonder extern bureau.
-- GitHub-repo `maartenversteeg77/hear` is de enige bron. Netlify publiceert vanuit de repo. ChatGPT bouwt niet meer parallel in Netlify.
+- GitHub-repo `maartenversteeg77/hear` is de enige bron. ChatGPT bouwt niet meer parallel.
+- Hosting (16 okt): verhuisd van Netlify naar Cloudflare (Workers, gratis). Reden: Netlify gratis = 300 credits/maand, 15 per publicatie (~20 publicaties); tegoed was op en publiceren stond stil. Werkadres: hear.maartenversteeg.workers.dev. hear.nl (DNS bij TransIP) later hierheen; e-mail (MX) dan bij TransIP laten.
 - Het ChatGPT-geraamte is het uitgangspunt. Daarna vullen we pagina voor pagina.
 
 ### Positionering
