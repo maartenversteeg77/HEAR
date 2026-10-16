@@ -61,10 +61,10 @@ body.menu-open{overflow:hidden}
   linear-gradient(0deg,var(--zwart) 0,rgba(25,26,25,.85) 30%,rgba(25,26,25,.25) 62%,rgba(25,26,25,.35) 100%),
   linear-gradient(90deg,rgba(25,26,25,.55) 0,rgba(25,26,25,0) 55%)}
 .hero-inhoud{position:relative;z-index:2;width:100%;padding:120px var(--rand) clamp(48px,6vw,88px)}
-.hero-logo{width:min(100%,1180px);height:auto;margin:0 0 clamp(28px,4vw,56px)}
-.hero-blok{width:min-content}
+.hero-logo{width:min(100%,1180px);height:auto;margin:0 0 clamp(48px,7vw,110px)}
+.hero-blok{max-width:min(100%,58ch)}
 .hero h1{font:300 clamp(36px,4vw,64px)/1.05 var(--kop);margin:0 0 22px;white-space:nowrap}
-.hero .lead{font-size:clamp(18px,1.5vw,22px);line-height:1.5;color:#e2e1dc;margin:0 0 18px}
+.hero .lead{font-size:clamp(18px,1.5vw,22px);line-height:1.5;color:#e2e1dc;margin:0 0 18px;text-wrap:balance}
 .hero .feiten{font:500 12px/1.6 var(--tekst);letter-spacing:.16em;text-transform:uppercase;color:#a9a8a3;margin:0 0 32px}
 .hero-acties{display:flex;flex-wrap:wrap;align-items:center;gap:18px 30px}
 .tekstlink{font:500 13px/1 var(--tekst);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:4px}
