@@ -112,6 +112,11 @@
               "regel": "Eén familie, dezelfde klank in elke maat"
             },
             {
+              "beeld": "img/diensten/sub-9019.jpg",
+              "naam": "RCF SUB 9019-AS",
+              "regel": "19-inch subwoofer, tot 30 Hz, cardioïde presets"
+            },
+            {
               "beeld": "img/diensten/prospect-top.jpg",
               "naam": "Brooklyn Audio Prospect",
               "regel": "15-inch driewegtop, fullrange of met sub"
@@ -130,6 +135,16 @@
               "beeld": "img/diensten/revers-microfoon.jpg",
               "naam": "Reversmicrofoons",
               "regel": "Draadloos, voor seminars en presentaties"
+            },
+            {
+              "beeld": "img/diensten/rdtap.jpg",
+              "naam": "Smartphone-app voor audio-instellingen",
+              "regel": "RDTap: crossover, polariteit en cardioïde instellen door je telefoon tegen de kast te houden"
+            },
+            {
+              "beeld": "img/diensten/rdnet.jpg",
+              "naam": "Systeemmanagement op laptop of tablet",
+              "regel": "RDNet: elke kast op afstand zien en sturen"
             }
           ]
         },
