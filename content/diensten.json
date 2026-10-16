@@ -219,7 +219,7 @@
         {
           "label": "Hybride moving heads",
           "tekst": [
-            "Een hybride moving head is beam, spot en wash in één: een smalle bundel door de nevel, een scherp gobo op de vloer of een brede kleurwash over de dansvloer. We werken met de Chauvet Professional Force X en met de Infinity IFX-640, die naast wash en beam ook prisma-effecten heeft. Zo komen we met weinig lampen tot een show met veel gezichten.",
+            "Een hybride moving head is beam, spot en wash in één: een smalle bundel door de nevel, een scherp gobo op de vloer of een brede kleurwash over de dansvloer. We werken met de Chauvet Professional Force X en met de Infinity iFX-640, een wash moving head met interne roterende shutters die de bundel een bloemvorm geven. Zo komen we met weinig lampen tot een show met veel gezichten.",
             "Voor grotere zalen zetten we de ADJ Focus CMY Compact in: een 400-watt moving head met zoom van 3° tot 52°, CMY-kleurmenging, twee gobowielen en prisma's. Ook die stuurt draadloos aan."
           ]
         },
@@ -237,9 +237,14 @@
               "regel": "Beam, spot en wash in één lamp"
             },
             {
-              "beeld": "img/diensten/beams-podium.jpg",
-              "naam": "Wash moving heads met shutters",
-              "regel": "Brede kleurwash, scherp af te snijden"
+              "beeld": "img/diensten/ifx640-bundels.jpg",
+              "naam": "Infinity iFX-640 met interne shutters",
+              "regel": "Wash moving head, bundels in bloemvorm"
+            },
+            {
+              "beeld": "img/diensten/ifx640.jpg",
+              "naam": "Infinity iFX-640",
+              "regel": "Zes RGBW-leds, roterende shutterbladen"
             },
             {
               "beeld": "img/diensten/beam-publiek.jpg",
