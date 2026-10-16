@@ -118,3 +118,4 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - Dienstenoverzicht: nummers "01 · DIENSTEN" van de tegels; ondertitel vervangen; "In het kort" (dubbel) weg.
 - djs-live.html (oude doelgroeppagina, nergens meer gelinkt) verwijderd; inhoud zit in artiesten.html.
 - TE VERIFIËREN door Maarten: ADJ Focus CMY Compact en Chauvet "Force X" als eigen assortiment; herkomst/rechten van gala.jpg, dansvloer.jpg (Holland Festival), beams.jpg; tegeltitels nog Engels (footer Nederlands).
+- Dienstenpagina's: openen met de productrij (geen vullend kopbeeld), intro over de volle breedte; RCF-beelden van Maarten toegevoegd (KXL 4-A, KX-serie) (16 okt).

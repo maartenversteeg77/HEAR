@@ -1,5 +1,5 @@
 {
-  "_uitleg": "Bron voor de acht dienstenpagina's. scripts/bouw-diensten.py bouwt er de HTML van. Per pagina: kernzin (kop), beeld (kopbeeld, vullend), intro (grote tekst), blokken (label links, tekst rechts; 'producten' = rij met productbeelden), links (verwijzingen onderaan). Tekst in wij-vorm, geen prijzen, geen superlatieven.",
+  "_uitleg": "Bron voor de acht dienstenpagina's. scripts/bouw-diensten.py bouwt er de HTML van. Per pagina: kernzin (kop), beeld (kopbeeld, vullend), intro (grote tekst), blokken (label links, tekst rechts; 'producten' = rij met productbeelden), links (verwijzingen onderaan). Tekst in wij-vorm, geen prijzen, geen superlatieven. Dienstenpagina's openen direct met de productrij (geen kopbeeld); 'beeld' wordt alleen nog gebruikt voor de overzichtstegel.",
   "paginas": [
     {
       "bestand": "booth-dj-gear.html",
@@ -92,9 +92,14 @@
         {
           "producten": [
             {
-              "beeld": "img/case-systeemadvies.jpg",
+              "beeld": "img/diensten/kxl-4a.jpg",
               "naam": "RCF KXL 4-A",
               "regel": "Compacte top, 100° × 25°, te koppelen tot toren"
+            },
+            {
+              "beeld": "img/diensten/kx-serie.jpg",
+              "naam": "RCF KX-serie",
+              "regel": "Eén familie, dezelfde klank in elke maat"
             },
             {
               "beeld": "img/diensten/prospect-top.jpg",

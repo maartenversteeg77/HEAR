@@ -25,14 +25,18 @@ def blok(b):
 
 for pg in data["paginas"]:
     pos = f' style="object-position:{e(pg["beeld_positie"])}"' if pg.get("beeld_positie") else ""
-    blokken = "".join(blok(b) for b in pg["blokken"])
+    # productrij naar voren: direct onder de kop, vóór de intro
+    prod = [b for b in pg["blokken"] if "producten" in b]
+    rest = [b for b in pg["blokken"] if "producten" not in b]
+    producten = "".join(blok(b) for b in prod)
+    blokken = "".join(blok(b) for b in rest)
     # opeenvolgende case-sections samen in één case-sections-wrapper
     blokken = re.sub(r'((?:<article class="case-section">.*?</article>)+)', r'<section class="case-sections">\1</section>', blokken, flags=re.S)
     links = "".join(f'<a href="{e(l["href"])}">{e(l["tekst"])} →</a>' for l in pg.get("links", []))
     main = f'''<main class="wrap">
 <section class="casehead"><a class="crumb" href="diensten.html">← Diensten</a><h1 class="kernzin">{heel(pg["kernzin"])}</h1></section>
-<section class="casehero"><div style="position:relative"><img src="{e(pg["beeld"])}" alt="{e(pg["beeld_alt"])}"{pos}></div></section>
-<section class="quick"><p>{e(pg["intro"])}</p></section>
+{producten}
+<section class="quick quick-breed"><p>{e(pg["intro"])}</p></section>
 {blokken}
 <nav class="verwijzingen" aria-label="Verder lezen">{links}</nav>
 </main>'''
