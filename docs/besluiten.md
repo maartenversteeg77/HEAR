@@ -107,3 +107,4 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - Homepage: zwarte kop met groot logo en ondertitel "High End Audio Rental"; foto met payoff, lead en WhatsApp-knop eronder (16 okt).
 - Homepage-kop met groot logo in zwarte balk teruggedraaid (balk te groot). Nu A = vorige versie (index.html); proef B = klein logo in balk, payoff groot op de plek van het logo (home-b.html) (16 okt).
 - Homepage: gekozen voor A (groot logo op de foto). Logo op desktop ca. 13% kleiner (max 660px); op mobiel minder ruimte tussen logo en payoff. Proefpagina B verwijderd (16 okt).
+- Headerbeeld homepage: lichter blauwe versie met lichtbundels (img/hero-dansvloer-blauw.jpg); op mobiel uitsnede naar links zodat het felle punt naast de payoff valt (16 okt).
