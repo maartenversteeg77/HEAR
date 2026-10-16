@@ -1,5 +1,5 @@
 {
-  "_uitleg": "Bron voor de cases-slider op de homepage. Volgorde = volgorde op de site. Alleen status 'af' wordt getoond.",
+  "_uitleg": "Bron voor de cases-slider op de homepage. Volgorde = volgorde op de site. Alleen status 'af' wordt getoond. Optioneel 'positie': welk deel van het beeld zichtbaar blijft in de tegel (bijv. '50% 12%' = bovenkant).",
   "cases": [
     {
       "status": "af",
@@ -44,7 +44,8 @@
       "tekst": "Dj-sets voor corporate events, skylounges en cocktailbars: van ontspannen achtergrond tot dansvloer.",
       "beeld": "img/case-djsets.jpg",
       "alt": "Maarten Versteeg, zittend op een flightcase",
-      "link": "dj-sets.html"
+      "link": "dj-sets.html",
+      "positie": "50% 12%"
     },
     {
       "status": "af",

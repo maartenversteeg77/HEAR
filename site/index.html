@@ -86,7 +86,7 @@
         d.cases.filter(function(c){return c.status==='af'}).forEach(function(c){
           var a=document.createElement('a'); a.className='werk-kaart'; a.href=c.link;
           a.innerHTML='<img loading="lazy" alt=""><span class="label"></span><h3></h3><p></p>';
-          a.querySelector('img').src=c.beeld; a.querySelector('img').alt=c.alt;
+          a.querySelector('img').src=c.beeld; a.querySelector('img').alt=c.alt; if(c.positie) a.querySelector('img').style.objectPosition=c.positie;
           a.querySelector('.label').textContent=c.label; a.querySelector('h3').textContent=c.titel; a.querySelector('p').textContent=c.tekst;
           rij.insertBefore(a,alle);
         });
