@@ -177,3 +177,4 @@ body.pagina.menu-open .top{position:fixed}
 @media (max-width:900px){.visual-grid.drie{grid-template-columns:1fr}}
 /* regelafbreking in titels uit cases.json (\n) */
 .case-tekst h2,.werk-kaart h3{white-space:pre-line}
+.casehero.ade-dj img{object-position:center 65%}

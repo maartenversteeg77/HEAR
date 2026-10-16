@@ -100,3 +100,4 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - Labels in het casesoverzicht = doelgroepen, met link naar de Voor wie-pagina; bron cases.json. Indeling: productlancering, jubileum, netwerkevent → Corporate; ADE → Dance events + Venue owners; dj-sets → Venue owners + Corporate; systeemadvies (AV-partij) → Dance events (Maarten); privé-event → Dance events (16 okt).
 - ADE-kopbeeld: hele foto zichtbaar door zijkanten aan te vullen met een sterk vervaagde versie van dezelfde foto (img/ade-breed.jpg); spiegelen gaf zichtbare dubbele speakers en is niet gebruikt (16 okt).
 - Systeemadvies-kopbeeld idem verbreed met vervaagde zijkanten (img/systeem-breed.jpg, scripts/verbreed.py). Kopbeelden groeien mee op brede schermen (hoogte max. 44vw/78vh i.p.v. 640px), zodat er minder wordt afgesneden (16 okt).
+- ADE: nieuw breed beeld van Maarten (img/ade-park.jpg) als kopbeeld en tegel; verbrede versie vervalt (16 okt).
