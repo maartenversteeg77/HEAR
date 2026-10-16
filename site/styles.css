@@ -143,3 +143,18 @@ body.pagina.menu-open .top{position:fixed}
   .casehero.met-ballon>div{height:300px}
   .casehero.dj-sets.met-ballon>div,.casehero.radio-mixes.met-ballon>div{height:auto;background:var(--zwart);padding:0 var(--rand) 60px}
 }
+
+/* casesoverzicht: beeld en tekstvak als één tegel; tekstvak turquoise, zoals de kaart 'Alle cases' op de homepage */
+.case-overzicht{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 22px;padding:clamp(48px,6vw,90px) 0 clamp(70px,8vw,120px)}
+.case-tegel{display:flex;flex-direction:column;text-decoration:none;color:var(--zwart)}
+.case-tegel img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.case-tekst{flex:1;display:grid;grid-template-columns:1fr auto;align-content:start;gap:0 16px;background:var(--turquoise);padding:22px 24px 26px}
+.case-tekst .label{grid-column:1/-1;color:var(--zwart);opacity:.75}
+.case-tekst h2{grid-column:1;font:400 clamp(22px,1.9vw,28px)/1.1 var(--kop);margin:10px 0 8px;min-height:2.2em;text-wrap:balance}
+.case-tekst p{grid-column:1;margin:0;font-size:15px;line-height:1.5;text-wrap:pretty}
+.case-tekst .pijl{grid-column:2;grid-row:2/4;align-self:end;font-size:24px;transition:transform .25s}
+.case-tegel:hover .pijl{transform:translateX(6px)}
+.case-tegel:hover h2{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
+.case-tegel:hover img{opacity:.9}
+@media (max-width:1000px){.case-overzicht{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.case-overzicht{grid-template-columns:1fr;gap:26px}.case-tekst h2{min-height:0}}
