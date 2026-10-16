@@ -26,7 +26,10 @@ img{display:block;max-width:100%}
 /* ---------- topbalk met hamburger ---------- */
 .top{position:absolute;inset:0 0 auto 0;z-index:30;display:flex;align-items:center;justify-content:space-between;padding:24px var(--rand)}
 .top .merk img{width:118px;height:auto}
-.menuknop{width:46px;height:46px;border:0;background:transparent;color:var(--wit);cursor:pointer;display:grid;place-content:center;gap:9px;padding:0}
+.topnav{display:flex;gap:30px;margin-left:auto}
+.topnav a{text-decoration:none;font:500 12px/1 var(--tekst);letter-spacing:.16em;text-transform:uppercase;opacity:.85}
+.topnav a:hover{opacity:1;color:var(--koraal)}
+.menuknop{display:none;width:46px;height:46px;border:0;background:transparent;color:var(--wit);cursor:pointer;place-content:center;gap:9px;padding:0}
 .menuknop span{display:block;width:30px;height:1.5px;background:currentColor;transition:transform .25s}
 .menuknop[aria-expanded="true"] span:first-child{transform:translateY(5.25px) rotate(45deg)}
 .menuknop[aria-expanded="true"] span:last-child{transform:translateY(-5.25px) rotate(-45deg)}
@@ -61,7 +64,7 @@ body.menu-open{overflow:hidden}
   linear-gradient(0deg,var(--zwart) 0,rgba(25,26,25,.55) 22%,rgba(25,26,25,.12) 55%,rgba(25,26,25,.3) 100%),
   linear-gradient(90deg,rgba(25,26,25,.6) 0,rgba(25,26,25,0) 50%)}
 .hero-inhoud{position:relative;z-index:2;width:100%;padding:120px var(--rand) clamp(48px,6vw,88px)}
-.hero-logo{width:min(100%,1180px);height:auto;margin:0 0 clamp(48px,7vw,110px)}
+.hero-logo{width:clamp(260px,46vw,760px);height:auto;margin:0 0 clamp(48px,7vw,110px)}
 .hero-blok{max-width:min(100%,58ch)}
 .hero h1{font:300 clamp(36px,4vw,64px)/1.05 var(--kop);margin:0 0 22px;white-space:nowrap}
 .hero .lead{font-size:clamp(18px,1.5vw,22px);line-height:1.5;color:#e2e1dc;margin:0 0 18px;text-wrap:balance}
@@ -132,6 +135,8 @@ body.menu-open{overflow:hidden}
 /* ---------- klein scherm ---------- */
 @media (max-width:900px){
   .top{padding:16px var(--rand)}
+  .topnav{display:none}
+  .menuknop{display:grid;place-content:center;gap:9px;padding:0}
   .top .merk img{width:92px}
   .menu{padding-top:96px}
   .menu a{grid-template-columns:1fr;padding:16px 0}
