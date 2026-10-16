@@ -1,0 +1,43 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Systeemadvies en aankoopbegeleiding voor een licht- en geluidsverhuurbedrijf."><title>Systeemadvies voor een verhuurbedrijf · HEAR</title><link rel="alternate" hreflang="nl" href="/systeemadvies.html"><link rel="alternate" hreflang="en" href="/en/systeemadvies.html"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/home.css"><link rel="stylesheet" href="/styles.css"></head><body class="pagina"><header class="top">
+  <a class="merk" href="/en/index.html" aria-label="HEAR, to the homepage"><img src="/img/logo-white.png" alt="HEAR"></a>
+  <nav class="topnav" aria-label="Main navigation">
+    <a href="/en/cases.html" aria-current="page">Cases</a>
+    <a href="/doelgroepen.html">Who it's for</a>
+    <a href="/principes.html">Principles</a>
+    <a href="/diensten.html">Products</a>
+    <a href="/en/over-hear.html">About HEAR</a>
+  </nav>
+  <a class="taal" href="/systeemadvies.html" lang="nl" hreflang="nl" aria-label="Schakel naar Nederlands">NL</a>
+  <button class="menuknop" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+    <span></span><span></span>
+  </button>
+</header>
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Main menu">
+      <a href="/en/cases.html"><span>Cases</span><small>Events that capture the imagination</small></a>
+      <a href="/doelgroepen.html"><span>Who HEAR is for</span><small>Corporate clients, venue owners and dance events</small></a>
+      <a href="/principes.html"><span>Principles</span><small>The way we work</small></a>
+      <a href="/diensten.html"><span>Products and services</span><small>Light, sound, DJ gear and advice</small></a>
+      <a href="/en/over-hear.html"><span>About HEAR</span><small>Founder Maarten introduces himself</small></a>
+  </nav>
+</div>
+<script>
+  (function(){
+    var k=document.querySelector('.menuknop'), m=document.getElementById('menu');
+    function zet(open){ k.setAttribute('aria-expanded',open); k.setAttribute('aria-label',open?'Close menu':'Open menu'); m.hidden=!open; document.body.classList.toggle('menu-open',open); }
+    k.addEventListener('click',function(){ zet(k.getAttribute('aria-expanded')!=='true'); });
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape') zet(false); });
+  })();
+</script><main class="wrap"><section class="casehead"><a class="crumb" href="/en/cases.html">← All cases</a><h1 class="kernzin">System advice: a sound system that grows with a rental company</h1></section><section class="casehero systeemadvies met-ballon"><div style="position:relative"><img src="/img/systeem-breed.jpg" alt="Loudspeakers under a truss with moving heads"></div><figure class="ballon"><blockquote>My events AV company is clearly outgrowing itself. I needed more powerful sound, but above all good advice. What sounds good, which system suits which type of event, which purchase is future-proof because you can expand it modularly. Maarten advised me on buying a new sound system and arranged a sharp price too.</blockquote><figcaption><strong>Audiovisual (AV) rental company</strong></figcaption></figure></section><section class="case-sections"><article id="de-opdracht" class="case-section"><h2>THE BRIEF</h2><div><p>A lighting and sound rental company for private events was outgrowing its existing system. More powerful sound was needed, but above all advice on system choice and expansion.</p></div></article><article id="experience" class="case-section"><h2>EXPERIENCE</h2><div><p>HEAR advised on which type of system suits different rooms, which purchase can grow with the rental company and how to set the system up properly. Maarten also guided the purchase at a sharp price.</p></div></article><article id="resultaat" class="case-section"><h2>RESULT</h2><div><p>Good advice reduces the risk of an expensive wrong purchase and helps a rental company choose a system that fits today's jobs and tomorrow's growth.</p></div></article></section><nav class="bottomnav"><a href="/en/dj-sets.html">← A journey through 40 years of electronic music</a><a href="/en/prive-event.html">From industrial space to intimate atmosphere →</a></nav></main><footer class="voet">
+  <div class="voet-kolommen">
+    <div class="voet-merk">
+      <img src="/img/logo-white.png" alt="HEAR">
+      <p>High End Audio Rental · Amsterdam</p>
+      <p><a href="mailto:maarten@hear.nl">maarten@hear.nl</a></p>
+    </div>
+    <nav aria-label="Work"><p class="label">Work</p><a href="/en/cases.html">Cases</a><a href="/en/over-hear.html">About HEAR</a></nav>
+    <nav aria-label="Who it's for"><p class="label">Who it's for</p><a href="/corporate.html">Corporate clients</a><a href="/venue-owners.html">Venue owners</a><a href="/dance-events.html">Dance events</a></nav>
+    <nav aria-label="Products"><p class="label">Products</p><a href="/booth-dj-gear.html">Booth and DJ gear</a><a href="/high-end-audio.html">High-end audio</a><a href="/atmospheric-lighting.html">Atmospheric lighting</a><a href="/dancefloor-lighting.html">Dancefloor lighting</a><a href="/vintage-lighting.html">90s vintage lighting</a><a href="/av-as-a-service.html">Advice and AV as a service</a><a href="/artiesten.html">Artists</a><a href="/special-projects.html">Special projects</a></nav>
+    <nav aria-label="Principles"><p class="label">Principles</p><a href="/partnership.html">Partnership</a><a href="/aesthetics.html">Aesthetics</a><a href="/smart-solutions.html">Smart solutions</a><a href="/warm-sound.html">Warm sound</a></nav>
+  </div>
+</footer></body></html>

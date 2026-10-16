@@ -1,0 +1,589 @@
+{
+  "_uitleg": "Engelse vertalingen. scripts/bouw-en.py bouwt site/en/ uit de Nederlandse pagina's door exacte tekstvervanging. 'globaal' geldt voor alle pagina's (kop, menu, voet). Per pagina een lijst [nl, en]; elke nl-tekst moet letterlijk in de Nederlandse pagina staan. Vertaald: homepage, casesoverzicht, 8 cases, Over HEAR. Andere pagina's volgen na de contentreview. 'globaal' is optioneel per pagina; per-pagina teksten moeten gevonden worden.",
+  "vertaald": [
+    "index.html",
+    "cases.html",
+    "over-hear.html",
+    "ade-dj.html",
+    "dj-sets.html",
+    "gemeentelijk-netwerkevent.html",
+    "jubileum-ondernemersnetwerk.html",
+    "prive-event.html",
+    "productpresentatie.html",
+    "radio-mixes.html",
+    "systeemadvies.html"
+  ],
+  "globaal": [
+    [
+      ">Cases</a>",
+      ">Cases</a>"
+    ],
+    [
+      ">Voor wie</a>",
+      ">Who it's for</a>"
+    ],
+    [
+      ">Principes</a>",
+      ">Principles</a>"
+    ],
+    [
+      ">Producten</a>",
+      ">Products</a>"
+    ],
+    [
+      ">Over HEAR</a>",
+      ">About HEAR</a>"
+    ],
+    [
+      "aria-label=\"Hoofdnavigatie\"",
+      "aria-label=\"Main navigation\""
+    ],
+    [
+      "aria-label=\"Hoofdmenu\"",
+      "aria-label=\"Main menu\""
+    ],
+    [
+      "aria-label=\"Menu openen\"",
+      "aria-label=\"Open menu\""
+    ],
+    [
+      "open?'Menu sluiten':'Menu openen'",
+      "open?'Close menu':'Open menu'"
+    ],
+    [
+      "<span>Voorbeeldcases</span><small>Events die tot de verbeelding spreken</small>",
+      "<span>Cases</span><small>Events that capture the imagination</small>"
+    ],
+    [
+      "<span>Voor wie is HEAR</span><small>Corporate klanten, venue owners en dance events</small>",
+      "<span>Who HEAR is for</span><small>Corporate clients, venue owners and dance events</small>"
+    ],
+    [
+      "<span>Principes</span><small>De manier waarop wij werken</small>",
+      "<span>Principles</span><small>The way we work</small>"
+    ],
+    [
+      "<span>Producten en diensten</span><small>Licht, geluid, dj-gear en advies</small>",
+      "<span>Products and services</span><small>Light, sound, DJ gear and advice</small>"
+    ],
+    [
+      "<span>Over HEAR</span><small>Oprichter Maarten stelt zich voor</small>",
+      "<span>About HEAR</span><small>Founder Maarten introduces himself</small>"
+    ],
+    [
+      "aria-label=\"HEAR, naar de homepage\"",
+      "aria-label=\"HEAR, to the homepage\""
+    ],
+    [
+      "<nav aria-label=\"Werk\"><p class=\"label\">Werk</p>",
+      "<nav aria-label=\"Work\"><p class=\"label\">Work</p>"
+    ],
+    [
+      "<nav aria-label=\"Voor wie\"><p class=\"label\">Voor wie</p><a href=\"corporate.html\">Corporate klanten</a><a href=\"venue-owners.html\">Venue owners</a><a href=\"dance-events.html\">Dance events</a>",
+      "<nav aria-label=\"Who it's for\"><p class=\"label\">Who it's for</p><a href=\"corporate.html\">Corporate clients</a><a href=\"venue-owners.html\">Venue owners</a><a href=\"dance-events.html\">Dance events</a>"
+    ],
+    [
+      "<nav aria-label=\"Producten\"><p class=\"label\">Producten</p><a href=\"booth-dj-gear.html\">Booth en dj-gear</a><a href=\"high-end-audio.html\">High-end audio</a><a href=\"atmospheric-lighting.html\">Sfeerverlichting</a><a href=\"dancefloor-lighting.html\">Dansvloerverlichting</a><a href=\"vintage-lighting.html\">90's vintage licht</a><a href=\"av-as-a-service.html\">Advies en AV as a service</a><a href=\"artiesten.html\">Artiesten</a><a href=\"special-projects.html\">Special projects</a>",
+      "<nav aria-label=\"Products\"><p class=\"label\">Products</p><a href=\"booth-dj-gear.html\">Booth and DJ gear</a><a href=\"high-end-audio.html\">High-end audio</a><a href=\"atmospheric-lighting.html\">Atmospheric lighting</a><a href=\"dancefloor-lighting.html\">Dancefloor lighting</a><a href=\"vintage-lighting.html\">90s vintage lighting</a><a href=\"av-as-a-service.html\">Advice and AV as a service</a><a href=\"artiesten.html\">Artists</a><a href=\"special-projects.html\">Special projects</a>"
+    ],
+    [
+      "<nav aria-label=\"Principes\"><p class=\"label\">Principes</p><a href=\"partnership.html\">Partnership</a><a href=\"aesthetics.html\">Uitstraling</a><a href=\"smart-solutions.html\">Slimme oplossingen</a><a href=\"warm-sound.html\">Warm geluid</a>",
+      "<nav aria-label=\"Principles\"><p class=\"label\">Principles</p><a href=\"partnership.html\">Partnership</a><a href=\"aesthetics.html\">Aesthetics</a><a href=\"smart-solutions.html\">Smart solutions</a><a href=\"warm-sound.html\">Warm sound</a>"
+    ],
+    [
+      "<a class=\"crumb\" href=\"cases.html\">← Alle cases</a>",
+      "<a class=\"crumb\" href=\"cases.html\">← All cases</a>"
+    ],
+    [
+      "<a class=\"crumb\" href=\"index.html\">← HEAR</a>",
+      "<a class=\"crumb\" href=\"index.html\">← HEAR</a>"
+    ],
+    [
+      "<h2>DE OPDRACHT</h2>",
+      "<h2>THE BRIEF</h2>"
+    ],
+    [
+      "<h2>OPDRACHT</h2>",
+      "<h2>THE BRIEF</h2>"
+    ],
+    [
+      "<h2>EXPERIENCE</h2>",
+      "<h2>EXPERIENCE</h2>"
+    ],
+    [
+      "<h2>AANPAK</h2>",
+      "<h2>APPROACH</h2>"
+    ],
+    [
+      "<h2>RESULTAAT</h2>",
+      "<h2>RESULT</h2>"
+    ],
+    [
+      "<h2>CITAAT</h2>",
+      "<h2>QUOTE</h2>"
+    ],
+    [
+      "aria-label=\"Verder lezen\"",
+      "aria-label=\"Read on\""
+    ],
+    [
+      "Stuur een WhatsApp",
+      "Send a WhatsApp"
+    ],
+    [
+      "Luister ze hier op SoundCloud",
+      "Listen here on SoundCloud"
+    ],
+    [
+      "Meer weten? Kijk en luister op maartenversteeg.nl",
+      "Want to know more? Watch and listen at maartenversteeg.nl"
+    ]
+  ],
+  "cases_json": {
+    "productpresentatie.html": {
+      "titel": "Product launch\nwith theatre lighting, sound and DJ",
+      "tekst": "From focused product lighting by day to a warm dancefloor at night."
+    },
+    "ade-dj.html": {
+      "titel": "Transformation: from skate hall to dancefloor",
+      "tekst": "Converted for a one-night pop-up event, with hardly any soundcheck needed."
+    },
+    "jubileum-ondernemersnetwerk.html": {
+      "titel": "Anniversary of a business network",
+      "tekst": "A luxurious garden party in a residential area, without disturbing the neighbours."
+    },
+    "gemeentelijk-netwerkevent.html": {
+      "titel": "Seminar and networking event",
+      "tekst": "From lectures and workshops to a relaxed cocktail hour."
+    },
+    "dj-sets.html": {
+      "titel": "A journey through 40 years of electronic music",
+      "tekst": "DJ sets for corporate events, sky lounges and cocktail bars: from relaxed background to dancefloor."
+    },
+    "systeemadvies.html": {
+      "titel": "Advice on the right sound system for your space",
+      "tekst": "System advice for a lighting and sound rental company."
+    },
+    "prive-event.html": {
+      "titel": "From industrial space to intimate atmosphere",
+      "tekst": "A private party for friends and relations, with several DJs."
+    }
+  },
+  "doelgroepen": {
+    "corporate": "Corporate clients",
+    "venue": "Venue owners",
+    "dance": "Dance events"
+  },
+  "paginas": {
+    "index.html": [
+      [
+        "<html lang=\"nl\">",
+        "<html lang=\"en\">"
+      ],
+      [
+        "<title>HEAR · Hear the difference. · Licht, geluid en muziek voor events</title>",
+        "<title>HEAR · Hear the difference · Light, sound and music for events</title>"
+      ],
+      [
+        "content=\"Festivalkwaliteit, op de schaal van jouw event. Licht, geluid en muziek voor events van 150 tot 1.500 gasten.\"",
+        "content=\"Festival quality, at the scale of your event. Light, sound and music for events of 150 to 1,500 guests.\""
+      ],
+      [
+        "alt=\"Dansvloer in blauw en rood licht, een dj achter de booth in de nevel\"",
+        "alt=\"Dancefloor in blue and red light, a DJ behind the booth in the haze\""
+      ],
+      [
+        "Transformeer een locatie in een dansvloer, een event in een belevenis, een dj-set in een muzikale reis.",
+        "Transform a venue into a dancefloor, an event into an experience, a DJ set into a musical journey."
+      ],
+      [
+        "Voor midsize events (150 tot 1.500 personen)",
+        "For midsize events (150 to 1,500 people)"
+      ],
+      [
+        "<h2 id=\"werk-kop\">Uitgelicht werk</h2>",
+        "<h2 id=\"werk-kop\">Featured work</h2>"
+      ],
+      [
+        "aria-label=\"Vorige cases\"",
+        "aria-label=\"Previous cases\""
+      ],
+      [
+        "aria-label=\"Volgende cases\"",
+        "aria-label=\"Next cases\""
+      ],
+      [
+        "<span>Alle cases</span>",
+        "<span>All cases</span>"
+      ],
+      [
+        "aria-label=\"Verder op de site\"",
+        "aria-label=\"More on this site\""
+      ],
+      [
+        "<span class=\"v-titel\">Voor wie is HEAR</span>",
+        "<span class=\"v-titel\">Who HEAR is for</span>"
+      ],
+      [
+        "<span class=\"v-titel\">Principes en way of working</span>",
+        "<span class=\"v-titel\">Principles and way of working</span>"
+      ],
+      [
+        "<span class=\"v-titel\">Producten en diensten</span>",
+        "<span class=\"v-titel\">Products and services</span>"
+      ],
+      [
+        "alt=\"Portret van Maarten Versteeg in een industriële hal\"",
+        "alt=\"Portrait of Maarten Versteeg in an industrial hall\""
+      ],
+      [
+        "<h2 id=\"over-kop\" class=\"label\">Over HEAR</h2>",
+        "<h2 id=\"over-kop\" class=\"label\">About HEAR</h2>"
+      ],
+      [
+        "Als dj, corporate communicatieadviseur én founder van HEAR verbind ik de corporate evenementenwereld met cutting-edge techniek en muziek uit de dancescene.",
+        "As a DJ, corporate communications consultant and founder of HEAR, I connect the corporate events world with cutting-edge technology and music from the dance scene."
+      ],
+      [
+        "<a class=\"tekstlink\" href=\"over-hear.html\">Lees meer</a>",
+        "<a class=\"tekstlink\" href=\"over-hear.html\">Read more</a>"
+      ],
+      [
+        "<h2 id=\"afsluiter-kop\">Vertel wat je voor ogen hebt.</h2>",
+        "<h2 id=\"afsluiter-kop\">Tell us what you have in mind.</h2>"
+      ],
+      [
+        "We kijken wat jouw ruimte en jouw event nodig hebben om goed te klinken en te ogen. Daarna zoeken we de invulling.",
+        "We look at what your space and your event need to sound and look right. Then we work out how to get there."
+      ],
+      [
+        "<p>High End Audio Rental · Amsterdam</p>",
+        "<p>High End Audio Rental · Amsterdam</p>"
+      ]
+    ],
+    "cases.html": [
+      [
+        "<html lang=\"nl\">",
+        "<html lang=\"en\">"
+      ],
+      [
+        "<title>Cases · HEAR</title>",
+        "<title>Cases · HEAR</title>"
+      ],
+      [
+        "content=\"Cases en voorbeelden uit de praktijk van HEAR.\"",
+        "content=\"Cases and examples from HEAR's practice.\""
+      ]
+    ],
+    "over-hear.html": [
+      [
+        "<html lang=\"nl\">",
+        "<html lang=\"en\">"
+      ],
+      [
+        "<title>Founder story · HEAR</title>",
+        "<title>Founder story · HEAR</title>"
+      ],
+      [
+        "<h1>Founder story</h1>",
+        "<h1>Founder story</h1>"
+      ],
+      [
+        "alt=\"Maarten Versteeg zittend op een houten vloer in een industriële hal, met een koptelefoon en een rotary mixer voor zich\"",
+        "alt=\"Maarten Versteeg sitting on a wooden floor in an industrial hall, with headphones and a rotary mixer in front of him\""
+      ],
+      [
+        "<p>Ik ben Maarten. Sinds 1993 draai ik als dj in bars, clubs, rooftopbars en beachclubs, en op corporate events van modeshow tot productlancering. Soms ook in het buitenland. Daardoor heb ik veel verschillende ruimtes en licht- en geluidssystemen leren kennen. Soms klinkt het geweldig. Soms hoor je wat er nog mogelijk is.</p>",
+        "<p>I'm Maarten. Since 1993 I've been DJing in bars, clubs, rooftop bars and beach clubs, and at corporate events from fashion shows to product launches. Sometimes abroad. Along the way I've come to know a lot of different rooms and a lot of light and sound systems. Sometimes it sounds great. Sometimes you hear what's still possible.</p>"
+      ],
+      [
+        "<p>Daarnaast werk ik zo’n 25 jaar als communicatieadviseur voor grote organisaties. Ik weet dus ook hoe spannend een merkactivatie, productlancering of personeelsevent is voor een opdrachtgever.</p>",
+        "<p>Alongside that, I've worked for some 25 years as a communications consultant for large organisations. So I also know how much a brand activation, product launch or staff event matters to a client.</p>"
+      ],
+      [
+        "<p>Uit die combinatie is HEAR ontstaan. Ik begin bij wat een klant, bureau of artiest voor ogen heeft en zoek daar het geluid en het licht bij. Als dj hoor ik wat een ruimte nodig heeft. Als adviseur begrijp ik wat de opdrachtgever wil bereiken.</p>",
+        "<p>HEAR grew out of that combination. I start from what a client, agency or artist has in mind, and find the sound and light to match. As a DJ, I hear what a room needs. As a consultant, I understand what the client wants to achieve.</p>"
+      ],
+      [
+        "<p>Social media veranderen muziek en het dj-vak. Events worden groter en soms lijkt de show belangrijker dan de artiest. Bij HEAR staan licht en geluid in dienst van de artiest, met kleurrijke en creatieve lichtshows die de muziek en atmosfeer versterken.</p>",
+        "<p>Social media are changing music and the DJ profession. Events are getting bigger, and sometimes the show seems to matter more than the artist. At HEAR, light and sound serve the artist, with colourful, creative light shows that strengthen the music and the atmosphere.</p>"
+      ],
+      [
+        "<p>Dat doe ik bij kleine tot middelgrote events: van 100 tot 1.500 personen, in venues tot 40 meter diep. Ik werk daarbij samen met een netwerk van ervaren freelance professionals.</p>",
+        "<p>I do this at small to medium-sized events: from 100 to 1,500 people, in venues up to 40 metres deep. I work with a network of experienced freelance professionals.</p>"
+      ],
+      [
+        "<p>Daarnaast help ik venue-eigenaren hun ruimte om te bouwen tot een dansvloer voor een eenmalig event. Of ik adviseer ze hoe ze zelf hun licht en geluid kunnen inkopen: wat heeft de ruimte nodig, wat is er mogelijk en hoe zorg je dat het goed werkt, weinig onderhoud vraagt en lang meegaat? Daarbij breng ik ze in contact met de juiste leveranciers.</p>",
+        "<p>I also help venue owners turn their space into a dancefloor for a one-off event. Or I advise them on buying their own light and sound: what does the room need, what's possible, and how do you make sure it works well, needs little maintenance and lasts? And I put them in touch with the right suppliers.</p>"
+      ],
+      [
+        "<p>De naam HEAR heeft twee betekenissen. Allereerst staat het voor High End Audio Rental. Ik werk met merken waarvan de makers passie hebben voor hun vak. Zoals bij een goed Italiaans maatpak: het hoeft geen aandacht te trekken, maar de kenner ziet de snit, materialen en afwerking.</p>",
+        "<p>The name HEAR has two meanings. First of all, it stands for High End Audio Rental. I work with brands whose makers have a passion for their craft. Like a good Italian tailored suit: it doesn't need to draw attention, but the connoisseur sees the cut, the materials and the finish.</p>"
+      ],
+      [
+        "<p>Ik probeer continu nieuwe merken en producten uit. Ik vind het heel leuk om een band op te bouwen met Europese licht- en geluidsfabrikanten en samen te werken met professionals uit het vak. Daar leer ik veel van. Het maakt je ook bescheiden: hoe meer je leert van echte vakidioten, hoe meer je merkt wat je nog niet weet.</p>",
+        "<p>I'm always trying out new brands and products. I love building relationships with European light and sound manufacturers and working with professionals in the field. I learn a lot from it. It keeps you humble, too: the more you learn from true specialists, the more you notice what you don't know yet.</p>"
+      ],
+      [
+        "<p>Daarnaast staat HEAR voor ‘kiezen op gehoor’. Een rider-friendly assortiment is commercieel gezien natuurlijk belangrijk, maar eigen smaak ook. Daarin ben ik een tikje eigenwijs. Wat bij HEAR in de flightcase gaat, moet passen bij de artiest en de avond. Het moet iets zijn waar ik zelf met overtuiging achter sta, gemaakt met vakmanschap, respect voor de cultuur en innovatie.</p>",
+        "<p>HEAR also stands for choosing by ear. A rider-friendly range matters commercially, of course, but so does taste. I'm a little headstrong about that. Whatever goes into the HEAR flight case has to suit the artist and the night. It has to be something I stand behind with conviction, made with craftsmanship, respect for the culture, and innovation.</p>"
+      ],
+      [
+        "<strong>Maarten Versteeg</strong>DJ<br>Eigenaar Maarten Versteeg Communicatieadvies<br>Founder HEAR<br>",
+        "<strong>Maarten Versteeg</strong>DJ<br>Owner, Maarten Versteeg Communicatieadvies<br>Founder, HEAR<br>"
+      ]
+    ],
+    "ade-dj.html": [
+      [
+        "<html lang=\"nl\">",
+        "<html lang=\"en\">"
+      ],
+      [
+        "<span class=\"heel\">Pop-up</span> tijdens ADE: een skatehal voor één avond omgebouwd tot dansvloer",
+        "Pop-up at ADE: a skate hall turned into a dancefloor for one night"
+      ],
+      [
+        "alt=\"DJ-booth in een skatehal tijdens ADE\"",
+        "alt=\"DJ booth in a skate hall during ADE\""
+      ],
+      [
+        "Tijdens Amsterdam Dance Event organiseerden we een pop-up event. Vanuit Frankrijk aangekomen rekenden we op soundchecktijd, maar die was niet nodig: het klonk meteen goed. Warm, vol en de dj’s waren blij met de monitoring. Je merkt dat de service wordt verzorgd door iemand die zelf dj is en weet wat een dj nodig heeft.",
+        "We organised a pop-up event during Amsterdam Dance Event. Arriving from France, we had counted on soundcheck time, but it wasn't needed: it sounded right straight away. Warm, full, and the DJs were happy with the monitoring. You can tell the service is run by someone who is a DJ himself and knows what a DJ needs."
+      ],
+      [
+        "<p>Tijdens Amsterdam Dance Event werd een skatehal voor een pop-upevent eenmalig omgebouwd tot dansvloer. De opdracht had twee kanten: de venue voor één avond een nieuwe functie en sfeer geven, en tegelijk een betrouwbare technische setup realiseren voor het event en de Franse DJ Rivo.</p>",
+        "<p>During Amsterdam Dance Event, a skate hall was converted into a dancefloor for a one-off pop-up event. The brief had two sides: give the venue a new function and atmosphere for one night, and at the same time deliver a reliable technical setup for the event and the French DJ Rivo.</p>"
+      ],
+      [
+        "<p>De opstelling bestond uit rider-proof DJ-gear, een professionele mixer, een RCF-front-of-house-systeem en aparte monitorspeakers. Batterijgevoede verlichting accentueerde de DJ-booth en kleurde de omgeving. HEAR verzorgde transport, installatie en technische begeleiding.</p>",
+        "<p>The setup consisted of rider-proof DJ gear, a professional mixer, an RCF front-of-house system and separate monitor speakers. Battery-powered lighting accentuated the DJ booth and coloured the surroundings. HEAR took care of transport, installation and technical support.</p>"
+      ],
+      [
+        "<p>De technische begeleiding gaf terug dat er vrijwel geen soundcheck nodig was: het klonk meteen goed en de DJ’s waren tevreden over de monitoring. Ook waardeerden zij de proactieve communicatie vooraf over de spelerupdates en de benodigde update van de DJ-harddrive.</p>",
+        "<p>The artist's team reported that hardly any soundcheck was needed: it sounded right straight away and the DJs were happy with the monitoring. They also appreciated the proactive communication beforehand about the player updates and the required update of the DJ's hard drive.</p>"
+      ]
+    ],
+    "dj-sets.html": [
+      [
+        "<html lang=\"nl\">",
+        "<html lang=\"en\">"
+      ],
+      [
+        "Een reis door 40 jaar elektronische muziek, van cocktailbar tot dansvloer",
+        "A journey through 40 years of electronic music, from cocktail bar to dancefloor"
+      ],
+      [
+        "alt=\"Maarten Versteeg op een flightcase, met een plaat van Jori Hulkkonen en een koptelefoon\"",
+        "alt=\"Maarten Versteeg on a flight case, with a Jori Hulkkonen record and headphones\""
+      ],
+      [
+        "Maarten verbindt meerdere decennia muziek naadloos aan elkaar. Zijn sets zijn avontuurlijk en gevarieerd, maar voelen toch als één geheel.",
+        "Maarten seamlessly connects several decades of music. His sets are adventurous and varied, yet feel like one whole."
+      ],
+      [
+        "<p>Maarten Versteeg is rechtstreeks te boeken als dj en is daarnaast ook aangesloten bij Architects in Music, dat dj’s plaatst op bijzondere locaties en evenementen. Van luxe cocktailbars en skylounges tot beachclubs en corporate events.</p>",
+        "<p>Maarten Versteeg can be booked directly as a DJ and is also affiliated with Architects in Music, which places DJs at special venues and events. From luxury cocktail bars and sky lounges to beach clubs and corporate events.</p>"
+      ],
+      [
+        "<p>Met deephouse als verbindende schakel draait Maarten de soulvolle kant van elektronische muziek (soulful house, garage, disco, latin, afro) en de meer abstracte kant (tech-house), afhankelijk van wat de avond vraagt.</p>",
+        "<p>With deep house as the connecting thread, Maarten plays the soulful side of electronic music (soulful house, garage, disco, latin, afro) and the more abstract side (tech house), depending on what the night calls for.</p>"
+      ],
+      [
+        "<p>Zonder poespas of instagrammable moves is het juist de muziek die avontuurlijk is. De inhoud is de performance: het durven combineren van verschillende genres, van classics tot vernieuwend werk, toont een connaisseur met een brede platenkennis en gevoel voor samenhang.</p>",
+        "<p>No fuss, no Instagrammable moves: it's the music that is adventurous. The content is the performance. Daring to combine different genres, from classics to new work, shows a connoisseur with a broad knowledge of records and a feel for coherence.</p>"
+      ]
+    ],
+    "gemeentelijk-netwerkevent.html": [
+      [
+        "<html lang=\"nl\">",
+        "<html lang=\"en\">"
+      ],
+      [
+        "Business &amp; pleasure: van inhoudelijke seminars tot cocktail hour met dj",
+        "Business &amp; pleasure: from in-depth seminars to a cocktail hour with DJ"
+      ],
+      [
+        "alt=\"Sfeerbeeld van een lezing en netwerkevent\"",
+        "alt=\"Lecture and networking event\""
+      ],
+      [
+        "Na diverse lezingen en workshops was er aansluitend een cocktail hour. Dat werden een paar uren waarin het publiek naadloos overging van een inhoudelijk event naar een gezellige netwerkborrel.",
+        "After a series of lectures and workshops there was a cocktail hour. It turned into a few hours in which the audience moved seamlessly from a substantive event to a convivial networking drinks reception."
+      ],
+      [
+        "<strong>Opdrachtgever</strong>Gemeentelijke organisatie in Den Haag",
+        "<strong>Client</strong>Municipal organisation in The Hague"
+      ],
+      [
+        "<p>Een gemeentelijke organisatie in Den Haag organiseert jaarlijks een groot netwerkevent rond een maatschappelijk thema. Dit keer stond de toekomst van jongeren centraal: hoe bied je hen perspectief en help je voorkomen dat zij in het criminele milieu belanden? Circa 500 gasten namen deel aan lezingen en workshops, gevolgd door een netwerkavond.</p>",
+        "<p>A municipal organisation in The Hague holds a large networking event every year around a social theme. This time the focus was on the future of young people: how do you offer them prospects and help prevent them from drifting into crime? Around 500 guests took part in lectures and workshops, followed by a networking evening.</p>"
+      ],
+      [
+        "<p>HEAR verzorgde licht en geluid voor een programma dat inhoud en ontmoeting combineerde. Draadloze verlichting hield de uitstraling strak en voorkwam kabels op de vloer. Na diverse lezingen en workshops voor zo’n 500 gasten was er aansluitend een cocktail hour. Dat werden een paar uren waarin het publiek naadloos overging van een inhoudelijk event naar een gezellige netwerkborrel.</p>",
+        "<p>HEAR provided light and sound for a programme that combined content and encounter. Wireless lighting kept the look clean and avoided cables on the floor. After a series of lectures and workshops for some 500 guests there was a cocktail hour: a few hours in which the audience moved seamlessly from a substantive event to a convivial networking drinks reception.</p>"
+      ],
+      [
+        "<p>De opdrachtgever waardeerde de aandacht voor detail en de verzorgde uitstraling. Met draadloze verlichting, zonder kabels waar je over kunt struikelen. De muziek was modern én toegankelijk.</p>",
+        "<p>The client appreciated the attention to detail and the polished look. With wireless lighting, and no cables to trip over. The music was modern yet accessible.</p>"
+      ]
+    ],
+    "jubileum-ondernemersnetwerk.html": [
+      [
+        "<html lang=\"nl\">",
+        "<html lang=\"en\">"
+      ],
+      [
+        "Vijf jaar CreativeGrounds: een luxe tuinfeest in Oud-Zuid",
+        "Five years of CreativeGrounds: a luxurious garden party in Amsterdam's Oud-Zuid"
+      ],
+      [
+        "alt=\"DJ en saxofonist op een tuinfeest\"",
+        "alt=\"DJ and saxophonist at a garden party\""
+      ],
+      [
+        "Bij Creative Grounds houden we van een chique uitstraling bij alles wat we doen. Zelf hadden we het hele event al tot in de puntjes verzorgd, en de AV ging daar onzichtbaar in mee, niet op de voorgrond maar als onderdeel van de gehele look &amp; feel.",
+        "At Creative Grounds we like a chic look in everything we do. We had already taken care of every detail of the event ourselves, and the AV blended in invisibly: not in the foreground, but as part of the overall look &amp; feel."
+      ],
+      [
+        "<p>CreativeGrounds wilde midden in een woonwijk in Amsterdam-Zuid een luxe tuinfeest geven. Met goed geluid voor de dj's en de saxofonist, en zo weinig mogelijk impact op de buurt.</p>",
+        "<p>CreativeGrounds wanted to throw a luxurious garden party in the middle of a residential neighbourhood in Amsterdam-Zuid. With good sound for the DJs and the saxophonist, and as little impact on the neighbours as possible.</p>"
+      ],
+      [
+        "<p>We zetten krachtige systemen in voor korte afstand, die niet ver dragen. Tijdens het feest maten we regelmatig het geluidsniveau. Licht, geluid en de nieuwste dj-gear ondersteunden het programma.</p>",
+        "<p>We used powerful short-throw systems that don't carry far. During the party we measured the sound level regularly. Light, sound and the latest DJ gear supported the programme.</p>"
+      ],
+      [
+        "<p>Speeches, dj's en muzikanten gingen naadloos in elkaar over. De gasten waren uitbundig, zonder overmatige overlast voor de buurt. De techniek ging volledig op in de partytent.</p>",
+        "<p>Speeches, DJs and musicians flowed seamlessly into one another. The guests were exuberant, without excessive disturbance to the neighbourhood. The technology disappeared completely into the party tent.</p>"
+      ],
+      [
+        "<strong>Hugo Winnubst &amp; Lotte Nijborg</strong>Founders CreativeGrounds",
+        "<strong>Hugo Winnubst &amp; Lotte Nijborg</strong>Founders, CreativeGrounds"
+      ]
+    ],
+    "prive-event.html": [
+      [
+        "<html lang=\"nl\">",
+        "<html lang=\"en\">"
+      ],
+      [
+        "Privéfeest voor 150 gasten: van gewone zaal tot kleurrijke dansvloer",
+        "Private party for 150 guests: from ordinary room to colourful dancefloor"
+      ],
+      [
+        "alt=\"Sfeerbeeld van het privé-event met kleurrijke verlichting en gasten\"",
+        "alt=\"The private event with colourful lighting and guests\""
+      ],
+      [
+        "Maarten doet met HEAR vooral werk voor dance-events en zakelijke evenementen. Ik vroeg me af of hij ook een privé-evenement voor mij zou willen verzorgen. Dat wilde hij graag doen. Voor mijn feest met 150 vrienden en relaties veranderde hij een zaal die overdag vrij gewoon oogde in een kolkende, kleurrijke dansvloer, met verschillende DJ’s.",
+        "With HEAR, Maarten mainly works on dance events and corporate events. I wondered whether he would also do a private event for me. He was happy to. For my party with 150 friends and relations, he turned a room that looked quite ordinary by day into a heaving, colourful dancefloor, with several DJs."
+      ],
+      [
+        "<p>Maarten werkt met HEAR vooral voor dance-events en zakelijke evenementen. Voor Ronald Pronk verzorgde hij ook een privé-evenement voor 150 vrienden en relaties. Maarten en Ronald kennen elkaar al langer als DJ’s.</p>",
+        "<p>With HEAR, Maarten mainly works on dance events and corporate events. For Ronald Pronk he also took care of a private event for 150 friends and relations. Maarten and Ronald have known each other as DJs for a long time.</p>"
+      ],
+      [
+        "<p>De zaal werd voor het evenement getransformeerd tot een kleurrijke dansvloer voor verschillende DJ’s. Met Ronald en andere DJ’s in zijn netwerk deelt Maarten kennis en ervaring over zaken waar je als DJ achter de schermen tegenaan loopt.</p>",
+        "<p>For the event, the room was transformed into a colourful dancefloor for several DJs. With Ronald and other DJs in his network, Maarten shares knowledge and experience about the things you run into as a DJ behind the scenes.</p>"
+      ],
+      [
+        "<p>De ruimte werd voor één avond een levendige, kleurrijke dansvloer voor 150 vrienden en relaties, met meerdere DJ’s.</p>",
+        "<p>For one night, the space became a lively, colourful dancefloor for 150 friends and relations, with several DJs.</p>"
+      ]
+    ],
+    "productpresentatie.html": [
+      [
+        "<html lang=\"nl\">",
+        "<html lang=\"en\">"
+      ],
+      [
+        "<title>Productlancering met theaterlicht, geluid en dj · HEAR</title>",
+        "<title>Product launch with theatre lighting, sound and DJ · HEAR</title>"
+      ],
+      [
+        "Productlancering<br>met theaterlicht, geluid en dj",
+        "Product launch<br>with theatre lighting, sound and DJ"
+      ],
+      [
+        "alt=\"Sneakers op verlichte plateaus onder theaterspots, in een hal met blauw licht\"",
+        "alt=\"Sneakers on lit platforms under theatre spots, in a hall with blue light\""
+      ],
+      [
+        "De uitstraling was precies zoals we wilden, clean, licht industrieel maar ook warm",
+        "The look was exactly what we wanted: clean, slightly industrial, but warm too"
+      ],
+      [
+        "<p>Een modemerk organiseerde een productpresentatie met meerdere plateaus en een DJ-moment. De ruimte moest overdag geschikt zijn voor productpresentatie en later op de avond uitnodigen tot dansen.</p>",
+        "<p>A fashion brand organised a product presentation with several platforms and a DJ moment. The space had to work for the product presentation by day and invite people to dance later in the evening.</p>"
+      ],
+      [
+        "<p>HEAR verzorgde een locatiebezoek, lichtontwerp en programmering. Diverse spots, specifiek geschikt voor de theaterwereld en productdemonstraties, lichtten de sneakers, kleding en accessoires op de plateaus precies uit. Draadloze washlights kleurden de ruimte, zodat er nergens kabels zichtbaar waren en de locatie geen versterkte stroomvoorziening hoefde te leveren. Toen in de avond het licht uitging, was er een feestelijke overgang, ondersteund door lichtzuilen, spiegelbollen, nevel en een disco-dj. Dankzij een laserprojector was de nieuwe collectie nog de hele avond op de muur zichtbaar.</p>",
+        "<p>HEAR did a site visit, the lighting design and the programming. A range of spots, designed for theatre and product demonstrations, picked out the sneakers, clothing and accessories on the platforms precisely. Wireless wash lights coloured the space, so no cables were visible anywhere and the venue didn't have to supply extra power. When the lights went down in the evening there was a festive transition, supported by light columns, mirror balls, haze and a disco DJ. Thanks to a laser projector, the new collection stayed visible on the wall all evening.</p>"
+      ],
+      [
+        "<p>De opdrachtgever beschreef de gewenste uitstraling als clean en licht industrieel, zonder dat het koud wordt. Door een combinatie van strak design en warm licht is dit gerealiseerd. De dj was erg content met de nieuwste generatie mediaspelers, monitoring en PA.</p>",
+        "<p>The client described the look they wanted as clean and slightly industrial, without turning cold. A combination of sleek design and warm light achieved exactly that. The DJ was very happy with the latest generation of media players, the monitoring and the PA.</p>"
+      ]
+    ],
+    "radio-mixes.html": [
+      [
+        "<html lang=\"nl\">",
+        "<html lang=\"en\">"
+      ],
+      [
+        "<span class=\"heel\">Radio-mixes</span> voor Deep Radio: soulful house, deephouse en classics",
+        "Radio mixes for Deep Radio: soulful house, deep house and classics"
+      ],
+      [
+        "alt=\"Deep Radio-mix met soulful house, deephouse en classics\"",
+        "alt=\"Deep Radio mix with soulful house, deep house and classics\""
+      ],
+      [
+        "<p>Maarten Versteeg maakt op verzoek regelmatig DJ-mixes voor radiostations, zoals Deep Radio.</p>",
+        "<p>Maarten Versteeg regularly makes DJ mixes on request for radio stations such as Deep Radio.</p>"
+      ],
+      [
+        "<p>De mixes bewegen tussen soulful house, deephouse en classics. Een selectie is te beluisteren op SoundCloud. In toekomstige uitzendingen zal Maarten ook eigen houseproducties introduceren.</p>",
+        "<p>The mixes move between soulful house, deep house and classics. A selection can be heard on SoundCloud. In future broadcasts Maarten will also introduce his own house productions.</p>"
+      ],
+      [
+        "<p>Luisteraars geven veel feedback op de variatie en op de manier waarop classics en nieuw materiaal met elkaar worden verbonden.</p>",
+        "<p>Listeners respond strongly to the variety and to the way classics and new material are connected.</p>"
+      ]
+    ],
+    "systeemadvies.html": [
+      [
+        "<html lang=\"nl\">",
+        "<html lang=\"en\">"
+      ],
+      [
+        "Systeemadvies: een geluidssysteem dat meegroeit met een verhuurbedrijf",
+        "System advice: a sound system that grows with a rental company"
+      ],
+      [
+        "alt=\"Luidsprekers onder een truss met moving heads\"",
+        "alt=\"Loudspeakers under a truss with moving heads\""
+      ],
+      [
+        "Mijn AV-bedrijf voor evenementen groeit duidelijk uit zijn jasje. Ik had krachtiger geluid nodig, maar vooral ook goed advies. Wat goed klinkt, welk systeem past bij welk type event, welke aanschaf toekomstbestendig is, doordat je het modulair kunt uitbreiden. Maarten adviseerde me bij de aanschaf van een nieuw geluidssysteem én regelde een scherpe prijs.",
+        "My events AV company is clearly outgrowing itself. I needed more powerful sound, but above all good advice. What sounds good, which system suits which type of event, which purchase is future-proof because you can expand it modularly. Maarten advised me on buying a new sound system and arranged a sharp price too."
+      ],
+      [
+        "<strong>Audiovisueel (AV) verhuurbedrijf</strong>",
+        "<strong>Audiovisual (AV) rental company</strong>"
+      ],
+      [
+        "<p>Een licht- en geluidsverhuurbedrijf voor privé-evenementen groeide uit zijn bestaande systeem. Er was krachtiger geluid nodig, maar vooral advies over systeemkeuze en uitbreiding.</p>",
+        "<p>A lighting and sound rental company for private events was outgrowing its existing system. More powerful sound was needed, but above all advice on system choice and expansion.</p>"
+      ],
+      [
+        "<p>HEAR adviseerde welk type systeem past bij verschillende ruimtes, welke aanschaf kan meegroeien met de verhuurder en hoe het systeem goed wordt opgesteld. Maarten begeleidde ook de aankoop tegen een scherpe prijs.</p>",
+        "<p>HEAR advised on which type of system suits different rooms, which purchase can grow with the rental company and how to set the system up properly. Maarten also guided the purchase at a sharp price.</p>"
+      ],
+      [
+        "<p>Goed advies verkleint de kans op een kostbare verkeerde aanschaf en helpt een verhuurder een systeem te kiezen dat bij de opdrachten van vandaag én de groei van morgen past.</p>",
+        "<p>Good advice reduces the risk of an expensive wrong purchase and helps a rental company choose a system that fits today's jobs and tomorrow's growth.</p>"
+      ]
+    ]
+  }
+}

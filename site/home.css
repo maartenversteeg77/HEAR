@@ -194,3 +194,7 @@ em,i,cite,address,dfn,var{font-style:normal}
 
 /* mobiel: logo en payoff dichter bij elkaar, als één geheel (16 okt) */
 @media (max-width:900px){.home .hero,.home .hero-inhoud{min-height:calc(76svh - 78px)}.home .hero-inhoud{gap:40px}}
+/* taalwissel NL/EN in de kopbalk */
+.taal{margin-left:28px;text-decoration:none;font:500 12px/1 var(--tekst);letter-spacing:.16em;text-transform:uppercase;opacity:.85;border:1px solid currentColor;padding:7px 9px 6px;border-radius:2px}
+.taal:hover{opacity:1;color:var(--koraal)}
+@media (max-width:900px){.taal{margin-left:auto;margin-right:12px}}

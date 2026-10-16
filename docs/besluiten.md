@@ -121,3 +121,10 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - Dienstenpagina's: openen met de productrij (geen vullend kopbeeld), intro over de volle breedte; RCF-beelden van Maarten toegevoegd (KXL 4-A, KX-serie) (16 okt).
 - Principepagina's gevuld uit content/principes.json (scripts/bouw-principes.py), zelfde opbouw als diensten; Nederlandse namen: Partnership, Uitstraling, Slimme oplossingen, Warm geluid. Bronnen: presentatie-filosofie, Lighting Plan-ontwerpprincipes, Abbey-propositie, Maartens website-uitgangspunten (17 okt).
 - Hoofdnavigatie: Cases eerst, dan Voor wie, Principes, Producten, Over HEAR (ook mobiel menu). Reden: sluit aan op homepage die met werk begint (17 okt).
+
+## 17 okt — Engelse versie
+- Engelse pagina's onder /en/ voor homepage, casesoverzicht, 8 cases en Over HEAR. Bron: content/en.json (exacte NL→EN paren) + titel_en/tekst_en/naam_en in cases.json; scripts/bouw-en.py bouwt site/en/ en stopt als een NL-tekst niet meer gevonden wordt (bewaking tegen uit elkaar lopen).
+- Taalwissel NL/EN rechts in de kopbalk op alle pagina's; op nog niet vertaalde pagina's leidt EN naar de Engelse homepage. Engelse pagina's linken voor niet-vertaalde onderdelen naar de Nederlandse pagina.
+- hreflang-links in de head van vertaalde pagina's.
+- Vorige/volgende op casepagina's volgt nu de volgorde en titels van cases.json (NL en EN); radio-mixes sluit de keten.
+- Werkwijze: na elke wijziging aan een vertaalde NL-pagina ook en.json bijwerken en bouw-en.py draaien.

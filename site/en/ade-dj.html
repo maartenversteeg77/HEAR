@@ -1,0 +1,43 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Een skatehal voor één avond omgebouwd tot dansvloer: repurposing en technische realisatie tijdens ADE."><title>DJ-setup tijdens ADE · HEAR</title><link rel="alternate" hreflang="nl" href="/ade-dj.html"><link rel="alternate" hreflang="en" href="/en/ade-dj.html"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/home.css"><link rel="stylesheet" href="/styles.css"></head><body class="pagina"><header class="top">
+  <a class="merk" href="/en/index.html" aria-label="HEAR, to the homepage"><img src="/img/logo-white.png" alt="HEAR"></a>
+  <nav class="topnav" aria-label="Main navigation">
+    <a href="/en/cases.html" aria-current="page">Cases</a>
+    <a href="/doelgroepen.html">Who it's for</a>
+    <a href="/principes.html">Principles</a>
+    <a href="/diensten.html">Products</a>
+    <a href="/en/over-hear.html">About HEAR</a>
+  </nav>
+  <a class="taal" href="/ade-dj.html" lang="nl" hreflang="nl" aria-label="Schakel naar Nederlands">NL</a>
+  <button class="menuknop" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+    <span></span><span></span>
+  </button>
+</header>
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Main menu">
+      <a href="/en/cases.html"><span>Cases</span><small>Events that capture the imagination</small></a>
+      <a href="/doelgroepen.html"><span>Who HEAR is for</span><small>Corporate clients, venue owners and dance events</small></a>
+      <a href="/principes.html"><span>Principles</span><small>The way we work</small></a>
+      <a href="/diensten.html"><span>Products and services</span><small>Light, sound, DJ gear and advice</small></a>
+      <a href="/en/over-hear.html"><span>About HEAR</span><small>Founder Maarten introduces himself</small></a>
+  </nav>
+</div>
+<script>
+  (function(){
+    var k=document.querySelector('.menuknop'), m=document.getElementById('menu');
+    function zet(open){ k.setAttribute('aria-expanded',open); k.setAttribute('aria-label',open?'Close menu':'Open menu'); m.hidden=!open; document.body.classList.toggle('menu-open',open); }
+    k.addEventListener('click',function(){ zet(k.getAttribute('aria-expanded')!=='true'); });
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape') zet(false); });
+  })();
+</script><main class="wrap"><section class="casehead"><a class="crumb" href="/en/cases.html">← All cases</a><h1 class="kernzin">Pop-up at ADE: a skate hall turned into a dancefloor for one night</h1></section><section class="casehero ade-dj met-ballon"><div style="position:relative"><img src="/img/ade-park.jpg" alt="DJ booth in a skate hall during ADE"></div><figure class="ballon"><blockquote>We organised a pop-up event during Amsterdam Dance Event. Arriving from France, we had counted on soundcheck time, but it wasn't needed: it sounded right straight away. Warm, full, and the DJs were happy with the monitoring. You can tell the service is run by someone who is a DJ himself and knows what a DJ needs.</blockquote><figcaption><strong>Artist management Rivo</strong></figcaption></figure></section><section class="case-sections"><article id="de-opdracht" class="case-section"><h2>THE BRIEF</h2><div><p>During Amsterdam Dance Event, a skate hall was converted into a dancefloor for a one-off pop-up event. The brief had two sides: give the venue a new function and atmosphere for one night, and at the same time deliver a reliable technical setup for the event and the French DJ Rivo.</p></div></article><article id="experience" class="case-section"><h2>EXPERIENCE</h2><div><p>The setup consisted of rider-proof DJ gear, a professional mixer, an RCF front-of-house system and separate monitor speakers. Battery-powered lighting accentuated the DJ booth and coloured the surroundings. HEAR took care of transport, installation and technical support.</p></div></article><article id="resultaat" class="case-section"><h2>RESULT</h2><div><p>The artist's team reported that hardly any soundcheck was needed: it sounded right straight away and the DJs were happy with the monitoring. They also appreciated the proactive communication beforehand about the player updates and the required update of the DJ's hard drive.</p></div></article></section><nav class="bottomnav"><a href="/en/productpresentatie.html">← Product launch with theatre lighting, sound and DJ</a><a href="/en/jubileum-ondernemersnetwerk.html">Anniversary of a business network →</a></nav></main><footer class="voet">
+  <div class="voet-kolommen">
+    <div class="voet-merk">
+      <img src="/img/logo-white.png" alt="HEAR">
+      <p>High End Audio Rental · Amsterdam</p>
+      <p><a href="mailto:maarten@hear.nl">maarten@hear.nl</a></p>
+    </div>
+    <nav aria-label="Work"><p class="label">Work</p><a href="/en/cases.html">Cases</a><a href="/en/over-hear.html">About HEAR</a></nav>
+    <nav aria-label="Who it's for"><p class="label">Who it's for</p><a href="/corporate.html">Corporate clients</a><a href="/venue-owners.html">Venue owners</a><a href="/dance-events.html">Dance events</a></nav>
+    <nav aria-label="Products"><p class="label">Products</p><a href="/booth-dj-gear.html">Booth and DJ gear</a><a href="/high-end-audio.html">High-end audio</a><a href="/atmospheric-lighting.html">Atmospheric lighting</a><a href="/dancefloor-lighting.html">Dancefloor lighting</a><a href="/vintage-lighting.html">90s vintage lighting</a><a href="/av-as-a-service.html">Advice and AV as a service</a><a href="/artiesten.html">Artists</a><a href="/special-projects.html">Special projects</a></nav>
+    <nav aria-label="Principles"><p class="label">Principles</p><a href="/partnership.html">Partnership</a><a href="/aesthetics.html">Aesthetics</a><a href="/smart-solutions.html">Smart solutions</a><a href="/warm-sound.html">Warm sound</a></nav>
+  </div>
+</footer></body></html>
