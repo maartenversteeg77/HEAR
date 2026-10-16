@@ -102,3 +102,4 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - Systeemadvies-kopbeeld idem verbreed met vervaagde zijkanten (img/systeem-breed.jpg, scripts/verbreed.py). Kopbeelden groeien mee op brede schermen (hoogte max. 44vw/78vh i.p.v. 640px), zodat er minder wordt afgesneden (16 okt).
 - ADE: nieuw breed beeld van Maarten (img/ade-park.jpg) als kopbeeld en tegel; verbrede versie vervalt (16 okt).
 - Jubileum-kopbeeld: hele foto met dj en saxofonist zichtbaar (img/jubileum-breed.jpg, vervaagde zijkanten). Gezichten in beeld; Maarten vraagt de saxofonist om toestemming vóór de site live gaat — OPEN PUNT (16 okt).
+- Dj-sets: nieuwe brede portretfoto van Maarten (img/dj-maarten-breed.jpg) als kopbeeld en tegel, vullend zoals de andere cases (16 okt).
