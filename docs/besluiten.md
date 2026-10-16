@@ -70,6 +70,7 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - Productpresentatie-case: geanonimiseerd beeld (16 okt): matte vloer, collectie herkleurd naar jonger en kleurrijker. Oorspronkelijke merkfoto van de site gehaald.
 
 ## Open punten
+- Casepagina Jubileum ondernemersnetwerk: beeld blijft voorlopig zoals het is. Maarten vraagt de saxofonist om toestemming; daarna uitsnede met gezichten van dj en saxofonist (vergelijking 16 okt: gezichten-uitsnede vertelt het verhaal beter dan sax-detail).
 - Uitleg van "wij" (Maarten + netwerk) stond in het statementvlak en is daarmee van de homepage verdwenen; nieuwe plek kiezen (bijv. Over HEAR).
 - Labelset voor cases.
 - Founder story noemt nog "100 tot 1.500 personen"; aanpassen naar 150–1.500?
