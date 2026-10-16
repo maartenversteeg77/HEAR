@@ -22,9 +22,9 @@ We zetten krachtige systemen in voor korte afstand, die niet ver dragen. Tijdens
 Speeches, dj's en muzikanten gingen naadloos in elkaar over. De gasten waren uitbundig, zonder overmatige overlast voor de buurt. De techniek ging volledig op in de partytent.
 
 ## Citaat
-> Bij CG houden we van een chique uitstraling bij alles wat we doen. Zelf hadden we het hele event al tot in de puntjes verzorgd, en de AV ging daar onzichtbaar in mee, niet op de voorgrond maar als onderdeel van de gehele look & feel.
+> Bij Creative Grounds houden we van een chique uitstraling bij alles wat we doen. Zelf hadden we het hele event al tot in de puntjes verzorgd, en de AV ging daar onzichtbaar in mee, niet op de voorgrond maar als onderdeel van de gehele look & feel.
 
-— *naam en rol volgen*, CreativeGrounds
+— Hugo Winnubst & Lotte Nijborg, founders CreativeGrounds
 
 ---
 Bron: tekst van Maarten (15 okt 2026), redactioneel herschikt.
