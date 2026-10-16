@@ -63,8 +63,8 @@ body.menu-open{overflow:hidden}
 .hero::after{content:"";position:absolute;inset:0;background:
   linear-gradient(0deg,var(--zwart) 0,rgba(25,26,25,.55) 22%,rgba(25,26,25,.12) 55%,rgba(25,26,25,.3) 100%),
   linear-gradient(90deg,rgba(25,26,25,.6) 0,rgba(25,26,25,0) 50%)}
-.hero-inhoud{position:relative;z-index:2;width:100%;padding:120px var(--rand) clamp(48px,6vw,88px)}
-.hero-logo{width:clamp(260px,46vw,760px);height:auto;margin:0 0 clamp(48px,7vw,110px)}
+.hero-inhoud{position:relative;z-index:2;width:100%;min-height:100svh;display:flex;flex-direction:column;justify-content:space-between;gap:48px;padding:clamp(84px,9vw,120px) var(--rand) clamp(48px,6vw,88px)}
+.hero-logo{display:block;width:clamp(260px,46vw,760px);height:auto;margin:0}
 .hero-blok{max-width:min(100%,58ch)}
 .hero h1{font:300 clamp(36px,4vw,64px)/1.05 var(--kop);margin:0 0 22px;white-space:nowrap}
 .hero .lead{font-size:clamp(18px,1.5vw,22px);line-height:1.5;color:#e2e1dc;margin:0 0 18px;text-wrap:balance}
@@ -182,4 +182,3 @@ body.menu-open{overflow:hidden}
 .v-titel{min-height:2.1em;text-wrap:balance}
 .werk-kaart p{text-wrap:pretty}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-.hero-logo{display:block}
