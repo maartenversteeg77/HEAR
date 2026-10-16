@@ -64,7 +64,7 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - Logo-lockup teruggedraaid (16 okt): pay-off weer als losse kop "Hear the difference" (zonder punt); HEAR-logo linksboven in de hero, tekstblok onderin. (Lockup-proef staat in git.) Eerder: "Hear the difference" (zonder punt: het is logo) onder het logo, kleine letter, uitgevuld tot exact de breedte van het logo (SVG). Kop als aparte tekstregel vervalt (blijft onzichtbaar voor zoekmachines/schermlezers). Over HEAR: "eigenaar" wordt "founder".
 - Typografie in reeksen (16 okt): koppen in kaarten en blokken krijgen de hoogte van twee regels, zodat de tekst eronder gelijk staat; woorden evenwichtig verdelen, geen los woord op de laatste regel.
 - Kleur (16 okt): citaatblokken op casepagina's en de kaart 'Alle cases' worden turquoise (#7AC3C9) met zwarte tekst, i.p.v. zwart; koraal zit al in het blok op de homepage. ADE-citaat: bron 'Artist management Rivo'.
-- Achtergrond overal #F6F5F1 (gebroken wit, licht warm-grijs); de beige tinten van het ChatGPT-geraamte (#f3f0e9 e.a.) vervangen op alle oude pagina's (16 okt).
+- Detailpagina's (oude stijl) proef 16 okt: koeler gebroken wit #F4F5F5 met neutrale grijzen; homepage blijft #F6F5F1. Eerder: achtergrond overal #F6F5F1 (gebroken wit, licht warm-grijs); de beige tinten van het ChatGPT-geraamte (#f3f0e9 e.a.) vervangen op alle oude pagina's (16 okt).
 - Letters: Advent Pro voor koppen, Helvetica/Arial voor lopende tekst.
 - Referentie die aanspreekt: musicandpower.com (zwarte basis, groot merk over beeld, gelaagde blokken).
 - Eén consistente letter, tenzij die voor bezoekers niet goed leesbaar is.
