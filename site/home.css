@@ -175,3 +175,5 @@ body.menu-open{overflow:hidden}
   .verder a:last-child{border-bottom:0}
   .over img{aspect-ratio:4/5}
 }
+.over h2.label{font:600 11px/1 var(--tekst);letter-spacing:.2em;text-transform:uppercase;color:var(--koraal);margin:0 0 22px;max-width:none}
+.over .over-tekst{font:300 clamp(24px,2.3vw,36px)/1.25 var(--kop);color:var(--wit);max-width:30ch;margin:0 0 26px}
