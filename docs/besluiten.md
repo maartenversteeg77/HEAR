@@ -90,3 +90,4 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - Proef netwerkevent: klantquote als turquoise tekstballon midden tussen de tekst, buiten de lijnenstructuur, naam eronder (16 okt).
 - Kopbeelden op alle contentpagina's: los onder de zwarte balk met witruimte ertussen, binnen de paginamarges, verhouding 3:2 (portretten van dj-sets en radio-mixes onbijgesneden) (16 okt).
 - Proef netwerkevent: tekstballon met klantnaam erin, rechts naast het kopbeeld; op mobiel onder het beeld (16 okt).
+- Teruggedraaid: kopbeelden weer vullend over de volle breedte (losse foto afgewezen). Tekstballon zonder puntje, licht transparant turquoise, op de rechterkant van het kopbeeld; op mobiel half over de onderrand (16 okt).

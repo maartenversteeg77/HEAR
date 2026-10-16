@@ -128,23 +128,15 @@ body.pagina.menu-open .top{position:fixed}
 .visual-card::before{content:"";position:absolute;inset:0 0 auto;height:90px;z-index:1;background:linear-gradient(rgba(25,26,25,.55),transparent);pointer-events:none}
 .visual-card-kicker{z-index:2}
 
-/* kopbeeld: altijd helemaal zichtbaar, los onder de zwarte balk, niet bijgesneden (16 okt) */
-.casehero,.detail-image,.casehero.dj-sets,.casehero.radio-mixes{height:auto;margin:0;padding:clamp(28px,4vw,56px) 0 0;background:none;overflow:visible;display:flex;gap:clamp(24px,3vw,48px);align-items:flex-end}
-.casehero>div,.detail-image>img{flex:1 1 auto;min-width:0;height:auto;margin:0}
-.casehero img,.detail-image img{display:block;width:100%;height:auto;aspect-ratio:3/2;max-height:78vh;object-fit:cover}
-.casehero.dj-sets>div,.casehero.radio-mixes>div{flex:0 1 auto;max-width:none}
-.casehero.dj-sets img,.casehero.radio-mixes img{width:auto;max-width:100%;aspect-ratio:auto;object-fit:contain}
-.detail-image+.topic-group{padding-top:clamp(36px,4vw,56px)}
-
-/* klantquote als tekstballon naast het kopbeeld (proef op netwerkevent) */
-.ballon{position:relative;flex:0 0 min(380px,32%);margin:0 0 30px;background:var(--turquoise);color:var(--zwart);border-radius:28px;padding:clamp(54px,5vw,70px) clamp(24px,2.6vw,38px) clamp(28px,3vw,38px);text-align:center}
+/* klantquote als tekstballon op de rechterkant van het kopbeeld (proef op netwerkevent) */
+.met-ballon{position:relative}
+.ballon{position:absolute;right:var(--rand);top:50%;transform:translateY(-50%);width:min(400px,34%);margin:0;background:rgba(122,195,201,.88);color:var(--zwart);border-radius:28px;padding:clamp(54px,5vw,70px) clamp(24px,2.6vw,38px) clamp(26px,3vw,36px);text-align:center;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
 .ballon::before{content:"“";position:absolute;top:clamp(4px,.8vw,10px);left:0;right:0;font:400 clamp(60px,5vw,80px)/1 var(--kop)}
-.ballon::after{content:"";position:absolute;bottom:34px;left:-20px;border:12px solid transparent;border-right:22px solid var(--turquoise);border-left:0}
-.ballon blockquote{margin:0;font:300 italic clamp(19px,1.6vw,24px)/1.32 var(--kop);text-wrap:balance}
-.ballon figcaption{margin-top:22px;padding-top:16px;border-top:1px solid rgba(25,26,25,.3);font:600 11px/1.6 var(--tekst);letter-spacing:.18em;text-transform:uppercase}
+.ballon blockquote{margin:0;font:300 italic clamp(18px,1.5vw,23px)/1.32 var(--kop);text-wrap:balance}
+.ballon figcaption{margin-top:20px;padding-top:14px;border-top:1px solid rgba(25,26,25,.3);font:600 11px/1.6 var(--tekst);letter-spacing:.18em;text-transform:uppercase}
 .ballon figcaption strong{display:block;font-weight:700}
 @media (max-width:760px){
-  .met-ballon{flex-direction:column;align-items:stretch}
-  .ballon{flex:none;margin:12px 0 0}
-  .ballon::after{top:-20px;bottom:auto;left:40px;border:12px solid transparent;border-bottom:22px solid var(--turquoise);border-top:0}
+  .ballon{position:relative;right:auto;top:auto;transform:none;width:auto;margin:-48px var(--rand) 0;background:var(--turquoise)}
+  .casehero.met-ballon{height:auto;background:none}
+  .casehero.met-ballon>div{height:300px}
 }
