@@ -181,3 +181,5 @@ body.pagina.menu-open .top{position:fixed}
 .casehero.dj-breed img{object-position:center 8%}
 /* geen cursief op de site (16 okt) */
 em,i,cite,address,dfn,var{font-style:normal}
+.founder-tussen{margin:30px 0 34px;max-width:380px}
+.founder-tussen img{display:block;width:100%;height:auto}
