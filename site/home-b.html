@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Variant B · HEAR · Hear the difference. · Licht, geluid en muziek voor events</title>
+<meta name="description" content="Festivalkwaliteit, op de schaal van jouw event. Licht, geluid en muziek voor events van 150 tot 1.500 gasten.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="home.css">
+</head>
+<body class="home variant-b">
+
+<header class="top">
+  <a class="merk" href="index.html" aria-label="HEAR, naar de homepage"><img src="img/logo-white.png" alt="HEAR"></a>
+  <nav class="topnav" aria-label="Hoofdnavigatie">
+    <a href="doelgroepen.html">Voor wie</a>
+    <a href="cases.html">Cases</a>
+    <a href="principes.html">Principes</a>
+    <a href="diensten.html">Diensten</a>
+    <a href="over-hear.html">Over HEAR</a>
+  </nav>
+  <button class="menuknop" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu openen">
+    <span></span><span></span>
+  </button>
+</header>
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Hoofdmenu">
+      <a href="doelgroepen.html"><span>Voor wie is HEAR</span><small>Corporate en reclamebureaus, venue owners en dance events</small></a>
+      <a href="cases.html"><span>Voorbeeldcases</span><small>Events die tot de verbeelding spreken</small></a>
+      <a href="principes.html"><span>Principes</span><small>De manier waarop wij werken</small></a>
+      <a href="diensten.html"><span>Diensten en producten</span><small>De etalage: licht, geluid, merken en techniek</small></a>
+      <a href="over-hear.html"><span>Over HEAR</span><small>Oprichter Maarten stelt zich voor</small></a>
+  </nav>
+</div>
+<script>
+  (function(){
+    var k=document.querySelector('.menuknop'), m=document.getElementById('menu');
+    function zet(open){ k.setAttribute('aria-expanded',open); k.setAttribute('aria-label',open?'Menu sluiten':'Menu openen'); m.hidden=!open; document.body.classList.toggle('menu-open',open); }
+    k.addEventListener('click',function(){ zet(k.getAttribute('aria-expanded')!=='true'); });
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape') zet(false); });
+  })();
+</script>
+
+<main>
+
+  <section class="hero" aria-labelledby="hero-kop">
+    <img class="hero-bg" src="img/hero-dansvloer.jpg" alt="Dansvloer in blauw en rood licht, een dj achter de booth in de nevel" fetchpriority="high">
+    <div class="hero-inhoud">
+      <h1 id="hero-kop" class="hero-payoff">Hear the difference</h1>
+      <div class="hero-blok">
+        
+        <p class="lead">Transformeer een locatie in een dansvloer, een event in een belevenis, een dj in een muzikale reis.</p>
+        <p class="feiten">Voor midsize events (150 tot 1.500 personen)</p>
+        <div class="hero-acties">
+          <a class="wa" href="https://wa.me/" data-whatsapp>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1.1 2.7.1.2 1.8 2.8 4.4 3.9 1.7.7 2.3.8 3.1.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.8-.3Z"/></svg>
+          Stuur een WhatsApp
+        </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  
+
+  <section class="werk" aria-labelledby="werk-kop">
+    <div class="werk-kop">
+      <h2 id="werk-kop">Uitgelicht werk</h2>
+      <div class="werk-pijlen">
+        <button type="button" data-richting="-1" aria-label="Vorige cases">←</button>
+        <button type="button" data-richting="1" aria-label="Volgende cases">→</button>
+      </div>
+    </div>
+    <div class="werk-rij" id="werk-rij">
+      <a class="werk-kaart werk-alle" href="cases.html"><span>Alle cases</span><span class="pijl" aria-hidden="true">→</span></a>
+    </div>
+  </section>
+  <script>
+    (function(){
+      var rij=document.getElementById('werk-rij'), alle=rij.querySelector('.werk-alle');
+      fetch('cases.json').then(function(r){return r.json()}).then(function(d){
+        d.cases.filter(function(c){return c.status==='af'}).forEach(function(c){
+          var a=document.createElement('a'); a.className='werk-kaart'; a.href=c.link;
+          a.innerHTML='<img loading="lazy" alt=""><span class="label"></span><h3></h3><p></p>';
+          a.querySelector('img').src=c.beeld; a.querySelector('img').alt=c.alt; if(c.positie) a.querySelector('img').style.objectPosition=c.positie;
+          a.querySelector('.label').textContent=(c.doelgroepen||[]).map(function(k){return d.doelgroepen[k].naam}).join(' · '); a.querySelector('h3').textContent=c.titel; a.querySelector('p').textContent=c.tekst;
+          rij.insertBefore(a,alle);
+        });
+        rij.scrollLeft=0;
+      });
+      document.querySelectorAll('.werk-pijlen button').forEach(function(k){
+        k.addEventListener('click',function(){ var kaart=rij.querySelector('.werk-kaart'); var stap=kaart?kaart.getBoundingClientRect().width+22:400; rij.scrollBy({left:stap*k.dataset.richting,behavior:'smooth'}); });
+      });
+    })();
+  </script>
+
+  <section class="verder" aria-label="Verder op de site">
+    <a href="doelgroepen.html"><span class="v-titel">Voor wie is HEAR</span><span class="pijl" aria-hidden="true">→</span></a>
+    <a href="principes.html"><span class="v-titel">Principes en way of working</span><span class="pijl" aria-hidden="true">→</span></a>
+    <a href="diensten.html"><span class="v-titel">Diensten en producten</span><span class="pijl" aria-hidden="true">→</span></a>
+  </section>
+
+  <section class="over" aria-labelledby="over-kop">
+    <img src="img/maarten-press.jpg" alt="Portret van Maarten Versteeg in een industriële hal" loading="lazy">
+    <div>
+      <h2 id="over-kop" class="label">Over HEAR</h2>
+      <p class="over-tekst">Als dj, corporate communicatieadviseur én founder van HEAR verbind ik de corporate evenementenwereld met cutting-edge techniek en muziek uit de dancescene.</p>
+      <a class="tekstlink" href="over-hear.html">Lees meer</a>
+    </div>
+  </section>
+
+  <section class="afsluiter" aria-labelledby="afsluiter-kop">
+    <h2 id="afsluiter-kop">Vertel wat je voor ogen hebt.</h2>
+    <div>
+      <p>We kijken wat jouw ruimte en jouw event nodig hebben om goed te klinken en te ogen. Daarna zoeken we de invulling.</p>
+      <a class="wa" href="https://wa.me/" data-whatsapp>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1.1 2.7.1.2 1.8 2.8 4.4 3.9 1.7.7 2.3.8 3.1.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.8-.3Z"/></svg>
+        Stuur een WhatsApp
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="voet">
+  <div class="voet-kolommen">
+    <div class="voet-merk">
+      <img src="img/logo-white.png" alt="HEAR">
+      <p>High End Audio Rental · Amsterdam</p>
+      <p><a href="mailto:maarten@hear.nl">maarten@hear.nl</a></p>
+    </div>
+    <nav aria-label="Werk"><p class="label">Werk</p><a href="cases.html">Cases</a><a href="over-hear.html">Over HEAR</a></nav>
+    <nav aria-label="Voor wie"><p class="label">Voor wie</p><a href="corporate.html">Corporate en reclamebureaus</a><a href="venue-owners.html">Venue owners</a><a href="dance-events.html">Dance events</a></nav>
+    <nav aria-label="Diensten"><p class="label">Diensten</p><a href="booth-dj-gear.html">Booth en dj-gear</a><a href="high-end-audio.html">High-end audio</a><a href="atmospheric-lighting.html">Sfeerverlichting</a><a href="dancefloor-lighting.html">Dansvloerverlichting</a><a href="vintage-lighting.html">90's vintage licht</a><a href="av-as-a-service.html">Advies en AV as a service</a><a href="artiesten.html">Artiesten</a><a href="special-projects.html">Special projects</a></nav>
+    <nav aria-label="Principes"><p class="label">Principes</p><a href="partnership.html">Partnership</a><a href="aesthetics.html">Uitstraling</a><a href="smart-solutions.html">Slimme oplossingen</a><a href="warm-sound.html">Warm geluid</a></nav>
+  </div>
+</footer>
+
+</body>
+</html>
