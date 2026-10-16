@@ -128,15 +128,18 @@ body.pagina.menu-open .top{position:fixed}
 .visual-card::before{content:"";position:absolute;inset:0 0 auto;height:90px;z-index:1;background:linear-gradient(rgba(25,26,25,.55),transparent);pointer-events:none}
 .visual-card-kicker{z-index:2}
 
-/* klantquote als tekstballon op de rechterkant van het kopbeeld (proef op netwerkevent) */
+/* klantquote als tekstballon op het kopbeeld; het aanhalingsteken is uit de ballon gesneden */
 .met-ballon{position:relative}
-.ballon{position:absolute;right:var(--rand);top:50%;transform:translateY(-50%);width:min(400px,34%);margin:0;background:rgba(122,195,201,.88);color:var(--zwart);border-radius:28px;padding:clamp(54px,5vw,70px) clamp(24px,2.6vw,38px) clamp(26px,3vw,36px);text-align:center;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
-.ballon::before{content:"“";position:absolute;top:clamp(4px,.8vw,10px);left:0;right:0;font:400 clamp(60px,5vw,80px)/1 var(--kop)}
-.ballon blockquote{margin:0;font:300 italic clamp(18px,1.5vw,23px)/1.32 var(--kop);text-wrap:balance}
-.ballon figcaption{margin-top:20px;padding-top:14px;border-top:1px solid rgba(25,26,25,.3);font:600 11px/1.6 var(--tekst);letter-spacing:.18em;text-transform:uppercase}
+.ballon{position:absolute;z-index:2;right:var(--rand);top:50%;transform:translateY(-50%);width:min(420px,36%);max-height:calc(100% - 48px);margin:0;background:rgba(122,195,201,.88);color:var(--zwart);border-radius:28px;padding:62px clamp(24px,2.6vw,38px) clamp(26px,3vw,34px);text-align:center;
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 28'%3E%3Cpath d='M0 0H16V14L9 28H3L8 14H0Z M22 0H38V14L31 28H25L30 14H22Z'/%3E%3C/svg%3E") center 24px/34px 25px no-repeat,linear-gradient(#000 0 0);-webkit-mask-composite:xor;
+  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 28'%3E%3Cpath d='M0 0H16V14L9 28H3L8 14H0Z M22 0H38V14L31 28H25L30 14H22Z'/%3E%3C/svg%3E") center 24px/34px 25px no-repeat exclude,linear-gradient(#000 0 0)}
+.ballon blockquote{margin:0;font:300 italic clamp(17px,1.45vw,22px)/1.32 var(--kop);text-wrap:balance}
+.ballon figcaption{margin-top:18px;padding-top:14px;border-top:1px solid rgba(25,26,25,.3);font:600 11px/1.6 var(--tekst);letter-spacing:.18em;text-transform:uppercase}
 .ballon figcaption strong{display:block;font-weight:700}
+.casehero.dj-sets .ballon,.casehero.radio-mixes .ballon{background:var(--turquoise)}
 @media (max-width:760px){
-  .ballon{position:relative;right:auto;top:auto;transform:none;width:auto;margin:-48px var(--rand) 0;background:var(--turquoise)}
-  .casehero.met-ballon{height:auto;background:none}
+  .ballon{position:relative;right:auto;top:auto;transform:none;width:auto;max-height:none;margin:-48px var(--rand) 0;background:var(--turquoise)}
+  .casehero.met-ballon{height:auto;background:none;padding:0}
   .casehero.met-ballon>div{height:300px}
+  .casehero.dj-sets.met-ballon>div,.casehero.radio-mixes.met-ballon>div{height:auto;background:var(--zwart);padding:0 var(--rand) 60px}
 }
