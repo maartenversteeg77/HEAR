@@ -157,3 +157,21 @@ body.menu-open{overflow:hidden}
   .voet-merk{grid-column:1/-1}
   .afsluiter{grid-template-columns:1fr}
 }
+
+/* ---------- koraal blok: overige onderdelen ---------- */
+.verder{background:var(--koraal);color:var(--zwart);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));padding:0 var(--rand)}
+.verder a{display:grid;grid-template-columns:1fr auto;align-content:start;gap:10px 16px;padding:clamp(48px,6vw,90px) clamp(16px,2vw,32px) clamp(48px,6vw,90px) 0;text-decoration:none;border-right:1px solid rgba(25,26,25,.25)}
+.verder a+a{padding-left:clamp(20px,2.5vw,40px)}
+.verder a:last-child{border-right:0}
+.v-titel{font:300 clamp(28px,2.8vw,44px)/1.05 var(--kop)}
+.v-tekst{grid-column:1;font-size:16px;line-height:1.45;max-width:28ch}
+.verder .pijl{grid-column:2;grid-row:1;font-size:26px;transition:transform .25s}
+.verder a:hover .pijl{transform:translateX(6px)}
+.verder a:hover .v-titel{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:6px}
+.over img{object-position:50% 62%}
+@media (max-width:900px){
+  .verder{grid-template-columns:1fr}
+  .verder a,.verder a+a{padding:28px 0;border-right:0;border-bottom:1px solid rgba(25,26,25,.25)}
+  .verder a:last-child{border-bottom:0}
+  .over img{aspect-ratio:4/5}
+}

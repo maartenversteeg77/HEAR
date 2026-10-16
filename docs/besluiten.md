@@ -58,6 +58,7 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - Kleuren volgen het huisstijldocument (Branding DEF): zwart en gebroken wit als basis, accent mag hoofdkleur van een vlak zijn, max. twee kleuren per vlak. Geen crème/beige.
 - Homepage v1 (15 okt): zwarte hero met booth-foto en groot HEAR-merk, koraal statementvlak, tegels op gebroken wit, koraal als WhatsApp-knop. Koraal alleen op donker of als vlak met zwarte tekst (op gebroken wit te weinig contrast voor kleine tekst).
 - Homepage-opbouw (16 okt, herzien): topnavigatie vervangen door hamburgermenu; na het statement een compacte navigatiebalk met zes onderdelen + korte uitleg (Doelgroepen · Voorbeeldcases · Principes · Diensten en producten · Merken en techniek · Over HEAR). Variant met grote regels (B) afgewezen: te veel ruimte. Daarna: Uitgelicht werk (slider, zie Cases) · Over HEAR · afsluiter met WhatsApp · uitgebreide footer met alle onderdelen (laat diepte zien). Hero: één knop (WhatsApp); ondertitel staat onder het merk.
+- Homepage-opbouw (16 okt, v3): hero · Uitgelicht werk (cases omhoog) · koraal blok met de overige onderdelen (Doelgroepen · Principes · Diensten en producten) · Over HEAR met press photo · afsluiter · footer. Statementtekst en de witte navigatiebalk vervallen (kleur koraal bleef). 'Merken en techniek' gaat op in 'Diensten en producten'; merken worden toegelicht op de pagina's over geluid/licht. Topnavigatie: Doelgroepen · Cases · Principes · Diensten · Over HEAR.
 - Letters: Advent Pro voor koppen, Helvetica/Arial voor lopende tekst.
 - Referentie die aanspreekt: musicandpower.com (zwarte basis, groot merk over beeld, gelaagde blokken).
 - Eén consistente letter, tenzij die voor bezoekers niet goed leesbaar is.
@@ -65,6 +66,7 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - Productpresentatie-case: geanonimiseerd beeld (16 okt): matte vloer, collectie herkleurd naar jonger en kleurrijker. Oorspronkelijke merkfoto van de site gehaald.
 
 ## Open punten
+- Uitleg van "wij" (Maarten + netwerk) stond in het statementvlak en is daarmee van de homepage verdwenen; nieuwe plek kiezen (bijv. Over HEAR).
 - Labelset voor cases.
 - Founder story noemt nog "100 tot 1.500 personen"; aanpassen naar 150–1.500?
 - Plek van DJ-sets, radio-mixes en eigen producties (bij Cases of apart). DJ-sets hoort bij Cases (16 okt): een corporate klant kan ook een dj zoeken, en wie voor microfoons komt moet op het idee komen er een dj bij te huren. Het gaat om hoe je de case brengt. In de slider direct na het gemeentelijk netwerkevent (overgang naar borrel). Radio-mixes: nog open.
