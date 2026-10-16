@@ -88,3 +88,5 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - Productlancering: uitgelichte quote zonder naam als turquoise band over de volle breedte.
 - Homepage: zwarte kopbalk boven de hero; de foto begint eronder in plaats van eronder door te lopen (16 okt).
 - Proef netwerkevent: klantquote als turquoise tekstballon midden tussen de tekst, buiten de lijnenstructuur, naam eronder (16 okt).
+- Kopbeelden op alle contentpagina's: los onder de zwarte balk met witruimte ertussen, binnen de paginamarges, verhouding 3:2 (portretten van dj-sets en radio-mixes onbijgesneden) (16 okt).
+- Proef netwerkevent: tekstballon met klantnaam erin, rechts naast het kopbeeld; op mobiel onder het beeld (16 okt).
