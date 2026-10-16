@@ -64,7 +64,7 @@ body.menu-open{overflow:hidden}
   linear-gradient(0deg,var(--zwart) 0,rgba(25,26,25,.55) 22%,rgba(25,26,25,.12) 55%,rgba(25,26,25,.3) 100%),
   linear-gradient(90deg,rgba(25,26,25,.6) 0,rgba(25,26,25,0) 50%)}
 .hero-inhoud{position:relative;z-index:2;width:100%;min-height:100svh;display:flex;flex-direction:column;justify-content:space-between;gap:48px;padding:clamp(84px,9vw,120px) var(--rand) clamp(48px,6vw,88px)}
-.hero-logo{display:block;width:clamp(260px,46vw,760px);height:auto;margin:0}
+.hero-logo{display:block;width:clamp(260px,40vw,660px);height:auto;margin:0}
 .hero-blok{max-width:min(100%,58ch)}
 .hero h1{font:300 clamp(36px,4vw,64px)/1.05 var(--kop);margin:0 0 22px;white-space:nowrap}
 .hero .lead{font-size:clamp(18px,1.5vw,22px);line-height:1.5;color:#e2e1dc;margin:0 0 18px;text-wrap:balance}
@@ -192,6 +192,5 @@ body.menu-open{overflow:hidden}
 /* geen cursief op de site (16 okt) */
 em,i,cite,address,dfn,var{font-style:normal}
 
-/* variant B (proef, home-b.html): klein logo in de zwarte balk, payoff groot op de plek van het logo */
-.variant-b .top .merk{visibility:visible}
-.variant-b .hero-payoff{font:300 clamp(64px,10.5vw,190px)/.92 var(--kop);margin:0;white-space:normal;letter-spacing:-.01em}
+/* mobiel: logo en payoff dichter bij elkaar, als één geheel (16 okt) */
+@media (max-width:900px){.home .hero,.home .hero-inhoud{min-height:calc(76svh - 78px)}.home .hero-inhoud{gap:40px}}
