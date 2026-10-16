@@ -115,7 +115,7 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - Acht dienstenpagina's gebouwd uit content/diensten.json (scripts/bouw-diensten.py): kernzin, vullend kopbeeld, intro, blokken per merk/product/werkwijze, productrij met beelden, verwijzingen onderaan. Geen vaste drietrap meer.
 - Bronnen: Concept assortiment-presentatie (zonder prijzen), RCF KX-filosofie en KXL 4-A/SUB 9000-handleidingen, Brooklyn Audio-ontwerpfilosofie en Prospect-spec, ADJ-specs (Par Z150 RGBA Plus, ElectraPix Par 7, Focus CMY Compact), J-torenontwerp.
 - Beelden rechtgezet: vintage lighting toont nu de Astrodisco (was dj-foto); booth toont de booth van bovenaf; artiesten toont dj + saxofonist; AV as a service toont een gala-opstelling. Productbeelden uit de presentatie staan in img/diensten/.
-- Dienstenoverzicht: nummers "01 · DIENSTEN" van de tegels; ondertitel vervangen; "In het kort" (dubbel) weg.
+- Producten (navigatie) / Producten en diensten (paginakop en koraalblok), was Diensten (17 okt). Dienstenoverzicht: nummers "01 · DIENSTEN" van de tegels; ondertitel vervangen; "In het kort" (dubbel) weg.
 - djs-live.html (oude doelgroeppagina, nergens meer gelinkt) verwijderd; inhoud zit in artiesten.html.
 - TE VERIFIËREN door Maarten: ADJ Focus CMY Compact en Chauvet "Force X" als eigen assortiment; herkomst/rechten van gala.jpg, dansvloer.jpg (Holland Festival), beams.jpg; tegeltitels nog Engels (footer Nederlands).
 - Dienstenpagina's: openen met de productrij (geen vullend kopbeeld), intro over de volle breedte; RCF-beelden van Maarten toegevoegd (KXL 4-A, KX-serie) (16 okt).

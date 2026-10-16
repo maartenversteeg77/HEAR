@@ -120,6 +120,16 @@
               "beeld": "img/diensten/brooklyn-x21.jpg",
               "naam": "Brooklyn Audio X21",
               "regel": "21-inch sub met cardioïde presets"
+            },
+            {
+              "beeld": "img/diensten/yamaha-dm3.jpg",
+              "naam": "Yamaha DM3",
+              "regel": "Compacte digitale mengtafel voor sprekers en live"
+            },
+            {
+              "beeld": "img/diensten/revers-microfoon.jpg",
+              "naam": "Reversmicrofoons",
+              "regel": "Draadloos, voor seminars en presentaties"
             }
           ]
         },
@@ -127,6 +137,12 @@
           "label": "Front fills en zones",
           "tekst": [
             "Voor de eerste meters en voor aparte zones, zoals een bar of een nis, gebruiken we de kleine RCF KX 515-A met een SUB 808-AS. Dezelfde familie, dezelfde klank, een maat kleiner. Zo klinkt het vooraan niet hard en achterin niet dun."
+          ]
+        },
+        {
+          "label": "Sprekers en seminars",
+          "tekst": [
+            "Voor lezingen, panels en presentaties werken we met een Yamaha DM3, een compacte digitale mengtafel met scènes die we vooraf klaarzetten, zodat een wissel van spreker één druk op de knop is. Sprekers krijgen een draadloze reversmicrofoon: onzichtbaar, handen vrij, en verstaanbaar tot achterin de zaal."
           ]
         },
         {

@@ -34,7 +34,7 @@ for pg in data["paginas"]:
     blokken = re.sub(r'((?:<article class="case-section">.*?</article>)+)', r'<section class="case-sections">\1</section>', blokken, flags=re.S)
     links = "".join(f'<a href="{e(l["href"])}">{e(l["tekst"])} →</a>' for l in pg.get("links", []))
     main = f'''<main class="wrap">
-<section class="casehead"><a class="crumb" href="diensten.html">← Diensten</a><h1 class="kernzin">{heel(pg["kernzin"])}</h1></section>
+<section class="casehead"><a class="crumb" href="diensten.html">← Producten en diensten</a><h1 class="kernzin">{heel(pg["kernzin"])}</h1></section>
 {producten}
 <section class="quick quick-breed"><p>{e(pg["intro"])}</p></section>
 {blokken}
