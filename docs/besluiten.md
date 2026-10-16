@@ -104,3 +104,4 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - Jubileum-kopbeeld: hele foto met dj en saxofonist zichtbaar (img/jubileum-breed.jpg, vervaagde zijkanten). Gezichten in beeld; Maarten vraagt de saxofonist om toestemming vóór de site live gaat — OPEN PUNT (16 okt).
 - Dj-sets: nieuwe brede portretfoto van Maarten (img/dj-maarten-breed.jpg) als kopbeeld en tegel, vullend zoals de andere cases (16 okt).
 - Geen cursief op de hele site; citaten rechtop in Advent Pro, zonder extra aanhalingstekens (het uitgesneden teken volstaat) (16 okt).
+- Homepage: zwarte kop met groot logo en ondertitel "High End Audio Rental"; foto met payoff, lead en WhatsApp-knop eronder (16 okt).

@@ -191,3 +191,11 @@ body.menu-open{overflow:hidden}
 .werk-kaart h3{white-space:pre-line}
 /* geen cursief op de site (16 okt) */
 em,i,cite,address,dfn,var{font-style:normal}
+
+/* zwarte kop met logo en ondertitel boven de hero, net als op de onderliggende pagina's (16 okt) */
+.kop-home{background:var(--zwart);padding:clamp(8px,1.5vw,20px) var(--rand) clamp(36px,4.5vw,64px)}
+.kop-logo{display:block;width:clamp(220px,36vw,600px);height:auto}
+.kop-onder{margin:clamp(12px,1.4vw,20px) 0 0;font:500 clamp(11px,1vw,14px)/1 var(--tekst);letter-spacing:.32em;text-transform:uppercase;color:#a9a8a3}
+.home .hero{min-height:min(82svh,820px)}
+.home .hero-inhoud{min-height:min(82svh,820px);justify-content:flex-end;padding-top:clamp(36px,4vw,56px)}
+@media (max-width:900px){.home .hero,.home .hero-inhoud{min-height:78svh}}
