@@ -237,7 +237,7 @@
     {
       "bestand": "dancefloor-lighting.html",
       "titel": "Dansvloerverlichting",
-      "kernzin": "Dansvloerlicht: hybride moving heads die de muziek volgen in plaats van ertegenin gaan",
+      "kernzin": "Dansvloerverlichting",
       "beeld": "img/diensten/dansvloer.jpg",
       "beeld_alt": "Volle dansvloer in roze en blauw licht, met bundels vanaf het plafond",
       "intro": "Een lichtshow hoort de muziek te dragen, niet te overschreeuwen. Daarom kiezen wij voor een beperkt aantal veelzijdige moving heads en programmeren we per avond, op de muziek die er draait.",
@@ -263,17 +263,17 @@
               "regel": "Beam, spot en wash in één lamp"
             },
             {
-              "beeld": "img/diensten/ifx640-bundels.jpg",
+              "beeld": "img/diensten/ifx640-truss.jpg",
               "naam": "Infinity iFX-640 met interne shutters",
               "regel": "Wash moving head, bundels in bloemvorm"
             },
             {
-              "beeld": "img/diensten/ifx640.jpg",
+              "beeld": "img/diensten/ifx640-bundels.jpg",
               "naam": "Infinity iFX-640",
-              "regel": "Zes RGBW-leds, roterende shutterbladen"
+              "regel": "Strakke bundels, in elke kleur"
             },
             {
-              "beeld": "img/diensten/beam-publiek.jpg",
+              "beeld": "img/diensten/ifx640-warm.jpg",
               "naam": "Warm en gekleurd",
               "regel": "Kleurmenging die bij de muziek past"
             }
