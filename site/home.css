@@ -189,3 +189,5 @@ body.menu-open{overflow:hidden}
 .home .hero-inhoud{min-height:calc(100svh - 82px);padding-top:clamp(36px,4vw,56px)}
 @media (max-width:900px){.home .hero,.home .hero-inhoud{min-height:calc(100svh - 78px)}}
 .werk-kaart h3{white-space:pre-line}
+/* geen cursief op de site (16 okt) */
+em,i,cite,address,dfn,var{font-style:normal}
