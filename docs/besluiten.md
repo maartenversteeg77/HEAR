@@ -109,3 +109,4 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - Homepage: gekozen voor A (groot logo op de foto). Logo op desktop ca. 13% kleiner (max 660px); op mobiel minder ruimte tussen logo en payoff. Proefpagina B verwijderd (16 okt).
 - Headerbeeld homepage: lichter blauwe versie met lichtbundels (img/hero-dansvloer-blauw.jpg); op mobiel uitsnede naar links zodat het felle punt naast de payoff valt (16 okt).
 - Over HEAR: kop "Founder story – Maarten Versteeg", ondertitel "DJ sinds 1993 · Communicatiespecialist sinds 2000 · Founder HEAR"; hoofdfoto met mixer en koptelefoon (img/maarten-mixer.jpg), adviseursfoto bij de alinea over communicatieadvies (img/maarten-adviseur.jpg). Oude foto (442px, onscherp) niet meer gebruikt (16 okt).
+- Founder story: tekst losser gemaakt op stijl, inhoud gelijk (akkoord Maarten); opening "Ik ben Maarten." (16 okt).
