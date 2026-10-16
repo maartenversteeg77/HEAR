@@ -78,3 +78,11 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - Plek van DJ-sets, radio-mixes en eigen producties (bij Cases of apart). DJ-sets hoort bij Cases (16 okt): een corporate klant kan ook een dj zoeken, en wie voor microfoons komt moet op het idee komen er een dj bij te huren. Het gaat om hoe je de case brengt. In de slider direct na het gemeentelijk netwerkevent (overgang naar borrel). Radio-mixes: nog open.
 - WhatsApp-nummer nog nodig (knoppen staan er, zonder nummer).
 - Overige pagina's nog in de oude stijl; worden een voor een omgezet.
+
+## 16 okt — Alle onderliggende pagina's in de homepagestijl
+- Kop, menu (hamburger op mobiel) en uitgebreide voet van de homepage nu op alle pagina's; actieve rubriek in koraal.
+- Paginakop loopt door in zwart (terug-link, titel, ondertitel); inhoud op #F4F5F5.
+- Koppen in Advent Pro, tekst in Helvetica; labels zwart (het bruinrood #a25e49 is weg).
+- Citaten turquoise vlak; casesoverzicht als kaarten zoals de slider; Merken blijft bestaan maar staat niet in de navigatie.
+- Terug-links van cases wijzen naar cases.html; "Doelgroepen" heet in de terug-link "Voor wie".
+- Productlancering: uitgelichte quote zonder naam als turquoise band over de volle breedte.
