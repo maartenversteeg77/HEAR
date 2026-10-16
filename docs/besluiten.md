@@ -49,7 +49,7 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - "Cases" op de verzamelpagina wordt een klein navigatie-element (rode kleine letter), geen grote kop.
 - Resultaat en citaat inhoudelijk en qua toon uit elkaar halen. Het citaat is spreektaal, uit iemands mond.
 - **Indeling casepagina: In het kort · Opdracht · Aanpak · Resultaat · Citaat.** De beoogde klantbeleving (voorheen "Experience") valt onder Opdracht. Aanpak = wat wij deden. Resultaat = wat er feitelijk gebeurde, zakelijke toon. Citaat = hoe het voelde, spreektaal van de klant, met naam en rol.
-- ADE-case: bronvermelding wordt "Artist management Rivo".
+- ADE-case: bronvermelding wordt "Artist management Rivo". Citaat (16 okt) begint nu met "Tijdens Amsterdam Dance Event organiseerden we een pop-up event. Vanuit Frankrijk aangekomen rekenden we op soundchecktijd…"; slot ("Warm, vol en de dj's waren …") door Claude aangevuld met het bestaande vervolg — te bevestigen door Maarten.
 - DJ-sets-case: het citaat is echt (Architects in Music). Bron vervangen door "Architects in Music — A full circle event company with a focus on hospitality" (16 okt).
 - Privé-event (Ronald Pronk): blijft. Ronald heeft toestemming gegeven. De case laat ook zien dat privé de uitzondering is.
 - Uitgelicht werk op de homepage = slider met alle afgeronde cases, gevoed vanuit `site/cases.json` (één regel per case; volgorde = volgorde op site; alleen status "af" wordt getoond). Dubbeling met de casespagina is akkoord: die is het visuele overzicht. Halve cases worden nergens getoond.
@@ -64,6 +64,7 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - Logo-lockup teruggedraaid (16 okt): pay-off weer als losse kop "Hear the difference" (zonder punt); HEAR-logo linksboven in de hero, tekstblok onderin. (Lockup-proef staat in git.) Eerder: "Hear the difference" (zonder punt: het is logo) onder het logo, kleine letter, uitgevuld tot exact de breedte van het logo (SVG). Kop als aparte tekstregel vervalt (blijft onzichtbaar voor zoekmachines/schermlezers). Over HEAR: "eigenaar" wordt "founder".
 - Typografie in reeksen (16 okt): koppen in kaarten en blokken krijgen de hoogte van twee regels, zodat de tekst eronder gelijk staat; woorden evenwichtig verdelen, geen los woord op de laatste regel.
 - Kleur (16 okt): citaatblokken op casepagina's en de kaart 'Alle cases' worden turquoise (#7AC3C9) met zwarte tekst, i.p.v. zwart; koraal zit al in het blok op de homepage. ADE-citaat: bron 'Artist management Rivo'.
+- Achtergrond overal #F6F5F1 (gebroken wit, licht warm-grijs); de beige tinten van het ChatGPT-geraamte (#f3f0e9 e.a.) vervangen op alle oude pagina's (16 okt).
 - Letters: Advent Pro voor koppen, Helvetica/Arial voor lopende tekst.
 - Referentie die aanspreekt: musicandpower.com (zwarte basis, groot merk over beeld, gelaagde blokken).
 - Eén consistente letter, tenzij die voor bezoekers niet goed leesbaar is.
