@@ -11,7 +11,10 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 
 ### Positionering
 - Bereik op de site: **150–1.500 gasten**. Capaciteit begint feitelijk bij 100–150, maar de site moet het niet klein laten ogen.
-- Homepage-kop (werkversie): **Festivalkwaliteit, op de schaal van jouw event.** Vervangt "Hoogwaardige AV, binnen bereik".
+- Pay-off (16 okt): **HEAR. The difference.** / HEAR the difference. Engels alleen in een kernachtige pay-off met eenvoudige woorden; de rest van de site Nederlands. "The difference" mag verder gaan dan geluid (ook licht, aanpak).
+- Transformatie is het onderliggende principe (niet in de pay-off): muziek → beleving, ruimte → dansvloer, geluid → omgeving, event → herinnering; ook de aanpak zelf is een transformatie.
+- Afgewezen: "Festivalkwaliteit, op de schaal van jouw event" (te instrumenteel en uitleggerig); abstracte/AI-achtige koppen ("de avond", "wij horen"); Engelse inspiratieslogans ("more than a moment"); Nederlands-instrumentele ("alles goed geregeld"); slogans met alleen 'sound' (HEAR doet licht én geluid).
+- Hero (werkversie 16 okt): groot HEAR-merk met "the difference." eronder; kop "Van zaal naar dansvloer. Van presentatie naar borrel."; klein: licht, geluid en muziek · 150 tot 1.500 gasten · Amsterdam.
 - "Binnen bereik" ging niet over prijs maar over schaal: wat je op festivals ziet, kan ook bij een event voor 200 gasten.
 - "Festivalwaardig" / "festival grade" betekent: hoge kwaliteit die tegen een stootje kan. Het betekent niet schreeuwerig.
 - Geen prijzen op de site.

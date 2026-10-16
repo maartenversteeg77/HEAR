@@ -56,8 +56,9 @@ body.menu-open{overflow:hidden}
 /* ---------- hero ---------- */
 .hero{--overlap:10vw;position:relative;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);overflow:hidden;padding-bottom:clamp(24px,3vw,44px)}
 .hero-tekst{position:relative;z-index:2;align-self:center;padding:140px var(--rand) calc(var(--overlap) + 48px)}
-.hero h1{font:300 clamp(40px,4.6vw,72px)/1.02 var(--kop);letter-spacing:-.01em;margin:0 0 26px;max-width:12ch}
-.hero .lead{max-width:34ch;font-size:clamp(17px,1.4vw,20px);color:#d9d8d3;margin:0 0 38px}
+.hero h1{font:300 clamp(32px,3.4vw,54px)/1.08 var(--kop);letter-spacing:-.01em;margin:0 0 22px;white-space:nowrap}
+@media (max-width:900px){.hero h1{white-space:normal}}
+.hero .feiten{font:500 12px/1.6 var(--tekst);letter-spacing:.16em;text-transform:uppercase;color:#a9a8a3;margin:0 0 34px}
 .hero-acties{display:flex;flex-wrap:wrap;align-items:center;gap:18px 30px}
 .tekstlink{font:500 13px/1 var(--tekst);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:4px}
 .hero-beeld{position:relative;margin:0;min-height:88svh}
@@ -66,7 +67,7 @@ body.menu-open{overflow:hidden}
 /* het merk, groot: valt over de onderrand van het beeld */
 .hero-merk{grid-column:1/-1;position:relative;z-index:3;margin:calc(-1 * var(--overlap)) var(--rand) 0;pointer-events:none}
 .hero-merk img{width:100%;height:auto}
-.hero-merk .label{margin:18px 0 0;color:#a9a8a3;text-align:right;letter-spacing:.32em}
+.hero-merk .payoff{margin:.15em 0 0;text-align:right;font:300 clamp(26px,4.2vw,64px)/1 var(--kop);letter-spacing:.02em;color:var(--wit)}
 
 /* ---------- statement (koraal vlak, zwarte tekst) ---------- */
 .statement{background:var(--koraal);color:var(--zwart);padding:clamp(64px,9vw,130px) var(--rand)}
@@ -141,7 +142,7 @@ body.menu-open{overflow:hidden}
   .hero-beeld{order:1;min-height:0;height:66svh}
   .hero-beeld::after{background:linear-gradient(0deg,var(--zwart) 0,rgba(25,26,25,0) 45%)}
   .hero-merk{order:2}
-  .hero-merk .label{text-align:left;font-size:10px;letter-spacing:.24em}
+  .hero-merk .payoff{font-size:clamp(22px,7vw,34px)}
   .hero-tekst{order:3;padding:36px var(--rand) 24px}
   .rijen a{grid-template-columns:1fr auto;gap:8px 16px}
   .rij-tekst{grid-column:1;grid-row:2}
