@@ -26,14 +26,24 @@
         {
           "producten": [
             {
+              "beeld": "img/diensten/booth-bovenaf.jpg",
+              "naam": "Dj-booth",
+              "regel": "Ovaal meubel van twee meter, verlichte voorkant"
+            },
+            {
               "beeld": "img/diensten/cdj-3000x.jpg",
               "naam": "AlphaTheta CDJ-3000X",
               "regel": "Mediaspeler, twee stuks, via netwerk gekoppeld"
             },
             {
-              "beeld": "img/diensten/booth-bovenaf.jpg",
-              "naam": "DJM-V10 of Euphonia",
-              "regel": "Zes kanalen met effecten, of rotary met analoog karakter"
+              "beeld": "img/diensten/djm-v10.jpg",
+              "naam": "AlphaTheta DJM-V10",
+              "regel": "Zes kanalen, met effecten"
+            },
+            {
+              "beeld": "img/diensten/euphonia.jpg",
+              "naam": "AlphaTheta Euphonia",
+              "regel": "Rotary mixer met analoog karakter"
             },
             {
               "beeld": "img/diensten/turntable.jpg",
