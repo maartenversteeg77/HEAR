@@ -1,0 +1,67 @@
+{
+  "_uitleg": "Bron voor de vier principepagina's. scripts/bouw-principes.py bouwt er de HTML van, met dezelfde opbouw als de dienstenpagina's: kernzin, beeld, intro, blokken (label links, tekst rechts), verwijzingen. Wij-vorm, geen prijzen, geen superlatieven. Bronnen: Concept assortiment-presentatie (filosofie), HEAR/LuminEAR Lighting Plan (ontwerpprincipes), Abbey-propositie, website-uitgangspunten van Maarten.",
+  "paginas": [
+    {
+      "bestand": "partnership.html",
+      "titel": "Partnership",
+      "kernzin": "Partnership: samenwerken aan hetzelfde einddoel",
+      "beeld": "img/jubileum-breed.jpg",
+      "beeld_alt": "Een dj en een saxofonist spelen samen tijdens een tuinfeest",
+      "intro": "Een event lukt niet als iedereen alleen zijn eigen stuk doet. Wij zien opdrachtgevers als partners met wie we werken aan hetzelfde einddoel, en branchegenoten als collega's van wie we leren.",
+      "blokken": [
+        {"label": "Met opdrachtgevers", "tekst": ["We beginnen bij wat jij voor ogen hebt: de beleving die je gasten moeten hebben, het gevoel waarmee ze naar huis gaan. Van daaruit redeneren we terug naar de techniek. Dat betekent dat we meedenken over het programma, de ruimte en het moment, en niet alleen een lijst met apparatuur leveren.", "Wie met ons werkt, heeft één aanspreekpunt dat van briefing tot afbouw aanwezig is en verantwoordelijk blijft. Dat is bewust: we doen maximaal een handvol events per week, zodat elk event de aandacht krijgt die het verdient."]},
+        {"label": "Met dj's en artiesten", "tekst": ["Een dj die zich thuis voelt achter de booth, draait beter. Daarom lezen we de rider, zetten we de monitoring goed en staat er iemand die de set kent. Op ADE merkte een dj dat het klonk zonder soundcheck. Dat is geen toeval, dat is voorbereiding."]},
+        {"label": "Met branchegenoten", "tekst": ["We werken samen met andere AV-bedrijven, verhuurders en technici, en huren bij elkaar in. Niet omdat het moet, maar omdat we van elkaars sterke punten en manieren van werken leren. Ook met de fabrikanten van onze merken onderhouden we nauw contact: zij kennen hun producten het best, en wij horen als eerste wat er aankomt."]},
+        {"label": "Wat je ervan merkt", "tekst": ["Korte lijnen, één gezicht, en een team dat op het event aan jouw kant staat. Als er iets anders loopt dan gepland, lossen we het op zonder dat jij het hoeft te zien."]}
+      ],
+      "links": [{"tekst": "Case: tuinfeest CreativeGrounds", "href": "jubileum-ondernemersnetwerk.html"}, {"tekst": "Over HEAR", "href": "over-hear.html"}]
+    },
+    {
+      "bestand": "aesthetics.html",
+      "titel": "Uitstraling",
+      "kernzin": "Uitstraling: als een goed Italiaans maatpak",
+      "beeld": "img/case-productpresentatie.jpg",
+      "beeld_alt": "Sneakers op verlichte plateaus onder theaterspots, in een hal met blauw licht",
+      "beeld_positie": "center 62%",
+      "intro": "We houden van een strakke, ingetogen uitstraling. Zoals een goed Italiaans maatpak: het hoeft geen aandacht te trekken, maar wie kijkt, ziet de snit, de materialen en de afwerking.",
+      "blokken": [
+        {"label": "Techniek die niet opvalt", "tekst": ["Speakers mogen gezien worden als designobject, maar niet als reclamebord. Kabels blijven uit het zicht. Daarom werken we waar het kan draadloos en op accu: geen kabelgoten door de zaal, geen verlengsnoeren langs de muur. Bij een productlancering stonden de lampen waar het beeld erom vroeg, niet waar een stopcontact zat."]},
+        {"label": "Licht dat de muziek dient", "tekst": ["Een lichtshow hoort de artiest en de muziek te dragen, niet te overschreeuwen. We programmeren per avond en bouwen in lagen: sfeer, dynamiek, accenten. Donker is daarbij ook een effect. Een ruimte met een paar goed geprogrammeerde lichtbronnen is indrukwekkender dan een ruimte vol lampen."]},
+        {"label": "Warm en in kleur", "tekst": ["Op warm geluid en volle kleur doen we geen concessies. Wit licht is instelbaar van kaarslicht tot daglicht, en kleuren zijn verzadigd zonder plat te worden. Zo kan dezelfde ruimte overdag zakelijk ogen en 's avonds feestelijk."]},
+        {"label": "Wat je ervan merkt", "tekst": ["Een opdrachtgever beschreef het als clean en licht industrieel, maar ook warm. Dat is precies de combinatie waar we naar zoeken: verzorgd tot in de details, zonder dat het koud wordt."]}
+      ],
+      "links": [{"tekst": "Case: productlancering", "href": "productpresentatie.html"}, {"tekst": "Sfeerverlichting", "href": "atmospheric-lighting.html"}]
+    },
+    {
+      "bestand": "smart-solutions.html",
+      "titel": "Slimme oplossingen",
+      "kernzin": "Slimme oplossingen: modulair, als legoblokjes",
+      "beeld": "img/diensten/kx515-808-configuraties.jpg",
+      "beeld_alt": "Lijntekening van RCF-speakers en subs in verschillende opstellingen",
+      "intro": "Onze oplossingen zijn opgebouwd uit bouwstenen die we kunnen combineren en opschalen. Dezelfde kasten doen een cocktailavond voor honderd gasten en, gekoppeld, een dansvloer voor vijftienhonderd.",
+      "blokken": [
+        {"label": "Modulair geluid", "tekst": ["We werken met één familie actieve speakers per merk, met dezelfde klank in elke maat. Een compacte sub met een kleine top voor een lezing, een toren van drie kasten per kant voor een dansvloer, en alles daartussen. Omdat de kasten bij elkaar horen, klinkt een kleine en een grote opstelling hetzelfde, en kunnen we tijdens de opbouw nog schuiven zonder dat het geluid uit elkaar valt."]},
+        {"label": "Minder lampen, meer effect", "tekst": ["Het verschil tussen geen en zes moving heads is groot; het verschil tussen zes en acht is nauwelijks te zien. Daarom kiezen we lampen die meer dan één ding kunnen, zoals hybride moving heads die beam, spot en wash in één zijn, en geven we elke lamp een eigen rol. Dat houdt de show gevarieerd en de opbouw overzichtelijk."]},
+        {"label": "Snel klaar, op afstand te sturen", "tekst": ["Alle licht sturen we draadloos aan via één protocol, en een groot deel van de lampen werkt op accu. Het geluid regelen we via een netwerk, zodat we elke kast vanaf de tablet zien en bijstellen: niveau, EQ, temperatuur. Een systeem dat uit de doos al op niveau staat, geeft ons de tijd om te doen waar het verschil zit: afstemmen op de ruimte.", "Het hele systeem, geluid én licht, draait op twee gewone stopcontacten. Dat maakt ons welkom in locaties die geen krachtstroom hebben."]},
+        {"label": "Wat je ervan merkt", "tekst": ["Een korte opbouw, weinig kabels en een opstelling die past bij de ruimte in plaats van andersom. En als het programma op de dag zelf verandert, kunnen we meebewegen."]}
+      ],
+      "links": [{"tekst": "High-end audio", "href": "high-end-audio.html"}, {"tekst": "Case: pop-up tijdens ADE", "href": "ade-dj.html"}]
+    },
+    {
+      "bestand": "warm-sound.html",
+      "titel": "Warm geluid",
+      "kernzin": "Warm geluid: vol en helder, zonder scherpte",
+      "beeld": "img/systeem-breed.jpg",
+      "beeld_alt": "RCF-luidsprekers onder een truss met moving heads",
+      "intro": "Hard is makkelijk. Warm is moeilijk. Wij zoeken een geluid dat vol en helder is op elk volume, zodat je een avond lang kunt luisteren en praten zonder dat je oren moe worden.",
+      "blokken": [
+        {"label": "Beleving per decibel", "tekst": ["Een geluidsmeter leest alleen hoe hard het is. Het oor hoort hoe vol het is. Een systeem dat vlak en gevuld klinkt, voelt bij dezelfde meterstand voller dan een systeem met één scherpe piek. Daar ontwerpen we op: niet meer decibels, maar meer beleving per decibel. Dat scheelt in vergunningen, in oren en in klachten van de buren."]},
+        {"label": "Timing is alles", "tekst": ["Of een kick strak klinkt en een stem direct, hangt af van of alle frequenties tegelijk aankomen. Onze speakers corrigeren dat in de kast, zodat het geluid uit één bron lijkt te komen. Daarom kiezen we merken die hun hele systeem zelf ontwerpen, van luidsprekerunit tot software."]},
+        {"label": "Ontwerpen voor het midden", "tekst": ["We stemmen af op het midden van de zaal, niet op de achterste rij. Wie helemaal achterin corrigeert, maakt het vooraan scherp. Subs leggen we waar mogelijk centraal en richten we op het publiek in plaats van op de buren. Vooraan en in aparte zones zetten we kleine kasten uit dezelfde familie, zodat het nergens hard en nergens dun is."]},
+        {"label": "Een eigen signatuur", "tekst": ["Moderne systemen klinken neutraal, en dat is goed: het is een schoon canvas. Daarop voegen wij warmte toe met analoge studioapparatuur in het signaalpad, zodat muziek van een digitale bron klinkt als een plaat in een warme nachtclub. Niet harder, wel voller."]},
+        {"label": "Wat je ervan merkt", "tekst": ["Je kunt dansen én een gesprek voeren. Sprekers zijn tot achterin verstaanbaar. En na afloop hoor je nog gewoon wat er om je heen gebeurt."]}
+      ],
+      "links": [{"tekst": "High-end audio", "href": "high-end-audio.html"}, {"tekst": "Case: systeemadvies voor een verhuurbedrijf", "href": "systeemadvies.html"}]
+    }
+  ]
+}
