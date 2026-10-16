@@ -127,3 +127,13 @@ body.pagina.menu-open .top{position:fixed}
 /* labels op lichte foto's leesbaar houden */
 .visual-card::before{content:"";position:absolute;inset:0 0 auto;height:90px;z-index:1;background:linear-gradient(rgba(25,26,25,.55),transparent);pointer-events:none}
 .visual-card-kicker{z-index:2}
+
+/* inzet: korte klantquote midden in de tekst, als in een artikel (proef op netwerkevent) */
+.inzet{display:grid;grid-template-columns:minmax(160px,3fr) minmax(0,8fr);gap:clamp(20px,4vw,60px);padding:clamp(34px,4vw,56px) 0;border-top:1px solid var(--lijn)}
+.inzet figure{grid-column:2;margin:0;max-width:640px}
+.inzet blockquote{font:300 italic clamp(22px,2vw,30px)/1.3 var(--kop);margin:0;color:var(--zwart)}
+.inzet cite{display:block;margin-top:20px;font:600 11px/1.5 var(--tekst);font-style:normal;letter-spacing:.16em;text-transform:uppercase;color:var(--turquoise)}
+.inzet cite .cite-naam{display:block;font-weight:700}
+.inzet cite .cite-rol{display:block;margin-top:4px;font-weight:500;text-transform:none;letter-spacing:.02em;font-size:14px}
+.inzet+.case-section{border-top:1px solid var(--lijn)}
+@media (max-width:760px){.inzet{grid-template-columns:1fr}.inzet figure{grid-column:1}}
