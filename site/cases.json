@@ -2,7 +2,7 @@
   "_uitleg": "Bron voor de cases-slider op de homepage en het casesoverzicht (scripts/bouw-cases.py). Volgorde = volgorde op de site. Alleen status 'af' wordt getoond. 'doelgroepen' verwijst naar de sleutels hieronder; die worden de labels, met link naar de Voor wie-pagina. Optioneel 'positie': welk deel van het beeld zichtbaar blijft in de tegel (bijv. '50% 0%' = bovenkant).",
   "doelgroepen": {
     "corporate": {
-      "naam": "Corporate en reclamebureaus",
+      "naam": "Corporate klanten",
       "link": "corporate.html"
     },
     "venue": {
