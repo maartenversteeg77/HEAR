@@ -101,9 +101,9 @@ body.menu-open{overflow:hidden}
 .werk-kaart .label{color:#5c5c57}
 .werk-kaart h3{font:400 clamp(22px,2vw,28px)/1.1 var(--kop);margin:10px 0 8px}
 .werk-kaart p{margin:0;font-size:15px;line-height:1.5;color:#4a4a46}
-.werk-alle{display:flex;flex-direction:column;justify-content:space-between;aspect-ratio:4/5;align-self:flex-start;background:var(--zwart);color:var(--wit);padding:28px}
+.werk-alle{display:flex;flex-direction:column;justify-content:space-between;aspect-ratio:4/5;align-self:flex-start;background:var(--turquoise);color:var(--zwart);padding:28px}
 .werk-alle span:first-child{font:300 clamp(28px,2.6vw,40px)/1.05 var(--kop)}
-.werk-alle .pijl{font-size:32px;color:var(--koraal)}
+.werk-alle .pijl{font-size:32px;color:var(--zwart)}
 .werk-pijlen{display:flex;gap:10px}
 .werk-pijlen button{width:46px;height:46px;border:1px solid var(--zwart);background:transparent;color:var(--zwart);font-size:18px;cursor:pointer;border-radius:50%}
 .werk-pijlen button:hover{background:var(--zwart);color:var(--wit)}

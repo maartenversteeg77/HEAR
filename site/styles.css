@@ -10,3 +10,6 @@
 @media(max-width:760px){.home-slide{flex-basis:78vw;height:330px}.visual-grid{grid-template-columns:1fr;gap:14px}.visual-card{min-height:290px}.detail-image{height:300px}.case-overview-group .case-cards{grid-template-columns:1fr;grid-auto-rows:260px}.case-overview-group .card{height:260px}.case-overview-group .card-copy{padding:21px 18px}.home-navigation .section-heading{padding-right:0}.slider-controls{position:static;margin:18px 0 0}}
 .quote cite .cite-naam{display:block;font-weight:700;text-transform:uppercase}
 .quote cite .cite-rol{display:block;margin-top:6px;font-weight:400;text-transform:none;letter-spacing:.02em;font-size:13px}
+/* citaatblokken in turquoise uit de huisstijl, zwarte tekst (twee kleuren per vlak) */
+.quote{background:#7AC3C9;color:#191A19}
+.quote cite{color:#191A19;opacity:.8}
