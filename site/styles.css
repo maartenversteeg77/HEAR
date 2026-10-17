@@ -258,3 +258,14 @@ em,i,cite,address,dfn,var{font-style:normal}
 
 .casehero.passend{background:var(--zwart)}
 .casehero.passend img{object-fit:contain}
+
+/* nieuwsbericht als artikel */
+.artikel{max-width:66ch;padding:clamp(36px,5vw,64px) 0 clamp(24px,3vw,40px)}
+.artikel .lead{font:600 18px/1.65 var(--tekst);color:var(--zwart);margin:0 0 22px}
+.artikel p{font-size:17px;line-height:1.7;color:var(--tekstgrijs);margin:0 0 16px}
+.artikel .kopje{font:600 17px/1.5 var(--tekst);color:var(--zwart);letter-spacing:0;text-transform:none;margin:26px 0 8px}
+.artikel ul{margin:0 0 16px;padding-left:1.1em;font-size:17px;line-height:1.7;color:var(--tekstgrijs)}
+.artikel li{margin:0 0 6px;padding-left:.3em}
+.artikel li::marker{color:var(--zwart)}
+.artikel .knoprij{margin-top:26px}
+.quick-breed+.artikel{padding-top:0}

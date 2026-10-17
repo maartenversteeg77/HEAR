@@ -61,7 +61,7 @@ Navigatie (volgorde vast): **Cases · Voor wie · Principes · Producten · Over
 | Producten en diensten | `diensten.html` → 8 pagina's (`booth-dj-gear`, `high-end-audio`, `atmospheric-lighting`, `dancefloor-lighting`, `vintage-lighting`, `av-as-a-service`, `artiesten`, `special-projects`) | `scripts/bouw-diensten.py` ← `content/diensten.json` |
 | Over HEAR | `over-hear.html` | hand (founder story, ik-vorm) |
 | Engels | `site/en/*.html` | `scripts/bouw-en.py` ← `content/en.json` |
-| Nieuws | `site/nieuws/index.html` + `site/nieuws/<slug>.html` | `scripts/bouw-nieuws.py` ← `content/nieuws.json`; maakt ook `img/nieuws/<slug>-social.jpg` (1200×630, Open Graph) |
+| Nieuws (artikelopbouw: kop, foto, optionele kopregel, vette lead, lopende tekst met `## `-tussenkopjes) | `site/nieuws/index.html` + `site/nieuws/<slug>.html` | `scripts/bouw-nieuws.py` ← `content/nieuws.json`; maakt ook `img/nieuws/<slug>-social.jpg` (1200×630, Open Graph) |
 
 Overig: `merken.html`, `projectbrief.html/.md` (oud, niet in nav), `site/assets/` (oude beelden), `site/img/diensten/` (productfoto's), `scripts/verbreed.py` (portretfoto verbreden met vervaagde randen).
 

@@ -1,5 +1,5 @@
 {
-  "_uitleg": "Nieuwsberichten. scripts/bouw-nieuws.py bouwt er site/nieuws/<slug>.html, het overzicht site/nieuws/index.html en een deelbeeld per bericht van. Nieuws staat niet in de navigatie. Velden: slug (bestandsnaam, kleine letters, koppeltekens), datum (JJJJ-MM-DD), titel, intro (één of twee zinnen; wordt ook de social-omschrijving), beeld (pad in site/), beeld_alt, beeld_positie (optioneel), label (kopje boven de tekst, optioneel), tekst (lijst alinea's), knop (optioneel: tekst + href), status: 'af' om te publiceren, anders 'concept'. De 'basis' is het domein voor absolute links in de social-metadata; zet op https://hear.nl zodra het domein gekoppeld is. beeld_passend: true toont de hele foto in de kop (met zwart eromheen) in plaats van bijgesneden. kop (optioneel): grote regel onder het beeld; dan is intro alleen de tegel- en socialtekst en komt de lopende tekst uit tekst/html_na.",
+  "_uitleg": "Nieuwsberichten als artikel: zwarte kop met datum en titel, foto, optioneel een grote kopregel (kop), dan een vette intro (lead; valt terug op intro) en lopende tekst (tekst: alinea's; een regel die begint met '## ' wordt een vet tussenkopje; html_na: extra HTML zoals een lijst). intro is ook de tegel- en socialtekst. Overig: slug, datum, beeld, beeld_alt, beeld_positie, beeld_passend (hele foto tonen), knop {tekst, href}, status 'af' of 'concept'. basis = domein voor social-metadata; naar https://hear.nl bij livegang.",
   "basis": "https://hear.maartenversteeg.workers.dev",
   "berichten": [
     {
@@ -9,8 +9,8 @@
       "intro": "Een 15-inch coaxiale floormonitor voor dj's die hun monitoring liever onzichtbaar voor het publiek hebben. Krachtig, punchy en coherent.",
       "beeld": "img/nieuws/kxm-25-a-concert.jpg",
       "beeld_alt": "RCF KXM 25-A floormonitor met een festivalpodium op de achtergrond",
-      "label": "Wat het is",
       "tekst": [
+        "## Wat het is",
         "De KXM 25-A is een wedge: een lage, schuine monitor die op de vloer van de booth ligt en omhoog naar de dj is gericht. Het publiek ziet hem niet, de dj hoort zichzelf wel. Met 137 dB en een bereik vanaf 50 Hz is hij ook op een luide dansvloer verstaanbaar.",
         "De woofer en de hoorn zitten coaxiaal, in één as. Daardoor komt het geluid uit één punt en klinkt het coherent, ook dichtbij. Dat is precies wat je in een booth wilt.",
         "Vanaf nu is de KXM 25-A de tweede monitoroptie in onze booth, naast de compacte sub-topcombinatie van SUB 808-AS en KX 515-A."
@@ -20,7 +20,8 @@
         "href": "/booth-dj-gear.html"
       },
       "status": "af",
-      "beeld_positie": "center 60%"
+      "beeld_positie": "center 60%",
+      "lead": "We hebben een nieuwe speaker aan ons assortiment toegevoegd: de RCF KXM 25-A. Het is een 15-inch coaxiale floormonitor voor dj's die hun monitoring liever onzichtbaar voor het publiek hebben. Krachtig, punchy en coherent."
     },
     {
       "slug": "twee-sets-808-515",
@@ -29,18 +30,16 @@
       "intro": "Twee compacte sub-topsets die drie dingen kunnen: op zichzelf spelen bij een lezing of intieme cocktailparty, monitoren in de dj-booth, en als frontfill of delay meedraaien in het grote systeem.",
       "beeld": "img/nieuws/808-515-set.jpg",
       "beeld_alt": "RCF KX 515-A top op een afstandsbuis boven een SUB 808-AS, net uitgepakt",
-      "label": "De set",
-      "tekst": [
-        "De SUB 808-AS met de KX 515-A erop is onze meest compacte set, maar vergis je niet in het geluid. Met 2.000 W aan ingebouwde versterking per top en 2.000 W per sub verraadt de fabrikant serieuze bedoelingen."
-      ],
+      "tekst": [],
       "knop": {
         "tekst": "Bekijk high-end audio",
         "href": "/high-end-audio.html"
       },
       "status": "af",
       "beeld_passend": true,
-      "html_na": "<p><strong>Geschikt voor:</strong></p><ul><li>Presentaties</li><li>Intieme (cocktail)party's</li><li>Dj-monitoring, links en rechts van de booth</li><li>Frontfill of delay in een grotere audioset</li></ul><p>Als totaalset zijn ze geschikt voor diverse toepassingen, van presentatie tot tuinfeest en cocktailparty tot zo'n 150 personen.</p><p>Daarnaast is de 515-top een ideale frontfill in een groter systeem. Met een dekking van 100° × 70° geeft hij een hifi-achtig geluid voor de eerste meters publiek.</p><p>Dat maakt het mogelijk de grote broer van de KX 515-A, de KXL 4-A, hoger te hangen en verder naar achteren te richten. En met een gewicht van nog geen 10 kg leent de 515 zich ook goed als delay om achterin de zaal de verstaanbaarheid te verhogen, zonder zwaar te tillen op een onhandige plek.</p>",
-      "kop": "Twee compacte sub-topsets voor meerdere toepassingen"
+      "html_na": "<h2 class=\"kopje\">Geschikt voor</h2><ul><li>Presentaties</li><li>Intieme (cocktail)party's</li><li>Dj-monitoring, links en rechts van de booth</li><li>Frontfill of delay in een grotere audioset</li></ul><p>Als totaalset zijn ze geschikt voor diverse toepassingen, van presentatie tot tuinfeest en cocktailparty tot zo'n 150 personen.</p><p>Daarnaast is de 515-top een ideale frontfill in een groter systeem. Met een dekking van 100° × 70° geeft hij een hifi-achtig geluid voor de eerste meters publiek.</p><p>Dat maakt het mogelijk de grote broer van de KX 515-A, de KXL 4-A, hoger te hangen en verder naar achteren te richten. En met een gewicht van nog geen 10 kg leent de 515 zich ook goed als delay om achterin de zaal de verstaanbaarheid te verhogen, zonder zwaar te tillen op een onhandige plek.</p>",
+      "kop": "Twee compacte sub-topsets voor meerdere toepassingen",
+      "lead": "De SUB 808-AS met de KX 515-A erop is onze meest compacte set, maar vergis je niet in het geluid. Met 2.000 W aan ingebouwde versterking per top en 2.000 W per sub verraadt de fabrikant serieuze bedoelingen."
     }
   ]
 }

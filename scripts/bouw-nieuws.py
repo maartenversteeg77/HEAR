@@ -65,18 +65,23 @@ for b in berichten:
     pad = f"/nieuws/{b['slug']}.html"
     social = imgdir / f"{b['slug']}-social.jpg"; deelbeeld(b["beeld"], social)
     social_abs = f"{BASIS}/img/nieuws/{b['slug']}-social.jpg"
-    alinea = "".join(f"<p>{e(t)}</p>" for t in b["tekst"]) + b.get("html_na", "")
+    def alinea_html(t):
+        if t.startswith("## "): return f'<h2 class="kopje">{e(t[3:])}</h2>'
+        return f"<p>{e(t)}</p>"
+    lopend = "".join(alinea_html(t) for t in b["tekst"]) + b.get("html_na", "")
+    lead = b.get("lead") or b["intro"]
     knop = ""
     if b.get("knop"):
         k = b["knop"]; ext = k["href"].startswith("http")
         knop = f'<p class="knoprij"><a class="wa sc" href="{e(k["href"])}"{" target=\"_blank\" rel=\"noopener\"" if ext else ""}>{e(k["tekst"])}<i aria-hidden="true">→</i></a></p>'
     pos = f' style="object-position:{e(b["beeld_positie"])}"' if b.get("beeld_positie") else ""
     passend = " passend" if b.get("beeld_passend") else ""
+    kopregel = f'<section class="quick quick-breed"><p>{e(b["kop"])}</p></section>' if b.get("kop") else ""
     main = f'''<main class="wrap">
 <section class="casehead"><a class="crumb" href="/nieuws/">← Nieuws</a><p class="label nieuws-datum"><time datetime="{b["datum"]}">{datum_nl(b["datum"])}</time></p><h1 class="kernzin">{e(b["titel"])}</h1></section>
 <figure class="casehero{passend}"><img src="/{e(b["beeld"])}" alt="{e(b.get("beeld_alt",""))}"{pos}></figure>
-<section class="quick quick-breed"><p>{e(b["kop"]) if b.get("kop") else e(b["intro"])}</p></section>
-<section class="case-sections"><article class="case-section nieuws-tekst"><h2>{e(b.get("label","Bericht")).upper()}</h2><div>{alinea}{knop}</div></article></section>
+{kopregel}
+<article class="artikel"><p class="lead">{e(lead)}</p>{lopend}{knop}</article>
 <nav class="verwijzingen" aria-label="Verder"><a href="/nieuws/">Alle berichten →</a><a href="/index.html">Naar de homepage →</a></nav>
 </main>'''
     (uit / f"{b['slug']}.html").write_text(head(b["titel"], b["intro"], pad, social_abs, artikel=True) + kop + main + voet + "</body></html>")
