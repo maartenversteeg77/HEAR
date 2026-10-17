@@ -1,7 +1,7 @@
 """Bouwt de acht dienstenpagina's (site/*.html) uit content/diensten.json.
 Kop, menu en voet komen uit site/index.html, zodat ze overal gelijk blijven.
 Draaien na elke tekstwijziging: python3 scripts/bouw-diensten.py"""
-import json, html, re, pathlib
+import json, html, re, pathlib, urllib.parse
 root = pathlib.Path(__file__).resolve().parent.parent
 site = root / "site"
 data = json.loads((root / "content" / "diensten.json").read_text())
@@ -12,6 +12,10 @@ voet = idx[idx.index('<footer class="voet">'):idx.index('</footer>') + 9]
 e = lambda t: html.escape(t, quote=True)
 def heel(t):  # koppeltekenwoorden niet afbreken
     return re.sub(r"(?<![\w-])([\wéÉ]+-[\wé]+)(?![\w-])", r'<span class="heel">\1</span>', e(t))
+
+SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1.1 2.7.1.2 1.8 2.8 4.4 3.9 1.7.7 2.3.8 3.1.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.8-.3Z"/></svg>'
+def waknop(tekst, bericht):
+    return f'<a class="wa" href="https://wa.me/?text={urllib.parse.quote(bericht)}" data-whatsapp>{SVG}<span>{e(tekst)}</span><i aria-hidden="true">→</i></a>'
 
 def blok(b):
     if "producten" in b:
@@ -39,7 +43,10 @@ for pg in data["paginas"]:
     # opeenvolgende case-sections samen in één case-sections-wrapper
     blokken = re.sub(r'((?:<article class="case-section">.*?</article>)+)', r'<section class="case-sections">\1</section>', blokken, flags=re.S)
     links = "".join(f'<a href="{e(l["href"])}">{e(l["tekst"])} →</a>' for l in pg.get("links", []))
-    intro = f'<section class="quick quick-breed"><p>{e(pg["intro"])}</p></section>' if pg.get("intro") else ""
+    cta = ""
+    if pg.get("cta", True):
+        cta = f'<p class="knoprij cta-intro">{waknop("Vraag een voorstel aan", f"Hoi Maarten, ik wil graag een voorstel voor {pg[chr(116)+chr(105)+chr(116)+chr(101)+chr(108)].lower()} voor mijn event.")}</p>'
+    intro = (f'<section class="quick quick-breed"><p>{e(pg["intro"])}</p>{cta}</section>' if pg.get("intro") else (f'<section class="quick quick-breed">{cta}</section>' if cta else ""))
     beschrijving = pg.get("intro") or next((t for b in pg["blokken"] for t in b.get("tekst", [])), pg["kernzin"])
     main = f'''<main class="wrap">
 <section class="casehead"><a class="crumb" href="diensten.html">← Producten en diensten</a><h1 class="kernzin">{heel(pg["kernzin"])}</h1>{('<p class="kop-knop">'+pg["kop_knop"]+'</p>') if pg.get("kop_knop") else ''}</section>

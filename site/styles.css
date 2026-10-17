@@ -246,3 +246,11 @@ em,i,cite,address,dfn,var{font-style:normal}
 /* nieuws */
 .casehead .nieuws-datum{margin:0 0 10px;color:rgba(246,245,241,.7);letter-spacing:.16em;text-transform:uppercase;font:600 11px/1.5 var(--tekst)}
 .case-tekst .labels time{font:600 11px/1.5 var(--tekst);letter-spacing:.16em;text-transform:uppercase;color:var(--zwart);opacity:.75}
+
+/* cta-brug: één zin en de WhatsApp-knop */
+.cta-brug{margin:clamp(36px,5vw,64px) 0 0;padding:clamp(28px,4vw,44px) 0 0;border-top:1px solid var(--zwart);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px 32px}
+.cta-brug p{margin:0;font:300 clamp(24px,2.6vw,36px)/1.15 var(--kop);color:var(--zwart);max-width:24ch}
+.cta-brug+.bottomnav{margin-top:clamp(28px,4vw,44px)}
+.founder-copy .cta-brug{border-top:0;padding-top:0;margin-top:30px}
+.quick-breed .cta-intro{margin:30px 0 0!important}
+.quick.quick-breed .cta-intro .wa{font:400 17px/1 var(--tekst)}
