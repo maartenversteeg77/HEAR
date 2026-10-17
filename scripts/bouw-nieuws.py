@@ -75,7 +75,7 @@ for b in berichten:
     main = f'''<main class="wrap">
 <section class="casehead"><a class="crumb" href="/nieuws/">← Nieuws</a><p class="label nieuws-datum"><time datetime="{b["datum"]}">{datum_nl(b["datum"])}</time></p><h1 class="kernzin">{e(b["titel"])}</h1></section>
 <figure class="casehero{passend}"><img src="/{e(b["beeld"])}" alt="{e(b.get("beeld_alt",""))}"{pos}></figure>
-<section class="quick quick-breed"><p>{e(b["intro"])}</p></section>
+<section class="quick quick-breed"><p>{e(b["kop"]) if b.get("kop") else e(b["intro"])}</p></section>
 <section class="case-sections"><article class="case-section nieuws-tekst"><h2>{e(b.get("label","Bericht")).upper()}</h2><div>{alinea}{knop}</div></article></section>
 <nav class="verwijzingen" aria-label="Verder"><a href="/nieuws/">Alle berichten →</a><a href="/index.html">Naar de homepage →</a></nav>
 </main>'''
