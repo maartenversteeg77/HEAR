@@ -202,45 +202,36 @@
       "intro": "Licht bepaalt hoe een ruimte voelt. Met een handvol goed gekozen lampen wordt een loods warm, een presentatie scherp en een tuin feestelijk. Wij werken met accugevoede lampen die we draadloos aansturen, zodat er geen kabels door het beeld lopen en de locatie geen extra stroom hoeft te leveren.",
       "blokken": [
         {
-          "label": "Theaterspots",
-          "tekst": [
-            "Spots met volledige kleurmenging en focusbladen, zoals je ze in theaters en musea ziet. Daarmee lichten we precies uit wat aandacht verdient: een product op een plateau, een spreker, een kunstwerk. De randen zijn scherp te snijden, zodat het licht op het object blijft en niet op de muur erachter."
-          ]
-        },
-        {
-          "label": "Accugevoede washlights",
-          "tekst": [
-            "De ADJ Par Z150 RGBA Plus is onze werkpaard-wash: een 150-watt ledlamp met rood, groen, blauw en amber, en een kleurweergave-index boven de 90. Daardoor blijven huidtinten en materialen natuurlijk, ook in gekleurd licht. Wit is instelbaar van warm kaarslicht tot koel daglicht. De lamp werkt op een accu en wordt draadloos aangestuurd."
-          ]
-        },
-        {
-          "label": "Pixelpars en lichtbuizen",
-          "tekst": [
-            "De ADJ ElectraPix Par 7 heeft zeven lenzen die elk apart aan te sturen zijn, waardoor een lamp zelf al kan bewegen en verlopen. Hij is accugevoed, gaat vijf tot twintig uur mee en is waterdicht (IP65), dus ook geschikt voor een tuin of terras. Met een opzetcilinder wordt dezelfde lamp een lichtzuil.",
-            "Voor lijnen en kaders gebruiken we full-colour lichtbuizen, los neer te zetten of te hangen."
-          ]
-        },
-        {
           "producten": [
             {
               "beeld": "img/diensten/theaterspots.jpg",
               "naam": "Theaterspots",
-              "regel": "Kleurmenging en focusbladen, voor gericht licht"
+              "regel": "Spots met volledige kleurmenging en focusbladen om randen te snijden, zoals je ze in theaters en musea ziet. Geschikt voor het uitlichten van producten, kunst of een spreker"
             },
             {
               "beeld": "img/diensten/par-beam.jpg",
               "naam": "ADJ Par Z150 RGBA Plus",
-              "regel": "Accu-wash, CRI boven 90, instelbaar wit"
+              "regel": "Accugevoede spot met 5 tot 20 uur werktijd. Drie instelbare breedtes tot volle wash waarmee je een ruimte inkleurt. Full-colour en diverse wittinten voor natuurlijke huid. Draadloos aangestuurd door Wolfmix"
             },
             {
               "beeld": "img/diensten/pixelpars.jpg",
               "naam": "ADJ ElectraPix Par 7",
-              "regel": "Accu-pixelpar, IP65, ook als lichtzuil"
+              "regel": "Ledspot met zeven lenzen die elk apart aan te sturen zijn, waardoor hij lijkt te bewegen en verlopen. Per zes stuks in een oplaadcase, gebruiksduur instelbaar van 5 tot 20 uur. Met accessoire te transformeren tot glazen lichtzuil van een meter hoog"
             },
             {
               "beeld": "img/diensten/lichtbuizen-podium.jpg",
               "naam": "Lichtbuizen",
-              "regel": "Full-colour lijnen, los of hangend"
+              "regel": "Full-colour lichtbuizen voor diverse toepassingen"
+            },
+            {
+              "beeld": "img/diensten/wolfmix.jpg",
+              "naam": "Wolfmix",
+              "regel": "Intuïtieve lichtsturing die vooraf op een laptop ontwikkelde lichtshows oproept. Inclusief draadloze zenders voor de Par Z150 en ElectraPix 7"
+            },
+            {
+              "beeld": "img/diensten/entourage.jpg",
+              "naam": "ADJ Entourage hazer",
+              "regel": "Egale, lichte nevel in de zaal die het zicht niet beperkt en lichteffecten veel meer impact geeft. Op waterbasis, dus geen plakkerige olie in de venue. Let op: een hazer triggert minder snel een brandalarm dan een rookmachine, maar check dit altijd bij de locatie"
             }
           ]
         },
