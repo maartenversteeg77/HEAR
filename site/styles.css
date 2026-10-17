@@ -221,19 +221,21 @@ em,i,cite,address,dfn,var{font-style:normal}
 .pagina .tekstlink:hover{color:var(--koraal)}
 .casehead .kop-knop{margin:28px 0 0}
 
-/* stappenflow (inkooptraject) */
-.stappen{list-style:none;margin:22px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:stap;max-width:none}
-.stappen li{position:relative;padding:14px 26px 14px 0;border-top:2px solid var(--zwart);counter-increment:stap}
-.stappen li::before{content:counter(stap,decimal-leading-zero);display:block;font:500 11px/1 var(--tekst);letter-spacing:.16em;color:#8c8d8a;margin-bottom:10px}
-.stappen li::after{content:'→';position:absolute;right:8px;top:14px;color:var(--zwart);font-size:14px}
-.stappen li:last-child::after{content:none}
-.stappen strong{display:block;font:400 clamp(18px,1.4vw,21px)/1.15 var(--kop);color:var(--zwart);margin-bottom:6px}
-.stappen span{display:block;font-size:14px;line-height:1.45;color:var(--tekstgrijs)}
-@media (max-width:720px){.stappen{grid-template-columns:1fr}.stappen li{padding:14px 0 14px 0;border-top:0;border-left:2px solid var(--zwart);padding-left:16px}.stappen li::after{content:'↓';right:auto;left:-7px;top:auto;bottom:-12px;background:var(--wit);line-height:1}}
-
-/* structuurkader op Over HEAR */
-.structuur{margin:34px 0 0;padding:20px 22px;border:1px solid var(--zwart);display:grid;gap:12px 24px;font-size:14px;line-height:1.5;color:var(--tekstgrijs)}
-.structuur div{display:grid;grid-template-columns:110px 1fr;gap:12px}
-.structuur dt{font:600 11px/1.6 var(--tekst);letter-spacing:.16em;text-transform:uppercase;color:var(--zwart)}
-.structuur dd{margin:0}
-@media (max-width:520px){.structuur div{grid-template-columns:1fr;gap:2px}}
+/* blokkop en donker blok */
+.case-section h3.blok-kop{letter-spacing:0;text-transform:none;font:300 clamp(26px,2.6vw,38px)/1.1 var(--kop);color:var(--zwart);margin:-4px 0 16px;max-width:22ch}
+.case-section.donker{background:var(--zwart);color:var(--wit);margin:10px calc(-1 * var(--rand)) 0;padding:clamp(28px,3.5vw,48px) var(--rand);border-top:0;border-left:6px solid var(--turquoise)}
+.case-section.donker h3.blok-kop{color:var(--wit)}
+.case-section.donker h2{color:var(--turquoise)}
+.case-section.donker p{color:rgba(246,245,241,.82)}
+.case-section.donker+.case-section{border-top:0}
+/* stappenflow (inkooptraject) als kaarten */
+.stappen{list-style:none;margin:26px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:none}
+.stappen li{position:relative;background:#fff;border-top:4px solid var(--turquoise);padding:18px 18px 20px;box-shadow:0 1px 2px rgba(25,26,25,.06)}
+.stappen li b{display:block;font:300 clamp(30px,2.6vw,38px)/1 var(--kop);color:var(--zwart);margin-bottom:8px}
+.stappen li+li::before{content:'→';position:absolute;left:-14px;top:50%;transform:translateY(-50%);color:#8c8d8a;font-size:13px}
+.stappen strong{display:block;font:400 clamp(17px,1.3vw,20px)/1.15 var(--kop);color:var(--zwart);margin-bottom:6px}
+.stappen span{display:block;font-size:13.5px;line-height:1.45;color:var(--tekstgrijs)}
+.stappen-noot{font-size:14px!important;color:#8c8d8a!important;margin-top:12px!important}
+@media (max-width:720px){.stappen{grid-template-columns:1fr 1fr;gap:12px}.stappen li+li::before{content:none}}
+@media (max-width:400px){.stappen{grid-template-columns:1fr}}
+.case-section.donker+.verwijzingen{margin-top:clamp(28px,4vw,56px)}

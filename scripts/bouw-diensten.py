@@ -25,7 +25,9 @@ def blok(b):
         items = "".join(fig(p) for p in b["producten"])
         return f'<section class="producten" aria-label="Producten">{items}</section>'
     ps = "".join(f"<p>{e(t)}</p>" for t in b["tekst"]) + b.get("html_na", "")
-    return f'<article class="case-section"><h2>{e(b["label"]).upper()}</h2><div>{ps}</div></article>'
+    kop = f'<h3 class="blok-kop">{e(b["kop"]).replace(chr(10), "<br>")}</h3>' if b.get("kop") else ""
+    cls = "case-section donker" if b.get("donker") else "case-section"
+    return f'<article class="{cls}"><h2>{e(b["label"]).upper()}</h2><div>{kop}{ps}</div></article>'
 
 for pg in data["paginas"]:
     pos = f' style="object-position:{e(pg["beeld_positie"])}"' if pg.get("beeld_positie") else ""

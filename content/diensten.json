@@ -364,23 +364,27 @@
       "blokken": [
         {
           "label": "Gratis tips en adviezen",
+          "kop": "Even sparren?",
           "tekst": [
-            "Over het best passende licht en geluid voor jouw locatie. Stel je vraag via WhatsApp."
+            "Een eerste vraag over het juiste licht of geluid voor jouw locatie? We denken vrijblijvend mee."
           ],
           "html_na": "<p class=\"inline-link\"><a href=\"https://wa.me/\">Stel je vraag via WhatsApp →</a></p>"
         },
         {
           "label": "Begeleiding inkooptraject",
+          "kop": "Van vraag naar de juiste installatie.",
           "tekst": [
-            "Op uurbasis en merkonafhankelijk. We beginnen met een ruimtescan: wat heeft deze ruimte nodig aan geluid of licht voor het type events dat ze organiseert? Vaak is dat minder dan verwacht, mits het goed is geplaatst. Daarna volgt een advies met bijpassende producten, een demonstratie door de betreffende leveranciers en, als tot aanschaf wordt overgegaan, training van medewerkers."
+            "Op uurbasis en merkonafhankelijk. We starten bij de ruimte en eindigen bij een systeem dat medewerkers zelf kunnen bedienen. Vaak is er minder nodig dan verwacht, mits het goed is geplaatst."
           ],
-          "html_na": "<ol class=\"stappen\" aria-label=\"Stappen van het inkooptraject\"><li><strong>Ruimtescan</strong><span>Wat heeft deze ruimte nodig voor het type events dat er plaatsvindt</span></li><li><strong>Advies</strong><span>Merkonafhankelijk, met bijpassende producten</span></li><li><strong>Demonstratie</strong><span>Door de betreffende leveranciers, in jouw ruimte</span></li><li><strong>Training</strong><span>Van medewerkers, bij aanschaf</span></li></ol>"
+          "html_na": "<ol class=\"stappen\" aria-label=\"Stappen van het inkooptraject\"><li><b>01</b><strong>Ruimtescan</strong><span>Wat vraagt deze ruimte en het type events?</span></li><li><b>02</b><strong>Advies</strong><span>Merkonafhankelijke keuze van passende systemen.</span></li><li><b>03</b><strong>Demonstratie</strong><span>Producten zien en horen in jouw eigen ruimte.</span></li><li><b>04</b><strong>Training</strong><span>Zelfstandig bedienen na aanschaf.</span></li></ol><p class=\"stappen-noot\">Geen merkenlijst als vertrekpunt, maar een advies op basis van jouw locatie.</p>"
         },
         {
           "label": "AV as a service",
+          "kop": "Wel de kwaliteit.\nNiet de aanschaf.",
+          "donker": true,
           "tekst": [
-            "Als alternatief voor het aankopen van licht en geluid. Voor een vast bedrag per maand en een minimumperiode van drie jaar verzorgt HEAR de licht- en geluidssystemen, inclusief reparaties waar relevant. Na een eventuele training bedient de klant de apparatuur zelf.",
-            "Voor installatie en onderhoud schakelen we waar nodig de productspecialisten van de gekozen merken in."
+            "Als alternatief voor het aankopen van licht en geluid. Voor een vast maandbedrag en een minimumperiode van drie jaar verzorgt HEAR de licht- en geluidssystemen, inclusief reparaties waar relevant.",
+            "Na een training bedien je de apparatuur zelf. Voor installatie en onderhoud betrekken we waar nodig de productspecialisten van de gekozen merken."
           ]
         }
       ],
