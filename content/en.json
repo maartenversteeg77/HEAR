@@ -137,6 +137,14 @@
     [
       "Meer weten? Kijk en luister op maartenversteeg.nl",
       "Want to know more? Watch and listen at maartenversteeg.nl"
+    ],
+    [
+      "<a href=\"nieuws/\">Nieuws</a>",
+      "<a href=\"nieuws/\">News</a>"
+    ],
+    [
+      "<a href=\"nieuws/\"><span>Nieuws</span><small>Nieuwe producten, events en berichten</small></a>",
+      "<a href=\"nieuws/\"><span>News</span><small>New products, events and updates</small></a>"
     ]
   ],
   "cases_json": {
