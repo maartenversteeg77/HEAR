@@ -1,6 +1,6 @@
 """Bouwt site/principes.html uit content/principes.json: één pagina met de jogwheel.
 Elk principe: titel (op het display), statement (regel onder de titel), intro, en de lijst werkwijze.
-werkwijze_kop: eigen kop boven de lijst; null = geen kop (lijst sluit aan op de intro); weggelaten = standaardkop. Geen subpagina's, geen doorklik. Een anker (#slug) opent dat principe.
+werkwijze_kop: optionele kop boven de lijst; standaard geen kop en geen lijn (besluit 18 okt). Geen subpagina's, geen doorklik. Een anker (#slug) opent dat principe.
 Kop, menu en voet komen uit site/index.html. Draaien na elke wijziging: python3 scripts/bouw-principes.py"""
 import json, html, pathlib
 root = pathlib.Path(__file__).resolve().parent.parent
