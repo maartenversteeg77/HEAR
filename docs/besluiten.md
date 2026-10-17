@@ -147,3 +147,4 @@ Te wegen bij redactie principes en founder story:
 - 2026-10-17: Homepage-slider: doelgroepen als losse labeltjes (kapitaal, dunne rand, afgerond). Doelgroepnaam "Corporate klanten" → "Corporate" (NL en EN, overal).
 - 2026-10-17: Boothpagina: nieuwe tekst van Maarten (intro, Zo werken we, Monitoring, De booth, Spelregels). Standaard booth: drie CDJ-3000X + V10 of Euphonia. Monitoring: 808+515 op oorhoogte of KXM-25 wedges. Lijststijl in secties toegevoegd.
 - 2026-10-17: Boothpagina: RCF KXM 25-A toegevoegd aan productrij (15" coax, 137 dB; geverifieerd op rcf.it). Schrijfwijze "KXM 25-A" zoals RCF.
+- 2026-10-17: TONE OF VOICE (Maarten): expertise laten merken via signaalwoorden, niet uitleggen. Eén vakterm per tegel of alinea die een vakgenoot herkent en waar een leek overheen leest zonder te struikelen (frontfill, delay, coherent, dual file management). Geen uitleg erbij, geen opsomming van specs. Niet uitleggen, wel laten merken.

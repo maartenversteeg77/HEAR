@@ -35,6 +35,7 @@ Niet doen: `pkill -f http.server` (sluit de shell).
 - **Geen superlatieven**, geen reclametaal. Ingetogen, concreet, feitelijk. Merken en modelnummers mogen juist wel.
 - **Geen cursief** sitewide (CSS forceert `font-style:normal`).
 - **Geen AI-gegenereerde beelden.** Echte foto's, echte productfoto's. Gezichten van derden buiten beeld snijden tenzij toestemming.
+- **Tone of voice**: expertise laten merken, niet uitleggen. Eén signaalwoord per tegel of alinea dat een vakgenoot herkent en waar een leek overheen leest (frontfill, delay, coherent, dual file management). Geen uitleg, geen spec-opsomming.
 - Boutique, niet luxury. Het woord "boutique" hoogstens één keer (Over HEAR); verder voelbaar maken.
 - Convergeren: geen nieuwe pagina's of categorieën zonder expliciet besluit. Abbey (analoge keten) pas noemen als het operationeel is.
 - Taal: Nederlands; productcategorieën hebben Engelse namen (Booth & DJ-gear etc.), bewust nog niet beslist of dat zo blijft.
