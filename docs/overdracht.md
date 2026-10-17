@@ -56,7 +56,7 @@ Navigatie (volgorde vast): **Cases · Voor wie · Principes · Producten · Over
 | Home | `index.html` | hand; slider leest `cases.json` |
 | Cases overzicht | `cases.html` | `scripts/bouw-cases.py` ← `site/cases.json` |
 | 8 cases | `ade-dj`, `jubileum-ondernemersnetwerk`, `productpresentatie`, `gemeentelijk-netwerkevent`, `systeemadvies`, `dj-sets`, `prive-event`, `radio-mixes` | hand; vorige/volgende via bouw-en.py |
-| Voor wie | `doelgroepen.html` → `corporate.html`, `venue-owners.html`, `dance-events.html` | hand |
+| Voor wie | `doelgroepen.html` → `corporate.html`, `venue-owners.html`, `dance-events.html` | hand; zijnav (pijlen + bolletjes) staat hardgecodeerd in de drie pagina's, bij een vierde doelgroep alle drie bijwerken |
 | Principes | `principes.html` (één pagina met jogwheel, geen subpagina's; ankers `#partnership` etc.) | `scripts/bouw-principes.py` ← `content/principes.json`; component `site/jog.css` + `site/jog.js` |
 | Producten en diensten | `diensten.html` → 8 pagina's (`booth-dj-gear`, `high-end-audio`, `atmospheric-lighting`, `dancefloor-lighting`, `vintage-lighting`, `av-as-a-service`, `artiesten`, `special-projects`) | `scripts/bouw-diensten.py` ← `content/diensten.json` |
 | Over HEAR | `over-hear.html` | hand (founder story, ik-vorm) |
