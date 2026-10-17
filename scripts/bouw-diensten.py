@@ -33,7 +33,12 @@ def blok(b):
     cls = "case-section donker" if b.get("donker") else "case-section"
     return f'<article class="{cls}"><h2>{e(b["label"]).upper()}</h2><div>{kop}{ps}</div></article>'
 
-for pg in data["paginas"]:
+volgorde = data["paginas"]
+def bottomnav(i):
+    v, n = volgorde[i - 1], volgorde[(i + 1) % len(volgorde)]
+    return f'<nav class="bottomnav" aria-label="Vorige en volgende categorie"><a href="{e(v["bestand"])}">← {e(v["titel"])}</a><a href="{e(n["bestand"])}">{e(n["titel"])} →</a></nav>'
+
+for i, pg in enumerate(data["paginas"]):
     pos = f' style="object-position:{e(pg["beeld_positie"])}"' if pg.get("beeld_positie") else ""
     # intro direct onder de kop, dan de productrij
     prod = [b for b in pg["blokken"] if "producten" in b]
@@ -54,6 +59,7 @@ for pg in data["paginas"]:
 {producten}
 {blokken}
 <nav class="verwijzingen" aria-label="Verder lezen">{links}</nav>
+{bottomnav(i)}
 </main>'''
     doc = f'''<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{e(beschrijving[:155])}"><title>{e(pg["titel"])} · HEAR</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="styles.css"></head><body class="pagina">
 {kop}
