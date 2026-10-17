@@ -151,3 +151,4 @@ Te wegen bij redactie principes en founder story:
 
 - 2026-10-17: Productpagina's: intro nu boven de productrij (was eronder), geldt voor alle acht.
 - 2026-10-17: Dansvloerverlichting: twee producten met elk twee foto's naast elkaar in één tegel (veld `beelden`), met videolink (veld `link`, opent in nieuw venster). Programmeertekst omgedraaid: "Indien nodig programmeren we vooraf een show die past bij het event".
+- 2026-10-17: Vintage licht: Astrodisco- en scannertekst van Maarten. TE VERIFIËREN: lamptype in de scanners (Philips MSR of Osram HMI); "warme kleuren" vervangen door "rijke, verzadigde kleuren" omdat HMI/MSR koud wit (±5600 K) is.
