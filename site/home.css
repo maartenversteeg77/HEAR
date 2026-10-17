@@ -98,7 +98,8 @@ body.menu-open{overflow:hidden}
 .werk-kaart{flex:0 0 calc((100% - 44px) / 3.25);scroll-snap-align:start;display:block;text-decoration:none}
 .werk-kaart img{width:100%;aspect-ratio:4/5;object-fit:cover;margin-bottom:18px;transition:opacity .3s}
 .werk-kaart:hover img{opacity:.85}
-.werk-kaart .label{color:#5c5c57}
+.werk-kaart .label{display:flex;flex-wrap:wrap;gap:6px;margin:0}
+.werk-kaart .label span{display:inline-block;padding:3px 9px;border:1px solid rgba(25,26,25,.35);border-radius:999px;font:600 10.5px/1.4 var(--tekst);letter-spacing:.14em;text-transform:uppercase;color:#3a3a37}
 .werk-kaart h3{font:400 clamp(22px,2vw,28px)/1.1 var(--kop);margin:10px 0 8px}
 .werk-kaart p{margin:0;font-size:15px;line-height:1.5;color:#4a4a46}
 .werk-alle{display:flex;flex-direction:column;justify-content:space-between;aspect-ratio:4/5;align-self:flex-start;background:var(--turquoise);color:var(--zwart);padding:28px}

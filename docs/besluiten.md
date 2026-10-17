@@ -144,3 +144,4 @@ Te wegen bij redactie principes en founder story:
 - Uit dj-bio: curatie, ontwikkeling (van geel naar rood via de tussenkleuren), eigen signatuur.
 - Founder story: verhaallijn van "carrièreswitch" naar "uitbouw van wat er al was" (catwalks, beurzen, congressen met bureaus). Toon van de huidige tekst behouden.
 - Corporate-pagina: Strategie → Gewenste beleving → AV-ontwerp → Uitvoering, met blok "Verder kijken dan de techniek".
+- 2026-10-17: Homepage-slider: doelgroepen als losse labeltjes (kapitaal, dunne rand, afgerond). Doelgroepnaam "Corporate klanten" → "Corporate" (NL en EN, overal).
