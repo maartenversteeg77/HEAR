@@ -145,3 +145,4 @@ Te wegen bij redactie principes en founder story:
 - Founder story: verhaallijn van "carrièreswitch" naar "uitbouw van wat er al was" (catwalks, beurzen, congressen met bureaus). Toon van de huidige tekst behouden.
 - Corporate-pagina: Strategie → Gewenste beleving → AV-ontwerp → Uitvoering, met blok "Verder kijken dan de techniek".
 - 2026-10-17: Homepage-slider: doelgroepen als losse labeltjes (kapitaal, dunne rand, afgerond). Doelgroepnaam "Corporate klanten" → "Corporate" (NL en EN, overal).
+- 2026-10-17: Boothpagina: nieuwe tekst van Maarten (intro, Zo werken we, Monitoring, De booth, Spelregels). Standaard booth: drie CDJ-3000X + V10 of Euphonia. Monitoring: 808+515 op oorhoogte of KXM-25 wedges. Lijststijl in secties toegevoegd.

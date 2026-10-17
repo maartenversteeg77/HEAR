@@ -47,6 +47,9 @@ body.pagina.menu-open .top{position:fixed}
 .case-sections .case-section:first-child{border-top:1px solid var(--zwart)}
 .case-section p{font-size:17px;line-height:1.7;color:var(--tekstgrijs);margin:0 0 16px;max-width:64ch;text-wrap:pretty}
 .case-section p:last-child{margin-bottom:0}
+.case-section ul{margin:0;padding-left:1.1em;max-width:64ch;font-size:17px;line-height:1.7;color:var(--tekstgrijs)}
+.case-section li{margin:0 0 10px;padding-left:.3em;text-wrap:pretty}
+.case-section li::marker{color:var(--zwart)}
 .topic-group{padding:clamp(36px,4vw,56px) 0 0;border-top:0}
 .topic-group>h2{font:300 clamp(28px,3vw,44px)/1.05 var(--kop);margin:0 0 22px}
 .topic-group+.topic-group{margin-top:10px}
