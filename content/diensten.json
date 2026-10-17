@@ -259,16 +259,8 @@
       "kernzin": "Dansvloerverlichting",
       "beeld": "img/diensten/dansvloer.jpg",
       "beeld_alt": "Volle dansvloer in roze en blauw licht, met bundels vanaf het plafond",
-      "intro": "Een lichtshow hoort de muziek te dragen, niet te overschreeuwen. Daarom kiezen wij voor een beperkt aantal veelzijdige moving heads, die op elk type event anders geprogrammeerd en ingezet kunnen worden.",
+      "intro": "Een hybride moving head is beam, spot en wash in één. Je haalt uit één apparaat wat anders drie fixtures vraagt, en met een beperkt aantal stuks maak je een show met veel gezichten. De lampen wisselen bovendien van rol: rustig als wash in de warm-up, impactvol als beam op peak hour.",
       "blokken": [
-        {
-          "label": "Hybride moving heads",
-          "tekst": [
-            "Een hybride moving head is beam, spot en wash in één. Je haalt uit één apparaat wat anders drie fixtures vraagt, en met een beperkt aantal stuks maak je een show met veel gezichten. De lampen wisselen bovendien van rol: rustig als wash in de warm-up, impactvol als beam op peak hour.",
-            "Onze keuze is de ADJ Focus CMY Compact, het Zwitserse zakmes onder de moving heads voor events van middelgroot formaat: 400 watt, zoom van 3° tot 52°, CMY-kleurmenging, twee gobowielen en prisma's, draadloos aan te sturen.",
-            "Wat de hybride niet kan, doet de Infinity iFX-640: een wash moving head met interne roterende shutters die de bundel een bloemvorm geven. Daarmee is hij ook de lamp voor events waar sfeer voorop staat en niet het effect, zoals productdemo's, catwalks, lezingen en theater."
-          ]
-        },
         {
           "label": "Wat erbij komt",
           "tekst": [
@@ -283,7 +275,7 @@
                 "img/diensten/focus-beam-spot-wash.jpg"
               ],
               "naam": "ADJ Focus CMY Compact",
-              "regel": "Hybride moving head met wash, spot en beam",
+              "regel": "Onze keuze, het Zwitserse zakmes onder de moving heads voor events van middelgroot formaat: 400 watt, zoom van 3° tot 52°, CMY-kleurmenging, twee gobowielen en prisma's, draadloos aan te sturen",
               "link": {
                 "tekst": "Bekijk de Focus Compact",
                 "href": "https://youtu.be/2CalKo7ov7U"
@@ -295,7 +287,7 @@
                 "img/diensten/ifx640-warm.jpg"
               ],
               "naam": "Infinity iFX-640 met interne shutters",
-              "regel": "Wash moving head, bundels in bloemvorm",
+              "regel": "Wat de hybride niet kan, doet de iFX-640: een wash moving head met interne roterende shutters die de bundel een bloemvorm geven. Daarmee is hij ook de lamp voor events waar sfeer voorop staat en niet het effect, zoals productdemo's, catwalks, lezingen en theater",
               "link": {
                 "tekst": "Bekijk de Infinity iFX-640",
                 "href": "https://vimeo.com/568318553"
