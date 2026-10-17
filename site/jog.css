@@ -54,3 +54,11 @@
   .jog .scherm{inset:34%}
   .jog .scherm strong{font-size:14px}
 }
+
+.jogtekst .principes{list-style:none;margin:6px 0 0;padding:0;max-width:58ch;text-align:left}
+.jogtekst .principes li{position:relative;padding-left:22px;font-size:17px;line-height:1.6;color:var(--zwart);margin:0 0 10px}
+.jogtekst .principes li::before{content:"";position:absolute;left:0;top:.72em;width:10px;height:2px;background:var(--turquoise)}
+.jogtekst .waar{text-align:left}
+.jogtekst .waar ul{margin:0;padding-left:1.1em;color:var(--tekstgrijs);font-size:15.5px;line-height:1.6}
+.jogtekst .waar li{margin:0 0 8px;padding-left:.3em}
+.jogtekst .waar li::marker{color:var(--zwart)}

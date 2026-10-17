@@ -17,12 +17,12 @@ for p in data["paginas"]:
     st = p.get("statement") or (p["kernzin"].split(":", 1)[1].strip() if ":" in p["kernzin"] else p["kernzin"])
     st = st[0].upper() + st[1:]
     waar = p.get("waar")
-    if waar is None:  # oude structuur: blokken → eerst 'Wat je ervan merkt', dan de rest
+    if waar is None and "blokken" in p:  # oude structuur
         bl = p["blokken"]
         waar = [t for b in bl if b["label"] == "Wat je ervan merkt" for t in b["tekst"]] + \
                [t for b in bl if b["label"] != "Wat je ervan merkt" for t in b["tekst"]]
-    items.append({"slug": p.get("slug") or p["bestand"].replace(".html", ""), "titel": p["titel"],
-                  "statement": st, "intro": p["intro"], "waar": waar})
+    items.append({"slug": p.get("slug") or p.get("bestand", "").replace(".html", ""), "titel": p["titel"],
+                  "statement": st, "intro": p["intro"], "principes": p.get("principes", []), "waar": waar})
 
 kernzin = data.get("kernzin", "Principes en way of working")
 intro = data.get("intro", "")
@@ -30,7 +30,7 @@ beschrijving = intro or " · ".join(i["titel"] for i in items)
 pagina = f'''<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{e(beschrijving[:155])}"><title>Principes en way of working · HEAR</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="jog.css"></head><body class="pagina">
 {kop}
 <main class="wrap">
-<section class="casehead"><a class="crumb" href="index.html">← HEAR</a><h1 class="kernzin">{e(kernzin)}</h1></section>
+<section class="casehead"><a class="crumb" href="index.html"><span class="sectie">HEAR</span></a><h1 class="kernzin">{e(kernzin)}</h1></section>
 {f'<section class="quick quick-breed"><p>{e(intro)}</p></section>' if intro else ''}
 <section class="jogmidden">
   <button class="jog" id="jog" type="button" aria-label="Volgend principe">
