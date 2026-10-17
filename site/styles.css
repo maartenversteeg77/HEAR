@@ -254,3 +254,4 @@ em,i,cite,address,dfn,var{font-style:normal}
 .founder-copy .cta-brug{border-top:0;padding-top:0;margin-top:30px}
 .quick-breed .cta-intro{margin:30px 0 0!important}
 .quick.quick-breed .cta-intro .wa{font:400 17px/1 var(--tekst)}
+.pagina main>.cta-brug:last-child{padding-bottom:clamp(56px,8vw,100px)}
