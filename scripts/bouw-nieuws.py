@@ -71,9 +71,10 @@ for b in berichten:
         k = b["knop"]; ext = k["href"].startswith("http")
         knop = f'<p class="knoprij"><a class="wa sc" href="{e(k["href"])}"{" target=\"_blank\" rel=\"noopener\"" if ext else ""}>{e(k["tekst"])}<i aria-hidden="true">→</i></a></p>'
     pos = f' style="object-position:{e(b["beeld_positie"])}"' if b.get("beeld_positie") else ""
+    passend = " passend" if b.get("beeld_passend") else ""
     main = f'''<main class="wrap">
 <section class="casehead"><a class="crumb" href="/nieuws/">← Nieuws</a><p class="label nieuws-datum"><time datetime="{b["datum"]}">{datum_nl(b["datum"])}</time></p><h1 class="kernzin">{e(b["titel"])}</h1></section>
-<figure class="casehero"><img src="/{e(b["beeld"])}" alt="{e(b.get("beeld_alt",""))}"{pos}></figure>
+<figure class="casehero{passend}"><img src="/{e(b["beeld"])}" alt="{e(b.get("beeld_alt",""))}"{pos}></figure>
 <section class="quick quick-breed"><p>{e(b["intro"])}</p></section>
 <section class="case-sections"><article class="case-section nieuws-tekst"><h2>{e(b.get("label","Bericht")).upper()}</h2><div>{alinea}{knop}</div></article></section>
 <nav class="verwijzingen" aria-label="Verder"><a href="/nieuws/">Alle berichten →</a><a href="/index.html">Naar de homepage →</a></nav>

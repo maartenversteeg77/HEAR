@@ -1,5 +1,5 @@
 {
-  "_uitleg": "Nieuwsberichten. scripts/bouw-nieuws.py bouwt er site/nieuws/<slug>.html, het overzicht site/nieuws/index.html en een deelbeeld per bericht van. Nieuws staat niet in de navigatie. Velden: slug (bestandsnaam, kleine letters, koppeltekens), datum (JJJJ-MM-DD), titel, intro (één of twee zinnen; wordt ook de social-omschrijving), beeld (pad in site/), beeld_alt, beeld_positie (optioneel), label (kopje boven de tekst, optioneel), tekst (lijst alinea's), knop (optioneel: tekst + href), status: 'af' om te publiceren, anders 'concept'. De 'basis' is het domein voor absolute links in de social-metadata; zet op https://hear.nl zodra het domein gekoppeld is.",
+  "_uitleg": "Nieuwsberichten. scripts/bouw-nieuws.py bouwt er site/nieuws/<slug>.html, het overzicht site/nieuws/index.html en een deelbeeld per bericht van. Nieuws staat niet in de navigatie. Velden: slug (bestandsnaam, kleine letters, koppeltekens), datum (JJJJ-MM-DD), titel, intro (één of twee zinnen; wordt ook de social-omschrijving), beeld (pad in site/), beeld_alt, beeld_positie (optioneel), label (kopje boven de tekst, optioneel), tekst (lijst alinea's), knop (optioneel: tekst + href), status: 'af' om te publiceren, anders 'concept'. De 'basis' is het domein voor absolute links in de social-metadata; zet op https://hear.nl zodra het domein gekoppeld is. beeld_passend: true toont de hele foto in de kop (met zwart eromheen) in plaats van bijgesneden.",
   "basis": "https://hear.maartenversteeg.workers.dev",
   "berichten": [
     {
@@ -29,7 +29,6 @@
       "intro": "Twee compacte sub-topsets die drie dingen kunnen: op zichzelf spelen bij een lezing of intieme cocktailparty, monitoren in de dj-booth, en als frontfill of delay meedraaien in het grote systeem.",
       "beeld": "img/nieuws/808-515-set.jpg",
       "beeld_alt": "RCF KX 515-A top op een afstandsbuis boven een SUB 808-AS, net uitgepakt",
-      "beeld_positie": "center 40%",
       "label": "Waarom twee",
       "tekst": [
         "De SUB 808-AS met de KX 515-A erop is onze kleinste volwaardige set: een compacte sub en een top uit dezelfde familie als de KXL 4-A, dus met dezelfde klank, een maat kleiner. Voor een speech, een panel of een cocktailparty tot zo'n 150 gasten is dit genoeg, en het staat in een paar minuten.",
@@ -40,7 +39,8 @@
         "tekst": "Bekijk high-end audio",
         "href": "/high-end-audio.html"
       },
-      "status": "af"
+      "status": "af",
+      "beeld_passend": true
     }
   ]
 }

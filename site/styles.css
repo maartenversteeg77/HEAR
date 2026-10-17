@@ -255,3 +255,6 @@ em,i,cite,address,dfn,var{font-style:normal}
 .quick-breed .cta-intro{margin:30px 0 0!important}
 .quick.quick-breed .cta-intro .wa{font:400 17px/1 var(--tekst)}
 .pagina main>.cta-brug:last-child{padding-bottom:clamp(56px,8vw,100px)}
+
+.casehero.passend{background:var(--zwart)}
+.casehero.passend img{object-fit:contain}
