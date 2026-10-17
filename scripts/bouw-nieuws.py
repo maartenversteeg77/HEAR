@@ -76,7 +76,7 @@ for b in berichten:
         knop = f'<p class="knoprij"><a class="wa sc" href="{e(k["href"])}"{" target=\"_blank\" rel=\"noopener\"" if ext else ""}>{e(k["tekst"])}<i aria-hidden="true">→</i></a></p>'
     pos = f' style="object-position:{e(b["beeld_positie"])}"' if b.get("beeld_positie") else ""
     passend = " passend" if b.get("beeld_passend") else ""
-    kopregel = f'<section class="quick quick-breed"><p>{e(b["kop"])}</p></section>' if b.get("kop") else ""
+    kopregel = f'<section class="quick quick-breed kopregel"><p>{e(b["kop"])}</p></section>' if b.get("kop") else ""
     main = f'''<main class="wrap">
 <section class="casehead"><a class="crumb" href="/nieuws/"><span class="sectie">Nieuws</span></a><p class="label nieuws-datum"><time datetime="{b["datum"]}">{datum_nl(b["datum"])}</time></p><h1 class="kernzin">{e(b["titel"])}</h1></section>
 <figure class="casehero{passend}"><img src="/{e(b["beeld"])}" alt="{e(b.get("beeld_alt",""))}"{pos}></figure>

@@ -210,7 +210,8 @@ em,i,cite,address,dfn,var{font-style:normal}
 /* dienstenpagina's: productrij als opening, intro over de volle breedte */
 .casehead+.producten{border-top:0;padding-top:clamp(28px,4vw,48px)}
 .quick.quick-breed{max-width:none}
-.quick.quick-breed p{max-width:none;font-size:clamp(22px,2.1vw,32px)}
+.quick.quick-breed p{max-width:66ch;font:600 18px/1.65 var(--tekst);color:var(--zwart)}
+.quick.quick-breed.kopregel p{max-width:none;font:300 clamp(22px,2.1vw,32px)/1.25 var(--kop)}
 .visual-grid .visual-card>img{object-position:center 30%}
 /* kernzin op landingspagina's: breder, zodat hij op twee regels past */
 .casehead h1.kernzin{max-width:40ch}
@@ -254,6 +255,7 @@ em,i,cite,address,dfn,var{font-style:normal}
 .founder-copy .cta-brug{border-top:0;padding-top:0;margin-top:30px}
 .quick-breed .cta-intro{margin:30px 0 0!important}
 .quick.quick-breed .cta-intro .wa{font:400 17px/1 var(--tekst)}
+.quick.quick-breed{padding-bottom:clamp(24px,3vw,40px)}
 .pagina main>.cta-brug:last-child{padding-bottom:clamp(56px,8vw,100px)}
 
 .casehero.passend{background:var(--zwart)}
