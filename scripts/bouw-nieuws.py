@@ -73,7 +73,7 @@ for b in berichten:
     knop = ""
     if b.get("knop"):
         k = b["knop"]; ext = k["href"].startswith("http")
-        knop = f'<p class="knoprij"><a class="wa sc" href="{e(k["href"])}"{" target=\"_blank\" rel=\"noopener\"" if ext else ""}>{e(k["tekst"])}<i aria-hidden="true">→</i></a></p>'
+        knop = f'<p class="knoprij"><a class="link" href="{e(k["href"])}"{" target=\"_blank\" rel=\"noopener\"" if ext else ""}>{e(k["tekst"])}<i aria-hidden="true">→</i></a></p>'
     pos = f' style="object-position:{e(b["beeld_positie"])}"' if b.get("beeld_positie") else ""
     passend = " passend" if b.get("beeld_passend") else ""
     kopregel = f'<section class="quick quick-breed kopregel"><p>{e(b["kop"])}</p></section>' if b.get("kop") else ""

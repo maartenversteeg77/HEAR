@@ -217,7 +217,7 @@ em,i,cite,address,dfn,var{font-style:normal}
 .casehead h1.kernzin{max-width:40ch}
 /* knop in de tekst (bijv. SoundCloud) */
 .knoprij{margin:22px 0 0!important}
-.wa.sc{background:var(--turquoise)}
+
 .pagina .tekstlink{color:var(--zwart)}
 .pagina .tekstlink:hover{color:var(--koraal)}
 .casehead .kop-knop{margin:28px 0 0}
@@ -290,3 +290,13 @@ em,i,cite,address,dfn,var{font-style:normal}
 .zijnav .bollen a.aan{background:var(--wit);transform:scale(1.2)}
 .zijnav .pijl{color:#a9a8a3}
 @media (max-width:720px){.crumb .huidig{display:none}.crumb .scheiding{display:none}}
+
+/* inline link met icoon en pijl (SoundCloud, maartenversteeg.nl, verwijzingen) */
+.link{display:inline-flex;align-items:center;gap:10px;font:500 12px/1.4 var(--tekst);letter-spacing:.14em;text-transform:uppercase;color:var(--zwart);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:3px}
+.link svg{width:16px;height:16px;flex:none}
+.link i{font-style:normal}
+.link:hover{color:var(--koraal)}
+.casehead .link{color:var(--wit)}
+.casehead .link:hover{color:var(--koraal)}
+.knoprij .link{margin-top:4px}
+.artikel .knoprij .link{margin-top:0}
