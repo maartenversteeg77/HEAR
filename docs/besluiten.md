@@ -179,3 +179,7 @@ Patroon (Maartens woorden): het zit in het trucje, van…naar en niet a maar b. 
 ## 17 okt 2026 — principes: Open af
 
 Display "Met een open vizier". Waarde: dansvloer als vrijplaats (zijn wie je bent, de ander diezelfde ruimte gunnen). Kop boven de lijst is per waarde instelbaar (`werkwijze_kop` in principes.json); bij Open: "Die openheid vinden wij belangrijk, en je ziet haar terug in kleine dingen". Vier punten: nieuwsgierig, kritiek om van te leren, niet oordelen zonder te bevragen, geen samenwerking met partijen die openlijk discrimineren. Tekst van Maarten; alleen tot volzinnen gemaakt en wij/we gelijkgetrokken.
+
+## 18 okt 2026 — principes: volgorde en bullets
+
+Volgorde waarden: Samen, Open, Vakmanschap, Warmte (ook in de voet, NL en EN). Open: kop boven de lijst weg, zin is onderdeel van de alinea (`werkwijze_kop: null`). Warmte: "artiest zie en hoor je" → "Afhankelijk van de wens van de opdrachtgever is het ontwerp opvallend of juist afwezig"; "avond heeft een verloop" → "Licht, geluid en visuals zijn afgestemd op de energie van het moment"; "na afloop hoor je nog" weg. Vakmanschap: "weinig lampen en kasten" → "multi-inzetbare en modulaire systemen"; "opbouw klaar voor de gasten" en "merknamen en modelnummers" weg. Uurbasis komt nergens meer voor (klant mag ook een losse som betalen). Open: naam/statement/intro van Warmte in bespreking ("sfeer over spektakel").

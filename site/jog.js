@@ -17,7 +17,7 @@
     var h='<ul class="dots" aria-label="Onderdelen">'+P.map(function(q,k){return '<li><button type="button" data-k="'+k+'"'+(k===i?' class="aan" aria-current="true"':'')+' aria-label="'+esc(q.titel)+'"></button></li>'}).join('')+'</ul>';
     if(cfg.midden){ h+='<h2>'+esc(p.titel)+'</h2>'+(p.statement?'<p class="sub">'+esc(p.statement)+'</p>':'')+'<p>'+esc(p.intro)+'</p>'; }
     else { h+='<p class="label">'+esc(p.titel)+'</p><h2>'+esc(p.statement)+'</h2><p>'+esc(p.intro)+'</p>'; }
-    if(p.werkwijze&&p.werkwijze.length) h+='<div class="waar"><h3>'+esc(p.werkwijze_kop||'Voor onze manier van werken betekent dit')+'</h3><ul class="principes">'+p.werkwijze.map(function(t){return '<li>'+esc(t)+'</li>'}).join('')+'</ul></div>';
+    if(p.werkwijze&&p.werkwijze.length) h+='<div class="waar'+(p.werkwijze_kop===null?' zonderkop':'')+'">'+(p.werkwijze_kop===null?'':'<h3>'+esc(p.werkwijze_kop||'Voor onze manier van werken betekent dit')+'</h3>')+'<ul class="principes">'+p.werkwijze.map(function(t){return '<li>'+esc(t)+'</li>'}).join('')+'</ul></div>';
     else if(p.waar&&p.waar.length) h+='<div class="waar"><h3>Waar merk je dit aan?</h3><ul>'+p.waar.map(function(t){return '<li>'+esc(t)+'</li>'}).join('')+'</ul></div>';
     if(p.knop) h+='<p class="knoprij"><a class="wa sc" href="'+esc(p.href)+'">'+esc(p.knop)+'<i aria-hidden="true">→</i></a></p>';
     else if(p.href) h+='<p class="inline-link"><a href="'+esc(p.href)+'">Lees het hele principe →</a></p>';

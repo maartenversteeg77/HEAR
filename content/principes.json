@@ -20,17 +20,17 @@
       ]
     },
     {
-      "slug": "warmte",
-      "titel": "Warmte",
-      "statement": "Je gaat uit, maar je bent toch thuis.",
-      "intro": "Licht en geluid staan in dienst van de artiest en de avond, niet op de voorgrond. We maken een huiskamer op schaal: een ruimte waar je je op je gemak voelt, of het nu voor vijftig of voor duizend mensen is.",
+      "slug": "open",
+      "titel": "Open",
+      "statement": "Met een open vizier",
+      "intro": "HEAR komt uit de dancescene. Een dansvloer is een vrijplaats: je mag zijn wie je bent en eruitzien zoals je wilt, en je gunt de ander diezelfde ruimte. Die openheid vinden wij belangrijk, en je ziet haar terug in kleine dingen:",
       "werkwijze": [
-        "We zoeken een warm geluid dat vol is op elk volume, zodat je kunt dansen en toch een gesprek kunt voeren. Sprekers zijn tot achterin verstaanbaar zonder dat het vooraan hard wordt.",
-        "We werken liever met washlights die een ruimte inkleuren dan met een kermis aan effecten. Donker is daarbij ook een keuze.",
-        "De artiest zie en hoor je; de techniek valt zo min mogelijk op.",
-        "Een avond heeft een verloop. We bouwen rustig op in de warm-up en gaan vol op peak hour.",
-        "Na afloop hoor je nog gewoon wat er om je heen gebeurt."
-      ]
+        "We zijn nieuwsgierig naar andere oplossingen, andere meningen, nieuwe technologie en nieuwe muziek.",
+        "Kritiek is er om van te leren: hoe kan het voortaan anders?",
+        "We oordelen niet zonder iemand eerst te bevragen.",
+        "We werken niet samen met partijen die openlijk discrimineren."
+      ],
+      "werkwijze_kop": null
     },
     {
       "slug": "vakmanschap",
@@ -40,23 +40,20 @@
       "werkwijze": [
         "We kiezen producten die slim zijn in gebruik en er netjes uitzien, omdat erover is nagedacht.",
         "We investeren in techniek die de operatie makkelijk maakt: draadloos licht, actieve speakers, lichtshows die we vooraf programmeren. Daardoor lopen er geen kabelgoten door de zaal en draait het hele systeem op twee gewone stopcontacten.",
-        "We werken met weinig lampen en kasten, en geven elk een eigen rol.",
-        "De opbouw is klaar voordat de eerste gasten er zijn.",
-        "Op onze productpagina's staan merknamen en modelnummers, geen \"high-end apparatuur\"."
+        "We werken met multi-inzetbare en modulaire systemen."
       ]
     },
     {
-      "slug": "open",
-      "titel": "Open",
-      "statement": "Met een open vizier",
-      "intro": "HEAR komt uit de dancescene. Een dansvloer is een vrijplaats: je mag zijn wie je bent en eruitzien zoals je wilt, en je gunt de ander diezelfde ruimte.",
+      "slug": "warmte",
+      "titel": "Warmte",
+      "statement": "Je gaat uit, maar je bent toch thuis.",
+      "intro": "Licht en geluid staan in dienst van de artiest en de avond, niet op de voorgrond. We maken een huiskamer op schaal: een ruimte waar je je op je gemak voelt, of het nu voor vijftig of voor duizend mensen is.",
       "werkwijze": [
-        "We zijn nieuwsgierig naar andere oplossingen, andere meningen, nieuwe technologie en nieuwe muziek.",
-        "Kritiek is er om van te leren: hoe kan het voortaan anders?",
-        "We oordelen niet zonder iemand eerst te bevragen.",
-        "We werken niet samen met partijen die openlijk discrimineren."
-      ],
-      "werkwijze_kop": "Die openheid vinden wij belangrijk, en je ziet haar terug in kleine dingen"
+        "We zoeken een warm geluid dat vol is op elk volume, zodat je kunt dansen en toch een gesprek kunt voeren. Sprekers zijn tot achterin verstaanbaar zonder dat het vooraan hard wordt.",
+        "We werken liever met washlights die een ruimte inkleuren dan met een kermis aan effecten. Donker is daarbij ook een keuze.",
+        "Afhankelijk van de wens van de opdrachtgever is het ontwerp opvallend of juist afwezig.",
+        "Licht, geluid en visuals zijn afgestemd op de energie van het moment."
+      ]
     }
   ]
 }
