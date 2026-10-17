@@ -1,6 +1,6 @@
 {
   "_uitleg": "Principes en way of working: één pagina met het jogwheel. Per waarde: slug (anker), titel (op het display), statement (één zin), intro (2-3 zinnen), werkwijze (lijst onder 'Voor onze manier van werken betekent dit:'). Geen subpagina's. Gebouwd door scripts/bouw-principes.py.",
-  "kernzin": "Principes en way of working",
+  "kernzin": "Waarden en uitgangspunten",
   "intro": "Achter alles wat we doen zit een intentie. Soms maken we daardoor net andere keuzes dan je gewend bent. Vier waarden bepalen die keuzes.",
   "paginas": [
     {
@@ -47,8 +47,8 @@
     {
       "slug": "warmte",
       "titel": "Warme sound",
-      "statement": "Je gaat uit, maar je bent toch thuis.",
-      "intro": "Licht en geluid staan in dienst van de artiest en de avond, niet op de voorgrond. We maken een huiskamer op schaal: een ruimte waar je je op je gemak voelt, of het nu voor vijftig of voor duizend mensen is.",
+      "statement": "Het moet warm blijven klinken, ook als het hard gaat.",
+      "intro": "Geluid is voor ons pas goed als het warm, rond en vol klinkt, en dat ook blijft als het volume omhooggaat. Hetzelfde vragen we van licht en beeld: ook die moeten warmte hebben. Techniek staat daarbij in dienst van de artiest en de avond. Zo wordt een zaal een huiskamer op schaal, voor vijftig of voor duizend mensen: je gaat uit, maar je bent toch thuis. Spektakel hoort daar soms bij, maar dan als keuze die past bij het event en het moment.",
       "werkwijze": [
         "Vanuit een deephouse-achtergrond hechten we aan een geluid dat warm, rond en vol klinkt. Ook visuals moeten warmte hebben.",
         "Sprekers zijn tot achterin verstaanbaar zonder dat het vooraan hard wordt.",

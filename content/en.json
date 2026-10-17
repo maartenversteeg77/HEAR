@@ -23,8 +23,8 @@
       ">Who it's for</a>"
     ],
     [
-      ">Principes</a>",
-      ">Principles</a>"
+      ">Waarden</a>",
+      ">Values</a>"
     ],
     [
       ">Producten</a>",
@@ -59,8 +59,8 @@
       "<span>Who HEAR is for</span><small>Corporate, venue owners and dance events</small>"
     ],
     [
-      "<span>Principes</span><small>De manier waarop wij werken</small>",
-      "<span>Principles</span><small>The way we work</small>"
+      "<span>Waarden</span><small>Wat wij belangrijk vinden</small>",
+      "<span>Values</span><small>What we care about</small>"
     ],
     [
       "<span>Producten en diensten</span><small>Licht, geluid, dj-gear en advies</small>",
@@ -87,8 +87,8 @@
       "<nav aria-label=\"Products\"><p class=\"label\">Products</p><a href=\"booth-dj-gear.html\">Booth and DJ gear</a><a href=\"high-end-audio.html\">High-end audio</a><a href=\"atmospheric-lighting.html\">Atmospheric lighting</a><a href=\"dancefloor-lighting.html\">Dancefloor lighting</a><a href=\"vintage-lighting.html\">90s vintage lighting</a><a href=\"av-as-a-service.html\">Advice and AV as a service</a><a href=\"artiesten.html\">Artists</a><a href=\"special-projects.html\">Special projects</a>"
     ],
     [
-      "<nav aria-label=\"Principes\"><p class=\"label\">Principes</p><a href=\"principes.html#samen\">Samen</a><a href=\"principes.html#open\">Open</a><a href=\"principes.html#vakmanschap\">Vakmanschap</a><a href=\"principes.html#warmte\">Warme sound</a></nav>",
-      "<nav aria-label=\"Principles\"><p class=\"label\">Principles</p><a href=\"principes.html#samen\">Together</a><a href=\"principes.html#open\">Open</a><a href=\"principes.html#vakmanschap\">Craftsmanship</a><a href=\"principes.html#warmte\">Warm sound</a></nav>"
+      "<nav aria-label=\"Waarden\"><p class=\"label\">Waarden</p><a href=\"principes.html#samen\">Samen</a><a href=\"principes.html#open\">Open</a><a href=\"principes.html#vakmanschap\">Vakmanschap</a><a href=\"principes.html#warmte\">Warme sound</a></nav>",
+      "<nav aria-label=\"Values\"><p class=\"label\">Values</p><a href=\"principes.html#samen\">Together</a><a href=\"principes.html#open\">Open</a><a href=\"principes.html#vakmanschap\">Craftsmanship</a><a href=\"principes.html#warmte\">Warm sound</a></nav>"
     ],
     [
       "<a class=\"crumb\" href=\"cases.html\">← Alle cases</a>",
@@ -253,8 +253,8 @@
         "<span class=\"v-titel\">Who HEAR is for</span>"
       ],
       [
-        "<span class=\"v-titel\">Principes en way of working</span>",
-        "<span class=\"v-titel\">Principles and way of working</span>"
+        "<span class=\"v-titel\">Waarden en uitgangspunten</span>",
+        "<span class=\"v-titel\">Values and principles</span>"
       ],
       [
         "<span class=\"v-titel\">Producten en diensten</span>",

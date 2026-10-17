@@ -21,7 +21,7 @@ def absoluut(s):
     s = re.sub(r'src="(?!http|/)([^"]+)"', r'src="/\1"', s)
     return s
 kop = absoluut(idx[idx.index('<header class="top">'):idx.index('</script>') + 9])
-kop = kop.replace('href="/en/index.html"', 'href="/index.html"').replace('<a href="/nieuws/">Nieuws</a>', '<a href="/nieuws/" aria-current="page">Nieuws</a>', 1)  # geen EN-nieuws; knop leidt naar home
+kop = kop.replace('<a href="/nieuws/">Nieuws</a>', '<a href="/nieuws/" aria-current="page">Nieuws</a>', 1)  # geen EN-nieuws; de EN-knop (uit index.html, al /en/index.html) leidt naar de Engelse homepage
 voet = absoluut(idx[idx.index('<footer class="voet">'):idx.index('</footer>') + 9])
 
 MAANDEN = ["januari","februari","maart","april","mei","juni","juli","augustus","september","oktober","november","december"]
