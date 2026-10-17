@@ -65,7 +65,7 @@ for b in berichten:
     pad = f"/nieuws/{b['slug']}.html"
     social = imgdir / f"{b['slug']}-social.jpg"; deelbeeld(b["beeld"], social)
     social_abs = f"{BASIS}/img/nieuws/{b['slug']}-social.jpg"
-    alinea = "".join(f"<p>{e(t)}</p>" for t in b["tekst"])
+    alinea = "".join(f"<p>{e(t)}</p>" for t in b["tekst"]) + b.get("html_na", "")
     knop = ""
     if b.get("knop"):
         k = b["knop"]; ext = k["href"].startswith("http")
