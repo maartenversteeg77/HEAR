@@ -128,3 +128,5 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - hreflang-links in de head van vertaalde pagina's.
 - Vorige/volgende op casepagina's volgt nu de volgorde en titels van cases.json (NL en EN); radio-mixes sluit de keten.
 - Werkwijze: na elke wijziging aan een vertaalde NL-pagina ook en.json bijwerken en bouw-en.py draaien.
+
+- 2026-10-17: Technics-tegel: onderschrift "Need I say more?" (grap, legendarisch apparaat behoeft geen uitleg). Producten-overzicht: nieuwe boothfoto (booth-verlicht.jpg); detailpagina houdt de foto van bovenaf.
