@@ -7,15 +7,39 @@
       "datum": "2026-10-17",
       "titel": "Nieuw in de booth: RCF KXM 25-A floormonitor",
       "intro": "Een 15-inch coaxiale floormonitor voor dj's die hun monitoring liever onzichtbaar voor het publiek hebben. Krachtig, punchy en coherent.",
-      "beeld": "img/diensten/kxm-25.jpg",
-      "beeld_alt": "RCF KXM 25-A floormonitor in wedgevorm",
+      "beeld": "img/nieuws/kxm-25-a-concert.jpg",
+      "beeld_alt": "RCF KXM 25-A floormonitor met een festivalpodium op de achtergrond",
       "label": "Wat het is",
       "tekst": [
         "De KXM 25-A is een wedge: een lage, schuine monitor die op de vloer van de booth ligt en omhoog naar de dj is gericht. Het publiek ziet hem niet, de dj hoort zichzelf wel. Met 137 dB en een bereik vanaf 50 Hz is hij ook op een luide dansvloer verstaanbaar.",
         "De woofer en de hoorn zitten coaxiaal, in één as. Daardoor komt het geluid uit één punt en klinkt het coherent, ook dichtbij. Dat is precies wat je in een booth wilt.",
         "Vanaf nu is de KXM 25-A de tweede monitoroptie in onze booth, naast de compacte sub-topcombinatie van SUB 808-AS en KX 515-A."
       ],
-      "knop": {"tekst": "Bekijk de booth en dj-gear", "href": "/booth-dj-gear.html"},
+      "knop": {
+        "tekst": "Bekijk de booth en dj-gear",
+        "href": "/booth-dj-gear.html"
+      },
+      "status": "af",
+      "beeld_positie": "center 60%"
+    },
+    {
+      "slug": "twee-sets-808-515",
+      "datum": "2026-10-17",
+      "titel": "Nieuw in huis: twee sets RCF SUB 808-AS met KX 515-A",
+      "intro": "Twee compacte sub-topsets die drie dingen kunnen: op zichzelf spelen bij een lezing of intieme cocktailparty, monitoren in de dj-booth, en als frontfill of delay meedraaien in het grote systeem.",
+      "beeld": "img/nieuws/808-515-set.jpg",
+      "beeld_alt": "RCF KX 515-A top op een afstandsbuis boven een SUB 808-AS, net uitgepakt",
+      "beeld_positie": "center 40%",
+      "label": "Waarom twee",
+      "tekst": [
+        "De SUB 808-AS met de KX 515-A erop is onze kleinste volwaardige set: een compacte sub en een top uit dezelfde familie als de KXL 4-A, dus met dezelfde klank, een maat kleiner. Voor een speech, een panel of een cocktailparty tot zo'n 150 gasten is dit genoeg, en het staat in een paar minuten.",
+        "In de dj-booth doet dezelfde combinatie dienst als monitor, met de tops op oorhoogte links en rechts van de dj.",
+        "De derde rol is de reden dat het er twee zijn. In een groter systeem gaat de 515 los van zijn sub mee als frontfill voor de eerste rijen, of als delay verderop in de zaal. Daardoor kunnen de KXL-toppen hoger hangen en verder richten: het geluid van de mains wordt niet meer door de eerste hoofden opgegeten, en achterin blijft het vol zonder dat het vooraan hard wordt."
+      ],
+      "knop": {
+        "tekst": "Bekijk high-end audio",
+        "href": "/high-end-audio.html"
+      },
       "status": "af"
     }
   ]
