@@ -275,3 +275,16 @@ em,i,cite,address,dfn,var{font-style:normal}
 .zijnav a{color:#a9a8a3;text-decoration:none}
 .zijnav a:hover{color:var(--koraal)}
 @media (max-width:720px){.zijnav span{display:none}.zijnav{gap:18px}}
+
+/* kruimel als sectielabel: Sectie | Pagina */
+.crumb .sectie{color:#a9a8a3}
+.crumb .scheiding{margin:0 10px;color:#5c5c57}
+.crumb .huidig{color:rgba(246,245,241,.9)}
+/* zijnav met positiebolletjes */
+.zijnav{align-items:center;gap:14px}
+.zijnav .bollen{display:flex;gap:7px;align-items:center}
+.zijnav .bollen a{display:block;width:7px;height:7px;border-radius:50%;background:rgba(246,245,241,.28)}
+.zijnav .bollen a:hover{background:var(--koraal)}
+.zijnav .bollen a.aan{background:var(--wit);transform:scale(1.2)}
+.zijnav .pijl{color:#a9a8a3}
+@media (max-width:720px){.crumb .huidig{display:none}.crumb .scheiding{display:none}}

@@ -153,6 +153,18 @@
     [
       "<p>Kennismaken?</p>",
       "<p>Shall we talk?</p>"
+    ],
+    [
+      "<span class=\"sectie\">Producten</span>",
+      "<span class=\"sectie\">Products</span>"
+    ],
+    [
+      "<span class=\"sectie\">Voor wie</span>",
+      "<span class=\"sectie\">Who it's for</span>"
+    ],
+    [
+      "<span class=\"sectie\">Nieuws</span>",
+      "<span class=\"sectie\">News</span>"
     ]
   ],
   "cases_json": {

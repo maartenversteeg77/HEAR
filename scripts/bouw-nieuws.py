@@ -78,7 +78,7 @@ for b in berichten:
     passend = " passend" if b.get("beeld_passend") else ""
     kopregel = f'<section class="quick quick-breed"><p>{e(b["kop"])}</p></section>' if b.get("kop") else ""
     main = f'''<main class="wrap">
-<section class="casehead"><a class="crumb" href="/nieuws/">← Nieuws</a><p class="label nieuws-datum"><time datetime="{b["datum"]}">{datum_nl(b["datum"])}</time></p><h1 class="kernzin">{e(b["titel"])}</h1></section>
+<section class="casehead"><a class="crumb" href="/nieuws/"><span class="sectie">Nieuws</span></a><p class="label nieuws-datum"><time datetime="{b["datum"]}">{datum_nl(b["datum"])}</time></p><h1 class="kernzin">{e(b["titel"])}</h1></section>
 <figure class="casehero{passend}"><img src="/{e(b["beeld"])}" alt="{e(b.get("beeld_alt",""))}"{pos}></figure>
 {kopregel}
 <article class="artikel"><p class="lead">{e(lead)}</p>{lopend}{knop}</article>
@@ -95,7 +95,7 @@ tegels = "".join(
     for b in berichten)
 eerste = f"{BASIS}/img/nieuws/{berichten[0]['slug']}-social.jpg" if berichten else None
 main = f'''<main class="wrap">
-<section class="casehead"><a class="crumb" href="/index.html">← HEAR</a><h1>Nieuws</h1></section>
+<section class="casehead"><a class="crumb" href="/index.html"><span class="sectie">HEAR</span></a><h1>Nieuws</h1></section>
 <section class="case-overzicht">{tegels}</section>
 </main>'''
 (uit / "index.html").write_text(head("Nieuws", "Nieuwe producten, events en berichten van HEAR.", "/nieuws/", eerste) + kop + main + voet + "</body></html>")

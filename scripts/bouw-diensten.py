@@ -10,6 +10,7 @@ kop = idx[idx.index('<header class="top">'):idx.index('</script>') + 9]
 kop = kop.replace('href="diensten.html">', 'href="diensten.html" aria-current="page">', 1)
 voet = idx[idx.index('<footer class="voet">'):idx.index('</footer>') + 9]
 e = lambda t: html.escape(t, quote=True)
+AAN = ' class="aan" aria-current="page"'
 def heel(t):  # koppeltekenwoorden niet afbreken
     return re.sub(r"(?<![\w-])([\wéÉ]+-[\wé]+)(?![\w-])", r'<span class="heel">\1</span>', e(t))
 
@@ -36,9 +37,9 @@ def blok(b):
 volgorde = data["paginas"]
 def zijnav(i):
     v, n = volgorde[i - 1], volgorde[(i + 1) % len(volgorde)]
-    return (f'<nav class="zijnav" aria-label="Vorige en volgende categorie">'
-            f'<a href="{e(v["bestand"])}" title="{e(v["titel"])}">← <span>{e(v["titel"])}</span></a>'
-            f'<a href="{e(n["bestand"])}" title="{e(n["titel"])}"><span>{e(n["titel"])}</span> →</a></nav>')
+    bollen = "".join(f'<a href="{e(it["bestand"])}" title="{e(it["titel"])}"{AAN if k == i else ""}></a>' for k, it in enumerate(volgorde))
+    return (f'<nav class="zijnav" aria-label="Andere categorieën"><a class="pijl" href="{e(v["bestand"])}" title="{e(v["titel"])}" aria-label="Vorige: {e(v["titel"])}">←</a>'
+            f'<span class="bollen">{bollen}</span><a class="pijl" href="{e(n["bestand"])}" title="{e(n["titel"])}" aria-label="Volgende: {e(n["titel"])}">→</a></nav>')
 
 for i, pg in enumerate(data["paginas"]):
     pos = f' style="object-position:{e(pg["beeld_positie"])}"' if pg.get("beeld_positie") else ""
@@ -56,7 +57,7 @@ for i, pg in enumerate(data["paginas"]):
     intro = (f'<section class="quick quick-breed"><p>{e(pg["intro"])}</p>{cta}</section>' if pg.get("intro") else (f'<section class="quick quick-breed">{cta}</section>' if cta else ""))
     beschrijving = pg.get("intro") or next((t for b in pg["blokken"] for t in b.get("tekst", [])), pg["kernzin"])
     main = f'''<main class="wrap">
-<section class="casehead"><a class="crumb" href="diensten.html">← Producten en diensten</a>{zijnav(i)}<h1 class="kernzin">{heel(pg["kernzin"])}</h1>{('<p class="kop-knop">'+pg["kop_knop"]+'</p>') if pg.get("kop_knop") else ''}</section>
+<section class="casehead"><a class="crumb" href="diensten.html"><span class="sectie">Producten</span><span class="scheiding" aria-hidden="true">|</span><span class="huidig">{e(pg["titel"])}</span></a>{zijnav(i)}<h1 class="kernzin">{heel(pg["kernzin"])}</h1>{('<p class="kop-knop">'+pg["kop_knop"]+'</p>') if pg.get("kop_knop") else ''}</section>
 {intro}
 {producten}
 {blokken}

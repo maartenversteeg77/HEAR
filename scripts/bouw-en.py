@@ -10,6 +10,7 @@ en = json.loads((root / "content" / "en.json").read_text())
 cases = json.loads((site / "cases.json").read_text())
 vertaald = set(en["vertaald"])
 e = lambda t: html.escape(t, quote=True)
+AAN = ' class="aan" aria-current="page"'
 fouten = []
 
 # --- vorige/volgende op casepagina's, uit cases.json (NL), radio-mixes achteraan ---
@@ -19,13 +20,15 @@ def kort(c, taal):
     t = (c.get("titel_en") if taal == "en" else c["titel"]) or c["titel"]
     return t.replace("\n", " ")
 def zijnav(i, taal):
-    vorige, volgende = keten[i - 1], keten[(i + 1) % len(keten)]
-    return (f'<nav class="zijnav" aria-label="Vorige en volgende case"><a href="{vorige["link"]}" title="{e(kort(vorige, taal))}">← <span>{e(kort(vorige, taal))}</span></a>'
-            f'<a href="{volgende["link"]}" title="{e(kort(volgende, taal))}"><span>{e(kort(volgende, taal))}</span> →</a></nav>')
+    v, n = keten[i - 1], keten[(i + 1) % len(keten)]
+    bollen = "".join(f'<a href="{it["link"]}" title="{e(kort(it, taal))}"{AAN if k == i else ""}></a>' for k, it in enumerate(keten))
+    return (f'<nav class="zijnav" aria-label="Andere cases"><a class="pijl" href="{v["link"]}" title="{e(kort(v, taal))}" aria-label="Vorige: {e(kort(v, taal))}">←</a>'
+            f'<span class="bollen">{bollen}</span><a class="pijl" href="{n["link"]}" title="{e(kort(n, taal))}" aria-label="Volgende: {e(kort(n, taal))}">→</a></nav>')
 def plaats_zijnav(s, i, taal):
     s = re.sub(r'<nav class="bottomnav">.*?</nav>', '', s, flags=re.S)
     s = re.sub(r'<nav class="zijnav"[^>]*>.*?</nav>', '', s, flags=re.S)
-    return re.sub(r'(<section class="casehead">\s*<a class="crumb"[^>]*>[^<]*</a>)', lambda m: m.group(1) + zijnav(i, taal), s, count=1)
+    kr = f'<a class="crumb" href="cases.html"><span class="sectie">Cases</span><span class="scheiding" aria-hidden="true">|</span><span class="huidig">{e(kort(keten[i], taal))}</span></a>'
+    return re.sub(r'<section class="casehead">\s*<a class="crumb"[^>]*>.*?</a>', lambda m: '<section class="casehead">' + kr + zijnav(i, taal), s, count=1, flags=re.S)
 for i, c in enumerate(keten):
     p = site / c["link"]; s = p.read_text()
     s2 = plaats_zijnav(s, i, "nl")
