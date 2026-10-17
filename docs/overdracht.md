@@ -65,7 +65,7 @@ Navigatie (volgorde vast): **Cases · Voor wie · Principes · Producten · Over
 Overig: `merken.html`, `projectbrief.html/.md` (oud, niet in nav), `site/assets/` (oude beelden), `site/img/diensten/` (productfoto's), `scripts/verbreed.py` (portretfoto verbreden met vervaagde randen).
 
 ### Bouwregels
-- **Gegenereerde pagina's nooit met de hand bewerken**: pas de JSON aan en draai het script. Scripts kopiëren header/footer uit `index.html`, dus navigatie-wijzigingen eerst in index.html, dan alle scripts opnieuw draaien.
+- **Gegenereerde pagina's nooit met de hand bewerken**: pas de JSON aan en draai het script. Opbouw productpagina: kernzin, intro over volle breedte, productrij, eventuele blokken, verwijzingen. Scripts kopiëren header/footer uit `index.html`, dus navigatie-wijzigingen eerst in index.html, dan alle scripts opnieuw draaien.
 - Na elke wijziging aan een vertaalde pagina (index, cases, 8 cases, over-hear): `python3 scripts/bouw-en.py`. Het script eist dat elke NL-zin in `en.json` letterlijk in de bronpagina staat en stopt anders met de naam van de zin. Dan en.json bijwerken.
 - Volgorde bij een volledige rebuild: `bouw-cases.py`, `bouw-diensten.py`, `bouw-principes.py`, `bouw-en.py`.
 - `cases.json`: velden `titel`, `titel_en`, `tekst`, `tekst_en`, `beeld`, `alt`, `link`, `doelgroepen` (corporate/venue/dance), optioneel `positie` (object-position), `status: "af"`.
