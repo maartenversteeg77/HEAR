@@ -1,0 +1,102 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Test: principes op de jog · HEAR</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="styles.css">
+<style>
+.jogwrap{display:grid;grid-template-columns:minmax(260px,420px) minmax(0,1fr);gap:clamp(28px,5vw,80px);align-items:center;padding:clamp(40px,6vw,80px) 0 clamp(60px,8vw,110px)}
+@media (max-width:820px){.jogwrap{grid-template-columns:1fr;justify-items:center}}
+.jog{position:relative;width:100%;max-width:420px;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 50% 45%,#2a2b2a 0,#191a19 62%,#111 100%);box-shadow:0 30px 60px rgba(0,0,0,.25),inset 0 0 0 1px rgba(255,255,255,.06);cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent;border:0;padding:0}
+.jog .ring{position:absolute;inset:7%;border-radius:50%;border:1.5px solid rgba(246,245,241,.55);transition:transform .9s cubic-bezier(.2,.8,.2,1)}
+.jog .ring::before{content:"";position:absolute;inset:-3px;border-radius:50%;background:repeating-conic-gradient(from 0deg,transparent 0 10deg,rgba(246,245,241,.10) 10deg 11deg);mask:radial-gradient(circle,transparent 0 83%,#000 84% 100%)}
+.jog .ring i{position:absolute;top:-6px;left:50%;width:10px;height:10px;margin-left:-5px;border-radius:50%;background:var(--turquoise)}
+.jog .platter{position:absolute;inset:16%;border-radius:50%;background:#0c0c0c;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)}
+.jog .scherm{position:absolute;inset:30%;border-radius:50%;background:#191a19;display:grid;place-content:center;text-align:center;color:var(--wit);box-shadow:inset 0 0 0 2px var(--turquoise),0 0 0 6px #0c0c0c}
+.jog .scherm small{display:block;font:600 10px/1 var(--tekst);letter-spacing:.22em;text-transform:uppercase;color:var(--turquoise);margin-bottom:10px}
+.jog .scherm strong{display:block;font:300 clamp(20px,3.2vw,30px)/1.05 var(--kop);padding:0 12%}
+.jog .hint{position:absolute;left:50%;bottom:4%;transform:translateX(-50%);font:600 10px/1 var(--tekst);letter-spacing:.2em;text-transform:uppercase;color:rgba(246,245,241,.45);white-space:nowrap}
+.jogtekst{min-height:12em}
+.jogtekst .label{font:600 11px/1.5 var(--tekst);letter-spacing:.2em;text-transform:uppercase;color:#8c8d8a;margin:0 0 12px}
+.jogtekst h2{font:300 clamp(28px,3.4vw,46px)/1.08 var(--kop);margin:0 0 18px;max-width:20ch}
+.jogtekst p{font-size:17px;line-height:1.7;color:var(--tekstgrijs);max-width:60ch;margin:0 0 14px}
+.jogtekst .waar{margin-top:22px;border-top:1px solid var(--lijn);padding-top:18px}
+.jogtekst .waar h3{font:600 11px/1.5 var(--tekst);letter-spacing:.2em;text-transform:uppercase;color:var(--zwart);margin:0 0 10px}
+.jogtekst .waar p{font-size:15.5px;line-height:1.6}
+.jogtekst.wissel{animation:fade .5s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.jogtekst .inline-link{margin-top:18px!important}
+.dots{display:flex;gap:10px;margin:0 0 18px}
+.dots b{width:8px;height:8px;border-radius:50%;background:#c8c9c7} .dots b.aan{background:var(--zwart)}
+</style></head><body class="pagina">
+<header class="top">
+  <a class="merk" href="index.html" aria-label="HEAR, naar de homepage"><img src="img/logo-white.png" alt="HEAR"></a>
+  <nav class="topnav" aria-label="Hoofdnavigatie">
+    <a href="cases.html">Cases</a>
+    <a href="doelgroepen.html">Voor wie</a>
+    <a href="principes.html">Principes</a>
+    <a href="diensten.html">Producten</a>
+    <a href="over-hear.html">Over HEAR</a>
+    <a href="nieuws/">Nieuws</a>
+  </nav>
+  <a class="taal" href="/en/index.html" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+  <button class="menuknop" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu openen">
+    <span></span><span></span>
+  </button>
+</header>
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Hoofdmenu">
+      <a href="cases.html"><span>Voorbeeldcases</span><small>Events die tot de verbeelding spreken</small></a>
+      <a href="doelgroepen.html"><span>Voor wie is HEAR</span><small>Corporate, venue owners en dance events</small></a>
+      <a href="principes.html"><span>Principes</span><small>De manier waarop wij werken</small></a>
+      <a href="diensten.html"><span>Producten en diensten</span><small>Licht, geluid, dj-gear en advies</small></a>
+      <a href="over-hear.html"><span>Over HEAR</span><small>Oprichter Maarten stelt zich voor</small></a>
+      <a href="nieuws/"><span>Nieuws</span><small>Nieuwe producten, events en berichten</small></a>
+  </nav>
+</div>
+<script>
+  (function(){
+    var k=document.querySelector('.menuknop'), m=document.getElementById('menu');
+    function zet(open){ k.setAttribute('aria-expanded',open); k.setAttribute('aria-label',open?'Menu sluiten':'Menu openen'); m.hidden=!open; document.body.classList.toggle('menu-open',open); }
+    k.addEventListener('click',function(){ zet(k.getAttribute('aria-expanded')!=='true'); });
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape') zet(false); });
+  })();
+</script>
+<main class="wrap">
+<section class="casehead"><a class="crumb" href="principes.html">← Principes en way of working</a><h1 class="kernzin">Vier principes. Draai door met één tik.</h1></section>
+<section class="jogwrap">
+  <button class="jog" id="jog" type="button" aria-label="Volgend principe">
+    <div class="ring" id="ring"><i></i></div>
+    <div class="platter"></div>
+    <div class="scherm"><small id="nr">Principe 1 van 4</small><strong id="titel"></strong></div>
+    <span class="hint">Tik om door te draaien</span>
+  </button>
+  <div class="jogtekst" id="tekst" aria-live="polite"></div>
+</section>
+</main>
+<footer class="voet">
+  <div class="voet-kolommen">
+    <div class="voet-merk">
+      <img src="img/logo-white.png" alt="HEAR">
+      <p>High End Audio Rental · Amsterdam</p>
+      <p><a href="mailto:maarten@hear.nl">maarten@hear.nl</a></p>
+    </div>
+    <nav aria-label="Werk"><p class="label">Werk</p><a href="cases.html">Cases</a><a href="nieuws/">Nieuws</a><a href="over-hear.html">Over HEAR</a></nav>
+    <nav aria-label="Voor wie"><p class="label">Voor wie</p><a href="corporate.html">Corporate</a><a href="venue-owners.html">Venue owners</a><a href="dance-events.html">Dance events</a></nav>
+    <nav aria-label="Producten"><p class="label">Producten</p><a href="booth-dj-gear.html">Booth en dj-gear</a><a href="high-end-audio.html">High-end audio</a><a href="atmospheric-lighting.html">Sfeerverlichting</a><a href="dancefloor-lighting.html">Dansvloerverlichting</a><a href="vintage-lighting.html">90's vintage licht</a><a href="av-as-a-service.html">Advies en AV as a service</a><a href="artiesten.html">Artiesten</a><a href="special-projects.html">Special projects</a></nav>
+    <nav aria-label="Principes"><p class="label">Principes</p><a href="partnership.html">Partnership</a><a href="aesthetics.html">Uitstraling</a><a href="smart-solutions.html">Slimme oplossingen</a><a href="warm-sound.html">Warm geluid</a></nav>
+  </div>
+</footer>
+<script>
+(function(){
+  var P=[{"titel": "Partnership", "statement": "Samenwerken aan hetzelfde einddoel", "intro": "Een event lukt niet als iedereen alleen zijn eigen stuk doet. Wij zien opdrachtgevers als partners met wie we werken aan hetzelfde einddoel, en branchegenoten als collega's van wie we leren.", "waar": ["Korte lijnen, één gezicht, en een team dat op het event aan jouw kant staat. Als er iets anders loopt dan gepland, lossen we het op zonder dat jij het hoeft te zien.", "We beginnen bij wat jij voor ogen hebt: de beleving die je gasten moeten hebben, het gevoel waarmee ze naar huis gaan. Van daaruit redeneren we terug naar de techniek. Dat betekent dat we meedenken over het programma, de ruimte en het moment, en niet alleen een lijst met apparatuur leveren.", "Een dj die zich thuis voelt achter de booth, draait beter. Daarom lezen we de rider, zetten we de monitoring goed en staat er iemand die de set kent. Op ADE merkte een dj dat het klonk zonder soundcheck. Dat is geen toeval, dat is voorbereiding."], "href": "partnership.html"}, {"titel": "Uitstraling", "statement": "Als een goed italiaans maatpak", "intro": "We houden van een strakke, ingetogen uitstraling. Zoals een goed Italiaans maatpak: het hoeft geen aandacht te trekken, maar wie kijkt, ziet de snit, de materialen en de afwerking.", "waar": ["Een opdrachtgever beschreef het als clean en licht industrieel, maar ook warm. Dat is precies de combinatie waar we naar zoeken: verzorgd tot in de details, zonder dat het koud wordt.", "Speakers mogen gezien worden als designobject, maar niet als reclamebord. Kabels blijven uit het zicht. Daarom werken we waar het kan draadloos en op accu: geen kabelgoten door de zaal, geen verlengsnoeren langs de muur. Bij een productlancering stonden de lampen waar het beeld erom vroeg, niet waar een stopcontact zat.", "Een lichtshow hoort de artiest en de muziek te dragen, niet te overschreeuwen. We programmeren per avond en bouwen in lagen: sfeer, dynamiek, accenten. Donker is daarbij ook een effect. Een ruimte met een paar goed geprogrammeerde lichtbronnen is indrukwekkender dan een ruimte vol lampen."], "href": "aesthetics.html"}, {"titel": "Slimme oplossingen", "statement": "Modulair, als legoblokjes", "intro": "Onze oplossingen zijn opgebouwd uit bouwstenen die we kunnen combineren en opschalen. Dezelfde kasten doen een cocktailavond voor honderd gasten en, gekoppeld, een dansvloer voor vijftienhonderd.", "waar": ["Een korte opbouw, weinig kabels en een opstelling die past bij de ruimte in plaats van andersom. En als het programma op de dag zelf verandert, kunnen we meebewegen.", "We werken met één familie actieve speakers per merk, met dezelfde klank in elke maat. Een compacte sub met een kleine top voor een lezing, een toren van drie kasten per kant voor een dansvloer, en alles daartussen. Omdat de kasten bij elkaar horen, klinkt een kleine en een grote opstelling hetzelfde, en kunnen we tijdens de opbouw nog schuiven zonder dat het geluid uit elkaar valt.", "Het verschil tussen geen en zes moving heads is groot; het verschil tussen zes en acht is nauwelijks te zien. Daarom kiezen we lampen die meer dan één ding kunnen, zoals hybride moving heads die beam, spot en wash in één zijn, en geven we elke lamp een eigen rol. Dat houdt de show gevarieerd en de opbouw overzichtelijk."], "href": "smart-solutions.html"}, {"titel": "Warm geluid", "statement": "Vol en helder, zonder scherpte", "intro": "Hard is makkelijk. Warm is moeilijk. Wij zoeken een geluid dat vol en helder is op elk volume, zodat je een avond lang kunt luisteren en praten zonder dat je oren moe worden.", "waar": ["Je kunt dansen én een gesprek voeren. Sprekers zijn tot achterin verstaanbaar. En na afloop hoor je nog gewoon wat er om je heen gebeurt.", "Een geluidsmeter leest alleen hoe hard het is. Het oor hoort hoe vol het is. Een systeem dat vlak en gevuld klinkt, voelt bij dezelfde meterstand voller dan een systeem met één scherpe piek. Daar ontwerpen we op: niet meer decibels, maar meer beleving per decibel. Dat scheelt in vergunningen, in oren en in klachten van de buren.", "Of een kick strak klinkt en een stem direct, hangt af van of alle frequenties tegelijk aankomen. Onze speakers corrigeren dat in de kast, zodat het geluid uit één bron lijkt te komen. Daarom kiezen we merken die hun hele systeem zelf ontwerpen, van luidsprekerunit tot software."], "href": "warm-sound.html"}], i=0, hoek=0;
+  var ring=document.getElementById('ring'), titel=document.getElementById('titel'), nr=document.getElementById('nr'), tekst=document.getElementById('tekst'), jog=document.getElementById('jog');
+  function toon(){
+    var p=P[i]; titel.textContent=p.titel; nr.textContent='Principe '+(i+1)+' van 4';
+    tekst.classList.remove('wissel'); void tekst.offsetWidth; tekst.classList.add('wissel');
+    tekst.innerHTML='<div class="dots">'+P.map(function(_,k){return '<b'+(k===i?' class="aan"':'')+'></b>'}).join('')+'</div>'
+      +'<p class="label">'+p.titel+'</p><h2>'+p.statement+'</h2><p>'+p.intro+'</p>'
+      +'<div class="waar"><h3>Waar merk je dit aan?</h3>'+p.waar.map(function(t){return '<p>'+t+'</p>'}).join('')+'</div>'
+      +'<p class="inline-link"><a href="'+p.href+'">Lees het hele principe →</a></p>';
+  }
+  function door(){ i=(i+1)%P.length; hoek+=90; ring.style.transform='rotate('+hoek+'deg)'; toon(); }
+  jog.addEventListener('click',door);
+  toon();
+})();
+</script>
+</body></html>
