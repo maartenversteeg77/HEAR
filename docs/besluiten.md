@@ -131,3 +131,16 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 
 - 2026-10-17: Technics-tegel: onderschrift "Need I say more?" (grap, legendarisch apparaat behoeft geen uitleg). Producten-overzicht: nieuwe boothfoto (booth-verlicht.jpg); detailpagina houdt de foto van bovenaf.
 - 2026-10-17: Boothfoto op productenoverzicht vervangen door echte foto (skatehal), bijgesneden zodat gezichten buiten beeld blijven. Geen AI-beelden op de site.
+
+## Actiepunten na gesprek positionering (2026-10-17, nog niet uitgevoerd)
+Besluiten van Maarten:
+- Positionering: boutique, niet luxury. Het woord één keer op Over HEAR, verder voelbaar maken.
+- Communicatieachtergrond alleen op de corporate-pagina; inhoudelijke bijdrage mogelijk, HEAR wordt geen evenementenbureau.
+- Convergeren: geen nieuwe pagina's of categorieën. Abbey pas als het operationeel is.
+- HEAR niet presenteren als technische backend van de twee netwerken.
+- Listening bars: toekomstige niche onder Venue owners, geen eigen pagina.
+Te wegen bij redactie principes en founder story:
+- Zes overtuigingen als onderlaag voor de vier principes (doel voor middelen; techniek dient beleving; kwaliteit door bewuste keuzes; esthetiek en functie versterken elkaar; samenhang en ontwikkeling; warmte en karakter als rode draad).
+- Uit dj-bio: curatie, ontwikkeling (van geel naar rood via de tussenkleuren), eigen signatuur.
+- Founder story: verhaallijn van "carrièreswitch" naar "uitbouw van wat er al was" (catwalks, beurzen, congressen met bureaus). Toon van de huidige tekst behouden.
+- Corporate-pagina: Strategie → Gewenste beleving → AV-ontwerp → Uitvoering, met blok "Verder kijken dan de techniek".
