@@ -220,3 +220,13 @@ em,i,cite,address,dfn,var{font-style:normal}
 .pagina .tekstlink{color:var(--zwart)}
 .pagina .tekstlink:hover{color:var(--koraal)}
 .casehead .kop-knop{margin:28px 0 0}
+
+/* stappenflow (inkooptraject) */
+.stappen{list-style:none;margin:22px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:stap;max-width:none}
+.stappen li{position:relative;padding:14px 26px 14px 0;border-top:2px solid var(--zwart);counter-increment:stap}
+.stappen li::before{content:counter(stap,decimal-leading-zero);display:block;font:500 11px/1 var(--tekst);letter-spacing:.16em;color:#8c8d8a;margin-bottom:10px}
+.stappen li::after{content:'→';position:absolute;right:8px;top:14px;color:var(--zwart);font-size:14px}
+.stappen li:last-child::after{content:none}
+.stappen strong{display:block;font:400 clamp(18px,1.4vw,21px)/1.15 var(--kop);color:var(--zwart);margin-bottom:6px}
+.stappen span{display:block;font-size:14px;line-height:1.45;color:var(--tekstgrijs)}
+@media (max-width:720px){.stappen{grid-template-columns:1fr}.stappen li{padding:14px 0 14px 0;border-top:0;border-left:2px solid var(--zwart);padding-left:16px}.stappen li::after{content:'↓';right:auto;left:-7px;top:auto;bottom:-12px;background:var(--wit);line-height:1}}

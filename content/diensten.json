@@ -357,28 +357,30 @@
     {
       "bestand": "av-as-a-service.html",
       "titel": "Advies en AV as a service",
-      "kernzin": "Advies en installatie voor locaties die hun eigen licht en geluid willen",
+      "kernzin": "Merkonafhankelijk advies en AV as a service voor eventlocaties",
       "beeld": "img/diensten/gala.jpg",
       "beeld_alt": "Gala-opstelling met ronde tafels, moving heads en gekleurd licht in een hal",
-      "intro": "Een locatie die zelf goed klinkt en oogt, hoeft niet voor elk event techniek in te huren. Wij kijken wat de ruimte nodig heeft, stellen een systeem samen dat past bij de zaal en het gebruik, en zorgen dat het blijft werken.",
+      "intro": "Heb je een eventlocatie zonder eigen licht en geluid? Of heb je wel eigen geluid, maar klagen gasten over 'vermoeiend geluid' of een gebrek aan impact? Wij kijken graag mee wat er mogelijk is.",
       "blokken": [
         {
-          "label": "Zo beginnen we",
+          "label": "Gratis tips en adviezen",
           "tekst": [
-            "Met de ruimte. We lopen de zaal door, meten waar nodig en kijken naar wat er gebeurt: lezingen, borrels, diners, dansavonden. Daaruit volgt welk geluid en licht passen, en vooral hoeveel. Vaak is dat minder dan verwacht, mits het goed is geplaatst."
-          ]
+            "Over het best passende licht en geluid voor jouw locatie. Stel je vraag via WhatsApp."
+          ],
+          "html_na": "<p class=\"inline-link\"><a href=\"https://wa.me/\">Stel je vraag via WhatsApp →</a></p>"
         },
         {
-          "label": "Twee routes",
+          "label": "Begeleiding inkooptraject",
           "tekst": [
-            "Zelf kopen: wij adviseren over het systeem, brengen je in contact met de juiste leveranciers en begeleiden de aanschaf. Je bent eigenaar en kunt het systeem ook aan anderen verhuren. Zo hielpen we een verhuurbedrijf aan een geluidssysteem dat kan meegroeien.",
-            "AV as a service: wij installeren en onderhouden het systeem, jij betaalt een vast bedrag per maand voor een periode van meerdere jaren. Installatie, software-updates en reparaties zitten erbij. Een technicus in de zaal niet, want het systeem is zo ingericht dat jouw mensen het zelf bedienen."
-          ]
+            "Op uurbasis en merkonafhankelijk. We beginnen met een ruimtescan: wat heeft deze ruimte nodig aan geluid of licht voor het type events dat ze organiseert? Vaak is dat minder dan verwacht, mits het goed is geplaatst. Daarna volgt een advies met bijpassende producten, een demonstratie door de betreffende leveranciers en, als tot aanschaf wordt overgegaan, training van medewerkers."
+          ],
+          "html_na": "<ol class=\"stappen\" aria-label=\"Stappen van het inkooptraject\"><li><strong>Ruimtescan</strong><span>Wat heeft deze ruimte nodig voor het type events dat er plaatsvindt</span></li><li><strong>Advies</strong><span>Merkonafhankelijk, met bijpassende producten</span></li><li><strong>Demonstratie</strong><span>Door de betreffende leveranciers, in jouw ruimte</span></li><li><strong>Training</strong><span>Van medewerkers, bij aanschaf</span></li></ol>"
         },
         {
-          "label": "Met wie",
+          "label": "AV as a service",
           "tekst": [
-            "We werken met dezelfde merken als op onze events: RCF en Brooklyn Audio voor geluid, ADJ en Chauvet Professional voor licht. Voor installatie en onderhoud schakelen we waar nodig de productspecialisten van die merken in."
+            "Als alternatief voor het aankopen van licht en geluid. Voor een vast bedrag per maand en een minimumperiode van drie jaar verzorgt HEAR de licht- en geluidssystemen, inclusief reparaties waar relevant. Na een eventuele training bedient de klant de apparatuur zelf.",
+            "Voor installatie en onderhoud schakelen we waar nodig de productspecialisten van de gekozen merken in."
           ]
         }
       ],
