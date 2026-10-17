@@ -1,7 +1,8 @@
-"""Bouwt de vier principepagina's (site/*.html) uit content/principes.json.
-Kop, menu en voet komen uit site/index.html, zodat ze overal gelijk blijven.
-Draaien na elke tekstwijziging: python3 scripts/bouw-diensten.py"""
-import json, html, re, pathlib
+"""Bouwt site/principes.html uit content/principes.json: één pagina met de jogwheel.
+Elk principe: titel (op het display), statement (regel onder de titel), intro, en de uitleg onder
+"Waar merk je dit aan?". Geen subpagina's, geen doorklik. Een anker (#slug) opent dat principe.
+Kop, menu en voet komen uit site/index.html. Draaien na elke wijziging: python3 scripts/bouw-principes.py"""
+import json, html, pathlib
 root = pathlib.Path(__file__).resolve().parent.parent
 site = root / "site"
 data = json.loads((root / "content" / "principes.json").read_text())
@@ -10,40 +11,39 @@ kop = idx[idx.index('<header class="top">'):idx.index('</script>') + 9]
 kop = kop.replace('href="principes.html">', 'href="principes.html" aria-current="page">', 1)
 voet = idx[idx.index('<footer class="voet">'):idx.index('</footer>') + 9]
 e = lambda t: html.escape(t, quote=True)
-def heel(t):  # koppeltekenwoorden niet afbreken
-    return re.sub(r"(?<![\w-])([\wéÉ]+-[\wé]+)(?![\w-])", r'<span class="heel">\1</span>', e(t))
 
-def blok(b):
-    if "producten" in b:
-        items = "".join(
-            f'<figure><img src="{e(p["beeld"])}" alt="{e(p["naam"])}" loading="lazy">'
-            f'<figcaption><strong>{e(p["naam"])}</strong>{e(p["regel"])}</figcaption></figure>'
-            for p in b["producten"])
-        return f'<section class="producten" aria-label="Producten">{items}</section>'
-    ps = "".join(f"<p>{e(t)}</p>" for t in b["tekst"])
-    return f'<article class="case-section"><h2>{e(b["label"]).upper()}</h2><div>{ps}</div></article>'
+items = []
+for p in data["paginas"]:
+    st = p.get("statement") or (p["kernzin"].split(":", 1)[1].strip() if ":" in p["kernzin"] else p["kernzin"])
+    st = st[0].upper() + st[1:]
+    waar = p.get("waar")
+    if waar is None:  # oude structuur: blokken → eerst 'Wat je ervan merkt', dan de rest
+        bl = p["blokken"]
+        waar = [t for b in bl if b["label"] == "Wat je ervan merkt" for t in b["tekst"]] + \
+               [t for b in bl if b["label"] != "Wat je ervan merkt" for t in b["tekst"]]
+    items.append({"slug": p.get("slug") or p["bestand"].replace(".html", ""), "titel": p["titel"],
+                  "statement": st, "intro": p["intro"], "waar": waar})
 
-for pg in data["paginas"]:
-    pos = f' style="object-position:{e(pg["beeld_positie"])}"' if pg.get("beeld_positie") else ""
-    # productrij naar voren: direct onder de kop, vóór de intro
-    prod = [b for b in pg["blokken"] if "producten" in b]
-    rest = [b for b in pg["blokken"] if "producten" not in b]
-    producten = "".join(blok(b) for b in prod)
-    blokken = "".join(blok(b) for b in rest)
-    # opeenvolgende case-sections samen in één case-sections-wrapper
-    blokken = re.sub(r'((?:<article class="case-section">.*?</article>)+)', r'<section class="case-sections">\1</section>', blokken, flags=re.S)
-    links = "".join(f'<a href="{e(l["href"])}">{e(l["tekst"])} →</a>' for l in pg.get("links", []))
-    main = f'''<main class="wrap">
-<section class="casehead"><a class="crumb" href="principes.html">← Principes en way of working</a><h1 class="kernzin">{heel(pg["kernzin"])}</h1></section>
-{producten}
-<section class="quick quick-breed"><p>{e(pg["intro"])}</p></section>
-{blokken}
-<nav class="verwijzingen" aria-label="Verder lezen">{links}</nav>
-</main>'''
-    doc = f'''<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{e(pg["intro"][:155])}"><title>{e(pg["titel"])} · HEAR</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="styles.css"></head><body class="pagina">
+kernzin = data.get("kernzin", "Principes en way of working")
+intro = data.get("intro", "")
+beschrijving = intro or " · ".join(i["titel"] for i in items)
+pagina = f'''<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{e(beschrijving[:155])}"><title>Principes en way of working · HEAR</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="jog.css"></head><body class="pagina">
 {kop}
-{main}
+<main class="wrap">
+<section class="casehead"><a class="crumb" href="index.html">← HEAR</a><h1 class="kernzin">{e(kernzin)}</h1></section>
+{f'<section class="quick quick-breed"><p>{e(intro)}</p></section>' if intro else ''}
+<section class="jogmidden">
+  <button class="jog" id="jog" type="button" aria-label="Volgend principe">
+    <div class="rand"></div><div class="kuiltjes" id="kuiltjes"></div><div class="chroom"></div>
+    <div class="ringdonker"></div><div class="zij"></div>
+    <div class="wit"></div><div class="wijzer" id="wijzer"><i></i></div><div class="koraal"></div>
+    <div class="scherm" id="scherm"><strong id="titel"></strong></div>
+  </button>
+  <div class="jogtekst" id="tekst" aria-live="polite"></div>
+</section>
+</main>
 {voet}
+<script>window.JOG={{midden:true,items:{json.dumps(items, ensure_ascii=False)}}};</script><script src="jog.js"></script>
 </body></html>'''
-    (site / pg["bestand"]).write_text(doc)
-    print("ok", pg["bestand"])
+(site / "principes.html").write_text(pagina)
+print("ok principes.html")
