@@ -33,6 +33,8 @@ for pg in data["paginas"]:
     # opeenvolgende case-sections samen in één case-sections-wrapper
     blokken = re.sub(r'((?:<article class="case-section">.*?</article>)+)', r'<section class="case-sections">\1</section>', blokken, flags=re.S)
     links = "".join(f'<a href="{e(l["href"])}">{e(l["tekst"])} →</a>' for l in pg.get("links", []))
+    intro = f'<section class="quick quick-breed"><p>{e(pg["intro"])}</p></section>' if pg.get("intro") else ""
+    beschrijving = pg.get("intro") or next((t for b in pg["blokken"] for t in b.get("tekst", [])), pg["kernzin"])
     main = f'''<main class="wrap">
 <section class="casehead"><a class="crumb" href="diensten.html">← Producten en diensten</a><h1 class="kernzin">{heel(pg["kernzin"])}</h1>{('<p class="kop-knop">'+pg["kop_knop"]+'</p>') if pg.get("kop_knop") else ''}</section>
 {producten}
@@ -40,8 +42,6 @@ for pg in data["paginas"]:
 {blokken}
 <nav class="verwijzingen" aria-label="Verder lezen">{links}</nav>
 </main>'''
-    intro = f'<section class="quick quick-breed"><p>{e(pg["intro"])}</p></section>' if pg.get("intro") else ""
-    beschrijving = pg.get("intro") or next((t for b in pg["blokken"] for t in b.get("tekst", [])), pg["kernzin"])
     doc = f'''<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{e(beschrijving[:155])}"><title>{e(pg["titel"])} · HEAR</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="styles.css"></head><body class="pagina">
 {kop}
 {main}
