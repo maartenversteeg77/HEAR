@@ -51,10 +51,12 @@ body.menu-open{overflow:hidden}
 .navbalk a:hover{background:#ebe9e3}
 
 /* ---------- WhatsApp-knop ---------- */
-.wa{display:inline-flex;align-items:center;gap:12px;background:var(--koraal);color:var(--zwart);text-decoration:none;
-  font:600 13px/1 var(--tekst);letter-spacing:.14em;text-transform:uppercase;padding:17px 24px;border-radius:2px;transition:transform .2s}
+.wa{display:inline-flex;align-items:center;gap:14px;background:var(--koraal);color:var(--zwart);text-decoration:none;
+  font:400 17px/1 var(--tekst);letter-spacing:0;text-transform:none;padding:15px 22px 15px 20px;border-radius:999px;border:1.5px solid var(--zwart);transition:transform .2s;min-width:min(100%,340px);justify-content:space-between}
 .wa:hover{transform:translateY(-2px)}
-.wa svg{width:18px;height:18px;flex:none}
+.wa svg{width:26px;height:26px;flex:none}
+.wa span{flex:1;text-align:left}
+.wa i{font-style:normal;font-size:22px;line-height:1;flex:none;margin-left:6px}
 
 /* ---------- hero: beeld over de volle breedte, groot merk erover ---------- */
 .home .top .merk{visibility:hidden}  /* op de homepage alleen het grote merk */

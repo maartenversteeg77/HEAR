@@ -239,3 +239,6 @@ em,i,cite,address,dfn,var{font-style:normal}
 @media (max-width:720px){.stappen{grid-template-columns:1fr 1fr;gap:12px}.stappen li+li::before{content:none}}
 @media (max-width:400px){.stappen{grid-template-columns:1fr}}
 .case-section.donker+.verwijzingen{margin-top:clamp(28px,4vw,56px)}
+
+.case-section .knoprij{margin:22px 0 0}
+.case-section.donker .wa{border-color:transparent}

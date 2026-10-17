@@ -158,3 +158,5 @@ Te wegen bij redactie principes en founder story:
 - 2026-10-17: Over HEAR: structuurkader onder het profiel (oprichter, techniek, leveranciers, partners). NL en EN.
 - 2026-10-17: Artiestenpagina in ik-vorm (bewust ingeleid in de intro, zoals de founder story); smaakbewaker/tussenpersoon, rechtstreeks + artiestenbureaus, één aanspreekpunt, WhatsApp-knop. Architects in Music hier weg (staat in structuurkader Over HEAR).
 - 2026-10-17: Adviespagina visueel: blokkoppen (Even sparren? / Van vraag naar de juiste installatie. / Wel de kwaliteit. Niet de aanschaf.), stappen als witte kaarten met turquoise bovenrand en groot nummer, AV as a service als zwart blok. Overgenomen uit Maartens A4-ontwerp; de vier pastelkleuren niet (huisstijl: één accentkleur). Bouwscript: blok-velden `kop` en `donker`.
+
+- 2026-10-17: WhatsApp-knop sitewide in één vorm: pil, icoon links, "Stel je vraag via WhatsApp", pijl rechts, koraal met dunne zwarte rand (naar Maartens buttonsheet). Tekst overal gelijk, ook EN. SoundCloud- en maartenversteeg.nl-knop zelfde vorm in turquoise.
