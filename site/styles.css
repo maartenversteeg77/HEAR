@@ -195,6 +195,8 @@ em,i,cite,address,dfn,var{font-style:normal}
 .producten figcaption strong{display:block;font:400 clamp(18px,1.4vw,21px)/1.15 var(--kop);color:var(--zwart);margin-bottom:4px}
 .producten+.case-sections .case-section:first-child{border-top:1px solid var(--lijn)}
 .producten figure.breed{grid-column:1/-1}
+.producten figure.breed+figure.breed{margin-top:clamp(20px,3vw,44px)}
+.producten figure.breed figcaption{margin-top:18px;max-width:64ch}
 .producten figure.breed .duo{gap:6px}
 .producten .duo{display:grid;grid-template-columns:1fr 1fr;gap:4px}
 .producten .duo img{aspect-ratio:3/2}
