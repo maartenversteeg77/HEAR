@@ -15,10 +15,14 @@ def heel(t):  # koppeltekenwoorden niet afbreken
 
 def blok(b):
     if "producten" in b:
-        items = "".join(
-            f'<figure><img src="{e(p["beeld"])}" alt="{e(p["naam"])}" loading="lazy">'
-            f'<figcaption><strong>{e(p["naam"])}</strong>{e(p["regel"])}</figcaption></figure>'
-            for p in b["producten"])
+        def fig(p):
+            beelden = p.get("beelden") or [p["beeld"]]
+            imgs = "".join(f'<img src="{e(bl)}" alt="{e(p["naam"])}" loading="lazy">' for bl in beelden)
+            if len(beelden) > 1: imgs = f'<div class="duo">{imgs}</div>'
+            link = f'<a class="bekijk" href="{e(p["link"]["href"])}" target="_blank" rel="noopener">{e(p["link"]["tekst"])} ↗</a>' if p.get("link") else ""
+            breed = ' class="breed"' if len(beelden) > 1 else ""
+            return f'<figure{breed}>{imgs}<figcaption><strong>{e(p["naam"])}</strong><span class="regel">{e(p["regel"])}</span>{link}</figcaption></figure>'
+        items = "".join(fig(p) for p in b["producten"])
         return f'<section class="producten" aria-label="Producten">{items}</section>'
     ps = "".join(f"<p>{e(t)}</p>" for t in b["tekst"]) + b.get("html_na", "")
     return f'<article class="case-section"><h2>{e(b["label"]).upper()}</h2><div>{ps}</div></article>'

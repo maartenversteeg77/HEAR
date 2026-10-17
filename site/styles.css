@@ -194,6 +194,13 @@ em,i,cite,address,dfn,var{font-style:normal}
 .producten figcaption{margin-top:12px;font-size:14px;line-height:1.45;color:var(--tekstgrijs)}
 .producten figcaption strong{display:block;font:400 clamp(18px,1.4vw,21px)/1.15 var(--kop);color:var(--zwart);margin-bottom:4px}
 .producten+.case-sections .case-section:first-child{border-top:1px solid var(--lijn)}
+.producten figure.breed{grid-column:span 2}
+.producten .duo{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.producten .duo img{aspect-ratio:3/2}
+.producten figcaption span.regel{display:block}
+.producten figcaption .bekijk{display:inline-block;margin-top:10px;font:500 12px/1.4 var(--tekst);letter-spacing:.12em;text-transform:uppercase;color:var(--zwart);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
+.producten .bekijk:hover{color:var(--koraal)}
+@media (max-width:520px){.producten figure.breed{grid-column:auto}}
 .verwijzingen{display:flex;flex-wrap:wrap;gap:14px 36px;border-top:1px solid var(--zwart);padding:28px 0 clamp(60px,7vw,100px);font:500 12px/1.4 var(--tekst);letter-spacing:.14em;text-transform:uppercase}
 .verwijzingen a{text-decoration:none}
 .verwijzingen a:hover{color:var(--koraal)}

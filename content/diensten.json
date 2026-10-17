@@ -276,31 +276,35 @@
         {
           "producten": [
             {
-              "beeld": "img/diensten/focus-cmy.jpg",
+              "beelden": [
+                "img/diensten/focus-cmy.jpg",
+                "img/diensten/focus-beam-spot-wash.jpg"
+              ],
               "naam": "ADJ Focus CMY Compact",
-              "regel": "Hybride moving head met wash, spot en beam"
+              "regel": "Hybride moving head met wash, spot en beam",
+              "link": {
+                "tekst": "Bekijk de Focus Compact",
+                "href": "https://youtu.be/2CalKo7ov7U"
+              }
             },
             {
-              "beeld": "img/diensten/focus-beam-spot-wash.jpg",
-              "naam": "ADJ Focus CMY Compact",
-              "regel": "Hybride moving head met wash, spot en beam"
-            },
-            {
-              "beeld": "img/diensten/ifx640-truss.jpg",
+              "beelden": [
+                "img/diensten/ifx640-truss.jpg",
+                "img/diensten/ifx640-warm.jpg"
+              ],
               "naam": "Infinity iFX-640 met interne shutters",
-              "regel": "Wash moving head, bundels in bloemvorm"
-            },
-            {
-              "beeld": "img/diensten/ifx640-warm.jpg",
-              "naam": "Infinity iFX-640 met interne shutters",
-              "regel": "Wash moving head, bundels in bloemvorm"
+              "regel": "Wash moving head, bundels in bloemvorm",
+              "link": {
+                "tekst": "Bekijk de Infinity iFX-640",
+                "href": "https://vimeo.com/568318553"
+              }
             }
           ]
         },
         {
           "label": "Zo programmeren we",
           "tekst": [
-            "Geen voorgeprogrammeerde show die op elke track hetzelfde doet. We bouwen scènes die passen bij het verloop van de avond: ingetogen bij de opening, voller als de dansvloer vol staat. De lichttafel staat bij de booth, zodat licht en muziek elkaar volgen. Draadloze aansturing waar het kan, dus geen kabelgoten door de zaal."
+            "Indien nodig programmeren we vooraf een show die past bij het event van de opdrachtgever. We bouwen scènes die passen bij het verloop van de avond: ingetogen bij de opening, voller als de dansvloer vol staat. De lichttafel staat bij de booth, zodat licht en muziek elkaar volgen. Draadloze aansturing waar het kan, dus geen kabelgoten door de zaal."
           ]
         }
       ],

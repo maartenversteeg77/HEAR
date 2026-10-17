@@ -150,3 +150,4 @@ Te wegen bij redactie principes en founder story:
 - 2026-10-17: TONE OF VOICE (Maarten): expertise laten merken via signaalwoorden, niet uitleggen. Eén vakterm per tegel of alinea die een vakgenoot herkent en waar een leek overheen leest zonder te struikelen (frontfill, delay, coherent, dual file management). Geen uitleg erbij, geen opsomming van specs. Niet uitleggen, wel laten merken.
 
 - 2026-10-17: Productpagina's: intro nu boven de productrij (was eronder), geldt voor alle acht.
+- 2026-10-17: Dansvloerverlichting: twee producten met elk twee foto's naast elkaar in één tegel (veld `beelden`), met videolink (veld `link`, opent in nieuw venster). Programmeertekst omgedraaid: "Indien nodig programmeren we vooraf een show die past bij het event".
