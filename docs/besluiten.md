@@ -130,3 +130,4 @@ Wat is besloten, met datum. Nieuwste bovenaan. Open punten staan onderaan.
 - Werkwijze: na elke wijziging aan een vertaalde NL-pagina ook en.json bijwerken en bouw-en.py draaien.
 
 - 2026-10-17: Technics-tegel: onderschrift "Need I say more?" (grap, legendarisch apparaat behoeft geen uitleg). Producten-overzicht: nieuwe boothfoto (booth-verlicht.jpg); detailpagina houdt de foto van bovenaf.
+- 2026-10-17: Boothfoto op productenoverzicht vervangen door echte foto (skatehal), bijgesneden zodat gezichten buiten beeld blijven. Geen AI-beelden op de site.
