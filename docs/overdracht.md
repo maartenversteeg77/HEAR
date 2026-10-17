@@ -19,6 +19,10 @@ Zijn Relatieafspraken (in zijn voorkeuren) gelden volledig. Voor dit project in 
 - **Opzoekbare feiten opzoeken**, niet uit het hoofd: merknamen, modelnummers, specs. Onzeker? Markeren als "te verifiëren" in besluiten.md.
 - **Loggen** in `docs/besluiten.md`: elk inhoudelijk besluit, met datum, kort. Open punten onder "TE VERIFIËREN" of als actiepunt.
 - Hij werkt vaak 's nachts; gesprek eindigt pas als hij dat zegt.
+- **Antwoord eerst, in zijn woorden.** Elke reactie begint met wat er voor hem veranderd is (wat staat er nu, waar), in gewone taal. Technische kanttekeningen over scripts, CSS of controles horen in het log of in dit document, niet in het gesprek, tenzij hij ernaar vraagt. Nooit Engels in de reactie.
+- **Teksten: zijn versie wint.** Als hij een tekst aanlevert, die letterlijk plaatsen met hooguit interpunctie, koppeltekens en wij/we-consistentie; elke ingreep benoemen. Eigen voorstellen eerst inline tonen, niet live zetten, tenzij hij "zet maar neer"/GO zegt.
+- **Slogans en "AI-taal"** (zie besluiten 17 okt): geen staccato fragmenten, geen van…naar / niet a maar b / wel…niet-figuren, geen zinnen die uitleggen wat iemand moet voelen, geen uitleg van de eigen grap. Een korte zin mag als hij zonder toelichting werkt en over iets concreets gaat. Zijn eigen slogans (Need we say more?, Klein maar groot, Zwitserse zakmes, oh ja/oh wow) blijven.
+- Bij "beoordeel": criterium, pro's en cons, vergelijking, dan oordeel; ook zeggen wat ik niet zeker weet. Bij een vraag naar mijn "gevoel": eerlijk zeggen wat ik wel kan aanwijzen (bv. "had ik dit zonder hem kunnen verzinnen?").
 
 Commit-conventie (altijd zo):
 ```
@@ -57,7 +61,7 @@ Navigatie (volgorde vast): **Cases · Voor wie · Producten · Waarden · Over H
 | Cases overzicht | `cases.html` | `scripts/bouw-cases.py` ← `site/cases.json` |
 | 8 cases | `ade-dj`, `jubileum-ondernemersnetwerk`, `productpresentatie`, `gemeentelijk-netwerkevent`, `systeemadvies`, `dj-sets`, `prive-event`, `radio-mixes` | hand; vorige/volgende via bouw-en.py |
 | Voor wie | `doelgroepen.html` → `corporate.html`, `venue-owners.html`, `dance-events.html` | hand; zijnav (pijlen + bolletjes) staat hardgecodeerd in de drie pagina's, bij een vierde doelgroep alle drie bijwerken |
-| Waarden (nav-label; pagina "Waarden en uitgangspunten") | `principes.html` (één pagina met jogwheel; vier waarden met ankers `#samen` `#warmte` `#vakmanschap` `#open`; per waarde statement, intro, principes, waar merk je dit aan) | `scripts/bouw-principes.py` ← `content/principes.json`; component `site/jog.css` + `site/jog.js` |
+| Waarden (nav "Waarden", pagina "Waarden en uitgangspunten", EN "Values") | `principes.html` (één pagina met jogwheel; volgorde Samen · Open · Vakmanschap · Warme sound, ankers `#samen` `#open` `#vakmanschap` `#warmte`; per waarde: titel op het display, statement (regel onder de titel), intro-alinea, dan direct de lijst zonder kop of lijn; op ≥900px wiel links en tekst rechts, daaronder gestapeld) | `scripts/bouw-principes.py` ← `content/principes.json` (velden `slug,titel,statement,intro,werkwijze[]`, optioneel `werkwijze_kop`); component `site/jog.css` + `site/jog.js` |
 | Producten en diensten | `diensten.html` → 8 pagina's (`booth-dj-gear`, `high-end-audio`, `atmospheric-lighting`, `dancefloor-lighting`, `vintage-lighting`, `av-as-a-service`, `artiesten`, `special-projects`) | `scripts/bouw-diensten.py` ← `content/diensten.json` |
 | Over HEAR | `over-hear.html` | hand (founder story, ik-vorm) |
 | Engels | `site/en/*.html` | `scripts/bouw-en.py` ← `content/en.json` |
@@ -80,13 +84,16 @@ Overig: `merken.html`, `projectbrief.html/.md` (oud, niet in nav), `site/assets/
 ### Testen
 Playwright headless in de container: `/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell`, `NODE_PATH=/home/claude/.npm-global/lib/node_modules/@playwright/mcp/node_modules`. Screenshots desktop (1728) en mobiel; absolute paden werken via een route van `http://hear.test/` naar de site-map. Fonts wijken af (zie 4). Uiteindelijk oordeel is Maartens blik op de live link.
 
-## 6. Stand van zaken (17 okt 2026)
+## 6. Stand van zaken (18 okt 2026, 01:10)
 
-Af: homepage, cases, voor wie, producten (8), principes (4, tekst nog door Maarten te reviewen), over HEAR, Engels voor homepage/cases/over HEAR.
+Af en door Maarten gereviewd: homepage, cases, voor wie, producten (8), waarden (alle vier, teksten grotendeels van Maarten zelf), over HEAR (founder story + structuurkader), nieuws (2 berichten), Engels voor homepage/cases/over HEAR. Sitewide sloganscan gedaan (17 okt); vijf zinnen vervangen, rest bewust gelaten.
 
-Open, zie `docs/besluiten.md` onderaan:
-- Redactie principes en founder story langs de zes overtuigingen en de verhaallijn "uitbouw, geen carrièreswitch".
-- Corporate-pagina: Strategie → Beleving → AV-ontwerp → Uitvoering, blok over de communicatieachtergrond.
+Laatste sessie (17–18 okt) in het kort: waarden Samen/Open/Vakmanschap/Warme sound herschreven; navigatie Cases · Voor wie · Producten · Waarden · Over HEAR · Nieuws; "Principes" heet overal "Waarden"; uurbasis nergens meer genoemd; corporate-slotalinea is een plaatsvervanger tot Maartens review; EN-knop op nieuws gaat naar de Engelse homepage; structuurkader-CSS hersteld en profielblok erin opgenomen; `scripts/check-css.py` toegevoegd.
+
+Maarten loopt aan het eind de hele site nog een keer door. Open, zie `docs/besluiten.md` onderaan:
+- Corporate-pagina reviewen: slotalinea ("twee dingen doen") is van mij; structuur Strategie → Beleving → AV-ontwerp → Uitvoering, blok over de communicatieachtergrond.
+- Founder story langs de verhaallijn "uitbouw, geen carrièreswitch"; eventueel bedrijfsnaam adviespraktijk terug in het kader.
 - Eén zin over het netwerkmodel (één aanspreekpunt, vast netwerk) ergens vroeg op de site.
-- Engelse vertaling van voor wie, principes, producten na de tekstreview.
-- Te verifiëren: rechten op stockbeelden (gala, dansvloer, beams), toestemming saxofonist/dj op jubileumfoto, merk reversmicrofoons, WhatsApp-nummer, hear.nl DNS, netlify.toml weg, Engelse categorienamen op Producten.
+- Homepage-lead ("Transformeer…") is bewust gelaten; "Thuis in uitgaan" blijft kandidaat.
+- Engelse vertaling van voor wie, waarden, producten, nieuws.
+- Te verifiëren: rechten op stockbeelden (gala, dansvloer, beams), toestemming saxofonist/dj op jubileumfoto, merk reversmicrofoons, WhatsApp-nummer (`wa.me/?text=` overal), hear.nl DNS + `basis` in nieuws.json, netlify.toml weg, Engelse categorienamen op Producten, "visuals" in Warme sound (bieden we nergens aan).
