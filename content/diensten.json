@@ -330,28 +330,16 @@
       "intro": "Sommige lichteffecten zijn nooit overtroffen, alleen vergeten. Wij halen de klassiekers uit de discotheken van de jaren negentig terug, reviseren ze en geven ze een moderne lichtbron. Het resultaat is een effect dat niemand meer kent, met de kracht van nu.",
       "blokken": [
         {
-          "label": "Clay Paky Astrodisco",
-          "tekst": [
-            "Officieel heet dit effect een Astrodisco, maar in de volksmond noemde iedereen het een ufo. Alsof er een ronde schijf landt en dansers meeneemt naar een andere wereld. Who knows. Van het Italiaanse Clay Paky, veel te zien in Italiaanse clubs, maar ook in de Amsterdamse iT."
-          ]
-        },
-        {
-          "label": "Clay Paky Golden Scan en Martin Roboscan",
-          "tekst": [
-            "Scanners. Uit de markt verdreven door moving heads die 360 graden om hun as draaien, maar nog steeds erg effectief én snel. Met rijke, verzadigde kleuren uit een Philips-gasontladingslamp."
-          ]
-        },
-        {
           "producten": [
             {
               "beeld": "img/diensten/astrodisco.jpg",
               "naam": "Clay Paky Astrodisco",
-              "regel": "Tientallen draaiende bundels uit één bol"
+              "regel": "Officieel heet dit effect een Astrodisco, maar in de volksmond noemde iedereen het een ufo. Alsof er een ronde schijf landt en dansers meeneemt naar een andere wereld. Who knows. Van het Italiaanse Clay Paky, veel te zien in Italiaanse clubs, maar ook in de Amsterdamse iT"
             },
             {
               "beeld": "img/diensten/goldenscan.jpg",
               "naam": "Golden Scan en Roboscan",
-              "regel": "Scanners met gobo's en kleurwisselingen"
+              "regel": "Scanners. Uit de markt verdreven door moving heads die 360 graden om hun as draaien, maar nog steeds erg effectief én snel. Met rijke, verzadigde kleuren uit een Philips-gasontladingslamp"
             }
           ]
         },
