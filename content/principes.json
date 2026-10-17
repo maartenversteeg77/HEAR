@@ -1,24 +1,20 @@
 {
-  "_uitleg": "Principes en way of working: één pagina met het jogwheel. Hiërarchie: waarden (op het wiel) → principes (korte regels) → waar merk je dit aan (activiteiten). Velden per waarde: slug (anker), titel (op het display), statement (één zin onder de titel), intro (2-3 zinnen), principes (lijst), waar (lijst). Geen subpagina's. Gebouwd door scripts/bouw-principes.py.",
+  "_uitleg": "Principes en way of working: één pagina met het jogwheel. Per waarde: slug (anker), titel (op het display), statement (één zin), intro (2-3 zinnen), werkwijze (lijst onder 'Voor onze manier van werken betekent dit:'). Geen subpagina's. Gebouwd door scripts/bouw-principes.py.",
   "kernzin": "Principes en way of working",
-  "intro": "Achter alles wat we doen zit een intentie. Soms maken we daardoor net andere keuzes dan je gewend bent. Vier waarden bepalen die keuzes; de principes eronder maken ze concreet.",
+  "intro": "Achter alles wat we doen zit een intentie. Soms maken we daardoor net andere keuzes dan je gewend bent. Vier waarden bepalen die keuzes.",
   "paginas": [
     {
       "slug": "samen",
       "titel": "Samen",
-      "statement": "Alleen samen maken we er een succes van.",
-      "intro": "HEAR is een netwerk van professionals in de AV. Zonder samenwerking bestaan we niet, en zo kijken we ook naar opdrachtgevers, artiesten en leveranciers.",
-      "principes": [
-        "Eén aanspreekpunt, van briefing tot afbouw.",
-        "Gelijkwaardig in de keten: we verdienen aan wat we toevoegen, niet aan onze plek.",
-        "We denken niet vanuit de techniek, maar vanuit het concept of de strategie van de opdrachtgever, en vertalen dat naar oplossingen."
-      ],
-      "waar": [
-        "We denken mee over concepten en communicatie.",
-        "We denken niet in concurrentie. Andere leveranciers zien we als branchegenoten, ook degenen waar jij al mee werkt.",
-        "We realiseren het eindresultaat met freelancers uit ons netwerk: technici, dj's en andere artiesten.",
-        "Een eenmalig event vinden we gaaf, maar het liefst bouwen we aan langdurige relaties met klanten waarmee je op termijn kunt lezen en schrijven.",
-        "We bouwen relaties met leveranciers en producenten. Dat levert productkennis uit de eerste hand op, en tips of trainingen over het gebruik.",
+      "statement": "Zonder samenwerking bestaan we niet.",
+      "intro": "HEAR is een netwerk van professionals in de AV. Zo kijken we ook naar opdrachtgevers, artiesten en leveranciers: alleen samen wordt het goed.",
+      "werkwijze": [
+        "We beginnen bij het concept of de strategie van de opdrachtgever, niet bij onze techniek. We denken mee over concepten en communicatie, en vertalen die naar licht, geluid en muziek.",
+        "Branchegenoten, geen concurrenten. Ook degenen waar jij al mee werkt.",
+        "We gedragen ons gelijkwaardig naar iedereen met wie we werken, en verwachten dat terug. Advies is daarom op uurbasis en merkonafhankelijk; we verdienen niet aan wat we aanraden.",
+        "Het eindresultaat maken we met freelancers uit ons netwerk: technici, dj's en andere artiesten.",
+        "Met leveranciers en producenten onderhouden we een band. Dat levert productkennis uit de eerste hand op, en trainingen over het gebruik.",
+        "Een eenmalig event vinden we gaaf, maar het liefst bouwen we aan klanten waarmee je op termijn kunt lezen en schrijven.",
         "Op termijn willen we een leerbedrijf worden."
       ]
     },
@@ -27,13 +23,10 @@
       "titel": "Warmte",
       "statement": "Je gaat uit, maar je bent toch thuis.",
       "intro": "Licht en geluid staan in dienst van de artiest en de avond, niet op de voorgrond. We maken een huiskamer op schaal: een ruimte waar je je op je gemak voelt, of het nu voor vijftig of voor duizend mensen is.",
-      "principes": [
-        "Warm geluid dat vol is op elk volume, zodat je kunt dansen én praten.",
+      "werkwijze": [
+        "Warm geluid dat vol is op elk volume, zodat je kunt dansen én praten. Sprekers zijn tot achterin verstaanbaar zonder dat het vooraan hard is.",
         "Washlights en donker als effect, geen kermis.",
-        "De artiest zie en hoor je; de techniek niet."
-      ],
-      "waar": [
-        "Sprekers zijn tot achterin verstaanbaar zonder dat het vooraan hard is.",
+        "De artiest zie en hoor je; de techniek niet.",
         "Een avond heeft een verloop: rustig in de warm-up, vol op peak hour.",
         "Na afloop hoor je nog gewoon wat er om je heen gebeurt."
       ]
@@ -43,13 +36,10 @@
       "titel": "Vakmanschap",
       "statement": "Liever betalen voor wie het zelf bedenkt en bouwt.",
       "intro": "We kiezen producten waarover is nagedacht, in functie én in vorm, van bedrijven die innoveren en vanuit hun vak een gunfactor hebben. Bij voorkeur Europees, met eigen productie.",
-      "principes": [
+      "werkwijze": [
         "Producten die slim zijn in gebruik en er netjes uitzien.",
-        "Techniek die de operatie makkelijk maakt: draadloos, actief, vooraf geprogrammeerd.",
-        "Weinig lampen en kasten, elk met een eigen rol."
-      ],
-      "waar": [
-        "Geen kabelgoten door de zaal; het hele systeem draait op twee gewone stopcontacten.",
+        "Techniek die de operatie makkelijk maakt: draadloos, actief, vooraf geprogrammeerd. Geen kabelgoten door de zaal; het hele systeem draait op twee gewone stopcontacten.",
+        "Weinig lampen en kasten, elk met een eigen rol.",
         "Een opbouw die klaar is voordat de eerste gasten er zijn.",
         "Merknamen en modelnummers op onze productpagina's, niet \"high-end apparatuur\"."
       ]
@@ -59,15 +49,11 @@
       "titel": "Open",
       "statement": "Iedereen is welkom op onze dansvloer.",
       "intro": "HEAR komt uit de dance scene, een vrijplaats waar elke paradijsvogel zich thuis voelt. Dat nemen we mee naar elk event, en we verwachten het ook van wie met ons werkt.",
-      "principes": [
+      "werkwijze": [
         "Toegankelijk en eigenzinnig sluiten elkaar niet uit.",
         "We kiezen wat werkt, niet wat gebruikelijk is.",
-        "Een knipoog mag, als er een gedachte achter zit."
-      ],
-      "waar": [
         "Dezelfde zorg voor een zakelijk seminar als voor een clubnacht.",
-        "Een jogwheel als navigatie op deze pagina.",
-        "\"Need we say more?\" onder een Technics."
+        "Een knipoog mag, als er een gedachte achter zit. Een jogwheel als navigatie op deze pagina, \"Need we say more?\" onder een Technics."
       ]
     }
   ]

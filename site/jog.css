@@ -40,7 +40,7 @@
 .jogtekst .sub{font:600 11px/1.6 var(--tekst);letter-spacing:.22em;text-transform:uppercase;color:#8c8d8a;margin:0 0 18px;max-width:60ch}
 .jogtekst p{font-size:17px;line-height:1.7;color:var(--tekstgrijs);max-width:58ch;margin:0 0 14px}
 .jogtekst .waar{margin-top:18px;border-top:1px solid var(--lijn);padding-top:20px;max-width:58ch}
-.jogtekst .waar h3{font:600 11px/1.5 var(--tekst);letter-spacing:.2em;text-transform:uppercase;color:var(--zwart);margin:0 0 10px}
+.jogtekst .waar h3{font:600 11px/1.5 var(--tekst);letter-spacing:.2em;text-transform:uppercase;color:var(--zwart);margin:0 0 14px}
 .jogtekst .waar p{font-size:15.5px;line-height:1.6}
 .jogtekst .knoprij{margin-top:10px}
 /* kleine schermen: binnenwerk groter, kuiltjesband smaller */
@@ -56,7 +56,7 @@
 }
 
 .jogtekst .principes{list-style:none;margin:6px 0 0;padding:0;max-width:58ch;text-align:left}
-.jogtekst .principes li{position:relative;padding-left:22px;font-size:17px;line-height:1.6;color:var(--zwart);margin:0 0 10px}
+.jogtekst .principes li{position:relative;padding-left:22px;font-size:16.5px;line-height:1.6;color:var(--tekstgrijs);margin:0 0 12px}
 .jogtekst .principes li::before{content:"";position:absolute;left:0;top:.72em;width:10px;height:2px;background:var(--turquoise)}
 .jogtekst .waar{text-align:left}
 .jogtekst .waar ul{margin:0;padding-left:1.1em;color:var(--tekstgrijs);font-size:15.5px;line-height:1.6}

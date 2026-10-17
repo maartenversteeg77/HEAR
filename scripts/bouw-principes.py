@@ -22,7 +22,7 @@ for p in data["paginas"]:
         waar = [t for b in bl if b["label"] == "Wat je ervan merkt" for t in b["tekst"]] + \
                [t for b in bl if b["label"] != "Wat je ervan merkt" for t in b["tekst"]]
     items.append({"slug": p.get("slug") or p.get("bestand", "").replace(".html", ""), "titel": p["titel"],
-                  "statement": st, "intro": p["intro"], "principes": p.get("principes", []), "waar": waar})
+                  "statement": st, "intro": p["intro"], "werkwijze": p.get("werkwijze", []), "waar": waar or []})
 
 kernzin = data.get("kernzin", "Principes en way of working")
 intro = data.get("intro", "")
