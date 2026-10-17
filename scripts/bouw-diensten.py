@@ -25,7 +25,7 @@ def blok(b):
 
 for pg in data["paginas"]:
     pos = f' style="object-position:{e(pg["beeld_positie"])}"' if pg.get("beeld_positie") else ""
-    # productrij naar voren: direct onder de kop, vóór de intro
+    # intro direct onder de kop, dan de productrij
     prod = [b for b in pg["blokken"] if "producten" in b]
     rest = [b for b in pg["blokken"] if "producten" not in b]
     producten = "".join(blok(b) for b in prod)
@@ -37,8 +37,8 @@ for pg in data["paginas"]:
     beschrijving = pg.get("intro") or next((t for b in pg["blokken"] for t in b.get("tekst", [])), pg["kernzin"])
     main = f'''<main class="wrap">
 <section class="casehead"><a class="crumb" href="diensten.html">← Producten en diensten</a><h1 class="kernzin">{heel(pg["kernzin"])}</h1>{('<p class="kop-knop">'+pg["kop_knop"]+'</p>') if pg.get("kop_knop") else ''}</section>
-{producten}
 {intro}
+{producten}
 {blokken}
 <nav class="verwijzingen" aria-label="Verder lezen">{links}</nav>
 </main>'''
