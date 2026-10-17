@@ -18,14 +18,18 @@ keten.append({"link": "radio-mixes.html", "titel": "Radio-mixes voor Deep Radio"
 def kort(c, taal):
     t = (c.get("titel_en") if taal == "en" else c["titel"]) or c["titel"]
     return t.replace("\n", " ")
-def bottomnav(i, taal):
+def zijnav(i, taal):
     vorige, volgende = keten[i - 1], keten[(i + 1) % len(keten)]
-    return (f'<nav class="bottomnav"><a href="{vorige["link"]}">← {e(kort(vorige, taal))}</a>'
-            f'<a href="{volgende["link"]}">{e(kort(volgende, taal))} →</a></nav>')
+    return (f'<nav class="zijnav" aria-label="Vorige en volgende case"><a href="{vorige["link"]}" title="{e(kort(vorige, taal))}">← <span>{e(kort(vorige, taal))}</span></a>'
+            f'<a href="{volgende["link"]}" title="{e(kort(volgende, taal))}"><span>{e(kort(volgende, taal))}</span> →</a></nav>')
+def plaats_zijnav(s, i, taal):
+    s = re.sub(r'<nav class="bottomnav">.*?</nav>', '', s, flags=re.S)
+    s = re.sub(r'<nav class="zijnav"[^>]*>.*?</nav>', '', s, flags=re.S)
+    return re.sub(r'(<section class="casehead">\s*<a class="crumb"[^>]*>[^<]*</a>)', lambda m: m.group(1) + zijnav(i, taal), s, count=1)
 for i, c in enumerate(keten):
     p = site / c["link"]; s = p.read_text()
-    s2, n = re.subn(r'<nav class="bottomnav">.*?</nav>', lambda m: bottomnav(i, "nl"), s, flags=re.S)
-    if n: p.write_text(s2)
+    s2 = plaats_zijnav(s, i, "nl")
+    if s2 != s: p.write_text(s2)
 
 # --- paden herschrijven voor /en/ ---
 def paden(s, naam):
@@ -70,7 +74,7 @@ for naam in en["vertaald"]:
     # vorige/volgende in het Engels
     for i, c in enumerate(keten):
         if c["link"] == naam:
-            s = re.sub(r'<nav class="bottomnav">.*?</nav>', lambda m: bottomnav(i, "en"), s, flags=re.S)
+            s = plaats_zijnav(s, i, "en")
     s = paden(s, naam)
     (out / naam).write_text(s)
     print("ok en/" + naam)

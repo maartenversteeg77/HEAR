@@ -34,9 +34,11 @@ def blok(b):
     return f'<article class="{cls}"><h2>{e(b["label"]).upper()}</h2><div>{kop}{ps}</div></article>'
 
 volgorde = data["paginas"]
-def bottomnav(i):
+def zijnav(i):
     v, n = volgorde[i - 1], volgorde[(i + 1) % len(volgorde)]
-    return f'<nav class="bottomnav" aria-label="Vorige en volgende categorie"><a href="{e(v["bestand"])}">← {e(v["titel"])}</a><a href="{e(n["bestand"])}">{e(n["titel"])} →</a></nav>'
+    return (f'<nav class="zijnav" aria-label="Vorige en volgende categorie">'
+            f'<a href="{e(v["bestand"])}" title="{e(v["titel"])}">← <span>{e(v["titel"])}</span></a>'
+            f'<a href="{e(n["bestand"])}" title="{e(n["titel"])}"><span>{e(n["titel"])}</span> →</a></nav>')
 
 for i, pg in enumerate(data["paginas"]):
     pos = f' style="object-position:{e(pg["beeld_positie"])}"' if pg.get("beeld_positie") else ""
@@ -54,12 +56,11 @@ for i, pg in enumerate(data["paginas"]):
     intro = (f'<section class="quick quick-breed"><p>{e(pg["intro"])}</p>{cta}</section>' if pg.get("intro") else (f'<section class="quick quick-breed">{cta}</section>' if cta else ""))
     beschrijving = pg.get("intro") or next((t for b in pg["blokken"] for t in b.get("tekst", [])), pg["kernzin"])
     main = f'''<main class="wrap">
-<section class="casehead"><a class="crumb" href="diensten.html">← Producten en diensten</a><h1 class="kernzin">{heel(pg["kernzin"])}</h1>{('<p class="kop-knop">'+pg["kop_knop"]+'</p>') if pg.get("kop_knop") else ''}</section>
+<section class="casehead"><a class="crumb" href="diensten.html">← Producten en diensten</a>{zijnav(i)}<h1 class="kernzin">{heel(pg["kernzin"])}</h1>{('<p class="kop-knop">'+pg["kop_knop"]+'</p>') if pg.get("kop_knop") else ''}</section>
 {intro}
 {producten}
 {blokken}
 <nav class="verwijzingen" aria-label="Verder lezen">{links}</nav>
-{bottomnav(i)}
 </main>'''
     doc = f'''<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{e(beschrijving[:155])}"><title>{e(pg["titel"])} · HEAR</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="styles.css"></head><body class="pagina">
 {kop}
