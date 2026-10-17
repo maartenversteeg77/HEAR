@@ -61,13 +61,15 @@ Navigatie (volgorde vast): **Cases · Voor wie · Principes · Producten · Over
 | Producten en diensten | `diensten.html` → 8 pagina's (`booth-dj-gear`, `high-end-audio`, `atmospheric-lighting`, `dancefloor-lighting`, `vintage-lighting`, `av-as-a-service`, `artiesten`, `special-projects`) | `scripts/bouw-diensten.py` ← `content/diensten.json` |
 | Over HEAR | `over-hear.html` | hand (founder story, ik-vorm) |
 | Engels | `site/en/*.html` | `scripts/bouw-en.py` ← `content/en.json` |
+| Nieuws (niet in nav) | `site/nieuws/index.html` + `site/nieuws/<slug>.html` | `scripts/bouw-nieuws.py` ← `content/nieuws.json`; maakt ook `img/nieuws/<slug>-social.jpg` (1200×630, Open Graph) |
 
 Overig: `merken.html`, `projectbrief.html/.md` (oud, niet in nav), `site/assets/` (oude beelden), `site/img/diensten/` (productfoto's), `scripts/verbreed.py` (portretfoto verbreden met vervaagde randen).
 
 ### Bouwregels
 - **Gegenereerde pagina's nooit met de hand bewerken**: pas de JSON aan en draai het script. Opbouw productpagina: kernzin, intro over volle breedte, productrij, eventuele blokken, verwijzingen. Scripts kopiëren header/footer uit `index.html`, dus navigatie-wijzigingen eerst in index.html, dan alle scripts opnieuw draaien.
 - Na elke wijziging aan een vertaalde pagina (index, cases, 8 cases, over-hear): `python3 scripts/bouw-en.py`. Het script eist dat elke NL-zin in `en.json` letterlijk in de bronpagina staat en stopt anders met de naam van de zin. Dan en.json bijwerken.
-- Volgorde bij een volledige rebuild: `bouw-cases.py`, `bouw-diensten.py`, `bouw-principes.py`, `bouw-en.py`.
+- Volgorde bij een volledige rebuild: `bouw-cases.py`, `bouw-diensten.py`, `bouw-principes.py`, `bouw-nieuws.py`, `bouw-en.py`.
+- Nieuwsbericht plaatsen: item toevoegen in `content/nieuws.json` (status `af`), beeld in `site/img/`, `python3 scripts/bouw-nieuws.py`, pushen. Deel-URL: `<basis>/nieuws/<slug>.html`. `basis` in nieuws.json omzetten naar https://hear.nl zodra het domein live is (anders wijzen de social-afbeeldingen naar workers.dev).
 - `cases.json`: velden `titel`, `titel_en`, `tekst`, `tekst_en`, `beeld`, `alt`, `link`, `doelgroepen` (corporate/venue/dance), optioneel `positie` (object-position), `status: "af"`.
 
 ### CSS

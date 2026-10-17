@@ -242,3 +242,7 @@ em,i,cite,address,dfn,var{font-style:normal}
 
 .case-section .knoprij{margin:22px 0 0}
 .case-section.donker .wa{border-color:transparent}
+
+/* nieuws */
+.casehead .nieuws-datum{margin:0 0 10px;color:rgba(246,245,241,.7);letter-spacing:.16em;text-transform:uppercase;font:600 11px/1.5 var(--tekst)}
+.case-tekst .labels time{font:600 11px/1.5 var(--tekst);letter-spacing:.16em;text-transform:uppercase;color:var(--zwart);opacity:.75}

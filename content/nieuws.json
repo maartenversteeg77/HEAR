@@ -1,0 +1,22 @@
+{
+  "_uitleg": "Nieuwsberichten. scripts/bouw-nieuws.py bouwt er site/nieuws/<slug>.html, het overzicht site/nieuws/index.html en een deelbeeld per bericht van. Nieuws staat niet in de navigatie. Velden: slug (bestandsnaam, kleine letters, koppeltekens), datum (JJJJ-MM-DD), titel, intro (één of twee zinnen; wordt ook de social-omschrijving), beeld (pad in site/), beeld_alt, beeld_positie (optioneel), label (kopje boven de tekst, optioneel), tekst (lijst alinea's), knop (optioneel: tekst + href), status: 'af' om te publiceren, anders 'concept'. De 'basis' is het domein voor absolute links in de social-metadata; zet op https://hear.nl zodra het domein gekoppeld is.",
+  "basis": "https://hear.maartenversteeg.workers.dev",
+  "berichten": [
+    {
+      "slug": "kxm-25-a-floormonitor",
+      "datum": "2026-10-17",
+      "titel": "Nieuw in de booth: RCF KXM 25-A floormonitor",
+      "intro": "Een 15-inch coaxiale floormonitor voor dj's die hun monitoring liever onzichtbaar voor het publiek hebben. Krachtig, punchy en coherent.",
+      "beeld": "img/diensten/kxm-25.jpg",
+      "beeld_alt": "RCF KXM 25-A floormonitor in wedgevorm",
+      "label": "Wat het is",
+      "tekst": [
+        "De KXM 25-A is een wedge: een lage, schuine monitor die op de vloer van de booth ligt en omhoog naar de dj is gericht. Het publiek ziet hem niet, de dj hoort zichzelf wel. Met 137 dB en een bereik vanaf 50 Hz is hij ook op een luide dansvloer verstaanbaar.",
+        "De woofer en de hoorn zitten coaxiaal, in één as. Daardoor komt het geluid uit één punt en klinkt het coherent, ook dichtbij. Dat is precies wat je in een booth wilt.",
+        "Vanaf nu is de KXM 25-A de tweede monitoroptie in onze booth, naast de compacte sub-topcombinatie van SUB 808-AS en KX 515-A."
+      ],
+      "knop": {"tekst": "Bekijk de booth en dj-gear", "href": "/booth-dj-gear.html"},
+      "status": "af"
+    }
+  ]
+}
