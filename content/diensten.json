@@ -374,7 +374,7 @@
           "label": "Begeleiding inkooptraject",
           "kop": "Van vraag naar de juiste installatie.",
           "tekst": [
-            "Op uurbasis en merkonafhankelijk. We starten bij de ruimte en eindigen bij een systeem dat medewerkers zelf kunnen bedienen. Vaak is er minder nodig dan verwacht, mits het goed is geplaatst."
+            "Op uurbasis en merkonafhankelijk. We starten bij de ruimte en eindigen bij een systeem dat medewerkers zelf kunnen bedienen."
           ],
           "html_na": "<ol class=\"stappen\" aria-label=\"Stappen van het inkooptraject\"><li><b>01</b><strong>Ruimtescan</strong><span>Wat vraagt deze ruimte en het type events?</span></li><li><b>02</b><strong>Advies</strong><span>Merkonafhankelijke keuze van passende systemen.</span></li><li><b>03</b><strong>Demonstratie</strong><span>Producten zien en horen in jouw eigen ruimte.</span></li><li><b>04</b><strong>Training</strong><span>Zelfstandig bedienen na aanschaf.</span></li></ol><p class=\"stappen-noot\">Geen merkenlijst als vertrekpunt, maar een advies op basis van jouw locatie.</p>"
         },
@@ -383,7 +383,7 @@
           "kop": "Wel de kwaliteit.\nNiet de aanschaf.",
           "donker": true,
           "tekst": [
-            "Als alternatief voor het aankopen van licht en geluid. Voor een vast maandbedrag en een minimumperiode van drie jaar verzorgt HEAR de licht- en geluidssystemen, inclusief reparaties waar relevant.",
+            "Met AV as a service koop je geen licht en geluid, maar neem je het af als dienst. Voor een vast maandbedrag en een minimumperiode van drie jaar verzorgt HEAR de licht- en geluidssystemen, inclusief reparaties waar relevant.",
             "Na een training bedien je de apparatuur zelf. Voor installatie en onderhoud betrekken we waar nodig de productspecialisten van de gekozen merken."
           ]
         }
