@@ -401,25 +401,27 @@
       "kernzin": "Dj's, vocalisten en instrumentalisten die passen bij de avond",
       "beeld": "img/jubileum-breed.jpg",
       "beeld_alt": "Een dj met koptelefoon en een saxofonist tijdens een tuinfeest",
-      "intro": "Techniek is het halve werk. De andere helft is wie erachter staat. Wij boeken dj's en muzikanten uit ons eigen netwerk, en stemmen hun geluid en licht meteen mee af.",
+      "intro": "Als oprichter van HEAR en dj sinds 1993 help ik opdrachtgevers aan een avondvullend programma: met mijzelf achter de booth, met artiesten uit mijn netwerk, of allebei. Daarom schrijf ik dit stuk in de ik-vorm.",
       "blokken": [
         {
           "label": "Dj's",
           "tekst": [
-            "Van ontspannen achtergrond tijdens een borrel tot een volle dansvloer: soulful house, deephouse, disco en garage, gedraaid door dj's die weten wanneer ze moeten opbouwen en wanneer ze moeten wachten. Maarten draait zelf sinds 1993 en is aangesloten bij Architects in Music, dat dj's plaatst in cocktailbars, skylounges en beachclubs en op corporate events."
+            "Van ontspannen achtergrond tijdens een borrel tot een volle dansvloer: soulful house, deephouse, disco en garage, gedraaid door dj's die weten wanneer ze moeten opbouwen en wanneer ze moeten wachten. Een avond heeft een verloop, en het tijdschema is daar onderdeel van."
           ]
         },
         {
           "label": "Vocalisten en instrumentalisten",
           "tekst": [
-            "Een saxofonist die meespeelt met de dj, een zangeres bij de opening, een percussionist op de dansvloer. Live muziek bij een dj-set geeft een event iets dat mensen onthouden. Wij regelen de muzikant én de versterking, zodat het geluid klopt."
+            "Een saxofonist die meespeelt met de dj, een zangeres bij de opening, een percussionist op de dansvloer. Live muziek bij een dj-set geeft een event iets dat mensen onthouden."
           ]
         },
         {
-          "label": "Zo werken we",
+          "label": "Zo werk ik",
           "tekst": [
-            "Je vertelt ons wat voor avond je voor ogen hebt en wie er komt. Wij stellen een dj of combinatie voor die daarbij past, en zorgen dat techniek en muziek uit één hand komen."
-          ]
+            "Als dj ben ik smaakbewaker en tussenpersoon: ik kies de artiesten die bij het event passen en zet ze op het juiste moment van de avond. Daarvoor werk ik rechtstreeks met dj's en artiesten en met enkele artiestenbureaus.",
+            "Vertel wat je wensen zijn en ik doe een passend voorstel. Met één aanspreekpunt voor de muziek én de technische realisatie."
+          ],
+          "html_na": "<p class=\"inline-link\"><a href=\"https://wa.me/\">Stuur een WhatsApp →</a></p>"
         }
       ],
       "links": [

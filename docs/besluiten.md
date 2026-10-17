@@ -156,3 +156,4 @@ Te wegen bij redactie principes en founder story:
 - 2026-10-17: Scannerbeeld vervangen door fabrieksfoto met blauw/gele bundel. WENS: eigen foto van de scanners in een zaal, bundels door nevel achter de booth.
 - 2026-10-17: Adviespagina herschreven naar drie treden (gratis tips via WhatsApp / begeleid inkooptraject op uurbasis, merkonafhankelijk / AV as a service, vast maandbedrag, minimaal 3 jaar). Geen merknamen meer op deze pagina (onafhankelijkheid); wel productspecialisten. Inkooptraject als stappenflow (ruimtescan → advies → demonstratie → training). Chauvet-vermelding daarmee weg.
 - 2026-10-17: Over HEAR: structuurkader onder het profiel (oprichter, techniek, leveranciers, partners). NL en EN.
+- 2026-10-17: Artiestenpagina in ik-vorm (bewust ingeleid in de intro, zoals de founder story); smaakbewaker/tussenpersoon, rechtstreeks + artiestenbureaus, één aanspreekpunt, WhatsApp-knop. Architects in Music hier weg (staat in structuurkader Over HEAR).
