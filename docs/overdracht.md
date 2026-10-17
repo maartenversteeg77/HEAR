@@ -49,7 +49,7 @@ Niet doen: `pkill -f http.server` (sluit de shell).
 
 ## 5. Sitestructuur
 
-Navigatie (volgorde vast): **Cases · Voor wie · Principes · Producten · Over HEAR**, plus taalknop EN/NL.
+Navigatie (volgorde vast): **Cases · Voor wie · Producten · Principes · Over HEAR · Nieuws**, plus taalknop EN/NL. De kop staat hardgecodeerd in alle handpagina's én wordt door de scripts uit index.html gekopieerd: bij een wijziging alle `site/*.html` aanpassen en alle scripts draaien.
 
 | Pagina | Bestand | Bron |
 |---|---|---|
