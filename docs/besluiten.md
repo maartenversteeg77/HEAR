@@ -208,3 +208,11 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Corporate zichtbaarder op de homepage: nog niet besproken (4 van de 7 slidercases zijn corporate; het gaat om volgorde/beeld, niet om inhoud).
 - Hero-lead "Transformeer…" blijft (bevestigd door de review).
 - Slidervolgorde: Seminar en netwerkevent geruild met Skatehal, zodat de eerste drie tegels corporate zijn (Productlancering, Seminar, Jubileum). Volgorde geldt ook voor het cases-overzicht en vorige/volgende op de casepagina's.
+
+## 18 okt 2026 — ChatGPT-review, CASES
+
+- DJ-sets, resultaat: "een connaisseur met" weg → "toont een brede platenkennis en gevoel voor samenhang."
+- Systeemadvies, resultaat (tekst Maarten): "Goed advies verkleint de kans op een kostbare verkeerde aanschaf, bijvoorbeeld wanneer later blijkt dat je systeem niet schaalbaar is als je verder groeit." De oude tweede helft ("…opdrachten van vandaag én de groei van morgen") is vervallen, dubbelde met de nieuwe bijzin.
+- Privéfeest, uitvoering (tekst Maarten): "Door een mix van washlights en zwarte doeken was er niks meer te zien van al het metaal in de ruimte en werd het geluid minder weerkaatst." Vervangt de eerste zin die de kop herhaalde. Resultaat-alinea herhaalt de kop nog; niet aangepast.
+- CreativeGrounds/Jubileum lege citaatkop: was al weg (nacht 17/18 okt). Overige cases bewust ongemoeid.
+- Engels van alle drie mee.
