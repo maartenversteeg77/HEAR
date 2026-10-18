@@ -321,18 +321,19 @@ em,i,cite,address,dfn,var{font-style:normal}
 .structuur dd a{color:inherit}
 @media (max-width:520px){.structuur div{grid-template-columns:1fr;gap:2px}}
 
-/* doelgroeppagina's: lopende tekst met kader "Wat we leveren" */
-.topic-group.doel p{max-width:66ch;font-size:17px;line-height:1.7;color:var(--tekstgrijs);margin:0 0 18px}
-.lever-kader{max-width:66ch;margin:28px 0 8px;padding:20px 22px;border:1px solid var(--zwart)}
+/* doelgroeppagina's (Voor wie): kop links, tekst rechts op desktop; kader "Wat we leveren" */
+.topic-group.doel p{font-size:17px;line-height:1.7;color:var(--tekstgrijs);margin:0 0 18px}
+.lever-kader{margin:28px 0 8px;padding:20px 22px;border:1px solid var(--zwart)}
 .lever-kader h3{font:600 11px/1.6 var(--tekst);letter-spacing:.16em;text-transform:uppercase;color:var(--zwart);margin:0 0 8px}
 .lever-kader p{margin:0;font-size:15px;line-height:1.6;color:var(--tekstgrijs)}
 .links-rij{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:30px!important}
-.doel-kolommen .lever-kader{margin-top:auto}
-.topic-group.doel.breed p,.topic-group.doel.breed .lever-kader{max-width:84ch}
-.links-onder{padding-top:clamp(24px,3vw,40px)}
+.links-onder{padding-top:clamp(24px,3vw,40px);border-top:1px solid var(--lijn);margin-top:clamp(28px,4vw,48px)!important}
+.topic-group.doel p,.topic-group.doel .lever-kader{max-width:66ch}
 @media (min-width:1000px){
-  .doel-kolommen{display:grid;grid-template-columns:1fr 1fr;column-gap:clamp(40px,5vw,80px);align-items:stretch}
-  .doel-kolommen .topic-group.doel{display:flex;flex-direction:column}
-  .doel-kolommen .topic-group.doel p,.doel-kolommen .lever-kader{max-width:none}
-  .topic-group+.topic-group{margin-top:0}
+  .topic-group.doel{display:grid;grid-template-columns:minmax(200px,3fr) minmax(0,8fr);column-gap:clamp(24px,4vw,60px);align-items:start}
+  .topic-group.doel>h2{grid-column:1;position:sticky;top:96px;max-width:11ch}
+  .topic-group.doel>*:not(h2){grid-column:2}
+  .topic-group.doel p,.topic-group.doel .lever-kader{max-width:78ch}
+  .topic-group.doel .stappen{margin-top:14px}
+  .links-onder{margin-left:calc(3fr);}
 }
