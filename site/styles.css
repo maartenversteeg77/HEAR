@@ -337,5 +337,6 @@ em,i,cite,address,dfn,var{font-style:normal}
   .topic-group.doel>h2{grid-column:1;position:sticky;top:96px;max-width:14ch}
   .topic-group.doel>*:not(h2){grid-column:2}
   .topic-group.doel p,.topic-group.doel .lever-kader{max-width:78ch}
-  .topic-group.doel .stappen{margin-top:14px}
+  .topic-group.doel .stappen{margin:14px 0 26px;grid-template-columns:1fr 1fr;max-width:78ch}
+  .topic-group.doel .stappen li+li::before{content:none}
 }
