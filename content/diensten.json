@@ -33,6 +33,11 @@
               "regel": "Rotary mixer voor soepel blend mixen. Best of both worlds: digitale helderheid en analoge warmte met Rupert Neve-filters"
             },
             {
+              "beeld": "img/diensten/ecler-warm2.jpg",
+              "naam": "Ecler WARM2",
+              "regel": "Rotary mixer. Vergis je niet in zijn formaat: warm geluid voor wanneer booth space beperkt is"
+            },
+            {
               "beeld": "img/diensten/turntable.jpg",
               "naam": "Technics SL-1200",
               "regel": "Need we say more?"
@@ -50,7 +55,7 @@
           ],
           "rijen": [
             3,
-            2,
+            3,
             2
           ]
         },
