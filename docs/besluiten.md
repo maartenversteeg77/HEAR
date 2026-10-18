@@ -239,3 +239,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - 2026-10-18: "Bekijk de case →" ook op de beelden in de homepage-slider (EN: View the case), zelfde stijl als het cases-overzicht.
 - 2026-10-18: Custom dj-sets: knop "Vraag een mix of playlist aan" (Maarten dicteerde "mix op playlist", gelezen als "of"); voorgevuld bericht "Hoi Maarten, ik wil graag een mix of playlist op maat aanvragen." Bouwscript: velden cta_tekst/cta_bericht per pagina.
 - Over HEAR, Partners: Biezema AV en Deep Radio toegevoegd (NL en EN).
+- 2026-10-18: Over HEAR: structuurkader verplaatst naar onder de foto. Desktop: linkerkolom naast het verhaal, plakt aan de onderkant van het scherm zodat foto + kader in beeld blijven tijdens het lezen. Mobiel: foto → kader → verhaal (Maarten: kader maakt de naam als founder duidelijk vóór de ik-intro, en toont meteen het netwerk). Engels mee.
