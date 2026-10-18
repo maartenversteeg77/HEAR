@@ -199,3 +199,11 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Review van ChatGPT op de site volgt; nog te bespreken.
 - Vanaf deze draad kan Claude de live site zelf bekijken (browser in de desktop-app, echte fonts, desktop en mobiel). De beperking uit de overdracht (geen zicht op workers.dev) geldt niet meer.
 - ChatGPT-review (per pagina) ontvangen en opgeslagen als docs/review-chatgpt-2026-10-18.md. Nog niet besproken; bespreken op 18 okt overdag.
+
+## 18 okt 2026 — ChatGPT-review, HOME
+
+- Oprichter-zin op de homepage: "met cutting-edge techniek en muziek uit de dancescene" → "met techniek en muziek" (NL en EN).
+- Doelgroepomvang overal 150–1.500 (founder story NL/EN stond op 100).
+- Propositie-alinea op de homepage (ChatGPT's hoofdaanbeveling): GEPARKEERD. Hypothese van Maarten: wat ChatGPT mist komt deels doordat de brug "Voor wie" nog niet goed is ingevuld; eerst een sterke corporate-tekst onder doelgroepen, dan opnieuw kijken of de homepage nog iets nodig heeft.
+- Corporate zichtbaarder op de homepage: nog niet besproken (4 van de 7 slidercases zijn corporate; het gaat om volgorde/beeld, niet om inhoud).
+- Hero-lead "Transformeer…" blijft (bevestigd door de review).
