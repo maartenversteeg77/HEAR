@@ -37,7 +37,8 @@
             {
               "beeld": "img/diensten/ecler-warm2.jpg",
               "naam": "Ecler WARM2",
-              "regel": "Rotary mixer. Vergis je niet in zijn formaat: warm geluid voor wanneer booth space beperkt is"
+              "regel": "Rotary mixer. Vergis je niet in zijn formaat: warm geluid voor wanneer booth space beperkt is",
+              "vul": true
             },
             {
               "beeld": "img/diensten/turntable.jpg",
