@@ -110,7 +110,7 @@ body.pagina.menu-open .top{position:fixed}
 /* over HEAR */
 .founder-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(30px,5vw,80px);padding:clamp(48px,6vw,90px) 0 clamp(70px,8vw,120px);align-items:start}
 .founder-photo{width:100%;height:auto;display:block}
-.founder-grid>div:first-child{position:sticky;top:24px}
+.founder-grid>div:first-child{position:sticky;bottom:24px;align-self:end}
 .founder-copy p{font-size:17px;line-height:1.75;color:var(--tekstgrijs);margin:0 0 20px;max-width:62ch}
 .founder-profile{border-top:1px solid var(--zwart);padding-top:22px;margin-top:34px;font-size:14px;line-height:1.8;color:var(--tekstgrijs)}
 .founder-profile strong{font:300 28px/1.1 var(--kop);display:block;margin-bottom:10px;color:var(--zwart)}
