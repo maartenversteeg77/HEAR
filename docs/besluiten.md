@@ -216,3 +216,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Privéfeest, uitvoering (tekst Maarten): "Door een mix van washlights en zwarte doeken was er niks meer te zien van al het metaal in de ruimte en werd het geluid minder weerkaatst." Vervangt de eerste zin die de kop herhaalde. Resultaat-alinea herhaalt de kop nog; niet aangepast.
 - CreativeGrounds/Jubileum lege citaatkop: was al weg (nacht 17/18 okt). Overige cases bewust ongemoeid.
 - Engels van alle drie mee.
+- Over HEAR, structuurkader Partners: Ronald Pronk Photography toegevoegd (NL en EN).
