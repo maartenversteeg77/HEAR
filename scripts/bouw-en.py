@@ -39,7 +39,10 @@ def paden(s, naam):
     def href(m):
         h = m.group(1)
         if h.startswith(("http", "mailto:", "#", "/")): return m.group(0)
-        if h.endswith(".html"): return f'href="/en/{h}"' if h in vertaald else f'href="/{h}"'
+        basis, _, anker = h.partition("#")
+        if basis.endswith(".html"):
+            doel = f"/en/{basis}" if basis in vertaald else f"/{basis}"
+            return f'href="{doel}{"#" + anker if anker else ""}"'
         if h.startswith("nieuws/"): return f'href="/en/{h}"'
         return f'href="/{h}"'
     s = re.sub(r'href="([^"]+)"', href, s)

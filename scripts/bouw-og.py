@@ -58,6 +58,14 @@ for p in pagina_s:
             f'<meta property="og:locale" content="{"en_GB" if taal == "en" else "nl_NL"}">'
             f'<meta property="og:image" content="{beeld_abs}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">'
             f'<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{beeld_abs}"><!--/og-->')
+    alt_pad = pad.replace("/en/", "/", 1) if taal == "en" else "/en" + pad
+    alt_bestaat = (site / "en" / p.name).exists() if taal == "nl" else True
+    tags += f'<link rel="canonical" href="{BASIS}{pad}">'
+    if alt_bestaat:
+        nl_pad, en_pad = (pad, alt_pad) if taal == "nl" else (alt_pad, pad)
+        tags += f'<link rel="alternate" hreflang="nl" href="{BASIS}{nl_pad}"><link rel="alternate" hreflang="en" href="{BASIS}{en_pad}"><link rel="alternate" hreflang="x-default" href="{BASIS}{nl_pad}">'
+    tags = tags.replace("<!--/og-->", "") + "<!--/og-->"
+    s = re.sub(r'<link rel="canonical"[^>]*>|<link rel="alternate" hreflang[^>]*>', '', s)
     s = re.sub(r'<!--og-->.*?<!--/og-->', '', s, flags=re.S)
     s = re.sub(r'<meta property="og:[^>]*>|<meta name="twitter:[^>]*>', '', s)
     s = s.replace("</title>", "</title>" + tags, 1)
