@@ -252,3 +252,11 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - 2026-10-18: Samen, lijst ontdubbeld naar vijf (Maarten): (1) concept, communicatiedoelstelling of strategie van de opdrachtgever → AV en muziek [bullets 1+2 samengevoegd, "niet bij onze techniek" weg]; (2) branchegenoten; (3) gelijkwaardige relatie; (4) eenmalig event gaaf, liefst relatie op langere termijn; (5) leverancierscontact dicht bij de bron. Merkonafhankelijk-bullet weg (is al handelen vanuit klantbelang).
 - 2026-10-18: Samen, bullet 5: "We onderhouden leverancierscontact rechtstreeks bij de fabrikant of importeur, voor producttips, updates en trainingen uit de eerste hand."
 - 2026-10-18: Samen, bullet 1 slot: "…en vertalen dat naar geluid, licht, dj's en aanvullende diensten."
+
+## 18 okt 2026 — Corporate-pagina (Voor wie) herschreven
+
+- Tekst van Maarten als basis, twee blokken: "Corporate events" (voorbeelden, aandacht voor detail) en "Waar muziek en identiteit elkaar ontmoeten" (catwalk, Bazel). Onder elk blok hetzelfde kader "Wat we leveren" (Maartens wens: twee keer eenzelfde kader). Oude structuur (Wat klanten belangrijk vinden / Oplossingen / Resultaat) vervallen; daarmee ook de plaatsvervangende slotalinea "twee dingen doen".
+- "Lang voordat HEAR bestond" → "Al jaren doet Maarten Versteeg dit als dj voor merken" (jonge leeftijd van HEAR niet benadrukken).
+- Toegevoegd door Claude, nog te bevestigen: "Met 25 jaar corporate communicatie in de bagage denken we daarbij mee met de opdrachtgever of het reclamebureau over een muzikale invulling op maat." Kader-inhoud: concrete leveringen (reversmicrofoons, sprekerverlichting, sfeerlicht, warm klinkend systeem) + Maartens slotzin over locatiebezoek en akoestiek. Livestream alleen in de intro als klantvraag; partners-zin weg (staat elders).
+- Onderaan twee links: producten en diensten, cases. Kernzin in de kop ongewijzigd ("van heldere sprekersversterking tot muziek bij de borrel"), nog te bekijken.
+- Nieuwe CSS: .topic-group.doel, .lever-kader, .links-rij (herbruikbaar voor venue-owners en dance-events).
