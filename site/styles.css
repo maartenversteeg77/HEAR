@@ -331,9 +331,8 @@ em,i,cite,address,dfn,var{font-style:normal}
 .topic-group.doel p,.topic-group.doel .lever-kader{max-width:66ch}
 @media (min-width:1000px){
   .topic-group.doel{display:grid;grid-template-columns:minmax(200px,3fr) minmax(0,8fr);column-gap:clamp(24px,4vw,60px);align-items:start}
-  .topic-group.doel>h2{grid-column:1;position:sticky;top:96px;max-width:11ch}
+  .topic-group.doel>h2{grid-column:1;position:sticky;top:96px;max-width:14ch}
   .topic-group.doel>*:not(h2){grid-column:2}
   .topic-group.doel p,.topic-group.doel .lever-kader{max-width:78ch}
   .topic-group.doel .stappen{margin-top:14px}
-  .links-onder{margin-left:calc(3fr);}
 }
