@@ -227,3 +227,8 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Boothpagina: tegel Dj-booth krijgt nieuwe foto (CDJ-3000X-opstelling met camera op gorillapod, img/diensten/booth-cdj-camera.jpg); booth-bovenaf.jpg blijft in de map.
 - 2026-10-18 (Maarten, n.a.v. ChatGPT-review): luisterervaring (warm/helder/dekking) blijft op Waarden, niet herhalen op High-end audio. Privéfeest resultaat-alinea blijft. Boothtegel-tekst blijft bij de nieuwe foto. Boothpagina houdt 3-2-2 (geluid staat dan bij elkaar). Spotify-stockbeeld voor de Custom-tegel afgewezen; Deep Radio-beeld blijft.
 - 2026-10-18: Custom dj-sets: blok "Edits en producties", tekst Maarten: "Eigen edits, remixes en producties, analoog gemasterd, duiken op in sets, in het netwerk van dj's waarmee we werken en in de toekomst ook in releases." (alleen komma na "gemasterd" toegevoegd).
+
+## 18 okt 2026 — Productenoverzicht als doorklikpagina
+
+- Aanleiding (Maarten): Luxonos houdt de merksite vrij van gear en zet verhuur op een aparte site; bij HEAR mag het overzicht geen galerij zijn waar je blijft hangen. Tegels heten nu als actie: "Bekijk alle dj-gear", "Bekijk alle high-end audio", "Bekijk al het sfeerlicht", "Bekijk al het dansvloerlicht", "Bekijk al het 90's vintage licht", "Bekijk advies en AV as a service", "Bekijk dj's, vocalisten en instrumentalisten", "Bekijk custom dj-sets, playlists en remixes", elk met koraalkleurige pijl die bij hover verschuift. Daarmee zijn de Engelse categorienamen op het overzicht vervallen (stond op de te-verifiëren-lijst).
+- Dj-geartegel toont de Euphonia (was de verlichte booth). Overige tegelbeelden ongewijzigd.
