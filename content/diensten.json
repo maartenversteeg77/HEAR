@@ -440,12 +440,18 @@
     },
     {
       "bestand": "special-projects.html",
-      "titel": "Special projects",
-      "kernzin": "Radio-mixes en muziekproductie",
+      "titel": "Custom dj-sets, playlists en remixes",
+      "kernzin": "Dj-sets, playlists en remixes op maat",
       "beeld": "assets/radio-deep-radio.png",
       "beeld_alt": "Aankondiging van een dj-set van Maarten Versteeg op Deep Radio",
-      "intro": "Naast events werken we aan muziek zelf: radio-uitzendingen en eigen producties. Het houdt ons oor scherp en het levert materiaal op dat op een avond het verschil maakt.",
+      "intro": "Naast events werken we aan muziek zelf: dj-sets op maat, radio-uitzendingen, eigen edits en remixes, en playlists voor horeca.",
       "blokken": [
+        {
+          "label": "Playlists op maat",
+          "tekst": [
+            "Voor een koffiebar, café of andere horecazaak stellen we een playlist samen die past bij jouw zaak. Met de hand geselecteerd uit onze eigen collectie, zonder vervuiling door generieke AI-muziek."
+          ]
+        },
         {
           "label": "Radio-mixes",
           "tekst": [

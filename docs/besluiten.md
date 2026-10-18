@@ -218,3 +218,9 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Engels van alle drie mee.
 - Over HEAR, structuurkader Partners: Ronald Pronk Photography toegevoegd (NL en EN).
 - 2026-10-18: Producttegels sitewide maximaal 3 per rij (desktop), 2 per rij op mobiel (≤700px; was 1). Boothpagina houdt de verdeling 3-2-2 via optie `rijen` in diensten.json (productrij-blok). Brede tegels met twee foto's (dansvloerlicht) blijven over de volle breedte.
+
+## 18 okt 2026 — Special projects → Custom dj-sets, playlists en remixes
+
+- Categorie hernoemd (Maarten): pagina/voet "Custom dj-sets, playlists en remixes", overzichtstegel "Custom DJ sets, playlists & remixes" (Engelse tegelnamen zoals de rest), EN-voet "Custom DJ sets, playlists and remixes". URL blijft special-projects.html.
+- Kernzin: "Dj-sets, playlists en remixes op maat". Intro: "Naast events werken we aan muziek zelf: dj-sets op maat, radio-uitzendingen, eigen edits en remixes, en playlists voor horeca." De zin "Het houdt ons oor scherp…" is weg (ChatGPT-punt; met de hernoeming is ook de vraag "moet dit een categorie zijn" beantwoord).
+- Nieuw blok "Playlists op maat" (naar aanwijzing Maarten, formulering van mij): "Voor een koffiebar, café of andere horecazaak stellen we een playlist samen die past bij jouw zaak. Met de hand geselecteerd uit onze eigen collectie, zonder vervuiling door generieke AI-muziek."
