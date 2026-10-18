@@ -355,3 +355,4 @@ em,i,cite,address,dfn,var{font-style:normal}
 .relevant .visual-card::before{content:none}
 .relevant .inline-link{margin-top:22px!important}
 @media (max-width:760px){.relevant-grid,.relevant-grid.n2,.relevant-grid.n1{grid-template-columns:1fr 1fr;max-width:none}.relevant .visual-card{min-height:150px}}
+.topic-group.doel .tussenkop{font:300 clamp(20px,1.7vw,24px)/1.2 var(--kop);color:var(--zwart);margin:26px 0 10px}
