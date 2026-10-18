@@ -207,3 +207,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Propositie-alinea op de homepage (ChatGPT's hoofdaanbeveling): GEPARKEERD. Hypothese van Maarten: wat ChatGPT mist komt deels doordat de brug "Voor wie" nog niet goed is ingevuld; eerst een sterke corporate-tekst onder doelgroepen, dan opnieuw kijken of de homepage nog iets nodig heeft.
 - Corporate zichtbaarder op de homepage: nog niet besproken (4 van de 7 slidercases zijn corporate; het gaat om volgorde/beeld, niet om inhoud).
 - Hero-lead "Transformeer…" blijft (bevestigd door de review).
+- Slidervolgorde: Seminar en netwerkevent geruild met Skatehal, zodat de eerste drie tegels corporate zijn (Productlancering, Seminar, Jubileum). Volgorde geldt ook voor het cases-overzicht en vorige/volgende op de casepagina's.

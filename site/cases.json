@@ -33,17 +33,16 @@
     },
     {
       "status": "af",
-      "titel": "Transformatie: van skatehal tot dansvloer",
-      "tekst": "Eén avond omgebouwd voor een pop-upevent, met vrijwel geen soundcheck nodig.",
-      "beeld": "img/case-ade.jpg",
-      "alt": "DJ-booth in een skatehal tijdens ADE",
-      "link": "ade-dj.html",
+      "titel": "Seminar en netwerkevent",
+      "tekst": "Van lezingen en workshops naar een ontspannen cocktail hour.",
+      "beeld": "img/case-gemeente.jpg",
+      "alt": "Gesprek op een podium voor publiek",
+      "link": "gemeentelijk-netwerkevent.html",
       "doelgroepen": [
-        "dance",
-        "venue"
+        "corporate"
       ],
-      "titel_en": "Transformation: from skate hall to dancefloor",
-      "tekst_en": "Converted for a one-night pop-up event, with hardly any soundcheck needed."
+      "titel_en": "Seminar and networking event",
+      "tekst_en": "From lectures and workshops to a relaxed cocktail hour."
     },
     {
       "status": "af",
@@ -60,16 +59,17 @@
     },
     {
       "status": "af",
-      "titel": "Seminar en netwerkevent",
-      "tekst": "Van lezingen en workshops naar een ontspannen cocktail hour.",
-      "beeld": "img/case-gemeente.jpg",
-      "alt": "Gesprek op een podium voor publiek",
-      "link": "gemeentelijk-netwerkevent.html",
+      "titel": "Transformatie: van skatehal tot dansvloer",
+      "tekst": "Eén avond omgebouwd voor een pop-upevent, met vrijwel geen soundcheck nodig.",
+      "beeld": "img/case-ade.jpg",
+      "alt": "DJ-booth in een skatehal tijdens ADE",
+      "link": "ade-dj.html",
       "doelgroepen": [
-        "corporate"
+        "dance",
+        "venue"
       ],
-      "titel_en": "Seminar and networking event",
-      "tekst_en": "From lectures and workshops to a relaxed cocktail hour."
+      "titel_en": "Transformation: from skate hall to dancefloor",
+      "tekst_en": "Converted for a one-night pop-up event, with hardly any soundcheck needed."
     },
     {
       "status": "af",
