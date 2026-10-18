@@ -192,3 +192,9 @@ Navigatie-item "Principes" heet nu "Waarden" (EN: Values); mobiel menu "Waarden 
 Vierde waarde heet "Warme sound" (was Warmte). Mijn herschrijving ("Het moet warm blijven klinken…", huiskamer-intro) resoneerde niet. Tekst van Maarten: statement "Wij geven om sfeer en warm geluid."; intro over geluid als onbewuste sfeerbepaler (schel → ongemakkelijk; onduidelijk → vermoeiend door compenserende hersenen; warm en verstaanbaar → sfeer omhoog zonder te weten waarom; licht spectaculair wanneer nodig, subtiel als dat beter past; uitgaan voelt als thuis, uren blijven). "Je gaat uit, maar je bent toch thuis" is daarmee van de site; "Thuis in uitgaan" blijft kandidaat voor de homepage.
 Kop "Voor onze manier van werken betekent dit" en de lijn erboven overal weg: de lijst volgt direct op de alinea (scheelt ruimte, en was al niet consequent). Eerste bullet (Maarten): deephouse-achtergrond, warm/rond/vol, ook visuals moeten warmte hebben.
 Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar de Nederlandse). Engels nieuws is er niet; staat bij de open vertaalpunten.
+
+## 18 okt 2026 — stand na de nachtsessie
+
+- Maarten heeft alle teksten zelf gemaakt of gereviewd, behalve alles onder "Voor wie is HEAR" (doelgroepen.html, corporate, venue-owners, dance-events). Dat is het enige onderdeel dat nog op zijn review wacht.
+- Review van ChatGPT op de site volgt; nog te bespreken.
+- Vanaf deze draad kan Claude de live site zelf bekijken (browser in de desktop-app, echte fonts, desktop en mobiel). De beperking uit de overdracht (geen zicht op workers.dev) geldt niet meer.
