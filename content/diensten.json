@@ -381,7 +381,8 @@
           "label": "Begeleiding inkooptraject",
           "kop": "Begeleiding van de eerste vraag tot een werkende installatie",
           "tekst": [
-            "Merkonafhankelijk, met de ruimte als vertrekpunt en een systeem dat medewerkers zelf kunnen bedienen als eindpunt."
+            "Sommige locaties lopen aan tegen steeds hogere eisen die bezoekers stellen aan geluid. Het moet impactvol zijn, maar mag de oren niet schaden. Het geluid wordt niet genoeg gevoeld of is te schel en vermoeiend, of er zijn dode zones waardoor het publiek steeds gaat lopen op zoek naar een goede plek.",
+            "Met de eigenaar kijken we wat de locatie nodig heeft. Merkonafhankelijk, met de ruimte als vertrekpunt en een systeem dat medewerkers zelf kunnen bedienen als eindpunt."
           ],
           "html_na": "<ol class=\"stappen\" aria-label=\"Stappen van het inkooptraject\"><li><b>01</b><strong>Ruimtescan</strong><span>Wat vraagt deze ruimte en het type events?</span></li><li><b>02</b><strong>Advies</strong><span>Merkonafhankelijke keuze van passende systemen.</span></li><li><b>03</b><strong>Demonstratie</strong><span>Producten zien en horen in jouw eigen ruimte.</span></li><li><b>04</b><strong>Training</strong><span>Zelfstandig bedienen na aanschaf.</span></li></ol>"
         },
@@ -390,7 +391,7 @@
           "kop": "De kwaliteit van een eigen installatie, zonder de aanschaf.",
           "donker": true,
           "tekst": [
-            "Met AV as a service koop je geen licht en geluid, maar neem je het af als dienst. Voor een vast maandbedrag en een minimumperiode van drie jaar verzorgt HEAR de licht- en geluidssystemen, inclusief reparaties waar relevant.",
+            "Met AV as a service koop je geen licht en geluid, maar neem je het af als dienst, via HEAR zelf of via ons netwerk. Voor een vast bedrag per maand en een periode van minimaal 36 maanden krijgt de locatie de beschikking over geluid en licht: het nieuwste wat op dit moment op de markt is, zonder zorgen over onderhoud of reparatie.",
             "Na een training bedien je de apparatuur zelf. Voor installatie en onderhoud betrekken we waar nodig de productspecialisten van de gekozen merken."
           ]
         }
