@@ -1,5 +1,5 @@
 {
-  "_uitleg": "Bron voor de acht dienstenpagina's. scripts/bouw-diensten.py bouwt er de HTML van. Per pagina: kernzin (kop), beeld (kopbeeld, vullend), intro (grote tekst), blokken (label links, tekst rechts; 'producten' = rij met productbeelden), links (verwijzingen onderaan). Tekst in wij-vorm, geen prijzen, geen superlatieven. Dienstenpagina's openen direct met de productrij (geen kopbeeld); 'beeld' wordt alleen nog gebruikt voor de overzichtstegel. Optioneel per productrij: 'rijen' (bv. [3,2,2]) = aantal tegels per rij op desktop; extra tegels volgen in rijen zo breed als de laatste. Optioneel per pagina: 'cta_tekst' en 'cta_bericht' (knoptekst en voorgevuld WhatsApp-bericht; standaard 'Vraag een voorstel aan').",
+  "_uitleg": "Bron voor de acht dienstenpagina's. scripts/bouw-diensten.py bouwt er de HTML van. Per pagina: kernzin (kop), beeld (kopbeeld, vullend), intro (grote tekst), blokken (label links, tekst rechts; 'producten' = rij met productbeelden), links (verwijzingen onderaan). Tekst in wij-vorm, geen prijzen, geen superlatieven. Dienstenpagina's openen direct met de productrij (geen kopbeeld); 'beeld' wordt alleen nog gebruikt voor de overzichtstegel. Optioneel per productrij: 'rijen' (bv. [3,2,2]) = aantal tegels per rij op desktop; extra tegels volgen in rijen zo breed als de laatste. Optioneel per pagina: 'cta_tekst' en 'cta_bericht' (knoptekst en voorgevuld WhatsApp-bericht; standaard 'Vraag een voorstel aan'). Optioneel per product: 'vul': true = foto vult de tegel (uitsnede) in plaats van passend met zwarte randen.",
   "paginas": [
     {
       "bestand": "booth-dj-gear.html",
@@ -20,12 +20,14 @@
             {
               "beeld": "img/diensten/cdj-3000x.jpg",
               "naam": "Pioneer DJ CDJ-3000X",
-              "regel": "Industry standard mediaplayer. Met extra groot scherm voor snelle trackselectie"
+              "regel": "Industry standard mediaplayer. Met extra groot scherm voor snelle trackselectie",
+              "vul": true
             },
             {
               "beeld": "img/diensten/djm-v10.jpg",
               "naam": "Pioneer DJ DJM-V10",
-              "regel": "Industry standard workhorse. Met pristine geluidskwaliteit"
+              "regel": "Industry standard workhorse. Met pristine geluidskwaliteit",
+              "vul": true
             },
             {
               "beeld": "img/diensten/euphonia.jpg",
@@ -40,7 +42,8 @@
             {
               "beeld": "img/diensten/turntable.jpg",
               "naam": "Technics SL-1200",
-              "regel": "Need we say more?"
+              "regel": "Need we say more?",
+              "vul": true
             },
             {
               "beeld": "img/diensten/kx515-808-opties.jpg",

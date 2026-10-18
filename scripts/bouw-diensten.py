@@ -25,7 +25,8 @@ def blok(b):
             imgs = "".join(f'<img src="{e(bl)}" alt="{e(p["naam"])}" loading="lazy">' for bl in beelden)
             if len(beelden) > 1: imgs = f'<div class="duo">{imgs}</div>'
             link = f'<a class="bekijk" href="{e(p["link"]["href"])}" target="_blank" rel="noopener">{e(p["link"]["tekst"])} ↗</a>' if p.get("link") else ""
-            breed = ' class="breed"' if len(beelden) > 1 else ""
+            cls = ("breed" if len(beelden) > 1 else "") + (" vul" if p.get("vul") else "")
+            breed = f' class="{cls.strip()}"' if cls.strip() else ""
             return f'<figure{breed}>{imgs}<figcaption><strong>{e(p["naam"])}</strong><span class="regel">{e(p["regel"]).replace(chr(10), "<br>")}</span>{link}</figcaption></figure>'
         rijen = b.get("rijen")  # bv. [3,2,2]: tegels per rij op desktop; daarna rijen zo breed als de laatste
         if rijen:

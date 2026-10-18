@@ -200,6 +200,7 @@ em,i,cite,address,dfn,var{font-style:normal}
 .producten{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;padding:clamp(28px,4vw,48px) 0 clamp(16px,2vw,28px);border-top:1px solid var(--lijn)}
 .producten figure{margin:0}
 .producten img{width:100%;aspect-ratio:4/3;object-fit:contain;display:block;background:var(--zwart)}
+.producten figure.vul img{object-fit:cover}
 .producten figcaption{margin-top:12px;font-size:14px;line-height:1.45;color:var(--tekstgrijs)}
 .producten figcaption strong{display:block;font:400 clamp(18px,1.4vw,21px)/1.15 var(--kop);color:var(--zwart);margin-bottom:4px}
 .producten+.case-sections .case-section:first-child{border-top:1px solid var(--lijn)}
