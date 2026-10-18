@@ -27,6 +27,13 @@ def blok(b):
             link = f'<a class="bekijk" href="{e(p["link"]["href"])}" target="_blank" rel="noopener">{e(p["link"]["tekst"])} ↗</a>' if p.get("link") else ""
             breed = ' class="breed"' if len(beelden) > 1 else ""
             return f'<figure{breed}>{imgs}<figcaption><strong>{e(p["naam"])}</strong><span class="regel">{e(p["regel"]).replace(chr(10), "<br>")}</span>{link}</figcaption></figure>'
+        rijen = b.get("rijen")  # bv. [3,2,2]: tegels per rij op desktop; daarna rijen zo breed als de laatste
+        if rijen:
+            spans = []
+            for n in rijen: spans += [12 // n] * n
+            while len(spans) < len(b["producten"]): spans.append(12 // rijen[-1])
+            items = "".join(fig(p).replace("<figure", f'<figure style="--s:{sp}"', 1) for p, sp in zip(b["producten"], spans))
+            return f'<section class="producten rijen" aria-label="Producten">{items}</section>'
         items = "".join(fig(p) for p in b["producten"])
         return f'<section class="producten" aria-label="Producten">{items}</section>'
     ps = "".join(f"<p>{e(t)}</p>" for t in b["tekst"]) + b.get("html_na", "")
