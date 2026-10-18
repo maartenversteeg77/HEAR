@@ -356,3 +356,8 @@ em,i,cite,address,dfn,var{font-style:normal}
 .relevant .inline-link{margin-top:22px!important}
 @media (max-width:760px){.relevant-grid,.relevant-grid.n2,.relevant-grid.n1{grid-template-columns:1fr 1fr;max-width:none}.relevant .visual-card{min-height:150px}}
 .topic-group.doel .tussenkop{font:300 clamp(20px,1.7vw,24px)/1.2 var(--kop);color:var(--zwart);margin:26px 0 10px}
+.visual-card .bekijk-doel{position:relative;z-index:1;margin:-18px 26px 26px;font:600 11px/1 var(--tekst);letter-spacing:.18em;text-transform:uppercase;color:var(--wit);opacity:.85}
+.visual-card .bekijk-doel i{font-style:normal;display:inline-block;margin-left:.3em;transition:transform .25s}
+.visual-card:hover .bekijk-doel{opacity:1}
+.visual-card:hover .bekijk-doel i{transform:translateX(5px)}
+.visual-grid .visual-card{flex-direction:column;justify-content:flex-end;align-items:flex-start}
