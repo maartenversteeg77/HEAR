@@ -1,7 +1,7 @@
 {
   "_uitleg": "Principes en way of working: één pagina met het jogwheel. Per waarde: slug (anker), titel (op het display), statement (één zin), intro (2-3 zinnen), werkwijze (lijst onder 'Voor onze manier van werken betekent dit:'). Geen subpagina's. Gebouwd door scripts/bouw-principes.py.",
   "kernzin": "Waarden en uitgangspunten",
-  "intro": "Achter alles wat we doen zit een intentie. Soms maken we daardoor net andere keuzes dan je gewend bent. Vier waarden bepalen die keuzes.",
+  "intro": "Achter alles wat we doen zit een intentie. Dat is althans wel de bedoeling :-) Die bepaalt wat voor keuzes we maken, bijvoorbeeld in ons assortiment of onze manier van samenwerken. Twee waarden en twee uitgangspunten bepalen die keuzes.",
   "paginas": [
     {
       "slug": "samen",

@@ -31,7 +31,7 @@ pagina = f'''<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta na
 {kop}
 <main class="wrap">
 <section class="casehead"><a class="crumb" href="index.html"><span class="sectie">HEAR</span></a><h1 class="kernzin">{e(kernzin)}</h1></section>
-{f'<section class="quick quick-breed"><p>{e(intro)}</p></section>' if intro else ''}
+{f'<section class="quick quick-breed jogintro"><p>{e(intro)}</p></section>' if intro else ''}
 <section class="jogmidden">
   <button class="jog" id="jog" type="button" aria-label="Volgend principe">
     <div class="rand"></div><div class="kuiltjes" id="kuiltjes"></div><div class="chroom"></div>
