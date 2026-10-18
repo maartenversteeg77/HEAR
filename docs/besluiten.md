@@ -198,3 +198,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Maarten heeft alle teksten zelf gemaakt of gereviewd, behalve alles onder "Voor wie is HEAR" (doelgroepen.html, corporate, venue-owners, dance-events). Dat is het enige onderdeel dat nog op zijn review wacht.
 - Review van ChatGPT op de site volgt; nog te bespreken.
 - Vanaf deze draad kan Claude de live site zelf bekijken (browser in de desktop-app, echte fonts, desktop en mobiel). De beperking uit de overdracht (geen zicht op workers.dev) geldt niet meer.
+- ChatGPT-review (per pagina) ontvangen en opgeslagen als docs/review-chatgpt-2026-10-18.md. Nog niet besproken; bespreken op 18 okt overdag.
