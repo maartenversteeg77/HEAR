@@ -288,3 +288,12 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - 2026-10-18: Voor wie-tegels: label "Dit is wat wij doen" (linksboven) vervangen door actieregel onder de naam "BEKIJK WAT WIJ DOEN →", zelfde stijl als "Bekijk de case" op de cases. Cases hadden dit al; titel blijft daar titel.
 - 2026-10-18: Mobiel: vegen over de zwarte kop (casehead) gaat naar vorige/volgende pagina op hetzelfde niveau (producten, cases, doelgroepen) via de bestaande zijnav-pijlen; drempel 60 px horizontaal. Script staat in de gedeelde kop (index.html → alle pagina's).
 - 2026-10-18: Corporate, kader 2 nu eigen tekst (Maarten: tweede kader was gelijk aan het eerste): "Hetzelfde als bij corporate events, aangevuld met: samen met de opdrachtgever of het reclamebureau de identiteit van het merk of het doel van het event vertalen naar muziek. Een muzikale invulling op maat: de sound bij een collectie, een playlist voor een presentatie of een dj-set die bij het merk past." (formulering Claude, te bevestigen)
+
+## 18 okt 2026 — Alles in het Engels; deelbare links op alle pagina's
+
+- Engels toegevoegd voor Voor wie (overzicht + 3), Producten (overzicht + 8), Waarden (incl. jogwheel-teksten) en Nieuws (overzicht + 2 berichten). Vertalingen door Claude; NL blijft leidend en bouw-en.py stopt als een NL-tekst verandert. Nieuws: Engelse velden *_en in nieuws.json, pagina's in site/en/nieuws/.
+- Voorgevulde WhatsApp-berichten op Engelse pagina's zijn nu Engels (en.json → "whatsapp").
+- Taalknop: op elke NL-pagina wijst EN naar dezelfde pagina in het Engels (was altijd de Engelse homepage), en omgekeerd.
+- Nieuw script scripts/bouw-og.py (laatste stap): elke pagina NL en EN krijgt Open Graph/Twitter-metadata en een deelbeeld 1200×630 in img/og/ (foto + zwarte balk met logo, zoals nieuws). Beeld = eerste foto van de pagina, uitzonderingen in BEELD (high-end audio → volle zaal, advies → gala). `basis` in nieuws.json geldt ook hier: bij livegang naar https://hear.nl.
+- Corporate, blok 2: slotzin ingekort tot "Met 25 jaar corporate communicatie in de bagage weten we wat er voor een merk op het spel staat." (dubbeling met kader weg; GO Maarten).
+- TE CHECKEN (Maarten): Engelse teksten lezen, vooral Waarden en de founder-achtige ik-teksten (Artiesten).

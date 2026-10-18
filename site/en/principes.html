@@ -1,0 +1,72 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Behind everything we do there is an intention. That's the idea, anyway :-) It shapes the choices we make, for example in our range or in the way we work together."><title>Values and principles · HEAR</title><!--og--><meta property="og:title" content="Values and principles · HEAR"><meta property="og:description" content="Behind everything we do there is an intention. That&#x27;s the idea, anyway :-) It shapes the choices we make, for example in our range or in the way we work together."><meta property="og:url" content="https://hear.maartenversteeg.workers.dev/en/principes.html"><meta property="og:site_name" content="HEAR"><meta property="og:type" content="website"><meta property="og:locale" content="en_GB"><meta property="og:image" content="https://hear.maartenversteeg.workers.dev/img/og/principes.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://hear.maartenversteeg.workers.dev/img/og/principes.jpg"><!--/og--><link rel="alternate" hreflang="nl" href="/principes.html"><link rel="alternate" hreflang="en" href="/en/principes.html"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/home.css"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/jog.css"></head><body class="pagina">
+<header class="top">
+  <a class="merk" href="/en/index.html" aria-label="HEAR, to the homepage"><img src="/img/logo-white.png" alt="HEAR"></a>
+  <nav class="topnav" aria-label="Main navigation">
+    <a href="/en/cases.html">Cases</a>
+    <a href="/en/doelgroepen.html">Who it's for</a>
+    <a href="/en/diensten.html">Products</a>
+    <a href="/en/principes.html" aria-current="page">Values</a>
+    <a href="/en/over-hear.html">About HEAR</a>
+    <a href="/en/nieuws/">News</a>
+  </nav>
+  <a class="taal" href="/principes.html" lang="nl" hreflang="nl" aria-label="Schakel naar Nederlands">NL</a>
+  <button class="menuknop" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+    <span></span><span></span>
+  </button>
+</header>
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Main menu">
+      <a href="/en/cases.html"><span>Cases</span><small>Events that capture the imagination</small></a>
+      <a href="/en/doelgroepen.html"><span>Who HEAR is for</span><small>Corporate, venue owners and dance events</small></a>
+      <a href="/en/diensten.html"><span>Products and services</span><small>Light, sound, DJ gear and advice</small></a>
+      <a href="/en/principes.html"><span>Values</span><small>What we care about</small></a>
+      <a href="/en/over-hear.html"><span>About HEAR</span><small>Founder Maarten introduces himself</small></a>
+      <a href="/en/nieuws/"><span>News</span><small>New products, events and updates</small></a>
+  </nav>
+</div>
+<script>
+  (function(){
+    var k=document.querySelector('.menuknop'), m=document.getElementById('menu');
+    function zet(open){ k.setAttribute('aria-expanded',open); k.setAttribute('aria-label',open?'Close menu':'Open menu'); m.hidden=!open; document.body.classList.toggle('menu-open',open); }
+    k.addEventListener('click',function(){ zet(k.getAttribute('aria-expanded')!=='true'); });
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape') zet(false); });
+    // Vegen over de zwarte kop (mobiel): links = volgende, rechts = vorige pagina op dit niveau
+    var h=document.querySelector('.casehead'), x0=null, y0=null;
+    if(h){
+      h.addEventListener('touchstart',function(e){ x0=e.touches[0].clientX; y0=e.touches[0].clientY; },{passive:true});
+      h.addEventListener('touchend',function(e){
+        if(x0===null) return; var dx=e.changedTouches[0].clientX-x0, dy=e.changedTouches[0].clientY-y0; x0=null;
+        if(Math.abs(dx)<60||Math.abs(dy)>50) return;
+        var a=h.querySelector(dx<0?'.zijnav .pijl:last-child':'.zijnav .pijl:first-child'); if(a&&a.href) location.href=a.href;
+      },{passive:true});
+    }
+  })();
+</script>
+<main class="wrap">
+<section class="casehead"><a class="crumb" href="/en/index.html"><span class="sectie">HEAR</span></a><h1 class="kernzin">Values and principles</h1></section>
+<section class="quick quick-breed jogintro"><p>Behind everything we do there is an intention. That's the idea, anyway :-) It shapes the choices we make, for example in our range or in the way we work together. Two values and two principles guide those choices.</p></section>
+<section class="jogmidden">
+  <button class="jog" id="jog" type="button" aria-label="Volgend principe">
+    <div class="rand"></div><div class="kuiltjes" id="kuiltjes"></div><div class="chroom"></div>
+    <div class="ringdonker"></div><div class="zij"></div>
+    <div class="wit"></div><div class="wijzer" id="wijzer"><i></i></div><div class="koraal"></div>
+    <div class="scherm" id="scherm"><strong id="titel"></strong></div>
+  </button>
+  <div class="jogtekst" id="tekst" aria-live="polite"></div>
+</section>
+</main>
+<footer class="voet">
+  <div class="voet-kolommen">
+    <div class="voet-merk">
+      <img src="/img/logo-white.png" alt="HEAR">
+      <p>High End Audio Rental · Amsterdam</p>
+      <p><a href="mailto:maarten@hear.nl">maarten@hear.nl</a></p>
+    </div>
+    <nav aria-label="Work"><p class="label">Work</p><a href="/en/cases.html">Cases</a><a href="/en/nieuws/">News</a><a href="/en/over-hear.html">About HEAR</a></nav>
+    <nav aria-label="Who it's for"><p class="label">Who it's for</p><a href="/en/corporate.html">Corporate</a><a href="/en/venue-owners.html">Venue owners</a><a href="/en/dance-events.html">Dance events</a></nav>
+    <nav aria-label="Products"><p class="label">Products</p><a href="/en/booth-dj-gear.html">Booth and DJ gear</a><a href="/en/high-end-audio.html">High-end audio</a><a href="/en/atmospheric-lighting.html">Atmospheric lighting</a><a href="/en/dancefloor-lighting.html">Dancefloor lighting</a><a href="/en/vintage-lighting.html">90s vintage lighting</a><a href="/en/av-as-a-service.html">Advice and AV as a service</a><a href="/en/artiesten.html">Artists</a><a href="/en/special-projects.html">Custom DJ sets, playlists and remixes</a></nav>
+    <nav aria-label="Values"><p class="label">Values</p><a href="/principes.html#samen">Together</a><a href="/principes.html#open">Open</a><a href="/principes.html#vakmanschap">Craftsmanship</a><a href="/principes.html#warmte">Warm sound</a></nav>
+  </div>
+</footer>
+<script>window.JOG={midden:true,items:[{"slug": "samen", "titel": "Together", "statement": "Without collaboration we don't exist.", "intro": "HEAR is a network of professionals, suppliers and artists in music, sound and light. That's also how we see clients: as partners in our network, who can only make something beautiful together.", "werkwijze": ["We start from the client's concept, communication goal or strategy and translate it into sound, light, DJs and additional services.", "We don't think in terms of competition. We see other suppliers as colleagues in the trade.", "We look for an equal relationship with clients and partners.", "We love a one-off event, but we'd rather build a long-term relationship.", "We keep in direct contact with the manufacturer or importer: for product tips, updates and training first-hand."], "werkwijze_kop": "", "waar": []}, {"slug": "open", "titel": "Open", "statement": "With an open mind", "intro": "HEAR has its roots in corporate communications and the dance scene. Being in dialogue with your surroundings, and a dancefloor as a free space, where you can be who you are and give others that same room. We value that openness, and you see it in small things:", "werkwijze": ["We are curious about other solutions, other opinions, new technology and new music.", "Criticism is there to learn from: how can we do it differently next time?", "We don't judge without asking first.", "We don't work with parties that openly discriminate."], "werkwijze_kop": "", "waar": []}, {"slug": "vakmanschap", "titel": "Craftsmanship", "statement": "We buy products from suppliers who share our passion.", "intro": "We choose products that have been thought through, in function and in form, from companies that innovate and have earned goodwill in their trade.", "werkwijze": ["We invest in technology that makes operations easy: wireless lighting, active speakers, light shows we programme in advance. That means no cable ducts across the room, and the whole system runs on two ordinary power sockets.", "We work with versatile, modular systems.", "We buy audio products made in Europe, from companies with their own production and a passion for their trade."], "werkwijze_kop": "", "waar": []}, {"slug": "warmte", "titel": "Warm sound", "statement": "We care about atmosphere and warm sound.", "intro": "Sound shapes the atmosphere more than people realise. With warm, clearly intelligible sound the mood lifts, without you quite knowing why. Unfortunately it sometimes works the other way round: the music is shrill and you feel uncomfortable. Or you get tired from unclear sound, something your brain keeps compensating for without you noticing. That's why we pay extra attention to the quality, warmth and intelligibility of sound. And of the lighting: spectacular when needed, but subtle when that suits better. That way going out feels just like home. You feel at ease and want to stay for hours.", "werkwijze": ["Coming from a deep house background, we value sound that is warm, round and full. Visuals should have warmth too.", "Sound is evenly distributed. The music or speaker is intelligible all the way to the back, without it becoming too loud at the front.", "We would rather work with wash lights that colour a room than with a fairground of effects. Darkness is also a choice.", "Light, sound and visuals are matched to the energy of the moment."], "werkwijze_kop": "", "waar": []}]};</script><script src="/jog.js"></script>
+</body></html>

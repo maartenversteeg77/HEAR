@@ -1,5 +1,5 @@
 {
-  "_uitleg": "Engelse vertalingen. scripts/bouw-en.py bouwt site/en/ uit de Nederlandse pagina's door exacte tekstvervanging. 'globaal' geldt voor alle pagina's (kop, menu, voet). Per pagina een lijst [nl, en]; elke nl-tekst moet letterlijk in de Nederlandse pagina staan. Vertaald: homepage, casesoverzicht, 8 cases, Over HEAR. Andere pagina's volgen na de contentreview. 'globaal' is optioneel per pagina; per-pagina teksten moeten gevonden worden.",
+  "_uitleg": "Engelse vertalingen. scripts/bouw-en.py bouwt site/en/ uit de Nederlandse pagina's door exacte tekstvervanging. 'globaal' geldt voor alle pagina's (kop, menu, voet). Per pagina een lijst [nl, en]; elke nl-tekst moet letterlijk in de Nederlandse pagina staan. Vertaald: alle pagina's in 'vertaald' (sinds 18 okt ook Voor wie, Producten, Waarden). 'globaal' is optioneel per pagina; per-pagina teksten moeten gevonden worden.",
   "vertaald": [
     "index.html",
     "cases.html",
@@ -11,7 +11,21 @@
     "prive-event.html",
     "productpresentatie.html",
     "radio-mixes.html",
-    "systeemadvies.html"
+    "systeemadvies.html",
+    "doelgroepen.html",
+    "corporate.html",
+    "venue-owners.html",
+    "dance-events.html",
+    "diensten.html",
+    "booth-dj-gear.html",
+    "high-end-audio.html",
+    "atmospheric-lighting.html",
+    "dancefloor-lighting.html",
+    "vintage-lighting.html",
+    "av-as-a-service.html",
+    "artiesten.html",
+    "special-projects.html",
+    "principes.html"
   ],
   "globaal": [
     [
@@ -241,6 +255,10 @@
     [
       "<h2>Custom dj-sets, playlists en remixes</h2><p>Geluid en draadloze microfoons</p>",
       "<h2>Custom DJ sets, playlists and remixes</h2><p>Sound and wireless microphones</p>"
+    ],
+    [
+      "aria-label=\"Stappen van het inkooptraject\"",
+      "aria-label=\"Steps of the purchasing process\""
     ]
   ],
   "cases_json": {
@@ -708,6 +726,1251 @@
         "<p>Meer weten over audio-advies?</p>",
         "<p>Want to know more about audio advice?</p>"
       ]
+    ],
+    "doelgroepen.html": [
+      [
+        "name=\"description\" content=\"Verschillende contexten vragen om een andere invulling.\"",
+        "name=\"description\" content=\"Different contexts call for a different approach.\""
+      ],
+      [
+        ">Verschillende contexten vragen om een andere invulling.<",
+        ">Different contexts call for a different approach.<"
+      ],
+      [
+        "alt=\"Dansvloer in blauw licht met dj achter de booth\"",
+        "alt=\"Dancefloor in blue light with a DJ behind the booth\""
+      ],
+      [
+        "alt=\"Lezing met publiek tijdens een zakelijk event\"",
+        "alt=\"Talk with an audience at a business event\""
+      ],
+      [
+        ">Benieuwd wat HEAR voor jouw event kan doen?<",
+        ">Curious what HEAR can do for your event?<"
+      ],
+      [
+        "alt=\"Volle zaal met kleurrijk licht\"",
+        "alt=\"Packed room with colourful light\""
+      ],
+      [
+        "<title>Voor wie · HEAR</title>",
+        "<title>Who it's for · HEAR</title>"
+      ],
+      [
+        ">Bekijk wat wij doen <",
+        ">See what we do <"
+      ],
+      [
+        ">Bekijk onderdeel ↗<",
+        ">View section ↗<"
+      ],
+      [
+        ">Voor wie<",
+        ">Who it's for<"
+      ]
+    ],
+    "corporate.html": [
+      [
+        ">Daarnaast zijn er zakelijke toepassingen die iets extra’s vragen, op het snijvlak van identiteit, techniek en muziek. Al jaren doet Maarten Versteeg dit als dj voor merken. Bijvoorbeeld de best passende muziek voor een catwalk, waarbij er vooraf afstemming is over de collectie en welke sound daarbij past. Of de muziek bij de introductie van een nieuwe serie horloges in Bazel. Met 25 jaar corporate communicatie in de bagage weten we wat er voor een merk op het spel staat.<",
+        ">Then there are business occasions that ask for something extra, where identity, technology and music meet. Maarten Versteeg has done this as a DJ for brands for years. Choosing the right music for a catwalk, for instance, agreeing beforehand on the collection and the sound that suits it. Or the music for the launch of a new line of watches in Basel. With 25 years of corporate communications behind us, we know what is at stake for a brand.<"
+      ],
+      [
+        ">Complete realisatie van licht en geluid: sprekersversterking met draadloze reversmicrofoons, sprekerverlichting, sfeerlicht en een warm klinkend systeem voor de borrel of het feest. Dj’s en aanverwante artiesten, zoals een vocalist, saxofonist of percussionist. Uiteraard doen we, wanneer nodig, een locatiebezoek vooraf en stemmen we het geluid af op de akoestiek.<",
+        ">Complete lighting and sound: speech reinforcement with wireless lavalier microphones, speaker lighting, ambient light and a warm-sounding system for the drinks or the party. DJs and related artists, such as a vocalist, saxophonist or percussionist. Where needed, we of course visit the venue beforehand and tune the sound to the acoustics.<"
+      ],
+      [
+        ">Deze opdrachten vragen om aandacht voor detail. Sprekers moeten goed verstaanbaar en zichtbaar zijn. De techniek moet passen bij de ruimte en de uitstraling van het merk, en het programma moet soepel kunnen overgaan van inhoud naar ontmoeting of feest. Misschien moeten gasten ook online kunnen meekijken via een livestream. Of hoort er een bedrijfsvideo bij.<",
+        ">These jobs call for attention to detail. Speakers need to be clearly heard and seen. The technology has to suit the room and the look of the brand, and the programme has to move smoothly from content to meeting people or celebrating. Perhaps guests need to be able to watch online via a livestream. Or a company video is part of it.<"
+      ],
+      [
+        ">Samen met de opdrachtgever of het reclamebureau vertalen we de identiteit van het merk of het doel van het event naar een muzikale invulling op maat. Dit kan de sound bij een modecollectie zijn, een custom playlist voor een netwerkavond of een dj-set die bij het merk past.<",
+        ">Together with the client or the advertising agency, we translate the identity of the brand or the purpose of the event into a made-to-measure musical approach. That might be the sound for a fashion collection, a custom playlist for a networking evening or a DJ set that fits the brand.<"
+      ],
+      [
+        ">Corporate events zijn er in vele soorten en maten. Een personeelsfeest voor een 100-jarig bestaan. Een productdemonstratie. Een seminar of rondetafelgesprek, met microfoons voor sprekers.<",
+        ">Corporate events come in all shapes and sizes. A staff party for a 100th anniversary. A product demonstration. A seminar or round-table, with microphones for the speakers.<"
+      ],
+      [
+        "name=\"description\" content=\"Audiovisuele ondersteuning voor zakelijke opdrachtgevers en bureaus.\"",
+        "name=\"description\" content=\"Audiovisual support for corporate clients and agencies.\""
+      ],
+      [
+        ">Zakelijke events: van heldere sprekersversterking tot muziek bij de borrel<",
+        ">Business events: from clear speech reinforcement to music at the drinks<"
+      ],
+      [
+        ">Benieuwd wat HEAR voor jouw zakelijke event kan doen?<",
+        ">Curious what HEAR can do for your business event?<"
+      ],
+      [
+        "alt=\"Lezing met publiek tijdens een zakelijk event\"",
+        "alt=\"Talk with an audience at a business event\""
+      ],
+      [
+        ">Waar muziek en identiteit elkaar ontmoeten<",
+        ">Where music and identity meet<"
+      ],
+      [
+        "alt=\"Dj’s, vocalisten en instrumentalisten\"",
+        "alt=\"DJs, vocalists and instrumentalists\""
+      ],
+      [
+        ">Bekijk voorbeelden uit onze cases ↗<",
+        ">See examples from our cases ↗<"
+      ],
+      [
+        ">Bekijk de case: productlancering ↗<",
+        ">View the case: product launch ↗<"
+      ],
+      [
+        "alt=\"Sfeerverlichting\"",
+        "alt=\"Atmospheric lighting\""
+      ],
+      [
+        ">Wat we leveren<",
+        ">What we deliver<"
+      ],
+      [
+        ">DOELGROEPEN<",
+        ">AUDIENCES<"
+      ]
+    ],
+    "venue-owners.html": [
+      [
+        ">Niet elke ruimte is van zichzelf geschikt voor een evenement. Misschien is hij wat kaal ingericht, is er veel metaal en glas dat geluid scherp afketst, of heeft de zaal een vorm die een ‘akoestische nachtmerrie’ is. Of is er een ruimte die voor één keer wordt getransformeerd, terwijl het juist de bedoeling is dat je ziet wat voor ruimte het van origine is. Bijvoorbeeld een skatehal als locatie voor een pop-upevent voor een Frans dj-duo tijdens Amsterdam Dance Event.<",
+        ">Not every space is suited to an event by itself. Perhaps it is sparsely furnished, there is a lot of metal and glass that makes sound bounce harshly, or the room has a shape that is an 'acoustic nightmare'. Or a space is transformed for one night only, while the whole point is that you can still see what kind of space it originally is. A skate hall, for example, as the venue for a pop-up event for a French DJ duo during Amsterdam Dance Event.<"
+      ],
+      [
+        ">Daarnaast merken we dat sommige locaties aanlopen tegen steeds hogere eisen die bezoekers stellen aan geluid. Het moet wel impactvol zijn, maar mag de oren niet schaden. Het geluid wordt niet genoeg gevoeld of is te schel en vermoeiend, of er zijn dode zones in bepaalde ruimtes, waardoor het publiek steeds gaat lopen op zoek naar een goede plek. Samen met partners in ons netwerk bieden we daar oplossingen voor:<",
+        ">We also notice that some venues are running into the rising expectations visitors have of sound. It needs to have impact, but must not harm the ears. The sound isn't felt enough, or it is shrill and tiring, or there are dead zones in certain areas, so the audience keeps wandering in search of a good spot. Together with partners in our network, we offer solutions for this:<"
+      ],
+      [
+        ">Met de eigenaar van een locatie kijken we wat deze locatie nodig heeft. Daarbij zijn opties voor AV as a service mogelijk, via HEAR zelf of via ons netwerk. Voor een vast bedrag per maand en een periode van minimaal 36 maanden krijgt de locatie de beschikking over geluid en licht. Het nieuwste wat op dit moment op de markt is, zonder zorgen over onderhoud of reparatie.<",
+        ">With the owner of a venue, we look at what the venue needs. AV as a service is one of the options, through HEAR itself or through our network. For a fixed monthly fee and a minimum term of 36 months, the venue has the use of sound and light. The latest on the market, without worrying about maintenance or repairs.<"
+      ],
+      [
+        ">Een ruimte voor één event ombouwen tot dansvloer of podium, met licht en geluid afgestemd op de akoestiek. Voor de langere termijn: ruimtescan, merkonafhankelijk advies, demonstratie in je eigen ruimte en training, als begeleid inkooptraject of als AV as a service voor een vast bedrag per maand.<",
+        ">Converting a space into a dancefloor or stage for a single event, with light and sound tuned to the acoustics. For the longer term: a room scan, brand-independent advice, a demonstration in your own space and training, as a guided purchasing process or as AV as a service for a fixed monthly fee.<"
+      ],
+      [
+        "name=\"description\" content=\"Ruimtes tijdelijk een andere functie geven of adviseren over vaste techniek.\"",
+        "name=\"description\" content=\"Giving spaces a temporary new function, or advice on permanent technology.\""
+      ],
+      [
+        ">Van skatehal tot museum: een ruimte omtoveren tot een nieuwe beleving<",
+        ">From skate hall to museum: turning a space into a new experience<"
+      ],
+      [
+        "alt=\"Skatehal tijdelijk ingericht als eventlocatie\"",
+        "alt=\"Skate hall temporarily set up as an event venue\""
+      ],
+      [
+        ">Merkonafhankelijke keuze van passende systemen.<",
+        ">Brand-independent choice of suitable systems.<"
+      ],
+      [
+        ">Producten zien en horen in jouw eigen ruimte.<",
+        ">See and hear the products in your own space.<"
+      ],
+      [
+        ">Benieuwd wat HEAR voor jouw locatie kan doen?<",
+        ">Curious what HEAR can do for your venue?<"
+      ],
+      [
+        ">Wat vraagt deze ruimte en het type events?<",
+        ">What does this space and this type of event need?<"
+      ],
+      [
+        ">Lees meer over advies en AV as a service ↗<",
+        ">Read more about advice and AV as a service ↗<"
+      ],
+      [
+        ">AV van jouw locatie naar een hoger plan<",
+        ">Take your venue's AV to the next level<"
+      ],
+      [
+        ">Zelfstandig bedienen na aanschaf.<",
+        ">Operate it yourself after purchase.<"
+      ],
+      [
+        "alt=\"Advies en AV as a service\"",
+        "alt=\"Advice and AV as a service\""
+      ],
+      [
+        ">Transformeer jouw locatie<",
+        ">Transform your venue<"
+      ],
+      [
+        ">Bekijk de ADE-case ↗<",
+        ">View the ADE case ↗<"
+      ],
+      [
+        "alt=\"Sfeerverlichting\"",
+        "alt=\"Atmospheric lighting\""
+      ],
+      [
+        ">Wat we leveren<",
+        ">What we deliver<"
+      ],
+      [
+        ">Demonstratie<",
+        ">Demonstration<"
+      ],
+      [
+        ">DOELGROEPEN<",
+        ">AUDIENCES<"
+      ],
+      [
+        ">Ruimtescan<",
+        ">Room scan<"
+      ],
+      [
+        ">Advies<",
+        ">Advice<"
+      ]
+    ],
+    "dance-events.html": [
+      [
+        ">Een systeem voor intieme ruimtes van 0 tot 15 meter en een systeem voor zalen van 15 tot 35 meter diep, beide op basis van dezelfde bouwstenen. Hybride PA met subs in cardioïde opstelling, zodat het laag op de dansvloer blijft en niet bij de buren komt. Frontfill voor de eerste meters. Mogelijk een dedicated kicklaag voor de midlage tonen. Waar nodig compacte topjes verderop in de zaal als delay of voor specifieke zones, zoals de bar.<",
+        ">A system for intimate spaces from 0 to 15 metres and a system for halls from 15 to 35 metres deep, both built from the same building blocks. Hybrid PA with subs in a cardioid arrangement, so the low end stays on the dancefloor and doesn't reach the neighbours. Front fill for the first few metres. Possibly a dedicated kick layer for the low-mids. Where needed, compact tops further into the room as delay or for specific zones, such as the bar.<"
+      ],
+      [
+        ">Wat het geluid moet doen, bepalen we samen met jou. Moet het achterin even hard zijn als voorin, of wil je juist dat mensen naar voren lopen en achterin kunnen praten? Wil je geluid in een specifieke zone, zoals de bar of een nis? Met modulaire systemen is één set speakers inzetbaar in diverse configuraties, afhankelijk van de indeling van de ruimte en het doel van het event. We realiseren dit samen met professionals uit ons netwerk.<",
+        ">What the sound has to do, we decide together with you. Should it be as loud at the back as at the front, or do you actually want people to move forward and be able to talk at the back? Do you want sound in a specific zone, such as the bar or an alcove? With modular systems, one set of speakers can be used in different configurations, depending on the layout of the space and the purpose of the event. We make this happen together with professionals from our network.<"
+      ],
+      [
+        ">In een forward-boothopstelling wordt het monitorgeluid van de dj iets verder bij hem of haar vandaan gezet en verder versterkt. De dj heeft nog steeds hetzelfde geluid, zonder delays, maar ook gasten in de buurt van de dj hebben het geluid van deze zone. Dit kan met vloerspeakers (wedges) of met speakers op statief. Eventueel met een trussconstructie met licht om de dj-zone heen.<",
+        ">In a forward booth set-up, the DJ's monitor sound is placed a little further away from them and given more power. The DJ still hears the same sound, without delays, but guests near the DJ also get the sound of this zone. This can be done with floor wedges or with speakers on stands. Optionally with a truss structure with lights around the DJ zone.<"
+      ],
+      [
+        ">Op verzoek zetten we de booth naar voren, de zaal in: een forward booth. De dj staat dan midden in het feest, met publiek rondom. De PA doet de zaal; de booth heeft zijn eigen monitoring met subs, en die zetten we zo neer dat niet alleen de dj er iets aan heeft, maar ook de mensen die eromheen dansen.<",
+        ">On request, we move the booth forward, into the room: a forward booth. The DJ then stands in the middle of the party, with the crowd all around. The PA covers the room; the booth has its own monitoring with subs, placed so that not only the DJ benefits, but also the people dancing around it.<"
+      ],
+      [
+        ">Een bijkomend voordeel van een forward booth is dat je twee plekken hebt met impactvol, direct geluid: voor en achter de dj. De zaal vóór de booth wordt minder diep, waardoor de noodzaak voor delaytorens afneemt en het makkelijker wordt om tot achterin de zaal impactvol geluid te hebben.<",
+        ">An added advantage of a forward booth is that you have two places with direct, high-impact sound: in front of and behind the DJ. The room in front of the booth becomes less deep, which reduces the need for delay towers and makes it easier to get high-impact sound all the way to the back.<"
+      ],
+      [
+        ">Daarom werken we met hybride systemen: de directheid van een kleine installatie en de worp van een grote. Het laag is gelaagd: sub en kick hebben elk hun eigen kast. En de toren is zo gebouwd dat ook het midlaag tot achterin draagt, zodat het daar nog vol klinkt en niet alleen hard.<",
+        ">That's why we work with hybrid systems: the directness of a small installation and the throw of a large one. The low end is layered: sub and kick each have their own cabinet. And the tower is built so that the low-mids also carry to the back, so it still sounds full there and not just loud.<"
+      ],
+      [
+        ">Een dance event vraagt geluid dat je voelt, de hele avond, zonder dat het pijn doet. Vooraan niet te hard, achterin niet dun, en geen dode zones waar het publiek omheen gaat staan. En de dj moet binnenkomen en meteen kunnen draaien.<",
+        ">A dance event needs sound you can feel, all night long, without it hurting. Not too loud at the front, not thin at the back, and no dead zones the crowd gathers around. And the DJ has to be able to walk in and start playing straight away.<"
+      ],
+      [
+        "name=\"description\" content=\"DJ-gear, audio en licht voor dance-events.\"",
+        "name=\"description\" content=\"DJ gear, audio and lighting for dance events.\""
+      ],
+      [
+        "alt=\"Volle industriële zaal met publiek, in rood en paars licht\"",
+        "alt=\"Packed industrial hall with a crowd, in red and purple light\""
+      ],
+      [
+        ">Bekijk de case: een reis door 40 jaar elektronische muziek ↗<",
+        ">View the case: a journey through 40 years of electronic music ↗<"
+      ],
+      [
+        ">Benieuwd wat HEAR voor jouw dance event kan doen?<",
+        ">Curious what HEAR can do for your dance event?<"
+      ],
+      [
+        ">, krachtig geluid en draadloze lichtshows<",
+        ">, powerful sound and wireless light shows<"
+      ],
+      [
+        ">Een dansvloer van 150 tot 1.500 mensen<",
+        ">A dancefloor for 150 to 1,500 people<"
+      ],
+      [
+        "alt=\"Dansvloerverlichting\"",
+        "alt=\"Dancefloor lighting\""
+      ],
+      [
+        ">Bekijk de ADE-case ↗<",
+        ">View the ADE case ↗<"
+      ],
+      [
+        "alt=\"Booth en dj-gear\"",
+        "alt=\"Booth and DJ gear\""
+      ],
+      [
+        ">De booth in de zaal<",
+        ">The booth in the room<"
+      ],
+      [
+        ">Wat we leveren<",
+        ">What we deliver<"
+      ],
+      [
+        ">Dance-events<",
+        ">Dance events<"
+      ],
+      [
+        ">DOELGROEPEN<",
+        ">AUDIENCES<"
+      ],
+      [
+        ">← Voor wie<",
+        ">← Who it's for<"
+      ],
+      [
+        ">dj-gear<",
+        ">DJ gear<"
+      ]
+    ],
+    "diensten.html": [
+      [
+        "name=\"description\" content=\"Van een complete technische setup tot advies en muzikale programmering.\"",
+        "name=\"description\" content=\"From a complete technical set-up to advice and musical programming.\""
+      ],
+      [
+        "alt=\"Aankondiging van een dj-set van Maarten Versteeg op Deep Radio\"",
+        "alt=\"Announcement of a DJ set by Maarten Versteeg on Deep Radio\""
+      ],
+      [
+        "alt=\"Infinity iFX-640 moving heads in warm en paars licht\"",
+        "alt=\"Infinity iFX-640 moving heads in warm and purple light\""
+      ],
+      [
+        "alt=\"Clay Paky Astrodisco met tientallen bundels\"",
+        "alt=\"Clay Paky Astrodisco with dozens of beams\""
+      ],
+      [
+        ">Bekijk dj’s, vocalisten en instrumentalisten <",
+        ">View DJs, vocalists and instrumentalists <"
+      ],
+      [
+        "alt=\"Dj en saxofonist tijdens een tuinfeest\"",
+        "alt=\"DJ and saxophonist at a garden party\""
+      ],
+      [
+        "<title>Producten en diensten · HEAR</title>",
+        "<title>Products and services · HEAR</title>"
+      ],
+      [
+        "alt=\"ADJ ElectraPix Par 7 met lichtzuilen\"",
+        "alt=\"ADJ ElectraPix Par 7 with light columns\""
+      ],
+      [
+        ">Bekijk advies en AV as a service <",
+        ">View advice and AV as a service <"
+      ],
+      [
+        "alt=\"RCF KXL 4-A luidspreker\"",
+        "alt=\"RCF KXL 4-A loudspeaker\""
+      ],
+      [
+        ">Bekijk 90’s vintage licht <",
+        ">View 90s vintage lighting <"
+      ],
+      [
+        "alt=\"Yamaha DM3 mengtafel\"",
+        "alt=\"Yamaha DM3 mixing console\""
+      ],
+      [
+        ">, playlists en remixes <",
+        ">, playlists and remixes <"
+      ],
+      [
+        ">Bekijk dansvloerlicht <",
+        ">View dancefloor lighting <"
+      ],
+      [
+        ">Producten en diensten<",
+        ">Products and services<"
+      ],
+      [
+        ">Bekijk onderdeel ↗<",
+        ">View section ↗<"
+      ],
+      [
+        ">Bekijk sfeerlicht <",
+        ">View atmospheric lighting <"
+      ],
+      [
+        ">Bekijk custom <",
+        ">View custom <"
+      ],
+      [
+        ">Bekijk <",
+        ">View <"
+      ],
+      [
+        ">dj-gear<",
+        ">DJ gear<"
+      ],
+      [
+        ">dj-sets<",
+        ">DJ sets<"
+      ]
+    ],
+    "booth-dj-gear.html": [
+      [
+        ">Voor het event stemmen we de rider en de opstelling af met de dj of zijn management. In de standaard booth is ruimte voor drie CDJ-3000X mediaspelers in een netwerk en een mixer naar keuze: de V10 of de Euphonia. Aanvullende wensen zijn mogelijk op aanvraag, met indien nodig een alternatieve booth.<",
+        ">Before the event, we agree the rider and the set-up with the DJ or their management. The standard booth has room for three networked CDJ-3000X media players and a mixer of choice: the V10 or the Euphonia. Additional requests are possible, with an alternative booth if needed.<"
+      ],
+      [
+        ">Van de dj en entourage verwachten we dat zij erop toezien dat er geen drankjes op de booth worden gezet of over de booth heen worden aangereikt. Een ongeluk kan niet alleen de gear schaden, maar ook het event zelf, bijvoorbeeld door stroomuitval.<",
+        ">We expect the DJ and entourage to make sure no drinks are put on the booth or handed across it. An accident can damage not only the gear, but also the event itself, for example through a power failure.<"
+      ],
+      [
+        ">De dj heeft de keuze tussen een compacte sub-topcombinatie (808 + 515) met de tops op oorhoogte, links en rechts geplaatst, of floormonitors in wedgevorm (KXM 25-A), onzichtbaar voor het publiek en omhoog gericht naar de dj.<",
+        ">The DJ can choose between a compact sub-top combination (808 + 515) with the tops at ear height, placed left and right, or wedge-shaped floor monitors (KXM 25-A), invisible to the audience and aimed up at the DJ.<"
+      ],
+      [
+        ">Een ovaal meubel van twee meter in donkergrijs, met een verlichte voorkant die in kleur meebeweegt met de avond. De techniek zit erin weggewerkt: netwerkhub, bekabeling en stroom blijven uit het zicht.<",
+        ">A two-metre oval unit in dark grey, with an illuminated front that changes colour with the night. The technology is built in: network hub, cabling and power stay out of sight.<"
+      ],
+      [
+        "name=\"description\" content=\"Een dj die binnenkomt en meteen aan het werk kan. Dat is het idee achter onze booth. Met de beste dj-gear, goede monitoring en voldoende werkruimte en opbe\"",
+        "name=\"description\" content=\"A DJ who walks in and can get straight to work. That's the idea behind our booth. With top DJ gear, good monitoring and enough room to work and store things.\""
+      ],
+      [
+        ">Een dj die binnenkomt en meteen aan het werk kan. Dat is het idee achter onze booth. Met de beste dj-gear, goede monitoring en voldoende werkruimte en opbergplaats.<",
+        ">A DJ who walks in and can get straight to work. That's the idea behind our booth. With the best DJ gear, good monitoring and enough room to work and store things.<"
+      ],
+      [
+        ">Zorg voor memory drives met de meest actuele versie van rekordbox, of in elk geval met dual file management. Neem bij vragen of twijfel altijd contact op.<",
+        ">Bring memory drives with the latest version of rekordbox, or at least with dual file management. If in doubt or with any questions, always get in touch.<"
+      ],
+      [
+        ">Deze compacte sub-topcombo is niet alleen nuttig voor lezingen en intieme cocktailparty&#x27;s, maar ook als dj-boothmonitor<",
+        ">This compact sub-top combo is not only useful for talks and intimate cocktail parties, but also as a DJ booth monitor<"
+      ],
+      [
+        ">Rotary mixer voor soepel blend mixen. Best of both worlds: digitale helderheid en analoge warmte met Rupert Neve-filters<",
+        ">Rotary mixer for smooth blend mixing. Best of both worlds: digital clarity and analogue warmth with Rupert Neve filters<"
+      ],
+      [
+        ">Floormonitor, 15&quot; woofer en hoorn coaxiaal. Krachtig (137 dB), punchy en coherent, vanaf 50 Hz<",
+        ">Floor monitor, 15&quot; woofer and coaxial horn. Powerful (137 dB), punchy and coherent, from 50 Hz<"
+      ],
+      [
+        ">Rotary mixer. Vergis je niet in zijn formaat: warm geluid voor wanneer booth space beperkt is<",
+        ">Rotary mixer. Don't be fooled by its size: warm sound for when booth space is limited<"
+      ],
+      [
+        ">Industry standard mediaplayer. Met extra groot scherm voor snelle trackselectie<",
+        ">Industry-standard media player. With an extra-large screen for quick track selection<"
+      ],
+      [
+        ">Industry standard workhorse. Met pristine geluidskwaliteit<",
+        ">Industry-standard workhorse. With pristine sound quality<"
+      ],
+      [
+        ">Maak van de booth geen garderobe voor gasten ;-)<",
+        ">Please don't turn the booth into a cloakroom for guests ;-)<"
+      ],
+      [
+        ">Ovaal meubel van twee meter, verlichte voorkant<",
+        ">Two-metre oval unit, illuminated front<"
+      ],
+      [
+        "> met booth, spelers, mixer en monitoring<",
+        "> with booth, players, mixer and monitoring<"
+      ],
+      [
+        "<title>Booth en dj-gear · HEAR</title>",
+        "<title>Booth and DJ gear · HEAR</title>"
+      ],
+      [
+        "alt=\"RCF SUB 808-AS en KX 515-A\"",
+        "alt=\"RCF SUB 808-AS and KX 515-A\""
+      ],
+      [
+        ">RCF SUB 808-AS en KX 515-A<",
+        ">RCF SUB 808-AS and KX 515-A<"
+      ],
+      [
+        ">Case: pop-up tijdens ADE →<",
+        ">Case: pop-up during ADE →<"
+      ],
+      [
+        ">Vraag een voorstel aan<",
+        ">Request a proposal<"
+      ],
+      [
+        ">Booth en dj-gear<",
+        ">Booth and DJ gear<"
+      ],
+      [
+        ">Een complete, <",
+        ">A complete, <"
+      ],
+      [
+        ">dj-opstelling<",
+        ">DJ set-up<"
+      ],
+      [
+        ">ZO WERKEN WE<",
+        ">HOW WE WORK<"
+      ],
+      [
+        "alt=\"Dj-booth\"",
+        "alt=\"DJ booth\""
+      ],
+      [
+        ">SPELREGELS<",
+        ">HOUSE RULES<"
+      ],
+      [
+        ">Dj-booth<",
+        ">DJ booth<"
+      ],
+      [
+        ">DE BOOTH<",
+        ">THE BOOTH<"
+      ]
+    ],
+    "high-end-audio.html": [
+      [
+        ">De KX-serie is RCF&#x27;s touringlijn: ontworpen en gebouwd in Reggio Emilia, van de luidsprekerunits tot de versterkers en de software. Onze standaard voor dansvloeren is de KXL 4-A, een compacte kast met twee 10-inch woofers en een hoorn van 100° bij 25°, die per kant als toren van twee of drie kasten hangt. Daaronder leggen we SUB 9019-AS subwoofers met een 19-inch woofer, die tot 30 Hz komen.<",
+        ">The KX series is RCF&#x27;s touring line: designed and built in Reggio Emilia, from the drivers to the amplifiers and the software. Our standard for dancefloors is the KXL 4-A, a compact cabinet with two 10-inch woofers and a 100° by 25° horn, flown per side as a tower of two or three cabinets. Below it we place SUB 9019-AS subwoofers with a 19-inch woofer, reaching down to 30 Hz.<"
+      ],
+      [
+        ">Brooklyn ontwerpt al zijn kasten met dezelfde fasekarakteristiek. Daardoor kun je ze in elke combinatie inzetten zonder dat het geluid uit elkaar valt, en klinkt een kleine en een grote opstelling hetzelfde. De subs hebben ingebouwde cardioïde presets: het laag richt zich op het publiek in plaats van op de buren. Bij een event met geluidsnormen voor de omgeving is dit cruciaal.<",
+        ">Brooklyn designs all its cabinets with the same phase response. That means you can use them in any combination without the sound falling apart, and a small and a large set-up sound the same. The subs have built-in cardioid presets: the low end is aimed at the audience instead of the neighbours. At events with noise limits for the surroundings, this is crucial.<"
+      ],
+      [
+        ">Modulair, praktisch, krachtig, helder en technologisch vooruitstrevend. Wij werken met actieve speakers van twee merken die hun hele systeem zelf ontwerpen en bouwen: RCF uit Italië en Brooklyn Audio uit Nederland. Beide zijn modulair. Dezelfde kasten doen een cocktailavond voor honderd gasten en, gekoppeld, een dansvloer voor vijftienhonderd.<",
+        ">Modular, practical, powerful, clear and technologically advanced. We work with active speakers from two brands that design and build their entire systems themselves: RCF from Italy and Brooklyn Audio from the Netherlands. Both are modular. The same cabinets handle a cocktail evening for a hundred guests and, coupled, a dancefloor for fifteen hundred.<"
+      ],
+      [
+        ">Wat ons in RCF overtuigt, is de verwerking in de kast. FiRPHASE zorgt dat alle frequenties tegelijk aankomen, waardoor een kick strak blijft en een stem direct klinkt. Bass Motion Control beschermt de woofer zonder het laag te vervormen. Via RDNet zien en sturen we elke kast op afstand: niveau, EQ, temperatuur, limiters.<",
+        ">What convinces us about RCF is the processing inside the cabinet. FiRPHASE makes all frequencies arrive at the same time, so a kick stays tight and a voice sounds direct. Bass Motion Control protects the woofer without distorting the low end. Via RDNet we see and control every cabinet remotely: level, EQ, temperature, limiters.<"
+      ],
+      [
+        ">Voor lezingen, panels en presentaties werken we met een Yamaha DM3, een compacte digitale mengtafel met scènes die we vooraf klaarzetten, zodat een wissel van spreker één druk op de knop is. Sprekers krijgen een draadloze reversmicrofoon: onzichtbaar, handen vrij, en verstaanbaar tot achterin de zaal.<",
+        ">For talks, panels and presentations we work with a Yamaha DM3, a compact digital mixing console with scenes we prepare in advance, so changing speakers takes one press of a button. Speakers get a wireless lavalier microphone: invisible, hands-free, and intelligible all the way to the back of the room.<"
+      ],
+      [
+        ">De KX 515-A is de kleine top uit dezelfde familie als de KXL 4-A. Bij grotere events zetten we hem in als frontfill voor de eerste meters, of als delay verderop in de zaal, ter ondersteuning van de KXL-toppen. Dezelfde klank, een maat kleiner, zodat het vooraan niet hard en achterin niet dun klinkt.<",
+        ">The KX 515-A is the small top from the same family as the KXL 4-A. At larger events we use it as front fill for the first few metres, or as delay further into the room, supporting the KXL tops. The same sound, one size smaller, so it doesn't sound loud at the front or thin at the back.<"
+      ],
+      [
+        ">Brooklyn Audio bouwt in Nederland in kleine series. De Prospect-top is een 15-inch driewegkast met ingebouwde versterkers, die als losse fullrange-kast werkt of met elke Brooklyn-sub te combineren is. De X21 is de bijbehorende sub met een 21-inch woofer.<",
+        ">Brooklyn Audio builds in small series in the Netherlands. The Prospect top is a 15-inch three-way cabinet with built-in amplifiers, which works as a standalone full-range cabinet or can be combined with any Brooklyn sub. The X21 is the matching sub with a 21-inch woofer.<"
+      ],
+      [
+        ">Deze compacte sub-topcombo is ideaal voor lezingen en intieme cocktailparty&#x27;s, en daarnaast toepasbaar als heldere dj-boothmonitor. De KX 515-A top is ook ideaal als frontfill of delay bij grotere events, ter ondersteuning van de KXL 4-A toppen<",
+        ">This compact sub-top combo is ideal for talks and intimate cocktail parties, and also works as a clear DJ booth monitor. The KX 515-A top is also ideal as front fill or delay at larger events, supporting the KXL 4-A tops<"
+      ],
+      [
+        ">Met een SUB 808-AS eronder is het een compacte set op zichzelf, met hifi-klank voor lezingen en intieme feesten tot zo&#x27;n 150 gasten. Dezelfde combinatie staat in de dj-booth als monitor.<",
+        ">With a SUB 808-AS underneath, it is a compact set in its own right, with hi-fi sound for talks and intimate parties of up to around 150 guests. The same combination is used as a monitor in the DJ booth.<"
+      ],
+      [
+        "name=\"description\" content=\"Modulair, praktisch, krachtig, helder en technologisch vooruitstrevend. Wij werken met actieve speakers van twee merken die hun hele systeem zelf ontwerpen\"",
+        "name=\"description\" content=\"We work with active speakers from two brands that design and build their entire systems themselves: RCF from Italy and Brooklyn Audio from the Netherlands.\""
+      ],
+      [
+        ">Hybride top met point source- én line source-kenmerken. 2× 10&quot; + 4&quot; hoorn 100° × 25°, verticaal te koppelen voor verre worp, met &#x27;far&#x27; DSP-presets<",
+        ">Hybrid top with point-source and line-source characteristics. 2× 10&quot; + 4&quot; horn 100° × 25°, can be coupled vertically for long throw, with &#x27;far&#x27; DSP presets<"
+      ],
+      [
+        ">De kasten zijn gebouwd voor onderweg: berkenmultiplex met polyurea-coating, stalen rigging en een IP-klasse die regen aankan.<",
+        ">The cabinets are built for the road: birch plywood with a polyurea coating, steel rigging and an IP rating that can handle rain.<"
+      ],
+      [
+        ">Klein, maar groot. Compacte digitale mengtafel met véél kanalen en technologie onder het scherm. Voor sprekers en live acts.<",
+        ">Small, but big. Compact digital mixing console with lots of channels and technology under the screen. For speakers and live acts.<"
+      ],
+      [
+        ">Floormonitor, 15&quot; woofer en hoorn coaxiaal. Krachtig (137 dB), punchy en coherent, vanaf 50 Hz<",
+        ">Floor monitor, 15&quot; woofer and coaxial horn. Powerful (137 dB), punchy and coherent, from 50 Hz<"
+      ],
+      [
+        ">RDTap: crossover, polariteit en cardioïde instellen door je telefoon tegen de kast te houden<",
+        ">RDTap: set crossover, polarity and cardioid by holding your phone against the cabinet<"
+      ],
+      [
+        ">15-inch 3-weg top. Asymmetrische hoorn 0° tot −20°. Worp tot 35 meter<",
+        ">15-inch 3-way top. Asymmetrical horn 0° to −20°. Throw up to 35 metres<"
+      ],
+      [
+        ">19-inch subwoofer, tot 30 Hz, cardioïde presets<",
+        ">19-inch subwoofer, down to 30 Hz, cardioid presets<"
+      ],
+      [
+        ">Case: systeemadvies voor een verhuurbedrijf →<",
+        ">Case: system advice for a rental company →<"
+      ],
+      [
+        ">Zeer krachtige en strakke 21&quot; subwoofer<",
+        ">Very powerful and tight 21&quot; subwoofer<"
+      ],
+      [
+        ">RDNet: elke kast op afstand zien en sturen<",
+        ">RDNet: see and control every cabinet remotely<"
+      ],
+      [
+        "alt=\"Smartphone-app voor audio-instellingen\"",
+        "alt=\"Smartphone app for audio settings\""
+      ],
+      [
+        "alt=\"Systeemmanagement op laptop of tablet\"",
+        "alt=\"System management on laptop or tablet\""
+      ],
+      [
+        ">Draadloos, voor seminars en presentaties<",
+        ">Wireless, for seminars and presentations<"
+      ],
+      [
+        ">Smartphone-app voor audio-instellingen<",
+        ">Smartphone app for audio settings<"
+      ],
+      [
+        ">Systeemmanagement op laptop of tablet<",
+        ">System management on laptop or tablet<"
+      ],
+      [
+        ">FRONTFILL, DELAY EN COMPACTE SET<",
+        ">FRONT FILL, DELAY AND COMPACT SET<"
+      ],
+      [
+        "alt=\"RCF SUB 808-AS en KX 515-A\"",
+        "alt=\"RCF SUB 808-AS and KX 515-A\""
+      ],
+      [
+        ">RCF SUB 808-AS en KX 515-A<",
+        ">RCF SUB 808-AS and KX 515-A<"
+      ],
+      [
+        ">Principe: warm geluid →<",
+        ">Value: warm sound →<"
+      ],
+      [
+        ">Vraag een voorstel aan<",
+        ">Request a proposal<"
+      ],
+      [
+        ">SPREKERS EN SEMINARS<",
+        ">SPEAKERS AND SEMINARS<"
+      ],
+      [
+        "alt=\"Reversmicrofoons\"",
+        "alt=\"Lavalier microphones\""
+      ],
+      [
+        "> en Brooklyn Audio<",
+        "> and Brooklyn Audio<"
+      ],
+      [
+        "> van de hoogste <",
+        "> from the top <"
+      ],
+      [
+        ">Reversmicrofoons<",
+        ">Lavalier microphones<"
+      ],
+      [
+        ">RCF KX-SERIE<",
+        ">RCF KX SERIES<"
+      ],
+      [
+        ">PA-systemen<",
+        ">PA systems<"
+      ],
+      [
+        ">RCF-lijn<",
+        ">RCF line<"
+      ]
+    ],
+    "atmospheric-lighting.html": [
+      [
+        ">Op basis van het doel (bijvoorbeeld een persoon of producten uitlichten, of een dansvloer van effecten voorzien), de fysieke ruimte en het budget stellen wij een lichtplan en offerte voor. Afhankelijk van de locatie en de gekozen materialen is wel of geen trussconstructie onderdeel van het advies.<",
+        ">Based on the goal (lighting a person or products, for example, or adding effects to a dancefloor), the physical space and the budget, we propose a lighting plan and quote. Depending on the venue and the chosen equipment, a truss structure may or may not be part of the advice.<"
+      ],
+      [
+        ">Egale, lichte nevel in de zaal die het zicht niet beperkt en lichteffecten veel meer impact geeft. Op waterbasis, dus geen plakkerige olie in de venue. Let op: een hazer triggert minder snel een brandalarm dan een rookmachine, maar check dit altijd bij de locatie<",
+        ">An even, light haze in the room that doesn't limit visibility and gives lighting effects far more impact. Water-based, so no sticky oil in the venue. Note: a hazer is less likely to trigger a fire alarm than a smoke machine, but always check this with the venue<"
+      ],
+      [
+        ">Ledspot met zeven lenzen die elk apart aan te sturen zijn, waardoor hij lijkt te bewegen en verlopen. Per zes stuks in een oplaadcase, gebruiksduur instelbaar van 5 tot 20 uur. Met accessoire te transformeren tot glazen lichtzuil van een meter hoog<",
+        ">LED spot with seven lenses that can each be controlled separately, so it seems to move and fade. Six to a charging case, run time adjustable from 5 to 20 hours. With an accessory it turns into a one-metre glass light column<"
+      ],
+      [
+        ">Accugevoede spot met 5 tot 20 uur werktijd. Drie instelbare breedtes tot volle wash waarmee je een ruimte inkleurt. Full-colour en diverse wittinten voor natuurlijke huid. Draadloos aangestuurd door Wolfmix<",
+        ">Battery-powered spot with 5 to 20 hours of run time. Three adjustable beam widths up to a full wash that colours a room. Full-colour and various white tones for natural skin. Wirelessly controlled by Wolfmix<"
+      ],
+      [
+        "name=\"description\" content=\"Op basis van het doel (bijvoorbeeld een persoon of producten uitlichten, of een dansvloer van effecten voorzien), de fysieke ruimte en het budget stellen w\"",
+        "name=\"description\" content=\"Based on the goal (lighting a person or products, for example, or adding effects to a dancefloor), the physical space and the budget, we propose a lighting plan and quote.\""
+      ],
+      [
+        ">Spots met volledige kleurmenging en focusbladen om randen te snijden, zoals je ze in theaters en musea ziet. Geschikt voor het uitlichten van producten, kunst of een spreker<",
+        ">Spots with full colour mixing and framing shutters to cut the edges, as you see them in theatres and museums. Suitable for lighting products, art or a speaker<"
+      ],
+      [
+        ">Matzwarte truss van Nederlandse bodem. Zeer stevig en in diverse maten en opstellingen inzetbaar, in uitgesproken of juist onopvallende vormen<",
+        ">Matt black truss made in the Netherlands. Very sturdy and usable in various sizes and set-ups, in striking or deliberately discreet shapes<"
+      ],
+      [
+        ">Intuïtieve lichtsturing die vooraf op een laptop ontwikkelde lichtshows oproept. Inclusief draadloze zenders voor de Par Z150 en ElectraPix 7<",
+        ">Intuitive lighting control that recalls light shows prepared on a laptop. Includes wireless transmitters for the Par Z150 and ElectraPix 7<"
+      ],
+      [
+        ">Full-colour lichtbuizen voor diverse toepassingen<",
+        ">Full-colour light tubes for various uses<"
+      ],
+      [
+        ">Sfeerlicht voor presentaties en events: <",
+        ">Ambient lighting for presentations and events: <"
+      ],
+      [
+        "<title>Sfeerverlichting · HEAR</title>",
+        "<title>Atmospheric lighting · HEAR</title>"
+      ],
+      [
+        ">Case: tuinfeest CreativeGrounds →<",
+        ">Case: CreativeGrounds garden party →<"
+      ],
+      [
+        ">Case: productlancering →<",
+        ">Case: product launch →<"
+      ],
+      [
+        ">Vraag een voorstel aan<",
+        ">Request a proposal<"
+      ],
+      [
+        "> en veelal draadloos<",
+        "> and mostly wireless<"
+      ],
+      [
+        ">Sfeerverlichting<",
+        ">Atmospheric lighting<"
+      ],
+      [
+        "alt=\"Theaterspots\"",
+        "alt=\"Theatre spots\""
+      ],
+      [
+        ">multi-inzetbaar<",
+        ">versatile<"
+      ],
+      [
+        "alt=\"Lichtbuizen\"",
+        "alt=\"Light tubes\""
+      ],
+      [
+        ">Theaterspots<",
+        ">Theatre spots<"
+      ],
+      [
+        ">Lichtbuizen<",
+        ">Light tubes<"
+      ]
+    ],
+    "dancefloor-lighting.html": [
+      [
+        ">Indien nodig programmeren we vooraf een show die past bij het event van de opdrachtgever. We bouwen scènes die passen bij het verloop van de avond: ingetogen bij de opening, voller als de dansvloer vol staat. De lichttafel staat bij de booth, zodat licht en muziek elkaar volgen. Draadloze aansturing waar het kan, dus geen kabelgoten door de zaal.<",
+        ">If needed, we programme a show in advance that suits the client's event. We build scenes that follow the course of the night: restrained at the opening, fuller once the dancefloor fills up. The lighting desk sits by the booth, so light and music follow each other. Wireless control wherever possible, so no cable ducts across the room.<"
+      ],
+      [
+        ">Een hybride moving head is beam, spot en wash in één. Je haalt uit één apparaat wat anders drie fixtures vraagt, en met een beperkt aantal stuks maak je een show met veel gezichten. De lampen wisselen bovendien van rol: rustig als wash in de warm-up, impactvol als beam op peak hour.<",
+        ">A hybrid moving head is beam, spot and wash in one. You get from one fixture what would otherwise take three, and with a limited number you create a show with many faces. The fixtures also change role: calm as a wash during the warm-up, high-impact as a beam at peak hour.<"
+      ],
+      [
+        ">Lichte nevel maakt de bundels zichtbaar. Lichtzuilen en spiegelbollen geven diepte en een knipoog naar de disco. En de accuwashlights uit ons sfeerlicht kleuren de muren mee. Alles samen vormt één beeld dat met de avond meebeweegt.<",
+        ">A light haze makes the beams visible. Light columns and mirror balls add depth and a nod to disco. And the battery wash lights from our ambient lighting colour the walls too. Together it forms one picture that moves with the night.<"
+      ],
+      [
+        ">Onze keuze, het Zwitserse zakmes onder de moving heads voor events van middelgroot formaat: 400 watt, zoom van 3° tot 52°, CMY-kleurmenging, twee gobowielen en prisma&#x27;s, draadloos aan te sturen<",
+        ">Our choice, the Swiss army knife of moving heads for mid-sized events: 400 watts, zoom from 3° to 52°, CMY colour mixing, two gobo wheels and prisms, wirelessly controllable<"
+      ],
+      [
+        "name=\"description\" content=\"Een hybride moving head is beam, spot en wash in één. Je haalt uit één apparaat wat anders drie fixtures vraagt, en met een beperkt aantal stuks maak je ee\"",
+        "name=\"description\" content=\"A hybrid moving head is beam, spot and wash in one. You get from one fixture what would otherwise take three, and with a limited number you create a show with many faces.\""
+      ],
+      [
+        ">Daarmee is hij ook de lamp voor events waar sfeer voorop staat en niet het effect, zoals productdemo&#x27;s, catwalks, lezingen en theater<",
+        ">That also makes it the fixture for events where atmosphere comes first rather than effect, such as product demos, catwalks, talks and theatre<"
+      ],
+      [
+        ">Wat de hybride niet kan, doet de iFX-640: een wash moving head met interne roterende shutters die de bundel een bloemvorm geven.<",
+        ">What the hybrid can't do, the iFX-640 does: a wash moving head with internal rotating shutters that give the beam a flower shape.<"
+      ],
+      [
+        "alt=\"Infinity iFX-640 met interne shutters\"",
+        "alt=\"Infinity iFX-640 with internal shutters\""
+      ],
+      [
+        "<title>Dansvloerverlichting · HEAR</title>",
+        "<title>Dancefloor lighting · HEAR</title>"
+      ],
+      [
+        ">Infinity iFX-640 met interne shutters<",
+        ">Infinity iFX-640 with internal shutters<"
+      ],
+      [
+        ">Case: privéfeest voor 150 gasten →<",
+        ">Case: private party for 150 guests →<"
+      ],
+      [
+        ">Bekijk de Infinity iFX-640 ↗<",
+        ">View the Infinity iFX-640 ↗<"
+      ],
+      [
+        ">Bekijk de Focus Compact ↗<",
+        ">View the Focus Compact ↗<"
+      ],
+      [
+        ">90&#x27;s vintage licht →<",
+        ">90s vintage lighting →<"
+      ],
+      [
+        ">Vraag een voorstel aan<",
+        ">Request a proposal<"
+      ],
+      [
+        ">Dansvloerverlichting<",
+        ">Dancefloor lighting<"
+      ],
+      [
+        ">ZO PROGRAMMEREN WE<",
+        ">HOW WE PROGRAMME<"
+      ],
+      [
+        ">WAT ERBIJ KOMT<",
+        ">WHAT COMES WITH IT<"
+      ]
+    ],
+    "vintage-lighting.html": [
+      [
+        ">Officieel heet dit effect een Astrodisco, maar in de volksmond noemde iedereen het een ufo. Alsof er een ronde schijf landt en dansers meeneemt naar een andere wereld. Who knows. Van het Italiaanse Clay Paky, veel te zien in Italiaanse clubs, maar ook in de Amsterdamse iT<",
+        ">Officially this effect is called an Astrodisco, but everyone called it a UFO. As if a round disc lands and takes the dancers off to another world. Who knows. From the Italian Clay Paky, often seen in Italian clubs, but also in Amsterdam's iT<"
+      ],
+      [
+        ">Sommige lichteffecten zijn nooit overtroffen, alleen vergeten. Wij halen de klassiekers uit de discotheken van de jaren negentig terug, reviseren ze en geven ze een moderne lichtbron. Zo wordt een &#x27;oh ja&#x27;-effect een &#x27;oh wow&#x27;-effect.<",
+        ">Some lighting effects were never surpassed, only forgotten. We bring back the classics from the 1990s clubs, restore them and give them a modern light source. That turns an &#x27;oh yes&#x27; effect into an &#x27;oh wow&#x27; effect.<"
+      ],
+      [
+        ">Zet je alleen vintage effecten in, dan oogt je show gedateerd. Zet je ze in als aanvulling op een lichtshow, dan krijg je een mooie mix van oud en nieuw, met effecten die ánders zijn dan de rest.<",
+        ">Use only vintage effects and your show looks dated. Use them to complement a light show and you get a nice mix of old and new, with effects that are different from the rest.<"
+      ],
+      [
+        ">Scanners. Uit de markt verdreven door moving heads die 360 graden om hun as draaien, maar nog steeds erg effectief én snel. Met rijke, verzadigde kleuren uit een Philips-gasontladingslamp<",
+        ">Scanners. Pushed out of the market by moving heads that turn 360 degrees on their axis, but still very effective and fast. With rich, saturated colours from a Philips discharge lamp<"
+      ],
+      [
+        "name=\"description\" content=\"Sommige lichteffecten zijn nooit overtroffen, alleen vergeten. Wij halen de klassiekers uit de discotheken van de jaren negentig terug, reviseren ze en gev\"",
+        "name=\"description\" content=\"Some lighting effects were never surpassed, only forgotten. We bring back the classics from the 1990s clubs, restore them and give them a modern light source.\""
+      ],
+      [
+        ">Omwille van de veiligheid kan de Astrodisco alleen worden ingezet in combinatie met truss, al aanwezig of extra ingehuurd.<",
+        ">For safety reasons, the Astrodisco can only be used in combination with truss, either already present or hired in.<"
+      ],
+      [
+        ">Gereviseerde lichteffecten uit de discotijd, met hedendaagse lichtopbrengst<",
+        ">Restored lighting effects from the disco era, with present-day light output<"
+      ],
+      [
+        "<title>90&#x27;s vintage licht · HEAR</title>",
+        "<title>90s vintage lighting · HEAR</title>"
+      ],
+      [
+        "alt=\"Golden Scan en Roboscan\"",
+        "alt=\"Golden Scan and Roboscan\""
+      ],
+      [
+        ">90&#x27;s vintage licht<",
+        ">90s vintage lighting<"
+      ],
+      [
+        ">Golden Scan en Roboscan<",
+        ">Golden Scan and Roboscan<"
+      ],
+      [
+        ">Vraag een voorstel aan<",
+        ">Request a proposal<"
+      ],
+      [
+        ">Dansvloerverlichting →<",
+        ">Dancefloor lighting →<"
+      ],
+      [
+        ">ZO ZETTEN WE HET IN<",
+        ">HOW WE USE IT<"
+      ],
+      [
+        ">Dj-sets →<",
+        ">DJ sets →<"
+      ]
+    ],
+    "av-as-a-service.html": [
+      [
+        ">Met AV as a service koop je geen licht en geluid, maar neem je het af als dienst, via HEAR zelf of via ons netwerk. Voor een vast bedrag per maand en een periode van minimaal 36 maanden krijgt de locatie de beschikking over geluid en licht: het nieuwste wat op dit moment op de markt is, zonder zorgen over onderhoud of reparatie.<",
+        ">With AV as a service you don't buy lighting and sound, you use it as a service, through HEAR itself or through our network. For a fixed monthly fee and a minimum term of 36 months, the venue has the use of sound and light: the latest on the market, without worrying about maintenance or repairs.<"
+      ],
+      [
+        ">Sommige locaties lopen aan tegen steeds hogere eisen die bezoekers stellen aan geluid. Het moet impactvol zijn, maar mag de oren niet schaden. Het geluid wordt niet genoeg gevoeld of is te schel en vermoeiend, of er zijn dode zones waardoor het publiek steeds gaat lopen op zoek naar een goede plek.<",
+        ">Some venues are running into the rising expectations visitors have of sound. It needs to have impact, but must not harm the ears. The sound isn't felt enough, or it is shrill and tiring, or there are dead zones, so the audience keeps wandering in search of a good spot.<"
+      ],
+      [
+        ">Heb je een eventlocatie zonder eigen licht en geluid? Of heb je wel eigen geluid, maar klagen gasten over &#x27;vermoeiend geluid&#x27; of een gebrek aan impact? Wij kijken graag mee wat er mogelijk is.<",
+        ">Do you run an event venue without its own lighting and sound? Or do you have your own sound, but guests complain about &#x27;tiring sound&#x27; or a lack of impact? We are happy to look at what's possible.<"
+      ],
+      [
+        "name=\"description\" content=\"Heb je een eventlocatie zonder eigen licht en geluid? Of heb je wel eigen geluid, maar klagen gasten over &#x27;vermoeiend geluid&#x27; of een gebrek aan impact? Wij\"",
+        "name=\"description\" content=\"Do you run an event venue without its own lighting and sound? Or do you have your own sound, but guests complain about tiring sound or a lack of impact? We are happy to look at what's possible.\""
+      ],
+      [
+        ">Met de eigenaar kijken we wat de locatie nodig heeft. Merkonafhankelijk, met de ruimte als vertrekpunt en een systeem dat medewerkers zelf kunnen bedienen als eindpunt.<",
+        ">With the owner, we look at what the venue needs. Brand-independent, with the space as the starting point and a system that staff can operate themselves as the end point.<"
+      ],
+      [
+        ">Na een training bedien je de apparatuur zelf. Voor installatie en onderhoud betrekken we waar nodig de productspecialisten van de gekozen merken.<",
+        ">After training, you operate the equipment yourself. For installation and maintenance we involve the product specialists of the chosen brands where needed.<"
+      ],
+      [
+        ">Een eerste vraag over het juiste licht of geluid voor jouw locatie? We denken vrijblijvend mee.<",
+        ">A first question about the right light or sound for your venue? We're happy to think along, no strings attached.<"
+      ],
+      [
+        ">Merkonafhankelijk advies en AV as a service voor eventlocaties<",
+        ">Brand-independent advice and AV as a service for event venues<"
+      ],
+      [
+        ">Begeleiding van de eerste vraag tot een werkende installatie<",
+        ">Guidance from the first question to a working installation<"
+      ],
+      [
+        ">De kwaliteit van een eigen installatie, zonder de aanschaf.<",
+        ">The quality of your own installation, without the purchase.<"
+      ],
+      [
+        ">Merkonafhankelijke keuze van passende systemen.<",
+        ">Brand-independent choice of suitable systems.<"
+      ],
+      [
+        "<title>Advies en AV as a service · HEAR</title>",
+        "<title>Advice and AV as a service · HEAR</title>"
+      ],
+      [
+        ">Producten zien en horen in jouw eigen ruimte.<",
+        ">See and hear the products in your own space.<"
+      ],
+      [
+        ">Case: systeemadvies voor een verhuurbedrijf →<",
+        ">Case: system advice for a rental company →<"
+      ],
+      [
+        ">Wat vraagt deze ruimte en het type events?<",
+        ">What does this space and this type of event need?<"
+      ],
+      [
+        ">Zelfstandig bedienen na aanschaf.<",
+        ">Operate it yourself after purchase.<"
+      ],
+      [
+        ">Advies en AV as a service<",
+        ">Advice and AV as a service<"
+      ],
+      [
+        ">BEGELEIDING INKOOPTRAJECT<",
+        ">GUIDED PURCHASING<"
+      ],
+      [
+        ">Voor wie: venue owners →<",
+        ">Who it's for: venue owners →<"
+      ],
+      [
+        ">GRATIS TIPS EN ADVIEZEN<",
+        ">FREE TIPS AND ADVICE<"
+      ],
+      [
+        ">Even sparren?<",
+        ">Want to talk it through?<"
+      ],
+      [
+        ">Demonstratie<",
+        ">Demonstration<"
+      ],
+      [
+        ">Ruimtescan<",
+        ">Room scan<"
+      ],
+      [
+        ">Advies<",
+        ">Advice<"
+      ]
+    ],
+    "artiesten.html": [
+      [
+        ">Van ontspannen achtergrond tijdens een borrel tot een volle dansvloer: soulful house, deephouse, disco en garage, gedraaid door dj&#x27;s die weten wanneer ze moeten opbouwen en wanneer ze moeten wachten. Een avond heeft een verloop, en het tijdschema is daar onderdeel van.<",
+        ">From relaxed background music during drinks to a full dancefloor: soulful house, deep house, disco and garage, played by DJs who know when to build up and when to hold back. A night has a course, and the timetable is part of it.<"
+      ],
+      [
+        ">Als dj ben ik smaakbewaker en tussenpersoon: ik kies de artiesten die bij het event passen en zet ze op het juiste moment van de avond. Daarvoor werk ik rechtstreeks met dj&#x27;s en artiesten en met enkele artiestenbureaus.<",
+        ">As a DJ I am a guardian of taste and a go-between: I choose the artists who suit the event and put them at the right moment of the night. For this I work directly with DJs and artists and with a few artist agencies.<"
+      ],
+      [
+        ">Een saxofonist die meespeelt met de dj, een zangeres bij de opening, een percussionist op de dansvloer. Live muziek bij een dj-set geeft een event iets dat mensen onthouden. Dit kan ik voor je regelen.<",
+        ">A saxophonist who plays along with the DJ, a singer at the opening, a percussionist on the dancefloor. Live music with a DJ set gives an event something people remember. I can arrange this for you.<"
+      ],
+      [
+        "name=\"description\" content=\"Als oprichter van HEAR en dj sinds 1993 help ik opdrachtgevers aan een avondvullend programma: met mijzelf achter de booth, met artiesten uit mijn netwerk,\"",
+        "name=\"description\" content=\"As founder of HEAR and a DJ since 1993, I help clients to a full evening's programme: with me behind the booth, with artists from my network, or both.\""
+      ],
+      [
+        ">Als oprichter van HEAR en dj sinds 1993 help ik opdrachtgevers aan een avondvullend programma: met mijzelf achter de booth, met artiesten uit mijn netwerk, of allebei.<",
+        ">As founder of HEAR and a DJ since 1993, I help clients to a full evening's programme: with me behind the booth, with artists from my network, or both.<"
+      ],
+      [
+        ">Vertel wat je wensen zijn en ik doe een passend voorstel. Met één aanspreekpunt voor de muziek én de technische realisatie.<",
+        ">Tell me what you have in mind and I'll make a suitable proposal. With one point of contact for the music and the technical side.<"
+      ],
+      [
+        ">Dj&#x27;s, vocalisten en instrumentalisten die passen bij de avond<",
+        ">DJs, vocalists and instrumentalists who suit the night<"
+      ],
+      [
+        "<title>Dj&#x27;s, vocalisten en instrumentalisten · HEAR</title>",
+        "<title>DJs, vocalists and instrumentalists · HEAR</title>"
+      ],
+      [
+        ">Dj&#x27;s, vocalisten en instrumentalisten<",
+        ">DJs, vocalists and instrumentalists<"
+      ],
+      [
+        ">Case: tuinfeest met dj en saxofonist →<",
+        ">Case: garden party with DJ and saxophonist →<"
+      ],
+      [
+        ">VOCALISTEN EN INSTRUMENTALISTEN<",
+        ">VOCALISTS AND INSTRUMENTALISTS<"
+      ],
+      [
+        ">Vraag een voorstel aan<",
+        ">Request a proposal<"
+      ],
+      [
+        ">Case: dj-sets →<",
+        ">Case: DJ sets →<"
+      ],
+      [
+        ">ZO WERK IK<",
+        ">HOW I WORK<"
+      ],
+      [
+        ">DJ&#X27;S<",
+        ">DJS<"
+      ]
+    ],
+    "special-projects.html": [
+      [
+        ">Maarten maakt regelmatig mixen voor Deep Radio: soulful house, deephouse en classics, twee uur lang. Een uitzending is een goede manier om kennis te maken met zijn muzikale lijn voordat je hem boekt.<",
+        ">Maarten regularly makes mixes for Deep Radio: soulful house, deep house and classics, two hours long. A broadcast is a good way to get to know his musical direction before you book him.<"
+      ],
+      [
+        ">Voor een koffiebar, café of andere horecazaak stellen we een playlist samen die past bij jouw zaak. Met de hand geselecteerd uit onze eigen collectie, zonder vervuiling door generieke AI-muziek.<",
+        ">For a coffee bar, café or other hospitality venue, we put together a playlist that suits your place. Hand-picked from our own collection, without the clutter of generic AI music.<"
+      ],
+      [
+        ">Eigen edits, remixes en producties, analoog gemasterd, duiken op in sets, in het netwerk van dj&#x27;s waarmee we werken en in de toekomst ook in releases.<",
+        ">Our own edits, remixes and productions, mastered in analogue, turn up in sets, in the network of DJs we work with and, in future, in releases.<"
+      ],
+      [
+        "name=\"description\" content=\"Naast events werken we aan muziek zelf: dj-sets op maat, radio-uitzendingen, eigen edits en remixes, en playlists voor horeca.\"",
+        "name=\"description\" content=\"Besides events, we work on music itself: custom DJ sets, radio broadcasts, our own edits and remixes, and playlists for hospitality.\""
+      ],
+      [
+        ">Naast events werken we aan muziek zelf: dj-sets op maat, radio-uitzendingen, eigen edits en remixes, en playlists voor horeca.<",
+        ">Besides events, we work on music itself: custom DJ sets, radio broadcasts, our own edits and remixes, and playlists for hospitality.<"
+      ],
+      [
+        "<title>Custom dj-sets, playlists en remixes · HEAR</title>",
+        "<title>Custom DJ sets, playlists and remixes · HEAR</title>"
+      ],
+      [
+        ">Custom dj-sets, playlists en remixes<",
+        ">Custom DJ sets, playlists and remixes<"
+      ],
+      [
+        ">, playlists en remixes op maat<",
+        ">, playlists and remixes, made to measure<"
+      ],
+      [
+        ">Vraag een mix of playlist aan<",
+        ">Request a mix or playlist<"
+      ],
+      [
+        ">Radio-mixes voor Deep Radio →<",
+        ">Radio mixes for Deep Radio →<"
+      ],
+      [
+        ">EDITS EN PRODUCTIES<",
+        ">EDITS AND PRODUCTIONS<"
+      ],
+      [
+        ">PLAYLISTS OP MAAT<",
+        ">CUSTOM PLAYLISTS<"
+      ],
+      [
+        ">Case: dj-sets →<",
+        ">Case: DJ sets →<"
+      ],
+      [
+        ">RADIO-MIXES<",
+        ">RADIO MIXES<"
+      ],
+      [
+        ">Dj-sets<",
+        ">DJ sets<"
+      ]
+    ],
+    "principes.html": [
+      [
+        "\"Geluid is onbewust erg sfeerbepalend. Met warm en goed verstaanbaar geluid gaat de sfeer omhoog, zonder dat je precies weet waardoor. Helaas gebeurt dat soms ook andersom: de muziek is schel en je voelt je ongemakkelijk. Of je wordt moe van onduidelijk geluid, iets dat je hersenen continu compenseren zonder dat je dat doorhebt. Daarom besteden wij extra aandacht aan kwaliteit, warmte en verstaanbaarheid van geluid. Én van het licht: spectaculair wanneer nodig, maar ook subtiel als dat beter past. Zo voelt uitgaan net als thuis. Je voelt je op je gemak en wilt nog uren blijven.\"",
+        "\"Sound shapes the atmosphere more than people realise. With warm, clearly intelligible sound the mood lifts, without you quite knowing why. Unfortunately it sometimes works the other way round: the music is shrill and you feel uncomfortable. Or you get tired from unclear sound, something your brain keeps compensating for without you noticing. That's why we pay extra attention to the quality, warmth and intelligibility of sound. And of the lighting: spectacular when needed, but subtle when that suits better. That way going out feels just like home. You feel at ease and want to stay for hours.\""
+      ],
+      [
+        "\"HEAR komt voort uit corporate communicatie en de dancescene. In dialoog staan met je omgeving, en een dansvloer als vrijplaats, waar je mag zijn wie je bent en de ander diezelfde ruimte gunt. Die openheid vinden wij belangrijk, en je ziet haar terug in kleine dingen:\"",
+        "\"HEAR has its roots in corporate communications and the dance scene. Being in dialogue with your surroundings, and a dancefloor as a free space, where you can be who you are and give others that same room. We value that openness, and you see it in small things:\""
+      ],
+      [
+        ">Achter alles wat we doen zit een intentie. Dat is althans wel de bedoeling :-) Die bepaalt wat voor keuzes we maken, bijvoorbeeld in ons assortiment of onze manier van samenwerken. Twee waarden en twee uitgangspunten bepalen die keuzes.<",
+        ">Behind everything we do there is an intention. That's the idea, anyway :-) It shapes the choices we make, for example in our range or in the way we work together. Two values and two principles guide those choices.<"
+      ],
+      [
+        "\"We investeren in techniek die de operatie makkelijk maakt: draadloos licht, actieve speakers, lichtshows die we vooraf programmeren. Daardoor lopen er geen kabelgoten door de zaal en draait het hele systeem op twee gewone stopcontacten.\"",
+        "\"We invest in technology that makes operations easy: wireless lighting, active speakers, light shows we programme in advance. That means no cable ducts across the room, and the whole system runs on two ordinary power sockets.\""
+      ],
+      [
+        "\"HEAR is een netwerk van professionals, leveranciers en artiesten in muziek, geluid en licht. Zo kijken we ook naar opdrachtgevers: als partners in ons netwerk, die alleen samen iets moois kunnen maken.\"",
+        "\"HEAR is a network of professionals, suppliers and artists in music, sound and light. That's also how we see clients: as partners in our network, who can only make something beautiful together.\""
+      ],
+      [
+        "name=\"description\" content=\"Achter alles wat we doen zit een intentie. Dat is althans wel de bedoeling :-) Die bepaalt wat voor keuzes we maken, bijvoorbeeld in ons assortiment of onz\"",
+        "name=\"description\" content=\"Behind everything we do there is an intention. That's the idea, anyway :-) It shapes the choices we make, for example in our range or in the way we work together.\""
+      ],
+      [
+        "\"We beginnen bij het concept, de communicatiedoelstelling of de strategie van de opdrachtgever en vertalen dat naar geluid, licht, dj's en aanvullende diensten.\"",
+        "\"We start from the client's concept, communication goal or strategy and translate it into sound, light, DJs and additional services.\""
+      ],
+      [
+        "\"We onderhouden leverancierscontact rechtstreeks bij de fabrikant of importeur: voor producttips, updates en trainingen uit de eerste hand.\"",
+        "\"We keep in direct contact with the manufacturer or importer: for product tips, updates and training first-hand.\""
+      ],
+      [
+        "\"We kiezen producten waarover is nagedacht, in functie én in vorm, van bedrijven die innoveren en vanuit hun vak een gunfactor hebben.\"",
+        "\"We choose products that have been thought through, in function and in form, from companies that innovate and have earned goodwill in their trade.\""
+      ],
+      [
+        "\"Geluid is gelijkmatig verdeeld. De muziek of spreker is tot achterin verstaanbaar, zonder dat het daardoor vooraan te hard wordt.\"",
+        "\"Sound is evenly distributed. The music or speaker is intelligible all the way to the back, without it becoming too loud at the front.\""
+      ],
+      [
+        "\"Vanuit een deephouse-achtergrond hechten we aan een geluid dat warm, rond en vol klinkt. Ook visuals moeten warmte hebben.\"",
+        "\"Coming from a deep house background, we value sound that is warm, round and full. Visuals should have warmth too.\""
+      ],
+      [
+        "\"We werken liever met washlights die een ruimte inkleuren dan met een kermis aan effecten. Donker is daarbij ook een keuze.\"",
+        "\"We would rather work with wash lights that colour a room than with a fairground of effects. Darkness is also a choice.\""
+      ],
+      [
+        "\"We kopen audioproducten van Europese makelij, van bedrijven met eigen productie en een passie voor hun vak.\"",
+        "\"We buy audio products made in Europe, from companies with their own production and a passion for their trade.\""
+      ],
+      [
+        "\"We zijn nieuwsgierig naar andere oplossingen, andere meningen, nieuwe technologie en nieuwe muziek.\"",
+        "\"We are curious about other solutions, other opinions, new technology and new music.\""
+      ],
+      [
+        "\"Een eenmalig event vinden we gaaf, maar het liefst bouwen we aan een relatie op langere termijn.\"",
+        "\"We love a one-off event, but we'd rather build a long-term relationship.\""
+      ],
+      [
+        "\"We denken niet in concurrentie. Andere leveranciers zien we als branchegenoten.\"",
+        "\"We don't think in terms of competition. We see other suppliers as colleagues in the trade.\""
+      ],
+      [
+        "\"Licht, geluid en visuals zijn afgestemd op de energie van het moment.\"",
+        "\"Light, sound and visuals are matched to the energy of the moment.\""
+      ],
+      [
+        "\"We zoeken een gelijkwaardige relatie met klanten en partners.\"",
+        "\"We look for an equal relationship with clients and partners.\""
+      ],
+      [
+        "\"We werken niet samen met partijen die openlijk discrimineren.\"",
+        "\"We don't work with parties that openly discriminate.\""
+      ],
+      [
+        "\"Kritiek is er om van te leren: hoe kan het voortaan anders?\"",
+        "\"Criticism is there to learn from: how can we do it differently next time?\""
+      ],
+      [
+        "\"Wij kopen producten van leveranciers die onze passie delen.\"",
+        "\"We buy products from suppliers who share our passion.\""
+      ],
+      [
+        "\"We werken met multi-inzetbare en modulaire systemen.\"",
+        "\"We work with versatile, modular systems.\""
+      ],
+      [
+        "\"We oordelen niet zonder iemand eerst te bevragen.\"",
+        "\"We don't judge without asking first.\""
+      ],
+      [
+        "<title>Waarden en uitgangspunten · HEAR</title>",
+        "<title>Values and principles · HEAR</title>"
+      ],
+      [
+        "\"Zonder samenwerking bestaan we niet.\"",
+        "\"Without collaboration we don't exist.\""
+      ],
+      [
+        "\"Wij geven om sfeer en warm geluid.\"",
+        "\"We care about atmosphere and warm sound.\""
+      ],
+      [
+        ">Waarden en uitgangspunten<",
+        ">Values and principles<"
+      ],
+      [
+        "\"Met een open vizier\"",
+        "\"With an open mind\""
+      ],
+      [
+        "\"Vakmanschap\"",
+        "\"Craftsmanship\""
+      ],
+      [
+        "\"Warme sound\"",
+        "\"Warm sound\""
+      ],
+      [
+        "\"Samen\"",
+        "\"Together\""
+      ]
     ]
-  }
+  },
+  "whatsapp": {
+    "Hoi Maarten, ik heb een eventlocatie en heb een vraag.": "Hi Maarten, I run an event venue and have a question.",
+    "Hoi Maarten, ik heb een vraag over HEAR voor mijn event.": "Hi Maarten, I have a question about HEAR for my event.",
+    "Hoi Maarten, ik heb een vraag over licht en geluid voor mijn locatie.": "Hi Maarten, I have a question about lighting and sound for my venue.",
+    "Hoi Maarten, ik las je verhaal op hear.nl en wil graag kennismaken.": "Hi Maarten, I read your story on hear.nl and would like to get acquainted.",
+    "Hoi Maarten, ik organiseer een dance event en heb een vraag.": "Hi Maarten, I'm organising a dance event and have a question.",
+    "Hoi Maarten, ik organiseer een zakelijk event en heb een vraag.": "Hi Maarten, I'm organising a business event and have a question.",
+    "Hoi Maarten, ik wil graag een mix of playlist op maat aanvragen.": "Hi Maarten, I'd like to request a custom mix or playlist.",
+    "Hoi Maarten, ik wil graag een voorstel voor 90's vintage licht voor mijn event.": "Hi Maarten, I'd like a proposal for 90s vintage lighting for my event.",
+    "Hoi Maarten, ik wil graag een voorstel voor booth en dj-gear voor mijn event.": "Hi Maarten, I'd like a proposal for a booth and DJ gear for my event.",
+    "Hoi Maarten, ik wil graag een voorstel voor dansvloerverlichting voor mijn event.": "Hi Maarten, I'd like a proposal for dancefloor lighting for my event.",
+    "Hoi Maarten, ik wil graag een voorstel voor dj's, vocalisten en instrumentalisten voor mijn event.": "Hi Maarten, I'd like a proposal for DJs, vocalists and instrumentalists for my event.",
+    "Hoi Maarten, ik wil graag een voorstel voor high-end audio voor mijn event.": "Hi Maarten, I'd like a proposal for high-end audio for my event.",
+    "Hoi Maarten, ik wil graag een voorstel voor sfeerverlichting voor mijn event.": "Hi Maarten, I'd like a proposal for atmospheric lighting for my event.",
+    "Hoi Maarten, ik zag de case over systeemadvies en wil meer weten over audio-advies voor mijn ruimte.": "Hi Maarten, I saw the system advice case and would like to know more about audio advice for my space.",
+    "Hoi Maarten, ik zag de radio-mixes en heb een vraag voor mijn eigen event.": "Hi Maarten, I saw the radio mixes and have a question about my own event.",
+    "Hoi Maarten, ik zag de case 'Productlancering met theaterlicht, geluid en dj' en heb een vraag voor mijn eigen event.": "Hi Maarten, I saw the case 'Product launch with theatre lighting, sound and DJ' and have a question about my own event.",
+    "Hoi Maarten, ik zag de case 'Seminar en netwerkevent' en heb een vraag voor mijn eigen event.": "Hi Maarten, I saw the case 'Seminar and networking event' and have a question about my own event.",
+    "Hoi Maarten, ik zag de case 'Jubileum ondernemersnetwerk' en heb een vraag voor mijn eigen event.": "Hi Maarten, I saw the case 'Anniversary of a business network' and have a question about my own event.",
+    "Hoi Maarten, ik zag de case 'Transformatie: van skatehal tot dansvloer' en heb een vraag voor mijn eigen event.": "Hi Maarten, I saw the case 'Transformation: from skate hall to dancefloor' and have a question about my own event.",
+    "Hoi Maarten, ik zag de case 'Een reis door 40 jaar elektronische muziek' en heb een vraag voor mijn eigen event.": "Hi Maarten, I saw the case 'A journey through 40 years of electronic music' and have a question about my own event.",
+    "Hoi Maarten, ik zag de case 'Advies over het beste soundsystem voor jouw ruimte' en heb een vraag voor mijn eigen event.": "Hi Maarten, I saw the case 'Advice on the right sound system for your space' and have a question about my own event.",
+    "Hoi Maarten, ik zag de case 'Van industriële ruimte naar intieme sfeer' en heb een vraag voor mijn eigen event.": "Hi Maarten, I saw the case 'From industrial space to intimate atmosphere' and have a question about my own event."
+  },
+  "_whatsapp_uitleg": "Voorgevulde WhatsApp-berichten: NL → EN. bouw-en.py vervangt ze op de Engelse pagina's; onbekende berichten worden 'Hi Maarten, I have a question about HEAR.'"
 }

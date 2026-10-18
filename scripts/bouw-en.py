@@ -40,8 +40,10 @@ def paden(s, naam):
         h = m.group(1)
         if h.startswith(("http", "mailto:", "#", "/")): return m.group(0)
         if h.endswith(".html"): return f'href="/en/{h}"' if h in vertaald else f'href="/{h}"'
+        if h.startswith("nieuws/"): return f'href="/en/{h}"'
         return f'href="/{h}"'
     s = re.sub(r'href="([^"]+)"', href, s)
+    s = s.replace('href="/nieuws/', 'href="/en/nieuws/')
     s = re.sub(r'src="(?!http|/)([^"]+)"', r'src="/\1"', s)
     s = s.replace("fetch('cases.json')", "fetch('/cases.json')")
     # taalwissel: terug naar NL
@@ -49,6 +51,14 @@ def paden(s, naam):
     # hreflang-links in head
     s = s.replace("</title>", f'</title><link rel="alternate" hreflang="nl" href="/{naam}"><link rel="alternate" hreflang="en" href="/en/{naam}">', 1)
     return s
+
+
+import urllib.parse
+def wa_en(s):
+    def r(m):
+        nl = urllib.parse.unquote(m.group(1))
+        return "wa.me/?text=" + urllib.parse.quote(en.get("whatsapp", {}).get(nl, "Hi Maarten, I have a question about HEAR."))
+    return re.sub(r'wa\.me/\?text=([^"]*)', r, s)
 
 def vertaal(s, paren, naam, verplicht=True):
     for nl, eng in paren:
@@ -79,8 +89,14 @@ for naam in en["vertaald"]:
         if c["link"] == naam:
             s = plaats_zijnav(s, i, "en")
     s = paden(s, naam)
+    s = wa_en(s)
     (out / naam).write_text(s)
     print("ok en/" + naam)
+
+for naam in en["vertaald"]:
+    p = site / naam; s = p.read_text()
+    s2 = re.sub(r'<a class="taal" href="[^"]*"', f'<a class="taal" href="/en/{naam}"', s, count=1)
+    if s2 != s: p.write_text(s2)
 
 if fouten:
     print("\nNIET VERTAALD (NL-tekst gewijzigd?):"); print("\n".join(fouten)); sys.exit(1)

@@ -44,59 +44,94 @@ def deelbeeld(bron, doel):
     canvas.paste(logo, (56, H - BALK + (BALK - lh) // 2 + 2), logo)
     canvas.save(doel, quality=88)
 
-def head(titel, omschrijving, pad, beeld_abs=None, artikel=False):
+def head(titel, omschrijving, pad, beeld_abs=None, artikel=False, taal="nl", alt_pad=None):
     og = (f'<meta property="og:title" content="{e(titel)}"><meta property="og:description" content="{e(omschrijving)}">'
           f'<meta property="og:url" content="{BASIS}{pad}"><meta property="og:site_name" content="HEAR">'
-          f'<meta property="og:type" content="{"article" if artikel else "website"}"><meta property="og:locale" content="nl_NL">')
+          f'<meta property="og:type" content="{"article" if artikel else "website"}"><meta property="og:locale" content="{"en_GB" if taal == "en" else "nl_NL"}">')
     if beeld_abs:
         og += (f'<meta property="og:image" content="{beeld_abs}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">'
                f'<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{beeld_abs}">')
-    return (f'<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
-            f'<meta name="description" content="{e(omschrijving[:155])}"><title>{e(titel)} · HEAR</title>{og}'
+    alt = ""
+    if alt_pad:
+        nl, en_ = (pad, alt_pad) if taal == "nl" else (alt_pad, pad)
+        alt = f'<link rel="alternate" hreflang="nl" href="{nl}"><link rel="alternate" hreflang="en" href="{en_}">'
+    return (f'<!doctype html><html lang="{taal}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
+            f'<meta name="description" content="{e(omschrijving[:155])}"><title>{e(titel)} · HEAR</title>{og}{alt}'
             f'<link rel="canonical" href="{BASIS}{pad}">'
             f'<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
             f'<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500&display=swap" rel="stylesheet">'
             f'<link rel="stylesheet" href="/home.css"><link rel="stylesheet" href="/styles.css"></head><body class="pagina">')
 
-berichten = sorted([b for b in data["berichten"] if b.get("status") == "af"], key=lambda b: b["datum"], reverse=True)
+MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+def datum(iso, taal):
+    d = datetime.date.fromisoformat(iso)
+    return f"{d.day} {(MONTHS if taal == 'en' else MAANDEN)[d.month-1]} {d.year}"
+def v(b, veld, taal):
+    return b.get(veld + "_en", b.get(veld)) if taal == "en" else b.get(veld)
 
-# --- berichten ---
-for b in berichten:
-    pad = f"/nieuws/{b['slug']}.html"
-    social = imgdir / f"{b['slug']}-social.jpg"; deelbeeld(b["beeld"], social)
-    social_abs = f"{BASIS}/img/nieuws/{b['slug']}-social.jpg"
-    def alinea_html(t):
-        if t.startswith("## "): return f'<h2 class="kopje">{e(t[3:])}</h2>'
-        return f"<p>{e(t)}</p>"
-    lopend = "".join(alinea_html(t) for t in b["tekst"]) + b.get("html_na", "")
-    lead = b.get("lead") or b["intro"]
-    knop = ""
-    if b.get("knop"):
-        k = b["knop"]; ext = k["href"].startswith("http")
-        knop = f'<p class="knoprij"><a class="link" href="{e(k["href"])}"{" target=\"_blank\" rel=\"noopener\"" if ext else ""}>{e(k["tekst"])}<i aria-hidden="true">→</i></a></p>'
-    pos = f' style="object-position:{e(b["beeld_positie"])}"' if b.get("beeld_positie") else ""
-    passend = " passend" if b.get("beeld_passend") else ""
-    kopregel = f'<section class="quick quick-breed kopregel"><p>{e(b["kop"])}</p></section>' if b.get("kop") else ""
-    main = f'''<main class="wrap">
-<section class="casehead"><a class="crumb" href="/nieuws/"><span class="sectie">Nieuws</span></a><p class="label nieuws-datum"><time datetime="{b["datum"]}">{datum_nl(b["datum"])}</time></p><h1 class="kernzin">{e(b["titel"])}</h1></section>
-<figure class="casehero{passend}"><img src="/{e(b["beeld"])}" alt="{e(b.get("beeld_alt",""))}"{pos}></figure>
+# Engelse kop en voet uit site/en/index.html (gebouwd door bouw-en.py)
+en_idx = (site / "en" / "index.html")
+if en_idx.exists():
+    ei = en_idx.read_text()
+    kop_en = ei[ei.index('<header class="top">'):ei.index('</script>') + 9].replace('href="/nieuws/"', 'href="/en/nieuws/"')
+    kop_en = kop_en.replace('<a href="/en/nieuws/">News</a>', '<a href="/en/nieuws/" aria-current="page">News</a>', 1)
+    voet_en = ei[ei.index('<footer class="voet">'):ei.index('</footer>') + 9].replace('href="/nieuws/"', 'href="/en/nieuws/"')
+else:
+    kop_en, voet_en = kop, voet
+def taalknop(k, taal, doel):
+    if taal == "nl":
+        return re.sub(r'<a class="taal" href="[^"]*"', f'<a class="taal" href="/en{doel}"', k, count=1)
+    return re.sub(r'<a class="taal" href="[^"]*"', f'<a class="taal" href="{doel}"', k, count=1)
+
+berichten = sorted([b for b in data["berichten"] if b.get("status") == "af"], key=lambda b: b["datum"], reverse=True)
+(site / "en" / "nieuws").mkdir(parents=True, exist_ok=True)
+L = {"nl": {"nieuws": "Nieuws", "alle": "Alle berichten →", "home": "Naar de homepage →", "omschr": "Nieuwe producten, events en berichten van HEAR.", "home_href": "/index.html"},
+     "en": {"nieuws": "News", "alle": "All posts →", "home": "To the homepage →", "omschr": "New products, events and news from HEAR.", "home_href": "/en/index.html"}}
+
+for taal in ("nl", "en"):
+    pre = "/en" if taal == "en" else ""
+    doelmap = site / "en" / "nieuws" if taal == "en" else uit
+    K = kop_en if taal == "en" else kop; V = voet_en if taal == "en" else voet; T = L[taal]
+    for b in berichten:
+        pad = f"{pre}/nieuws/{b['slug']}.html"; nl_pad = f"/nieuws/{b['slug']}.html"
+        social = imgdir / f"{b['slug']}-social.jpg"
+        if taal == "nl": deelbeeld(b["beeld"], social)
+        social_abs = f"{BASIS}/img/nieuws/{b['slug']}-social.jpg"
+        def alinea_html(t):
+            if t.startswith("## "): return f'<h2 class="kopje">{e(t[3:])}</h2>'
+            return f"<p>{e(t)}</p>"
+        lopend = "".join(alinea_html(t) for t in v(b, "tekst", taal)) + (v(b, "html_na", taal) or "")
+        lead = v(b, "lead", taal) or v(b, "intro", taal)
+        knop = ""
+        if b.get("knop"):
+            k = b["knop"]; ext = k["href"].startswith("http")
+            href = k["href"] if ext or taal == "nl" else "/en" + k["href"]
+            ktekst = b.get("knop_tekst_en", k["tekst"]) if taal == "en" else k["tekst"]
+            knop = f'<p class="knoprij"><a class="link" href="{e(href)}"{" target=\"_blank\" rel=\"noopener\"" if ext else ""}>{e(ktekst)}<i aria-hidden="true">→</i></a></p>'
+        pos = f' style="object-position:{e(b["beeld_positie"])}"' if b.get("beeld_positie") else ""
+        passend = " passend" if b.get("beeld_passend") else ""
+        kopregel = f'<section class="quick quick-breed kopregel"><p>{e(v(b, "kop", taal))}</p></section>' if b.get("kop") else ""
+        main = f'''<main class="wrap">
+<section class="casehead"><a class="crumb" href="{pre}/nieuws/"><span class="sectie">{T["nieuws"]}</span></a><p class="label nieuws-datum"><time datetime="{b["datum"]}">{datum(b["datum"], taal)}</time></p><h1 class="kernzin">{e(v(b, "titel", taal))}</h1></section>
+<figure class="casehero{passend}"><img src="/{e(b["beeld"])}" alt="{e(v(b, "beeld_alt", taal) or "")}"{pos}></figure>
 {kopregel}
 <article class="artikel"><p class="lead">{e(lead)}</p>{lopend}{knop}</article>
-<nav class="verwijzingen" aria-label="Verder"><a href="/nieuws/">Alle berichten →</a><a href="/index.html">Naar de homepage →</a></nav>
+<nav class="verwijzingen" aria-label="Verder"><a href="{pre}/nieuws/">{T["alle"]}</a><a href="{T["home_href"]}">{T["home"]}</a></nav>
 </main>'''
-    (uit / f"{b['slug']}.html").write_text(head(b["titel"], b["intro"], pad, social_abs, artikel=True) + kop + main + voet + "</body></html>")
-    print("ok nieuws/" + b["slug"] + ".html")
-
-# --- overzicht ---
-tegels = "".join(
-    f'<article class="case-tegel"><img src="/{e(b["beeld"])}" alt="{e(b.get("beeld_alt",""))}" loading="lazy"{(" style=\"object-position:" + e(b["beeld_positie"]) + "\"") if b.get("beeld_positie") else ""}>'
-    f'<div class="case-tekst"><p class="labels"><time datetime="{b["datum"]}">{datum_nl(b["datum"])}</time></p>'
-    f'<h2><a class="tegel-link" href="/nieuws/{b["slug"]}.html">{e(b["titel"])}</a></h2><p>{e(b["intro"])}</p><span class="pijl" aria-hidden="true">→</span></div></article>'
-    for b in berichten)
-eerste = f"{BASIS}/img/nieuws/{berichten[0]['slug']}-social.jpg" if berichten else None
-main = f'''<main class="wrap">
-<section class="casehead"><a class="crumb" href="/index.html"><span class="sectie">HEAR</span></a><h1>Nieuws</h1></section>
+        alt_pad = f"/en/nieuws/{b['slug']}.html" if taal == "nl" else nl_pad
+        (doelmap / f"{b['slug']}.html").write_text(head(v(b, "titel", taal), v(b, "intro", taal), pad, social_abs, artikel=True, taal=taal, alt_pad=alt_pad)
+            + taalknop(K, taal, nl_pad) + main + V + "</body></html>")
+        print(f"ok {taal} nieuws/{b['slug']}.html")
+    tegels = "".join(
+        f'<article class="case-tegel"><img src="/{e(b["beeld"])}" alt="{e(v(b, "beeld_alt", taal) or "")}" loading="lazy"{(" style=\"object-position:" + e(b["beeld_positie"]) + "\"") if b.get("beeld_positie") else ""}>'
+        f'<div class="case-tekst"><p class="labels"><time datetime="{b["datum"]}">{datum(b["datum"], taal)}</time></p>'
+        f'<h2><a class="tegel-link" href="{pre}/nieuws/{b["slug"]}.html">{e(v(b, "titel", taal))}</a></h2><p>{e(v(b, "intro", taal))}</p><span class="pijl" aria-hidden="true">→</span></div></article>'
+        for b in berichten)
+    eerste = f"{BASIS}/img/nieuws/{berichten[0]['slug']}-social.jpg" if berichten else None
+    main = f'''<main class="wrap">
+<section class="casehead"><a class="crumb" href="{T["home_href"]}"><span class="sectie">HEAR</span></a><h1>{T["nieuws"]}</h1></section>
 <section class="case-overzicht">{tegels}</section>
 </main>'''
-(uit / "index.html").write_text(head("Nieuws", "Nieuwe producten, events en berichten van HEAR.", "/nieuws/", eerste) + kop + main + voet + "</body></html>")
-print("ok nieuws/index.html")
+    (doelmap / "index.html").write_text(head(T["nieuws"], T["omschr"], f"{pre}/nieuws/", eerste, taal=taal, alt_pad=("/en/nieuws/" if taal == "nl" else "/nieuws/"))
+        + taalknop(K, taal, "/nieuws/") + main + V + "</body></html>")
+    print(f"ok {taal} nieuws/index.html")
