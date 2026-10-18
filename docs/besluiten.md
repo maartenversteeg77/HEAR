@@ -238,3 +238,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - 2026-10-18: Verzamelpagina-regel toegepast: Cases-overzicht krijgt "Bekijk de case →" licht in kapitalen linksonder op het beeld (ook EN: "View the case"); Voor wie krijgt het label "Dit is wat wij doen" linksboven op de drie tegels (bestaande kicker-stijl).
 - 2026-10-18: "Bekijk de case →" ook op de beelden in de homepage-slider (EN: View the case), zelfde stijl als het cases-overzicht.
 - 2026-10-18: Custom dj-sets: knop "Vraag een mix of playlist aan" (Maarten dicteerde "mix op playlist", gelezen als "of"); voorgevuld bericht "Hoi Maarten, ik wil graag een mix of playlist op maat aanvragen." Bouwscript: velden cta_tekst/cta_bericht per pagina.
+- Over HEAR, Partners: Biezema AV en Deep Radio toegevoegd (NL en EN).
