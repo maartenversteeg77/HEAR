@@ -369,12 +369,8 @@
         "<dt>Crew</dt><dd>Various freelance technicians</dd>"
       ],
       [
-        "<dt>Leveranciers</dt>",
-        "<dt>Suppliers</dt>"
-      ],
-      [
-        "<dt>Partners</dt><dd>Architects in Music, AIMM Entertainment, Base Events, Biezema AV, Deep Radio, Ronald Pronk Photography en anderen</dd>",
-        "<dt>Partners</dt><dd>Architects in Music, AIMM Entertainment, Base Events, Biezema AV, Deep Radio, Ronald Pronk Photography and others</dd>"
+        "<div><dt>Partners en leveranciers</dt><dd>Output Professional, Highlite, Moonbears, Chauvet Benelux, RCF, Brooklyn Audio, Architects in Music, AIMM Entertainment, Base Events, Biezema AV, Luxonos, Brandon AV, Deep Radio, Ronald Pronk Photography en anderen</dd></div>",
+        "<div><dt>Partners and suppliers</dt><dd>Output Professional, Highlite, Moonbears, Chauvet Benelux, RCF, Brooklyn Audio, Architects in Music, AIMM Entertainment, Base Events, Biezema AV, Luxonos, Brandon AV, Deep Radio, Ronald Pronk Photography and others</dd></div>"
       ]
     ],
     "ade-dj.html": [
