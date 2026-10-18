@@ -1,5 +1,5 @@
 {
-  "_uitleg": "Bron voor de acht dienstenpagina's. scripts/bouw-diensten.py bouwt er de HTML van. Per pagina: kernzin (kop), beeld (kopbeeld, vullend), intro (grote tekst), blokken (label links, tekst rechts; 'producten' = rij met productbeelden), links (verwijzingen onderaan). Tekst in wij-vorm, geen prijzen, geen superlatieven. Dienstenpagina's openen direct met de productrij (geen kopbeeld); 'beeld' wordt alleen nog gebruikt voor de overzichtstegel. Optioneel per productrij: 'rijen' (bv. [3,2,2]) = aantal tegels per rij op desktop; extra tegels volgen in rijen zo breed als de laatste.",
+  "_uitleg": "Bron voor de acht dienstenpagina's. scripts/bouw-diensten.py bouwt er de HTML van. Per pagina: kernzin (kop), beeld (kopbeeld, vullend), intro (grote tekst), blokken (label links, tekst rechts; 'producten' = rij met productbeelden), links (verwijzingen onderaan). Tekst in wij-vorm, geen prijzen, geen superlatieven. Dienstenpagina's openen direct met de productrij (geen kopbeeld); 'beeld' wordt alleen nog gebruikt voor de overzichtstegel. Optioneel per productrij: 'rijen' (bv. [3,2,2]) = aantal tegels per rij op desktop; extra tegels volgen in rijen zo breed als de laatste. Optioneel per pagina: 'cta_tekst' en 'cta_bericht' (knoptekst en voorgevuld WhatsApp-bericht; standaard 'Vraag een voorstel aan').",
   "paginas": [
     {
       "bestand": "booth-dj-gear.html",
@@ -475,7 +475,9 @@
           "tekst": "Case: dj-sets",
           "href": "dj-sets.html"
         }
-      ]
+      ],
+      "cta_tekst": "Vraag een mix of playlist aan",
+      "cta_bericht": "Hoi Maarten, ik wil graag een mix of playlist op maat aanvragen."
     }
   ]
 }

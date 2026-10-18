@@ -60,7 +60,9 @@ for i, pg in enumerate(data["paginas"]):
     links = "".join(f'<a href="{e(l["href"])}">{e(l["tekst"])} →</a>' for l in pg.get("links", []))
     cta = ""
     if pg.get("cta", True):
-        cta = f'<p class="knoprij cta-intro">{waknop("Vraag een voorstel aan", f"Hoi Maarten, ik wil graag een voorstel voor {pg[chr(116)+chr(105)+chr(116)+chr(101)+chr(108)].lower()} voor mijn event.")}</p>'
+        knop = pg.get("cta_tekst", "Vraag een voorstel aan")
+        bericht = pg.get("cta_bericht", f"Hoi Maarten, ik wil graag een voorstel voor {pg['titel'].lower()} voor mijn event.")
+        cta = f'<p class="knoprij cta-intro">{waknop(knop, bericht)}</p>'
     intro = (f'<section class="quick quick-breed"><p>{e(pg["intro"])}</p>{cta}</section>' if pg.get("intro") else (f'<section class="quick quick-breed">{cta}</section>' if cta else ""))
     beschrijving = pg.get("intro") or next((t for b in pg["blokken"] for t in b.get("tekst", [])), pg["kernzin"])
     main = f'''<main class="wrap">
