@@ -94,7 +94,7 @@ body.pagina.menu-open .top{position:fixed}
 .visual-card:hover img{transform:scale(1.035)}
 .visual-card-shade{position:absolute;inset:30% 0 0;background:linear-gradient(transparent,rgba(25,26,25,.85))}
 .visual-card-kicker{position:absolute;z-index:1;top:24px;left:26px;font:600 11px/1 var(--tekst);letter-spacing:.2em;text-transform:uppercase}
-.visual-card h2{position:relative;z-index:1;font:300 clamp(28px,2.6vw,40px)/1.05 var(--kop);margin:0 26px 28px;max-width:16ch;text-wrap:balance}
+.visual-card h2{position:relative;z-index:1;font:300 clamp(28px,2.6vw,40px)/1.05 var(--kop);margin:0 26px 28px;max-width:20ch;text-wrap:balance}
 .visual-card-more{display:none}
 .visual-card h2 i{font-style:normal;color:var(--koraal);margin-left:.15em;transition:transform .25s;display:inline-block}
 .visual-card:hover h2 i{transform:translateX(6px)}
