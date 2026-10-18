@@ -323,9 +323,12 @@ em,i,cite,address,dfn,var{font-style:normal}
 
 /* doelgroeppagina's (Voor wie): kop links, tekst rechts op desktop; kader "Wat we leveren" */
 .topic-group.doel p{font-size:17px;line-height:1.7;color:var(--tekstgrijs);margin:0 0 18px}
-.lever-kader{margin:28px 0 8px;padding:20px 22px;border:1px solid var(--zwart)}
+.lever-kader{margin:28px 0 8px;padding:22px 24px 24px;background:var(--turquoise);color:var(--zwart)}
 .lever-kader h3{font:600 11px/1.6 var(--tekst);letter-spacing:.16em;text-transform:uppercase;color:var(--zwart);margin:0 0 8px}
-.lever-kader p{margin:0;font-size:15px;line-height:1.6;color:var(--tekstgrijs)}
+.lever-kader p{margin:0;font-size:15px;line-height:1.6;color:var(--zwart)}
+.lever-kader .kader-link{margin-top:16px;font:500 12px/1.4 var(--tekst);letter-spacing:.14em;text-transform:uppercase}
+.lever-kader .kader-link a{color:var(--zwart);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:3px}
+.lever-kader .kader-link a:hover{color:var(--wit);border-color:var(--wit)}
 .links-rij{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:30px!important}
 .links-onder{padding-top:clamp(24px,3vw,40px);border-top:1px solid var(--lijn);margin-top:clamp(28px,4vw,48px)!important}
 .topic-group.doel p,.topic-group.doel .lever-kader{max-width:66ch}
