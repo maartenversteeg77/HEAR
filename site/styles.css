@@ -342,3 +342,16 @@ em,i,cite,address,dfn,var{font-style:normal}
 }
 .founder-copy .cta-brug{display:block}
 .founder-copy .cta-brug p{margin-bottom:18px}
+
+/* Relevante producten en diensten (doelgroepen, cases) */
+.relevant{margin-top:clamp(40px,5vw,70px);padding-top:clamp(28px,4vw,44px);border-top:1px solid var(--zwart)}
+.relevant-kop{font:600 11px/1.5 var(--tekst);letter-spacing:.2em;text-transform:uppercase;color:var(--zwart);margin:0 0 18px}
+.relevant-grid,.relevant-grid.n3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.relevant-grid.n2{grid-template-columns:repeat(2,minmax(0,1fr));max-width:66%}
+.relevant-grid.n1{grid-template-columns:1fr;max-width:33%}
+.relevant .visual-card{min-height:clamp(180px,18vw,240px)}
+.relevant .visual-card h2{font-size:clamp(20px,1.8vw,26px);margin:0 20px 6px;max-width:none}
+.relevant .visual-card p{position:relative;z-index:1;margin:0 20px 20px;font-size:13.5px;line-height:1.4;color:var(--wit);opacity:.9}
+.relevant .visual-card::before{content:none}
+.relevant .inline-link{margin-top:22px!important}
+@media (max-width:760px){.relevant-grid,.relevant-grid.n2,.relevant-grid.n1{grid-template-columns:1fr 1fr;max-width:none}.relevant .visual-card{min-height:150px}}

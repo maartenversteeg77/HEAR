@@ -1,0 +1,26 @@
+{
+  "_uitleg": "Blok 'Relevante producten en diensten' (1–3 tegels + link naar het overzicht) op doelgroep- en casepagina's. scripts/bouw-relevant.py zet het blok vóór de WhatsApp-CTA; bestaand blok wordt vervangen. 'catalogus' = tegel per categorie (naam, beeld, standaardtekst); 'paginas' = per pagina een lijst van slugs, of {slug, tekst} voor een afwijkende tekst. Engels: koppen en teksten staan als 'globaal'-paren in en.json.",
+  "catalogus": {
+    "booth-dj-gear":        {"naam": "Booth en dj-gear",                        "beeld": "img/diensten/euphonia.jpg",    "tekst": "Rider-proof booth met CDJ-3000X en V10 of Euphonia"},
+    "high-end-audio":       {"naam": "High-end audio",                          "beeld": "img/diensten/kxl-4a.jpg",      "tekst": "Hybride PA van RCF en Brooklyn Audio"},
+    "atmospheric-lighting": {"naam": "Sfeerverlichting",                        "beeld": "img/diensten/pixelpars.jpg",   "tekst": "Draadloos sfeerlicht, full-colour"},
+    "dancefloor-lighting":  {"naam": "Dansvloerverlichting",                    "beeld": "img/diensten/ifx640-warm.jpg", "tekst": "Moving heads en nevel die de muziek volgen"},
+    "vintage-lighting":     {"naam": "90’s vintage licht",                      "beeld": "img/diensten/astrodisco.jpg",  "tekst": "Gereviseerde klassiekers uit de discotijd"},
+    "av-as-a-service":      {"naam": "Advies en AV as a service",               "beeld": "img/diensten/yamaha-dm3.jpg",  "tekst": "Merkonafhankelijk advies voor locaties"},
+    "artiesten":            {"naam": "Dj’s, vocalisten en instrumentalisten",   "beeld": "img/jubileum-breed.jpg",       "tekst": "Dj’s en live muzikanten die bij de avond passen"},
+    "special-projects":     {"naam": "Custom dj-sets, playlists en remixes",    "beeld": "assets/radio-deep-radio.png",  "tekst": "Mixen, playlists en edits op maat"}
+  },
+  "paginas": {
+    "dance-events.html":               ["booth-dj-gear", "high-end-audio", "dancefloor-lighting"],
+    "corporate.html":                  ["atmospheric-lighting", {"slug": "high-end-audio", "tekst": "Geluid en draadloze microfoons"}, "artiesten"],
+    "venue-owners.html":               ["av-as-a-service", "high-end-audio", "atmospheric-lighting"],
+    "productpresentatie.html":         ["atmospheric-lighting", "high-end-audio", "booth-dj-gear"],
+    "gemeentelijk-netwerkevent.html":  [{"slug": "high-end-audio", "tekst": "Geluid en draadloze microfoons"}, "atmospheric-lighting", "artiesten"],
+    "jubileum-ondernemersnetwerk.html":["artiesten", "atmospheric-lighting", "high-end-audio"],
+    "ade-dj.html":                     ["dancefloor-lighting", "high-end-audio", "booth-dj-gear"],
+    "dj-sets.html":                    ["artiesten", "special-projects", "booth-dj-gear"],
+    "systeemadvies.html":              ["av-as-a-service", "high-end-audio"],
+    "prive-event.html":                ["dancefloor-lighting", "booth-dj-gear", "high-end-audio"],
+    "radio-mixes.html":                ["special-projects", "artiesten"]
+  }
+}
