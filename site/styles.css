@@ -320,3 +320,10 @@ em,i,cite,address,dfn,var{font-style:normal}
 .structuur dd{margin:0}
 .structuur dd a{color:inherit}
 @media (max-width:520px){.structuur div{grid-template-columns:1fr;gap:2px}}
+
+/* doelgroeppagina's: lopende tekst met kader "Wat we leveren" */
+.topic-group.doel p{max-width:66ch;font-size:17px;line-height:1.7;color:var(--tekstgrijs);margin:0 0 18px}
+.lever-kader{max-width:66ch;margin:28px 0 8px;padding:20px 22px;border:1px solid var(--zwart)}
+.lever-kader h3{font:600 11px/1.6 var(--tekst);letter-spacing:.16em;text-transform:uppercase;color:var(--zwart);margin:0 0 8px}
+.lever-kader p{margin:0;font-size:15px;line-height:1.6;color:var(--tekstgrijs)}
+.links-rij{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:30px!important}
