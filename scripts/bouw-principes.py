@@ -27,7 +27,7 @@ for p in data["paginas"]:
 kernzin = data.get("kernzin", "Waarden en uitgangspunten")
 intro = data.get("intro", "")
 beschrijving = intro or " · ".join(i["titel"] for i in items)
-pagina = f'''<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{e(beschrijving[:155])}"><title>Waarden en uitgangspunten · HEAR</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="jog.css"></head><body class="pagina">
+pagina = f'''<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{e(beschrijving[:155])}"><title>Waarden en uitgangspunten · HEAR</title><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="jog.css"></head><body class="pagina">
 {kop}
 <main class="wrap">
 <section class="casehead"><a class="crumb" href="index.html"><span class="sectie">HEAR</span></a><h1 class="kernzin">{e(kernzin)}</h1></section>

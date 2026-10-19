@@ -18,7 +18,6 @@ BLOKKEN = [
     ]),
     ("Technische dienstverleners", [
         "De website wordt gehost door Cloudflare. Bij het laden van een pagina ziet Cloudflare je IP-adres en de opgevraagde pagina, zoals elke hostingpartij.",
-        "De koppenletter van de site laadt via Google Fonts; daarbij ontvangt Google je IP-adres.",
         "Berichten via WhatsApp (Meta) en e-mail (iCloud Mail van Apple) worden door die diensten verwerkt volgens hun eigen voorwaarden.",
         "We verkopen geen gegevens en delen ze niet met anderen, behalve als dat nodig is voor de uitvoering van een opdracht, bijvoorbeeld met een technicus of artiest uit ons netwerk, of als de wet dat verplicht.",
     ]),
@@ -34,7 +33,7 @@ main = f'''<main class="wrap">
 <article class="artikel"><p class="lead">{e(INTRO)}</p>{blokken}<p class="datum">{e(DATUM)}</p></article>
 <nav class="verwijzingen" aria-label="Verder"><a href="index.html">Naar de homepage →</a></nav>
 </main>'''
-doc = f'''<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{e(INTRO[:155])}"><title>{e(TITEL)} · HEAR</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="styles.css"></head><body class="pagina">
+doc = f'''<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{e(INTRO[:155])}"><title>{e(TITEL)} · HEAR</title><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="styles.css"></head><body class="pagina">
 {kop}
 {main}
 {voet}

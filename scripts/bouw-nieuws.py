@@ -58,8 +58,6 @@ def head(titel, omschrijving, pad, beeld_abs=None, artikel=False, taal="nl", alt
     return (f'<!doctype html><html lang="{taal}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
             f'<meta name="description" content="{e(omschrijving[:155])}"><title>{e(titel)} · HEAR</title>{og}{alt}'
             f'<link rel="canonical" href="{BASIS}{pad}">'
-            f'<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
-            f'<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500&display=swap" rel="stylesheet">'
             f'<link rel="stylesheet" href="/home.css"><link rel="stylesheet" href="/styles.css"></head><body class="pagina">')
 
 MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"]
