@@ -305,3 +305,6 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Eigen ingrepen (typo's, samenstellingen, interpunctie, modelnamen) staan in de chat van 19 okt genoemd; inhoud is van Maarten.
 - Samengevoegd omdat één bron (cases.json) op twee plekken verschillend was geredigeerd: "Van seminars en workshops naar een swingende cocktail hour"; "met beperkte soundcheck nodig". Relevant-tegel artiesten: "die bij het event passen" / "who fit the event".
 - Niet gewijzigd: menu-item EN blijft "Who HEAR is for"; alleen de hometegel heet nu "Client profiles" (door Maarten). Openstaand: gelijktrekken of niet.
+- 19 okt 2026: Homepage-zin: "een zakelijk event in een belevenis" (was "een event"); de drie zinsdelen zijn de drie doelgroepen. EN: "a business event into an experience".
+- Idee voor later (als er eigen footage is): headerbeeld homepage wisselt per doelgroep, maar niet als carrousel; de drie zinsdelen worden de navigatie (hover/tik = beeld, klik = Voor wie-pagina).
+- 19 okt 2026: hear.nl live (nameservers Cloudflare, custom domains hear.nl + www; workers.dev en www sturen door via src/index.js). WhatsApp-knoppen gekoppeld aan +31 6 24560220. Open: Email Routing maarten@hear.nl → iCloud, DNSSEC via Cloudflare, Search Console.
