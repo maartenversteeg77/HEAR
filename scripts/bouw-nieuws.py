@@ -11,7 +11,7 @@ root = pathlib.Path(__file__).resolve().parent.parent
 site = root / "site"; uit = site / "nieuws"; uit.mkdir(exist_ok=True)
 imgdir = site / "img" / "nieuws"; imgdir.mkdir(parents=True, exist_ok=True)
 data = json.loads((root / "content" / "nieuws.json").read_text())
-BASIS = data.get("basis", "https://hear.maartenversteeg.workers.dev").rstrip("/")
+BASIS = data.get("basis", "https://hear.nl").rstrip("/")
 idx = (site / "index.html").read_text()
 e = lambda t: html.escape(t, quote=True)
 

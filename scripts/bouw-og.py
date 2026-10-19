@@ -7,7 +7,7 @@ import json, re, html, pathlib
 from PIL import Image, ImageDraw
 root = pathlib.Path(__file__).resolve().parent.parent
 site = root / "site"; ogdir = site / "img" / "og"; ogdir.mkdir(parents=True, exist_ok=True)
-BASIS = json.loads((root / "content" / "nieuws.json").read_text()).get("basis", "https://hear.maartenversteeg.workers.dev").rstrip("/")
+BASIS = json.loads((root / "content" / "nieuws.json").read_text()).get("basis", "https://hear.nl").rstrip("/")
 OVERSLAAN = {"merken.html", "projectbrief.html"}
 # eigen deelbeeld per pagina waar de eerste foto niet de beste is
 BEELD = {"high-end-audio": "img/dance-events-zaal.jpg", "av-as-a-service": "img/diensten/gala.jpg"}

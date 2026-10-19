@@ -1,10 +1,13 @@
 {
-  // Cloudflare: publiceer de map site als statische website
+  // Cloudflare: statische site uit de map site; src/index.js stuurt workers.dev en www door naar https://hear.nl
   "name": "hear",
+  "main": "src/index.js",
   "compatibility_date": "2026-10-01",
   "assets": {
     "directory": "./site",
+    "binding": "ASSETS",
     "not_found_handling": "404-page",
-    "html_handling": "auto-trailing-slash"
+    "html_handling": "auto-trailing-slash",
+    "run_worker_first": true
   }
 }

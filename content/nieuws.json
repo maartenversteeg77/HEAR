@@ -1,6 +1,6 @@
 {
   "_uitleg": "Nieuwsberichten als artikel: zwarte kop met datum en titel, foto, optioneel een grote kopregel (kop), dan een vette intro (lead; valt terug op intro) en lopende tekst (tekst: alinea's; een regel die begint met '## ' wordt een vet tussenkopje; html_na: extra HTML zoals een lijst). intro is ook de tegel- en socialtekst. Overig: slug, datum, beeld, beeld_alt, beeld_positie, beeld_passend (hele foto tonen), knop {tekst, href}, status 'af' of 'concept'. basis = domein voor social-metadata; naar https://hear.nl bij livegang. Engels: velden met _en (titel_en, intro_en, lead_en, kop_en, tekst_en, html_na_en, beeld_alt_en, knop_tekst_en); zonder _en-veld valt het Engels terug op het Nederlands. Engelse pagina's in site/en/nieuws/.",
-  "basis": "https://hear.maartenversteeg.workers.dev",
+  "basis": "https://hear.nl",
   "berichten": [
     {
       "slug": "kxm-25-a-floormonitor",

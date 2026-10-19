@@ -227,7 +227,7 @@ def main():
               'Opmerkingen (bijv. "blok verplaatsen" of "twijfel, kies jij") als Word-opmerking, niet als knip-en-plak. '
               'Knoppen staan cursief, WhatsApp-berichten zijn de vooringevulde teksten in de knoppen. '
               'Niet opgenomen: alt-teksten, meta-omschrijvingen, menu en footer staan één keer onderaan.')
-    doc.add_paragraph(f'Stand: {Path(SITE / "index.html").stat().st_mtime and __import__("datetime").date.today().isoformat()} · bron: hear.maartenversteeg.workers.dev')
+    doc.add_paragraph(f'Stand: {Path(SITE / "index.html").stat().st_mtime and __import__("datetime").date.today().isoformat()} · bron: hear.nl')
 
     # inhoudsopgave-achtig lijstje
     doc.add_paragraph()
