@@ -354,7 +354,7 @@ em,i,cite,address,dfn,var{font-style:normal}
 .relevant .visual-card p{position:relative;z-index:1;margin:0 20px 20px;font-size:13.5px;line-height:1.4;color:var(--wit);opacity:.9}
 .relevant .visual-card::before{content:none}
 .relevant .inline-link{margin-top:22px!important}
-@media (max-width:760px){.relevant-grid,.relevant-grid.n2,.relevant-grid.n1{grid-template-columns:1fr 1fr;max-width:none}.relevant .visual-card{min-height:150px}}
+@media (max-width:760px){.relevant-grid,.relevant-grid.n3,.relevant-grid.n2,.relevant-grid.n1{grid-template-columns:1fr 1fr;max-width:none}.relevant .visual-card{min-height:150px}.relevant .visual-card h2{margin:0 14px 14px;font-size:19px;overflow-wrap:anywhere;hyphens:auto}.relevant .visual-card p{display:none}}
 .topic-group.doel .tussenkop{font:300 clamp(20px,1.7vw,24px)/1.2 var(--kop);color:var(--zwart);margin:26px 0 10px}
 .visual-card .bekijk-doel{position:relative;z-index:1;margin:-18px 26px 26px;font:600 11px/1 var(--tekst);letter-spacing:.18em;text-transform:uppercase;color:var(--wit);opacity:.85}
 .visual-card .bekijk-doel i{font-style:normal;display:inline-block;margin-left:.3em;transition:transform .25s}
