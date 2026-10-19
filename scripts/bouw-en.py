@@ -103,3 +103,7 @@ for naam in en["vertaald"]:
 
 if fouten:
     print("\nNIET VERTAALD (NL-tekst gewijzigd?):"); print("\n".join(fouten)); sys.exit(1)
+
+# homepage-nieuwsblok: en/index.html is zojuist uit de NL-homepage gekopieerd (met NL-nieuwsblok); bouw-nieuws.py zet daar het Engelse blok in
+import subprocess
+subprocess.run([sys.executable, str(root / "scripts" / "bouw-nieuws.py")], check=True, stdout=subprocess.DEVNULL)
