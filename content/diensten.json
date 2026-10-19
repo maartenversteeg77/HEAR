@@ -130,56 +130,32 @@
             {
               "beeld": "img/diensten/kxl-4a.jpg",
               "naam": "RCF KXL 4-A",
-              "regel": "Hybride top met point source- én line source-kenmerken. 2× 10\" + 4\" hoorn 100° × 25°, verticaal te koppelen voor verre worp, met 'far' DSP-presets",
-              "link": {
-                "tekst": "Lees meer over de KX-serie",
-                "href": "#rcf"
-              }
+              "regel": "Hybride top met point source- én line source-kenmerken. 2× 10\" + 4\" hoorn 100° × 25°, verticaal te koppelen voor verre worp, met 'far' DSP-presets"
             },
             {
               "beeld": "img/diensten/sub-9019.jpg",
               "naam": "RCF SUB 9019-AS",
-              "regel": "19-inch subwoofer, tot 30 Hz, cardioïde presets",
-              "link": {
-                "tekst": "Lees meer over de KX-serie",
-                "href": "#rcf"
-              }
+              "regel": "19-inch subwoofer, tot 30 Hz, cardioïde presets"
             },
             {
               "beeld": "img/diensten/kx515-808-opties.jpg",
               "naam": "RCF SUB 808-AS en KX 515-A",
-              "regel": "Deze compacte sub-topcombo is ideaal voor lezingen en intieme cocktailparty's, en daarnaast toepasbaar als krachtige en heldere dj-boothmonitor. De KX 515-A top is ook ideaal als frontfill of delay bij grotere events, ter ondersteuning van de KXL 4-A toppen",
-              "link": {
-                "tekst": "Lees meer over de KX-serie",
-                "href": "#rcf"
-              }
+              "regel": "Deze compacte sub-topcombo is ideaal voor lezingen en intieme cocktailparty's, en daarnaast toepasbaar als krachtige en heldere dj-boothmonitor. De KX 515-A top is ook ideaal als frontfill of delay bij grotere events, ter ondersteuning van de KXL 4-A toppen"
             },
             {
               "beeld": "img/diensten/kxm-25.jpg",
               "naam": "RCF KXM 25-A",
-              "regel": "Floormonitor, 15\" woofer en hoorn coaxiaal. Krachtig (137 dB), punchy en coherent, vanaf 50 Hz",
-              "link": {
-                "tekst": "Lees meer over de KX-serie",
-                "href": "#rcf"
-              }
+              "regel": "Floormonitor, 15\" woofer en hoorn coaxiaal. Krachtig (137 dB), punchy en coherent, vanaf 50 Hz"
             },
             {
               "beeld": "img/diensten/prospect-top.jpg",
               "naam": "Brooklyn Audio Prospect",
-              "regel": "15-inch 3-weg top. Asymmetrische hoorn 0° tot −20°. Worp tot 35 meter",
-              "link": {
-                "tekst": "Lees meer over Brooklyn Audio",
-                "href": "#brooklyn"
-              }
+              "regel": "15-inch 3-weg top. Asymmetrische hoorn 0° tot −20°. Worp tot 35 meter"
             },
             {
               "beeld": "img/diensten/brooklyn-x21.jpg",
               "naam": "Brooklyn Audio X21",
-              "regel": "Zeer krachtige en strakke 21\" subwoofer",
-              "link": {
-                "tekst": "Lees meer over Brooklyn Audio",
-                "href": "#brooklyn"
-              }
+              "regel": "Zeer krachtige en strakke 21\" subwoofer"
             },
             {
               "beeld": "img/diensten/yamaha-dm3.jpg",
