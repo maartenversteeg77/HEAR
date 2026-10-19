@@ -24,8 +24,9 @@ def blok(b):
             beelden = p.get("beelden") or [p["beeld"]]
             imgs = "".join(f'<img src="{e(bl)}" alt="{e(p["naam"])}" loading="lazy">' for bl in beelden)
             if len(beelden) > 1: imgs = f'<div class="duo">{imgs}</div>'
-            if p.get("link") and p["link"]["href"].startswith("#"):  # anker op dezelfde pagina
-                link = f'<a class="bekijk" href="{e(p["link"]["href"])}">{e(p["link"]["tekst"])} ↓</a>'
+            if p.get("link") and p["link"]["href"].startswith("#"):  # anker op dezelfde pagina: subtiel op het beeld
+                link = ""
+                imgs = f'<span class="pbeeld">{imgs}<a class="bekijk-op" href="{e(p["link"]["href"])}">{e(p["link"]["tekst"])}<i aria-hidden="true">↓</i></a></span>'
             else:
                 link = f'<a class="bekijk" href="{e(p["link"]["href"])}" target="_blank" rel="noopener">{e(p["link"]["tekst"])} ↗</a>' if p.get("link") else ""
             cls = ("breed" if len(beelden) > 1 else "") + (" vul" if p.get("vul") else "")
