@@ -24,7 +24,10 @@ def blok(b):
             beelden = p.get("beelden") or [p["beeld"]]
             imgs = "".join(f'<img src="{e(bl)}" alt="{e(p["naam"])}" loading="lazy">' for bl in beelden)
             if len(beelden) > 1: imgs = f'<div class="duo">{imgs}</div>'
-            link = f'<a class="bekijk" href="{e(p["link"]["href"])}" target="_blank" rel="noopener">{e(p["link"]["tekst"])} ↗</a>' if p.get("link") else ""
+            if p.get("link") and p["link"]["href"].startswith("#"):  # anker op dezelfde pagina
+                link = f'<a class="bekijk" href="{e(p["link"]["href"])}">{e(p["link"]["tekst"])} ↓</a>'
+            else:
+                link = f'<a class="bekijk" href="{e(p["link"]["href"])}" target="_blank" rel="noopener">{e(p["link"]["tekst"])} ↗</a>' if p.get("link") else ""
             cls = ("breed" if len(beelden) > 1 else "") + (" vul" if p.get("vul") else "")
             breed = f' class="{cls.strip()}"' if cls.strip() else ""
             return f'<figure{breed}>{imgs}<figcaption><strong>{e(p["naam"])}</strong><span class="regel">{e(p["regel"]).replace(chr(10), "<br>")}</span>{link}</figcaption></figure>'
@@ -40,7 +43,8 @@ def blok(b):
     ps = "".join(f"<p>{e(t)}</p>" for t in b["tekst"]) + b.get("html_na", "")
     kop = f'<h3 class="blok-kop">{e(b["kop"]).replace(chr(10), "<br>")}</h3>' if b.get("kop") else ""
     cls = "case-section donker" if b.get("donker") else "case-section"
-    return f'<article class="{cls}"><h2>{e(b["label"]).upper()}</h2><div>{kop}{ps}</div></article>'
+    anker = f' id="{e(b["id"])}"' if b.get("id") else ""
+    return f'<article class="{cls}"{anker}><h2>{e(b["label"]).upper()}</h2><div>{kop}{ps}</div></article>'
 
 volgorde = data["paginas"]
 def zijnav(i):
@@ -57,7 +61,7 @@ for i, pg in enumerate(data["paginas"]):
     producten = "".join(blok(b) for b in prod)
     blokken = "".join(blok(b) for b in rest)
     # opeenvolgende case-sections samen in één case-sections-wrapper
-    blokken = re.sub(r'((?:<article class="case-section">.*?</article>)+)', r'<section class="case-sections">\1</section>', blokken, flags=re.S)
+    blokken = re.sub(r'((?:<article class="case-section"[^>]*>.*?</article>)+)', r'<section class="case-sections">\1</section>', blokken, flags=re.S)
     links = "".join(f'<a href="{e(l["href"])}">{e(l["tekst"])} →</a>' for l in pg.get("links", []))
     cta = ""
     if pg.get("cta", True):

@@ -362,3 +362,5 @@ em,i,cite,address,dfn,var{font-style:normal}
 .visual-card:hover .bekijk-doel{opacity:1}
 .visual-card:hover .bekijk-doel i{transform:translateX(5px)}
 .visual-grid .visual-card{flex-direction:column;justify-content:flex-end;align-items:flex-start}
+
+.case-section[id]{scroll-margin-top:24px}
