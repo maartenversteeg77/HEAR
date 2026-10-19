@@ -60,8 +60,8 @@ import urllib.parse
 def wa_en(s):
     def r(m):
         nl = urllib.parse.unquote(m.group(1))
-        return "wa.me/?text=" + urllib.parse.quote(en.get("whatsapp", {}).get(nl, "Hi Maarten, I have a question about HEAR."))
-    return re.sub(r'wa\.me/\?text=([^"]*)', r, s)
+        return "wa.me/31624560220?text=" + urllib.parse.quote(en.get("whatsapp", {}).get(nl, "Hi Maarten, I have a question about HEAR."))
+    return re.sub(r'wa\.me/(?:[0-9]*)\?text=([^"]*)', r, s)
 
 def vertaal(s, paren, naam, verplicht=True):
     for nl, eng in paren:
