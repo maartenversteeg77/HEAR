@@ -66,13 +66,13 @@
         {
           "label": "Zo werken we",
           "tekst": [
-            "Voor het event stemmen we de rider en de opstelling af met de dj of zijn management. In de standaard booth is ruimte voor drie CDJ-3000X mediaspelers in een netwerk en een mixer naar keuze: de V10 of de Euphonia. Aanvullende wensen zijn mogelijk op aanvraag, met indien nodig een alternatieve booth."
+            "Voor het event stemmen we de rider en de opstelling af met de dj of zijn management. Onze standaard booth biedt ruimte voor drie CDJ-3000X mediaspelers in een netwerk en een mixer naar keuze: de Pioneer DJ V10 of de AlphaTheta Euphonia. Voor smalle ruimtes is ook een Ecler WARM2 beschikbaar. Aanvullende wensen zijn mogelijk op aanvraag, met indien nodig een alternatieve booth."
           ]
         },
         {
           "label": "Monitoring",
           "tekst": [
-            "De dj heeft de keuze tussen een compacte sub-topcombinatie (808 + 515) met de tops op oorhoogte, links en rechts geplaatst, of floormonitors in wedgevorm (KXM 25-A), onzichtbaar voor het publiek en omhoog gericht naar de dj."
+            "De dj heeft de keuze tussen een compacte sub-topcombinatie (RCF SUB 808-AS + KX 515-A) met de tops op oorhoogte, links en rechts geplaatst. Of floormonitors in wedgevorm (KXM 25-A), onzichtbaar voor het publiek en omhoog gericht naar de dj."
           ]
         },
         {
@@ -84,7 +84,7 @@
         {
           "label": "Spelregels",
           "tekst": [],
-          "html_na": "<ul><li>No redlining :-)</li><li>Van de dj en entourage verwachten we dat zij erop toezien dat er geen drankjes op de booth worden gezet of over de booth heen worden aangereikt. Een ongeluk kan niet alleen de gear schaden, maar ook het event zelf, bijvoorbeeld door stroomuitval.</li><li>Zorg voor memory drives met de meest actuele versie van rekordbox, of in elk geval met dual file management. Neem bij vragen of twijfel altijd contact op.</li><li>Maak van de booth geen garderobe voor gasten ;-)</li></ul>"
+          "html_na": "<ul><li>No redlining :-)</li><li>Van de dj en entourage verwachten we dat zij erop toezien dat er geen drankjes op de booth worden gezet of over de booth heen worden aangereikt. Een ongeluk kan niet alleen de gear schaden, maar ook het event zelf, bijvoorbeeld door kortsluiting.</li><li>Zorg voor memory drives met de meest actuele versie van Rekordbox, of in elk geval met dual file management. Neem bij vragen of twijfel altijd zo snel mogelijk contact op.</li><li>Maak van de booth geen garderobe voor gasten ;-)</li></ul>"
         }
       ],
       "links": [
@@ -104,21 +104,21 @@
       "kernzin": "PA-systemen van de hoogste RCF-lijn en Brooklyn Audio",
       "beeld": "img/systeem-breed.jpg",
       "beeld_alt": "RCF-luidsprekers onder een truss met moving heads",
-      "intro": "Modulair, praktisch, krachtig, helder en technologisch vooruitstrevend. Wij werken met actieve speakers van twee merken die hun hele systeem zelf ontwerpen en bouwen: RCF uit Italië en Brooklyn Audio uit Nederland. Beide zijn modulair. Dezelfde kasten doen een cocktailavond voor honderd gasten en, gekoppeld, een dansvloer voor vijftienhonderd.",
+      "intro": "Modulair, praktisch, krachtig, helder en technologisch vooruitstrevend. Wij werken met actieve speakers van twee merken die hun hele systeem zelf ontwerpen en bouwen: RCF uit Italië en Brooklyn Audio uit Nederland. Beide systemen zijn modulair. Dezelfde kasten die een cocktailavond voor honderd gasten verzorgen kunnen gecombineerd en gekoppeld een dansvloer voor vijftienhonderd personen dekken.",
       "blokken": [
         {
           "label": "RCF KX-serie",
           "tekst": [
-            "De KX-serie is RCF's touringlijn: ontworpen en gebouwd in Reggio Emilia, van de luidsprekerunits tot de versterkers en de software. Onze standaard voor dansvloeren is de KXL 4-A, een compacte kast met twee 10-inch woofers en een hoorn van 100° bij 25°, die per kant als toren van twee of drie kasten hangt. Daaronder leggen we SUB 9019-AS subwoofers met een 19-inch woofer, die tot 30 Hz komen.",
-            "Wat ons in RCF overtuigt, is de verwerking in de kast. FiRPHASE zorgt dat alle frequenties tegelijk aankomen, waardoor een kick strak blijft en een stem direct klinkt. Bass Motion Control beschermt de woofer zonder het laag te vervormen. Via RDNet zien en sturen we elke kast op afstand: niveau, EQ, temperatuur, limiters.",
+            "De KX-serie is RCF's touringlijn: ontworpen en gebouwd in Reggio Emilia, van de luidsprekerunits tot de versterkers en de software. Onze standaard voor dansvloeren is de KXL 4-A, een slanke, langwerpige kast met twee 10-inch woofers en een hoorn van 100° bij 25°, die per kant als toren van twee of drie kasten hangt. Daaronder leggen we SUB 9019-AS subwoofers met een 19-inch woofer, die tot 30 Hz komen.",
+            "Wat ons in RCF overtuigt, is de verwerking in de kast. FiRPHASE zorgt dat alle frequenties tegelijk aankomen, waardoor een kick strak blijft en een stem direct klinkt. Bass Motion Control beschermt de woofer zonder het laag te vervormen. Met via de RDTAP-smartphone-app geladen presets of met RDNet: daarmee zien en sturen we elke kast op afstand: niveau, EQ, temperatuur, limiters.",
             "De kasten zijn gebouwd voor onderweg: berkenmultiplex met polyurea-coating, stalen rigging en een IP-klasse die regen aankan."
           ]
         },
         {
           "label": "Brooklyn Audio",
           "tekst": [
-            "Brooklyn Audio bouwt in Nederland in kleine series. De Prospect-top is een 15-inch driewegkast met ingebouwde versterkers, die als losse fullrange-kast werkt of met elke Brooklyn-sub te combineren is. De X21 is de bijbehorende sub met een 21-inch woofer.",
-            "Brooklyn ontwerpt al zijn kasten met dezelfde fasekarakteristiek. Daardoor kun je ze in elke combinatie inzetten zonder dat het geluid uit elkaar valt, en klinkt een kleine en een grote opstelling hetzelfde. De subs hebben ingebouwde cardioïde presets: het laag richt zich op het publiek in plaats van op de buren. Bij een event met geluidsnormen voor de omgeving is dit cruciaal."
+            "Brooklyn Audio bouwt in eigen huis haar eigen speakerontwerpen, in Nederland. De Prospect-top is een 15-inch driewegkast met ingebouwde versterkers, die als losse fullrange-kast werkt of met elke Brooklyn-sub te combineren is. De X21 is de bijbehorende (beestachtige) sub met een 21-inch woofer.",
+            "Brooklyn ontwerpt al zijn kasten met dezelfde fasekarakteristiek. Daardoor kun je ze in elke combinatie inzetten zonder dat het geluid uit elkaar valt, en klinkt een kleine en een grote opstelling hetzelfde. De subs hebben ingebouwde cardioïde presets: het laag richt zich op het publiek in plaats van het podium."
           ]
         },
         {
@@ -136,7 +136,7 @@
             {
               "beeld": "img/diensten/kx515-808-opties.jpg",
               "naam": "RCF SUB 808-AS en KX 515-A",
-              "regel": "Deze compacte sub-topcombo is ideaal voor lezingen en intieme cocktailparty's, en daarnaast toepasbaar als heldere dj-boothmonitor. De KX 515-A top is ook ideaal als frontfill of delay bij grotere events, ter ondersteuning van de KXL 4-A toppen"
+              "regel": "Deze compacte sub-topcombo is ideaal voor lezingen en intieme cocktailparty's, en daarnaast toepasbaar als krachtige en heldere dj-boothmonitor. De KX 515-A top is ook ideaal als frontfill of delay bij grotere events, ter ondersteuning van de KXL 4-A toppen"
             },
             {
               "beeld": "img/diensten/kxm-25.jpg",
@@ -178,8 +178,8 @@
         {
           "label": "Frontfill, delay en compacte set",
           "tekst": [
-            "De KX 515-A is de kleine top uit dezelfde familie als de KXL 4-A. Bij grotere events zetten we hem in als frontfill voor de eerste meters, of als delay verderop in de zaal, ter ondersteuning van de KXL-toppen. Dezelfde klank, een maat kleiner, zodat het vooraan niet hard en achterin niet dun klinkt.",
-            "Met een SUB 808-AS eronder is het een compacte set op zichzelf, met hifi-klank voor lezingen en intieme feesten tot zo'n 150 gasten. Dezelfde combinatie staat in de dj-booth als monitor."
+            "De KX 515-A is de kleine top uit dezelfde familie als de KXL 4-A. Bij grotere events zetten we hem in als frontfill voor de eerste meters, of als delay verderop in de zaal, ter ondersteuning van de KXL-toppen. Dezelfde klank in een compact formaat dat het geluid aanvult daar waar het nodig is.",
+            "Met een SUB 808-AS eronder is de KX 515-A een compacte set op zichzelf, met hifi-klank voor lezingen en intieme feesten tot zo'n 150 gasten. Dezelfde combinatie kan ook gebruikt worden in de dj-booth als monitor."
           ]
         },
         {
@@ -207,7 +207,7 @@
       "beeld": "img/case-productpresentatie.jpg",
       "beeld_alt": "Sneakers op verlichte plateaus onder theaterspots, in een hal met blauw licht",
       "beeld_positie": "center 62%",
-      "intro": "Op basis van het doel (bijvoorbeeld een persoon of producten uitlichten, of een dansvloer van effecten voorzien), de fysieke ruimte en het budget stellen wij een lichtplan en offerte voor. Afhankelijk van de locatie en de gekozen materialen is wel of geen trussconstructie onderdeel van het advies.",
+      "intro": "We ontwerpen een lichtplan en sturen daarvoor een offerte. Deze is gebaseerd op ofwel een locatiebezoek of foto’s, het type event en het doel, de fysieke ruimte en het budget. Afhankelijk van de locatie en de gekozen materialen is mogelijk een trussconstructie onderdeel van het advies.",
       "blokken": [
         {
           "producten": [
@@ -219,12 +219,12 @@
             {
               "beeld": "img/diensten/par-beam.jpg",
               "naam": "ADJ Par Z150 RGBA Plus",
-              "regel": "Accugevoede spot met 5 tot 20 uur werktijd. Drie instelbare breedtes tot volle wash waarmee je een ruimte inkleurt. Full-colour en diverse wittinten voor natuurlijke huid. Draadloos aangestuurd door Wolfmix"
+              "regel": "Accugevoede spot met 5 tot 20 uur werktijd. Drie instelbare breedtes tot volle wash waarmee je een ruimte inkleurt. Full-colour en diverse wittinten voor natuurlijke huidtint. Draadloos aangestuurd door een Wolfmix controller"
             },
             {
               "beeld": "img/diensten/pixelpars.jpg",
               "naam": "ADJ ElectraPix Par 7",
-              "regel": "Ledspot met zeven lenzen die elk apart aan te sturen zijn, waardoor hij lijkt te bewegen en verlopen. Per zes stuks in een oplaadcase, gebruiksduur instelbaar van 5 tot 20 uur. Met accessoire te transformeren tot glazen lichtzuil van een meter hoog"
+              "regel": "Ledspot met zeven lenzen die elk apart aan te sturen zijn, waardoor hij lijkt te bewegen en verlopen. Per zes stuks in een oplaadcase, met een gebruiksduur instelbaar van 5 tot 20 uur. Deze spot is met een bijpassend accessoire te transformeren tot glazen lichtzuil van een meter hoog"
             },
             {
               "beeld": "img/diensten/lichtbuizen-podium.jpg",
@@ -239,7 +239,7 @@
             {
               "beeld": "img/diensten/entourage.jpg",
               "naam": "ADJ Entourage hazer",
-              "regel": "Egale, lichte nevel in de zaal die het zicht niet beperkt en lichteffecten veel meer impact geeft. Op waterbasis, dus geen plakkerige olie in de venue. Let op: een hazer triggert minder snel een brandalarm dan een rookmachine, maar check dit altijd bij de locatie"
+              "regel": "Deze hazer creëert een egale, lichte nevel in de zaal die het zicht niet beperkt en lichteffecten veel meer impact geeft. Op waterbasis, dus het laat geen plakkerige olie achter op de vloer en meubels in de venue. Let op: een hazer triggert minder snel een brandalarm dan een rookmachine, maar check dit altijd bij de locatie"
             },
             {
               "beeld": "img/diensten/truss-sixty82.jpg",
@@ -266,12 +266,12 @@
       "kernzin": "Dansvloerverlichting",
       "beeld": "img/diensten/dansvloer.jpg",
       "beeld_alt": "Volle dansvloer in roze en blauw licht, met bundels vanaf het plafond",
-      "intro": "Een hybride moving head is beam, spot en wash in één. Je haalt uit één apparaat wat anders drie fixtures vraagt, en met een beperkt aantal stuks maak je een show met veel gezichten. De lampen wisselen bovendien van rol: rustig als wash in de warm-up, impactvol als beam op peak hour.",
+      "intro": "Een hybride moving head projecteert een beam, spot en wash in één. Als je de juiste kiest (niet eentje die alles nét niet kan) dan is het een Zwitsers zakmes: je haalt daarmee uit één apparaat wat anders drie fixtures vraagt, en met een beperkt aantal stuks maak je een show met veel gezichten. De lampen wisselen bovendien van rol gedurende een avond: rustig als wash in de warm-up, impactvol als beam op peak hour.",
       "blokken": [
         {
           "label": "Wat erbij komt",
           "tekst": [
-            "Lichte nevel maakt de bundels zichtbaar. Lichtzuilen en spiegelbollen geven diepte en een knipoog naar de disco. En de accuwashlights uit ons sfeerlicht kleuren de muren mee. Alles samen vormt één beeld dat met de avond meebeweegt."
+            "Lichte nevel maakt de bundels zichtbaar. Lichtzuilen en spiegelbollen geven diepte en een knipoog naar de disco. En de accuwashlights uit ons sfeerlicht aanbod kleuren de muren mee. Alles samen vormt één beeld dat met de avond meebeweegt."
           ]
         },
         {
@@ -294,7 +294,7 @@
                 "img/diensten/ifx640-warm.jpg"
               ],
               "naam": "Infinity iFX-640 met interne shutters",
-              "regel": "Wat de hybride niet kan, doet de iFX-640: een wash moving head met interne roterende shutters die de bundel een bloemvorm geven.\nDaarmee is hij ook de lamp voor events waar sfeer voorop staat en niet het effect, zoals productdemo's, catwalks, lezingen en theater",
+              "regel": "Wat de hybride niet kan, doet de iFX-640: een wash moving head met interne roterende shutters die de bundel een bloemvorm geven. Daarmee is hij ook een ideale lamp voor events waar sfeer voorop staat en niet het effect, zoals productdemo's, catwalks, lezingen en theater",
               "link": {
                 "tekst": "Bekijk de Infinity iFX-640",
                 "href": "https://vimeo.com/568318553"
@@ -305,7 +305,7 @@
         {
           "label": "Zo programmeren we",
           "tekst": [
-            "Indien nodig programmeren we vooraf een show die past bij het event van de opdrachtgever. We bouwen scènes die passen bij het verloop van de avond: ingetogen bij de opening, voller als de dansvloer vol staat. De lichttafel staat bij de booth, zodat licht en muziek elkaar volgen. Draadloze aansturing waar het kan, dus geen kabelgoten door de zaal."
+            "Indien de opdrachtgever dit wenst programmeren we vooraf een show die past bij zijn of haar event. We bouwen scènes die passen bij het verloop van de avond: ingetogen bij de opening, voller als de dansvloer vol staat. De lichttafel staat bij de booth, zodat licht en muziek elkaar volgen. De aansturing is draadloos waar het kan, dus (vrijwel) geen kabelgoten door de zaal."
           ]
         }
       ],
@@ -333,12 +333,12 @@
             {
               "beeld": "img/diensten/astrodisco.jpg",
               "naam": "Clay Paky Astrodisco",
-              "regel": "Officieel heet dit effect een Astrodisco, maar in de volksmond noemde iedereen het een ufo. Alsof er een ronde schijf landt en dansers meeneemt naar een andere wereld. Who knows. Van het Italiaanse Clay Paky, veel te zien in Italiaanse clubs, maar ook in de Amsterdamse iT"
+              "regel": "Officieel heet dit effect een Astrodisco, maar in de volksmond noemde iedereen het een ufo. Alsof er een ronde schijf landt en dansers meeneemt naar een andere wereld. Who knows. Van het Italiaanse Clay Paky, veel te zien in Italiaanse clubs, maar ook in de oude legendarische Amsterdamse iT nachtclub"
             },
             {
               "beeld": "img/diensten/goldenscan.jpg",
               "naam": "Golden Scan en Roboscan",
-              "regel": "Scanners. Uit de markt verdreven door moving heads die 360 graden om hun as draaien, maar nog steeds erg effectief én snel. Met rijke, verzadigde kleuren uit een Philips-gasontladingslamp"
+              "regel": "Scanners. Scanners werden uit de markt verdreven door moving heads die 360 graden om hun as draaien, maar ze zijn nog steeds erg effectief én snel. Met rijke, verzadigde kleuren uit een Philips-gasontladingslamp"
             }
           ]
         },
@@ -346,7 +346,7 @@
           "label": "Zo zetten we het in",
           "tekst": [
             "Zet je alleen vintage effecten in, dan oogt je show gedateerd. Zet je ze in als aanvulling op een lichtshow, dan krijg je een mooie mix van oud en nieuw, met effecten die ánders zijn dan de rest.",
-            "Omwille van de veiligheid kan de Astrodisco alleen worden ingezet in combinatie met truss, al aanwezig of extra ingehuurd."
+            "Omwille van de veiligheid kan de Astrodisco alleen worden ingezet in combinatie met truss, ofwel reeds aanwezig op het midden van de vloer of extra ingehuurd."
           ]
         }
       ],
@@ -367,22 +367,22 @@
       "kernzin": "Merkonafhankelijk advies en AV as a service voor eventlocaties",
       "beeld": "img/diensten/gala.jpg",
       "beeld_alt": "Gala-opstelling met ronde tafels, moving heads en gekleurd licht in een hal",
-      "intro": "Heb je een eventlocatie zonder eigen licht en geluid? Of heb je wel eigen geluid, maar klagen gasten over 'vermoeiend geluid' of een gebrek aan impact? Wij kijken graag mee wat er mogelijk is.",
+      "intro": "Heb je een eventlocatie zonder eigen licht en geluid? Of heb je wel eigen geluid, maar klagen gasten over 'vermoeiend geluid' of een gebrek aan impact? Wij kijken graag mee wat er mogelijk is om de gastbeleving te vergroten.",
       "blokken": [
         {
           "label": "Gratis tips en adviezen",
           "kop": "Even sparren?",
           "tekst": [
-            "Een eerste vraag over het juiste licht of geluid voor jouw locatie? We denken vrijblijvend mee."
+            "Heb je een vraag over het juiste licht of geluid voor jouw locatie? We denken vrijblijvend mee."
           ],
           "html_na": "<p class=\"knoprij\"><a class=\"wa\" href=\"https://wa.me/?text=Hoi%20Maarten%2C%20ik%20heb%20een%20vraag%20over%20licht%20en%20geluid%20voor%20mijn%20locatie.\" data-whatsapp><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1.1 2.7.1.2 1.8 2.8 4.4 3.9 1.7.7 2.3.8 3.1.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.8-.3Z\"/></svg><span>Stel je vraag via WhatsApp</span><i aria-hidden=\"true\">→</i></a></p>"
         },
         {
           "label": "Begeleiding inkooptraject",
-          "kop": "Begeleiding van de eerste vraag tot een werkende installatie",
+          "kop": "Een sound upgrade om aan hogere klanteisen te voldoen",
           "tekst": [
-            "Sommige locaties lopen aan tegen steeds hogere eisen die bezoekers stellen aan geluid. Het moet impactvol zijn, maar mag de oren niet schaden. Het geluid wordt niet genoeg gevoeld of is te schel en vermoeiend, of er zijn dode zones waardoor het publiek steeds gaat lopen op zoek naar een goede plek.",
-            "Met de eigenaar kijken we wat de locatie nodig heeft. Merkonafhankelijk, met de ruimte als vertrekpunt en een systeem dat medewerkers zelf kunnen bedienen als eindpunt."
+            "Sommige locaties vinden het een uitdaging om te voldoen aan steeds groeiende eisen die bezoekers stellen aan geluid. De opkomst van high-end listening bars en clubs in Europese steden brengt de verwachtingen omhoog. Het geluid moet impactvol zijn, maar mag de oren niet schaden. Of het geluid wordt niet genoeg gevoeld of is te schel en vermoeiend, of er zijn dode zones waardoor het publiek steeds gaat lopen op zoek naar een goede plek.",
+            "Met de eigenaar kijken we wat de locatie nodig heeft. Merkonafhankelijk, met de eigenschappen van de ruimte als vertrekpunt en een systeem dat medewerkers zelf kunnen bedienen als bedoeld eindpunt."
           ],
           "html_na": "<ol class=\"stappen\" aria-label=\"Stappen van het inkooptraject\"><li><b>01</b><strong>Ruimtescan</strong><span>Wat vraagt deze ruimte en het type events?</span></li><li><b>02</b><strong>Advies</strong><span>Merkonafhankelijke keuze van passende systemen.</span></li><li><b>03</b><strong>Demonstratie</strong><span>Producten zien en horen in jouw eigen ruimte.</span></li><li><b>04</b><strong>Training</strong><span>Zelfstandig bedienen na aanschaf.</span></li></ol>"
         },
@@ -391,8 +391,8 @@
           "kop": "De kwaliteit van een eigen installatie, zonder de aanschaf.",
           "donker": true,
           "tekst": [
-            "Met AV as a service koop je geen licht en geluid, maar neem je het af als dienst, via HEAR zelf of via ons netwerk. Voor een vast bedrag per maand en een periode van minimaal 36 maanden krijgt de locatie de beschikking over geluid en licht: het nieuwste wat op dit moment op de markt is, zonder zorgen over onderhoud of reparatie.",
-            "Na een training bedien je de apparatuur zelf. Voor installatie en onderhoud betrekken we waar nodig de productspecialisten van de gekozen merken."
+            "Met AV as a service koop je geen licht en geluid, maar neem je het af als dienst, via HEAR zelf of via ons netwerk. Voor een vast bedrag per maand en een periode van minimaal 36 maanden krijgt de locatie toegang tot de meest recente licht- en geluidstechniek die er op de markt is, zonder zorgen over onderhoud of reparatie.",
+            "Na een training bedien je de apparatuur zelf. Voor installatie en onderhoud betrekken we indien nodig de productspecialisten van de gekozen merken."
           ]
         }
       ],
@@ -419,19 +419,19 @@
         {
           "label": "Dj's",
           "tekst": [
-            "Van ontspannen achtergrond tijdens een borrel tot een volle dansvloer: soulful house, deephouse, disco en garage, gedraaid door dj's die weten wanneer ze moeten opbouwen en wanneer ze moeten wachten. Een avond heeft een verloop, en het tijdschema is daar onderdeel van."
+            "Van ontspannen achtergrond tijdens een borrel tot een volle dansvloer: soulful house, deephouse, afro, latin, disco en garage, gedraaid door dj's die weten hoe je een avond opbouwt."
           ]
         },
         {
           "label": "Vocalisten en instrumentalisten",
           "tekst": [
-            "Een saxofonist die meespeelt met de dj, een zangeres bij de opening, een percussionist op de dansvloer. Live muziek bij een dj-set geeft een event iets dat mensen onthouden. Dit kan ik voor je regelen."
+            "Een saxofonist die meespeelt met de dj of een vocalist of percussionist. Live muziek bij een dj-set geeft een event iets dat mensen onthouden."
           ]
         },
         {
           "label": "Zo werk ik",
           "tekst": [
-            "Als dj ben ik smaakbewaker en tussenpersoon: ik kies de artiesten die bij het event passen en zet ze op het juiste moment van de avond. Daarvoor werk ik rechtstreeks met dj's en artiesten en met enkele artiestenbureaus.",
+            "Als dj vertaal ik het concept naar een line-up en tijdschema. Daarvoor werk ik rechtstreeks met dj's en artiesten en met enkele artiestenbureaus.",
             "Vertel wat je wensen zijn en ik doe een passend voorstel. Met één aanspreekpunt voor de muziek én de technische realisatie."
           ]
         }
@@ -459,15 +459,15 @@
         {
           "label": "Playlists op maat",
           "tekst": [
-            "Voor een koffiebar, café of andere horecazaak stellen we een playlist samen die past bij jouw zaak. Met de hand geselecteerd uit onze eigen collectie, zonder vervuiling door generieke AI-muziek."
+            "Voor een koffiebar, café of andere horecazaak stellen we een playlist samen die past bij de zaak. Met de hand geselecteerd uit onze eigen collectie, zonder vervuiling door generieke AI-muziek."
           ]
         },
         {
           "label": "Radio-mixes",
           "tekst": [
-            "Maarten maakt regelmatig mixen voor Deep Radio: soulful house, deephouse en classics, twee uur lang. Een uitzending is een goede manier om kennis te maken met zijn muzikale lijn voordat je hem boekt."
+            "Maarten maakt regelmatig mixen voor Deep Radio: soulful house, deephouse en classics, twee uur lang. Overweeg je een boeking? Luister dan eens op SoundCloud."
           ],
-          "html_na": "<p class=\"knoprij\"><a class=\"link\" href=\"https://soundcloud.com/maartenversteeg\" target=\"_blank\" rel=\"noopener\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M1.5 14.5h1v3h-1zm2-1.5h1v4.5h-1zm2-1.5h1v6h-1zm2-2h1v8h-1zm2 .5h1v7.5h-1zm2-2h1v9.5h-1zm2 .5h1.5v9H13.5zm3.5-1.3a4.6 4.6 0 0 1 2 .1 4 4 0 0 1 3.5 4 4 4 0 0 1-4 4H15.5V8.4a3 3 0 0 1 1.5-1.2z\"/></svg>Luister ze hier op SoundCloud<i aria-hidden=\"true\">→</i></a></p>"
+          "html_na": "<p class=\"knoprij\"><a class=\"link\" href=\"https://soundcloud.com/maartenversteeg\" target=\"_blank\" rel=\"noopener\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M1.5 14.5h1v3h-1zm2-1.5h1v4.5h-1zm2-1.5h1v6h-1zm2-2h1v8h-1zm2 .5h1v7.5h-1zm2-2h1v9.5h-1zm2 .5h1.5v9H13.5zm3.5-1.3a4.6 4.6 0 0 1 2 .1 4 4 0 0 1 3.5 4 4 4 0 0 1-4 4H15.5V8.4a3 3 0 0 1 1.5-1.2z\"/></svg>Deep Radio sets op SoundCloud<i aria-hidden=\"true\">→</i></a></p>"
         },
         {
           "label": "Edits en producties",

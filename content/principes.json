@@ -1,7 +1,7 @@
 {
   "_uitleg": "Principes en way of working: één pagina met het jogwheel. Per waarde: slug (anker), titel (op het display), statement (één zin), intro (2-3 zinnen), werkwijze (lijst onder 'Voor onze manier van werken betekent dit:'). Geen subpagina's. Gebouwd door scripts/bouw-principes.py.",
   "kernzin": "Waarden en uitgangspunten",
-  "intro": "Achter alles wat we doen zit een intentie. Dat is althans wel de bedoeling :-) Die bepaalt wat voor keuzes we maken, bijvoorbeeld in ons assortiment of onze manier van samenwerken. Twee waarden en twee uitgangspunten bepalen die keuzes.",
+  "intro": "Achter alles wat we doen zit een intentie. Dat is althans wel de bedoeling :-) Die bepaalt wat voor keuzes we maken, bijvoorbeeld in ons productassortiment of onze manier van samenwerken. Twee waarden en twee uitgangspunten bepalen die keuzes.",
   "paginas": [
     {
       "slug": "samen",
@@ -13,19 +13,19 @@
         "We denken niet in concurrentie. Andere leveranciers zien we als branchegenoten.",
         "We zoeken een gelijkwaardige relatie met klanten en partners.",
         "Een eenmalig event vinden we gaaf, maar het liefst bouwen we aan een relatie op langere termijn.",
-        "We onderhouden leverancierscontact rechtstreeks bij de fabrikant of importeur: voor producttips, updates en trainingen uit de eerste hand."
+        "We onderhouden leverancierscontact zo dicht mogelijk bij de fabrikant of importeur: voor producttips, updates en trainingen uit de eerste hand."
       ]
     },
     {
       "slug": "open",
       "titel": "Open",
       "statement": "Met een open vizier",
-      "intro": "HEAR komt voort uit corporate communicatie en de dancescene. In dialoog staan met je omgeving, en een dansvloer als vrijplaats, waar je mag zijn wie je bent en de ander diezelfde ruimte gunt. Die openheid vinden wij belangrijk, en je ziet haar terug in kleine dingen:",
+      "intro": "HEAR komt voort uit corporate communicatie en de dancescene. Het één staat voor: als bedrijf in dialoog staan met je omgeving en stakeholders. Het ander voor een dansvloer als open en inclusieve vrijplaats. Oorspronkelijk ontstonden disco en house voor gemarginaliseerde groepen in Amerikaanse steden. Openheid en inclusie vinden wij belangrijk, en je ziet haar terug in kleine dingen:",
       "werkwijze": [
         "We zijn nieuwsgierig naar andere oplossingen, andere meningen, nieuwe technologie en nieuwe muziek.",
         "Kritiek is er om van te leren: hoe kan het voortaan anders?",
         "We oordelen niet zonder iemand eerst te bevragen.",
-        "We werken niet samen met partijen die openlijk discrimineren."
+        "Wij behandelen iedereen met respect en verwachten dat ook van partners."
       ]
     },
     {
@@ -34,7 +34,7 @@
       "statement": "Wij kopen producten van leveranciers die onze passie delen.",
       "intro": "We kiezen producten waarover is nagedacht, in functie én in vorm, van bedrijven die innoveren en vanuit hun vak een gunfactor hebben.",
       "werkwijze": [
-        "We investeren in techniek die de operatie makkelijk maakt: draadloos licht, actieve speakers, lichtshows die we vooraf programmeren. Daardoor lopen er geen kabelgoten door de zaal en draait het hele systeem op twee gewone stopcontacten.",
+        "We investeren in techniek die de operatie makkelijk maakt: draadloos licht, actieve speakers, lichtshows die we vooraf programmeren. Daardoor lopen er geen kabelgoten door de zaal en kan het hele systeem meestal draaien op twee gewone stroomgroepen.",
         "We werken met multi-inzetbare en modulaire systemen.",
         "We kopen audioproducten van Europese makelij, van bedrijven met eigen productie en een passie voor hun vak."
       ]
@@ -43,11 +43,11 @@
       "slug": "warmte",
       "titel": "Warme sound",
       "statement": "Wij geven om sfeer en warm geluid.",
-      "intro": "Geluid is onbewust erg sfeerbepalend. Met warm en goed verstaanbaar geluid gaat de sfeer omhoog, zonder dat je precies weet waardoor. Helaas gebeurt dat soms ook andersom: de muziek is schel en je voelt je ongemakkelijk. Of je wordt moe van onduidelijk geluid, iets dat je hersenen continu compenseren zonder dat je dat doorhebt. Daarom besteden wij extra aandacht aan kwaliteit, warmte en verstaanbaarheid van geluid. Én van het licht: spectaculair wanneer nodig, maar ook subtiel als dat beter past. Zo voelt uitgaan net als thuis. Je voelt je op je gemak en wilt nog uren blijven.",
+      "intro": "Geluid is onbewust erg sfeerbepalend. Met warm en goed verstaanbaar geluid gaat de sfeer omhoog, zonder dat je precies weet waardoor. Helaas gebeurt dat soms ook andersom: de muziek is schel en mensen voelen zich onbewust ongemakkelijk. Of je wordt moe van onduidelijk geluid, iets dat je hersenen continu compenseren zonder dat je dat doorhebt. Daarom besteden wij extra aandacht aan kwaliteit, warmte en verstaanbaarheid van geluid. Én van het licht: alleen spectaculair wanneer nodig, maar ook subtiel als dat beter past. Zo voelt uitgaan net als thuis. Je voelt je op je gemak en wilt nog uren blijven.",
       "werkwijze": [
         "Vanuit een deephouse-achtergrond hechten we aan een geluid dat warm, rond en vol klinkt. Ook visuals moeten warmte hebben.",
-        "Geluid is gelijkmatig verdeeld. De muziek of spreker is tot achterin verstaanbaar, zonder dat het daardoor vooraan te hard wordt.",
-        "We werken liever met washlights die een ruimte inkleuren dan met een kermis aan effecten. Donker is daarbij ook een keuze.",
+        "Geluid is gelijkmatig verdeeld. Als het geluid tot achterin stevig en goed verstaanbaar moet zijn, wordt het niet te luid vooraan.",
+        "We werken liever met washlights die een ruimte inkleuren dan met een kermis aan effecten of te veel licht. Donker is ook een effect.",
         "Licht, geluid en visuals zijn afgestemd op de energie van het moment."
       ]
     }

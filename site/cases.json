@@ -21,7 +21,7 @@
     {
       "status": "af",
       "titel": "Productlancering\nmet theaterlicht, geluid en dj",
-      "tekst": "Van gerichte productverlichting overdag naar een warme dansvloer 's avonds.",
+      "tekst": "Van productverlichting overdag naar een warme dansvloer 's avonds.",
       "beeld": "img/case-productpresentatie.jpg",
       "alt": "Sneakers op verlichte plateaus onder theaterspots, in een hal met blauw licht",
       "link": "productpresentatie.html",
@@ -29,12 +29,12 @@
         "corporate"
       ],
       "titel_en": "Product launch\nwith theatre lighting, sound and DJ",
-      "tekst_en": "From focused product lighting by day to a warm dancefloor at night."
+      "tekst_en": "From product lighting at daytime to a warm dancefloor at night."
     },
     {
       "status": "af",
       "titel": "Seminar en netwerkevent",
-      "tekst": "Van lezingen en workshops naar een ontspannen cocktail hour.",
+      "tekst": "Van seminars en workshops naar een swingende cocktail hour.",
       "beeld": "img/case-gemeente.jpg",
       "alt": "Gesprek op een podium voor publiek",
       "link": "gemeentelijk-netwerkevent.html",
@@ -42,12 +42,12 @@
         "corporate"
       ],
       "titel_en": "Seminar and networking event",
-      "tekst_en": "From lectures and workshops to a relaxed cocktail hour."
+      "tekst_en": "From seminars and workshops to a swinging cocktail hour."
     },
     {
       "status": "af",
       "titel": "Jubileum ondernemersnetwerk",
-      "tekst": "Een luxe tuinfeest midden in een woonwijk, zonder overlast voor de buurt.",
+      "tekst": "Een luxe tuinfeest midden in Oud-Zuid, zonder overlast voor de buurt.",
       "beeld": "img/case-creativegrounds.jpg",
       "alt": "Gasten dansen met een glas wijn in de hand, een saxofonist speelt op de voorgrond",
       "link": "jubileum-ondernemersnetwerk.html",
@@ -55,12 +55,12 @@
         "corporate"
       ],
       "titel_en": "Anniversary of a business network",
-      "tekst_en": "A luxurious garden party in a residential area, without disturbing the neighbours."
+      "tekst_en": "A luxurious garden party in the middle of Oud-Zuid, without disturbing the neighbours."
     },
     {
       "status": "af",
       "titel": "Transformatie: van skatehal tot dansvloer",
-      "tekst": "Eén avond omgebouwd voor een pop-upevent, met vrijwel geen soundcheck nodig.",
+      "tekst": "Eén avond omgebouwd voor een pop-upevent, met beperkte soundcheck nodig.",
       "beeld": "img/case-ade.jpg",
       "alt": "DJ-booth in een skatehal tijdens ADE",
       "link": "ade-dj.html",
@@ -69,12 +69,12 @@
         "venue"
       ],
       "titel_en": "Transformation: from skate hall to dancefloor",
-      "tekst_en": "Converted for a one-night pop-up event, with hardly any soundcheck needed."
+      "tekst_en": "Converted for a one-night pop-up event, with limited soundcheck needed."
     },
     {
       "status": "af",
       "titel": "Een reis door 40 jaar elektronische muziek",
-      "tekst": "Dj-sets voor corporate events, skylounges en cocktailbars: van ontspannen achtergrond tot dansvloer.",
+      "tekst": "Dj-sets voor corporate events, skylounges en cocktailbars: van speakeasy tot dansvloer.",
       "beeld": "img/case-djsets.jpg",
       "alt": "Maarten Versteeg, zittend op een flightcase",
       "link": "dj-sets.html",
@@ -84,7 +84,7 @@
         "corporate"
       ],
       "titel_en": "A journey through 40 years of electronic music",
-      "tekst_en": "DJ sets for corporate events, sky lounges and cocktail bars: from relaxed background to dancefloor."
+      "tekst_en": "DJ sets for corporate events, sky lounges and cocktail bars: from speakeasy to dancefloor."
     },
     {
       "status": "af",
@@ -97,7 +97,7 @@
         "dance"
       ],
       "titel_en": "Advice on the right sound system for your space",
-      "tekst_en": "System advice for a lighting and sound rental company."
+      "tekst_en": "Audiosystem consulting for a lighting and sound rental company."
     },
     {
       "status": "af",

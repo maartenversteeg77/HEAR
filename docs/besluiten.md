@@ -298,3 +298,10 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Corporate, blok 2: slotzin ingekort tot "Met 25 jaar corporate communicatie in de bagage weten we wat er voor een merk op het spel staat." (dubbeling met kader weg; GO Maarten).
 - TE CHECKEN (Maarten): Engelse teksten lezen, vooral Waarden en de founder-achtige ik-teksten (Artiesten).
 - 2026-10-18: Check vanuit andere draad: /en/doelgroepen.html gaf daar 404 → hier 200 (was timing/cache). Gefixt: Engelse voet linkte de vier waarden naar NL principes.html#…, nu /en/principes.html#…; canonical + hreflang (nl/en/x-default) op alle pagina's via bouw-og.py. Waardenaam "Open" blijft in EN "Open" (naast Together, Craftsmanship, Warm sound).
+
+## 19 okt 2026 — Redactieronde alle teksten (Word, track changes)
+- Maarten liep alle sitetekst in één keer door in docs/hear-teksten-redactieronde-2026-10-18.docx (NL/EN naast elkaar, gemaakt met scripts/exporteer-teksten.py). 226 gewijzigde cellen, teruggelezen uit de track changes (w:ins/w:del) en doorgevoerd in de bronnen (diensten.json, principes.json, relevant.json, nieuws.json, cases.json, statische pagina's, en.json-paren, whatsapp-berichten).
+- Werkwijze voor een volgende ronde: export opnieuw draaien, Maarten bewerkt met wijzigingen bijhouden, Claude leest de XML uit en vervangt oud→nieuw per cel; EN-wijzigingen landen in de en.json-paren, niet in site/en/.
+- Eigen ingrepen (typo's, samenstellingen, interpunctie, modelnamen) staan in de chat van 19 okt genoemd; inhoud is van Maarten.
+- Samengevoegd omdat één bron (cases.json) op twee plekken verschillend was geredigeerd: "Van seminars en workshops naar een swingende cocktail hour"; "met beperkte soundcheck nodig". Relevant-tegel artiesten: "die bij het event passen" / "who fit the event".
+- Niet gewijzigd: menu-item EN blijft "Who HEAR is for"; alleen de hometegel heet nu "Client profiles" (door Maarten). Openstaand: gelijktrekken of niet.
