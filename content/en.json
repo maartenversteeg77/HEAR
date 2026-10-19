@@ -25,7 +25,8 @@
     "av-as-a-service.html",
     "artiesten.html",
     "special-projects.html",
-    "principes.html"
+    "principes.html",
+    "privacy.html"
   ],
   "globaal": [
     [
@@ -259,6 +260,14 @@
     [
       "aria-label=\"Stappen van het inkooptraject\"",
       "aria-label=\"Steps of the purchasing process\""
+    ],
+    [
+      "<p class=\"voet-klein\">HEAR is een handelsnaam van Maarten Versteeg communicatieadvies<br>",
+      "<p class=\"voet-klein\">HEAR is a trade name of Maarten Versteeg communicatieadvies<br>"
+    ],
+    [
+      "<a href=\"privacy.html\">Privacyverklaring</a>",
+      "<a href=\"privacy.html\">Privacy statement</a>"
     ]
   ],
   "cases_json": {
@@ -419,8 +428,8 @@
         "<p>I'm Maarten. Since 1993 I've been DJing in bars, clubs, rooftop bars and beach clubs, and at corporate events from fashion shows to product launches. Sometimes abroad. Along the way I've come to know a lot of different rooms and a lot of light and sound systems. Sometimes it sounds great. Sometimes you hear what's still possible.</p>"
       ],
       [
-        "<p>Daarnaast werk ik zo’n 25 jaar als corporate communicatieadviseur voor grote organisaties. Ik weet dus ook wat er belangrijk is bij een merkactivatie, productlancering of personeelsevent bij een opdrachtgever.</p>",
-        "<p>Alongside that, I've worked for some 25 years as a corporate communication consultant for large organizations. So I also know what’s important for a brand activation, product launch or staff event.</p>"
+        "<p>Daarnaast werk ik zo’n 25 jaar als corporate communicatiespecialist voor grote organisaties. Ik weet dus ook wat er belangrijk is bij een merkactivatie, productlancering of personeelsevent bij een opdrachtgever.</p>",
+        "<p>Alongside that, I've worked for some 25 years as a corporate communications specialist for large organisations. So I also know what’s important for a brand activation, product launch or staff event.</p>"
       ],
       [
         "<p>Uit die combinatie is HEAR ontstaan. Ik begin bij wat een klant, bureau of artiest voor ogen heeft en zoek daar het geluid en het licht bij. Als dj hoor ik wat een ruimte nodig heeft. Als adviseur begrijp ik wat de opdrachtgever wil bereiken.</p>",
@@ -455,8 +464,8 @@
         "<dl class=\"structuur\" aria-label=\"Structure of HEAR\">"
       ],
       [
-        "<dt>Oprichter</dt><dd>Maarten Versteeg, dj en communicatieadviseur<br>",
-        "<dt>Founder</dt><dd>Maarten Versteeg, DJ and communications consultant<br>"
+        "<dt>Oprichter</dt><dd>Maarten Versteeg, dj en corporate communicatiespecialist<br>",
+        "<dt>Founder</dt><dd>Maarten Versteeg, DJ and corporate communications specialist<br>"
       ],
       [
         "<dt>Techniek</dt><dd>Diverse freelance technici</dd>",
@@ -1949,6 +1958,76 @@
       [
         "\"Samen\"",
         "\"Together\""
+      ]
+    ],
+    "privacy.html": [
+      [
+        "<title>Privacyverklaring · HEAR</title>",
+        "<title>Privacy statement · HEAR</title>"
+      ],
+      [
+        "<h1>Privacyverklaring</h1>",
+        "<h1>Privacy statement</h1>"
+      ],
+      [
+        ">HEAR is een handelsnaam van Maarten Versteeg communicatieadvies (KvK 42181393, Van Kinsbergenstraat 54, 1057 PT Amsterdam). We gaan zorgvuldig om met je gegevens. Hieronder staat wat we verwerken en waarom.<",
+        ">HEAR is a trade name of Maarten Versteeg communicatieadvies (Dutch Chamber of Commerce 42181393, Van Kinsbergenstraat 54, 1057 PT Amsterdam). We handle your data with care. Below is what we process and why.<"
+      ],
+      [
+        "content=\"HEAR is een handelsnaam van Maarten Versteeg communicatieadvies (KvK 42181393, Van Kinsbergenstraat 54, 1057 PT Amsterdam). We gaan zorgvuldig om met je ge\"",
+        "content=\"HEAR is a trade name of Maarten Versteeg communicatieadvies. We handle your data with care. Below is what we process and why.\""
+      ],
+      [
+        ">Wat we verwerken<",
+        ">What we process<"
+      ],
+      [
+        ">Als je ons een bericht stuurt via WhatsApp of e-mail: je naam, telefoonnummer of e-mailadres en de inhoud van je bericht. We gebruiken dit alleen om je vraag te beantwoorden en, bij een opdracht, voor de uitvoering en administratie daarvan.<",
+        ">If you send us a message via WhatsApp or e-mail: your name, phone number or e-mail address and the content of your message. We use this only to answer your question and, if it leads to a job, to carry out and administer that job.<"
+      ],
+      [
+        ">Bij een opdracht: de gegevens die nodig zijn voor offerte, overeenkomst en factuur. Facturen bewaren we zeven jaar, zoals de wet voorschrijft. Andere gegevens bewaren we niet langer dan nodig voor het doel waarvoor je ze gaf.<",
+        ">For a job: the details needed for the quote, agreement and invoice. We keep invoices for seven years, as required by law. Other data we keep no longer than needed for the purpose you gave it for.<"
+      ],
+      [
+        ">Deze website gebruikt geen cookies, geen bezoekersstatistieken en geen trackers.<",
+        ">This website uses no cookies, no visitor statistics and no trackers.<"
+      ],
+      [
+        ">Technische dienstverleners<",
+        ">Technical service providers<"
+      ],
+      [
+        ">De website wordt gehost door Cloudflare. Bij het laden van een pagina ziet Cloudflare je IP-adres en de opgevraagde pagina, zoals elke hostingpartij.<",
+        ">The website is hosted by Cloudflare. When a page loads, Cloudflare sees your IP address and the page requested, as any hosting provider does.<"
+      ],
+      [
+        ">De koppenletter van de site laadt via Google Fonts; daarbij ontvangt Google je IP-adres.<",
+        ">The site's heading font loads via Google Fonts; in doing so Google receives your IP address.<"
+      ],
+      [
+        ">Berichten via WhatsApp (Meta) en e-mail (iCloud Mail van Apple) worden door die diensten verwerkt volgens hun eigen voorwaarden.<",
+        ">Messages via WhatsApp (Meta) and e-mail (Apple's iCloud Mail) are processed by those services under their own terms.<"
+      ],
+      [
+        ">We verkopen geen gegevens en delen ze niet met anderen, behalve als dat nodig is voor de uitvoering van een opdracht, bijvoorbeeld met een technicus of artiest uit ons netwerk, of als de wet dat verplicht.<",
+        ">We do not sell data and do not share it with others, except where needed to carry out a job, for instance with a technician or artist from our network, or where the law requires it.<"
+      ],
+      [
+        ">Je rechten<",
+        ">Your rights<"
+      ],
+      [
+        ">Je kunt inzage, correctie of verwijdering van je gegevens vragen via maarten@hear.nl. Ben je het niet eens met hoe we met je gegevens omgaan, dan kun je een klacht indienen bij de Autoriteit Persoonsgegevens.<",
+        ">You can request access to, correction or deletion of your data via maarten@hear.nl. If you disagree with how we handle your data, you can file a complaint with the Dutch Data Protection Authority (Autoriteit Persoonsgegevens).<"
+      ],
+      [
+        ">Laatst bijgewerkt: 20 oktober 2026.<",
+        ">Last updated: 20 October 2026.<"
+      ],
+      [
+        ">Naar de homepage →<",
+        ">To the homepage →<"
       ]
     ]
   },

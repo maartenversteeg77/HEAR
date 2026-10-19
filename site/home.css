@@ -220,3 +220,7 @@ em,i,cite,address,dfn,var{font-style:normal}
 .heel{white-space:nowrap}
 .nieuws-home .onder{display:none}
 @media (max-width:760px){.nieuws-home-rij{gap:14px}.nieuws-home .werk-kaart img{aspect-ratio:4/5}.nieuws-home .werk-kaart h3{font-size:18px}.nieuws-home .werk-kaart .bekijk-case{left:12px;bottom:12px;font-size:10px}.nieuws-home .werk-kop .tekstlink{display:none}.nieuws-home .onder{display:inline-block;margin-top:26px}}
+
+.voet-merk .voet-klein{font-size:12px;line-height:1.6;color:rgba(246,245,241,.6);margin-top:14px}
+.voet-merk .voet-klein a{color:inherit}
+.artikel .datum{font-size:13px;color:var(--tekstgrijs);margin-top:28px}
