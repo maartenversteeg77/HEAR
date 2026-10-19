@@ -217,5 +217,6 @@ em,i,cite,address,dfn,var{font-style:normal}
 .nieuws-home .werk-kaart img{aspect-ratio:3/2}
 .nieuws-home .werk-kaart time{display:block;font:600 11px/1.4 var(--tekst);letter-spacing:.14em;text-transform:uppercase;color:#3a3a37}
 .nieuws-home .werk-kaart h3{margin:8px 0 0}
+.heel{white-space:nowrap}
 .nieuws-home .onder{display:none}
-@media (max-width:760px){.nieuws-home-rij{grid-template-columns:1fr;gap:28px}.nieuws-home .werk-kop .tekstlink{display:none}.nieuws-home .onder{display:inline-block;margin-top:26px}}
+@media (max-width:760px){.nieuws-home-rij{gap:14px}.nieuws-home .werk-kaart img{aspect-ratio:4/5}.nieuws-home .werk-kaart h3{font-size:18px}.nieuws-home .werk-kaart .bekijk-case{left:12px;bottom:12px;font-size:10px}.nieuws-home .werk-kop .tekstlink{display:none}.nieuws-home .onder{display:inline-block;margin-top:26px}}

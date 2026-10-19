@@ -136,6 +136,7 @@ for taal in ("nl", "en"):
         + taalknop(K, taal, "/nieuws/") + main + V + "</body></html>")
     print(f"ok {taal} nieuws/index.html")
 
+    heel = lambda t: re.sub(r'(\S*\w-\w\S*)', r'<span class="heel">\1</span>', t)  # modelnamen niet afbreken op het koppelteken
     # homepage: twee laatste berichten tussen Over HEAR en de afsluiter (markers <!--nieuws-home-->)
     home = site / "en" / "index.html" if taal == "en" else site / "index.html"
     if home.exists() and "<!--nieuws-home-->" in home.read_text():
@@ -143,7 +144,7 @@ for taal in ("nl", "en"):
         kaarten = "".join(
             f'<a class="werk-kaart" href="{pre}/nieuws/{b["slug"]}.html"><span class="werk-beeld"><img src="{rel}{e(b["beeld"])}" alt="{e(v(b, "beeld_alt", taal) or "")}" loading="lazy"'
             f'{(" style=\"object-position:" + e(b["beeld_positie"]) + "\"") if b.get("beeld_positie") else ""}><span class="bekijk-case">{T["lees"]}<i aria-hidden="true">→</i></span></span>'
-            f'<time datetime="{b["datum"]}">{datum(b["datum"], taal)}</time><h3>{e(v(b, "titel", taal))}</h3></a>'
+            f'<time datetime="{b["datum"]}">{datum(b["datum"], taal)}</time><h3>{heel(e(v(b, "titel", taal)))}</h3></a>'
             for b in berichten[:2])
         blok = (f'<!--nieuws-home--><section class="nieuws-home" aria-labelledby="nieuws-kop"><div class="werk-kop"><h2 id="nieuws-kop">{T["laatste"]}</h2>'
                 f'<a class="tekstlink" href="{pre}/nieuws/">{T["overzicht"]}</a></div><div class="nieuws-home-rij">{kaarten}</div>'
