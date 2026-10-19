@@ -30,15 +30,13 @@
     k.addEventListener('click',function(){ zet(k.getAttribute('aria-expanded')!=='true'); });
     document.addEventListener('keydown',function(e){ if(e.key==='Escape') zet(false); });
     // Vegen over de zwarte kop (mobiel): links = volgende, rechts = vorige pagina op dit niveau
-    var h=document.querySelector('.casehead'), x0=null, y0=null;
-    if(h){
-      h.addEventListener('touchstart',function(e){ x0=e.touches[0].clientX; y0=e.touches[0].clientY; },{passive:true});
-      h.addEventListener('touchend',function(e){
-        if(x0===null) return; var dx=e.changedTouches[0].clientX-x0, dy=e.changedTouches[0].clientY-y0; x0=null;
-        if(Math.abs(dx)<60||Math.abs(dy)>50) return;
-        var a=h.querySelector(dx<0?'.zijnav .pijl:last-child':'.zijnav .pijl:first-child'); if(a&&a.href) location.href=a.href;
-      },{passive:true});
-    }
+    var x0=null, y0=null, hk=null;  // gedelegeerd: de kop staat verderop in de pagina dan dit script
+    document.addEventListener('touchstart',function(e){ hk=e.target.closest&&e.target.closest('.casehead'); if(!hk) return; x0=e.touches[0].clientX; y0=e.touches[0].clientY; },{passive:true});
+    document.addEventListener('touchend',function(e){
+      if(x0===null||!hk) return; var dx=e.changedTouches[0].clientX-x0, dy=e.changedTouches[0].clientY-y0; x0=null;
+      if(Math.abs(dx)<60||Math.abs(dy)>50) return;
+      var a=hk.querySelector(dx<0?'.zijnav .pijl:last-child':'.zijnav .pijl:first-child'); if(a&&a.href) location.href=a.href;
+    },{passive:true});
   })();
 </script><main class="wrap"><section class="casehead"><a class="crumb" href="/en/index.html"><span class="sectie">HEAR</span></a><h1>Products and services</h1></section><section class="visual-grid"><a class="visual-card" href="/en/booth-dj-gear.html"><img src="/img/diensten/euphonia.jpg" alt="AlphaTheta Euphonia rotary mixer"><span class="visual-card-shade"></span><h2>View <span class="heel">DJ gear</span> <i aria-hidden="true">→</i></h2><span class="visual-card-more">View section ↗</span></a><a class="visual-card" href="/en/high-end-audio.html"><img src="/img/diensten/kx-familie.jpg" alt="RCF KX family: KXL 4-A, KX 515-A and KXM 25-A"><span class="visual-card-shade"></span><h2>View <span class="heel">high-end audio</span> <i aria-hidden="true">→</i></h2><span class="visual-card-more">View section ↗</span></a><a class="visual-card" href="/en/atmospheric-lighting.html"><img src="/img/diensten/pixelpars.jpg" alt="ADJ ElectraPix Par 7 with light columns"><span class="visual-card-shade"></span><h2>View atmospheric lighting <i aria-hidden="true">→</i></h2><span class="visual-card-more">View section ↗</span></a><a class="visual-card" href="/en/dancefloor-lighting.html"><img src="/img/diensten/ifx640-warm.jpg" alt="Infinity iFX-640 moving heads in warm and purple light"><span class="visual-card-shade"></span><h2>View dancefloor lighting <i aria-hidden="true">→</i></h2><span class="visual-card-more">View section ↗</span></a><a class="visual-card" href="/en/vintage-lighting.html"><img src="/img/diensten/astrodisco.jpg" alt="Clay Paky Astrodisco with dozens of beams"><span class="visual-card-shade"></span><h2>View 90s vintage lighting <i aria-hidden="true">→</i></h2><span class="visual-card-more">View section ↗</span></a><a class="visual-card" href="/en/av-as-a-service.html"><img src="/img/diensten/yamaha-dm3.jpg" alt="Yamaha DM3 mixing console"><span class="visual-card-shade"></span><h2>View sound & light consulting and AV as a service <i aria-hidden="true">→</i></h2><span class="visual-card-more">View section ↗</span></a><a class="visual-card" href="/en/artiesten.html"><img src="/img/jubileum-breed.jpg" alt="DJ and saxophonist at a garden party"><span class="visual-card-shade"></span><h2>View DJs, vocalists and instrumentalists <i aria-hidden="true">→</i></h2><span class="visual-card-more">View section ↗</span></a><a class="visual-card" href="/en/special-projects.html"><img src="/assets/radio-deep-radio.png" alt="Announcement of a DJ set by Maarten Versteeg on Deep Radio" style="object-fit:contain;background:var(--zwart)"><span class="visual-card-shade"></span><h2>View custom <span class="heel">DJ sets</span>, playlists and remixes <i aria-hidden="true">→</i></h2><span class="visual-card-more">View section ↗</span></a></section></main><footer class="voet">
   <div class="voet-kolommen">

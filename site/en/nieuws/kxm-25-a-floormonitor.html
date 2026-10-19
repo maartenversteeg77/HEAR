@@ -30,15 +30,13 @@
     k.addEventListener('click',function(){ zet(k.getAttribute('aria-expanded')!=='true'); });
     document.addEventListener('keydown',function(e){ if(e.key==='Escape') zet(false); });
     // Vegen over de zwarte kop (mobiel): links = volgende, rechts = vorige pagina op dit niveau
-    var h=document.querySelector('.casehead'), x0=null, y0=null;
-    if(h){
-      h.addEventListener('touchstart',function(e){ x0=e.touches[0].clientX; y0=e.touches[0].clientY; },{passive:true});
-      h.addEventListener('touchend',function(e){
-        if(x0===null) return; var dx=e.changedTouches[0].clientX-x0, dy=e.changedTouches[0].clientY-y0; x0=null;
-        if(Math.abs(dx)<60||Math.abs(dy)>50) return;
-        var a=h.querySelector(dx<0?'.zijnav .pijl:last-child':'.zijnav .pijl:first-child'); if(a&&a.href) location.href=a.href;
-      },{passive:true});
-    }
+    var x0=null, y0=null, hk=null;  // gedelegeerd: de kop staat verderop in de pagina dan dit script
+    document.addEventListener('touchstart',function(e){ hk=e.target.closest&&e.target.closest('.casehead'); if(!hk) return; x0=e.touches[0].clientX; y0=e.touches[0].clientY; },{passive:true});
+    document.addEventListener('touchend',function(e){
+      if(x0===null||!hk) return; var dx=e.changedTouches[0].clientX-x0, dy=e.changedTouches[0].clientY-y0; x0=null;
+      if(Math.abs(dx)<60||Math.abs(dy)>50) return;
+      var a=hk.querySelector(dx<0?'.zijnav .pijl:last-child':'.zijnav .pijl:first-child'); if(a&&a.href) location.href=a.href;
+    },{passive:true});
   })();
 </script><main class="wrap">
 <section class="casehead"><a class="crumb" href="/en/nieuws/"><span class="sectie">News</span></a><p class="label nieuws-datum"><time datetime="2026-10-17">17 October 2026</time></p><h1 class="kernzin">New in the booth: RCF KXM 25-A floor monitor</h1></section>
