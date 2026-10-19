@@ -207,3 +207,15 @@ em,i,cite,address,dfn,var{font-style:normal}
 .taal{margin-left:28px;text-decoration:none;font:500 12px/1 var(--tekst);letter-spacing:.16em;text-transform:uppercase;opacity:.85;border:1px solid currentColor;padding:7px 9px 6px;border-radius:2px}
 .taal:hover{opacity:1;color:var(--koraal)}
 @media (max-width:900px){.taal{margin-left:auto;margin-right:12px}}
+
+/* laatste nieuws op de homepage (gevuld door scripts/bouw-nieuws.py) */
+.nieuws-home{background:var(--wit);color:var(--zwart);padding:clamp(50px,6vw,90px) var(--rand)}
+.nieuws-home .werk-kop{margin-bottom:28px}
+.nieuws-home .werk-kop .tekstlink{color:var(--zwart);white-space:nowrap}
+.nieuws-home-rij{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.nieuws-home .werk-kaart{flex:none}
+.nieuws-home .werk-kaart img{aspect-ratio:3/2}
+.nieuws-home .werk-kaart time{display:block;font:600 11px/1.4 var(--tekst);letter-spacing:.14em;text-transform:uppercase;color:#3a3a37}
+.nieuws-home .werk-kaart h3{margin:8px 0 0}
+.nieuws-home .onder{display:none}
+@media (max-width:760px){.nieuws-home-rij{grid-template-columns:1fr;gap:28px}.nieuws-home .werk-kop .tekstlink{display:none}.nieuws-home .onder{display:inline-block;margin-top:26px}}
