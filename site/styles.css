@@ -318,7 +318,8 @@ em,i,cite,address,dfn,var{font-style:normal}
 .structuur div{display:grid;grid-template-columns:110px 1fr;gap:12px}
 .structuur dt{font:600 11px/1.6 var(--tekst);letter-spacing:.16em;text-transform:uppercase;color:var(--zwart)}
 .structuur dd{margin:0}
-.structuur dd a{color:inherit}
+.structuur dd a{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;text-decoration-color:rgba(25,26,25,.35)}
+.structuur dd a:hover{text-decoration-color:currentColor}
 @media (max-width:520px){.structuur div{grid-template-columns:1fr;gap:2px}}
 
 /* doelgroeppagina's (Voor wie): kop links, tekst rechts op desktop; kader "Wat we leveren" */
