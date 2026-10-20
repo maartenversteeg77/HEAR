@@ -10,7 +10,7 @@ e = lambda t: html.escape(t, quote=True)
 data = json.loads((root / "content" / "mixes.json").read_text())
 
 TITEL = "Dj-mixes"
-INTRO = "Alle sets van Maarten Versteeg op SoundCloud: soulful house, deephouse, afro, latin, disco en garage. Direct af te spelen."
+INTRO = "Alle sets van Maarten Versteeg op SoundCloud: soulful house, deephouse, afro, latin, disco en garage. Please enjoy!"
 KLASSIEK = "Classic vinyl mixes"
 KLASSIEK_TEKST = "Livesets van vroeger, alleen met platen gedraaid."
 
