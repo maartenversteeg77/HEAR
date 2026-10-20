@@ -314,3 +314,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Propositieblok (compact tekstblok onder de hero) afgewezen door Maarten; de strook kwam ervoor in de plaats.
 - Achter elke WhatsApp-knop staat in lichte letter "mailen mag ook" (mailto:maarten@hear.nl); EN "or send an email". Zit in waknop() van bouw-diensten en in de vaste knoppen van de pagina's (span.wa-plus).
 - Strook: "Licht" linkt naar de producten- en dienstenpagina (drie lichtcategorieën), niet naar één lichtpagina.
+- Proefpalet (naar de a-ha-stills/ChatGPT-analyse): site/proef/ bevat kopieën van index, corporate en high-end-audio met een A/B-schakelaar rechtsonder. B = koraal #CC6A52 (richting terracotta), warme grijzen (licht #F3F1ED, lijn #D6D1CA, tekstgrijs #3E3A36, zacht #6B635C), staalblauw #5A6079 voor labels/eyebrows; turquoise ongewijzigd. Niet gelinkt, noindex, momentopname (wordt niet meegebouwd). Besluit volgt na vergelijking.
