@@ -413,9 +413,11 @@ em,i,cite,address,dfn,var{font-style:normal}
 .tarieven dd{margin:0;font-size:16px;line-height:1.5;color:var(--tekstgrijs)}
 .tarieven dd strong{font:300 clamp(26px,2.6vw,34px)/1.1 var(--kop);color:var(--zwart);display:block;margin-bottom:2px}
 .tarieven dd.uitleg{margin-top:8px;font-size:14px}
-.case-section p.klein{margin:18px 0 0;font-size:13px;color:var(--zacht)}
+.case-section p.klein{margin:18px 0 22px;font-size:13px;color:var(--zacht)}
 .stappen3{margin:0;padding:0;list-style:none;counter-reset:s;display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:72ch}
 .stappen3 li{counter-increment:s;font-size:15px;line-height:1.6;color:var(--tekstgrijs);border-top:1px solid var(--lijn);padding-top:12px}
 .stappen3 li:before{content:counter(s,decimal-leading-zero);display:block;font:300 28px/1 var(--kop);color:var(--zwart);margin-bottom:8px}
 .stappen3 strong{display:block;color:var(--zwart);font-weight:600;margin-bottom:4px}
 @media (max-width:760px){.verdeling .rij{grid-template-columns:1fr;gap:6px}.tarieven,.stappen3{grid-template-columns:1fr}.prijstabel{font-size:14px}.prijstabel tbody th{width:auto}}
+.cta-sub{margin:-18px 0 0!important;font-size:13px;color:var(--zacht);text-align:right}
+.cta-brug p.lang{max-width:40ch;font-size:clamp(20px,2.2vw,28px)}
