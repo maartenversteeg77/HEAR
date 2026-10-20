@@ -26,7 +26,8 @@
     "artiesten.html",
     "special-projects.html",
     "principes.html",
-    "privacy.html"
+    "privacy.html",
+    "dj-mixes.html"
   ],
   "globaal": [
     [
@@ -1808,8 +1809,8 @@
         ">Read more here ↗<"
       ],
       [
-        ">of luister op SoundCloud ↗<",
-        ">or listen on SoundCloud ↗<"
+        ">of luister naar alle mixes →<",
+        ">or listen to all mixes →<"
       ],
       [
         "title=\"Nieuwste dj-set van Maarten Versteeg op SoundCloud\"",
@@ -2068,6 +2069,72 @@
       [
         ">Naar de homepage →<",
         ">To the homepage →<"
+      ]
+    ],
+    "dj-mixes.html": [
+      [
+        "<title>Dj-mixes · HEAR</title>",
+        "<title>DJ mixes · HEAR</title>"
+      ],
+      [
+        ">Dj-mixes<",
+        ">DJ mixes<"
+      ],
+      [
+        "content=\"Alle sets van Maarten Versteeg op SoundCloud: soulful house, deephouse, afro, latin, disco en garage. Direct af te spelen.\"",
+        "content=\"All sets by Maarten Versteeg on SoundCloud: soulful house, deep house, afro, latin, disco and garage. Ready to play.\""
+      ],
+      [
+        ">Alle sets van Maarten Versteeg op SoundCloud: soulful house, deephouse, afro, latin, disco en garage. Direct af te spelen.<",
+        ">All sets by Maarten Versteeg on SoundCloud: soulful house, deep house, afro, latin, disco and garage. Ready to play.<"
+      ],
+      [
+        ">Livesets van vroeger, alleen met platen gedraaid.<",
+        ">Live sets from the early days, vinyl only.<"
+      ],
+      [
+        ">← Dj's, vocalisten en instrumentalisten<",
+        ">← DJs, vocalists and instrumentalists<"
+      ],
+      [
+        ">Volg op SoundCloud ↗<",
+        ">Follow on SoundCloud ↗<"
+      ],
+      [
+        "<span class=\"huidig\">Dj's</span>",
+        "<span class=\"huidig\">DJs</span>"
+      ],
+      [
+        "Loads of classics, 2 uur voor Deep Radio",
+        "Loads of classics, 2 hours for Deep Radio"
+      ],
+      [
+        "Liveset voor Deep FM Radio, 2 uur",
+        "Live set for Deep FM Radio, 2 hours"
+      ],
+      [
+        "Deephouse, soulful house, tech-house, live bij Deep Radio",
+        "Deep house, soulful house, tech-house, live at Deep Radio"
+      ],
+      [
+        "Deephouse &amp; tech-house bij Deep Radio",
+        "Deep house &amp; tech-house at Deep Radio"
+      ],
+      [
+        "Afro house, soulful house, latin, live bij Q-Terrace Amsterdam",
+        "Afro house, soulful house, latin, live at Q-Terrace Amsterdam"
+      ],
+      [
+        "Deephouse livemix",
+        "Deep house live mix"
+      ],
+      [
+        "Deephouse, UK garage, tech-house, 2 uur",
+        "Deep house, UK garage, tech-house, 2 hours"
+      ],
+      [
+        "Liveset bij Deep FM Radio",
+        "Live set at Deep FM Radio"
       ]
     ]
   },

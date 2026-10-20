@@ -381,3 +381,15 @@ em,i,cite,address,dfn,var{font-style:normal}
 .dj-links a{color:var(--zwart);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px;width:fit-content}
 .dj-links a:hover{text-decoration-thickness:2px}
 @media (max-width:760px){.case-section div:has(.sc-player){grid-template-columns:1fr}.case-section .sc-player{grid-column:1;grid-row:auto;margin-top:18px}}
+/* dj-mixes: alle SoundCloud-sets ingeframed, twee naast elkaar op mobiel, drie op desktop */
+.casehead .lead{font-size:18px;line-height:1.55;max-width:56ch;margin:0;color:rgba(246,245,241,.85)}
+.mixen{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 22px;padding:clamp(32px,4vw,56px) 0}
+.mixen .kopje,.mixen .mixen-uitleg{grid-column:1/-1}
+.mixen .kopje{font:300 clamp(26px,3vw,40px)/1.1 var(--kop);margin:0;color:var(--zwart)}
+.mixen .mixen-uitleg{margin:-14px 0 0;font-size:16px;color:var(--tekstgrijs)}
+.mixen.klassiek{border-top:1px solid var(--lijn)}
+.mix{margin:0;min-width:0}
+.mix iframe{display:block;width:100%;border:0;background:var(--zwart)}
+.mix figcaption{margin-top:10px;font-size:14px;line-height:1.45;color:var(--tekstgrijs)}
+.mix .jaar{display:inline-block;margin-left:8px;font:600 11px/1 var(--tekst);letter-spacing:.16em;color:var(--zacht)}
+@media (max-width:760px){.mixen{grid-template-columns:1fr 1fr;gap:22px 14px}.mix iframe{height:200px}.mix figcaption{font-size:13px}}

@@ -1,0 +1,23 @@
+{
+  "_uitleg": "Dj-mixes van Maarten op SoundCloud, voor site/dj-mixes.html (niet in het menu; gelinkt vanaf de dj-pagina). 'url' is de SoundCloud-permalink. Volgorde = volgorde op de pagina, nieuwste bovenaan. 'klassiek': true zet de set in het blok Classic vinyl mixes, met jaartal.",
+  "sets": [
+    {"url": "https://soundcloud.com/maartenversteeg/060b985b-42cd-4846-8766-8164c6c243fd", "titel": "Live at Deep Radio"},
+    {"url": "https://soundcloud.com/maartenversteeg/live-deep-radio", "titel": "Live @ Deep Radio"},
+    {"url": "https://soundcloud.com/maartenversteeg/protechnive090224", "titel": "Loads of classics, 2 uur voor Deep Radio"},
+    {"url": "https://soundcloud.com/maartenversteeg/2-hour-liveset-for-deep-fm", "titel": "Liveset voor Deep FM Radio, 2 uur"},
+    {"url": "https://soundcloud.com/maartenversteeg/happy-2022-deephouse-disco-afro-classics-in-the-mix", "titel": "Holding you"},
+    {"url": "https://soundcloud.com/maartenversteeg/liveset-deepradio-june2021", "titel": "Deephouse, soulful house, tech-house, live bij Deep Radio"},
+    {"url": "https://soundcloud.com/maartenversteeg/pet-shop-boys-love-comes-quickly-acid-love-mix", "titel": "Pet Shop Boys, Love Comes Quickly (acid love mix)"},
+    {"url": "https://soundcloud.com/maartenversteeg/live-at-deep-radio", "titel": "Deephouse & tech-house bij Deep Radio"},
+    {"url": "https://soundcloud.com/maartenversteeg/expanded-soul", "titel": "Soulful house & Chicago classics"},
+    {"url": "https://soundcloud.com/maartenversteeg/live-q-terrace", "titel": "Afro house, soulful house, latin, live bij Q-Terrace Amsterdam"},
+    {"url": "https://soundcloud.com/maartenversteeg/some-disco-tunes", "titel": "Some disco classics"},
+    {"url": "https://soundcloud.com/maartenversteeg/not-a-demo", "titel": "Deephouse livemix"},
+    {"url": "https://soundcloud.com/maartenversteeg/urban-nites-2020-2-hour-dj-mix", "titel": "Deephouse, UK garage, tech-house, 2 uur"},
+    {"url": "https://soundcloud.com/maartenversteeg/dusting-off-old-garage-disco-records", "titel": "Soulful house, vinyl only"},
+    {"url": "https://soundcloud.com/maartenversteeg/urban-nites-pt-3-2002", "titel": "Urban Nites pt. 3", "jaar": "2001", "klassiek": true},
+    {"url": "https://soundcloud.com/maartenversteeg/urban-nites-pt-5", "titel": "Urban Nites pt. 5", "jaar": "2002", "klassiek": true},
+    {"url": "https://soundcloud.com/maartenversteeg/dj-faralley-presents-urban-nites-pt-07-2003", "titel": "Urban Nites pt. 7", "jaar": "2003", "klassiek": true},
+    {"url": "https://soundcloud.com/maartenversteeg/dj-faralley-soul-sessions-live-2005", "titel": "Liveset bij Deep FM Radio", "jaar": "2005", "klassiek": true}
+  ]
+}
