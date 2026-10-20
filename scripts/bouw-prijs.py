@@ -16,38 +16,33 @@ def waknop(tekst, bericht):
             f'<a class="mail-ook" href="mailto:maarten@hear.nl">mailen mag ook</a></span>')
 
 TITEL = "Wat bepaalt de prijs"
-KERNZIN = "Geen prijslijst, wel uitleg: waar je voor betaalt en wat de prijs omhoog of omlaag brengt"
-BESCHRIJVING = "Hoe de prijs van licht en geluid voor een event tot stand komt: apparatuur, uren, ruimte en wensen. Met uurtarieven en een dj-tarief vanaf."
+KERNZIN = "Wat de prijs bepaalt: de ruimte, het licht en de uren"
+BESCHRIJVING = "Wat de prijs van licht en geluid voor een event bepaalt: de ruimte, het licht, de uren. Met uurtarieven en een dj-tarief vanaf."
 BEELD = "img/systeem-breed.jpg"
 BEELD_ALT = "Een geluidssysteem opgebouwd in een zaal, klaar voor een event"
-INTRO = "Elk event is anders, dus een prijslijst zou je op het verkeerde been zetten. Wat we wel kunnen laten zien: hoe we rekenen, waar de prijs van afhangt en wat je daarvoor terugkrijgt."
+INTRO = "Bij een dance event betaal je vooral voor techniek. Bij een zakelijk event vooral voor uren en aandacht."
 
 # Blokken: (label, [alinea's], extra html)
 BLOKKEN = [
-    ("Twee manieren van rekenen", [
+    ("Techniek of uren", [
         "Bij dance events zit de prijs vooral in de techniek: een geluidssysteem dat bij de ruimte past, licht, en de uren om het op te bouwen en te bedienen.",
-        "Bij zakelijke events zit de prijs vooral in aandacht en uren: afstemming vooraf, een draaiboek, en handen aan de knoppen op de dag zelf. De apparatuur is er wel, maar is zelden de grootste post.",
+        "Bij zakelijke events zit de prijs vooral in uren: afstemming vooraf, een draaiboek en handen aan de knoppen op de dag zelf. De apparatuur is er wel, maar is zelden de grootste post.",
     ], "GRAFIEK"),
-    ("Prijsdrijvers bij dance events", [
+    ("Dance events", [
         "Vooral de ruimte. Een heel diepe zaal betekent extra speakers. Een forward dj-booth ook. Een heel brede zaal of meerdere zones vraagt extra delays.",
         "Verder: wil je vooral sfeerverlichting, of ook dansvloerverlichting en eventueel vintage licht, inclusief programmering en lichtjockey? En moet er een trussconstructie gebouwd worden, of kan het licht al ergens hangen?",
-        "Optioneel, ingehuurd via partners in ons netwerk: videoschermen met vj's (animaties) of videoclips (officiële muziekvideo's).",
+        "Optioneel, via partners in ons netwerk: videoschermen met vj's (animaties) of videoclips (officiële muziekvideo's).",
     ], "LINKS_LICHT"),
-    ("Prijsdrijvers bij zakelijke events", [
-        "Veelal het ontzorgd worden en aandacht voor detail. Stel: een CEO heeft een week lang een speech voorbereid, of een expert een TED-talk. En een microfoon blijkt niet opgeladen. Of een galmende zaal waarin je de helft verstaat, of een microfoon die rondzingt. Dat soort dingen maakt dat een event valt of staat.",
-        "Daarom gaan er meer uren in dan apparatuur: de afstemming over het eventconcept en de doelstelling, het samen opstellen en uitvoeren van een draaiboek, aanwezigheid ter plekke voor vragen en troubleshooting. Technici ter plekke, soms meerdere breakout rooms bij seminars, presentaties en video's die vertoond moeten worden: dat vraagt om handen aan de knoppen.",
+    ("Zakelijke events", [
+        "Stel: een CEO heeft een week lang een speech voorbereid, of een expert een TED-talk. En een microfoon blijkt niet opgeladen. Of een galmende zaal waarin je de helft verstaat, of een microfoon die rondzingt. Dat soort dingen maakt dat een event valt of staat.",
+        "Daarom gaan er meer uren in dan apparatuur: de afstemming over het eventconcept en de doelstelling, het samen opstellen en uitvoeren van een draaiboek, aanwezigheid ter plekke voor vragen en troubleshooting. Technici ter plekke, soms meerdere breakout rooms bij seminars, presentaties en video's die vertoond moeten worden.",
     ], "TABEL"),
-    ("Wat we wel noemen", [
-        "Communicatie-uren: afstemming, draaiboek en voorbereiding, 100 euro per uur.",
-        "Techniek-uren op de dag zelf: 70 tot 100 euro per uur, afhankelijk van senioriteit.",
-        "Dj: vanaf 750 euro per avond, afhankelijk van de duur van de avond en of het een professionele dj zonder gevestigde naam is of een dj met bekendheid. Aanvullende artiesten op aanvraag.",
-        "Bedragen exclusief btw.",
-    ], "TARIEVEN"),
-    ("Waarom de opbouw snel is", [
-        "Onze technologie, zoals draadloos licht, vraagt een hogere voorinvestering van ons, maar zorgt voor een efficiënte opbouwtijd. Minder uren op locatie betekent minder uren op jouw factuur.",
+    ("Tarieven", [], "TARIEVEN"),
+    ("Opbouwtijd", [
+        "Onze technologie, zoals draadloos licht, vraagt een hogere voorinvestering, maar zorgt voor een efficiënte opbouwtijd. Minder uren op locatie, minder uren op de factuur.",
     ], ""),
-    ("Wat we niet doen", [
-        "Dry hire, het verhuren van losse apparatuur zonder technicus, doen we niet. Behalve voor bestaande partners.",
+    ("Dry hire", [
+        "Losse apparatuur verhuren zonder technicus doen we niet, behalve voor bestaande partners.",
     ], ""),
 ]
 
@@ -77,22 +72,17 @@ def blok_html(label, ps, extra):
                 '<div><dt>Communicatie-uren</dt><dd><strong>100 euro</strong> per uur</dd><dd class="uitleg">Afstemming, draaiboek en voorbereiding.</dd></div>'
                 '<div><dt>Techniek-uren</dt><dd><strong>70 tot 100 euro</strong> per uur</dd><dd class="uitleg">Op de dag zelf, afhankelijk van senioriteit.</dd></div>'
                 '<div><dt>Dj</dt><dd><strong>vanaf 750 euro</strong> per avond</dd><dd class="uitleg">Afhankelijk van de duur van de avond en of het een professionele dj zonder gevestigde naam is of een dj met bekendheid. Aanvullende artiesten op aanvraag.</dd></div>'
-                '</dl><p class="klein">Bedragen exclusief btw. Apparatuur en systemen: in het voorstel, afgestemd op jouw ruimte.</p>')
+                '</dl><p class="klein">Exclusief btw.</p>')
     return f'<article class="case-section"><h2>{e(label).upper()}</h2><div>{body}</div></article>'
 
 secties = "".join(blok_html(*b) for b in BLOKKEN)
-stappen = '''<article class="case-section"><h2>ZO KOMT EEN VOORSTEL TOT STAND</h2><div><ol class="stappen3">
-<li><strong>Vertel wat je hebt en wilt.</strong> De ruimte, het aantal gasten, het programma en wat het event moet bereiken. Foto's of een plattegrond helpen.</li>
-<li><strong>Je krijgt één overzicht.</strong> Systeem, licht, uren en opties, met wat elk onderdeel doet. Geen verrassingen achteraf.</li>
-<li><strong>Locatiebezoek als het nodig is.</strong> Bij een lastige zaal of een groot programma komen we kijken en luisteren voordat we iets vastleggen.</li>
-</ol></div></article>'''
-cta = f'<section class="cta-brug"><p>Wil je weten wat jouw event ongeveer vraagt?</p>{waknop("Stuur je ruimte en wensen", "Hoi Maarten, ik wil graag weten wat licht en geluid voor mijn event ongeveer vraagt.")}</section>'
+cta = f'<section class="cta-brug"><p>Wat vraagt jouw event?</p>{waknop("Stuur je ruimte en wensen", "Hoi Maarten, ik wil graag weten wat licht en geluid voor mijn event vraagt.")}</section>'
 
 main = f'''<main class="wrap">
-<section class="casehead"><a class="crumb" href="diensten.html"><span class="sectie">Producten</span><span class="scheiding" aria-hidden="true">|</span><span class="huidig">Prijs</span></a><h1 class="kernzin">{e(KERNZIN)}</h1><p class="eyebrow page-kicker">{e(TITEL).upper()}</p></section>
+<section class="casehead"><a class="crumb" href="diensten.html"><span class="sectie">Producten</span><span class="scheiding" aria-hidden="true">|</span><span class="huidig">Wat bepaalt de prijs</span></a><h1 class="kernzin">{e(KERNZIN)}</h1><p class="eyebrow page-kicker">PRIJS</p></section>
 <figure class="detail-image"><img src="{BEELD}" alt="{e(BEELD_ALT)}"></figure>
 <section class="quick quick-breed"><p>{e(INTRO)}</p></section>
-<section class="case-sections">{secties}{stappen}</section>
+<section class="case-sections">{secties}</section>
 {cta}
 <nav class="verwijzingen" aria-label="Verder"><a href="diensten.html">Alle producten en diensten →</a><a href="cases.html">Bekijk voorbeelden uit onze cases →</a></nav>
 </main>'''
