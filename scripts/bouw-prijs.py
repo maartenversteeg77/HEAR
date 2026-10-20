@@ -30,7 +30,7 @@ AANBOD = [
     # (naam, link, wat is het, voor wie, wat heb je eraan, wat kost het (html))
     ("Dry hire", "diensten.html", "Huur van losse apparatuur, zonder technicus.", "Alleen voor relaties met eigen professionele technici.",
      "Snel toegang tot gear van de nieuwste generatie, tegen scherpe prijzen.", e("Op aanvraag.") + ' <a href="diensten.html">Bekijk het assortiment →</a>'),
-    ("Geluid en dj-set", "high-end-audio.html", "Geluidssysteem van RCF of Brooklyn Audio en desgewenst een rider-proof booth met CDJ-3000X, V10 of Euphonia en monitoring. Met transport, op- en afbouw en bediening.", "Elk type event, tot 1.500 personen.",
+    ("Geluid en dj-set", "high-end-audio.html", "Hoogwaardig geluidssysteem en een rider-proof dj-booth met de laatste generatie dj-gear en monitoring. Met transport, op- en afbouw en bediening.", "Elk type event, tot 1.500 personen.",
      "De nieuwste generatie versterking en DSP, nooit tweedehands. Helder tot achterin de zaal, zonder ruis of vervorming. Een dj komt binnen en kan meteen draaien.", 'Van <strong class="bedrag">500 euro</strong> voor een compacte cocktailparty tot <strong class="bedrag">1.500 euro</strong> voor de grootste dance stack in ons assortiment, met uitgebreide dj-booth en monitoring.'),
     ("Licht", "diensten.html", "Drie categorieën: sfeerverlichting, dansvloerverlichting en 90's vintage licht. Met transport, opbouw en programmering.", "Presentaties, zakelijke events en dansvloeren.",
      "Veelal draadloos: korte opbouw, geen kabels in zicht, geen versterkte stroom nodig.", e("Op aanvraag.") + ' <a href="diensten.html">Bekijk de drie categorieën →</a>'),
