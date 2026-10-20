@@ -16,13 +16,13 @@ TITEL = "Wat kost audiovisuele ondersteuning van een evenement?"
 BESCHRIJVING = "Wat audiovisuele ondersteuning van een evenement kost: huur van apparatuur en uren. Met de uurtarieven van technici en projectmanagement en het verschil tussen dance events en zakelijke events."
 BEELD = "img/systeem-breed.jpg"
 BEELD_ALT = "Een geluidssysteem opgebouwd in een zaal, klaar voor een event"
-INTRO = ["Dry hire, het verhuren van losse apparatuur, doen we niet. Behalve voor bestaande partners die weten hoe ze onze spullen gebruiken. Je neemt dus een full service af: advies, transport, op- en afbouw en bediening.",
-         "De kosten bestaan daarmee uit twee elementen: de huur van de apparatuur en de uren."]
+INTRO = ["Bij HEAR verhuren we apparatuur alleen los aan relaties met eigen technici. Voor andere klanten is ons aanbod full service: advies, transport, op- en afbouw en bediening zijn inbegrepen.",
+         "De prijs bestaat daarom uit twee delen: de apparatuur en de uren."]
 
 P = lambda t: f"<p>{e(t)}</p>"
 blok_apparatuur = "".join(P(t) for t in [
-    "Voor apparatuur rekenen we in de markt gangbare huurprijzen in dezelfde categorie. Wat je daarvoor krijgt: hoogwaardige, storingsvrije apparatuur van de nieuwste generatie, modulair inzetbaar. Wij volgen de technische ontwikkelingen en vernieuwen ons assortiment regelmatig. Maakt de technologie in een categorie een sprong, dan vervangen we de apparatuur in die categorie. Met RCF en Brooklyn Audio zitten we op de laatste stand van versterking en DSP; alle dj-gear is laatste generatie en bij nieuwe releases gaan we daarin mee. Wij kopen ook geen tweedehands gear, omdat draaiuren invloed hebben op ruis en vervorming.",
-    "Wat ook de prijs bepaalt, is welke lichtcategorieën voor het event nodig zijn, of er trussing nodig is en welk geluid. Wij kunnen daarover adviseren. Via relaties in ons netwerk is dit ook uit te breiden.",
+    "Voor apparatuur rekenen we huurprijzen die gangbaar zijn in die categorie. Wat je daarvoor krijgt: hoogwaardige, storingsvrije apparatuur van de nieuwste generatie, modulair inzetbaar. We volgen de techniek en vervangen apparatuur zodra de technologie in een categorie een sprong maakt. Met RCF en Brooklyn Audio zitten we op de laatste stand van versterking en DSP; alle dj-gear is laatste generatie en bij nieuwe releases gaan we daarin mee. Tweedehands kopen we niet: draaiuren hoor je terug in ruis en vervorming.",
+    "Verder bepaalt de prijs welk licht het event nodig heeft, of er truss nodig is en welk geluid. Daar adviseren we over; via ons netwerk is het aanbod uit te breiden.",
     "Bij dance events is vooral de ruimte bepalend. Een heel diepe zaal betekent extra speakers. Een forward dj-booth ook. Een heel brede zaal of meerdere zones vraagt extra delays. En moet er een trussconstructie gebouwd worden, of kan het licht al ergens hangen?",
 ]) + ('<p class="dj-links"><a href="diensten.html">Kijk alvast welke producten en diensten wij in huis hebben →</a>'
       '<a href="atmospheric-lighting.html">Sfeerverlichting →</a><a href="dancefloor-lighting.html">Dansvloerverlichting →</a><a href="vintage-lighting.html">90\'s vintage licht →</a><a href="high-end-audio.html">Geluidssystemen →</a></p>')
@@ -34,21 +34,21 @@ blok_uren = ('<dl class="tarieven">'
              '</dl><p class="klein">Bedragen exclusief btw.</p>'
              + P("Waarom die uren tellen: stel, een CEO heeft een week lang een speech voorbereid, of een expert een TED-talk. En een microfoon blijkt niet opgeladen. Of een galmende zaal waarin je de helft verstaat, of een microfoon die rondzingt. Dat soort dingen maakt dat een event valt of staat. Technici ter plekke, soms meerdere breakout rooms bij seminars, presentaties en video's die vertoond moeten worden: dat vraagt om handen aan de knoppen."))
 
-blok_verschil = P("Doorgaans, maar dit hoeft niet zo te zijn, kent een dance event hogere eisen aan grote (dure) systemen en technici en minder aan communicatie en projectmanagement. Bij zakelijke evenementen is het vaak andersom: meer communicatie- en coördinatietijd, met passende techniek die hoge eisen stelt aan verstaanbaarheid maar minder aan volume en belasting.") + '''<figure class="verdeling" aria-label="Waar de prijs in zit, indicatief">
+blok_verschil = P("Meestal vraagt een dance event meer van grote (dure) systemen en technici, en minder van communicatie en projectmanagement. Bij zakelijke events is het vaak andersom: meer afstemming en coördinatie, en techniek die hoge eisen stelt aan verstaanbaarheid, maar minder aan volume.") + '''<figure class="verdeling" aria-label="Waar de prijs in zit, indicatief">
 <div class="rij"><span class="naam">Dance events</span><span class="balk"><i class="techniek" style="--w:68%">techniek</i><i class="uren" style="--w:32%">uren</i></span></div>
 <div class="rij"><span class="naam">Zakelijke events</span><span class="balk"><i class="techniek" style="--w:35%">techniek</i><i class="uren" style="--w:65%">uren</i></span></div>
 <figcaption>Indicatief: de verhouding verschilt per event.</figcaption></figure>'''
 
 blok_efficiency = "".join(P(t) for t in [
-    "Er zit efficiency in twee dingen. Techniek die de opbouwtijd verkleint, zoals draadloos licht. En in sommige gevallen het in één hand brengen van communicatie en licht en geluid, óf van licht en geluid en dj's en artiesten.",
-    "Dit stelt ons in staat om voor high-end gear en ondersteuning een concurrerende prijs te vragen.",
+    "Efficiënt zijn we op twee manieren. Met techniek die de opbouwtijd verkort, zoals draadloos licht. En door communicatie en licht en geluid in één hand te houden, of licht en geluid en dj's en artiesten.",
+    "Daardoor kunnen we voor high-end gear en ondersteuning een concurrerende prijs vragen.",
 ])
 
 def blok(label, body):
     return f'<article class="case-section"><h2>{e(label).upper()}</h2><div>{body}</div></article>'
 
-secties = blok("Apparatuur", blok_apparatuur) + blok("Uren", blok_uren) + blok("Dance of zakelijk", blok_verschil) + blok("Efficiency", blok_efficiency)
-cta = f'<section class="cta-brug"><p class="lang">Wij werken niet met een intakeformulier, omdat wij graag vrijblijvend meedenken over de invulling en willen horen wat nodig is. Digitaal of op locatie.</p>{waknop("Vraag een intakegesprek aan", "Hoi Maarten, ik wil graag een intakegesprek over licht en geluid voor mijn event.")}</section>'
+secties = blok("Apparatuur", blok_apparatuur) + blok("Uren", blok_uren) + blok("Dance of zakelijk", blok_verschil) + blok("Efficiëntie", blok_efficiency)
+cta = f'<section class="cta-brug"><p class="lang">Geen intakeformulier: we horen liever in een gesprek wat je nodig hebt. Digitaal of op locatie.</p>{waknop("Vraag een intakegesprek aan", "Hoi Maarten, ik wil graag een intakegesprek over licht en geluid voor mijn event.")}</section>'
 
 main = f'''<main class="wrap">
 <section class="casehead"><a class="crumb" href="diensten.html"><span class="sectie">Producten</span><span class="scheiding" aria-hidden="true">|</span><span class="huidig">Wat kost het</span></a><h1 class="kernzin">{e(TITEL)}</h1><p class="eyebrow page-kicker">PRIJS</p></section>
