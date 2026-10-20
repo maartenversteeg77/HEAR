@@ -390,6 +390,34 @@
       [
         "<p>High End Audio Rental · Amsterdam</p>",
         "<p>High End Audio Rental · Amsterdam</p>"
+      ],
+      [
+        "<section class=\"strook\" aria-label=\"Voor wie en wat\">",
+        "<section class=\"strook\" aria-label=\"Who and what\">"
+      ],
+      [
+        "<a href=\"corporate.html\">Zakelijke events</a>",
+        "<a href=\"corporate.html\">Business events</a>"
+      ],
+      [
+        "<a href=\"venue-owners.html\">AV voor venues</a>",
+        "<a href=\"venue-owners.html\">AV for venues</a>"
+      ],
+      [
+        "<a href=\"high-end-audio.html\">Geluidssystemen</a>",
+        "<a href=\"high-end-audio.html\">Sound systems</a>"
+      ],
+      [
+        "<a href=\"booth-dj-gear.html\">Dj-gear</a>",
+        "<a href=\"booth-dj-gear.html\">DJ gear</a>"
+      ],
+      [
+        "<a href=\"atmospheric-lighting.html\">Licht</a>",
+        "<a href=\"atmospheric-lighting.html\">Lighting</a>"
+      ],
+      [
+        "<a href=\"artiesten.html\">Dj's</a>",
+        "<a href=\"artiesten.html\">DJs</a>"
       ]
     ],
     "cases.html": [
