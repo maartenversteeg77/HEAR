@@ -1,6 +1,6 @@
-"""Bouwt site/prijs.html: wat kost audiovisuele ondersteuning van een evenement (geen prijslijst, wel uurtarieven).
-Kop en voet uit index.html, teksten hieronder (Maarten, 20 okt 2026). Elk blok: links signaalwoord, rechts toelichting.
-Engels via content/en.json (paginas → prijs.html). Draaien vóór bouw-en.py."""
+"""Bouwt site/prijs.html: wat kost audiovisuele ondersteuning van een evenement.
+Terug naar de basis (Maarten, 21 okt 2026): zakelijk als deel van het eventbudget, dance als marktconforme huur, plus uurtarieven.
+Elk blok: links signaalwoord, rechts toelichting. Engels via content/en.json (paginas → prijs.html). Draaien vóór bouw-en.py."""
 import pathlib, html, urllib.parse
 root = pathlib.Path(__file__).resolve().parent.parent
 site = root / "site"
@@ -14,55 +14,48 @@ def waknop(tekst, bericht):
             f'<a class="mail-ook" href="mailto:maarten@hear.nl">mailen mag ook</a></span>')
 
 TITEL = "Wat kost audiovisuele ondersteuning van een evenement?"
-BESCHRIJVING = "Wat audiovisuele ondersteuning van een evenement kost: techniek en dienstverlening. Met de uurtarieven van technici en projectmanagement en het verschil tussen dance events en zakelijke events."
+BESCHRIJVING = "Wat licht en geluid voor een evenement kost: bij zakelijke events 10 tot 20 procent van het eventbudget, bij dance events een gangbare huurprijs. Met uurtarieven en dj-tarief."
 BEELD = "img/systeem-breed.jpg"
 BEELD_ALT = "Een geluidssysteem opgebouwd in een zaal, klaar voor een event"
-INTRO = ["Elk event is maatwerk, dus een prijs maken we altijd op aanvraag. Waar het kan, vind je op deze pagina een indicatie.",
-         "De prijs bestaat uit twee delen: techniek en dienstverlening, van voorbereiding tot technici ter plekke."]
+INTRO = ["Elk event is maatwerk, dus een prijs maken we altijd op aanvraag. Waar het kan, vind je op deze pagina een indicatie."]
 
 def regels(rijen):
     return '<dl class="regels">' + "".join(f'<div><dt>{e(k)}</dt><dd>{v}</dd></div>' for k, v in rijen) + '</dl>'
-LINKS = ('<span class="dj-links"><a href="diensten.html">Producten en diensten →</a><a href="atmospheric-lighting.html">Sfeerverlichting →</a>'
-         '<a href="dancefloor-lighting.html">Dansvloerverlichting →</a><a href="vintage-lighting.html">90\'s vintage licht →</a><a href="high-end-audio.html">Geluidssystemen →</a></span>')
-prijs = lambda bedrag, eenheid: f'<strong class="bedrag">{e(bedrag)}</strong> <span class="eenheid">{e(eenheid)}</span><br>'
-
-AANBOD = [
-    # (naam, link, wat is het, voor wie, wat heb je eraan, wat kost het (html))
-    ("Dry hire", "diensten.html", "Huur van losse apparatuur, zonder technicus.", "Alleen voor relaties met eigen professionele technici.",
-     "Snel toegang tot gear van de nieuwste generatie, tegen scherpe prijzen.", e("Op aanvraag.") + ' <a href="diensten.html">Bekijk het assortiment →</a>'),
-    ("Geluid en dj-set", "high-end-audio.html", "Hoogwaardig geluidssysteem en een rider-proof dj-booth met de laatste generatie dj-gear en monitoring. Met transport, op- en afbouw en bediening.", "Elk type event, tot 1.500 personen.",
-     "De nieuwste generatie versterking en DSP, nooit tweedehands. Helder tot achterin de zaal, zonder ruis of vervorming. Een dj komt binnen en kan meteen draaien.", 'Van <strong class="bedrag">500 euro</strong> voor een compacte cocktailparty tot <strong class="bedrag">1.500 euro</strong> voor de grootste dance stack in ons assortiment, met uitgebreide dj-booth en monitoring.'),
-    ("Licht", "diensten.html", "Drie categorieën: sfeerverlichting, dansvloerverlichting en 90's vintage licht. Met transport, opbouw en programmering.", "Presentaties, zakelijke events en dansvloeren.",
-     "Veelal draadloos: korte opbouw, geen kabels in zicht, geen versterkte stroom nodig.", e("Op aanvraag.") + ' <a href="diensten.html">Bekijk de drie categorieën →</a>'),
-    ("Technicus", "high-end-audio.html", "Licht- of geluidstechnicus, van opbouw tot afbouw.", "Elk event met full service.",
-     "Hij of zij heeft oog voor detail: of het geluid niet rondzingt, de microfoons geladen zijn en het draaiboek klopt. Ook met meerdere zalen tegelijk.", prijs("70 tot 100 euro", "per uur") + e("Afhankelijk van rol en ervaring.")),
-    ("Communicatieadvies en projectmanagement", "corporate.html", "Meedenken over het concept, doorvertaling naar AV, draaiboek, aanspreekpunt op de dag.", "Vooral zakelijke events.",
-     "Het concept van het event vertaald naar licht en geluid, en een vast aanspreekpunt dat zowel de communicatie als de techniek kent.", prijs("90 tot 120 euro", "per uur")),
-    ("Aanvullende diensten voor zakelijk evenement of congres", "corporate.html", "Zoals online uitzending, videoproductie, online stemmen of quiz, en advies en copywriting rondom programma en speeches.", "Congressen, seminars en zakelijke events.",
-     "Alles rond het programma via één partij, deels met partners uit ons netwerk.", e("Op aanvraag.")),
-    ("Dj", "artiesten.html", "Maarten of een dj uit ons netwerk.", "Zakelijke, privé- en dance events.",
-     "Een dj die een avond kan opbouwen, van achtergrond bij de borrel tot een volle dansvloer. Muziek en techniek bij één partij.", prijs("vanaf 750 euro", "per avond") + e("Afhankelijk van de duur van de avond en de bekendheid van de dj.")),
-    ("Vocalisten en instrumentalisten", "artiesten.html", "Saxofonist, zangeres of percussie bij de dj.", "Events waar live muziek iets toevoegt.",
-     "Live muziek bij een dj-set geeft een event iets dat mensen onthouden.", e("Op aanvraag.")),
-]
-KOLOMMEN = ["Wat is het", "Voor wie", "Wat heb je eraan", "Wat kost het"]
-rijen = "".join(
-    f'<tr><th scope="row"><a href="{l}">{e(n)}</a></th>' + "".join(f'<td data-kop="{e(k)}">{v}</td>' for k, v in zip(KOLOMMEN, [e(a), e(b), e(c), d])) + '</tr>'
-    for n, l, a, b, c, d in AANBOD)
-tabel = ('<div class="tabelwrap aanbod"><table class="aanbodtabel"><thead><tr><th scope="col">Onderdeel</th>' + "".join(f'<th scope="col">{e(k)}</th>' for k in KOLOMMEN)
-         + f'</tr></thead><tbody>{rijen}</tbody></table></div><p class="klein">Alle bedragen exclusief btw.</p>')
+b = lambda t: f'<strong class="bedrag">{e(t)}</strong>'
 
 BLOKKEN = [
+    ("Zakelijke events", [
+        ("Richtlijn", b("10 tot 20 procent") + e(" van het eventbudget.")),
+        ("Basis", e("Rond 10 procent: licht, geluid en sprekersversterking.")),
+        ("Uitgebreid", e("Rond 20 procent: met aanvullende dienstverlening, zoals een online uitzending.")),
+        ("Ook bepalend", e("Hoe complex het draaiboek is, hoeveel ruimtes er zijn en hoeveel technici er nodig zijn.")),
+    ]),
+    ("Dance events", [
+        ("Richtlijn", e("Een huurprijs die gebruikelijk is in de markt voor vergelijkbare apparatuur.")),
+        ("Wat je krijgt", e("Apparatuur van de laatste generatie, per event zorgvuldig gekozen en samengesteld voor de ruimte en het type event.")),
+    ]),
+    ("Tarieven", [
+        ("Technicus licht of geluid", b("70 tot 100 euro") + e(" per uur")),
+        ("Communicatiespecialist of projectmanagement", b("90 tot 120 euro") + e(" per uur")),
+        ("Dj", b("vanaf 750 euro") + e(" per avond")),
+        ("Dj met (inter)nationale bekendheid", e("Op aanvraag")),
+        ("Saxofonist, vocalist of percussionist", e("Op aanvraag")),
+        ("Btw", e("Alle bedragen exclusief btw.")),
+    ]),
 ]
+LIJST = ["de grootte, akoestiek en locatie van de ruimte",
+         "de grootte van de lichtshow en of er een trussconstructie nodig is",
+         "omvang en complexiteit van het programma: meerdere ruimtes, presentaties, video-instarts of andere zaken die vragen om aanwezigheid",
+         "de duur: hoe lang het event loopt en of het over meerdere dagen gaat"]
+INVLOED = ('<article class="case-section"><h2>WELKE ELEMENTEN HEBBEN INVLOED OP DE PRIJS?</h2><div><ul>' + "".join(f"<li>{e(x)}</li>" for x in LIJST) + '</ul>'
+           + '<p class="knoprij">' + waknop("Vraag een intakegesprek aan", "Hoi Maarten, ik wil graag een intakegesprek over licht en geluid voor mijn event.") + '</p></div></article>')
 
-INVLOED = '<article class="case-section"><h2>WELKE ELEMENTEN HEBBEN INVLOED OP DE PRIJS?</h2><div><ul><li>de grootte, akoestiek en locatie van de ruimte</li><li>de grootte van de lichtshow en of er een trussconstructie nodig is</li><li>omvang en complexiteit van het programma: meerdere ruimtes, presentaties, video-instarts of andere zaken die vragen om aanwezigheid</li><li>de duur: hoe lang het event loopt en of het over meerdere dagen gaat</li></ul>' + '<p class="knoprij">' + waknop("Vraag een intakegesprek aan", "Hoi Maarten, ik wil graag een intakegesprek over licht en geluid voor mijn event.") + '</p></div></article>'
-secties = INVLOED + "".join(f'<article class="case-section"><h2>{e(l).upper()}</h2><div>{regels(r)}</div></article>' for l, r in BLOKKEN)
+secties = "".join(f'<article class="case-section"><h2>{e(l).upper()}</h2><div>{regels(r)}</div></article>' for l, r in BLOKKEN) + INVLOED
 
 main = f'''<main class="wrap prijspagina">
 <section class="casehead"><a class="crumb" href="diensten.html"><span class="sectie">Producten</span><span class="scheiding" aria-hidden="true">|</span><span class="huidig">Wat kost het</span></a><h1 class="kernzin">{e(TITEL)}</h1><p class="eyebrow page-kicker">PRIJS</p></section>
 <figure class="detail-image"><img src="{BEELD}" alt="{e(BEELD_ALT)}"></figure>
 <section class="quick quick-breed">{"".join(f"<p>{e(t)}</p>" for t in INTRO)}</section>
-<section class="aanbod-sectie">{tabel}</section>
 <section class="case-sections">{secties}</section>
 <nav class="verwijzingen" aria-label="Verder"><a href="diensten.html">Alle producten en diensten →</a><a href="cases.html">Bekijk voorbeelden uit onze cases →</a></nav>
 </main>'''

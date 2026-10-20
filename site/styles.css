@@ -461,3 +461,4 @@ em,i,cite,address,dfn,var{font-style:normal}
 /* prijs.html: één lettergrootte voor alle lopende tekst in tabel, lijst en regels */
 .prijspagina .case-section ul,.prijspagina .case-section li,.prijspagina .regels dd,.prijspagina .aanbodtabel td,.prijspagina .aanbodtabel .bedrag,.prijspagina .aanbodtabel .eenheid{font-size:15px;line-height:1.6}
 .prijspagina .case-section li{margin-bottom:6px}
+.prijspagina .regels .bedrag{font:600 15px/1.6 var(--tekst);color:var(--zwart)}
