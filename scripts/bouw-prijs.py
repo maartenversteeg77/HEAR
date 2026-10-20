@@ -17,8 +17,8 @@ TITEL = "Wat kost audiovisuele ondersteuning van een evenement?"
 BESCHRIJVING = "Wat audiovisuele ondersteuning van een evenement kost: techniek en dienstverlening. Met de uurtarieven van technici en projectmanagement en het verschil tussen dance events en zakelijke events."
 BEELD = "img/systeem-breed.jpg"
 BEELD_ALT = "Een geluidssysteem opgebouwd in een zaal, klaar voor een event"
-INTRO = ["Bij HEAR verhuren we apparatuur alleen los aan relaties met eigen technici. Voor andere klanten is ons aanbod full service: advies, transport, op- en afbouw en bediening zijn inbegrepen.",
-         "De prijs bestaat daarom uit twee delen: techniek en dienstverlening, van voorbereiding tot technici ter plekke."]
+INTRO = ["Elk event is maatwerk, dus een prijs maken we altijd op aanvraag. Waar het kan, vind je op deze pagina een indicatie.",
+         "De prijs bestaat uit twee delen: techniek en dienstverlening, van voorbereiding tot technici ter plekke."]
 
 def regels(rijen):
     return '<dl class="regels">' + "".join(f'<div><dt>{e(k)}</dt><dd>{v}</dd></div>' for k, v in rijen) + '</dl>'
