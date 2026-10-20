@@ -434,3 +434,24 @@ em,i,cite,address,dfn,var{font-style:normal}
 .regels .verdeling .rij{display:grid;grid-template-columns:72px 1fr;gap:12px;align-items:center;margin:0 0 10px}
 .regels .verdeling .bijschrift{display:block;font-size:13px;color:var(--zacht)}
 @media (max-width:760px){.regels>div{grid-template-columns:1fr;gap:4px}}
+/* prijs.html: aanbodtabel; op mobiel als kaarten */
+.aanbod-sectie{padding:clamp(28px,4vw,48px) 0 clamp(10px,2vw,20px);border-top:1px solid var(--zwart)}
+.tabelwrap.aanbod{max-width:none;margin:0}
+.aanbodtabel{border-collapse:collapse;width:100%;font-size:14.5px;line-height:1.55;color:var(--tekstgrijs)}
+.aanbodtabel th,.aanbodtabel td{text-align:left;vertical-align:top;padding:16px 18px 16px 0;border-top:1px solid var(--lijn)}
+.aanbodtabel thead th{border-top:0;padding-top:0;font:600 11px/1.5 var(--tekst);letter-spacing:.16em;text-transform:uppercase;color:var(--zacht)}
+.aanbodtabel tbody th{font:400 19px/1.25 var(--kop);color:var(--zwart);width:16%}
+.aanbodtabel tbody th a{color:inherit;text-decoration:none;border-bottom:1px solid var(--lijn)}
+.aanbodtabel tbody th a:hover{border-color:var(--koraal)}
+.aanbodtabel td:last-child{width:19%}
+.aanbodtabel td a{color:var(--zwart);text-underline-offset:3px}
+.aanbodtabel .bedrag{font:300 22px/1.15 var(--kop);color:var(--zwart)}
+.aanbodtabel .eenheid{font-size:13px;color:var(--zacht)}
+.aanbod-sectie .klein{margin:14px 0 0;font-size:13px;color:var(--zacht)}
+@media (max-width:900px){
+  .aanbodtabel thead{display:none}
+  .aanbodtabel,.aanbodtabel tbody,.aanbodtabel tr,.aanbodtabel th,.aanbodtabel td{display:block;width:auto!important}
+  .aanbodtabel tr{border-top:1px solid var(--zwart);padding:16px 0 6px}
+  .aanbodtabel th,.aanbodtabel td{border:0;padding:0 0 10px}
+  .aanbodtabel td:before{content:attr(data-kop);display:block;font:600 10.5px/1.5 var(--tekst);letter-spacing:.14em;text-transform:uppercase;color:var(--zacht);margin-bottom:2px}
+}

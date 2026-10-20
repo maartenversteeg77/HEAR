@@ -26,21 +26,39 @@ LINKS = ('<span class="dj-links"><a href="diensten.html">Producten en diensten �
          '<a href="dancefloor-lighting.html">Dansvloerverlichting →</a><a href="vintage-lighting.html">90\'s vintage licht →</a><a href="high-end-audio.html">Geluidssystemen →</a></span>')
 prijs = lambda bedrag, eenheid: f'<strong class="bedrag">{e(bedrag)}</strong> <span class="eenheid">{e(eenheid)}</span><br>'
 
+AANBOD = [
+    # (naam, link, wat is het, voor wie, wat heb je eraan, wat kost het (html))
+    ("Dry hire", "diensten.html", "Huur van losse apparatuur, zonder technicus.", "Alleen voor relaties met eigen professionele technici.",
+     "Snel toegang tot gear van de nieuwste generatie, tegen scherpe prijzen.", e("Op aanvraag.") + ' <a href="diensten.html">Bekijk het assortiment →</a>'),
+    ("Geluid", "high-end-audio.html", "Geluidssysteem van RCF of Brooklyn Audio, met transport, op- en afbouw en bediening.", "Elk type event, tot 1.500 personen.",
+     "De nieuwste generatie versterking en DSP, nooit tweedehands. Helder tot achterin de zaal, zonder ruis of vervorming.", e("Gangbare huurprijs in de categorie, afhankelijk van de ruimte.")),
+    ("Licht", "atmospheric-lighting.html", "Sfeer-, dansvloer- en vintage licht, met transport, opbouw en programmering.", "Presentaties, zakelijke events en dansvloeren.",
+     "Veelal draadloos: korte opbouw, geen kabels in zicht, geen versterkte stroom nodig.", e("Gangbare huurprijs in de categorie, afhankelijk van het licht en of er truss nodig is.")),
+    ("Booth en dj-gear", "booth-dj-gear.html", "Rider-proof booth met CDJ-3000X, V10 of Euphonia en monitoring.", "Dance events en dj's met een rider.",
+     "Een dj komt binnen en kan meteen draaien. Laatste generatie; bij nieuwe releases gaan we mee.", e("Gangbare huurprijs in de categorie.")),
+    ("Technicus", "high-end-audio.html", "Licht- of geluidstechnicus, van opbouw tot afbouw.", "Elk event met full service.",
+     "Handen aan de knoppen: geen rondzingende microfoon, een sprekerswissel zonder haperen, meerdere zalen tegelijk.", prijs("70 tot 100 euro", "per uur") + e("Afhankelijk van rol en ervaring.")),
+    ("Communicatieadvies en projectmanagement", "corporate.html", "Meedenken over het concept, doorvertaling naar AV, draaiboek, aanspreekpunt op de dag.", "Vooral zakelijke events.",
+     "Iemand die zowel de communicatie als de techniek begrijpt. Zo gaat de speech waar de CEO een week aan werkte niet verloren aan een lege microfoon.", prijs("90 tot 120 euro", "per uur")),
+    ("Dj", "artiesten.html", "Maarten of een dj uit ons netwerk.", "Zakelijke, privé- en dance events.",
+     "Een dj die een avond kan opbouwen, van achtergrond bij de borrel tot een volle dansvloer. Muziek en techniek bij één partij.", prijs("vanaf 750 euro", "per avond") + e("Afhankelijk van de duur van de avond en de bekendheid van de dj.")),
+    ("Vocalisten en instrumentalisten", "artiesten.html", "Saxofonist, zangeres of percussie bij de dj.", "Events waar live muziek iets toevoegt.",
+     "Live muziek bij een dj-set geeft een event iets dat mensen onthouden.", e("Op aanvraag.")),
+    ("Advies en AV as a service", "av-as-a-service.html", "Merkonafhankelijk advies of licht en geluid als abonnement.", "Eventlocaties.",
+     "Een systeem dat bij de ruimte past, zonder grote aanschaf of zorgen over onderhoud.", e("Advies op aanvraag; abonnement per maand, minimaal 36 maanden.")),
+]
+KOLOMMEN = ["Wat is het", "Voor wie", "Wat heb je eraan", "Wat kost het"]
+rijen = "".join(
+    f'<tr><th scope="row"><a href="{l}">{e(n)}</a></th>' + "".join(f'<td data-kop="{e(k)}">{v}</td>' for k, v in zip(KOLOMMEN, [e(a), e(b), e(c), d])) + '</tr>'
+    for n, l, a, b, c, d in AANBOD)
+tabel = ('<div class="tabelwrap aanbod"><table class="aanbodtabel"><thead><tr><th scope="col">Onderdeel</th>' + "".join(f'<th scope="col">{e(k)}</th>' for k in KOLOMMEN)
+         + f'</tr></thead><tbody>{rijen}</tbody></table></div><p class="klein">Alle bedragen exclusief btw.</p>')
+
 BLOKKEN = [
-    ("Apparatuur", [
-        ("Huurprijs", e("Gangbaar in de categorie.")),
-        ("Kwaliteit", e("Hoogwaardige, storingsvrije apparatuur van de nieuwste generatie, modulair inzetbaar.")),
-        ("Vernieuwing", e("We volgen de techniek en vervangen apparatuur zodra de technologie in een categorie een sprong maakt. Met RCF en Brooklyn Audio zitten we op de laatste stand van versterking en DSP; alle dj-gear is laatste generatie en bij nieuwe releases gaan we daarin mee.")),
-        ("Geen tweedehands", e("Draaiuren hoor je terug in ruis en vervorming.")),
-        ("Ruimte", e("Bij dance events vooral bepalend. Een heel diepe zaal betekent extra speakers, een forward dj-booth ook. Een heel brede zaal of meerdere zones vraagt extra delays.")),
-        ("Licht en truss", e("Welk licht het event nodig heeft, en of er een trussconstructie gebouwd moet worden of het licht al ergens kan hangen. Daar adviseren we over; via ons netwerk is het aanbod uit te breiden.") + LINKS),
-    ]),
-    ("Uren", [
-        ("Technicus licht of geluid", prijs("70 tot 100 euro", "per uur") + e("Afhankelijk van rol en ervaring.")),
-        ("Communicatieadvies of projectmanagement", prijs("90 tot 120 euro", "per uur") + e("Meedenken over het concept, doorvertaling naar AV, ontwikkelen van een draaiboek, aanspreekpunt op een bedrijfsevent.")),
-        ("Dj", prijs("vanaf 750 euro", "per avond") + e("Afhankelijk van de duur van de avond en of het een professionele dj zonder gevestigde naam is of een dj met bekendheid. Aanvullende artiesten op aanvraag.")),
-        ("Waarom uren tellen", e("Stel, een CEO heeft een week lang een speech voorbereid, of een expert een TED-talk. En een microfoon blijkt niet opgeladen. Of een galmende zaal waarin je de helft verstaat, of een microfoon die rondzingt. Dat soort dingen maakt dat een event valt of staat. Technici ter plekke, soms meerdere breakout rooms, presentaties en video's: dat vraagt om handen aan de knoppen.")),
-        ("Btw", e("Alle bedragen exclusief btw.")),
+    ("Wat de prijs beïnvloedt", [
+        ("Ruimte", e("Een heel diepe zaal betekent extra speakers, een forward dj-booth ook. Een heel brede zaal of meerdere zones vraagt extra delays.")),
+        ("Licht en truss", e("Welk licht het event nodig heeft, en of er een trussconstructie gebouwd moet worden of het licht al ergens kan hangen.")),
+        ("Programma", e("Meerdere breakout rooms, sprekers, presentaties en video's vragen meer technici en meer voorbereiding.")),
     ]),
     ("Dance of zakelijk", [
         ("Dance events", e("Meestal meer grote (dure) systemen en technici, minder communicatie en projectmanagement.")),
@@ -49,11 +67,6 @@ BLOKKEN = [
                        '<span class="rij"><span class="naam">Dance</span><span class="balk"><i class="techniek" style="--w:68%">techniek</i><i class="uren" style="--w:32%">uren</i></span></span>'
                        '<span class="rij"><span class="naam">Zakelijk</span><span class="balk"><i class="techniek" style="--w:35%">techniek</i><i class="uren" style="--w:65%">uren</i></span></span>'
                        '<span class="bijschrift">Indicatief; het hoeft niet zo te zijn.</span></span>'),
-    ]),
-    ("Efficiëntie", [
-        ("Draadloos licht", e("Techniek die de opbouwtijd verkort.")),
-        ("Eén hand", e("Communicatie en licht en geluid bij één partij, of licht en geluid en dj's en artiesten.")),
-        ("Gevolg", e("Een concurrerende prijs voor high-end gear en ondersteuning.")),
     ]),
 ]
 
@@ -64,6 +77,7 @@ main = f'''<main class="wrap">
 <section class="casehead"><a class="crumb" href="diensten.html"><span class="sectie">Producten</span><span class="scheiding" aria-hidden="true">|</span><span class="huidig">Wat kost het</span></a><h1 class="kernzin">{e(TITEL)}</h1><p class="eyebrow page-kicker">PRIJS</p></section>
 <figure class="detail-image"><img src="{BEELD}" alt="{e(BEELD_ALT)}"></figure>
 <section class="quick quick-breed">{"".join(f"<p>{e(t)}</p>" for t in INTRO)}</section>
+<section class="aanbod-sectie">{tabel}</section>
 <section class="case-sections">{secties}</section>
 {cta}
 <nav class="verwijzingen" aria-label="Verder"><a href="diensten.html">Alle producten en diensten →</a><a href="cases.html">Bekijk voorbeelden uit onze cases →</a></nav>
