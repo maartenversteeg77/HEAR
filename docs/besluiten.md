@@ -308,3 +308,7 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - 19 okt 2026: Homepage-zin: "een zakelijk event in een belevenis" (was "een event"); de drie zinsdelen zijn de drie doelgroepen. EN: "a business event into an experience".
 - Idee voor later (als er eigen footage is): headerbeeld homepage wisselt per doelgroep, maar niet als carrousel; de drie zinsdelen worden de navigatie (hover/tik = beeld, klik = Voor wie-pagina).
 - 19 okt 2026: hear.nl live (nameservers Cloudflare, custom domains hear.nl + www; workers.dev en www sturen door via src/index.js). WhatsApp-knoppen gekoppeld aan +31 6 24560220. Open: Email Routing maarten@hear.nl → iCloud, DNSSEC via Cloudflare, Search Console.
+
+## 2026-10-20 · Strook onder de hero
+- Homepage: onder de hero een zwarte strook naar het visitekaartje: links de doelgroepen (Zakelijke events · Dance events · AV voor venues), rechts het aanbod in turquoise (Geluidssystemen · Dj-gear · Licht · Dj's · Playlists). Alle items klikbaar naar de Voor wie- en productpagina's. NL en EN (Business events · Dance events · AV for venues / Sound systems · DJ gear · Lighting · DJs · Playlists).
+- Propositieblok (compact tekstblok onder de hero) afgewezen door Maarten; de strook kwam ervoor in de plaats.
