@@ -458,3 +458,6 @@ em,i,cite,address,dfn,var{font-style:normal}
 .aanbodtabel .bedrag{font:600 14.5px/1.55 var(--tekst);color:var(--zwart)}
 .aanbodtabel .eenheid{font-size:14.5px;color:var(--tekstgrijs)}
 .verdeling .balk i{overflow:visible}
+/* prijs.html: één lettergrootte voor alle lopende tekst in tabel, lijst en regels */
+.prijspagina .case-section ul,.prijspagina .case-section li,.prijspagina .regels dd,.prijspagina .aanbodtabel td,.prijspagina .aanbodtabel .bedrag,.prijspagina .aanbodtabel .eenheid{font-size:15px;line-height:1.6}
+.prijspagina .case-section li{margin-bottom:6px}
