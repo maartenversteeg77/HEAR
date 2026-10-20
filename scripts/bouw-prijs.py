@@ -35,7 +35,7 @@ AANBOD = [
     ("Licht", "diensten.html", "Drie categorieën: sfeerverlichting, dansvloerverlichting en 90's vintage licht. Met transport, opbouw en programmering.", "Presentaties, zakelijke events en dansvloeren.",
      "Veelal draadloos: korte opbouw, geen kabels in zicht, geen versterkte stroom nodig.", e("Op aanvraag.") + ' <a href="diensten.html">Bekijk de drie categorieën →</a>'),
     ("Technicus", "high-end-audio.html", "Licht- of geluidstechnicus, van opbouw tot afbouw.", "Elk event met full service.",
-     "Oog voor detail en handen aan de knoppen. Een CEO die een week aan een speech werkte, staat niet voor een lege microfoon of een zaal die rondzingt. Ook met meerdere zalen tegelijk.", prijs("70 tot 100 euro", "per uur") + e("Afhankelijk van rol en ervaring.")),
+     "Hij of zij heeft oog voor detail: of het geluid niet rondzingt, de microfoons geladen zijn en het draaiboek klopt. Ook met meerdere zalen tegelijk.", prijs("70 tot 100 euro", "per uur") + e("Afhankelijk van rol en ervaring.")),
     ("Communicatieadvies en projectmanagement", "corporate.html", "Meedenken over het concept, doorvertaling naar AV, draaiboek, aanspreekpunt op de dag.", "Vooral zakelijke events.",
      "Het doel van het event vertaald naar licht, geluid en programma, vastgelegd in een draaiboek. En op de dag één aanspreekpunt aanwezig, die zowel de communicatie als de techniek kent.", prijs("90 tot 120 euro", "per uur")),
     ("Dj", "artiesten.html", "Maarten of een dj uit ons netwerk.", "Zakelijke, privé- en dance events.",
