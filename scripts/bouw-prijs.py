@@ -55,9 +55,8 @@ tabel = ('<div class="tabelwrap aanbod"><table class="aanbodtabel"><thead><tr><t
 BLOKKEN = [
 ]
 
-INVLOED = '<article class="case-section"><h2>WELKE ELEMENTEN HEBBEN INVLOED OP DE PRIJS?</h2><div><ul><li>de grootte, akoestiek en locatie van de ruimte</li><li>de grootte van de lichtshow en of er een trussconstructie nodig is</li><li>omvang en complexiteit van het programma: meerdere ruimtes, presentaties, video-instarts of andere zaken die vragen om aanwezigheid</li><li>de duur: hoe lang het event loopt en of het over meerdere dagen gaat</li></ul></div></article>'
+INVLOED = '<article class="case-section"><h2>WELKE ELEMENTEN HEBBEN INVLOED OP DE PRIJS?</h2><div><ul><li>de grootte, akoestiek en locatie van de ruimte</li><li>de grootte van de lichtshow en of er een trussconstructie nodig is</li><li>omvang en complexiteit van het programma: meerdere ruimtes, presentaties, video-instarts of andere zaken die vragen om aanwezigheid</li><li>de duur: hoe lang het event loopt en of het over meerdere dagen gaat</li></ul>' + '<p class="knoprij">' + waknop("Vraag een intakegesprek aan", "Hoi Maarten, ik wil graag een intakegesprek over licht en geluid voor mijn event.") + '</p></div></article>'
 secties = INVLOED + "".join(f'<article class="case-section"><h2>{e(l).upper()}</h2><div>{regels(r)}</div></article>' for l, r in BLOKKEN)
-cta = f'<section class="cta-brug">{waknop("Vraag een intakegesprek aan", "Hoi Maarten, ik wil graag een intakegesprek over licht en geluid voor mijn event.")}</section>'
 
 main = f'''<main class="wrap prijspagina">
 <section class="casehead"><a class="crumb" href="diensten.html"><span class="sectie">Producten</span><span class="scheiding" aria-hidden="true">|</span><span class="huidig">Wat kost het</span></a><h1 class="kernzin">{e(TITEL)}</h1><p class="eyebrow page-kicker">PRIJS</p></section>
@@ -65,7 +64,6 @@ main = f'''<main class="wrap prijspagina">
 <section class="quick quick-breed">{"".join(f"<p>{e(t)}</p>" for t in INTRO)}</section>
 <section class="aanbod-sectie">{tabel}</section>
 <section class="case-sections">{secties}</section>
-{cta}
 <nav class="verwijzingen" aria-label="Verder"><a href="diensten.html">Alle producten en diensten →</a><a href="cases.html">Bekijk voorbeelden uit onze cases →</a></nav>
 </main>'''
 doc = f'''<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{e(BESCHRIJVING)}"><meta name="robots" content="noindex"><title>Wat kost het · HEAR</title><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="styles.css"></head><body class="pagina">
