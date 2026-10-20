@@ -53,19 +53,11 @@ tabel = ('<div class="tabelwrap aanbod"><table class="aanbodtabel"><thead><tr><t
          + f'</tr></thead><tbody>{rijen}</tbody></table></div><p class="klein">Alle bedragen exclusief btw.</p>')
 
 BLOKKEN = [
-    ("Dance of zakelijk", [
-        ("Dance events", e("Meestal meer grote (dure) systemen en technici, minder communicatie en projectmanagement.")),
-        ("Zakelijke events", e("Vaak andersom: meer afstemming en coördinatie, en techniek die hoge eisen stelt aan verstaanbaarheid, maar minder aan volume.")),
-        ("Verhouding", '<span class="verdeling" aria-label="Waar de prijs in zit, indicatief">'
-                       '<span class="rij"><span class="naam">Dance</span><span class="balk"><i class="techniek" style="--w:68%">techniek</i><i class="uren" style="--w:32%">dienstverlening</i></span></span>'
-                       '<span class="rij"><span class="naam">Zakelijk</span><span class="balk"><i class="techniek" style="--w:35%">techniek</i><i class="uren" style="--w:65%">dienstverlening</i></span></span>'
-                       '<span class="bijschrift">Indicatief; het hoeft niet zo te zijn.</span></span>'),
-    ]),
 ]
 
 INVLOED = '<article class="case-section"><h2>WELKE ELEMENTEN HEBBEN INVLOED OP DE PRIJS?</h2><div><ul><li>de grootte, akoestiek en locatie van de ruimte</li><li>de grootte van de lichtshow en of er een trussconstructie nodig is</li><li>omvang en complexiteit van het programma: meerdere ruimtes, presentaties, video-instarts of andere zaken die vragen om aanwezigheid</li><li>de duur: hoe lang het event loopt en of het over meerdere dagen gaat</li></ul></div></article>'
 secties = INVLOED + "".join(f'<article class="case-section"><h2>{e(l).upper()}</h2><div>{regels(r)}</div></article>' for l, r in BLOKKEN)
-cta = f'<section class="cta-brug"><p class="lang">Geen intakeformulier: we horen liever in een gesprek wat je nodig hebt. Digitaal of op locatie.</p>{waknop("Vraag een intakegesprek aan", "Hoi Maarten, ik wil graag een intakegesprek over licht en geluid voor mijn event.")}</section>'
+cta = f'<section class="cta-brug">{waknop("Vraag een intakegesprek aan", "Hoi Maarten, ik wil graag een intakegesprek over licht en geluid voor mijn event.")}</section>'
 
 main = f'''<main class="wrap prijspagina">
 <section class="casehead"><a class="crumb" href="diensten.html"><span class="sectie">Producten</span><span class="scheiding" aria-hidden="true">|</span><span class="huidig">Wat kost het</span></a><h1 class="kernzin">{e(TITEL)}</h1><p class="eyebrow page-kicker">PRIJS</p></section>
