@@ -27,7 +27,7 @@ BLOKKEN = [
     ("Zakelijke events", [
         ("Richtlijn", b("10 tot 20 procent") + e(" van het eventbudget.")),
         ("Basis", e("Rond 10 procent: licht, geluid en sprekersversterking.")),
-        ("Uitgebreid", e("Rond 20 procent: met aanvullende dienstverlening, zoals een online uitzending.")),
+        ("Uitgebreid", e("Rond 20 procent: met aanvullende dienstverlening, zoals een online uitzending, videoschermen, digitaal stemmen, een paneldiscussie, videoproductie, een aftermovie of fotografie.")),
         ("Ook bepalend", e("Hoe complex het draaiboek is, hoeveel ruimtes er zijn en hoeveel technici er nodig zijn.")),
     ]),
     ("Dance events", [
