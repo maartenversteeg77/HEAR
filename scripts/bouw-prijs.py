@@ -51,11 +51,6 @@ tabel = ('<div class="tabelwrap aanbod"><table class="aanbodtabel"><thead><tr><t
          + f'</tr></thead><tbody>{rijen}</tbody></table></div><p class="klein">Alle bedragen exclusief btw.</p>')
 
 BLOKKEN = [
-    ("Wat de prijs beïnvloedt", [
-        ("Ruimte", e("Een heel diepe zaal betekent extra speakers, een forward dj-booth ook. Een heel brede zaal of meerdere zones vraagt extra delays.")),
-        ("Licht en truss", e("Welk licht het event nodig heeft, en of er een trussconstructie gebouwd moet worden of het licht al ergens kan hangen.")),
-        ("Programma", e("Meerdere breakout rooms, sprekers, presentaties en video's vragen meer technici en meer voorbereiding.")),
-    ]),
     ("Dance of zakelijk", [
         ("Dance events", e("Meestal meer grote (dure) systemen en technici, minder communicatie en projectmanagement.")),
         ("Zakelijke events", e("Vaak andersom: meer afstemming en coördinatie, en techniek die hoge eisen stelt aan verstaanbaarheid, maar minder aan volume.")),
@@ -66,7 +61,8 @@ BLOKKEN = [
     ]),
 ]
 
-secties = "".join(f'<article class="case-section"><h2>{e(l).upper()}</h2><div>{regels(r)}</div></article>' for l, r in BLOKKEN)
+INVLOED = '<article class="case-section"><h2>WELKE ELEMENTEN HEBBEN INVLOED OP DE PRIJS?</h2><div><ul><li>de grootte en akoestiek van de ruimte</li><li>de grootte van de lichtshow en of er een trussconstructie nodig is</li><li>omvang en complexiteit van het programma: meerdere ruimtes, presentaties, video-instarts of andere zaken die vragen om aanwezigheid</li><li>de duur: hoe lang het event loopt en of het over meerdere dagen gaat</li><li>de locatie: afstand, laden en lossen, trappen of liften, en hoeveel tijd er is voor op- en afbouw</li></ul></div></article>'
+secties = INVLOED + "".join(f'<article class="case-section"><h2>{e(l).upper()}</h2><div>{regels(r)}</div></article>' for l, r in BLOKKEN)
 cta = f'<section class="cta-brug"><p class="lang">Geen intakeformulier: we horen liever in een gesprek wat je nodig hebt. Digitaal of op locatie.</p>{waknop("Vraag een intakegesprek aan", "Hoi Maarten, ik wil graag een intakegesprek over licht en geluid voor mijn event.")}</section>'
 
 main = f'''<main class="wrap">
