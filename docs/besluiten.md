@@ -312,5 +312,5 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 ## 2026-10-20 · Strook onder de hero
 - Homepage: onder de hero een zwarte strook naar het visitekaartje: links de doelgroepen (Zakelijke events · Dance events · AV voor venues), rechts het aanbod in turquoise (Geluidssystemen · Dj-gear · Licht · Dj's · Playlists). Alle items klikbaar naar de Voor wie- en productpagina's. NL en EN (Business events · Dance events · AV for venues / Sound systems · DJ gear · Lighting · DJs · Playlists).
 - Propositieblok (compact tekstblok onder de hero) afgewezen door Maarten; de strook kwam ervoor in de plaats.
-- Achter elke WhatsApp-knop staat in lichte letter "mailen mag ook" (mailto:maarten@hear.nl); EN "email works too". Zit in waknop() van bouw-diensten en in de vaste knoppen van de pagina's (span.wa-plus).
+- Achter elke WhatsApp-knop staat in lichte letter "mailen mag ook" (mailto:maarten@hear.nl); EN "or send an email". Zit in waknop() van bouw-diensten en in de vaste knoppen van de pagina's (span.wa-plus).
 - Strook: "Licht" linkt naar de producten- en dienstenpagina (drie lichtcategorieën), niet naar één lichtpagina.
