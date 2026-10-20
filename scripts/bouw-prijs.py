@@ -14,11 +14,11 @@ def waknop(tekst, bericht):
             f'<a class="mail-ook" href="mailto:maarten@hear.nl">mailen mag ook</a></span>')
 
 TITEL = "Wat kost audiovisuele ondersteuning van een evenement?"
-BESCHRIJVING = "Wat audiovisuele ondersteuning van een evenement kost: huur van apparatuur en uren. Met de uurtarieven van technici en projectmanagement en het verschil tussen dance events en zakelijke events."
+BESCHRIJVING = "Wat audiovisuele ondersteuning van een evenement kost: techniek en dienstverlening. Met de uurtarieven van technici en projectmanagement en het verschil tussen dance events en zakelijke events."
 BEELD = "img/systeem-breed.jpg"
 BEELD_ALT = "Een geluidssysteem opgebouwd in een zaal, klaar voor een event"
 INTRO = ["Bij HEAR verhuren we apparatuur alleen los aan relaties met eigen technici. Voor andere klanten is ons aanbod full service: advies, transport, op- en afbouw en bediening zijn inbegrepen.",
-         "De prijs bestaat daarom uit twee delen: de apparatuur en uren, van voorbereiding tot technici ter plekke."]
+         "De prijs bestaat daarom uit twee delen: techniek en dienstverlening, van voorbereiding tot technici ter plekke."]
 
 def regels(rijen):
     return '<dl class="regels">' + "".join(f'<div><dt>{e(k)}</dt><dd>{v}</dd></div>' for k, v in rijen) + '</dl>'
@@ -30,22 +30,18 @@ AANBOD = [
     # (naam, link, wat is het, voor wie, wat heb je eraan, wat kost het (html))
     ("Dry hire", "diensten.html", "Huur van losse apparatuur, zonder technicus.", "Alleen voor relaties met eigen professionele technici.",
      "Snel toegang tot gear van de nieuwste generatie, tegen scherpe prijzen.", e("Op aanvraag.") + ' <a href="diensten.html">Bekijk het assortiment →</a>'),
-    ("Geluid", "high-end-audio.html", "Geluidssysteem van RCF of Brooklyn Audio, met transport, op- en afbouw en bediening.", "Elk type event, tot 1.500 personen.",
-     "De nieuwste generatie versterking en DSP, nooit tweedehands. Helder tot achterin de zaal, zonder ruis of vervorming.", e("Gangbare huurprijs in de categorie, afhankelijk van de ruimte.")),
-    ("Licht", "atmospheric-lighting.html", "Sfeer-, dansvloer- en vintage licht, met transport, opbouw en programmering.", "Presentaties, zakelijke events en dansvloeren.",
-     "Veelal draadloos: korte opbouw, geen kabels in zicht, geen versterkte stroom nodig.", e("Gangbare huurprijs in de categorie, afhankelijk van het licht en of er truss nodig is.")),
-    ("Booth en dj-gear", "booth-dj-gear.html", "Rider-proof booth met CDJ-3000X, V10 of Euphonia en monitoring.", "Dance events en dj's met een rider.",
-     "Een dj komt binnen en kan meteen draaien. Laatste generatie; bij nieuwe releases gaan we mee.", e("Gangbare huurprijs in de categorie.")),
+    ("Geluid en dj-set", "high-end-audio.html", "Geluidssysteem van RCF of Brooklyn Audio en desgewenst een rider-proof booth met CDJ-3000X, V10 of Euphonia en monitoring. Met transport, op- en afbouw en bediening.", "Elk type event, tot 1.500 personen.",
+     "De nieuwste generatie versterking en DSP, nooit tweedehands. Helder tot achterin de zaal, zonder ruis of vervorming. Een dj komt binnen en kan meteen draaien.", 'Van <strong class="bedrag">500 euro</strong> voor een compacte cocktailparty tot <strong class="bedrag">1.500 euro</strong> voor de grootste dance stack in ons assortiment, met uitgebreide dj-booth en monitoring.'),
+    ("Licht", "diensten.html", "Drie categorieën: sfeerverlichting, dansvloerverlichting en 90's vintage licht. Met transport, opbouw en programmering.", "Presentaties, zakelijke events en dansvloeren.",
+     "Veelal draadloos: korte opbouw, geen kabels in zicht, geen versterkte stroom nodig.", e("Op aanvraag.") + ' <a href="diensten.html">Bekijk de drie categorieën →</a>'),
     ("Technicus", "high-end-audio.html", "Licht- of geluidstechnicus, van opbouw tot afbouw.", "Elk event met full service.",
-     "Handen aan de knoppen: geen rondzingende microfoon, een sprekerswissel zonder haperen, meerdere zalen tegelijk.", prijs("70 tot 100 euro", "per uur") + e("Afhankelijk van rol en ervaring.")),
+     "Oog voor detail en handen aan de knoppen. Een CEO die een week aan een speech werkte, staat niet voor een lege microfoon of een zaal die rondzingt. Ook met meerdere zalen tegelijk.", prijs("70 tot 100 euro", "per uur") + e("Afhankelijk van rol en ervaring.")),
     ("Communicatieadvies en projectmanagement", "corporate.html", "Meedenken over het concept, doorvertaling naar AV, draaiboek, aanspreekpunt op de dag.", "Vooral zakelijke events.",
-     "Iemand die zowel de communicatie als de techniek begrijpt. Zo gaat de speech waar de CEO een week aan werkte niet verloren aan een lege microfoon.", prijs("90 tot 120 euro", "per uur")),
+     "Het doel van het event vertaald naar licht, geluid en programma, vastgelegd in een draaiboek. En op de dag één aanspreekpunt aanwezig, die zowel de communicatie als de techniek kent.", prijs("90 tot 120 euro", "per uur")),
     ("Dj", "artiesten.html", "Maarten of een dj uit ons netwerk.", "Zakelijke, privé- en dance events.",
      "Een dj die een avond kan opbouwen, van achtergrond bij de borrel tot een volle dansvloer. Muziek en techniek bij één partij.", prijs("vanaf 750 euro", "per avond") + e("Afhankelijk van de duur van de avond en de bekendheid van de dj.")),
     ("Vocalisten en instrumentalisten", "artiesten.html", "Saxofonist, zangeres of percussie bij de dj.", "Events waar live muziek iets toevoegt.",
      "Live muziek bij een dj-set geeft een event iets dat mensen onthouden.", e("Op aanvraag.")),
-    ("Advies en AV as a service", "av-as-a-service.html", "Merkonafhankelijk advies of licht en geluid als abonnement.", "Eventlocaties.",
-     "Een systeem dat bij de ruimte past, zonder grote aanschaf of zorgen over onderhoud.", e("Advies op aanvraag; abonnement per maand, minimaal 36 maanden.")),
 ]
 KOLOMMEN = ["Wat is het", "Voor wie", "Wat heb je eraan", "Wat kost het"]
 rijen = "".join(
@@ -64,8 +60,8 @@ BLOKKEN = [
         ("Dance events", e("Meestal meer grote (dure) systemen en technici, minder communicatie en projectmanagement.")),
         ("Zakelijke events", e("Vaak andersom: meer afstemming en coördinatie, en techniek die hoge eisen stelt aan verstaanbaarheid, maar minder aan volume.")),
         ("Verhouding", '<span class="verdeling" aria-label="Waar de prijs in zit, indicatief">'
-                       '<span class="rij"><span class="naam">Dance</span><span class="balk"><i class="techniek" style="--w:68%">techniek</i><i class="uren" style="--w:32%">uren</i></span></span>'
-                       '<span class="rij"><span class="naam">Zakelijk</span><span class="balk"><i class="techniek" style="--w:35%">techniek</i><i class="uren" style="--w:65%">uren</i></span></span>'
+                       '<span class="rij"><span class="naam">Dance</span><span class="balk"><i class="techniek" style="--w:68%">techniek</i><i class="uren" style="--w:32%">dienstverlening</i></span></span>'
+                       '<span class="rij"><span class="naam">Zakelijk</span><span class="balk"><i class="techniek" style="--w:35%">techniek</i><i class="uren" style="--w:65%">dienstverlening</i></span></span>'
                        '<span class="bijschrift">Indicatief; het hoeft niet zo te zijn.</span></span>'),
     ]),
 ]
