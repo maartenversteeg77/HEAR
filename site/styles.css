@@ -393,3 +393,29 @@ em,i,cite,address,dfn,var{font-style:normal}
 .mix figcaption{margin-top:10px;font-size:14px;line-height:1.45;color:var(--tekstgrijs)}
 .mix .jaar{display:inline-block;margin-left:8px;font:600 11px/1 var(--tekst);letter-spacing:.16em;color:var(--zacht)}
 @media (max-width:760px){.mixen{grid-template-columns:1fr 1fr;gap:22px 14px}.mix iframe{height:200px}.mix figcaption{font-size:13px}}
+/* prijs.html: verdeling, tabel, tarieven, stappen */
+.verdeling{margin:26px 0 0;max-width:64ch}
+.verdeling .rij{display:grid;grid-template-columns:140px 1fr;align-items:center;gap:14px;margin:0 0 12px}
+.verdeling .naam{font:600 11px/1.4 var(--tekst);letter-spacing:.16em;text-transform:uppercase;color:var(--zacht)}
+.verdeling .balk{display:flex;height:40px;overflow:hidden}
+.verdeling .balk i{display:flex;align-items:center;padding:0 12px;width:var(--w);font:600 11px/1 var(--tekst);letter-spacing:.14em;text-transform:uppercase;font-style:normal;white-space:nowrap;overflow:hidden}
+.verdeling .techniek{background:var(--zwart);color:var(--wit)}
+.verdeling .uren{background:var(--koraal);color:var(--zwart)}
+.verdeling figcaption{margin-top:8px;font-size:13px;color:var(--zacht)}
+.tabelwrap{overflow-x:auto;margin:22px 0 0;max-width:72ch}
+.prijstabel{border-collapse:collapse;width:100%;font-size:15px;line-height:1.5;color:var(--tekstgrijs)}
+.prijstabel th,.prijstabel td{text-align:left;vertical-align:top;padding:12px 16px 12px 0;border-top:1px solid var(--lijn)}
+.prijstabel thead th{border-top:0;padding-top:0;font:600 11px/1.5 var(--tekst);letter-spacing:.16em;text-transform:uppercase;color:var(--zwart)}
+.prijstabel tbody th{font:600 11px/1.6 var(--tekst);letter-spacing:.14em;text-transform:uppercase;color:var(--zacht);width:22%}
+.tarieven{margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:72ch}
+.tarieven>div{border-top:1px solid var(--zwart);padding-top:14px}
+.tarieven dt{font:600 11px/1.5 var(--tekst);letter-spacing:.16em;text-transform:uppercase;color:var(--zwart);margin:0 0 8px}
+.tarieven dd{margin:0;font-size:16px;line-height:1.5;color:var(--tekstgrijs)}
+.tarieven dd strong{font:300 clamp(26px,2.6vw,34px)/1.1 var(--kop);color:var(--zwart);display:block;margin-bottom:2px}
+.tarieven dd.uitleg{margin-top:8px;font-size:14px}
+.case-section p.klein{margin:18px 0 0;font-size:13px;color:var(--zacht)}
+.stappen3{margin:0;padding:0;list-style:none;counter-reset:s;display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:72ch}
+.stappen3 li{counter-increment:s;font-size:15px;line-height:1.6;color:var(--tekstgrijs);border-top:1px solid var(--lijn);padding-top:12px}
+.stappen3 li:before{content:counter(s,decimal-leading-zero);display:block;font:300 28px/1 var(--kop);color:var(--zwart);margin-bottom:8px}
+.stappen3 strong{display:block;color:var(--zwart);font-weight:600;margin-bottom:4px}
+@media (max-width:760px){.verdeling .rij{grid-template-columns:1fr;gap:6px}.tarieven,.stappen3{grid-template-columns:1fr}.prijstabel{font-size:14px}.prijstabel tbody th{width:auto}}
