@@ -61,7 +61,7 @@ BLOKKEN = [
     ]),
 ]
 
-INVLOED = '<article class="case-section"><h2>WELKE ELEMENTEN HEBBEN INVLOED OP DE PRIJS?</h2><div><ul><li>de grootte en akoestiek van de ruimte</li><li>de grootte van de lichtshow en of er een trussconstructie nodig is</li><li>omvang en complexiteit van het programma: meerdere ruimtes, presentaties, video-instarts of andere zaken die vragen om aanwezigheid</li><li>de duur: hoe lang het event loopt en of het over meerdere dagen gaat</li><li>de locatie: afstand, laden en lossen, trappen of liften, en hoeveel tijd er is voor op- en afbouw</li></ul></div></article>'
+INVLOED = '<article class="case-section"><h2>WELKE ELEMENTEN HEBBEN INVLOED OP DE PRIJS?</h2><div><ul><li>de grootte, akoestiek en locatie van de ruimte</li><li>de grootte van de lichtshow en of er een trussconstructie nodig is</li><li>omvang en complexiteit van het programma: meerdere ruimtes, presentaties, video-instarts of andere zaken die vragen om aanwezigheid</li><li>de duur: hoe lang het event loopt en of het over meerdere dagen gaat</li></ul></div></article>'
 secties = INVLOED + "".join(f'<article class="case-section"><h2>{e(l).upper()}</h2><div>{regels(r)}</div></article>' for l, r in BLOKKEN)
 cta = f'<section class="cta-brug"><p class="lang">Geen intakeformulier: we horen liever in een gesprek wat je nodig hebt. Digitaal of op locatie.</p>{waknop("Vraag een intakegesprek aan", "Hoi Maarten, ik wil graag een intakegesprek over licht en geluid voor mijn event.")}</section>'
 
