@@ -36,7 +36,9 @@ BLOKKEN = [
     ]),
     ("Tarieven", [
         ("Technicus licht of geluid", b("70 tot 100 euro") + e(" per uur")),
-        ("Communicatiespecialist of projectmanagement", b("90 tot 120 euro") + e(" per uur")),
+        ("Communicatieadvies", b("90 tot 120 euro") + e(" per uur. Denkt mee over het eventconcept en het programma. Ook in te zetten voor strategische communicatie, zoals de boodschap, speechwriting, een storyline en de creatie van een video.")),
+        ("AV-projectmanagement", b("90 tot 120 euro") + e(" per uur. Vertaalt het eventconcept naar een licht- en geluidsplan, plant de technici, maakt het draaiboek en is ter plekke het vaste aanspreekpunt.")),
+        ("Eén persoon", e("Beide rollen kunnen door één persoon worden uitgevoerd.")),
         ("Dj", b("vanaf 750 euro") + e(" per avond")),
         ("Dj met (inter)nationale bekendheid", e("Op aanvraag")),
         ("Saxofonist, vocalist of percussionist", e("Op aanvraag")),
