@@ -14,7 +14,7 @@ BLOKKEN = [
     ("Wat we verwerken", [
         "Als je ons een bericht stuurt via WhatsApp of e-mail: je naam, telefoonnummer of e-mailadres en de inhoud van je bericht. We gebruiken dit alleen om je vraag te beantwoorden en, bij een opdracht, voor de uitvoering en administratie daarvan.",
         "Bij een opdracht: de gegevens die nodig zijn voor offerte, overeenkomst en factuur. Facturen bewaren we zeven jaar, zoals de wet voorschrijft. Andere gegevens bewaren we niet langer dan nodig voor het doel waarvoor je ze gaf.",
-        "Deze website gebruikt geen cookies, geen bezoekersstatistieken en geen trackers.",
+        "Deze website plaatst zelf geen cookies en gebruikt geen bezoekersstatistieken of trackers. Op de pagina over dj's staat een ingebouwde SoundCloud-player; die wordt door SoundCloud geleverd en kan cookies van SoundCloud plaatsen zodra je hem gebruikt.",
     ]),
     ("Technische dienstverleners", [
         "De website wordt gehost door Cloudflare. Bij het laden van een pagina ziet Cloudflare je IP-adres en de opgevraagde pagina, zoals elke hostingpartij.",

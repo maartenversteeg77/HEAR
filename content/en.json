@@ -1802,6 +1802,18 @@
       [
         ">DJ&#X27;S<",
         ">DJS<"
+      ],
+      [
+        ">Lees hier voor meer info ↗<",
+        ">Read more here ↗<"
+      ],
+      [
+        ">of luister op SoundCloud ↗<",
+        ">or listen on SoundCloud ↗<"
+      ],
+      [
+        "title=\"Nieuwste dj-set van Maarten Versteeg op SoundCloud\"",
+        "title=\"Latest DJ set by Maarten Versteeg on SoundCloud\""
       ]
     ],
     "special-projects.html": [
@@ -2022,8 +2034,8 @@
         ">For a job: the details needed for the quote, agreement and invoice. We keep invoices for seven years, as required by law. Other data we keep no longer than needed for the purpose you gave it for.<"
       ],
       [
-        ">Deze website gebruikt geen cookies, geen bezoekersstatistieken en geen trackers.<",
-        ">This website uses no cookies, no visitor statistics and no trackers.<"
+        ">Deze website plaatst zelf geen cookies en gebruikt geen bezoekersstatistieken of trackers. Op de pagina over dj&#x27;s staat een ingebouwde SoundCloud-player; die wordt door SoundCloud geleverd en kan cookies van SoundCloud plaatsen zodra je hem gebruikt.<",
+        ">This website sets no cookies of its own and uses no visitor statistics or trackers. The DJ page has an embedded SoundCloud player; it is provided by SoundCloud and may set SoundCloud cookies once you use it.<"
       ],
       [
         ">Technische dienstverleners<",
