@@ -64,7 +64,7 @@
       "slug": "wat-kost-av",
       "pad": "/prijs.html",
       "soort": "achtergrond",
-      "datum": "2026-10-21",
+      "datum": "2026-10-16",
       "titel": "Wat kost audiovisuele ondersteuning van een evenement eigenlijk?",
       "intro": "Bij zakelijke events 10 tot 20 procent van het eventbudget, bij dance events een gangbare huurprijs. Met uurtarieven, dj-tarief en wat de prijs beïnvloedt.",
       "beeld": "img/diensten/yamaha-dm3.jpg",
@@ -73,8 +73,7 @@
       "pad_en": "/en/prijs.html",
       "titel_en": "What does audiovisual support for an event actually cost?",
       "intro_en": "For business events 10 to 20 percent of the event budget, for dance events a standard rental price. With hourly rates, DJ fee and what affects the price.",
-      "beeld_alt_en": "Yamaha DM3 digital mixing console",
-      "op_home_derde": true
+      "beeld_alt_en": "Yamaha DM3 digital mixing console"
     }
   ]
 }
