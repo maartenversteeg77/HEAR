@@ -477,3 +477,8 @@ body{font-variant-emoji:text}
 .inline-link{line-height:2.1!important}
 .inline-link a{border-bottom:0;padding-bottom:0;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
 .relevante-links ul{gap:6px}
+/* prijsstuk: intro met beeld rechts (DM3, kleine bronfoto) */
+.intro-met-beeld{display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,380px);gap:clamp(20px,4vw,56px);align-items:center}
+.intro-met-beeld figure{margin:0}
+.intro-met-beeld img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover}
+@media (max-width:760px){.intro-met-beeld{grid-template-columns:1fr}.intro-met-beeld figure{max-width:420px}}
