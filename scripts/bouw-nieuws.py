@@ -124,7 +124,7 @@ for taal in ("nl", "en"):
     tegels = "".join(
         f'<article class="case-tegel"><img src="/{e(b["beeld"])}" alt="{e(v(b, "beeld_alt", taal) or "")}" loading="lazy"{(" style=\"object-position:" + e(b["beeld_positie"]) + "\"") if b.get("beeld_positie") else ""}>'
         f'<div class="case-tekst"><p class="labels"><time datetime="{b["datum"]}">{datum(b["datum"], taal)}</time></p>'
-        f'<h2><a class="tegel-link" href="{b.get("pad") or (pre + "/nieuws/" + b["slug"] + ".html")}">{e(v(b, "titel", taal))}</a></h2><p>{e(v(b, "intro", taal))}</p><span class="pijl" aria-hidden="true">→</span></div></article>'
+        f'<h2><a class="tegel-link" href="{(b.get("pad_en") if taal == "en" else b.get("pad")) or (pre + "/nieuws/" + b["slug"] + ".html")}">{e(v(b, "titel", taal))}</a></h2><p>{e(v(b, "intro", taal))}</p><span class="pijl" aria-hidden="true">→</span></div></article>'
         for b in lijst)
     artikelen = [b for b in lijst if not b.get("pad")]
     eerste = f"{BASIS}/img/nieuws/{artikelen[0]['slug']}-social.jpg" if artikelen else None

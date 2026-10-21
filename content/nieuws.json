@@ -65,13 +65,16 @@
       "pad": "/prijs.html",
       "soort": "achtergrond",
       "niet_op_home": true,
-      "alleen_nl": true,
       "datum": "2026-10-21",
       "titel": "Wat kost audiovisuele ondersteuning van een evenement eigenlijk?",
       "intro": "Bij zakelijke events 10 tot 20 procent van het eventbudget, bij dance events een gangbare huurprijs. Met uurtarieven, dj-tarief en wat de prijs beïnvloedt.",
       "beeld": "img/systeem-breed.jpg",
       "beeld_alt": "Een geluidssysteem opgebouwd in een zaal",
-      "status": "af"
+      "status": "af",
+      "pad_en": "/en/prijs.html",
+      "titel_en": "What does audiovisual support for an event actually cost?",
+      "intro_en": "For business events 10 to 20 percent of the event budget, for dance events a standard rental price. With hourly rates, DJ fee and what affects the price.",
+      "beeld_alt_en": "A sound system set up in a hall"
     }
   ]
 }
