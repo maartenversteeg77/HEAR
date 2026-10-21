@@ -1,5 +1,5 @@
 {
-  "_uitleg": "Nieuwsberichten als artikel: zwarte kop met datum en titel, foto, optioneel een grote kopregel (kop), dan een vette intro (lead; valt terug op intro) en lopende tekst (tekst: alinea's; een regel die begint met '## ' wordt een vet tussenkopje; html_na: extra HTML zoals een lijst). intro is ook de tegel- en socialtekst. Overig: slug, datum, beeld, beeld_alt, beeld_positie, beeld_passend (hele foto tonen), knop {tekst, href}, status 'af' of 'concept'. basis = domein voor social-metadata; naar https://hear.nl bij livegang. Engels: velden met _en (titel_en, intro_en, lead_en, kop_en, tekst_en, html_na_en, beeld_alt_en, knop_tekst_en); zonder _en-veld valt het Engels terug op het Nederlands. Engelse pagina's in site/en/nieuws/. Achtergrondstukken die als eigen pagina bestaan: veld 'pad' (link naar die pagina, geen artikelpagina gebouwd), 'niet_op_home' (niet in het homepageblok), 'alleen_nl' (niet in het Engelse overzicht).",
+  "_uitleg": "Nieuwsberichten als artikel: zwarte kop met datum en titel, foto, optioneel een grote kopregel (kop), dan een vette intro (lead; valt terug op intro) en lopende tekst (tekst: alinea's; een regel die begint met '## ' wordt een vet tussenkopje; html_na: extra HTML zoals een lijst). intro is ook de tegel- en socialtekst. Overig: slug, datum, beeld, beeld_alt, beeld_positie, beeld_passend (hele foto tonen), knop {tekst, href}, status 'af' of 'concept'. basis = domein voor social-metadata; naar https://hear.nl bij livegang. Engels: velden met _en (titel_en, intro_en, lead_en, kop_en, tekst_en, html_na_en, beeld_alt_en, knop_tekst_en); zonder _en-veld valt het Engels terug op het Nederlands. Engelse pagina's in site/en/nieuws/. Achtergrondstukken die als eigen pagina bestaan: veld 'pad' (link naar die pagina, geen artikelpagina gebouwd), 'niet_op_home' (niet in het homepageblok), 'alleen_nl' (niet in het Engelse overzicht). 'op_home_derde': als derde tegel op de homepage, na de twee nieuwste berichten.",
   "basis": "https://hear.nl",
   "berichten": [
     {
@@ -64,17 +64,17 @@
       "slug": "wat-kost-av",
       "pad": "/prijs.html",
       "soort": "achtergrond",
-      "niet_op_home": true,
       "datum": "2026-10-21",
       "titel": "Wat kost audiovisuele ondersteuning van een evenement eigenlijk?",
       "intro": "Bij zakelijke events 10 tot 20 procent van het eventbudget, bij dance events een gangbare huurprijs. Met uurtarieven, dj-tarief en wat de prijs beïnvloedt.",
-      "beeld": "img/systeem-breed.jpg",
-      "beeld_alt": "Een geluidssysteem opgebouwd in een zaal",
+      "beeld": "img/diensten/yamaha-dm3.jpg",
+      "beeld_alt": "Yamaha DM3 digitale mengtafel",
       "status": "af",
       "pad_en": "/en/prijs.html",
       "titel_en": "What does audiovisual support for an event actually cost?",
       "intro_en": "For business events 10 to 20 percent of the event budget, for dance events a standard rental price. With hourly rates, DJ fee and what affects the price.",
-      "beeld_alt_en": "A sound system set up in a hall"
+      "beeld_alt_en": "Yamaha DM3 digital mixing console",
+      "op_home_derde": true
     }
   ]
 }

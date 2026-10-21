@@ -142,10 +142,10 @@ for taal in ("nl", "en"):
     if home.exists() and "<!--nieuws-home-->" in home.read_text():
         rel = "/" if taal == "en" else ""
         kaarten = "".join(
-            f'<a class="werk-kaart" href="{pre}/nieuws/{b["slug"]}.html"><span class="werk-beeld"><img src="{rel}{e(b["beeld"])}" alt="{e(v(b, "beeld_alt", taal) or "")}" loading="lazy"'
+            f'<a class="werk-kaart" href="{(b.get("pad_en") if taal == "en" else b.get("pad")) or (pre + "/nieuws/" + b["slug"] + ".html")}"><span class="werk-beeld"><img src="{rel}{e(b["beeld"])}" alt="{e(v(b, "beeld_alt", taal) or "")}" loading="lazy"'
             f'{(" style=\"object-position:" + e(b["beeld_positie"]) + "\"") if b.get("beeld_positie") else ""}><span class="bekijk-case">{T["lees"]}<i aria-hidden="true">→</i></span></span>'
             f'<time datetime="{b["datum"]}">{datum(b["datum"], taal)}</time><h3>{heel(e(v(b, "titel", taal)))}</h3></a>'
-            for b in [b for b in lijst if not b.get("niet_op_home")][:2])
+            for b in ([b for b in lijst if not b.get("niet_op_home") and not b.get("op_home_derde")][:2] + [b for b in lijst if b.get("op_home_derde")][:1]))
         blok = (f'<!--nieuws-home--><section class="nieuws-home" aria-labelledby="nieuws-kop"><div class="werk-kop"><h2 id="nieuws-kop">{T["laatste"]}</h2>'
                 f'<a class="tekstlink" href="{pre}/nieuws/">{T["overzicht"]}</a></div><div class="nieuws-home-rij">{kaarten}</div>'
                 f'<a class="tekstlink onder" href="{pre}/nieuws/">{T["overzicht"]}</a></section><!--/nieuws-home-->')

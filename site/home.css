@@ -250,3 +250,6 @@ em,i,cite,address,dfn,var{font-style:normal}
 @media (max-width:480px){.wa-plus{flex-wrap:wrap}}
 a.mail-ook,.quick.quick-breed p .mail-ook,.cta-brug .mail-ook{font:300 14px/1.3 var(--tekst);color:inherit;opacity:.7;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;letter-spacing:0;text-transform:none;white-space:nowrap}
 .mail-ook:hover{opacity:1}
+/* nieuwsblok homepage: drie tegels; op mobiel twee naast elkaar en de derde breed */
+.nieuws-home-rij{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:760px){.nieuws-home-rij{grid-template-columns:repeat(2,minmax(0,1fr))}.nieuws-home-rij .werk-kaart:nth-child(3){grid-column:1/-1}.nieuws-home-rij .werk-kaart:nth-child(3) img{aspect-ratio:16/9}}
