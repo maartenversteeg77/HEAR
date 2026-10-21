@@ -25,7 +25,7 @@ b = lambda t: f'<strong class="bedrag">{e(t)}</strong>'
 
 BLOKKEN = [
     ("Zakelijke events", [
-        ("Richtlijn", b("10 tot 20 procent") + e(" van het eventbudget, afhankelijk van de grootte van het event, het budget en de technische wensen.")),
+        ("Richtlijn", b("10 tot 20 procent") + e(" van het eventbudget, afhankelijk van de grootte van het event, het budget en welke uitbreidingen er bovenop de basis worden gekozen.")),
         ("Basis", e("Licht, geluid en sprekersversterking, inclusief transport, op- en afbouw, bediening en aanwezigheid ter plekke. De audiovisuele diensten ondersteunen de beleving.")),
         ("Uitbreidingen", e("Bijvoorbeeld een online uitzending, videoschermen, digitaal stemmen, een paneldiscussie, videoproductie, een aftermovie of fotografie.")),
         ("Ook bepalend", e("Hoe complex het draaiboek is, hoeveel ruimtes er zijn en hoeveel technici er nodig zijn.")),
