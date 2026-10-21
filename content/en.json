@@ -188,10 +188,6 @@
       "<h2 class=\"relevant-kop\">Related products and services</h2>"
     ],
     [
-      "Ga naar alle producten en diensten ↗",
-      "See all products and services ↗"
-    ],
-    [
       "<p>Geluid en draadloze microfoons</p>",
       "<p>Sound and wireless microphones</p>"
     ],
@@ -276,8 +272,20 @@
       ">or send an email<"
     ],
     [
-      "<p class=\"inline-link lees-ook\">Lees ook: <a href=\"prijs.html\">Wat kost audiovisuele ondersteuning van een evenement eigenlijk?</a></p>",
-      "<p class=\"inline-link lees-ook\">Read also: <a href=\"prijs.html\">What does audiovisual support for an event actually cost?</a></p>"
+      "<a href=\"diensten.html\">Alle producten en diensten →</a>",
+      "<a href=\"diensten.html\">All products and services →</a>"
+    ],
+    [
+      "<a href=\"prijs.html\">Wat kost audiovisuele ondersteuning van een evenement eigenlijk? →</a>",
+      "<a href=\"prijs.html\">What does audiovisual support for an event actually cost? →</a>"
+    ],
+    [
+      ">Relevante links<",
+      ">Related links<"
+    ],
+    [
+      "<span class=\"tegel-bekijk\">Bekijk →</span>",
+      "<span class=\"tegel-bekijk\">View →</span>"
     ]
   ],
   "cases_json": {
@@ -2334,10 +2342,6 @@
       [
         ">Vraag een intakegesprek aan<",
         ">Request an intake conversation<"
-      ],
-      [
-        ">Alle producten en diensten →<",
-        ">All products and services →<"
       ],
       [
         ">Bekijk voorbeelden uit onze cases →<",

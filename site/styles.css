@@ -464,3 +464,12 @@ em,i,cite,address,dfn,var{font-style:normal}
 .prijspagina .regels .bedrag{font:600 15px/1.6 var(--tekst);color:var(--zwart)}
 .inline-link.lees-ook{margin-top:14px!important;font:400 16px/1.5 var(--tekst);letter-spacing:0;text-transform:none;color:var(--tekstgrijs)}
 .inline-link.lees-ook a{color:var(--zwart);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px;border:0}
+/* relevante tegels: 'Bekijk →' boven de titel; meerdere links als lijst */
+.relevant .tegel-bekijk{position:relative;z-index:1;display:block;margin:0 20px 6px;font:600 11px/1 var(--tekst);letter-spacing:.18em;text-transform:uppercase;color:var(--wit);opacity:.85}
+.relevant .visual-card:hover .tegel-bekijk{opacity:1;color:var(--koraal)}
+.relevante-links{margin-top:22px}
+.relevante-links-kop{margin:0 0 10px;font:600 11px/1.5 var(--tekst);letter-spacing:.2em;text-transform:uppercase;color:var(--zacht)}
+.relevante-links ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.relevante-links li.inline-link{margin:0!important}
+@media (max-width:760px){.relevant .tegel-bekijk{margin:0 14px 6px;font-size:10px}}
+body{font-variant-emoji:text}
