@@ -450,7 +450,9 @@
           "tekst": "Case: tuinfeest met dj en saxofonist",
           "href": "jubileum-ondernemersnetwerk.html"
         }
-      ]
+      ],
+      "cta_tekst": "Boek een dj",
+      "cta_bericht": "Hoi Maarten, ik wil meer weten over een dj boeken."
     },
     {
       "bestand": "special-projects.html",
