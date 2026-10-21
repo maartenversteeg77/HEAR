@@ -141,14 +141,20 @@ for taal in ("nl", "en"):
     home = site / "en" / "index.html" if taal == "en" else site / "index.html"
     if home.exists() and "<!--nieuws-home-->" in home.read_text():
         rel = "/" if taal == "en" else ""
+        gewoon = [b for b in lijst if not b.get("niet_op_home") and not b.get("op_home_derde")]
+        volgorde = gewoon[:2] + [b for b in lijst if b.get("op_home_derde")] + gewoon[2:]
         kaarten = "".join(
             f'<a class="werk-kaart" href="{(b.get("pad_en") if taal == "en" else b.get("pad")) or (pre + "/nieuws/" + b["slug"] + ".html")}"><span class="werk-beeld"><img src="{rel}{e(b["beeld"])}" alt="{e(v(b, "beeld_alt", taal) or "")}" loading="lazy"'
             f'{(" style=\"object-position:" + e(b["beeld_positie"]) + "\"") if b.get("beeld_positie") else ""}><span class="bekijk-case">{T["lees"]}<i aria-hidden="true">→</i></span></span>'
             f'<time datetime="{b["datum"]}">{datum(b["datum"], taal)}</time><h3>{heel(e(v(b, "titel", taal)))}</h3></a>'
-            for b in ([b for b in lijst if not b.get("niet_op_home") and not b.get("op_home_derde")][:2] + [b for b in lijst if b.get("op_home_derde")][:1]))
+            for b in volgorde)
+        vorige, volgende = ("Previous posts", "Next posts") if taal == "en" else ("Vorige berichten", "Volgende berichten")
+        alle = "News and background" if taal == "en" else "Nieuws en achtergronden"
         blok = (f'<!--nieuws-home--><section class="nieuws-home" aria-labelledby="nieuws-kop"><div class="werk-kop"><h2 id="nieuws-kop">{T["laatste"]}</h2>'
-                f'<a class="tekstlink" href="{pre}/nieuws/">{T["overzicht"]}</a></div><div class="nieuws-home-rij">{kaarten}</div>'
-                f'<a class="tekstlink onder" href="{pre}/nieuws/">{T["overzicht"]}</a></section><!--/nieuws-home-->')
+                f'<div class="nieuws-pijlen"><button type="button" data-richting="-1" aria-label="{vorige}">←</button><button type="button" data-richting="1" aria-label="{volgende}">→</button></div></div>'
+                f'<div class="werk-rij nieuws-rij" id="nieuws-rij">{kaarten}<a class="werk-kaart werk-alle" href="{pre}/nieuws/"><span>{alle}</span><span class="pijl" aria-hidden="true">→</span></a></div>'
+                '<script>(function(){var r=document.getElementById("nieuws-rij");document.querySelectorAll(".nieuws-pijlen button").forEach(function(k){k.addEventListener("click",function(){var c=r.querySelector(".werk-kaart");var s=c?c.getBoundingClientRect().width+22:400;r.scrollBy({left:s*k.dataset.richting,behavior:"smooth"});});});})();</script>'
+                '</section><!--/nieuws-home-->')
         h = home.read_text()
         h = re.sub(r"<!--nieuws-home-->.*?<!--/nieuws-home-->", lambda m: blok, h, flags=re.S)
         home.write_text(h)

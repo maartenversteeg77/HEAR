@@ -221,7 +221,7 @@ em,i,cite,address,dfn,var{font-style:normal}
 .nieuws-home .werk-kop{margin-bottom:28px}
 .nieuws-home .werk-kop .tekstlink{color:var(--zwart);white-space:nowrap}
 .nieuws-home-rij{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
-.nieuws-home .werk-kaart{flex:none}
+.nieuws-home .werk-kaart{flex:0 0 calc((100% - 44px) / 3.25)}
 .nieuws-home .werk-kaart img{aspect-ratio:3/2}
 .nieuws-home .werk-kaart time{display:block;font:600 11px/1.4 var(--tekst);letter-spacing:.14em;text-transform:uppercase;color:#3a3a37}
 .nieuws-home .werk-kaart h3{margin:8px 0 0}
@@ -250,6 +250,10 @@ em,i,cite,address,dfn,var{font-style:normal}
 @media (max-width:480px){.wa-plus{flex-wrap:wrap}}
 a.mail-ook,.quick.quick-breed p .mail-ook,.cta-brug .mail-ook{font:300 14px/1.3 var(--tekst);color:inherit;opacity:.7;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;letter-spacing:0;text-transform:none;white-space:nowrap}
 .mail-ook:hover{opacity:1}
-/* nieuwsblok homepage: drie tegels; op mobiel twee naast elkaar en de derde breed */
-.nieuws-home-rij{grid-template-columns:repeat(3,minmax(0,1fr))}
-@media (max-width:760px){.nieuws-home-rij{grid-template-columns:repeat(2,minmax(0,1fr))}.nieuws-home-rij .werk-kaart:nth-child(3){grid-column:1/-1}.nieuws-home-rij .werk-kaart:nth-child(3) img{aspect-ratio:16/9}}
+/* nieuwsblok homepage als slider, zoals Uitgelicht werk */
+.nieuws-pijlen{display:flex;gap:10px}
+.nieuws-pijlen button{width:46px;height:46px;border:1px solid var(--zwart);background:transparent;color:var(--zwart);font-size:18px;cursor:pointer;border-radius:50%}
+.nieuws-pijlen button:hover{background:var(--zwart);color:var(--wit)}
+.nieuws-home .werk-alle{aspect-ratio:3/2}
+.nieuws-home .werk-kaart h3{min-height:0}
+@media (max-width:760px){.nieuws-home .werk-kaart{flex:0 0 78%}.nieuws-pijlen{display:none}.nieuws-home .werk-kaart img{aspect-ratio:4/5}.nieuws-home .werk-alle{aspect-ratio:4/5}}
