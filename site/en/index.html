@@ -97,7 +97,7 @@
         d.cases.filter(function(c){return c.status==='af'}).forEach(function(c){
           var a=document.createElement('a'); a.className='werk-kaart'; a.href=P+c.link;
           a.innerHTML='<span class="werk-beeld"><img loading="lazy" alt=""><span class="bekijk-case">'+(L?'View the case':'Bekijk de case')+' <i aria-hidden="true">→</i></span></span><span class="label"></span><h3></h3><p></p>';
-          a.querySelector('img').src=B+c.beeld; a.querySelector('img').alt=c.alt; if(c.positie) a.querySelector('img').style.objectPosition=c.positie;
+          if(c.label){var lb=document.createElement('img');lb.className='werk-label';lb.src=B+c.label;lb.alt='';a.querySelector('.werk-beeld').appendChild(lb);} a.querySelector('img').src=B+c.beeld; a.querySelector('img').alt=c.alt; if(c.positie) a.querySelector('img').style.objectPosition=c.positie;
           a.querySelector('.label').innerHTML=(c.doelgroepen||[]).map(function(k){return '<span>'+((L&&d.doelgroepen[k]['naam'+L])||d.doelgroepen[k].naam)+'</span>'}).join(''); a.querySelector('h3').textContent=(L&&c['titel'+L])||c.titel; a.querySelector('p').textContent=(L&&c['tekst'+L])||c.tekst;
           rij.insertBefore(a,alle);
         });

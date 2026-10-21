@@ -10,6 +10,7 @@ en = json.loads((root / "content" / "en.json").read_text())
 cases = json.loads((site / "cases.json").read_text())
 vertaald = set(en["vertaald"])
 e = lambda t: html.escape(t, quote=True)
+lbl = lambda c: f'<img class="werk-label" src="{c["label"]}" alt="">' if c.get("label") else ""
 AAN = ' class="aan" aria-current="page"'
 fouten = []
 
@@ -81,7 +82,7 @@ for naam in en["vertaald"]:
         def tegel(c):
             pos = f' style="object-position:{e(c["positie"])}"' if c.get("positie") else ""
             labels = "".join(f'<a href="{e(dg[k]["link"])}">{e(dg[k].get("naam_en", dg[k]["naam"]))}</a>' for k in c["doelgroepen"])
-            return (f'<article class="case-tegel"><div class="case-beeld"><img src="{e(c["beeld"])}" alt="{e(c["alt"])}" loading="lazy"{pos}><span class="bekijk-case">View the case <i aria-hidden="true">→</i></span></div>'
+            return (f'<article class="case-tegel"><div class="case-beeld"><img src="{e(c["beeld"])}" alt="{e(c["alt"])}" loading="lazy"{pos}>{lbl(c)}<span class="bekijk-case">View the case <i aria-hidden="true">→</i></span></div>'
                     f'<div class="case-tekst"><p class="labels">{labels}</p>'
                     f'<h2><a class="tegel-link" href="{e(c["link"])}">{e(c.get("titel_en", c["titel"]))}</a></h2>'
                     f'<p>{e(c.get("tekst_en", c["tekst"]))}</p><span class="pijl" aria-hidden="true">→</span></div></article>')

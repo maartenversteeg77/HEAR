@@ -484,3 +484,7 @@ body{font-variant-emoji:text}
 @media (max-width:760px){.intro-met-beeld{grid-template-columns:1fr}.intro-met-beeld figure{max-width:420px}}
 /* ADE-label rechtsonder op de skatehalfoto */
 .casehero .ade-label{position:absolute;right:clamp(14px,2.5vw,32px);bottom:clamp(14px,2.5vw,32px);width:clamp(56px,7vw,96px);height:auto;z-index:2}
+/* ADE-label: op tegels rechtsonder; op mobiel op de casepagina rechtsboven, want de ballon valt over de onderkant */
+.werk-beeld,.case-beeld{position:relative}
+.werk-label{position:absolute;right:12px;bottom:12px;width:clamp(40px,4vw,58px);height:auto;z-index:2;pointer-events:none}
+@media (max-width:760px){.casehero .ade-label{bottom:auto;top:14px;right:14px;width:52px}}
