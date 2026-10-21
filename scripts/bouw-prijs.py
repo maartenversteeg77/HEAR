@@ -25,10 +25,11 @@ b = lambda t: f'<strong class="bedrag">{e(t)}</strong>'
 
 BLOKKEN = [
     ("Zakelijke events", [
-        ("Richtlijn", b("10 tot 20 procent") + e(" van het eventbudget.")),
-        ("Basis", e("Rond 10 procent: licht, geluid en sprekersversterking.")),
-        ("Uitgebreid", e("Rond 20 procent: met aanvullende dienstverlening, zoals een online uitzending, videoschermen, digitaal stemmen, een paneldiscussie, videoproductie, een aftermovie of fotografie.")),
+        ("Richtlijn", b("10 tot 20 procent") + e(" van het eventbudget, afhankelijk van de grootte van het event, het budget en de technische wensen.")),
+        ("Basis", e("Licht, geluid en sprekersversterking, inclusief transport, op- en afbouw, bediening en aanwezigheid ter plekke. De audiovisuele diensten ondersteunen de beleving.")),
+        ("Uitbreidingen", e("Bijvoorbeeld een online uitzending, videoschermen, digitaal stemmen, een paneldiscussie, videoproductie, een aftermovie of fotografie.")),
         ("Ook bepalend", e("Hoe complex het draaiboek is, hoeveel ruimtes er zijn en hoeveel technici er nodig zijn.")),
+        ("Meer dan 20 procent", e("Soms is de audiovisuele techniek niet ondersteunend, maar de kern van de beleving, zoals bij merkevents en productintroducties. De prijs weerspiegelt dan dat de techniek een groter deel van het event uitmaakt.")),
     ]),
     ("Dance events", [
         ("Richtlijn", e("Een huurprijs die gebruikelijk is in de markt voor vergelijkbare apparatuur.")),
