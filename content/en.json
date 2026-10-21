@@ -273,6 +273,10 @@
     [
       ">mailen mag ook<",
       ">or send an email<"
+    ],
+    [
+      "<p class=\"inline-link lees-ook\">Lees ook: <a href=\"prijs.html\">Wat kost audiovisuele ondersteuning van een evenement eigenlijk?</a></p>",
+      ""
     ]
   ],
   "cases_json": {

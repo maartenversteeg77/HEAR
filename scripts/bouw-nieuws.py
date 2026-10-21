@@ -83,14 +83,15 @@ def taalknop(k, taal, doel):
 
 berichten = sorted([b for b in data["berichten"] if b.get("status") == "af"], key=lambda b: b["datum"], reverse=True)
 (site / "en" / "nieuws").mkdir(parents=True, exist_ok=True)
-L = {"nl": {"nieuws": "Nieuws", "laatste": "Laatste nieuws", "overzicht": "Naar het nieuwsoverzicht →", "lees": "Lees het bericht", "alle": "Alle berichten →", "home": "Naar de homepage →", "omschr": "Nieuwe producten, events en berichten van HEAR.", "home_href": "/index.html"},
-     "en": {"nieuws": "News", "laatste": "Latest news", "overzicht": "To the news overview →", "lees": "Read the post", "alle": "All posts →", "home": "To the homepage →", "omschr": "New products, events and news from HEAR.", "home_href": "/en/index.html"}}
+L = {"nl": {"nieuws": "Nieuws", "overzicht_titel": "Nieuws en achtergronden", "laatste": "Laatste nieuws", "overzicht": "Naar het nieuwsoverzicht →", "lees": "Lees het bericht", "alle": "Alle berichten →", "home": "Naar de homepage →", "omschr": "Nieuwe producten, events en berichten van HEAR.", "home_href": "/index.html"},
+     "en": {"nieuws": "News", "overzicht_titel": "News and background", "laatste": "Latest news", "overzicht": "To the news overview →", "lees": "Read the post", "alle": "All posts →", "home": "To the homepage →", "omschr": "New products, events and news from HEAR.", "home_href": "/en/index.html"}}
 
 for taal in ("nl", "en"):
     pre = "/en" if taal == "en" else ""
     doelmap = site / "en" / "nieuws" if taal == "en" else uit
     K = kop_en if taal == "en" else kop; V = voet_en if taal == "en" else voet; T = L[taal]
-    for b in berichten:
+    lijst = [b for b in berichten if not (taal == "en" and b.get("alleen_nl"))]
+    for b in [b for b in lijst if not b.get("pad")]:
         pad = f"{pre}/nieuws/{b['slug']}.html"; nl_pad = f"/nieuws/{b['slug']}.html"
         social = imgdir / f"{b['slug']}-social.jpg"
         if taal == "nl": deelbeeld(b["beeld"], social)
@@ -123,14 +124,15 @@ for taal in ("nl", "en"):
     tegels = "".join(
         f'<article class="case-tegel"><img src="/{e(b["beeld"])}" alt="{e(v(b, "beeld_alt", taal) or "")}" loading="lazy"{(" style=\"object-position:" + e(b["beeld_positie"]) + "\"") if b.get("beeld_positie") else ""}>'
         f'<div class="case-tekst"><p class="labels"><time datetime="{b["datum"]}">{datum(b["datum"], taal)}</time></p>'
-        f'<h2><a class="tegel-link" href="{pre}/nieuws/{b["slug"]}.html">{e(v(b, "titel", taal))}</a></h2><p>{e(v(b, "intro", taal))}</p><span class="pijl" aria-hidden="true">→</span></div></article>'
-        for b in berichten)
-    eerste = f"{BASIS}/img/nieuws/{berichten[0]['slug']}-social.jpg" if berichten else None
+        f'<h2><a class="tegel-link" href="{b.get("pad") or (pre + "/nieuws/" + b["slug"] + ".html")}">{e(v(b, "titel", taal))}</a></h2><p>{e(v(b, "intro", taal))}</p><span class="pijl" aria-hidden="true">→</span></div></article>'
+        for b in lijst)
+    artikelen = [b for b in lijst if not b.get("pad")]
+    eerste = f"{BASIS}/img/nieuws/{artikelen[0]['slug']}-social.jpg" if artikelen else None
     main = f'''<main class="wrap">
-<section class="casehead"><a class="crumb" href="{T["home_href"]}"><span class="sectie">HEAR</span></a><h1>{T["nieuws"]}</h1></section>
+<section class="casehead"><a class="crumb" href="{T["home_href"]}"><span class="sectie">HEAR</span></a><h1>{T["overzicht_titel"]}</h1></section>
 <section class="case-overzicht">{tegels}</section>
 </main>'''
-    (doelmap / "index.html").write_text(head(T["nieuws"], T["omschr"], f"{pre}/nieuws/", eerste, taal=taal, alt_pad=("/en/nieuws/" if taal == "nl" else "/nieuws/"))
+    (doelmap / "index.html").write_text(head(T["overzicht_titel"], T["omschr"], f"{pre}/nieuws/", eerste, taal=taal, alt_pad=("/en/nieuws/" if taal == "nl" else "/nieuws/"))
         + taalknop(K, taal, "/nieuws/") + main + V + "</body></html>")
     print(f"ok {taal} nieuws/index.html")
 
@@ -143,7 +145,7 @@ for taal in ("nl", "en"):
             f'<a class="werk-kaart" href="{pre}/nieuws/{b["slug"]}.html"><span class="werk-beeld"><img src="{rel}{e(b["beeld"])}" alt="{e(v(b, "beeld_alt", taal) or "")}" loading="lazy"'
             f'{(" style=\"object-position:" + e(b["beeld_positie"]) + "\"") if b.get("beeld_positie") else ""}><span class="bekijk-case">{T["lees"]}<i aria-hidden="true">→</i></span></span>'
             f'<time datetime="{b["datum"]}">{datum(b["datum"], taal)}</time><h3>{heel(e(v(b, "titel", taal)))}</h3></a>'
-            for b in berichten[:2])
+            for b in [b for b in lijst if not b.get("niet_op_home")][:2])
         blok = (f'<!--nieuws-home--><section class="nieuws-home" aria-labelledby="nieuws-kop"><div class="werk-kop"><h2 id="nieuws-kop">{T["laatste"]}</h2>'
                 f'<a class="tekstlink" href="{pre}/nieuws/">{T["overzicht"]}</a></div><div class="nieuws-home-rij">{kaarten}</div>'
                 f'<a class="tekstlink onder" href="{pre}/nieuws/">{T["overzicht"]}</a></section><!--/nieuws-home-->')

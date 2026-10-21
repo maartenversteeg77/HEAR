@@ -1,5 +1,5 @@
 {
-  "_uitleg": "Blok 'Relevante producten en diensten' (1–3 tegels + link naar het overzicht) op doelgroep- en casepagina's. scripts/bouw-relevant.py zet het blok vóór de WhatsApp-CTA; bestaand blok wordt vervangen. 'catalogus' = tegel per categorie (naam, beeld, standaardtekst); 'paginas' = per pagina een lijst van slugs, of {slug, tekst} voor een afwijkende tekst. Engels: koppen en teksten staan als 'globaal'-paren in en.json.",
+  "_uitleg": "Blok 'Relevante producten en diensten' (1–3 tegels + link naar het overzicht) op doelgroep- en casepagina's. scripts/bouw-relevant.py zet het blok vóór de WhatsApp-CTA; bestaand blok wordt vervangen. 'catalogus' = tegel per categorie (naam, beeld, standaardtekst); 'paginas' = per pagina een lijst van slugs, of {slug, tekst} voor een afwijkende tekst. Engels: koppen en teksten staan als 'globaal'-paren in en.json. 'lees_ook' = pagina's die afsluiten met 'Lees ook: Wat kost audiovisuele ondersteuning van een evenement eigenlijk?' (alleen NL; op de Engelse pagina's weggelaten via een globaal paar).",
   "catalogus": {
     "booth-dj-gear": {
       "naam": "Booth en dj-gear",
@@ -102,5 +102,17 @@
       "special-projects",
       "artiesten"
     ]
-  }
+  },
+  "lees_ook": [
+    "dance-events.html",
+    "corporate.html",
+    "productpresentatie.html",
+    "gemeentelijk-netwerkevent.html",
+    "jubileum-ondernemersnetwerk.html",
+    "ade-dj.html",
+    "dj-sets.html",
+    "systeemadvies.html",
+    "prive-event.html",
+    "radio-mixes.html"
+  ]
 }

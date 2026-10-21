@@ -1,5 +1,5 @@
 {
-  "_uitleg": "Nieuwsberichten als artikel: zwarte kop met datum en titel, foto, optioneel een grote kopregel (kop), dan een vette intro (lead; valt terug op intro) en lopende tekst (tekst: alinea's; een regel die begint met '## ' wordt een vet tussenkopje; html_na: extra HTML zoals een lijst). intro is ook de tegel- en socialtekst. Overig: slug, datum, beeld, beeld_alt, beeld_positie, beeld_passend (hele foto tonen), knop {tekst, href}, status 'af' of 'concept'. basis = domein voor social-metadata; naar https://hear.nl bij livegang. Engels: velden met _en (titel_en, intro_en, lead_en, kop_en, tekst_en, html_na_en, beeld_alt_en, knop_tekst_en); zonder _en-veld valt het Engels terug op het Nederlands. Engelse pagina's in site/en/nieuws/.",
+  "_uitleg": "Nieuwsberichten als artikel: zwarte kop met datum en titel, foto, optioneel een grote kopregel (kop), dan een vette intro (lead; valt terug op intro) en lopende tekst (tekst: alinea's; een regel die begint met '## ' wordt een vet tussenkopje; html_na: extra HTML zoals een lijst). intro is ook de tegel- en socialtekst. Overig: slug, datum, beeld, beeld_alt, beeld_positie, beeld_passend (hele foto tonen), knop {tekst, href}, status 'af' of 'concept'. basis = domein voor social-metadata; naar https://hear.nl bij livegang. Engels: velden met _en (titel_en, intro_en, lead_en, kop_en, tekst_en, html_na_en, beeld_alt_en, knop_tekst_en); zonder _en-veld valt het Engels terug op het Nederlands. Engelse pagina's in site/en/nieuws/. Achtergrondstukken die als eigen pagina bestaan: veld 'pad' (link naar die pagina, geen artikelpagina gebouwd), 'niet_op_home' (niet in het homepageblok), 'alleen_nl' (niet in het Engelse overzicht).",
   "basis": "https://hear.nl",
   "berichten": [
     {
@@ -59,6 +59,19 @@
       "tekst_en": [],
       "html_na_en": "<h2 class=\"kopje\">Suitable for</h2><ul><li>Presentations</li><li>Intimate (cocktail) parties</li><li>DJ monitoring, left and right of the booth</li><li>Front fill or delay in a larger audio set</li></ul><p>As a complete set they suit a range of uses, from presentations to garden parties and cocktail parties of up to around 150 people.</p><p>The 515 top is also an ideal front fill in a larger system. With 100° × 70° coverage, it gives hi-fi’ish sound for the first few metres of the audience.</p><p>Using the KX 515-A as front fill makes it possible to fly its big brother, the KXL 4-A, higher and aim it further back. As the KX 515-A weighs under 10 kg, it is also a practical delay or fill to improve intelligibility at the back of the room, without heavy lifting.</p>",
       "knop_tekst_en": "View high-end audio"
+    },
+    {
+      "slug": "wat-kost-av",
+      "pad": "/prijs.html",
+      "soort": "achtergrond",
+      "niet_op_home": true,
+      "alleen_nl": true,
+      "datum": "2026-10-21",
+      "titel": "Wat kost audiovisuele ondersteuning van een evenement eigenlijk?",
+      "intro": "Bij zakelijke events 10 tot 20 procent van het eventbudget, bij dance events een gangbare huurprijs. Met uurtarieven, dj-tarief en wat de prijs beïnvloedt.",
+      "beeld": "img/systeem-breed.jpg",
+      "beeld_alt": "Een geluidssysteem opgebouwd in een zaal",
+      "status": "af"
     }
   ]
 }

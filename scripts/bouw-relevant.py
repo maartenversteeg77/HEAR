@@ -7,6 +7,8 @@ site = root / "site"
 d = json.loads((root / "content" / "relevant.json").read_text())
 e = lambda t: html.escape(t, quote=True)
 cat = d["catalogus"]
+LEES_OOK = set(d.get("lees_ook", []))
+LEES_OOK_HTML = '<p class="inline-link lees-ook">Lees ook: <a href="prijs.html">Wat kost audiovisuele ondersteuning van een evenement eigenlijk?</a></p>'
 for naam, items in d["paginas"].items():
     tegels = ""
     for it in items:
@@ -16,7 +18,7 @@ for naam, items in d["paginas"].items():
                    f'<span class="visual-card-shade"></span><h2>{e(c["naam"])}</h2><p>{e(tekst or c["tekst"])}</p></a>')
     blok = (f'<section class="relevant" aria-label="Relevante producten en diensten"><h2 class="relevant-kop">Relevante producten en diensten</h2>'
             f'<div class="relevant-grid n{len(items)}">{tegels}</div>'
-            f'<p class="inline-link"><a href="diensten.html">Ga naar alle producten en diensten ↗</a></p></section>')
+            f'<p class="inline-link"><a href="diensten.html">Ga naar alle producten en diensten ↗</a></p>' + (LEES_OOK_HTML if naam in LEES_OOK else '') + '</section>')
     p = site / naam
     s = p.read_text()
     s = re.sub(r'<section class="relevant".*?</section>', '', s, count=1, flags=re.S)

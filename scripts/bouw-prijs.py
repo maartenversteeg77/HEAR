@@ -13,7 +13,7 @@ def waknop(tekst, bericht):
     return (f'<span class="wa-plus"><a class="wa" href="https://wa.me/31624560220?text={urllib.parse.quote(bericht)}" target="_blank" rel="noopener" data-whatsapp>{SVG}<span>{e(tekst)}</span><i aria-hidden="true">→</i></a>'
             f'<a class="mail-ook" href="mailto:maarten@hear.nl">mailen mag ook</a></span>')
 
-TITEL = "Wat kost audiovisuele ondersteuning van een evenement?"
+TITEL = "Wat kost audiovisuele ondersteuning van een evenement eigenlijk?"
 BESCHRIJVING = "Wat licht en geluid voor een evenement kost: bij zakelijke events 10 tot 20 procent van het eventbudget, bij dance events een gangbare huurprijs. Met uurtarieven en dj-tarief."
 BEELD = "img/systeem-breed.jpg"
 BEELD_ALT = "Een geluidssysteem opgebouwd in een zaal, klaar voor een event"
@@ -56,13 +56,13 @@ INVLOED = ('<article class="case-section"><h2>WELKE ELEMENTEN HEBBEN INVLOED OP 
 secties = "".join(f'<article class="case-section"><h2>{e(l).upper()}</h2><div>{regels(r)}</div></article>' for l, r in BLOKKEN) + INVLOED
 
 main = f'''<main class="wrap prijspagina">
-<section class="casehead"><a class="crumb" href="diensten.html"><span class="sectie">Producten</span><span class="scheiding" aria-hidden="true">|</span><span class="huidig">Wat kost het</span></a><h1 class="kernzin">{e(TITEL)}</h1><p class="eyebrow page-kicker">PRIJS</p></section>
+<section class="casehead"><a class="crumb" href="nieuws/"><span class="sectie">Nieuws en achtergronden</span></a><h1 class="kernzin">{e(TITEL)}</h1><p class="eyebrow page-kicker">ACHTERGROND</p></section>
 <figure class="detail-image"><img src="{BEELD}" alt="{e(BEELD_ALT)}"></figure>
 <section class="quick quick-breed">{"".join(f"<p>{e(t)}</p>" for t in INTRO)}</section>
 <section class="case-sections">{secties}</section>
 <nav class="verwijzingen" aria-label="Verder"><a href="diensten.html">Alle producten en diensten →</a><a href="cases.html">Bekijk voorbeelden uit onze cases →</a></nav>
 </main>'''
-doc = f'''<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{e(BESCHRIJVING)}"><meta name="robots" content="noindex"><title>Wat kost het · HEAR</title><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="styles.css"></head><body class="pagina">
+doc = f'''<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{e(BESCHRIJVING)}"><title>Wat kost het · HEAR</title><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="styles.css"></head><body class="pagina">
 {kop}
 {main}
 {voet}
