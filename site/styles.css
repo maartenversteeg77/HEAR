@@ -462,3 +462,5 @@ em,i,cite,address,dfn,var{font-style:normal}
 .prijspagina .case-section ul,.prijspagina .case-section li,.prijspagina .regels dd,.prijspagina .aanbodtabel td,.prijspagina .aanbodtabel .bedrag,.prijspagina .aanbodtabel .eenheid{font-size:15px;line-height:1.6}
 .prijspagina .case-section li{margin-bottom:6px}
 .prijspagina .regels .bedrag{font:600 15px/1.6 var(--tekst);color:var(--zwart)}
+.inline-link.lees-ook{margin-top:14px!important;font:400 16px/1.5 var(--tekst);letter-spacing:0;text-transform:none;color:var(--tekstgrijs)}
+.inline-link.lees-ook a{color:var(--zwart);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px;border:0}
