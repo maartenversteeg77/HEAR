@@ -20,6 +20,21 @@
   "cases": [
     {
       "status": "af",
+      "titel": "Transformatie: van skatehal tot dansvloer",
+      "tekst": "Eén avond omgebouwd voor een pop-upevent, met beperkte soundcheck nodig.",
+      "beeld": "img/case-ade.jpg",
+      "alt": "DJ-booth in een skatehal tijdens ADE",
+      "link": "ade-dj.html",
+      "doelgroepen": [
+        "dance",
+        "venue"
+      ],
+      "titel_en": "Transformation: from skate hall to dancefloor",
+      "tekst_en": "Converted for a one-night pop-up event, with limited soundcheck needed.",
+      "label": "img/ade-label.png"
+    },
+    {
+      "status": "af",
       "titel": "Productlancering\nmet theaterlicht, geluid en dj",
       "tekst": "Van productverlichting overdag naar een warme dansvloer 's avonds.",
       "beeld": "img/case-productpresentatie.jpg",
@@ -56,21 +71,6 @@
       ],
       "titel_en": "Anniversary of a business network",
       "tekst_en": "A luxurious garden party in the middle of Oud-Zuid, without disturbing the neighbours."
-    },
-    {
-      "status": "af",
-      "titel": "Transformatie: van skatehal tot dansvloer",
-      "tekst": "Eén avond omgebouwd voor een pop-upevent, met beperkte soundcheck nodig.",
-      "beeld": "img/case-ade.jpg",
-      "alt": "DJ-booth in een skatehal tijdens ADE",
-      "link": "ade-dj.html",
-      "doelgroepen": [
-        "dance",
-        "venue"
-      ],
-      "titel_en": "Transformation: from skate hall to dancefloor",
-      "tekst_en": "Converted for a one-night pop-up event, with limited soundcheck needed.",
-      "label": "img/ade-label.png"
     },
     {
       "status": "af",
