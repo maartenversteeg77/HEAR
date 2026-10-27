@@ -1,0 +1,111 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Vraag licht, geluid, dj of advies aan voor je event. Vul in wat je al weet; we bellen je terug."><title>Aanvraag · HEAR</title><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="styles.css"></head><body class="pagina">
+<header class="top">
+  <a class="merk" href="index.html" aria-label="HEAR, naar de homepage"><img src="img/logo-white.png" alt="HEAR"></a>
+  <nav class="topnav" aria-label="Hoofdnavigatie">
+    <a href="cases.html">Cases</a>
+    <a href="doelgroepen.html">Voor wie</a>
+    <a href="diensten.html">Producten</a>
+    <a href="principes.html">Waarden</a>
+    <a href="over-hear.html">Over HEAR</a>
+    <a href="nieuws/">Nieuws</a>
+  </nav>
+  <a class="taal" href="/en/aanvraag.html" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+  <button class="menuknop" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu openen">
+    <span></span><span></span>
+  </button>
+</header>
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Hoofdmenu">
+      <a href="cases.html"><span>Voorbeeldcases</span><small>Events die tot de verbeelding spreken</small></a>
+      <a href="doelgroepen.html"><span>Voor wie is HEAR</span><small>Corporate, venue owners en dance events</small></a>
+      <a href="diensten.html"><span>Producten en diensten</span><small>Licht, geluid, dj-gear en advies</small></a>
+      <a href="principes.html"><span>Waarden</span><small>Wat wij belangrijk vinden</small></a>
+      <a href="over-hear.html"><span>Over HEAR</span><small>Oprichter Maarten stelt zich voor</small></a>
+      <a href="nieuws/"><span>Nieuws</span><small>Nieuwe producten, events en berichten</small></a>
+  </nav>
+</div>
+<script>
+  (function(){
+    var k=document.querySelector('.menuknop'), m=document.getElementById('menu');
+    function zet(open){ k.setAttribute('aria-expanded',open); k.setAttribute('aria-label',open?'Menu sluiten':'Menu openen'); m.hidden=!open; document.body.classList.toggle('menu-open',open); }
+    k.addEventListener('click',function(){ zet(k.getAttribute('aria-expanded')!=='true'); });
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape') zet(false); });
+    // Vegen over de zwarte kop (mobiel): links = volgende, rechts = vorige pagina op dit niveau
+    var x0=null, y0=null, hk=null;  // gedelegeerd: de kop staat verderop in de pagina dan dit script
+    document.addEventListener('touchstart',function(e){ hk=e.target.closest&&e.target.closest('.casehead'); if(!hk) return; x0=e.touches[0].clientX; y0=e.touches[0].clientY; },{passive:true});
+    document.addEventListener('touchend',function(e){
+      if(x0===null||!hk) return; var dx=e.changedTouches[0].clientX-x0, dy=e.changedTouches[0].clientY-y0; x0=null;
+      if(Math.abs(dx)<60||Math.abs(dy)>50) return;
+      var a=hk.querySelector(dx<0?'.zijnav .pijl:last-child':'.zijnav .pijl:first-child'); if(a&&a.href) location.href=a.href;
+    },{passive:true});
+  })();
+</script>
+<main class="wrap">
+<section class="casehead"><a class="crumb" href="index.html"><span class="sectie">HEAR</span></a><h1 class="kernzin">Vertel over je event</h1></section>
+<section class="quick quick-breed"><p>Vul in wat je al weet. Na je aanvraag bellen we je terug, meestal dezelfde werkdag. Liever mailen? Dat kan ook: <a href="mailto:maarten@hear.nl">maarten@hear.nl</a>.</p></section>
+<form class="aanvraag" data-dank="Dank je. We bellen je terug, meestal dezelfde werkdag." data-fout="Versturen lukte niet. Mail ons op maarten@hear.nl of bel +31 6 24560220." method="post" action="/api/aanvraag" id="aanvraag">
+<input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<section class="formblok"><h2>Wat we nodig hebben</h2>
+<div class="velden">
+<label class="veld"><span>Naam</span><input type="text" name="naam" required autocomplete="name"></label>
+<label class="veld"><span>Organisatie</span><input type="text" name="organisatie" required autocomplete="organization"></label>
+<label class="veld"><span>E-mail</span><input type="email" name="email" required autocomplete="email"></label>
+<label class="veld"><span>Telefoonnummer, dan bellen we je terug</span><input type="tel" name="telefoon" required autocomplete="tel"></label>
+<fieldset class="keuze"><legend>Soort event</legend><label class="vink"><input type="radio" name="soort" value="zakelijk" required><span>Zakelijk event</span></label><label class="vink"><input type="radio" name="soort" value="dance"><span>Dance event</span></label><label class="vink"><input type="radio" name="soort" value="anders"><span>Anders</span></label><input type="text" name="soort_anders" class="inline" aria-label="Anders, namelijk" placeholder="namelijk…"></fieldset>
+<label class="veld"><span>Datum van het event</span><input type="date" name="datum" required></label>
+<label class="veld"><span>Aantal gasten</span><input type="number" name="gasten" required min="1" inputmode="numeric"></label>
+</div>
+<fieldset class="diensten"><legend>Wat heb je nodig?</legend><div class="dienstgrid"><fieldset class="dienstkolom"><legend>Geluid</legend><label class="vink"><input type="checkbox" name="diensten" value="Sprekersversterking en microfoons"><span>Sprekersversterking en microfoons</span></label><label class="vink"><input type="checkbox" name="diensten" value="Geluid voor borrel of feest"><span>Geluid voor borrel of feest</span></label><label class="vink"><input type="checkbox" name="diensten" value="Dansvloersysteem"><span>Dansvloersysteem</span></label><label class="vink"><input type="checkbox" name="diensten" value="Technicus ter plekke"><span>Technicus ter plekke</span></label></fieldset><fieldset class="dienstkolom"><legend>Licht</legend><label class="vink"><input type="checkbox" name="diensten" value="Sfeerverlichting"><span>Sfeerverlichting</span></label><label class="vink"><input type="checkbox" name="diensten" value="Dansvloerverlichting en lichtshow"><span>Dansvloerverlichting en lichtshow</span></label><label class="vink"><input type="checkbox" name="diensten" value="90&#x27;s vintage lichteffecten"><span>90&#x27;s vintage lichteffecten</span></label><label class="vink"><input type="checkbox" name="diensten" value="Theaterlicht voor product of spreker"><span>Theaterlicht voor product of spreker</span></label></fieldset><fieldset class="dienstkolom"><legend>Muziek</legend><label class="vink"><input type="checkbox" name="diensten" value="Dj"><span>Dj</span></label><label class="vink"><input type="checkbox" name="diensten" value="Vocalist, saxofonist of percussionist"><span>Vocalist, saxofonist of percussionist</span></label><label class="vink"><input type="checkbox" name="diensten" value="Playlist op maat"><span>Playlist op maat</span></label><label class="vink"><input type="checkbox" name="diensten" value="Dj-booth en gear voor je eigen dj"><span>Dj-booth en gear voor je eigen dj</span></label></fieldset><fieldset class="dienstkolom"><legend>Extra</legend><label class="vink"><input type="checkbox" name="diensten" value="Online uitzending"><span>Online uitzending</span></label><label class="vink"><input type="checkbox" name="diensten" value="Videoschermen en presentatie"><span>Videoschermen en presentatie</span></label><label class="vink"><input type="checkbox" name="diensten" value="Videoproductie of aftermovie"><span>Videoproductie of aftermovie</span></label><label class="vink"><input type="checkbox" name="diensten" value="Advies over concept en programma"><span>Advies over concept en programma</span></label></fieldset></div><label class="veld veld-breed"><span>Anders, namelijk</span><input type="text" name="diensten_anders"></label></fieldset>
+</section>
+<section class="formblok zacht"><h2>Wil je verder nog iets kwijt?</h2>
+<label class="veld veld-breed"><span>Je bericht</span><textarea name="bericht" rows="5"></textarea></label>
+</section>
+<section class="formblok optioneel"><h2>Handig voor ons, niet verplicht</h2>
+<div class="velden">
+<label class="veld"><span>Je functie</span><input type="text" name="functie"></label>
+<label class="veld"><span>Naam van het event</span><input type="text" name="event"></label>
+<label class="veld"><span>Tijd, van tot</span><input type="text" name="tijd" placeholder="16:00 – 23:00"></label>
+<label class="veld"><span>Doelgroep</span><input type="text" name="doelgroep"></label>
+<label class="veld veld-breed"><span>Het concept of het programma</span><textarea name="concept" rows="4"></textarea></label>
+<label class="veld"><span>Ruimte in m²</span><input type="number" name="m2" min="1" inputmode="numeric"></label>
+<label class="veld"><span>Diepte van de ruimte in meters</span><input type="number" name="diepte" min="1" inputmode="numeric"></label>
+<label class="veld veld-breed"><span>Beschrijving van de ruimte</span><textarea name="ruimte" rows="3"></textarea></label>
+</div>
+<fieldset class="budget"><legend>Richtbudget voor licht, geluid en muziek</legend><p class="uitleg">Een range is genoeg; je hoeft geen bedrag te noemen.</p><div class="slider" id="budget"><input type="range" name="budget_van" min="1000" max="25000" step="500" value="2500" aria-label="Van"><input type="range" name="budget_tot" min="1000" max="25000" step="500" value="7500" aria-label="Tot"><output id="budget_uit"></output></div><label class="vink"><input type="checkbox" name="budget_onbekend" value="ja"><span>Weet ik nog niet</span></label></fieldset>
+</section>
+<p class="formvoet"><button type="submit" class="wa knop">Verstuur je aanvraag<i aria-hidden="true">→</i></button>
+<span class="uitleg"><span>We gebruiken je gegevens alleen om je aanvraag te beantwoorden.</span> <a href="privacy.html">Privacyverklaring</a></span></p>
+<p class="formmelding" id="melding" hidden></p>
+</form>
+</main>
+<script>
+(function(){
+  var f=document.getElementById('aanvraag'),m=document.getElementById('melding');
+  var s=document.getElementById('budget');if(s){var a=s.querySelectorAll('input'),o=document.getElementById('budget_uit');
+    function eur(n){return '€ '+Number(n).toLocaleString('nl-NL')}
+    function toon(){var v=+a[0].value,t=+a[1].value;if(v>t){if(this===a[0])a[1].value=v;else a[0].value=t;v=+a[0].value;t=+a[1].value}o.textContent=eur(v)+' – '+eur(t)+(t>=25000?'+':'')}
+    a[0].addEventListener('input',toon);a[1].addEventListener('input',toon);toon()}
+  var q=location.search;if(/verzonden=1/.test(q)){m.hidden=false;m.textContent=f.dataset.dank;m.className='formmelding ok'}else if(/fout=1/.test(q)){m.hidden=false;m.textContent=f.dataset.fout;m.className='formmelding fout'}
+  f.addEventListener('submit',function(ev){
+    if(!window.fetch)return;ev.preventDefault();var b=f.querySelector('button');b.disabled=true;
+    fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}}).then(function(r){return r.json()}).then(function(r){
+      m.hidden=false;if(r.ok){m.textContent=f.dataset.dank;m.className='formmelding ok';f.reset();toon&&toon()}else{m.textContent=f.dataset.fout;m.className='formmelding fout';b.disabled=false}
+    }).catch(function(){m.hidden=false;m.textContent=f.dataset.fout;m.className='formmelding fout';b.disabled=false});
+  });
+})();
+</script>
+<footer class="voet">
+  <div class="voet-kolommen">
+    <div class="voet-merk">
+      <img src="img/logo-white.png" alt="HEAR">
+      <p>High End Audio Rental · Amsterdam</p>
+      <p><a href="mailto:maarten@hear.nl">maarten@hear.nl</a><br><a href="tel:+31624560220">+31 6 24560220</a></p>
+      <p class="voet-klein">HEAR is een handelsnaam van Maarten Versteeg communicatieadvies<br>KvK 42181393 · Van Kinsbergenstraat 54, 1057 PT Amsterdam<br><a href="privacy.html">Privacyverklaring</a></p>
+    </div>
+    <nav aria-label="Werk"><p class="label">Werk</p><a href="cases.html">Cases</a><a href="nieuws/">Nieuws</a><a href="over-hear.html">Over HEAR</a></nav>
+    <nav aria-label="Voor wie"><p class="label">Voor wie</p><a href="corporate.html">Corporate</a><a href="venue-owners.html">Venue owners</a><a href="dance-events.html">Dance events</a></nav>
+    <nav aria-label="Producten"><p class="label">Producten</p><a href="booth-dj-gear.html">Booth en dj-gear</a><a href="high-end-audio.html">High-end audio</a><a href="atmospheric-lighting.html">Sfeerverlichting</a><a href="dancefloor-lighting.html">Dansvloerverlichting</a><a href="vintage-lighting.html">90's vintage licht</a><a href="av-as-a-service.html">Advies en AV as a service</a><a href="artiesten.html">Artiesten</a><a href="special-projects.html">Custom dj-sets, playlists en remixes</a></nav>
+    <nav aria-label="Waarden"><p class="label">Waarden</p><a href="principes.html#samen">Samen</a><a href="principes.html#open">Open</a><a href="principes.html#vakmanschap">Vakmanschap</a><a href="principes.html#warmte">Warme sound</a></nav>
+  </div>
+</footer>
+</body></html>

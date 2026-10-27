@@ -498,3 +498,50 @@ body{font-variant-emoji:text}
 .venn-s{font:500 36px var(--kop);letter-spacing:.22em;fill:var(--zwart);text-anchor:middle;text-transform:uppercase}
 .venn-p{font:300 30px var(--kop);fill:var(--zwart);fill-opacity:.8;text-anchor:middle}
 .venn a:hover .venn-p{fill-opacity:1;text-decoration:underline}
+
+/* Aanvraagformulier (aanvraag.html) */
+.aanvraag{max-width:760px;padding-bottom:clamp(60px,8vw,110px)}
+.aanvraag .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.formblok{margin:0 0 42px}
+.formblok h2{font:300 clamp(24px,2.6vw,30px)/1.2 var(--kop);margin:0 0 18px;color:var(--zwart)}
+.formblok.zacht{border-top:1px solid var(--lijn);padding-top:34px}
+.formblok.optioneel{border-top:1px solid var(--lijn);padding-top:34px}
+.formblok.optioneel h2{color:var(--zacht)}
+.velden{display:grid;grid-template-columns:1fr 1fr;gap:16px 22px}
+.veld{display:flex;flex-direction:column;gap:6px;font:400 14px/1.4 var(--tekst);color:var(--tekstgrijs)}
+.veld-breed{grid-column:1/-1}
+.veld input,.veld textarea,.keuze .inline{font:400 16px/1.4 var(--tekst);color:var(--zwart);background:#fff;border:1px solid var(--lijn);border-radius:6px;padding:10px 12px;width:100%;box-sizing:border-box}
+.veld input:focus,.veld textarea:focus,.keuze .inline:focus{outline:2px solid var(--koraal);outline-offset:1px;border-color:var(--koraal)}
+.aanvraag fieldset{border:0;padding:0;margin:0;min-width:0}
+.aanvraag legend{font:400 14px/1.4 var(--tekst);color:var(--tekstgrijs);padding:0;margin:0 0 8px}
+.keuze{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center}
+.keuze legend{width:100%}
+.keuze .inline{width:auto;flex:1 1 160px;padding:6px 10px;font-size:15px}
+.vink{display:flex;align-items:flex-start;gap:9px;font:400 15px/1.45 var(--tekst);color:var(--zwart);cursor:pointer}
+.vink input{margin:3px 0 0;accent-color:var(--koraal);flex:none;width:17px;height:17px}
+.diensten{margin-top:34px}
+.diensten>legend{font:300 clamp(20px,2.2vw,24px)/1.2 var(--kop);color:var(--zwart);margin-bottom:14px}
+.dienstgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.dienstkolom legend{font:500 12px/1.3 var(--tekst);letter-spacing:.14em;text-transform:uppercase;color:var(--koraal);margin-bottom:10px}
+.dienstkolom .vink{margin:0 0 9px}
+.diensten .veld-breed{margin-top:14px}
+.budget{margin-top:26px}
+.budget .uitleg,.formvoet .uitleg{font:300 14px/1.5 var(--tekst);color:var(--zacht);margin:0 0 10px}
+.slider{position:relative;height:44px;margin:4px 0 8px}
+.slider input[type=range]{position:absolute;left:0;top:0;width:100%;margin:0;background:none;pointer-events:none;-webkit-appearance:none;appearance:none;height:44px}
+.slider input[type=range]::-webkit-slider-runnable-track{height:3px;background:var(--lijn);border-radius:2px}
+.slider input[type=range]::-moz-range-track{height:3px;background:var(--lijn);border-radius:2px}
+.slider input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;pointer-events:auto;width:22px;height:22px;border-radius:50%;background:var(--koraal);border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.25);margin-top:-10px;cursor:pointer}
+.slider input[type=range]::-moz-range-thumb{pointer-events:auto;width:18px;height:18px;border-radius:50%;background:var(--koraal);border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.25);cursor:pointer}
+.slider output{position:absolute;left:0;top:30px;font:400 15px/1.4 var(--tekst);color:var(--zwart)}
+.budget .vink{margin-top:4px}
+.formvoet{display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px;margin:10px 0 0}
+.formvoet .uitleg{margin:0;max-width:40ch}
+.formvoet .uitleg a{color:inherit}
+button.knop{font:inherit;border:0;cursor:pointer}
+button.knop:disabled{opacity:.6;cursor:wait}
+.formmelding{font:400 16px/1.5 var(--tekst);margin:18px 0 0;padding:14px 16px;border-radius:6px;background:#fff;border:1px solid var(--lijn)}
+.formmelding.ok{border-color:var(--turquoise)}
+.formmelding.fout{border-color:var(--koraal)}
+@media (max-width:760px){.dienstgrid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.velden{grid-template-columns:1fr}.dienstgrid{grid-template-columns:1fr}}

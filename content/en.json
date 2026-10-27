@@ -28,7 +28,8 @@
     "principes.html",
     "privacy.html",
     "dj-mixes.html",
-    "prijs.html"
+    "prijs.html",
+    "aanvraag.html"
   ],
   "globaal": [
     [
@@ -286,6 +287,10 @@
     [
       "<span class=\"tegel-bekijk\">Bekijk →</span>",
       "<span class=\"tegel-bekijk\">View →</span>"
+    ],
+    [
+      ">of vul het formulier in<",
+      ">or fill in the form<"
     ]
   ],
   "cases_json": {
@@ -2104,8 +2109,8 @@
         ">What we process<"
       ],
       [
-        ">Als je ons een bericht stuurt via WhatsApp of e-mail: je naam, telefoonnummer of e-mailadres en de inhoud van je bericht. We gebruiken dit alleen om je vraag te beantwoorden en, bij een opdracht, voor de uitvoering en administratie daarvan.<",
-        ">If you send us a message via WhatsApp or e-mail: your name, phone number or e-mail address and the content of your message. We use this only to answer your question and, if it leads to a job, to carry out and administer that job.<"
+        ">Als je ons een bericht stuurt via WhatsApp, e-mail of het aanvraagformulier: je naam, organisatie, telefoonnummer, e-mailadres en wat je over je event invult. We gebruiken dit alleen om je vraag te beantwoorden en, bij een opdracht, voor de uitvoering en administratie daarvan. Het formulier wordt als e-mail aan ons bezorgd via Resend en niet op de website opgeslagen.<",
+        ">If you send us a message via WhatsApp, e-mail or the request form: your name, organisation, phone number, e-mail address and what you fill in about your event. We use this only to answer your question and, if it leads to a job, to carry out and administer that job. The form is delivered to us as an e-mail via Resend and is not stored on the website.<"
       ],
       [
         ">Bij een opdracht: de gegevens die nodig zijn voor offerte, overeenkomst en factuur. Facturen bewaren we zeven jaar, zoals de wet voorschrijft. Andere gegevens bewaren we niet langer dan nodig voor het doel waarvoor je ze gaf.<",
@@ -2140,8 +2145,8 @@
         ">You can request access to, correction or deletion of your data via maarten@hear.nl. If you disagree with how we handle your data, you can file a complaint with the Dutch Data Protection Authority (Autoriteit Persoonsgegevens).<"
       ],
       [
-        ">Laatst bijgewerkt: 20 oktober 2026.<",
-        ">Last updated: 20 October 2026.<"
+        ">Laatst bijgewerkt: 28 oktober 2026.<",
+        ">Last updated: 28 October 2026.<"
       ],
       [
         ">Naar de homepage →<",
@@ -2410,6 +2415,244 @@
       [
         "aria-label=\"Verder\"",
         "aria-label=\"More\""
+      ]
+    ],
+    "aanvraag.html": [
+      [
+        "<title>Aanvraag · HEAR</title>",
+        "<title>Request · HEAR</title>"
+      ],
+      [
+        "Vul in wat je al weet. Na je aanvraag bellen we je terug, meestal dezelfde werkdag. Liever mailen? Dat kan ook: <a href=\"mailto:maarten@hear.nl\">maarten@hear.nl</a>.",
+        "Fill in what you already know. After your request we call you back, usually the same working day. Prefer email? That works too: <a href=\"mailto:maarten@hear.nl\">maarten@hear.nl</a>."
+      ],
+      [
+        ">Soort event<",
+        ">Type of event<"
+      ],
+      [
+        ">Zakelijk event<",
+        ">Corporate event<"
+      ],
+      [
+        ">Dance event<",
+        ">Dance event<"
+      ],
+      [
+        ">Anders<",
+        ">Other<"
+      ],
+      [
+        "=\"Anders, namelijk\"",
+        "=\"Other, namely\""
+      ],
+      [
+        "=\"namelijk…\"",
+        "=\"namely…\""
+      ],
+      [
+        ">Richtbudget voor licht, geluid en muziek<",
+        ">Indicative budget for light, sound and music<"
+      ],
+      [
+        ">Een range is genoeg; je hoeft geen bedrag te noemen.<",
+        ">A range is enough; you don&#x27;t have to name a figure.<"
+      ],
+      [
+        "=\"Van\"",
+        "=\"From\""
+      ],
+      [
+        "=\"Tot\"",
+        "=\"To\""
+      ],
+      [
+        ">Weet ik nog niet<",
+        ">I don&#x27;t know yet<"
+      ],
+      [
+        ">Wat we nodig hebben<",
+        ">What we need<"
+      ],
+      [
+        ">Naam<",
+        ">Name<"
+      ],
+      [
+        ">Organisatie<",
+        ">Organisation<"
+      ],
+      [
+        ">E-mail<",
+        ">Email<"
+      ],
+      [
+        ">Telefoonnummer, dan bellen we je terug<",
+        ">Phone number, so we can call you back<"
+      ],
+      [
+        ">Datum van het event<",
+        ">Date of the event<"
+      ],
+      [
+        ">Aantal gasten<",
+        ">Number of guests<"
+      ],
+      [
+        ">Geluid<",
+        ">Sound<"
+      ],
+      [
+        ">Sprekersversterking en microfoons<",
+        ">Speech amplification and microphones<"
+      ],
+      [
+        ">Geluid voor borrel of feest<",
+        ">Sound for a reception or party<"
+      ],
+      [
+        ">Dansvloersysteem<",
+        ">Dance floor system<"
+      ],
+      [
+        ">Technicus ter plekke<",
+        ">Technician on site<"
+      ],
+      [
+        ">Licht<",
+        ">Light<"
+      ],
+      [
+        ">Sfeerverlichting<",
+        ">Atmospheric lighting<"
+      ],
+      [
+        ">Dansvloerverlichting en lichtshow<",
+        ">Dance floor lighting and light show<"
+      ],
+      [
+        ">90&#x27;s vintage lichteffecten<",
+        ">90s vintage light effects<"
+      ],
+      [
+        ">Theaterlicht voor product of spreker<",
+        ">Theatre lighting for product or speaker<"
+      ],
+      [
+        ">Muziek<",
+        ">Music<"
+      ],
+      [
+        ">Dj<",
+        ">DJ<"
+      ],
+      [
+        ">Vocalist, saxofonist of percussionist<",
+        ">Vocalist, saxophonist or percussionist<"
+      ],
+      [
+        ">Playlist op maat<",
+        ">Custom playlist<"
+      ],
+      [
+        ">Dj-booth en gear voor je eigen dj<",
+        ">DJ booth and gear for your own DJ<"
+      ],
+      [
+        ">Extra<",
+        ">Extra<"
+      ],
+      [
+        ">Online uitzending<",
+        ">Online broadcast<"
+      ],
+      [
+        ">Videoschermen en presentatie<",
+        ">Video screens and presentation<"
+      ],
+      [
+        ">Videoproductie of aftermovie<",
+        ">Video production or aftermovie<"
+      ],
+      [
+        ">Advies over concept en programma<",
+        ">Advice on concept and programme<"
+      ],
+      [
+        ">Wat heb je nodig?<",
+        ">What do you need?<"
+      ],
+      [
+        ">Anders, namelijk<",
+        ">Other, namely<"
+      ],
+      [
+        ">Wil je verder nog iets kwijt?<",
+        ">Anything else you want to tell us?<"
+      ],
+      [
+        ">Je bericht<",
+        ">Your message<"
+      ],
+      [
+        ">Handig voor ons, niet verplicht<",
+        ">Useful for us, not required<"
+      ],
+      [
+        ">Je functie<",
+        ">Your role<"
+      ],
+      [
+        ">Naam van het event<",
+        ">Name of the event<"
+      ],
+      [
+        ">Tijd, van tot<",
+        ">Time, from to<"
+      ],
+      [
+        ">Doelgroep<",
+        ">Audience<"
+      ],
+      [
+        ">Het concept of het programma<",
+        ">The concept or programme<"
+      ],
+      [
+        ">Ruimte in m²<",
+        ">Room size in m²<"
+      ],
+      [
+        ">Diepte van de ruimte in meters<",
+        ">Depth of the room in metres<"
+      ],
+      [
+        ">Beschrijving van de ruimte<",
+        ">Description of the room<"
+      ],
+      [
+        ">Verstuur je aanvraag<",
+        ">Send your request<"
+      ],
+      [
+        ">We gebruiken je gegevens alleen om je aanvraag te beantwoorden.<",
+        ">We only use your details to answer your request.<"
+      ],
+      [
+        ">Vertel over je event<",
+        ">Tell us about your event<"
+      ],
+      [
+        "=\"Dank je. We bellen je terug, meestal dezelfde werkdag.\"",
+        "=\"Thank you. We will call you back, usually the same working day.\""
+      ],
+      [
+        "=\"Versturen lukte niet. Mail ons op maarten@hear.nl of bel +31 6 24560220.\"",
+        "=\"Sending failed. Email us at maarten@hear.nl or call +31 6 24560220.\""
+      ],
+      [
+        "=\"Vraag licht, geluid, dj of advies aan voor je event. Vul in wat je al weet; we bellen je terug.\"",
+        "=\"Request light, sound, a DJ or advice for your event. Fill in what you already know; we call you back.\""
       ]
     ]
   },
