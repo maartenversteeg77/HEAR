@@ -488,3 +488,13 @@ body{font-variant-emoji:text}
 .werk-beeld,.case-beeld{position:relative}
 .werk-label{position:absolute;right:12px;bottom:12px;width:clamp(40px,4vw,58px);height:auto;z-index:2;pointer-events:none}
 @media (max-width:760px){.casehero .ade-label{bottom:auto;top:14px;right:14px;width:52px}}
+
+/* Over HEAR: losse kernzin en venndiagram (dj & productie, communicatie, licht & geluid) */
+.founder-copy .founder-kern{font:300 clamp(26px,3vw,36px)/1.2 var(--kop);color:var(--zwart);margin:34px 0 18px;max-width:none}
+.venn{margin:0 0 30px;max-width:560px}
+.venn svg{width:100%;height:auto;display:block}
+.venn-c{fill-opacity:.5;mix-blend-mode:multiply}
+.venn-v{font:500 46px var(--kop);letter-spacing:.14em;fill:var(--zwart);text-anchor:middle;text-transform:uppercase}
+.venn-s{font:500 36px var(--kop);letter-spacing:.22em;fill:var(--zwart);text-anchor:middle;text-transform:uppercase}
+.venn-p{font:300 30px var(--kop);fill:var(--zwart);fill-opacity:.8;text-anchor:middle}
+.venn a:hover .venn-p{fill-opacity:1;text-decoration:underline}

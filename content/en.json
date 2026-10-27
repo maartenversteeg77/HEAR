@@ -478,8 +478,8 @@
         "<p>Alongside that, I've worked for some 25 years as a corporate communications specialist for large organisations. So I also know what’s important for a brand activation, product launch or staff event.</p>"
       ],
       [
-        "<p>Uit die combinatie is HEAR ontstaan. Ik begin bij wat een klant, bureau of artiest voor ogen heeft en zoek daar het geluid en het licht bij. Als dj hoor ik wat een ruimte nodig heeft. Als adviseur begrijp ik wat de opdrachtgever wil bereiken.</p>",
-        "<p>HEAR started out of that combination. I start from what a client, agency or artist has in mind, and find the sound and light to match. As a DJ, I hear what a room needs. As a consultant, I understand what the client wants to achieve.</p>"
+        "<p class=\"founder-kern\">Uit die combinatie is HEAR ontstaan.</p>",
+        "<p class=\"founder-kern\">HEAR started out of that combination.</p>"
       ],
       [
         "<p>Social media veranderen muziek en het dj-vak. Events worden groter en soms lijkt de show belangrijker dan de artiest. Of moet een dj zelfs zijn set en timing aanpassen aan licht en vuurwerk, wat hem reduceert tot decorstuk: een dj voor de vorm, niet voor de muziek. Bij HEAR staan licht en geluid niet vóór de artiest, maar in dienst van de artiest, met kleurrijke en creatieve lichtshows die de muziek en atmosfeer versterken.</p>",
@@ -524,6 +524,54 @@
       [
         "<span>Stuur me een appje</span>",
         "<span>Send me a message</span>"
+      ],
+      [
+        "<p>Ik begin bij wat een klant, bureau of artiest voor ogen heeft en zoek daar het geluid en het licht bij. Als dj hoor ik wat een ruimte nodig heeft. Als adviseur begrijp ik wat de opdrachtgever wil bereiken.</p>",
+        "<p>I start from what a client, agency or artist has in mind, and find the sound and light to match. As a DJ, I hear what a room needs. As a consultant, I understand what the client wants to achieve.</p>"
+      ],
+      [
+        "aria-label=\"Drie cirkels: dj en productie, communicatie, licht en geluid. Waar ze overlappen: curatie, atmosfeer en brand fit. In het midden HEAR.\"",
+        "aria-label=\"Three circles: DJ and production, communication, light and sound. Where they overlap: curation, atmosphere and brand fit. In the middle, HEAR.\""
+      ],
+      [
+        ">Dj &amp; productie</text>",
+        ">DJ &amp; production</text>"
+      ],
+      [
+        ">Communicatie</text>",
+        ">Communication</text>"
+      ],
+      [
+        ">Licht &amp; geluid</text>",
+        ">Light &amp; sound</text>"
+      ],
+      [
+        ">Curatie</text>",
+        ">Curation</text>"
+      ],
+      [
+        ">Atmosfeer</text>",
+        ">Atmosphere</text>"
+      ],
+      [
+        ">dj's, artiesten</text>",
+        ">DJs, artists</text>"
+      ],
+      [
+        ">en playlists</text>",
+        ">and playlists</text>"
+      ],
+      [
+        ">en dj-gear</text>",
+        ">and DJ gear</text>"
+      ],
+      [
+        ">verlichting</text>",
+        ">lighting</text>"
+      ],
+      [
+        ">en decoratie</text>",
+        ">and decoration</text>"
       ]
     ],
     "ade-dj.html": [
