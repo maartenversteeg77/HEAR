@@ -40,6 +40,7 @@
 .jogtekst .sub{font:600 11px/1.6 var(--tekst);letter-spacing:.22em;text-transform:uppercase;color:#8c8d8a;margin:0 0 18px;max-width:60ch}
 .jogtekst p{font-size:17px;line-height:1.7;color:var(--tekstgrijs);max-width:58ch;margin:0 0 14px}
 .jogtekst .waar{margin-top:10px;max-width:58ch}
+.jogtekst .nawoord{margin-top:18px;max-width:58ch}
 .jogtekst .waar h3{font:600 11px/1.5 var(--tekst);letter-spacing:.2em;text-transform:uppercase;color:var(--zwart);margin:0 0 14px}
 .jogtekst .waar p{font-size:15.5px;line-height:1.6}
 .jogtekst .knoprij{margin-top:10px}

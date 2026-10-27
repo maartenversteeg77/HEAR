@@ -1,5 +1,5 @@
 {
-  "_uitleg": "Principes en way of working: één pagina met het jogwheel. Per waarde: slug (anker), titel (op het display), statement (één zin), intro (2-3 zinnen), werkwijze (lijst onder 'Voor onze manier van werken betekent dit:'). Geen subpagina's. Gebouwd door scripts/bouw-principes.py.",
+  "_uitleg": "Principes en way of working: één pagina met het jogwheel. Per waarde: slug (anker), titel (op het display), statement (één zin), intro (2-3 zinnen), werkwijze (lijst onder 'Voor onze manier van werken betekent dit:'). Geen subpagina's. Gebouwd door scripts/bouw-principes.py. 'nawoord': optionele alinea's onder de lijst.",
   "kernzin": "Waarden en uitgangspunten",
   "intro": "Achter alles wat we doen zit een intentie. Dat is althans wel de bedoeling :-) Die bepaalt wat voor keuzes we maken, bijvoorbeeld in ons productassortiment of onze manier van samenwerken. Twee waarden en twee uitgangspunten bepalen die keuzes.",
   "paginas": [
@@ -24,8 +24,11 @@
       "werkwijze": [
         "We zijn nieuwsgierig naar andere oplossingen, andere meningen, nieuwe technologie en nieuwe muziek.",
         "Kritiek is er om van te leren: hoe kan het voortaan anders?",
-        "We oordelen niet zonder iemand eerst te bevragen.",
-        "Wij staan voor inclusie, de rechtsstaat, democratie en mensenrechten, en spreken ons uit wanneer wat vanzelfsprekend leek dat niet meer is. Met artiesten, events of hun financiers die daar tegenin gaan, of aan wie je dit moet uitleggen, werken we niet samen."
+        "We oordelen niet zonder iemand eerst te bevragen."
+      ],
+      "nawoord": [
+        "In de muziekindustrie wil het soms flink botsen tussen artiesten, organisatoren, investeerders en publiek. Over politiek, oorlog, democratie en rechtsstaat. Over de veiligheid van vrouwen en van mensen met een andere achtergrond of leefstijl. Over de invloed van groot geld op de cultuur.",
+        "“Woke” en “cancelcultuur” zijn labels, en vaak defensieve reacties op een publiek dat van bedrijven en artiesten eigenaarschap en verantwoordelijkheid verwacht. Ook voor ons wegen deze zaken mee in de partners die wij zoeken, en we spreken hen daar indien nodig op aan."
       ]
     },
     {

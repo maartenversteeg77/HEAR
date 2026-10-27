@@ -19,6 +19,7 @@
     else { h+='<p class="label">'+esc(p.titel)+'</p><h2>'+esc(p.statement)+'</h2><p>'+esc(p.intro)+'</p>'; }
     if(p.werkwijze&&p.werkwijze.length) h+='<div class="waar">'+(p.werkwijze_kop?'<h3>'+esc(p.werkwijze_kop)+'</h3>':'')+'<ul class="principes">'+p.werkwijze.map(function(t){return '<li>'+esc(t)+'</li>'}).join('')+'</ul></div>';
     else if(p.waar&&p.waar.length) h+='<div class="waar"><h3>Waar merk je dit aan?</h3><ul>'+p.waar.map(function(t){return '<li>'+esc(t)+'</li>'}).join('')+'</ul></div>';
+    if(p.nawoord&&p.nawoord.length) h+='<div class="nawoord">'+p.nawoord.map(function(t){return '<p>'+esc(t)+'</p>'}).join('')+'</div>';
     if(p.knop) h+='<p class="knoprij"><a class="wa sc" href="'+esc(p.href)+'">'+esc(p.knop)+'<i aria-hidden="true">→</i></a></p>';
     else if(p.href) h+='<p class="inline-link"><a href="'+esc(p.href)+'">Lees het hele principe →</a></p>';
     tekst.innerHTML=h;
