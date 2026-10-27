@@ -2423,8 +2423,8 @@
         "<title>Request · HEAR</title>"
       ],
       [
-        "Vul in wat je al weet. Na je aanvraag bellen we je terug, meestal dezelfde werkdag. Liever mailen? Dat kan ook: <a href=\"mailto:maarten@hear.nl\">maarten@hear.nl</a>.",
-        "Fill in what you already know. After your request we call you back, usually the same working day. Prefer email? That works too: <a href=\"mailto:maarten@hear.nl\">maarten@hear.nl</a>."
+        "Vul in wat je al weet; weet je iets nog niet, laat het veld dan leeg. Na je aanvraag bellen we je terug, meestal dezelfde werkdag. Liever mailen? Dat kan ook: <a href=\"mailto:maarten@hear.nl\">maarten@hear.nl</a>.",
+        "Fill in what you already know; if you don't know something yet, leave the field empty. After your request we call you back, usually the same working day. Prefer email? That works too: <a href=\"mailto:maarten@hear.nl\">maarten@hear.nl</a>."
       ],
       [
         ">Soort event<",
@@ -2471,16 +2471,16 @@
         ">I don&#x27;t know yet<"
       ],
       [
-        ">Wat we nodig hebben<",
-        ">What we need<"
-      ],
-      [
         ">Naam<",
         ">Name<"
       ],
       [
         ">Organisatie<",
         ">Organisation<"
+      ],
+      [
+        ">Je functie<",
+        ">Your role<"
       ],
       [
         ">E-mail<",
@@ -2491,12 +2491,36 @@
         ">Phone number, so we can call you back<"
       ],
       [
+        ">Naam van het event<",
+        ">Name of the event<"
+      ],
+      [
+        ">Locatie<",
+        ">Venue<"
+      ],
+      [
+        ">Beschrijf de ruimte<",
+        ">Describe the room<"
+      ],
+      [
         ">Datum van het event<",
         ">Date of the event<"
       ],
       [
+        ">Tijd, van tot<",
+        ">Time, from to<"
+      ],
+      [
         ">Aantal gasten<",
         ">Number of guests<"
+      ],
+      [
+        ">Doelgroep<",
+        ">Audience<"
+      ],
+      [
+        ">Het concept of het programma<",
+        ">The concept or programme<"
       ],
       [
         ">Geluid<",
@@ -2589,46 +2613,6 @@
       [
         ">Wil je verder nog iets kwijt?<",
         ">Anything else you want to tell us?<"
-      ],
-      [
-        ">Je bericht<",
-        ">Your message<"
-      ],
-      [
-        ">Handig voor ons, niet verplicht<",
-        ">Useful for us, not required<"
-      ],
-      [
-        ">Je functie<",
-        ">Your role<"
-      ],
-      [
-        ">Naam van het event<",
-        ">Name of the event<"
-      ],
-      [
-        ">Tijd, van tot<",
-        ">Time, from to<"
-      ],
-      [
-        ">Doelgroep<",
-        ">Audience<"
-      ],
-      [
-        ">Het concept of het programma<",
-        ">The concept or programme<"
-      ],
-      [
-        ">Ruimte in m²<",
-        ">Room size in m²<"
-      ],
-      [
-        ">Diepte van de ruimte in meters<",
-        ">Depth of the room in metres<"
-      ],
-      [
-        ">Beschrijving van de ruimte<",
-        ">Description of the room<"
       ],
       [
         ">Verstuur je aanvraag<",

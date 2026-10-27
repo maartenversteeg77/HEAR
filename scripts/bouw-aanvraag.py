@@ -20,15 +20,15 @@ def A(nl, en):  # attribuutwaarde (placeholder, aria-label)
 TITEL = "Aanvraag"
 KOP = "Vertel over je event"
 MAIL = '<a href="mailto:maarten@hear.nl">maarten@hear.nl</a>'
-INTRO_HTML = "Vul in wat je al weet. Na je aanvraag bellen we je terug, meestal dezelfde werkdag. Liever mailen? Dat kan ook: " + MAIL + "."
-paren.append((INTRO_HTML, "Fill in what you already know. After your request we call you back, usually the same working day. Prefer email? That works too: " + MAIL + "."))
+INTRO_HTML = "Vul in wat je al weet; weet je iets nog niet, laat het veld dan leeg. Na je aanvraag bellen we je terug, meestal dezelfde werkdag. Liever mailen? Dat kan ook: " + MAIL + "."
+paren.append((INTRO_HTML, "Fill in what you already know; if you don't know something yet, leave the field empty. After your request we call you back, usually the same working day. Prefer email? That works too: " + MAIL + "."))
 
 def veld(naam, nl, en, type="text", verplicht=False, extra=""):
     req = " required" if verplicht else ""
     return f'<label class="veld"><span>{T(nl, en)}</span><input type="{type}" name="{naam}"{req}{extra}></label>'
-def tekstvak(naam, nl, en, rijen=4, verplicht=False):
+def tekstvak(naam, nl, en, rijen=4, verplicht=False, breed=True):
     req = " required" if verplicht else ""
-    return f'<label class="veld veld-breed"><span>{T(nl, en)}</span><textarea name="{naam}" rows="{rijen}"{req}></textarea></label>'
+    return f'<label class="veld{" veld-breed" if breed else ""}"><span>{T(nl, en)}</span><textarea name="{naam}" rows="{rijen}"{req}></textarea></label>'
 
 # 4×4 diensten uit de catalogus
 DIENSTEN = [
@@ -66,7 +66,7 @@ def diensten():
             f'<label class="veld veld-breed"><span>{T("Anders, namelijk", "Other, namely")}</span><input type="text" name="diensten_anders"></label></fieldset>')
 
 soort = (f'<fieldset class="keuze"><legend>{T("Soort event", "Type of event")}</legend>'
-         f'<label class="vink"><input type="radio" name="soort" value="zakelijk" required><span>{T("Zakelijk event", "Corporate event")}</span></label>'
+         f'<label class="vink"><input type="radio" name="soort" value="zakelijk"><span>{T("Zakelijk event", "Corporate event")}</span></label>'
          f'<label class="vink"><input type="radio" name="soort" value="dance"><span>{T("Dance event", "Dance event")}</span></label>'
          f'<label class="vink"><input type="radio" name="soort" value="anders"><span>{T("Anders", "Other")}</span></label>'
          f'<input type="text" name="soort_anders" class="inline" aria-label="{A("Anders, namelijk", "Other, namely")}" placeholder="{A("namelijk…", "namely…")}"></fieldset>')
@@ -79,34 +79,25 @@ budget = (f'<fieldset class="budget"><legend>{T("Richtbudget voor licht, geluid 
 
 form = f'''<form class="aanvraag" method="post" action="/api/aanvraag" id="aanvraag">
 <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-<section class="formblok"><h2>{T("Wat we nodig hebben", "What we need")}</h2>
 <div class="velden">
 {veld("naam", "Naam", "Name", verplicht=True, extra=' autocomplete="name"')}
-{veld("organisatie", "Organisatie", "Organisation", verplicht=True, extra=' autocomplete="organization"')}
+{veld("organisatie", "Organisatie", "Organisation", extra=' autocomplete="organization"')}
+{veld("functie", "Je functie", "Your role")}
 {veld("email", "E-mail", "Email", "email", True, ' autocomplete="email"')}
 {veld("telefoon", "Telefoonnummer, dan bellen we je terug", "Phone number, so we can call you back", "tel", True, ' autocomplete="tel"')}
-{soort}
-{veld("datum", "Datum van het event", "Date of the event", "date", True)}
-{veld("gasten", "Aantal gasten", "Number of guests", "number", True, ' min="1" inputmode="numeric"')}
-</div>
-{diensten()}
-</section>
-<section class="formblok zacht"><h2>{T("Wil je verder nog iets kwijt?", "Anything else you want to tell us?")}</h2>
-{tekstvak("bericht", "Je bericht", "Your message", 5)}
-</section>
-<section class="formblok optioneel"><h2>{T("Handig voor ons, niet verplicht", "Useful for us, not required")}</h2>
-<div class="velden">
-{veld("functie", "Je functie", "Your role")}
 {veld("event", "Naam van het event", "Name of the event")}
+{veld("locatie", "Locatie", "Venue")}
+{tekstvak("ruimte", "Beschrijf de ruimte", "Describe the room", 2, breed=False)}
+{soort}
+{veld("datum", "Datum van het event", "Date of the event", "date")}
 {veld("tijd", "Tijd, van tot", "Time, from to", extra=' placeholder="16:00 – 23:00"')}
+{veld("gasten", "Aantal gasten", "Number of guests", "number", extra=' min="1" inputmode="numeric"')}
 {veld("doelgroep", "Doelgroep", "Audience")}
 {tekstvak("concept", "Het concept of het programma", "The concept or programme", 4)}
-{veld("m2", "Ruimte in m²", "Room size in m²", "number", extra=' min="1" inputmode="numeric"')}
-{veld("diepte", "Diepte van de ruimte in meters", "Depth of the room in metres", "number", extra=' min="1" inputmode="numeric"')}
-{tekstvak("ruimte", "Beschrijving van de ruimte", "Description of the room", 3)}
 </div>
+{diensten()}
 {budget}
-</section>
+{tekstvak("bericht", "Wil je verder nog iets kwijt?", "Anything else you want to tell us?", 5)}
 <p class="formvoet"><button type="submit" class="wa knop">{T("Verstuur je aanvraag", "Send your request")}<i aria-hidden="true">→</i></button>
 <span class="uitleg"><span>{T("We gebruiken je gegevens alleen om je aanvraag te beantwoorden.", "We only use your details to answer your request.")}</span> <a href="privacy.html">Privacyverklaring</a></span></p>
 <p class="formmelding" id="melding" hidden></p>

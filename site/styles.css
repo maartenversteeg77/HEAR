@@ -519,7 +519,9 @@ body{font-variant-emoji:text}
 .keuze .inline{width:auto;flex:1 1 160px;padding:6px 10px;font-size:15px}
 .vink{display:flex;align-items:flex-start;gap:9px;font:400 15px/1.45 var(--tekst);color:var(--zwart);cursor:pointer}
 .vink input{margin:3px 0 0;accent-color:var(--koraal);flex:none;width:17px;height:17px}
-.diensten{margin-top:34px}
+.diensten{margin-top:40px}
+.aanvraag>.veld-breed{display:flex;margin-top:30px}
+.aanvraag .formvoet{margin-top:30px}
 .diensten>legend{font:300 clamp(20px,2.2vw,24px)/1.2 var(--kop);color:var(--zwart);margin-bottom:14px}
 .dienstgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
 .dienstkolom legend{font:500 12px/1.3 var(--tekst);letter-spacing:.14em;text-transform:uppercase;color:var(--koraal);margin-bottom:10px}

@@ -8,7 +8,7 @@ const VAN = "HEAR aanvraag <aanvraag@hear.nl>";
 
 const VELDEN = [
   ["naam", "Naam"], ["organisatie", "Organisatie"], ["functie", "Functie"], ["email", "E-mail"], ["telefoon", "Telefoon"],
-  ["soort", "Soort event"], ["soort_anders", "Soort, anders"], ["event", "Naam event"], ["datum", "Datum"], ["tijd", "Tijd"],
+  ["soort", "Soort event"], ["soort_anders", "Soort, anders"], ["event", "Naam event"], ["locatie", "Locatie"], ["datum", "Datum"], ["tijd", "Tijd"],
   ["gasten", "Aantal gasten"], ["doelgroep", "Doelgroep"], ["diensten", "Diensten"], ["diensten_anders", "Diensten, anders"],
   ["bericht", "Bericht"], ["concept", "Concept / programma"], ["m2", "Ruimte m²"], ["diepte", "Diepte (m)"], ["ruimte", "Ruimte"],
   ["budget", "Richtbudget"],
