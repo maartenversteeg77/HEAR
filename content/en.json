@@ -588,10 +588,6 @@
         "alt=\"Light beams above a stage\""
       ],
       [
-        "data-i=\"9\">Alle producten en diensten</button>",
-        "data-i=\"9\">All products and services</button>"
-      ],
-      [
         ">Korte vraag? Stuur een appje</a>",
         ">Quick question? Send a WhatsApp</a>"
       ],
@@ -610,6 +606,22 @@
       [
         "alt=\"Coffee cuts: glas koffie op een vinylplaat in de zon\"",
         "alt=\"Coffee cuts: a glass of coffee on a vinyl record in the sun\""
+      ],
+      [
+        "<li class=\"pl-groep\" aria-hidden=\"true\">Producten</li>",
+        "<li class=\"pl-groep\" aria-hidden=\"true\">Products</li>"
+      ],
+      [
+        "<li class=\"pl-groep\" aria-hidden=\"true\">Diensten</li>",
+        "<li class=\"pl-groep\" aria-hidden=\"true\">Services</li>"
+      ],
+      [
+        "<span class=\"pl-groep\">Producten</span>",
+        "<span class=\"pl-groep\">Products</span>"
+      ],
+      [
+        "<span class=\"pl-groep\">Diensten</span>",
+        "<span class=\"pl-groep\">Services</span>"
       ]
     ],
     "cases.html": [
@@ -1496,6 +1508,14 @@
       [
         "> of playlist <",
         "> or playlist <"
+      ],
+      [
+        "<h2>Bekijk Coffee cuts <i",
+        "<h2>See Coffee cuts <i"
+      ],
+      [
+        "alt=\"Coffee cuts: glas koffie op een vinylplaat in de zon\"",
+        "alt=\"Coffee cuts: a glass of coffee on a vinyl record in the sun\""
       ]
     ],
     "booth-dj-gear.html": [

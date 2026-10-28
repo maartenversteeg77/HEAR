@@ -381,3 +381,9 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Opbouw landingspagina aangepast: geen beeldenrij meer bovenaan; per blok beeld, tekst en actie onder elkaar (Coffee cuts: beeld, tekst, bestelknop; Radio-mixes: beeld, tekst, link naar SoundCloud).
 - Tekst Coffee cuts: "…Geen generieke (AI-)tracks. Met Coffee cuts stellen we een playlist samen voor jouw zaak, uit onze eigen collectie van nieuwe releases en classics. Of wil je liever een live dj?"
 - Homepage-keuzelijst: de rij heet nu "Coffee cuts" (maakt nieuwsgierig), omschrijving "playlists of een live dj voor je koffiebar of bar", linkt naar het Coffee cuts-blok op de pagina. Overzicht, footer en paginatitel blijven "Custom dj-mix of playlist".
+
+## 2026-10-28 · Productlijst homepage
+- Lijst en dropdown blijven één lijst, met tussenkoppen "Producten" (dj-gear t/m vintage licht) en "Diensten" (communicatieadvies t/m aankoopadvies).
+- "Alle producten en diensten" in de dropdown gaat direct naar het overzicht (geen extra klik via het beeld).
+- Doorklik "Bekijk …" is een witte knop met donkere tekst, gelijk aan de ronde dropdownknop.
+- Overzicht producten en diensten: tegel "Bekijk Coffee cuts" toegevoegd (naar het Coffee cuts-blok), naast de tegel voor custom dj-mix of playlist.
