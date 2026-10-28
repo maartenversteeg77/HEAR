@@ -585,6 +585,10 @@
       [
         "data-i=\"8\">Alle producten en diensten</button>",
         "data-i=\"8\">All products and services</button>"
+      ],
+      [
+        ">Korte vraag? Stuur een appje</a>",
+        ">Quick question? Send a WhatsApp</a>"
       ]
     ],
     "cases.html": [
