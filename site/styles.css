@@ -588,7 +588,10 @@ button.knop:disabled{opacity:.6;cursor:wait}
 .jog-leesook{padding-top:0!important;padding-bottom:clamp(40px,6vw,80px)!important}
 .founder-copy .lees-ook,.jog-leesook .lees-ook{font:400 16px/1.5 var(--tekst)!important;color:var(--tekstgrijs);margin:22px 0 0}
 .stapuitleg{font:400 16px/1.5 var(--tekst);color:var(--tekstgrijs);margin:-8px 0 20px;max-width:56ch}
-.basis-links{display:flex;flex-direction:column;gap:8px;margin:6px 0 0}
-.basis-hoofd{font:500 16px/1.4 var(--tekst);color:var(--zwart);text-decoration:underline;text-underline-offset:4px}
-.basis-sub{font:400 15px/1.4 var(--tekst);color:var(--zacht);text-decoration:underline;text-underline-offset:4px}
-.basis-hoofd:hover,.basis-sub:hover{color:var(--koraal)}
+.basis-kader .basis-kop{font:300 clamp(22px,2vw,28px)/1.2 var(--kop);letter-spacing:0;text-transform:none;margin:0 0 10px}
+.basis-kader p{font-size:16px}
+.basis-knop{margin:20px 0 0!important}
+.basis-knop .wa{background:var(--zwart);color:var(--wit)}
+.basis-lees{margin:14px 0 0!important;font-size:14px!important}
+.basis-lees a{color:var(--zwart);text-decoration:underline;text-underline-offset:3px}
+.basis-kader p{color:var(--zwart)!important}@media (max-width:560px){.basis-knop .wa{font-size:16px;padding:14px 20px}}
