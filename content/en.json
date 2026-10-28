@@ -467,8 +467,20 @@
         "<a class=\"tekstlink\" href=\"over-hear.html\">Founder story</a><a class=\"tekstlink\" href=\"principes.html\">Values and principles</a>"
       ],
       [
-        "<a class=\"pl-verder\" href=\"booth-dj-gear.html\"><span>Bekijk alle dj-gear</span>",
-        "<a class=\"pl-verder\" href=\"booth-dj-gear.html\"><span>See all DJ gear</span>"
+        "aria-label=\"Kies een categorie\"",
+        "aria-label=\"Choose a category\""
+      ],
+      [
+        "<span class=\"pl-k-titel\">Dj-gear</span><small class=\"pl-k-sub\">CDJ-3000X, V10, Euphonia, WARM2 en booth</small>",
+        "<span class=\"pl-k-titel\">DJ gear</span><small class=\"pl-k-sub\">CDJ-3000X, V10, Euphonia, WARM2 and booth</small>"
+      ],
+      [
+        ">Bekijk alle producten en diensten →</a>",
+        ">See all products and services →</a>"
+      ],
+      [
+        "<span class=\"pl-bekijk\"><span>Bekijk alle dj-gear</span>",
+        "<span class=\"pl-bekijk\"><span>See all DJ gear</span>"
       ],
       [
         "data-bekijk=\"Bekijk alle dj-gear\"><span class=\"pl-titel\">Dj-gear</span><small>CDJ-3000X, V10, Euphonia, WARM2 en booth</small>",
@@ -479,6 +491,10 @@
         "alt=\"AlphaTheta Euphonia rotary mixer in red light\""
       ],
       [
+        "data-i=\"0\">Dj-gear</button>",
+        "data-i=\"0\">DJ gear</button>"
+      ],
+      [
         "data-bekijk=\"Bekijk alle geluid\"><span class=\"pl-titel\">Geluid</span><small>RCF KX en Brooklyn Audio</small>",
         "data-bekijk=\"See all sound\"><span class=\"pl-titel\">Sound</span><small>RCF KX and Brooklyn Audio</small>"
       ],
@@ -487,12 +503,44 @@
         "alt=\"RCF loudspeakers in a hall with truss\""
       ],
       [
-        "data-bekijk=\"Bekijk licht\"><span class=\"pl-titel\">Licht</span><small>sfeer, dansvloer, 90&#x27;s vintage</small>",
-        "data-bekijk=\"See light\"><span class=\"pl-titel\">Light</span><small>ambient, dance floor, 90s vintage</small>"
+        "data-i=\"1\">Geluid</button>",
+        "data-i=\"1\">Sound</button>"
+      ],
+      [
+        "data-bekijk=\"Bekijk sfeerlicht\"><span class=\"pl-titel\">Sfeerlicht</span><small>accu-washlights, theaterspots, hazer</small>",
+        "data-bekijk=\"See ambient lighting\"><span class=\"pl-titel\">Ambient lighting</span><small>battery washlights, theatre spots, hazer</small>"
+      ],
+      [
+        "alt=\"Productpresentatie met theaterlicht en sfeerverlichting\"",
+        "alt=\"Product presentation with theatre and ambient lighting\""
+      ],
+      [
+        "data-i=\"2\">Sfeerlicht</button>",
+        "data-i=\"2\">Ambient lighting</button>"
+      ],
+      [
+        "data-bekijk=\"Bekijk dansvloerlicht\"><span class=\"pl-titel\">Dansvloerlicht</span><small>hybride moving heads en lichtshows</small>",
+        "data-bekijk=\"See dance floor lighting\"><span class=\"pl-titel\">Dance floor lighting</span><small>hybrid moving heads and light shows</small>"
       ],
       [
         "alt=\"Volle dansvloer in rood en paars licht\"",
         "alt=\"Packed dance floor in red and purple light\""
+      ],
+      [
+        "data-i=\"3\">Dansvloerlicht</button>",
+        "data-i=\"3\">Dance floor lighting</button>"
+      ],
+      [
+        "data-bekijk=\"Bekijk vintage licht\"><span class=\"pl-titel\">90&#x27;s vintage licht</span><small>Astrodisco en Golden Scan</small>",
+        "data-bekijk=\"See vintage lighting\"><span class=\"pl-titel\">90s vintage lighting</span><small>Astrodisco and Golden Scan</small>"
+      ],
+      [
+        "alt=\"Clay Paky Astrodisco\"",
+        "alt=\"Clay Paky Astrodisco\""
+      ],
+      [
+        "data-i=\"4\">90&#x27;s vintage licht</button>",
+        "data-i=\"4\">90s vintage lighting</button>"
       ],
       [
         "data-bekijk=\"Bekijk advies\"><span class=\"pl-titel\">Advies en AV as a service</span><small>merkonafhankelijk, voor venues</small>",
@@ -503,12 +551,20 @@
         "alt=\"Event venue set up for a gala\""
       ],
       [
+        "data-i=\"5\">Advies en AV as a service</button>",
+        "data-i=\"5\">Advice and AV as a service</button>"
+      ],
+      [
         "data-bekijk=\"Bekijk artiesten\"><span class=\"pl-titel\">Dj&#x27;s en artiesten</span><small>vocalist, saxofonist, percussionist</small>",
         "data-bekijk=\"See artists\"><span class=\"pl-titel\">DJs and artists</span><small>vocalist, saxophonist, percussionist</small>"
       ],
       [
         "alt=\"Tuinfeest met dj en saxofonist\"",
         "alt=\"Garden party with DJ and saxophonist\""
+      ],
+      [
+        "data-i=\"6\">Dj&#x27;s en artiesten</button>",
+        "data-i=\"6\">DJs and artists</button>"
       ],
       [
         "data-bekijk=\"Bekijk sets en playlists\"><span class=\"pl-titel\">Sets en playlists</span><small>custom dj-sets, playlists, remixes</small>",
@@ -519,40 +575,8 @@
         "alt=\"Deep Radio\""
       ],
       [
-        "aria-label=\"Kies een categorie\"",
-        "aria-label=\"Choose a category\""
-      ],
-      [
-        ">Bekijk alle producten en diensten →</a></li>",
-        ">See all products and services →</a></li>"
-      ],
-      [
-        "<span class=\"pl-k-titel\">Dj-gear</span><small class=\"pl-k-sub\">CDJ-3000X, V10, Euphonia, WARM2 en booth</small>",
-        "<span class=\"pl-k-titel\">DJ gear</span><small class=\"pl-k-sub\">CDJ-3000X, V10, Euphonia, WARM2 and booth</small>"
-      ],
-      [
-        "<button type=\"button\" class=\"aan\" data-i=\"0\">Dj-gear</button>",
-        "<button type=\"button\" class=\"aan\" data-i=\"0\">DJ gear</button>"
-      ],
-      [
-        "<button type=\"button\" data-i=\"1\">Geluid</button>",
-        "<button type=\"button\" data-i=\"1\">Sound</button>"
-      ],
-      [
-        "<button type=\"button\" data-i=\"2\">Licht</button>",
-        "<button type=\"button\" data-i=\"2\">Light</button>"
-      ],
-      [
-        "<button type=\"button\" data-i=\"3\">Advies en AV as a service</button>",
-        "<button type=\"button\" data-i=\"3\">Advice and AV as a service</button>"
-      ],
-      [
-        "<button type=\"button\" data-i=\"4\">Dj&#x27;s en artiesten</button>",
-        "<button type=\"button\" data-i=\"4\">DJs and artists</button>"
-      ],
-      [
-        "<button type=\"button\" data-i=\"5\">Sets en playlists</button>",
-        "<button type=\"button\" data-i=\"5\">Sets and playlists</button>"
+        "data-i=\"7\">Sets en playlists</button>",
+        "data-i=\"7\">Sets and playlists</button>"
       ]
     ],
     "cases.html": [
