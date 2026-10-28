@@ -165,7 +165,7 @@ main = f'''<main class="wrap">
   window.addEventListener('popstate',function(ev){{var n=(ev.state&&ev.state.stap)||'1';if(f.querySelector('.stap[data-stap="'+n+'"]'))ga(n,false)}});
   var q=location.search;if(/verzonden=1/.test(q)){{m.hidden=false;m.textContent=f.dataset.dank;m.className='formmelding ok'}}else if(/fout=1/.test(q)){{m.hidden=false;m.textContent=f.dataset.fout;m.className='formmelding fout'}}
   f.addEventListener('submit',function(ev){{
-    if(!window.fetch)return;ev.preventDefault();var b=f.querySelector('button');b.disabled=true;
+    if(!window.fetch)return;ev.preventDefault();var b={{set disabled(v){{[].forEach.call(f.querySelectorAll('button[type=submit]'),function(x){{x.disabled=v}})}}}};b.disabled=true;
     fetch(f.action,{{method:'POST',body:new FormData(f),headers:{{'Accept':'application/json'}}}}).then(function(r){{return r.json()}}).then(function(r){{
       m.hidden=false;if(r.ok){{m.textContent=f.dataset.dank;m.className='formmelding ok';f.reset();st.forEach(function(x){{x.hidden=true}})}}else{{m.textContent=f.dataset.fout;m.className='formmelding fout';b.disabled=false}}
     }}).catch(function(){{m.hidden=false;m.textContent=f.dataset.fout;m.className='formmelding fout';b.disabled=false}});
