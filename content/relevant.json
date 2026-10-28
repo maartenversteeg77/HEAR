@@ -2,22 +2,22 @@
   "_uitleg": "Blok 'Relevante producten en diensten' (1–3 tegels + link naar het overzicht) op doelgroep- en casepagina's. scripts/bouw-relevant.py zet het blok vóór de WhatsApp-CTA; bestaand blok wordt vervangen. 'catalogus' = tegel per categorie (naam, beeld, standaardtekst); 'paginas' = per pagina een lijst van slugs, of {slug, tekst} voor een afwijkende tekst. Engels: koppen en teksten staan als 'globaal'-paren in en.json. 'lees_ook' = pagina's die afsluiten met 'Lees ook: Wat kost audiovisuele ondersteuning van een evenement eigenlijk?' (alleen NL; op de Engelse pagina's weggelaten via een globaal paar).",
   "catalogus": {
     "booth-dj-gear": {
-      "naam": "Booth en dj-gear",
+      "naam": "Dj-gear",
       "beeld": "img/diensten/euphonia.jpg",
       "tekst": "Rider-proof booth met CDJ-3000X en V10 of Euphonia"
     },
     "high-end-audio": {
-      "naam": "High-end audio",
+      "naam": "Geluid",
       "beeld": "img/diensten/kx-familie.jpg",
       "tekst": "Hybride PA van RCF en Brooklyn Audio"
     },
     "atmospheric-lighting": {
-      "naam": "Sfeerverlichting",
+      "naam": "Sfeerlicht",
       "beeld": "img/diensten/pixelpars.jpg",
       "tekst": "Draadloos sfeerlicht, full-colour"
     },
     "dancefloor-lighting": {
-      "naam": "Dansvloerverlichting",
+      "naam": "Dansvloerlicht",
       "beeld": "img/diensten/ifx640-warm.jpg",
       "tekst": "Moving heads die de muziek volgen"
     },
@@ -26,17 +26,17 @@
       "beeld": "img/diensten/astrodisco.jpg",
       "tekst": "Gereviseerde klassiekers uit de discotijd"
     },
-    "av-as-a-service": {
+    "aankoopadvies": {
       "naam": "Aankoopadvies licht en geluid",
       "beeld": "img/diensten/yamaha-dm3.jpg",
       "tekst": "Merkonafhankelijk advies voor locaties"
     },
     "artiesten": {
-      "naam": "Dj’s, vocalisten en instrumentalisten",
+      "naam": "Dj’s en artiesten",
       "beeld": "img/jubileum-breed.jpg",
       "tekst": "Dj’s en live muzikanten die bij het event passen"
     },
-    "special-projects": {
+    "custom-dj-mix": {
       "naam": "Custom dj-mix of playlist",
       "beeld": "assets/radio-deep-radio.png",
       "tekst": "Mixen, playlists en edits op maat"
@@ -48,7 +48,7 @@
       "high-end-audio",
       "dancefloor-lighting"
     ],
-    "corporate.html": [
+    "zakelijke-events.html": [
       "atmospheric-lighting",
       {
         "slug": "high-end-audio",
@@ -56,8 +56,8 @@
       },
       "artiesten"
     ],
-    "venue-owners.html": [
-      "av-as-a-service",
+    "bijzondere-eventlocaties.html": [
+      "aankoopadvies",
       "high-end-audio",
       "atmospheric-lighting"
     ],
@@ -86,11 +86,11 @@
     ],
     "dj-sets.html": [
       "artiesten",
-      "special-projects",
+      "custom-dj-mix",
       "booth-dj-gear"
     ],
     "systeemadvies.html": [
-      "av-as-a-service",
+      "aankoopadvies",
       "high-end-audio"
     ],
     "prive-event.html": [
@@ -99,13 +99,13 @@
       "high-end-audio"
     ],
     "radio-mixes.html": [
-      "special-projects",
+      "custom-dj-mix",
       "artiesten"
     ]
   },
   "lees_ook": [
     "dance-events.html",
-    "corporate.html",
+    "zakelijke-events.html",
     "productpresentatie.html",
     "gemeentelijk-netwerkevent.html",
     "jubileum-ondernemersnetwerk.html",

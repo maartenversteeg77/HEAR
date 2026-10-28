@@ -3,12 +3,12 @@
   "doelgroepen": {
     "corporate": {
       "naam": "Zakelijke events",
-      "link": "corporate.html",
+      "link": "zakelijke-events.html",
       "naam_en": "Corporate"
     },
     "venue": {
       "naam": "Bijzondere eventlocaties",
-      "link": "venue-owners.html",
+      "link": "bijzondere-eventlocaties.html",
       "naam_en": "Special event venues"
     },
     "dance": {

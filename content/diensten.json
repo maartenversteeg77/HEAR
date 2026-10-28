@@ -3,7 +3,7 @@
   "paginas": [
     {
       "bestand": "booth-dj-gear.html",
-      "titel": "Booth en dj-gear",
+      "titel": "Dj-gear",
       "kernzin": "Een complete, rider-proof dj-opstelling met booth, spelers, mixer en monitoring",
       "beeld": "img/diensten/booth-bovenaf.jpg",
       "beeld_alt": "Dj-booth van bovenaf, met twee mediaspelers, een mixer en een koptelefoon",
@@ -100,7 +100,7 @@
     },
     {
       "bestand": "high-end-audio.html",
-      "titel": "High-end audio",
+      "titel": "Geluid",
       "kernzin": "PA-systemen van de hoogste RCF-lijn en Brooklyn Audio",
       "beeld": "img/systeem-breed.jpg",
       "beeld_alt": "RCF-luidsprekers onder een truss met moving heads",
@@ -206,7 +206,7 @@
     },
     {
       "bestand": "atmospheric-lighting.html",
-      "titel": "Sfeerverlichting",
+      "titel": "Sfeerlicht",
       "kernzin": "Sfeerlicht voor presentaties en events: multi-inzetbaar, full-colour en veelal draadloos",
       "beeld": "img/case-productpresentatie.jpg",
       "beeld_alt": "Sneakers op verlichte plateaus onder theaterspots, in een hal met blauw licht",
@@ -271,7 +271,7 @@
     },
     {
       "bestand": "dancefloor-lighting.html",
-      "titel": "Dansvloerverlichting",
+      "titel": "Dansvloerlicht",
       "kernzin": "Dansvloerverlichting",
       "beeld": "img/diensten/dansvloer.jpg",
       "beeld_alt": "Volle dansvloer in roze en blauw licht, met bundels vanaf het plafond",
@@ -403,8 +403,8 @@
       ],
       "links": [
         {
-          "tekst": "Voor wie: corporate",
-          "href": "corporate.html"
+          "tekst": "Voor wie: zakelijke events",
+          "href": "zakelijke-events.html"
         },
         {
           "tekst": "Wat kost audiovisuele ondersteuning van een evenement eigenlijk?",
@@ -414,7 +414,7 @@
     },
     {
       "bestand": "artiesten.html",
-      "titel": "Dj's, vocalisten en instrumentalisten",
+      "titel": "Dj's en artiesten",
       "kernzin": "Dj's, vocalisten en instrumentalisten die passen bij de avond",
       "beeld": "img/jubileum-breed.jpg",
       "beeld_alt": "Een dj met koptelefoon en een saxofonist tijdens een tuinfeest",
@@ -455,7 +455,7 @@
       "cta_bericht": "Hoi Maarten, ik wil meer weten over een dj boeken."
     },
     {
-      "bestand": "special-projects.html",
+      "bestand": "custom-dj-mix.html",
       "titel": "Custom dj-mix of playlist",
       "kernzin": "Dj-sets, playlists en remixes op maat",
       "beeld": "assets/radio-deep-radio.png",
@@ -468,7 +468,7 @@
             "Of je nu een koffiebar hebt of bijvoorbeeld een cocktailbar: je wilt warme muziek die past bij de identiteit van je zaak. Geen generieke (AI-)tracks. Met Coffee cuts stellen we een playlist samen voor jouw zaak, uit onze eigen collectie van nieuwe releases en classics. Of wil je liever een live dj?"
           ],
           "id": "coffee-cuts",
-          "html_na": "<p class=\"knoprij\"><button type=\"button\" class=\"wa knop cc-open\" aria-expanded=\"false\" aria-controls=\"coffee-cuts-form\"><span>Bestel een Coffee cuts</span><i aria-hidden=\"true\">↓</i></button></p><form class=\"aanvraag cc-form\" id=\"coffee-cuts-form\" hidden method=\"post\" action=\"/api/aanvraag\" data-dank=\"Dank je. We nemen contact met je op over je Coffee cuts, meestal dezelfde werkdag.\" data-fout=\"Versturen lukte niet. Mail ons op maarten@hear.nl of bel +31 6 24560220.\"><input type=\"hidden\" name=\"bron\" value=\"Coffee cuts\"><label class=\"hp\" aria-hidden=\"true\">Website<input type=\"text\" name=\"website\" tabindex=\"-1\" autocomplete=\"off\"></label><fieldset class=\"keuze\"><legend>Ik wil</legend><div class=\"keuzelijst cc-keuzes\"><label class=\"vink\"><input type=\"checkbox\" name=\"cc_wens\" value=\"Een live dj\"><span>Een live dj</span></label><label class=\"vink\"><input type=\"checkbox\" name=\"cc_wens\" value=\"Een live dj op vinyl\"><span>Een live dj op vinyl</span></label><label class=\"vink\"><input type=\"checkbox\" name=\"cc_wens\" value=\"Een playlist afgestemd op mijn zaak\" class=\"cc-playlist\"><span>Een playlist afgestemd op mijn zaak</span></label></div></fieldset><div class=\"velden\"><label class=\"veld cc-lengte\" hidden><span>Lengte playlist (uur)</span><input type=\"number\" name=\"cc_lengte\" min=\"1\" max=\"24\" step=\"1\" inputmode=\"numeric\"></label><label class=\"veld veld-breed\"><span>Beschrijf de sfeer in je zaak</span><textarea name=\"cc_sfeer\" rows=\"3\"></textarea></label><label class=\"veld veld-breed\"><span>Noem een locatie of sfeer waar het op moet lijken</span><textarea name=\"cc_lijkt\" rows=\"2\"></textarea></label><label class=\"veld veld-breed\"><span>Geef een aantal voorbeelden van nummers die je vindt passen</span><textarea name=\"cc_nummers\" rows=\"3\"></textarea></label><label class=\"veld\"><span>Naam</span><input type=\"text\" name=\"naam\" required autocomplete=\"name\"></label><label class=\"veld\"><span>Naam van je zaak</span><input type=\"text\" name=\"organisatie\" autocomplete=\"organization\"></label><label class=\"veld\"><span>E-mail</span><input type=\"email\" name=\"email\" required autocomplete=\"email\"></label><label class=\"veld\"><span>Telefoon</span><input type=\"tel\" name=\"telefoon\" autocomplete=\"tel\"></label></div><div class=\"formvoet\"><button type=\"submit\" class=\"wa knop\"><span>Verstuur</span><i aria-hidden=\"true\">→</i></button><p class=\"uitleg\">We gebruiken je gegevens alleen om op je aanvraag te reageren. <a href=\"privacy.html\">Privacyverklaring</a></p></div><p class=\"formmelding\" role=\"status\" hidden></p></form><script>(function(){var k=document.querySelector('.cc-open'),f=document.getElementById('coffee-cuts-form');if(!k||!f)return;var pl=f.querySelector('.cc-playlist'),le=f.querySelector('.cc-lengte'),m=f.querySelector('.formmelding');k.addEventListener('click',function(){var o=f.hidden;f.hidden=!o;k.setAttribute('aria-expanded',o);if(o)f.querySelector('input[type=checkbox]').focus()});pl.addEventListener('change',function(){le.hidden=!pl.checked});f.addEventListener('submit',function(ev){ev.preventDefault();var b=f.querySelector('button[type=submit]');b.disabled=true;fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}}).then(function(r){return r.json()}).then(function(r){m.hidden=false;if(r.ok){m.textContent=f.dataset.dank;m.className='formmelding ok';f.reset();le.hidden=true}else{m.textContent=f.dataset.fout;m.className='formmelding fout'}b.disabled=false}).catch(function(){m.hidden=false;m.textContent=f.dataset.fout;m.className='formmelding fout';b.disabled=false})})})();</script>",
+          "html_na": "<p class=\"knoprij\"><button type=\"button\" class=\"wa knop cc-open\" aria-expanded=\"false\" aria-controls=\"coffee-cuts-form\"><span>Bestel een Coffee cuts</span><i aria-hidden=\"true\">↓</i></button></p><form class=\"aanvraag cc-form\" id=\"coffee-cuts-form\" hidden method=\"post\" action=\"/api/aanvraag\" data-dank=\"Dank je. We nemen contact met je op over je Coffee cuts, meestal dezelfde werkdag.\" data-fout=\"Versturen lukte niet. Mail ons op maarten@hear.nl of bel +31 6 24560220.\"><input type=\"hidden\" name=\"bron\" value=\"Coffee cuts\"><label class=\"hp\" aria-hidden=\"true\">Website<input type=\"text\" name=\"website\" tabindex=\"-1\" autocomplete=\"off\"></label><fieldset class=\"keuze\"><legend>Ik wil</legend><div class=\"keuzelijst cc-keuzes\"><label class=\"vink\"><input type=\"checkbox\" name=\"cc_wens\" value=\"Een live dj\"><span>Een live dj</span></label><label class=\"vink\"><input type=\"checkbox\" name=\"cc_wens\" value=\"Een live dj op vinyl\"><span>Een live dj op vinyl</span></label><label class=\"vink\"><input type=\"checkbox\" name=\"cc_wens\" value=\"Een playlist afgestemd op mijn zaak\" class=\"cc-playlist\"><span>Een playlist afgestemd op mijn zaak</span></label><label class=\"vink\"><input type=\"checkbox\" name=\"cc_wens\" value=\"Een 2-uurs dj-mix voor mijn merk of locatie\"><span>Een 2-uurs dj-mix voor jouw merk of locatie</span></label></div></fieldset><div class=\"velden\"><label class=\"veld cc-lengte\" hidden><span>Lengte playlist (uur)</span><input type=\"number\" name=\"cc_lengte\" min=\"1\" max=\"24\" step=\"1\" inputmode=\"numeric\"></label><label class=\"veld veld-breed\"><span>Beschrijf de sfeer in je zaak</span><textarea name=\"cc_sfeer\" rows=\"3\"></textarea></label><label class=\"veld veld-breed\"><span>Noem een locatie of sfeer waar het op moet lijken</span><textarea name=\"cc_lijkt\" rows=\"2\"></textarea></label><label class=\"veld veld-breed\"><span>Geef een aantal voorbeelden van nummers die je vindt passen</span><textarea name=\"cc_nummers\" rows=\"3\"></textarea></label><label class=\"veld\"><span>Naam</span><input type=\"text\" name=\"naam\" required autocomplete=\"name\"></label><label class=\"veld\"><span>Naam van je zaak</span><input type=\"text\" name=\"organisatie\" autocomplete=\"organization\"></label><label class=\"veld\"><span>E-mail</span><input type=\"email\" name=\"email\" required autocomplete=\"email\"></label><label class=\"veld\"><span>Telefoon</span><input type=\"tel\" name=\"telefoon\" autocomplete=\"tel\"></label></div><div class=\"formvoet\"><button type=\"submit\" class=\"wa knop\"><span>Verstuur</span><i aria-hidden=\"true\">→</i></button><p class=\"uitleg\">We gebruiken je gegevens alleen om op je aanvraag te reageren. <a href=\"privacy.html\">Privacyverklaring</a></p></div><p class=\"formmelding\" role=\"status\" hidden></p></form><script>(function(){var k=document.querySelector('.cc-open'),f=document.getElementById('coffee-cuts-form');if(!k||!f)return;var pl=f.querySelector('.cc-playlist'),le=f.querySelector('.cc-lengte'),m=f.querySelector('.formmelding');k.addEventListener('click',function(){var o=f.hidden;f.hidden=!o;k.setAttribute('aria-expanded',o);if(o)f.querySelector('input[type=checkbox]').focus()});pl.addEventListener('change',function(){le.hidden=!pl.checked});f.addEventListener('submit',function(ev){ev.preventDefault();var b=f.querySelector('button[type=submit]');b.disabled=true;fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}}).then(function(r){return r.json()}).then(function(r){m.hidden=false;if(r.ok){m.textContent=f.dataset.dank;m.className='formmelding ok';f.reset();le.hidden=true}else{m.textContent=f.dataset.fout;m.className='formmelding fout'}b.disabled=false}).catch(function(){m.hidden=false;m.textContent=f.dataset.fout;m.className='formmelding fout';b.disabled=false})})})();</script>",
           "beeld": "img/diensten/coffee-cuts.jpg",
           "beeld_alt": "Coffee cuts: glas koffie op een vinylplaat in de zon"
         },
@@ -493,7 +493,7 @@
       "cta": false
     },
     {
-      "bestand": "av-as-a-service.html",
+      "bestand": "aankoopadvies.html",
       "titel": "Aankoopadvies licht en geluid",
       "kernzin": "Merkonafhankelijk advies en begeleiding bij de aanschaf van licht en geluid",
       "beeld": "img/diensten/gala.jpg",
@@ -534,7 +534,7 @@
         },
         {
           "tekst": "Voor wie: bijzondere eventlocaties",
-          "href": "venue-owners.html"
+          "href": "bijzondere-eventlocaties.html"
         }
       ],
       "cta": false

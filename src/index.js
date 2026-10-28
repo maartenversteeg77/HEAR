@@ -64,10 +64,18 @@ export default {
       url.protocol = "https:";
       return Response.redirect(url.toString(), 301);
     }
+    // oude paginanamen (hernoemd 28 okt 2026) permanent doorsturen naar de nieuwe
+    const OUD = { "corporate": "zakelijke-events", "venue-owners": "bijzondere-eventlocaties", "av-as-a-service": "aankoopadvies", "special-projects": "custom-dj-mix" };
+    const om = /^(\/en)?\/(corporate|venue-owners|av-as-a-service|special-projects)(\.html)?\/?$/.exec(url.pathname);
+    if (om) {
+      const doel = new URL((om[1] || "") + "/" + OUD[om[2]] + ".html", url);
+      doel.search = url.search; doel.hash = url.hash;
+      return Response.redirect(doel.toString(), 301);
+    }
     // korte advertentie-URL: hear.nl/coffeecuts -> Coffee cuts-blok (302, zodat het doel later kan wijzigen)
     const kort = url.pathname.toLowerCase().replace(/\/+$/, "");
     if (kort === "/coffeecuts" || kort === "/coffee-cuts" || kort === "/en/coffeecuts" || kort === "/en/coffee-cuts") {
-      const doel = new URL((kort.startsWith("/en/") ? "/en" : "") + "/special-projects.html", url);
+      const doel = new URL((kort.startsWith("/en/") ? "/en" : "") + "/custom-dj-mix.html", url);
       doel.search = url.search; // utm-parameters van advertenties blijven behouden
       doel.hash = "coffee-cuts";
       return Response.redirect(doel.toString(), 302);

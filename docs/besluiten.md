@@ -401,3 +401,12 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Casesoverzicht: tegel "Radio-mixes voor Deep Radio" toegevoegd na de dj-sets-case (label Dance events).
 - Homepage mobiel: de zwarte strook tussen Producten en diensten en Over HEAR was geen bewuste scheiding maar onderruimte van de productlijst. Nu staat daar de kop "Over HEAR" boven de foto, net als bij de andere blokken; de kop onder de foto is op mobiel alleen nog voor schermlezers. Desktop ongewijzigd. Euphonia-uitsnede nog iets strakker.
 - Uit de outside-in review (28 okt): Engelse footer was door de nieuwe volgorde half Nederlands geworden, hersteld. Formulier: bij versturen worden nu de verzendknoppen uitgeschakeld (eerst per ongeluk de "Volgende"-knop), tegen dubbel versturen.
+
+## 2026-10-28 · Opruimronde na outside-in review
+- URL's volgen de nieuwe namen: zakelijke-events.html (was corporate), bijzondere-eventlocaties.html (was venue-owners), aankoopadvies.html (was av-as-a-service), custom-dj-mix.html (was special-projects). Oude adressen sturen permanent (301) door, ook onder /en/; hear.nl/coffeecuts wijst naar custom-dj-mix.html#coffee-cuts.
+- Eén naam per aanbod, gelijk aan de homepage: Dj-gear, Geluid, Sfeerlicht, Dansvloerlicht, Dj's en artiesten (paginatitels, kruimelpad, footer, overzicht, relevante-productenkaarten). EN: DJ gear, Sound, Ambient lighting, Dance floor lighting, DJs and artists.
+- Footerkolom heet "Producten en diensten" en bevat Coffee cuts.
+- Coffee cuts-formulier: optie "Een 2-uurs dj-mix voor jouw merk of locatie".
+- Copy: "Voor wie: zakelijke events" op communicatieadvies; dubbel "Een bijkomend voordeel" op dance events opgelost.
+- Bewust niet aangepast: Engelse woorden als midsize en EXPERIENCE (Maarten: Engels is prima).
+- Bug: telefoonlinks op Engelse en nieuwspagina's werkten niet (/tel:), hersteld.

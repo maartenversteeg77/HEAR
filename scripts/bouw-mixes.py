@@ -26,7 +26,7 @@ main = f'''<main class="wrap">
 <section class="casehead"><a class="crumb" href="artiesten.html"><span class="sectie">Producten</span><span class="scheiding" aria-hidden="true">|</span><span class="huidig">Dj's</span></a><h1>{e(TITEL)}</h1><p class="lead">{e(INTRO)}</p></section>
 <section class="mixen" aria-label="Sets">{"".join(speler(s) for s in recent)}</section>
 <section class="mixen klassiek" aria-label="{e(KLASSIEK)}"><h2 class="kopje">{e(KLASSIEK)}</h2><p class="mixen-uitleg">{e(KLASSIEK_TEKST)}</p>{"".join(speler(s) for s in klassiek)}</section>
-<nav class="verwijzingen" aria-label="Verder"><a href="artiesten.html">← Dj's, vocalisten en instrumentalisten</a><a href="https://soundcloud.com/maartenversteeg" target="_blank" rel="noopener">Volg op SoundCloud ↗</a></nav>
+<nav class="verwijzingen" aria-label="Verder"><a href="artiesten.html">← Dj's en artiesten</a><a href="https://soundcloud.com/maartenversteeg" target="_blank" rel="noopener">Volg op SoundCloud ↗</a></nav>
 </main>'''
 doc = f'''<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{e(INTRO)}"><title>{e(TITEL)} · HEAR</title><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="styles.css"></head><body class="pagina">
 {kop}

@@ -17,7 +17,7 @@ e = lambda t: html.escape(t, quote=True)
 
 # kop en voet uit index.html, met absolute paden (deze pagina's staan in een submap)
 def absoluut(s):
-    s = re.sub(r'href="(?!http|mailto:|#|/)([^"]+)"', r'href="/\1"', s)
+    s = re.sub(r'href="(?!http|mailto:|tel:|#|/)([^"]+)"', r'href="/\1"', s)
     s = re.sub(r'src="(?!http|/)([^"]+)"', r'src="/\1"', s)
     return s
 kop = absoluut(idx[idx.index('<header class="top">'):idx.index('</script>') + 9])

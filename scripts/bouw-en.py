@@ -39,7 +39,7 @@ for i, c in enumerate(keten):
 def paden(s, naam):
     def href(m):
         h = m.group(1)
-        if h.startswith(("http", "mailto:", "#", "/")): return m.group(0)
+        if h.startswith(("http", "mailto:", "tel:", "#", "/")): return m.group(0)
         basis, _, anker = h.partition("#")
         if basis.endswith(".html"):
             doel = f"/en/{basis}" if basis in vertaald else f"/{basis}"

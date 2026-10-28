@@ -13,8 +13,8 @@
     "radio-mixes.html",
     "systeemadvies.html",
     "doelgroepen.html",
-    "corporate.html",
-    "venue-owners.html",
+    "zakelijke-events.html",
+    "bijzondere-eventlocaties.html",
     "dance-events.html",
     "diensten.html",
     "booth-dj-gear.html",
@@ -22,9 +22,9 @@
     "atmospheric-lighting.html",
     "dancefloor-lighting.html",
     "vintage-lighting.html",
-    "av-as-a-service.html",
+    "aankoopadvies.html",
     "artiesten.html",
-    "special-projects.html",
+    "custom-dj-mix.html",
     "principes.html",
     "privacy.html",
     "dj-mixes.html",
@@ -98,12 +98,12 @@
       "<nav aria-label=\"Work\"><p class=\"label\">Work</p>"
     ],
     [
-      "<nav aria-label=\"Voor wie\"><p class=\"label\">Voor wie</p><a href=\"corporate.html\">Zakelijke events</a><a href=\"venue-owners.html\">Bijzondere eventlocaties</a><a href=\"dance-events.html\">Dance events</a>",
-      "<nav aria-label=\"Who it's for\"><p class=\"label\">Who it's for</p><a href=\"corporate.html\">Corporate</a><a href=\"venue-owners.html\">Special event venues</a><a href=\"dance-events.html\">Dance events</a>"
+      "<nav aria-label=\"Voor wie\"><p class=\"label\">Voor wie</p><a href=\"zakelijke-events.html\">Zakelijke events</a><a href=\"bijzondere-eventlocaties.html\">Bijzondere eventlocaties</a><a href=\"dance-events.html\">Dance events</a>",
+      "<nav aria-label=\"Who it's for\"><p class=\"label\">Who it's for</p><a href=\"zakelijke-events.html\">Corporate</a><a href=\"bijzondere-eventlocaties.html\">Special event venues</a><a href=\"dance-events.html\">Dance events</a>"
     ],
     [
-      "<nav aria-label=\"Producten\"><p class=\"label\">Producten</p><a href=\"booth-dj-gear.html\">Booth en dj-gear</a><a href=\"high-end-audio.html\">High-end audio</a><a href=\"atmospheric-lighting.html\">Sfeerverlichting</a><a href=\"dancefloor-lighting.html\">Dansvloerverlichting</a><a href=\"vintage-lighting.html\">90's vintage licht</a><a href=\"communicatieadvies.html\">Communicatieadvies</a><a href=\"artiesten.html\">Artiesten</a><a href=\"special-projects.html\">Custom dj-mix of playlist</a>\n          <a href=\"av-as-a-service.html\">Aankoopadvies licht en geluid</a></nav>",
-      "<nav aria-label=\"Products\"><p class=\"label\">Products</p><a href=\"booth-dj-gear.html\">Booth and DJ gear</a><a href=\"high-end-audio.html\">High-end audio</a><a href=\"atmospheric-lighting.html\">Atmospheric lighting</a><a href=\"dancefloor-lighting.html\">Dancefloor lighting</a><a href=\"vintage-lighting.html\">90s vintage lighting</a><a href=\"communicatieadvies.html\">Communication advice</a><a href=\"artiesten.html\">Artists</a><a href=\"special-projects.html\">Custom DJ mix or playlist</a>\n          <a href=\"av-as-a-service.html\">Purchase advice for light and sound</a></nav>"
+      "<nav aria-label=\"Producten en diensten\"><p class=\"label\">Producten en diensten</p><a href=\"booth-dj-gear.html\">Dj-gear</a><a href=\"high-end-audio.html\">Geluid</a><a href=\"atmospheric-lighting.html\">Sfeerlicht</a><a href=\"dancefloor-lighting.html\">Dansvloerlicht</a><a href=\"vintage-lighting.html\">90's vintage licht</a><a href=\"communicatieadvies.html\">Communicatieadvies</a><a href=\"artiesten.html\">Dj's en artiesten</a><a href=\"custom-dj-mix.html\">Custom dj-mix of playlist</a><a href=\"custom-dj-mix.html#coffee-cuts\">Coffee cuts</a>\n          <a href=\"aankoopadvies.html\">Aankoopadvies licht en geluid</a></nav>",
+      "<nav aria-label=\"Products and services\"><p class=\"label\">Products and services</p><a href=\"booth-dj-gear.html\">DJ gear</a><a href=\"high-end-audio.html\">Sound</a><a href=\"atmospheric-lighting.html\">Ambient lighting</a><a href=\"dancefloor-lighting.html\">Dance floor lighting</a><a href=\"vintage-lighting.html\">90s vintage lighting</a><a href=\"communicatieadvies.html\">Communication advice</a><a href=\"artiesten.html\">DJs and artists</a><a href=\"custom-dj-mix.html\">Custom DJ mix or playlist</a><a href=\"custom-dj-mix.html#coffee-cuts\">Coffee cuts</a>\n          <a href=\"aankoopadvies.html\">Purchase advice for light and sound</a></nav>"
     ],
     [
       "<nav aria-label=\"Waarden\"><p class=\"label\">Waarden</p><a href=\"principes.html#samen\">Samen</a><a href=\"principes.html#open\">Open</a><a href=\"principes.html#vakmanschap\">Vakmanschap</a><a href=\"principes.html#warmte\">Warme sound</a></nav>",
@@ -194,36 +194,36 @@
       "<p>Sound and wireless microphones</p>"
     ],
     [
-      "<h2>Booth en dj-gear</h2><p>Rider-proof booth met CDJ-3000X en V10 of Euphonia</p>",
-      "<h2>Booth and DJ gear</h2><p>Rider-proof booth with CDJ-3000X and V10 or Euphonia</p>"
+      "<h2>Dj-gear</h2><p>Rider-proof booth met CDJ-3000X en V10 of Euphonia</p>",
+      "<h2>DJ gear</h2><p>Rider-proof booth with CDJ-3000X and V10 or Euphonia</p>"
     ],
     [
-      "<h2>Booth en dj-gear</h2><p>Geluid en draadloze microfoons</p>",
-      "<h2>Booth and DJ gear</h2><p>Sound and wireless microphones</p>"
+      "<h2>Dj-gear</h2><p>Geluid en draadloze microfoons</p>",
+      "<h2>DJ gear</h2><p>Sound and wireless microphones</p>"
     ],
     [
-      "<h2>High-end audio</h2><p>Hybride PA van RCF en Brooklyn Audio</p>",
-      "<h2>High-end audio</h2><p>Hybrid PA by RCF and Brooklyn Audio</p>"
+      "<h2>Geluid</h2><p>Hybride PA van RCF en Brooklyn Audio</p>",
+      "<h2>Sound</h2><p>Hybrid PA by RCF and Brooklyn Audio</p>"
     ],
     [
-      "<h2>High-end audio</h2><p>Geluid en draadloze microfoons</p>",
-      "<h2>High-end audio</h2><p>Sound and wireless microphones</p>"
+      "<h2>Geluid</h2><p>Geluid en draadloze microfoons</p>",
+      "<h2>Sound</h2><p>Sound and wireless microphones</p>"
     ],
     [
-      "<h2>Sfeerverlichting</h2><p>Draadloos sfeerlicht, full-colour</p>",
-      "<h2>Atmospheric lighting</h2><p>Wireless full-colour ambient lighting</p>"
+      "<h2>Sfeerlicht</h2><p>Draadloos sfeerlicht, full-colour</p>",
+      "<h2>Ambient lighting</h2><p>Wireless full-colour ambient lighting</p>"
     ],
     [
-      "<h2>Sfeerverlichting</h2><p>Geluid en draadloze microfoons</p>",
-      "<h2>Atmospheric lighting</h2><p>Sound and wireless microphones</p>"
+      "<h2>Sfeerlicht</h2><p>Geluid en draadloze microfoons</p>",
+      "<h2>Ambient lighting</h2><p>Sound and wireless microphones</p>"
     ],
     [
-      "<h2>Dansvloerverlichting</h2><p>Moving heads die de muziek volgen</p>",
-      "<h2>Dancefloor lighting</h2><p>Moving heads that follow the music</p>"
+      "<h2>Dansvloerlicht</h2><p>Moving heads die de muziek volgen</p>",
+      "<h2>Dance floor lighting</h2><p>Moving heads that follow the music</p>"
     ],
     [
-      "<h2>Dansvloerverlichting</h2><p>Geluid en draadloze microfoons</p>",
-      "<h2>Dancefloor lighting</h2><p>Sound and wireless microphones</p>"
+      "<h2>Dansvloerlicht</h2><p>Geluid en draadloze microfoons</p>",
+      "<h2>Dance floor lighting</h2><p>Sound and wireless microphones</p>"
     ],
     [
       "<h2>90’s vintage licht</h2><p>Gereviseerde klassiekers uit de discotijd</p>",
@@ -242,12 +242,12 @@
       "<h2>Purchase advice for light and sound</h2><p>Sound and wireless microphones</p>"
     ],
     [
-      "<h2>Dj’s, vocalisten en instrumentalisten</h2><p>Dj’s en live muzikanten die bij het event passen</p>",
-      "<h2>DJs, vocalists and instrumentalists</h2><p>DJs and live musicians who fit the event</p>"
+      "<h2>Dj’s en artiesten</h2><p>Dj’s en live muzikanten die bij het event passen</p>",
+      "<h2>DJs and artists</h2><p>DJs and live musicians who fit the event</p>"
     ],
     [
-      "<h2>Dj’s, vocalisten en instrumentalisten</h2><p>Geluid en draadloze microfoons</p>",
-      "<h2>DJs, vocalists and instrumentalists</h2><p>Sound and wireless microphones</p>"
+      "<h2>Dj’s en artiesten</h2><p>Geluid en draadloze microfoons</p>",
+      "<h2>DJs and artists</h2><p>Sound and wireless microphones</p>"
     ],
     [
       "<h2>Custom dj-mix of playlist</h2><p>Mixen, playlists en edits op maat</p>",
@@ -492,8 +492,8 @@
         "<section class=\"strook\" aria-label=\"Who and what\">"
       ],
       [
-        "<a href=\"venue-owners.html\">AV voor venues</a>",
-        "<a href=\"venue-owners.html\">AV for venues</a>"
+        "<a href=\"bijzondere-eventlocaties.html\">AV voor venues</a>",
+        "<a href=\"bijzondere-eventlocaties.html\">AV for venues</a>"
       ],
       [
         "<a href=\"high-end-audio.html\">Geluidssystemen</a>",
@@ -1042,8 +1042,8 @@
         "alt=\"Deep Radio mix with soulful house, deep house and classics\""
       ],
       [
-        "<p>Maarten Versteeg mixt op verzoek regelmatig DJ-sets voor radiostations, zoals Deep Radio. Ook ontwikkelt hij onder de naam Coffee cuts Spotify-playlists op maat voor cafés en bars, muzikaal en zonder generieke AI-sounds die muziekplatforms overspoelen.</p><p class=\"knoprij\"><a class=\"link\" href=\"special-projects.html#coffee-cuts\">Bekijk Coffee cuts<i aria-hidden=\"true\">→</i></a></p>",
-        "<p>Maarten Versteeg regularly mixes DJ sets on request for radio stations such as Deep Radio. Under the name Coffee cuts, he also develops custom Spotify playlists for cafés and bars: warm, musical, and without the generic AI content flooding music platforms.</p><p class=\"knoprij\"><a class=\"link\" href=\"special-projects.html#coffee-cuts\">See Coffee cuts<i aria-hidden=\"true\">→</i></a></p>"
+        "<p>Maarten Versteeg mixt op verzoek regelmatig DJ-sets voor radiostations, zoals Deep Radio. Ook ontwikkelt hij onder de naam Coffee cuts Spotify-playlists op maat voor cafés en bars, muzikaal en zonder generieke AI-sounds die muziekplatforms overspoelen.</p><p class=\"knoprij\"><a class=\"link\" href=\"custom-dj-mix.html#coffee-cuts\">Bekijk Coffee cuts<i aria-hidden=\"true\">→</i></a></p>",
+        "<p>Maarten Versteeg regularly mixes DJ sets on request for radio stations such as Deep Radio. Under the name Coffee cuts, he also develops custom Spotify playlists for cafés and bars: warm, musical, and without the generic AI content flooding music platforms.</p><p class=\"knoprij\"><a class=\"link\" href=\"custom-dj-mix.html#coffee-cuts\">See Coffee cuts<i aria-hidden=\"true\">→</i></a></p>"
       ],
       [
         "<p>De mixes bewegen tussen soulful house, deephouse, afro, latin, disco en houseclassics. Een selectie is te beluisteren op SoundCloud. In toekomstige uitzendingen zal Maarten ook eigen producties introduceren.</p>",
@@ -1134,7 +1134,7 @@
         ">Who it's for<"
       ]
     ],
-    "corporate.html": [
+    "zakelijke-events.html": [
       [
         ">Daarnaast zijn er zakelijke toepassingen die iets extra’s vragen, op het snijvlak van identiteit, techniek en muziek. Al jaren doet Maarten Versteeg dit als dj voor merken. Bijvoorbeeld de best passende muziek voor een catwalk, waarbij er vooraf afstemming is over de collectie en welke sound daarbij past. Of de muziek bij de introductie van een nieuwe serie horloges in Bazel, Zwitserland. Met 25 jaar corporate communicatie achtergrond weten we hoe je een merk versterkt.<",
         ">Then there are business occasions that ask for something extra, where identity, technology and music meet. Maarten Versteeg has done this as a DJ for brands for years. Choosing the right music for a catwalk, for instance, agreeing beforehand on the collection and the sound that suits it. Or the music for the launch of a new line of watches in Basel, Switzerland. With 25 years of corporate communications background, we know what brand management is about.<"
@@ -1172,15 +1172,15 @@
         ">Where music and identity meet<"
       ],
       [
-        "alt=\"Dj’s, vocalisten en instrumentalisten\"",
-        "alt=\"DJs, vocalists and instrumentalists\""
+        "alt=\"Dj’s en artiesten\"",
+        "alt=\"DJs and artists\""
       ],
       [
         ">Bekijk de case: productlancering ↗<",
         ">View the case: product launch ↗<"
       ],
       [
-        "alt=\"Sfeerverlichting\"",
+        "alt=\"Sfeerlicht\"",
         "alt=\"Atmospheric lighting\""
       ],
       [
@@ -1300,7 +1300,7 @@
         ">See all products and services →</a></p></div>"
       ]
     ],
-    "venue-owners.html": [
+    "bijzondere-eventlocaties.html": [
       [
         ">Niet elke ruimte is van zichzelf geschikt voor een evenement. Misschien heeft de ruimte veel metaal en glas en een vorm die samen zorgen voor een ‘akoestische nachtmerrie’. Of de ruimte moet voor één keer worden getransformeerd. Bijvoorbeeld een skatehal als locatie voor een pop-upevent voor een Frans dj-duo tijdens Amsterdam Dance Event.<",
         ">Not every space is in itself suited for a dancefloor or corporate speech and workshops. Perhaps the room has a lot of metal and glass and a shape that turns it into an 'acoustic nightmare'. Or a space is transformed for one night only. A skate hall, for example, as the venue for a pop-up event for a French DJ duo during Amsterdam Dance Event.<"
@@ -1370,7 +1370,7 @@
         ">View the ADE case ↗<"
       ],
       [
-        "alt=\"Sfeerverlichting\"",
+        "alt=\"Sfeerlicht\"",
         "alt=\"Atmospheric lighting\""
       ],
       [
@@ -1412,7 +1412,7 @@
         ">On request, we can move the DJ booth forward, into the room: a forward booth. Behind the DJ a second dance zone is then created, with the crowd all around. The main PA covers the dancefloor up front, while the booth has its own monitoring with subs, which not only serves the DJ for monitoring but also the people dancing around it.<"
       ],
       [
-        ">Een bijkomend voordeel van een forward booth is dat je twee plekken creëert met impactvol, direct geluid: aan het voorste gedeelte van de dansvloer en op het podium rondom de dj. Een bijkomend voordeel dat complexiteit reduceert: de zaal wordt minder diep, bijvoorbeeld van 30 naar 20 meter, waardoor de noodzaak voor delayspeakers afneemt en het makkelijker wordt om tot achterin de zaal impactvol geluid te hebben.<",
+        ">Een bijkomend voordeel van een forward booth is dat je twee plekken creëert met impactvol, direct geluid: aan het voorste gedeelte van de dansvloer en op het podium rondom de dj. Bovendien wordt het minder complex: de zaal wordt minder diep, bijvoorbeeld van 30 naar 20 meter, waardoor de noodzaak voor delayspeakers afneemt en het makkelijker wordt om tot achterin de zaal impactvol geluid te hebben.<",
         ">An additional advantage of a forward booth deployment is that you create two zones with direct, high-impact sound: at the front of the dancefloor and on the stage around the DJ. A further advantage that reduces complexity: the room becomes less deep, for instance from 30 to 20 metres, which reduces the need for delay speakers and makes it easier to get high-impact sound all the way to the back.<"
       ],
       [
@@ -1444,7 +1444,7 @@
         ">A dancefloor for 150 to 1,500 people<"
       ],
       [
-        "alt=\"Dansvloerverlichting\"",
+        "alt=\"Dansvloerlicht\"",
         "alt=\"Dancefloor lighting\""
       ],
       [
@@ -1452,8 +1452,8 @@
         ">View the ADE case ↗<"
       ],
       [
-        "alt=\"Booth en dj-gear\"",
-        "alt=\"Booth and DJ gear\""
+        "alt=\"Dj-gear\"",
+        "alt=\"DJ gear\""
       ],
       [
         ">De booth in de zaal<",
@@ -1498,8 +1498,8 @@
         "alt=\"Clay Paky Astrodisco with dozens of beams\""
       ],
       [
-        ">Bekijk dj’s, vocalisten en instrumentalisten <",
-        ">View DJs, vocalists and instrumentalists <"
+        ">Bekijk dj’s en artiesten <",
+        ">View DJs and artists <"
       ],
       [
         "alt=\"Dj en saxofonist tijdens een tuinfeest\"",
@@ -1648,8 +1648,8 @@
         "> with booth, players, mixer and monitoring<"
       ],
       [
-        "<title>Booth en dj-gear · HEAR</title>",
-        "<title>Booth and DJ gear · HEAR</title>"
+        "<title>Dj-gear · HEAR</title>",
+        "<title>DJ gear · HEAR</title>"
       ],
       [
         "alt=\"RCF SUB 808-AS en KX 515-A\"",
@@ -1668,8 +1668,8 @@
         ">Request a proposal<"
       ],
       [
-        ">Booth en dj-gear<",
-        ">Booth and DJ gear<"
+        ">Dj-gear<",
+        ">DJ gear<"
       ],
       [
         ">Een complete, <",
@@ -1904,8 +1904,8 @@
         ">Ambient lighting for presentations and events: <"
       ],
       [
-        "<title>Sfeerverlichting · HEAR</title>",
-        "<title>Atmospheric lighting · HEAR</title>"
+        "<title>Sfeerlicht · HEAR</title>",
+        "<title>Ambient lighting · HEAR</title>"
       ],
       [
         ">Case: tuinfeest CreativeGrounds →<",
@@ -1924,8 +1924,8 @@
         "> and mostly wireless<"
       ],
       [
-        ">Sfeerverlichting<",
-        ">Atmospheric lighting<"
+        ">Sfeerlicht<",
+        ">Ambient lighting<"
       ],
       [
         "alt=\"Theaterspots\"",
@@ -1990,8 +1990,8 @@
         "alt=\"Infinity iFX-640 with internal shutters\""
       ],
       [
-        "<title>Dansvloerverlichting · HEAR</title>",
-        "<title>Dancefloor lighting · HEAR</title>"
+        "<title>Dansvloerlicht · HEAR</title>",
+        "<title>Dance floor lighting · HEAR</title>"
       ],
       [
         ">Infinity iFX-640 met interne shutters<",
@@ -2018,8 +2018,8 @@
         ">Request a proposal<"
       ],
       [
-        ">Dansvloerverlichting<",
-        ">Dancefloor lighting<"
+        ">Dansvloerlicht<",
+        ">Dance floor lighting<"
       ],
       [
         ">ZO PROGRAMMEREN WE<",
@@ -2092,7 +2092,7 @@
         ">DJ sets →<"
       ]
     ],
-    "av-as-a-service.html": [
+    "aankoopadvies.html": [
       [
         ">Met AV as a service koop je geen licht en geluid, maar neem je het af als dienst, via HEAR zelf of via ons netwerk. Voor een vast bedrag per maand en een periode van minimaal 36 maanden krijgt de locatie toegang tot de meest recente licht- en geluidstechniek die er op de markt is, zonder zorgen over onderhoud of reparatie.<",
         ">With AV as a service you don't buy lighting and sound, you use it as a service, through HEAR itself or through our network. For a fixed monthly fee and a minimum term of 36 months, the venue gains access to the latest sound and light systems on the market, without worrying about maintenance or repairs.<"
@@ -2221,15 +2221,15 @@
       ],
       [
         ">Dj&#x27;s, vocalisten en instrumentalisten die passen bij de avond<",
-        ">DJs, vocalists and instrumentalists who suit the night<"
+        ">DJs and artists who suit the night<"
       ],
       [
-        "<title>Dj&#x27;s, vocalisten en instrumentalisten · HEAR</title>",
-        "<title>DJs, vocalists and instrumentalists · HEAR</title>"
+        "<title>Dj&#x27;s en artiesten · HEAR</title>",
+        "<title>DJs and artists · HEAR</title>"
       ],
       [
-        ">Dj&#x27;s, vocalisten en instrumentalisten<",
-        ">DJs, vocalists and instrumentalists<"
+        ">Dj&#x27;s en artiesten<",
+        ">DJs and artists<"
       ],
       [
         ">Case: tuinfeest met dj en saxofonist →<",
@@ -2272,7 +2272,7 @@
         "<span>Book a DJ</span>"
       ]
     ],
-    "special-projects.html": [
+    "custom-dj-mix.html": [
       [
         ">Maarten maakt regelmatig mixen voor Deep Radio: soulful house, deephouse, afro, latin, disco en houseclassics, twee uur lang. Overweeg je een boeking? Luister dan eens op SoundCloud.<",
         ">Maarten regularly makes mixes for Deep Radio: soulful house, deep house, afro, latin, disco and house classics, two hours long. Considering a booking? Have a listen on SoundCloud.<"
@@ -2388,6 +2388,10 @@
       [
         "alt=\"Aankondiging van een dj-set van Maarten Versteeg op Deep Radio\"",
         "alt=\"Announcement of a DJ set by Maarten Versteeg on Deep Radio\""
+      ],
+      [
+        "<span>Een 2-uurs dj-mix voor jouw merk of locatie</span>",
+        "<span>A 2-hour DJ mix for your brand or venue</span>"
       ]
     ],
     "principes.html": [
@@ -2612,8 +2616,8 @@
         ">Live sets from the early days, vinyl only.<"
       ],
       [
-        ">← Dj's, vocalisten en instrumentalisten<",
-        ">← DJs, vocalists and instrumentalists<"
+        ">← Dj's en artiesten<",
+        ">← DJs and artists<"
       ],
       [
         ">Volg op SoundCloud ↗<",
@@ -3242,7 +3246,7 @@
         ">You engage communication advice through Maarten Versteeg communicatieadvies, separately from hiring light and sound through HEAR. Combining is possible and saves you time on coordination, because message and technology then come from one hand. It is not required. If you choose both, you receive two separate quotes.<"
       ],
       [
-        ">Voor wie: corporate →</a>",
+        ">Voor wie: zakelijke events →</a>",
         ">Who for: corporate →</a>"
       ]
     ]
