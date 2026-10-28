@@ -25,7 +25,8 @@ async function aanvraag(request, env) {
   for (const [k] of VELDEN) d[k] = (k === "diensten" || k === "communicatie" || k === "cc_wens") ? fd.getAll(k).map(schoon).filter(Boolean).join(", ") : schoon(fd.get(k));
   if (fd.get("budget_onbekend")) d.budget = "weet ik nog niet";
   else if (fd.get("budget_van") || fd.get("budget_tot")) d.budget = `€ ${schoon(fd.get("budget_van"))} – € ${schoon(fd.get("budget_tot"))}`;
-  if (!d.naam || !d.email || (d.gesprek === "bellen" && !d.telefoon) || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email)) return antwoord(request, false, 400);
+  const hoofdformulier = !schoon(fd.get("bron")); // aanvraagformulier: naam, e-mail, telefoon en contactmoment verplicht
+  if (!d.naam || !d.email || (hoofdformulier && (!d.telefoon || !d.gesprek_datum)) || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email)) return antwoord(request, false, 400);
 
   // leesbare waarden in de mail
   const LABEL = { bellen: "telefoon", teams: "Microsoft Teams", meet: "Google Meet", zakelijk: "zakelijk (netwerk)event", lezing: "lezing of seminar",

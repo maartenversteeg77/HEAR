@@ -25,7 +25,8 @@ paren.append((INTRO_HTML, "Let us know how and when you would like to talk. Afte
 
 def veld(naam, nl, en, type="text", verplicht=False, extra=""):
     req = " required" if verplicht else ""
-    return f'<label class="veld"><span>{T(nl, en)}</span><input type="{type}" name="{naam}"{req}{extra}></label>'
+    ster = '<b class="ster" aria-hidden="true"> *</b>' if verplicht else ""
+    return f'<label class="veld"><span>{T(nl, en)}{ster}</span><input type="{type}" name="{naam}"{req}{extra}></label>'
 def tekstvak(naam, nl, en, rijen=4, verplicht=False, breed=True):
     req = " required" if verplicht else ""
     return f'<label class="veld{" veld-breed" if breed else ""}"><span>{T(nl, en)}</span><textarea name="{naam}" rows="{rijen}"{req}></textarea></label>'
@@ -90,7 +91,7 @@ DAGDEEL = [("ochtend", "Ochtend", "Morning"), ("middag", "Middag", "Afternoon"),
 gesprek = (f'<fieldset class="keuze veld-breed"><legend>{T("Hoe wil je je wensen bespreken?", "How would you like to discuss your plans?")}</legend><div class="keuzerij">'
            + "".join(f'<label class="vink"><input type="radio" name="gesprek" value="{w}"{" checked" if w == "bellen" else ""}><span>{T(nl, en)}</span></label>' for w, nl, en in GESPREK)
            + '</div></fieldset>'
-           + veld("gesprek_datum", "Wanneer schikt het?", "When suits you?", "date")
+           + veld("gesprek_datum", "Wanneer schikt het?", "When suits you?", "date", True, ' id="gesprek-datum"')
            + f'<label class="veld"><span>{T("Dagdeel", "Time of day")}</span><select name="gesprek_dagdeel"><option value="">{T("Maakt niet uit", "No preference")}</option>'
            + "".join(f'<option value="{w}">{T(nl, en)}</option>' for w, nl, en in DAGDEEL) + '</select></label>')
 
@@ -101,12 +102,12 @@ def stap(n, kop_nl, kop_en, inhoud, laatste=False, terug=None, verder=None):
     return (f'<section class="stap" data-stap="{n}"><p class="stapteller">{n}/3</p><h2>{T(kop_nl, kop_en)}</h2>{inhoud}'
             f'<p class="formvoet">{volgende}{vorige}</p></section>')
 
-stap1 = stap(1, "Kennismaken", "Getting acquainted", verder="keuze", inhoud=f'''<div class="velden">
+stap1 = stap(1, "Kennismaken", "Getting acquainted", verder="keuze", inhoud=f'''<p class="stapuitleg">{T("Velden met * zijn nodig om contact op te nemen.", "Fields marked * are needed to get in touch.")}</p><div class="velden">
 {gesprek}
 {veld("naam", "Naam", "Name", verplicht=True, extra=' autocomplete="name"')}
 {veld("organisatie", "Organisatie", "Organisation", extra=' autocomplete="organization"')}
 {veld("email", "E-mail", "Email", "email", True, ' autocomplete="email"')}
-{veld("telefoon", "Telefoonnummer", "Phone number", "tel", extra=' autocomplete="tel" id="telefoon"')}
+{veld("telefoon", "Telefoonnummer", "Phone number", "tel", True, ' autocomplete="tel" id="telefoon"')}
 {veld("functie", "Je functie", "Your role")}
 </div>''')
 stap2 = stap(2, "Over je event", "About your event", terug="keuze", inhoud=f'''<p class="stapuitleg">{T("Vul in wat je al weet; weet je iets nog niet, laat het veld dan leeg.", "Fill in what you already know; if you don't know something yet, leave the field empty.")}</p><div class="velden">
@@ -160,8 +161,8 @@ main = f'''<main class="wrap">
   function ga(n,geschiedenis){{n=String(n);if(geschiedenis!==false&&history.pushState){{var st0=history.state&&history.state.stap;if(st0!==n)history.pushState({{stap:n}},'','#stap-'+n)}}var doel;st.forEach(function(x){{var aan=x.dataset.stap===n;x.hidden=!aan;if(aan)doel=x}});var h=doel.querySelector('h2');window.scrollTo({{top:f.getBoundingClientRect().top+window.scrollY-120,behavior:'smooth'}});h&&h.focus&&h.setAttribute('tabindex','-1');h&&h.focus({{preventScroll:true}})}}
   f.querySelectorAll('.stapknop').forEach(function(k){{k.addEventListener('click',function(){{var n=k.dataset.naar,huidig=k.closest('.stap');if(!n)return;
     if(k.classList.contains('vooruit')){{var ok=true;huidig.querySelectorAll('input,select,textarea').forEach(function(i){{if(ok&&!i.checkValidity()){{i.reportValidity();ok=false}}}});if(!ok)return}}ga(n)}})}});
-  var tel=document.getElementById('telefoon');function telv(){{var g=f.querySelector('input[name=gesprek]:checked');tel.required=!!g&&g.value==='bellen'}}
-  f.querySelectorAll('input[name=gesprek]').forEach(function(r){{r.addEventListener('change',telv)}});telv();if(history.replaceState)history.replaceState({{stap:'1'}},'',location.pathname+location.search);ga(1,false);
+  var gd=document.getElementById('gesprek-datum');if(gd){{var nu=new Date();gd.min=nu.getFullYear()+'-'+String(nu.getMonth()+1).padStart(2,'0')+'-'+String(nu.getDate()).padStart(2,'0')}}
+  if(history.replaceState)history.replaceState({{stap:'1'}},'',location.pathname+location.search);ga(1,false);
   window.addEventListener('popstate',function(ev){{var n=(ev.state&&ev.state.stap)||'1';if(f.querySelector('.stap[data-stap="'+n+'"]'))ga(n,false)}});
   var q=location.search;if(/verzonden=1/.test(q)){{m.hidden=false;m.textContent=f.dataset.dank;m.className='formmelding ok'}}else if(/fout=1/.test(q)){{m.hidden=false;m.textContent=f.dataset.fout;m.className='formmelding fout'}}
   f.addEventListener('submit',function(ev){{

@@ -411,3 +411,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Bewust niet aangepast: Engelse woorden als midsize en EXPERIENCE (Maarten: Engels is prima).
 - Bug: telefoonlinks op Engelse en nieuwspagina's werkten niet (/tel:), hersteld.
 - Juridische regel: "HEAR is een handelsnaam van Maarten Versteeg communicatie advies B.V." (schrijfwijze volgens KvK-uittreksel, KvK 42181393). HEAR en Maarten Versteeg communicatieadvies zijn beide handelsnamen van deze BV; twee factuurstromen blijft.
+- Aanvraagformulier stap 1: verplicht zijn alleen wat nodig is voor contact: naam, e-mail, telefoonnummer (altijd, niet alleen bij "Bel mij") en de gewenste datum; dagdeel blijft "Maakt niet uit" als standaard. Verplichte velden hebben een koraal sterretje met uitlegregel; datum kan niet in het verleden. De server controleert hetzelfde (niet voor het Coffee cuts-formulier).
