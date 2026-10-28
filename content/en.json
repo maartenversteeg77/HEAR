@@ -102,8 +102,8 @@
       "<nav aria-label=\"Who it's for\"><p class=\"label\">Who it's for</p><a href=\"zakelijke-events.html\">Corporate</a><a href=\"bijzondere-eventlocaties.html\">Special event venues</a><a href=\"dance-events.html\">Dance events</a>"
     ],
     [
-      "<nav aria-label=\"Producten en diensten\"><p class=\"label\">Producten en diensten</p><a href=\"booth-dj-gear.html\">Dj-gear</a><a href=\"high-end-audio.html\">Geluid</a><a href=\"atmospheric-lighting.html\">Sfeerlicht</a><a href=\"dancefloor-lighting.html\">Dansvloerlicht</a><a href=\"vintage-lighting.html\">90's vintage licht</a><a href=\"communicatieadvies.html\">Communicatieadvies</a><a href=\"artiesten.html\">Dj's en artiesten</a><a href=\"custom-dj-mix.html\">Custom dj-mix of playlist</a><a href=\"custom-dj-mix.html#coffee-cuts\">Coffee cuts</a>\n          <a href=\"aankoopadvies.html\">Aankoopadvies licht en geluid</a></nav>",
-      "<nav aria-label=\"Products and services\"><p class=\"label\">Products and services</p><a href=\"booth-dj-gear.html\">DJ gear</a><a href=\"high-end-audio.html\">Sound</a><a href=\"atmospheric-lighting.html\">Ambient lighting</a><a href=\"dancefloor-lighting.html\">Dance floor lighting</a><a href=\"vintage-lighting.html\">90s vintage lighting</a><a href=\"communicatieadvies.html\">Communication advice</a><a href=\"artiesten.html\">DJs and artists</a><a href=\"custom-dj-mix.html\">Custom DJ mix or playlist</a><a href=\"custom-dj-mix.html#coffee-cuts\">Coffee cuts</a>\n          <a href=\"aankoopadvies.html\">Purchase advice for light and sound</a></nav>"
+      "<nav aria-label=\"Producten en diensten\"><p class=\"label\">Producten en diensten</p><a href=\"booth-dj-gear.html\">Dj-gear</a><a href=\"high-end-audio.html\">Geluid</a><a href=\"atmospheric-lighting.html\">Sfeerlicht</a><a href=\"dancefloor-lighting.html\">Dansvloerlicht</a><a href=\"vintage-lighting.html\">90's vintage licht</a><a href=\"communicatieadvies.html\">Communicatieadvies</a><a href=\"artiesten.html\">Dj's en artiesten</a><a href=\"custom-dj-mix.html\">Coffee cuts en custom dj-mixes</a>\n          <a href=\"aankoopadvies.html\">Aankoopadvies licht en geluid</a></nav>",
+      "<nav aria-label=\"Products and services\"><p class=\"label\">Products and services</p><a href=\"booth-dj-gear.html\">DJ gear</a><a href=\"high-end-audio.html\">Sound</a><a href=\"atmospheric-lighting.html\">Ambient lighting</a><a href=\"dancefloor-lighting.html\">Dance floor lighting</a><a href=\"vintage-lighting.html\">90s vintage lighting</a><a href=\"communicatieadvies.html\">Communication advice</a><a href=\"artiesten.html\">DJs and artists</a><a href=\"custom-dj-mix.html\">Coffee cuts and custom DJ mixes</a>\n          <a href=\"aankoopadvies.html\">Purchase advice for light and sound</a></nav>"
     ],
     [
       "<nav aria-label=\"Waarden\"><p class=\"label\">Waarden</p><a href=\"principes.html#samen\">Samen</a><a href=\"principes.html#open\">Open</a><a href=\"principes.html#vakmanschap\">Vakmanschap</a><a href=\"principes.html#warmte\">Warme sound</a></nav>",
@@ -250,12 +250,12 @@
       "<h2>DJs and artists</h2><p>Sound and wireless microphones</p>"
     ],
     [
-      "<h2>Custom dj-mix of playlist</h2><p>Mixen, playlists en edits op maat</p>",
-      "<h2>Custom DJ mix or playlist</h2><p>Custom mixes, playlists and edits</p>"
+      "<h2>Coffee cuts en custom dj-mixes</h2><p>Mixen, playlists en edits op maat</p>",
+      "<h2>Coffee cuts and custom DJ mixes</h2><p>Custom mixes, playlists and edits</p>"
     ],
     [
-      "<h2>Custom dj-mix of playlist</h2><p>Geluid en draadloze microfoons</p>",
-      "<h2>Custom DJ mix or playlist</h2><p>Sound and wireless microphones</p>"
+      "<h2>Coffee cuts en custom dj-mixes</h2><p>Geluid en draadloze microfoons</p>",
+      "<h2>Coffee cuts and custom DJ mixes</h2><p>Sound and wireless microphones</p>"
     ],
     [
       "aria-label=\"Stappen van het inkooptraject\"",
@@ -626,28 +626,28 @@
       "<span class=\"huidig\">DJs and artists</span>"
     ],
     [
-      "title=\"Custom dj-mix of playlist\"",
-      "title=\"Custom DJ mix or playlist\""
+      "title=\"Coffee cuts en custom dj-mixes\"",
+      "title=\"Coffee cuts and custom DJ mixes\""
     ],
     [
-      "Vorige: Custom dj-mix of playlist\"",
-      "Previous: Custom DJ mix or playlist\""
+      "Vorige: Coffee cuts en custom dj-mixes\"",
+      "Previous: Coffee cuts and custom DJ mixes\""
     ],
     [
-      "Volgende: Custom dj-mix of playlist\"",
-      "Next: Custom DJ mix or playlist\""
+      "Volgende: Coffee cuts en custom dj-mixes\"",
+      "Next: Coffee cuts and custom DJ mixes\""
     ],
     [
-      "alt=\"Custom dj-mix of playlist\"",
-      "alt=\"Custom DJ mix or playlist\""
+      "alt=\"Coffee cuts en custom dj-mixes\"",
+      "alt=\"Coffee cuts and custom DJ mixes\""
     ],
     [
-      "<h2>Custom dj-mix of playlist</h2>",
-      "<h2>Custom DJ mix or playlist</h2>"
+      "<h2>Coffee cuts en custom dj-mixes</h2>",
+      "<h2>Coffee cuts and custom DJ mixes</h2>"
     ],
     [
-      "<span class=\"huidig\">Custom dj-mix of playlist</span>",
-      "<span class=\"huidig\">Custom DJ mix or playlist</span>"
+      "<span class=\"huidig\">Coffee cuts en custom dj-mixes</span>",
+      "<span class=\"huidig\">Coffee cuts and custom DJ mixes</span>"
     ],
     [
       "title=\"Aankoopadvies licht en geluid\"",
@@ -2526,8 +2526,8 @@
         ">Our own edits, remixes and productions, mastered in analogue, turn up in sets, in the network of DJs we work with and, in future, in releases.<"
       ],
       [
-        "<title>Custom dj-mix of playlist · HEAR</title>",
-        "<title>Custom DJ mix or playlist · HEAR</title>"
+        "<title>Coffee cuts en custom dj-mixes · HEAR</title>",
+        "<title>Coffee cuts and custom DJ mixes · HEAR</title>"
       ],
       [
         ">, playlists en remixes op maat<",

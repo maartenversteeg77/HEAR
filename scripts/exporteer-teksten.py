@@ -35,7 +35,7 @@ PAGINAS = [
     ('vintage-lighting.html', "Producten · 90's vintage licht"),
     ('aankoopadvies.html', 'Producten · Aankoopadvies licht en geluid'),
     ('artiesten.html', "Producten · Dj's, vocalisten en instrumentalisten"),
-    ('custom-dj-mix.html', 'Producten · Custom dj-mix of playlist'),
+    ('custom-dj-mix.html', 'Producten · Coffee cuts en custom dj-mixes'),
     ('cases.html', 'Cases (overzicht)'),
     ('productpresentatie.html', 'Case · Productlancering'),
     ('gemeentelijk-netwerkevent.html', 'Case · Seminar / netwerkevent'),
