@@ -571,3 +571,9 @@ button.knop:disabled{opacity:.6;cursor:wait}
 .communicatie .veld-breed{margin-top:14px}
 @media (max-width:560px){.keuzelijst{grid-template-columns:1fr}}
 .aanvraag .vooruit{margin-right:4px}
+.aanvraag:not(.in-stappen) .keuzescherm{display:none}
+.keuzetekst{font:400 17px/1.6 var(--tekst);color:var(--tekstgrijs);max-width:52ch;margin:0 0 6px}
+.keuzeknoppen{flex-direction:column;align-items:flex-start;gap:16px}
+.stapknop.kort{background:none;border:0;padding:0;font:400 16px/1.4 var(--tekst);color:var(--zwart);text-decoration:underline;text-underline-offset:4px;cursor:pointer;text-align:left}
+.stapknop.kort:hover{color:var(--koraal)}
+.keuzeknoppen .terug{margin-top:12px;color:var(--zacht)}

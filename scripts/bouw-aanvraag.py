@@ -94,14 +94,14 @@ gesprek = (f'<fieldset class="keuze veld-breed"><legend>{T("Hoe wil je je wensen
            + f'<label class="veld"><span>{T("Dagdeel", "Time of day")}</span><select name="gesprek_dagdeel"><option value="">{T("Maakt niet uit", "No preference")}</option>'
            + "".join(f'<option value="{w}">{T(nl, en)}</option>' for w, nl, en in DAGDEEL) + '</select></label>')
 
-def stap(n, kop_nl, kop_en, inhoud, laatste=False):
-    vorige = f'<button type="button" class="stapknop terug" data-naar="{n-1}">{T("← Vorige", "← Back")}</button>' if n > 1 else ''
+def stap(n, kop_nl, kop_en, inhoud, laatste=False, terug=None, verder=None):
+    vorige = f'<button type="button" class="stapknop terug" data-naar="{terug or n-1}">{T("← Vorige", "← Back")}</button>' if n > 1 else ''
     volgende = (f'<button type="submit" class="wa knop">{T("Verstuur je aanvraag", "Send your request")}<i aria-hidden="true">→</i></button>'
-                if laatste else f'<button type="button" class="wa knop stapknop vooruit" data-naar="{n+1}">{T("Volgende", "Next")}<i aria-hidden="true">→</i></button>')
+                if laatste else f'<button type="button" class="wa knop stapknop vooruit" data-naar="{verder or n+1}">{T("Volgende", "Next")}<i aria-hidden="true">→</i></button>')
     return (f'<section class="stap" data-stap="{n}"><p class="stapteller">{n}/3</p><h2>{T(kop_nl, kop_en)}</h2>{inhoud}'
             f'<p class="formvoet">{volgende}{vorige}</p></section>')
 
-stap1 = stap(1, "Kennismaken", "Getting acquainted", f'''<div class="velden">
+stap1 = stap(1, "Kennismaken", "Getting acquainted", verder="keuze", inhoud=f'''<div class="velden">
 {gesprek}
 {veld("naam", "Naam", "Name", verplicht=True, extra=' autocomplete="name"')}
 {veld("organisatie", "Organisatie", "Organisation", extra=' autocomplete="organization"')}
@@ -109,7 +109,7 @@ stap1 = stap(1, "Kennismaken", "Getting acquainted", f'''<div class="velden">
 {veld("telefoon", "Telefoonnummer", "Phone number", "tel", extra=' autocomplete="tel" id="telefoon"')}
 {veld("functie", "Je functie", "Your role")}
 </div>''')
-stap2 = stap(2, "Over je event", "About your event", f'''<div class="velden">
+stap2 = stap(2, "Over je event", "About your event", terug="keuze", inhoud=f'''<div class="velden">
 {veld("event", "Naam van het event", "Name of the event")}
 {soort}
 {veld("locatie", "Locatie", "Venue")}
@@ -126,9 +126,16 @@ stap3 = stap(3, "Wat heb je nodig?", "What do you need?", f'''{diensten()}
 {tekstvak("bericht", "Wil je verder nog iets kwijt?", "Anything else you want to tell us?", 5)}
 <p class="uitleg privacyregel"><span>{T("We gebruiken je gegevens alleen om je aanvraag te beantwoorden.", "We only use your details to answer your request.")}</span> <a href="privacy.html">Privacyverklaring</a></p>''', laatste=True)
 
+keuze = (f'<section class="stap keuzescherm" data-stap="keuze"><h2>{T("Heb je al een concreet event voor ogen?", "Do you already have a specific event in mind?")}</h2>'
+         f'<p class="keuzetekst">{T("Met een paar vragen over je event kunnen we het gesprek goed voorbereiden. Liever eerst praten? Dat kan ook.", "A few questions about your event help us prepare the conversation. Rather talk first? That works too.")}</p>'
+         f'<p class="formvoet keuzeknoppen"><button type="button" class="wa knop stapknop" data-naar="2">{T("Ja, ik vertel meer over mijn event", "Yes, I\'ll tell you more about my event")}<i aria-hidden="true">→</i></button>'
+         f'<button type="submit" class="stapknop kort">{T("Nu versturen, de rest bespreken we in het gesprek", "Send now, we\'ll discuss the rest in the conversation")}</button>'
+         f'<button type="button" class="stapknop terug" data-naar="1">{T("← Vorige", "← Back")}</button></p></section>')
+
 form = f'''<form class="aanvraag" method="post" action="/api/aanvraag" id="aanvraag">
 <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 {stap1}
+{keuze}
 {stap2}
 {stap3}
 <p class="formmelding" id="melding" hidden></p>
@@ -148,8 +155,8 @@ main = f'''<main class="wrap">
     a[0].addEventListener('input',toon);a[1].addEventListener('input',toon);toon()}}
   var so=document.getElementById('soort'),sa=document.getElementById('soort_anders_veld');if(so&&sa){{so.addEventListener('change',function(){{sa.hidden=so.value!=='anders'}})}}
   var st=f.querySelectorAll('.stap');f.classList.add('in-stappen');
-  function ga(n){{st.forEach(function(x){{x.hidden=+x.dataset.stap!==n}});var h=st[n-1].querySelector('h2');window.scrollTo({{top:f.getBoundingClientRect().top+window.scrollY-120,behavior:'smooth'}});h&&h.focus&&h.setAttribute('tabindex','-1');h&&h.focus({{preventScroll:true}})}}
-  f.querySelectorAll('.stapknop').forEach(function(k){{k.addEventListener('click',function(){{var n=+k.dataset.naar,huidig=k.closest('.stap');
+  function ga(n){{n=String(n);var doel;st.forEach(function(x){{var aan=x.dataset.stap===n;x.hidden=!aan;if(aan)doel=x}});var h=doel.querySelector('h2');window.scrollTo({{top:f.getBoundingClientRect().top+window.scrollY-120,behavior:'smooth'}});h&&h.focus&&h.setAttribute('tabindex','-1');h&&h.focus({{preventScroll:true}})}}
+  f.querySelectorAll('.stapknop').forEach(function(k){{k.addEventListener('click',function(){{var n=k.dataset.naar,huidig=k.closest('.stap');if(!n)return;
     if(k.classList.contains('vooruit')){{var ok=true;huidig.querySelectorAll('input,select,textarea').forEach(function(i){{if(ok&&!i.checkValidity()){{i.reportValidity();ok=false}}}});if(!ok)return}}ga(n)}})}});
   var tel=document.getElementById('telefoon');function telv(){{var g=f.querySelector('input[name=gesprek]:checked');tel.required=!!g&&g.value==='bellen'}}
   f.querySelectorAll('input[name=gesprek]').forEach(function(r){{r.addEventListener('change',telv)}});telv();ga(1);
