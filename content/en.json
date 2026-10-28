@@ -2715,6 +2715,10 @@
         ">What do you need?<"
       ],
       [
+        ">Bijna klaar, nog niet verstuurd<",
+        ">Almost done, not sent yet<"
+      ],
+      [
         ">Heb je al een concreet event voor ogen?<",
         ">Do you already have a specific event in mind?<"
       ],
@@ -2727,8 +2731,16 @@
         ">Yes, I&#x27;ll tell you more about my event<"
       ],
       [
-        ">Nu versturen, de rest bespreken we in het gesprek<",
-        ">Send now, we&#x27;ll discuss the rest in the conversation<"
+        ">Nog twee korte stappen<",
+        ">Two more short steps<"
+      ],
+      [
+        ">Nu versturen<",
+        ">Send now<"
+      ],
+      [
+        ">De rest bespreken we in het gesprek<",
+        ">We&#x27;ll discuss the rest in the conversation<"
       ],
       [
         ">Vertel over je event<",

@@ -126,11 +126,13 @@ stap3 = stap(3, "Wat heb je nodig?", "What do you need?", f'''{diensten()}
 {tekstvak("bericht", "Wil je verder nog iets kwijt?", "Anything else you want to tell us?", 5)}
 <p class="uitleg privacyregel"><span>{T("We gebruiken je gegevens alleen om je aanvraag te beantwoorden.", "We only use your details to answer your request.")}</span> <a href="privacy.html">Privacyverklaring</a></p>''', laatste=True)
 
-keuze = (f'<section class="stap keuzescherm" data-stap="keuze"><h2>{T("Heb je al een concreet event voor ogen?", "Do you already have a specific event in mind?")}</h2>'
+keuze = (f'<section class="stap keuzescherm" data-stap="keuze"><p class="stapteller">{T("Bijna klaar, nog niet verstuurd", "Almost done, not sent yet")}</p>'
+         f'<h2>{T("Heb je al een concreet event voor ogen?", "Do you already have a specific event in mind?")}</h2>'
          f'<p class="keuzetekst">{T("Met een paar vragen over je event kunnen we het gesprek goed voorbereiden. Liever eerst praten? Dat kan ook.", "A few questions about your event help us prepare the conversation. Rather talk first? That works too.")}</p>'
-         f'<p class="formvoet keuzeknoppen"><button type="button" class="wa knop stapknop" data-naar="2">{T("Ja, ik vertel meer over mijn event", "Yes, I\'ll tell you more about my event")}<i aria-hidden="true">→</i></button>'
-         f'<button type="submit" class="stapknop kort">{T("Nu versturen, de rest bespreken we in het gesprek", "Send now, we\'ll discuss the rest in the conversation")}</button>'
-         f'<button type="button" class="stapknop terug" data-naar="1">{T("← Vorige", "← Back")}</button></p></section>')
+         f'<div class="keuzekaarten">'
+         f'<button type="button" class="keuzekaart stapknop hoofd" data-naar="2"><strong>{T("Ja, ik vertel meer over mijn event", "Yes, I\'ll tell you more about my event")}</strong><span>{T("Nog twee korte stappen", "Two more short steps")}</span><i aria-hidden="true">→</i></button>'
+         f'<button type="submit" class="keuzekaart kort"><strong>{T("Nu versturen", "Send now")}</strong><span>{T("De rest bespreken we in het gesprek", "We\'ll discuss the rest in the conversation")}</span><i aria-hidden="true">→</i></button>'
+         f'</div><p class="formvoet"><button type="button" class="stapknop terug" data-naar="1">{T("← Vorige", "← Back")}</button></p></section>')
 
 form = f'''<form class="aanvraag" method="post" action="/api/aanvraag" id="aanvraag">
 <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
