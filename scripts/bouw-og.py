@@ -77,6 +77,7 @@ print(f"ok: {len(pagina_s)} pagina's, {len(gemaakt)} deelbeelden in img/og/")
 
 # Deelpagina hear.nl/coffeecuts (en /en/coffeecuts): wordt hier elke keer opnieuw gemaakt uit de bron,
 # zodat titel, omschrijving en deelbeeld nooit achterlopen op de pagina custom-dj-mix.html.
+# Doorsturen gebeurt alleen met JavaScript: een meta refresh ziet Facebook als redirect die het niet kan volgen.
 # Bron: het blok "Coffee cuts" in content/diensten.json (NL) en het deelbeeld van custom-dj-mix.
 def coffeecuts():
     import hashlib
@@ -99,7 +100,7 @@ def coffeecuts():
              f'<meta property="og:site_name" content="HEAR"><meta property="og:type" content="website"><meta property="og:locale" content="{loc}">'
              f'<meta property="og:image" content="{beeld}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">'
              f'<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{beeld}">'
-             f'<link rel="canonical" href="{BASIS}{doel}"><meta http-equiv="refresh" content="0; url={doel}#coffee-cuts">'
+             f'<link rel="canonical" href="{BASIS}{doel}">'
              f'<script>location.replace("{doel}"+location.search+"#coffee-cuts")</script>'
              '<style>body{margin:0;background:#191A19;color:#F6F5F1;font:16px/1.5 system-ui,sans-serif;display:grid;place-items:center;min-height:100vh}a{color:#D47763}</style>'
              f'</head><body><p><a href="{doel}#coffee-cuts">{verder} →</a></p></body></html>\n')
