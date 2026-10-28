@@ -65,11 +65,12 @@ def diensten():
     return (f'<fieldset class="diensten"><legend>{T("Wat heb je nodig?", "What do you need?")}</legend><div class="dienstgrid">{kol}</div>'
             f'<label class="veld veld-breed"><span>{T("Anders, namelijk", "Other, namely")}</span><input type="text" name="diensten_anders"></label></fieldset>')
 
+SOORTEN = [("zakelijk", "Zakelijk (netwerk)event", "Corporate (networking) event"), ("lezing", "Lezing of seminar", "Lecture or seminar"),
+           ("personeelsfeest", "Personeelsfeest", "Staff party"), ("merkactivatie", "Merkactivatie", "Brand activation"), ("dance", "Dance event", "Dance event")]
 soort = (f'<fieldset class="keuze"><legend>{T("Soort event", "Type of event")}</legend>'
-         f'<label class="vink"><input type="radio" name="soort" value="zakelijk"><span>{T("Zakelijk event", "Corporate event")}</span></label>'
-         f'<label class="vink"><input type="radio" name="soort" value="dance"><span>{T("Dance event", "Dance event")}</span></label>'
-         f'<label class="vink"><input type="radio" name="soort" value="anders"><span>{T("Anders", "Other")}</span></label>'
-         f'<input type="text" name="soort_anders" class="inline" aria-label="{A("Anders, namelijk", "Other, namely")}" placeholder="{A("namelijk…", "namely…")}"></fieldset>')
+         + "".join(f'<label class="vink"><input type="radio" name="soort" value="{w}"><span>{T(nl, en)}</span></label>' for w, nl, en in SOORTEN)
+         + f'<label class="vink"><input type="radio" name="soort" value="anders"><span>{T("Anders, namelijk", "Other, namely")}</span></label>'
+         f'<input type="text" name="soort_anders" class="inline" aria-label="{A("Anders, namelijk", "Other, namely")}"></fieldset>')
 
 budget = (f'<fieldset class="budget"><legend>{T("Richtbudget voor licht, geluid en muziek", "Indicative budget for light, sound and music")}</legend>'
           f'<p class="uitleg">{T("Een range is genoeg; je hoeft geen bedrag te noemen.", "A range is enough; you don\'t have to name a figure.")}</p>'

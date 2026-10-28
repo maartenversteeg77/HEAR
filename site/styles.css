@@ -514,9 +514,9 @@ body{font-variant-emoji:text}
 .veld input:focus,.veld textarea:focus,.keuze .inline:focus{outline:2px solid var(--koraal);outline-offset:1px;border-color:var(--koraal)}
 .aanvraag fieldset{border:0;padding:0;margin:0;min-width:0}
 .aanvraag legend{font:400 14px/1.4 var(--tekst);color:var(--tekstgrijs);padding:0;margin:0 0 8px}
-.keuze{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center}
+.keuze{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:8px 22px;align-items:center}
 .keuze legend{width:100%}
-.keuze .inline{width:auto;flex:1 1 160px;padding:6px 10px;font-size:15px}
+.keuze .inline{grid-column:1/-1;max-width:360px;padding:8px 10px;font-size:15px}
 .vink{display:flex;align-items:flex-start;gap:9px;font:400 15px/1.45 var(--tekst);color:var(--zwart);cursor:pointer}
 .vink input{margin:3px 0 0;accent-color:var(--koraal);flex:none;width:17px;height:17px}
 .diensten{margin-top:40px}
@@ -546,4 +546,4 @@ button.knop:disabled{opacity:.6;cursor:wait}
 .formmelding.ok{border-color:var(--turquoise)}
 .formmelding.fout{border-color:var(--koraal)}
 @media (max-width:760px){.dienstgrid{grid-template-columns:1fr 1fr}}
-@media (max-width:560px){.velden{grid-template-columns:1fr}.dienstgrid{grid-template-columns:1fr}}
+@media (max-width:560px){.velden,.keuze{grid-template-columns:1fr}.dienstgrid{grid-template-columns:1fr}}

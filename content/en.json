@@ -2431,24 +2431,32 @@
         ">Type of event<"
       ],
       [
-        ">Zakelijk event<",
-        ">Corporate event<"
+        ">Zakelijk (netwerk)event<",
+        ">Corporate (networking) event<"
+      ],
+      [
+        ">Lezing of seminar<",
+        ">Lecture or seminar<"
+      ],
+      [
+        ">Personeelsfeest<",
+        ">Staff party<"
+      ],
+      [
+        ">Merkactivatie<",
+        ">Brand activation<"
       ],
       [
         ">Dance event<",
         ">Dance event<"
       ],
       [
-        ">Anders<",
-        ">Other<"
+        ">Anders, namelijk<",
+        ">Other, namely<"
       ],
       [
         "=\"Anders, namelijk\"",
         "=\"Other, namely\""
-      ],
-      [
-        "=\"namelijk…\"",
-        "=\"namely…\""
       ],
       [
         ">Richtbudget voor licht, geluid en muziek<",
@@ -2605,10 +2613,6 @@
       [
         ">Wat heb je nodig?<",
         ">What do you need?<"
-      ],
-      [
-        ">Anders, namelijk<",
-        ">Other, namely<"
       ],
       [
         ">Wil je verder nog iets kwijt?<",
