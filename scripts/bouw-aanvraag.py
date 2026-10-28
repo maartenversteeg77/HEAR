@@ -80,7 +80,7 @@ soort = (f'<label class="veld"><span>{T("Soort event", "Type of event")}</span><
          f'<label class="veld" id="soort_anders_veld" hidden><span>{T("Anders, namelijk", "Other, namely")}</span><input type="text" name="soort_anders"></label>')
 
 budget = (f'<fieldset class="budget"><legend>{T("Richtbudget voor licht, geluid en muziek", "Indicative budget for light, sound and music")}</legend>'
-          f'<p class="uitleg">{T("Een range is genoeg; je hoeft geen bedrag te noemen.", "A range is enough; you don\'t have to name a figure.")}</p>'
+          f'<p class="uitleg">{T("Een range is genoeg.", "A range is enough.")}</p>'
           f'<div class="slider" id="budget"><input type="range" name="budget_van" min="1000" max="25000" step="500" value="2500" aria-label="{A("Van", "From")}">'
           f'<input type="range" name="budget_tot" min="1000" max="25000" step="500" value="7500" aria-label="{A("Tot", "To")}"><output id="budget_uit"></output></div>'
           f'<label class="vink"><input type="checkbox" name="budget_onbekend" value="ja"><span>{T("Weet ik nog niet", "I don\'t know yet")}</span></label></fieldset>')
