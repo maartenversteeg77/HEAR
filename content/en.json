@@ -471,12 +471,12 @@
         "<span class=\"pl-k-titel\">DJ gear</span><small class=\"pl-k-sub\">CDJ-3000X, V10, Euphonia, WARM2 and booth</small>"
       ],
       [
-        "<span>Bekijk dj-gear</span> →</a>",
-        "<span>See DJ gear</span> →</a>"
+        "<span>Bekijk alle dj-gear</span> →</a>",
+        "<span>See all DJ gear</span> →</a>"
       ],
       [
-        "data-bekijk=\"Bekijk dj-gear\"><span class=\"pl-titel\">Dj-gear</span><small>CDJ-3000X, V10, Euphonia, WARM2 en booth</small>",
-        "data-bekijk=\"See DJ gear\"><span class=\"pl-titel\">DJ gear</span><small>CDJ-3000X, V10, Euphonia, WARM2 and booth</small>"
+        "data-bekijk=\"Bekijk alle dj-gear\"><span class=\"pl-titel\">Dj-gear</span><small>CDJ-3000X, V10, Euphonia, WARM2 en booth</small>",
+        "data-bekijk=\"See all DJ gear\"><span class=\"pl-titel\">DJ gear</span><small>CDJ-3000X, V10, Euphonia, WARM2 and booth</small>"
       ],
       [
         "alt=\"AlphaTheta Euphonia rotary mixer in rood licht\"",
@@ -487,8 +487,8 @@
         "data-i=\"0\">DJ gear</button>"
       ],
       [
-        "data-bekijk=\"Bekijk geluid\"><span class=\"pl-titel\">Geluid</span><small>RCF KX en Brooklyn Audio</small>",
-        "data-bekijk=\"See sound\"><span class=\"pl-titel\">Sound</span><small>RCF KX and Brooklyn Audio</small>"
+        "data-bekijk=\"Bekijk al het geluid\"><span class=\"pl-titel\">Geluid</span><small>RCF KX en Brooklyn Audio</small>",
+        "data-bekijk=\"See all sound\"><span class=\"pl-titel\">Sound</span><small>RCF KX and Brooklyn Audio</small>"
       ],
       [
         "alt=\"RCF KX-serie: drie topkasten naast elkaar\"",
@@ -499,8 +499,8 @@
         "data-i=\"1\">Sound</button>"
       ],
       [
-        "data-bekijk=\"Bekijk sfeerlicht\"><span class=\"pl-titel\">Sfeerlicht</span><small>accu-washlights, theaterspots, hazer</small>",
-        "data-bekijk=\"See ambient lighting\"><span class=\"pl-titel\">Ambient lighting</span><small>battery washlights, theatre spots, hazer</small>"
+        "data-bekijk=\"Bekijk al het sfeerlicht\"><span class=\"pl-titel\">Sfeerlicht</span><small>accu-washlights, theaterspots, hazer</small>",
+        "data-bekijk=\"See all ambient lighting\"><span class=\"pl-titel\">Ambient lighting</span><small>battery washlights, theatre spots, hazer</small>"
       ],
       [
         "alt=\"ADJ ElectraPix Par 7 met lichtzuilen en bol\"",
@@ -511,8 +511,8 @@
         "data-i=\"2\">Ambient lighting</button>"
       ],
       [
-        "data-bekijk=\"Bekijk dansvloerlicht\"><span class=\"pl-titel\">Dansvloerlicht</span><small>hybride moving heads en lichtshows</small>",
-        "data-bekijk=\"See dance floor lighting\"><span class=\"pl-titel\">Dance floor lighting</span><small>hybrid moving heads and light shows</small>"
+        "data-bekijk=\"Bekijk al het dansvloerlicht\"><span class=\"pl-titel\">Dansvloerlicht</span><small>hybride moving heads en lichtshows</small>",
+        "data-bekijk=\"See all dance floor lighting\"><span class=\"pl-titel\">Dance floor lighting</span><small>hybrid moving heads and light shows</small>"
       ],
       [
         "alt=\"Rode en blauwe lichtbundels van moving heads\"",
@@ -523,8 +523,8 @@
         "data-i=\"3\">Dance floor lighting</button>"
       ],
       [
-        "data-bekijk=\"Bekijk vintage licht\"><span class=\"pl-titel\">90&#x27;s vintage licht</span><small>Astrodisco en Golden Scan</small>",
-        "data-bekijk=\"See vintage lighting\"><span class=\"pl-titel\">90s vintage lighting</span><small>Astrodisco and Golden Scan</small>"
+        "data-bekijk=\"Bekijk al het vintage licht\"><span class=\"pl-titel\">90&#x27;s vintage licht</span><small>Astrodisco en Golden Scan</small>",
+        "data-bekijk=\"See all vintage lighting\"><span class=\"pl-titel\">90s vintage lighting</span><small>Astrodisco and Golden Scan</small>"
       ],
       [
         "alt=\"Clay Paky Astrodisco\"",
