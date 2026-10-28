@@ -157,11 +157,12 @@ main = f'''<main class="wrap">
     a[0].addEventListener('input',toon);a[1].addEventListener('input',toon);toon()}}
   var so=document.getElementById('soort'),sa=document.getElementById('soort_anders_veld');if(so&&sa){{so.addEventListener('change',function(){{sa.hidden=so.value!=='anders'}})}}
   var st=f.querySelectorAll('.stap');f.classList.add('in-stappen');
-  function ga(n){{n=String(n);var doel;st.forEach(function(x){{var aan=x.dataset.stap===n;x.hidden=!aan;if(aan)doel=x}});var h=doel.querySelector('h2');window.scrollTo({{top:f.getBoundingClientRect().top+window.scrollY-120,behavior:'smooth'}});h&&h.focus&&h.setAttribute('tabindex','-1');h&&h.focus({{preventScroll:true}})}}
+  function ga(n,geschiedenis){{n=String(n);if(geschiedenis!==false&&history.pushState){{var st0=history.state&&history.state.stap;if(st0!==n)history.pushState({{stap:n}},'','#stap-'+n)}}var doel;st.forEach(function(x){{var aan=x.dataset.stap===n;x.hidden=!aan;if(aan)doel=x}});var h=doel.querySelector('h2');window.scrollTo({{top:f.getBoundingClientRect().top+window.scrollY-120,behavior:'smooth'}});h&&h.focus&&h.setAttribute('tabindex','-1');h&&h.focus({{preventScroll:true}})}}
   f.querySelectorAll('.stapknop').forEach(function(k){{k.addEventListener('click',function(){{var n=k.dataset.naar,huidig=k.closest('.stap');if(!n)return;
     if(k.classList.contains('vooruit')){{var ok=true;huidig.querySelectorAll('input,select,textarea').forEach(function(i){{if(ok&&!i.checkValidity()){{i.reportValidity();ok=false}}}});if(!ok)return}}ga(n)}})}});
   var tel=document.getElementById('telefoon');function telv(){{var g=f.querySelector('input[name=gesprek]:checked');tel.required=!!g&&g.value==='bellen'}}
-  f.querySelectorAll('input[name=gesprek]').forEach(function(r){{r.addEventListener('change',telv)}});telv();ga(1);
+  f.querySelectorAll('input[name=gesprek]').forEach(function(r){{r.addEventListener('change',telv)}});telv();if(history.replaceState)history.replaceState({{stap:'1'}},'',location.pathname+location.search);ga(1,false);
+  window.addEventListener('popstate',function(ev){{var n=(ev.state&&ev.state.stap)||'1';if(f.querySelector('.stap[data-stap="'+n+'"]'))ga(n,false)}});
   var q=location.search;if(/verzonden=1/.test(q)){{m.hidden=false;m.textContent=f.dataset.dank;m.className='formmelding ok'}}else if(/fout=1/.test(q)){{m.hidden=false;m.textContent=f.dataset.fout;m.className='formmelding fout'}}
   f.addEventListener('submit',function(ev){{
     if(!window.fetch)return;ev.preventDefault();var b=f.querySelector('button');b.disabled=true;
