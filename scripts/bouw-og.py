@@ -74,3 +74,35 @@ for p in pagina_s:
     s = s.replace("</title>", "</title>" + tags, 1)
     p.write_text(s)
 print(f"ok: {len(pagina_s)} pagina's, {len(gemaakt)} deelbeelden in img/og/")
+
+# Deelpagina hear.nl/coffeecuts (en /en/coffeecuts): wordt hier elke keer opnieuw gemaakt uit de bron,
+# zodat titel, omschrijving en deelbeeld nooit achterlopen op de pagina custom-dj-mix.html.
+# Bron: het blok "Coffee cuts" in content/diensten.json (NL) en het deelbeeld van custom-dj-mix.
+def coffeecuts():
+    import hashlib
+    dj = json.loads((root / "content" / "diensten.json").read_text())
+    pg = next(x for x in dj["paginas"] if x["bestand"] == "custom-dj-mix.html")
+    blok = next(b for b in pg["blokken"] if b.get("label") == "Coffee cuts")
+    tekst_nl = blok["tekst"][0]
+    en_paren = json.loads((root / "content" / "en.json").read_text())["paginas"].get("custom-dj-mix.html", [])
+    tekst_en = next((x[1].strip("<>") for x in en_paren if x[0].strip("<>") == html.escape(tekst_nl, quote=True).replace("&#x27;", "&#x27;")), None) \
+        or next((x[1].strip("<>") for x in en_paren if html.unescape(x[0].strip("<>")) == tekst_nl), tekst_nl)
+    beeld = f"{BASIS}/img/og/custom-dj-mix.jpg?v=" + hashlib.md5((ogdir / "custom-dj-mix.jpg").read_bytes()).hexdigest()[:8]
+    for taal, map_, tekst, verder, loc in (("nl", site, tekst_nl, "Door naar Coffee cuts", "nl_NL"), ("en", site / "en", html.unescape(tekst_en), "Continue to Coffee cuts", "en_GB")):
+        pre = "/en" if taal == "en" else ""
+        doel = f"{pre}/custom-dj-mix.html"
+        d = e(tekst)
+        s = (f'<!doctype html><html lang="{taal}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
+             f'<title>Coffee cuts · HEAR</title><meta name="description" content="{d}">'
+             f'<!-- Gegenereerd door scripts/bouw-og.py: deelpagina voor social posts; stuurt door naar het Coffee cuts-blok. Niet met de hand aanpassen. -->'
+             f'<meta property="og:title" content="Coffee cuts · HEAR"><meta property="og:description" content="{d}"><meta property="og:url" content="{BASIS}{pre}/coffeecuts">'
+             f'<meta property="og:site_name" content="HEAR"><meta property="og:type" content="website"><meta property="og:locale" content="{loc}">'
+             f'<meta property="og:image" content="{beeld}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">'
+             f'<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{beeld}">'
+             f'<link rel="canonical" href="{BASIS}{doel}"><meta http-equiv="refresh" content="0; url={doel}#coffee-cuts">'
+             f'<script>location.replace("{doel}"+location.search+"#coffee-cuts")</script>'
+             '<style>body{margin:0;background:#191A19;color:#F6F5F1;font:16px/1.5 system-ui,sans-serif;display:grid;place-items:center;min-height:100vh}a{color:#D47763}</style>'
+             f'</head><body><p><a href="{doel}#coffee-cuts">{verder} →</a></p></body></html>\n')
+        (map_ / "coffeecuts.html").write_text(s)
+coffeecuts()
+print("ok: coffeecuts-deelpagina's opnieuw gemaakt")
