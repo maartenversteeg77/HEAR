@@ -20,8 +20,8 @@ def A(nl, en):  # attribuutwaarde (placeholder, aria-label)
 TITEL = "Aanvraag"
 KOP = "Vertel over je event"
 MAIL = '<a href="mailto:maarten@hear.nl">maarten@hear.nl</a>'
-INTRO_HTML = "In drie korte stappen. Vul in wat je al weet; weet je iets nog niet, laat het veld dan leeg. Liever mailen? Dat kan ook: " + MAIL + "."
-paren.append((INTRO_HTML, "In three short steps. Fill in what you already know; if you don't know something yet, leave the field empty. Prefer email? That works too: " + MAIL + "."))
+INTRO_HTML = "Laat weten hoe en wanneer je wilt praten. Daarna kun je, als je wilt, alvast iets over je event vertellen. Liever mailen? Dat kan ook: " + MAIL + "."
+paren.append((INTRO_HTML, "Let us know how and when you would like to talk. After that, you can tell us a bit about your event if you like. Prefer email? That works too: " + MAIL + "."))
 
 def veld(naam, nl, en, type="text", verplicht=False, extra=""):
     req = " required" if verplicht else ""
@@ -109,7 +109,7 @@ stap1 = stap(1, "Kennismaken", "Getting acquainted", verder="keuze", inhoud=f'''
 {veld("telefoon", "Telefoonnummer", "Phone number", "tel", extra=' autocomplete="tel" id="telefoon"')}
 {veld("functie", "Je functie", "Your role")}
 </div>''')
-stap2 = stap(2, "Over je event", "About your event", terug="keuze", inhoud=f'''<div class="velden">
+stap2 = stap(2, "Over je event", "About your event", terug="keuze", inhoud=f'''<p class="stapuitleg">{T("Vul in wat je al weet; weet je iets nog niet, laat het veld dan leeg.", "Fill in what you already know; if you don't know something yet, leave the field empty.")}</p><div class="velden">
 {veld("event", "Naam van het event", "Name of the event")}
 {soort}
 {veld("locatie", "Locatie", "Venue")}

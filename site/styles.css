@@ -587,3 +587,4 @@ button.knop:disabled{opacity:.6;cursor:wait}
 .venn-corporate{margin:0 0 30px;max-width:520px}
 .jog-leesook{padding-top:0!important;padding-bottom:clamp(40px,6vw,80px)!important}
 .founder-copy .lees-ook,.jog-leesook .lees-ook{font:400 16px/1.5 var(--tekst)!important;color:var(--tekstgrijs);margin:22px 0 0}
+.stapuitleg{font:400 16px/1.5 var(--tekst);color:var(--tekstgrijs);margin:-8px 0 20px;max-width:56ch}

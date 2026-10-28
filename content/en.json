@@ -2639,8 +2639,8 @@
         "<title>Request · HEAR</title>"
       ],
       [
-        "In drie korte stappen. Vul in wat je al weet; weet je iets nog niet, laat het veld dan leeg. Liever mailen? Dat kan ook: <a href=\"mailto:maarten@hear.nl\">maarten@hear.nl</a>.",
-        "In three short steps. Fill in what you already know; if you don't know something yet, leave the field empty. Prefer email? That works too: <a href=\"mailto:maarten@hear.nl\">maarten@hear.nl</a>."
+        "Laat weten hoe en wanneer je wilt praten. Daarna kun je, als je wilt, alvast iets over je event vertellen. Liever mailen? Dat kan ook: <a href=\"mailto:maarten@hear.nl\">maarten@hear.nl</a>.",
+        "Let us know how and when you would like to talk. After that, you can tell us a bit about your event if you like. Prefer email? That works too: <a href=\"mailto:maarten@hear.nl\">maarten@hear.nl</a>."
       ],
       [
         ">Soort event<",
@@ -2761,6 +2761,10 @@
       [
         ">Kennismaken<",
         ">Getting acquainted<"
+      ],
+      [
+        ">Vul in wat je al weet; weet je iets nog niet, laat het veld dan leeg.<",
+        ">Fill in what you already know; if you don&#x27;t know something yet, leave the field empty.<"
       ],
       [
         ">Naam van het event<",
