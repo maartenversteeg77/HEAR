@@ -50,11 +50,11 @@ DIENSTEN = [
         ("Playlist op maat", "Custom playlist"),
         ("Dj-booth en gear voor je eigen dj", "DJ booth and gear for your own DJ"),
     ]),
-    ("Extra", "Extra", [
+    ("Communicatieadvies", "Communication advice", [
+        ("Advies over concept en programma", "Advice on concept and programme"),
+        ("Content: bedrijfsvideo of aftermovie", "Content: corporate video or aftermovie"),
         ("Online uitzending", "Online broadcast"),
         ("Videoschermen en presentatie", "Video screens and presentation"),
-        ("Videoproductie of aftermovie", "Video production or aftermovie"),
-        ("Advies over concept en programma", "Advice on concept and programme"),
     ]),
 ]
 def diensten():
