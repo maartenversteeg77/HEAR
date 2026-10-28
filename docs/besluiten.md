@@ -392,7 +392,7 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 ## 2026-10-28 · Namen doelgroepen
 - "Corporate" heet in het Nederlands "Zakelijke events" (dekt ook overheid en mkb; rijmt met "Dance events"). EN blijft "Corporate".
 - "Venue owners" heet "Bijzondere eventlocaties" (organisatoren die een bijzondere plek vinden én eigenaren); EN "Special event venues".
-- Regel op de homepage: "Van skatehal tot museum: een ruimte die een nieuwe beleving wordt. Of een vaste installatie die beter klinkt."
+- Regel op de homepage blijft "Van skatehal tot museum: een ruimte die een nieuwe beleving wordt." (toevoeging over vaste installatie weer weggehaald: blok te groot, staat al op de landingspagina).
 - Bestandsnamen (corporate.html, venue-owners.html) blijven, zodat bestaande links werken. Aangepast in homepageblok, menu Voor wie, footer, paginatitels, zijnavigatie, overzicht en caselabels.
 - Korte URL voor advertenties: hear.nl/coffeecuts (ook /coffee-cuts, /en/coffeecuts) stuurt door naar het Coffee cuts-blok; utm-parameters blijven behouden. Tijdelijke doorverwijzing (302), zodat het doel later een eigen pagina kan worden.
 - Homepage, mobiel: Dj-gear-beeld (Euphonia) krijgt een staande uitsnede zonder de groene golf onderaan, zodat die niet met de witte knop concurreert; de rode ruimte bovenaan valt achter het keuzepaneel.
