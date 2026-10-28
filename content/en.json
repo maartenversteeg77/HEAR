@@ -682,6 +682,10 @@
       [
         "<span class=\"pl-groep\">Diensten</span>",
         "<span class=\"pl-groep\">Services</span>"
+      ],
+      [
+        "<p class=\"over-label\" aria-hidden=\"true\">Over HEAR</p>",
+        "<p class=\"over-label\" aria-hidden=\"true\">About HEAR</p>"
       ]
     ],
     "cases.html": [
