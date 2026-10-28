@@ -23,8 +23,8 @@ def kort(c, taal):
 def zijnav(i, taal):
     v, n = keten[i - 1], keten[(i + 1) % len(keten)]
     bollen = "".join(f'<a href="{it["link"]}" title="{e(kort(it, taal))}"{AAN if k == i else ""}></a>' for k, it in enumerate(keten))
-    return (f'<nav class="zijnav" aria-label="Andere cases"><a class="pijl" href="{v["link"]}" title="{e(kort(v, taal))}" aria-label="Vorige: {e(kort(v, taal))}">←</a>'
-            f'<span class="bollen">{bollen}</span><a class="pijl" href="{n["link"]}" title="{e(kort(n, taal))}" aria-label="Volgende: {e(kort(n, taal))}">→</a></nav>')
+    return (f'<nav class="zijnav" aria-label="{'Other cases' if taal == 'en' else 'Andere cases'}"><a class="pijl" href="{v["link"]}" title="{e(kort(v, taal))}" aria-label="{'Previous' if taal == 'en' else 'Vorige'}: {e(kort(v, taal))}">←</a>'
+            f'<span class="bollen">{bollen}</span><a class="pijl" href="{n["link"]}" title="{e(kort(n, taal))}" aria-label="{'Next' if taal == 'en' else 'Volgende'}: {e(kort(n, taal))}">→</a></nav>')
 def plaats_zijnav(s, i, taal):
     s = re.sub(r'<nav class="bottomnav">.*?</nav>', '', s, flags=re.S)
     s = re.sub(r'<nav class="zijnav"[^>]*>.*?</nav>', '', s, flags=re.S)
