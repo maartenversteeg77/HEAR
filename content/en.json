@@ -387,22 +387,6 @@
         "<span>All cases</span>"
       ],
       [
-        "aria-label=\"Verder op de site\"",
-        "aria-label=\"More on this site\""
-      ],
-      [
-        "<span class=\"v-titel\">Voor wie is HEAR</span>",
-        "<span class=\"v-titel\">Who HEAR is for</span>"
-      ],
-      [
-        "<span class=\"v-titel\">Waarden en uitgangspunten</span>",
-        "<span class=\"v-titel\">Values and principles</span>"
-      ],
-      [
-        "<span class=\"v-titel\">Producten en diensten</span>",
-        "<span class=\"v-titel\">Products and services</span>"
-      ],
-      [
         "alt=\"Portret van Maarten Versteeg in een industriële hal\"",
         "alt=\"Portrait of Maarten Versteeg in an industrial hall\""
       ],
@@ -413,10 +397,6 @@
       [
         "Als dj, corporate communicatiespecialist én founder van HEAR verbind ik de corporate evenementenwereld met techniek en muziek.",
         "As a DJ, corporate communications specialist and founder of HEAR, I connect the corporate events world with technology and music."
-      ],
-      [
-        "<a class=\"tekstlink\" href=\"over-hear.html\">Lees meer</a>",
-        "<a class=\"tekstlink\" href=\"over-hear.html\">Read more</a>"
       ],
       [
         "<h2 id=\"afsluiter-kop\">Vertel wat je voor ogen hebt.</h2>",
@@ -457,6 +437,86 @@
       [
         "<a href=\"artiesten.html\">Dj's</a>",
         "<a href=\"artiesten.html\">DJs</a>"
+      ],
+      [
+        ">Producten en diensten</h2>",
+        ">Products and services</h2>"
+      ],
+      [
+        "aria-label=\"Producten en diensten\"",
+        "aria-label=\"Products and services\""
+      ],
+      [
+        ">Voor wie is HEAR</a></h2>",
+        ">Who HEAR is for</a></h2>"
+      ],
+      [
+        "<span class=\"v-tekst\">Van heldere sprekersversterking tot muziek bij de borrel.</span>",
+        "<span class=\"v-tekst\">From clear speech reinforcement to music at the reception.</span>"
+      ],
+      [
+        "<span class=\"v-tekst\">Van skatehal tot museum: een ruimte die een nieuwe beleving wordt.</span>",
+        "<span class=\"v-tekst\">From skate hall to museum: a space that becomes a new experience.</span>"
+      ],
+      [
+        "<span class=\"v-tekst\">Rider-proof dj-gear, krachtig geluid en draadloze lichtshows.</span>",
+        "<span class=\"v-tekst\">Rider-proof DJ gear, powerful sound and wireless light shows.</span>"
+      ],
+      [
+        "<a class=\"tekstlink\" href=\"over-hear.html\">Founder story</a><a class=\"tekstlink\" href=\"principes.html\">Waarden en uitgangspunten</a>",
+        "<a class=\"tekstlink\" href=\"over-hear.html\">Founder story</a><a class=\"tekstlink\" href=\"principes.html\">Values and principles</a>"
+      ],
+      [
+        "<span class=\"pl-bekijk\"><span>Bekijk alle dj-gear</span>",
+        "<span class=\"pl-bekijk\"><span>See all DJ gear</span>"
+      ],
+      [
+        "data-bekijk=\"Bekijk alle dj-gear\"><span class=\"pl-titel\">Dj-gear</span><small>CDJ-3000X, V10, Euphonia</small>",
+        "data-bekijk=\"See all DJ gear\"><span class=\"pl-titel\">DJ gear</span><small>CDJ-3000X, V10, Euphonia</small>"
+      ],
+      [
+        "alt=\"AlphaTheta Euphonia rotary mixer in rood licht\"",
+        "alt=\"AlphaTheta Euphonia rotary mixer in red light\""
+      ],
+      [
+        "data-bekijk=\"Bekijk alle geluid\"><span class=\"pl-titel\">Geluid</span><small>RCF KX en Brooklyn Audio</small>",
+        "data-bekijk=\"See all sound\"><span class=\"pl-titel\">Sound</span><small>RCF KX and Brooklyn Audio</small>"
+      ],
+      [
+        "alt=\"RCF-luidsprekers in een zaal met truss\"",
+        "alt=\"RCF loudspeakers in a hall with truss\""
+      ],
+      [
+        "data-bekijk=\"Bekijk licht\"><span class=\"pl-titel\">Licht</span><small>sfeer, dansvloer, 90&#x27;s vintage</small>",
+        "data-bekijk=\"See light\"><span class=\"pl-titel\">Light</span><small>ambient, dance floor, 90s vintage</small>"
+      ],
+      [
+        "alt=\"Volle dansvloer in rood en paars licht\"",
+        "alt=\"Packed dance floor in red and purple light\""
+      ],
+      [
+        "data-bekijk=\"Bekijk advies\"><span class=\"pl-titel\">Advies en AV as a service</span><small>merkonafhankelijk, voor venues</small>",
+        "data-bekijk=\"See advice\"><span class=\"pl-titel\">Advice and AV as a service</span><small>brand-independent, for venues</small>"
+      ],
+      [
+        "alt=\"Eventlocatie ingericht voor een gala\"",
+        "alt=\"Event venue set up for a gala\""
+      ],
+      [
+        "data-bekijk=\"Bekijk artiesten\"><span class=\"pl-titel\">Dj&#x27;s en artiesten</span><small>vocalist, saxofonist, percussionist</small>",
+        "data-bekijk=\"See artists\"><span class=\"pl-titel\">DJs and artists</span><small>vocalist, saxophonist, percussionist</small>"
+      ],
+      [
+        "alt=\"Tuinfeest met dj en saxofonist\"",
+        "alt=\"Garden party with DJ and saxophonist\""
+      ],
+      [
+        "data-bekijk=\"Bekijk sets en playlists\"><span class=\"pl-titel\">Sets en playlists</span><small>custom dj-sets, playlists, remixes</small>",
+        "data-bekijk=\"See sets and playlists\"><span class=\"pl-titel\">Sets and playlists</span><small>custom DJ sets, playlists, remixes</small>"
+      ],
+      [
+        "alt=\"Deep Radio\"",
+        "alt=\"Deep Radio\""
       ]
     ],
     "cases.html": [
