@@ -584,3 +584,4 @@ button.knop:disabled{opacity:.6;cursor:wait}
 .keuzescherm .formvoet{margin-top:22px}
 @media (max-width:560px){.keuzekaarten{grid-template-columns:1fr}}
 .keuzescherm .stapteller{text-transform:uppercase}
+.venn-corporate{margin:0 0 30px;max-width:520px}
