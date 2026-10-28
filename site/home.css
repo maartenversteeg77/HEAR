@@ -273,7 +273,6 @@ a.mail-ook,.quick.quick-breed p .mail-ook,.cta-brug .mail-ook{font:300 14px/1.3 
 .pl-beeld{position:sticky;top:100px;display:block;aspect-ratio:4/3;overflow:hidden;color:var(--wit);text-decoration:none;order:2;background:var(--zwart)}
 .pl-beeld img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .45s}
 .pl-beeld img.aan{opacity:1}
-.pl-bekijk{position:absolute;left:0;right:0;bottom:0;padding:50px 20px 18px;background:linear-gradient(transparent,rgba(0,0,0,.65));font:500 13px/1.2 var(--tekst);letter-spacing:.16em;text-transform:uppercase;display:flex;gap:10px}
 .pl-lijst{display:flex;flex-direction:column;border-top:1px solid #333432}
 .pl-rij{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:20px 0;border-bottom:1px solid #333432;color:var(--wit);text-decoration:none;transition:color .2s}
 .pl-titel{font:300 clamp(28px,3vw,46px)/1.05 var(--kop)}
@@ -309,3 +308,8 @@ a.mail-ook,.quick.quick-breed p .mail-ook,.cta-brug .mail-ook{font:300 14px/1.3 
 .over-links .tekstlink{margin-top:0!important}
 @media (max-width:900px){.doelgroepen-blok>a{padding:24px 0!important}}
 @media (max-width:900px){.pl-menu button.aan{color:var(--koraal)}}
+.pl-wrap{grid-template-areas:"lijst beeld" "lijst verder";grid-template-rows:auto 1fr}
+.pl-lijst{grid-area:lijst}.pl-beeld{grid-area:beeld}
+.pl-verder{grid-area:verder;justify-self:start;align-self:start;margin-top:-22px;font:400 15px/1.3 var(--tekst);color:#d9d8d3;text-underline-offset:4px}
+.pl-verder:hover{color:var(--koraal)}
+@media (max-width:900px){.pl-wrap{grid-template-areas:none}.pl-lijst,.pl-beeld,.pl-verder{grid-area:auto}.pl-verder{margin-top:0}}

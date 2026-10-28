@@ -467,8 +467,8 @@
         "<a class=\"tekstlink\" href=\"over-hear.html\">Founder story</a><a class=\"tekstlink\" href=\"principes.html\">Values and principles</a>"
       ],
       [
-        "<span class=\"pl-bekijk\"><span>Bekijk alle dj-gear</span>",
-        "<span class=\"pl-bekijk\"><span>See all DJ gear</span>"
+        "<a class=\"pl-verder\" href=\"booth-dj-gear.html\"><span>Bekijk alle dj-gear</span>",
+        "<a class=\"pl-verder\" href=\"booth-dj-gear.html\"><span>See all DJ gear</span>"
       ],
       [
         "data-bekijk=\"Bekijk alle dj-gear\"><span class=\"pl-titel\">Dj-gear</span><small>CDJ-3000X, V10, Euphonia, WARM2 en booth</small>",
