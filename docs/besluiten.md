@@ -354,3 +354,5 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Productblok (28 okt, 13.35u): volgorde op mobiel beeld → donkere balk "Bekijk dj-gear →" (wisselt mee) → keuzeknop. Geen tekst meer op het beeld. "Alle producten en diensten" is een volwaardige negende keuze in de dropdown en in de lijst (eigen beeld: lichtbundels). Desktop: lijst links, beeld rechts met de Bekijk-link eronder.
 - Over HEAR en Waarden verwijzen naar elkaar met "Lees ook:" (28 okt).
 - Homepage (28 okt, 14.10u): hoofdknop in hero en afsluiter wordt "Plan een gesprek" (formulier); WhatsApp als tekstlink "Korte vraag? Stuur een appje". Volgorde: cases → Voor wie is HEAR (koraal) → Producten en diensten → Over HEAR → nieuws.
+- Homepage productblok mobiel (28 okt, 14.25u): keuzeknop half-transparant bovenop het beeld (beeld 4:5), witte categorienaam, koraal ronde knop met pijl zodat duidelijk is dat het een knop is.
+- Dance events: link "Bekijk de case: een reis door 40 jaar elektronische muziek" onder de forward booth weggehaald.
