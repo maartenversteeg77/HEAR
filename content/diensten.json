@@ -330,6 +330,47 @@
       ]
     },
     {
+      "bestand": "vintage-lighting.html",
+      "titel": "90's vintage licht",
+      "kernzin": "Gereviseerde lichteffecten uit de discotijd, met hedendaagse lichtopbrengst",
+      "beeld": "img/diensten/astrodisco-breed.jpg",
+      "beeld_alt": "Een Clay Paky Astrodisco werpt tientallen bundels door een donkere zaal",
+      "intro": "Sommige lichteffecten zijn nooit overtroffen, alleen vergeten. Wij halen de klassiekers uit de discotheken van de jaren negentig terug, reviseren ze en geven ze een moderne lichtbron. Zo wordt een 'oh ja'-effect een 'oh wow'-effect.",
+      "blokken": [
+        {
+          "producten": [
+            {
+              "beeld": "img/diensten/astrodisco.jpg",
+              "naam": "Clay Paky Astrodisco",
+              "regel": "Officieel heet dit effect een Astrodisco, maar in de volksmond noemde iedereen het een ufo. Alsof er een ronde schijf landt en dansers meeneemt naar een andere wereld. Who knows. Van het Italiaanse Clay Paky, veel te zien in Italiaanse clubs, maar ook in de oude legendarische Amsterdamse iT nachtclub"
+            },
+            {
+              "beeld": "img/diensten/goldenscan.jpg",
+              "naam": "Golden Scan en Roboscan",
+              "regel": "Scanners. Scanners werden uit de markt verdreven door moving heads die 360 graden om hun as draaien, maar ze zijn nog steeds erg effectief én snel. Met rijke, verzadigde kleuren uit een Philips-gasontladingslamp"
+            }
+          ]
+        },
+        {
+          "label": "Zo zetten we het in",
+          "tekst": [
+            "Zet je alleen vintage effecten in, dan oogt je show gedateerd. Zet je ze in als aanvulling op een lichtshow, dan krijg je een mooie mix van oud en nieuw, met effecten die ánders zijn dan de rest.",
+            "Omwille van de veiligheid kan de Astrodisco alleen worden ingezet in combinatie met truss, ofwel reeds aanwezig op het midden van de vloer of extra ingehuurd."
+          ]
+        }
+      ],
+      "links": [
+        {
+          "tekst": "Dansvloerverlichting",
+          "href": "dancefloor-lighting.html"
+        },
+        {
+          "tekst": "Dj-sets",
+          "href": "dj-sets.html"
+        }
+      ]
+    },
+    {
       "bestand": "communicatieadvies.html",
       "titel": "Communicatieadvies",
       "kernzin": "Communicatieadvies rond je event: van boodschap tot aftermovie",
@@ -453,47 +494,6 @@
       ],
       "cta_tekst": "Vraag een mix of playlist aan",
       "cta_bericht": "Hoi Maarten, ik wil graag een mix of playlist op maat aanvragen."
-    },
-    {
-      "bestand": "vintage-lighting.html",
-      "titel": "90's vintage licht",
-      "kernzin": "Gereviseerde lichteffecten uit de discotijd, met hedendaagse lichtopbrengst",
-      "beeld": "img/diensten/astrodisco-breed.jpg",
-      "beeld_alt": "Een Clay Paky Astrodisco werpt tientallen bundels door een donkere zaal",
-      "intro": "Sommige lichteffecten zijn nooit overtroffen, alleen vergeten. Wij halen de klassiekers uit de discotheken van de jaren negentig terug, reviseren ze en geven ze een moderne lichtbron. Zo wordt een 'oh ja'-effect een 'oh wow'-effect.",
-      "blokken": [
-        {
-          "producten": [
-            {
-              "beeld": "img/diensten/astrodisco.jpg",
-              "naam": "Clay Paky Astrodisco",
-              "regel": "Officieel heet dit effect een Astrodisco, maar in de volksmond noemde iedereen het een ufo. Alsof er een ronde schijf landt en dansers meeneemt naar een andere wereld. Who knows. Van het Italiaanse Clay Paky, veel te zien in Italiaanse clubs, maar ook in de oude legendarische Amsterdamse iT nachtclub"
-            },
-            {
-              "beeld": "img/diensten/goldenscan.jpg",
-              "naam": "Golden Scan en Roboscan",
-              "regel": "Scanners. Scanners werden uit de markt verdreven door moving heads die 360 graden om hun as draaien, maar ze zijn nog steeds erg effectief én snel. Met rijke, verzadigde kleuren uit een Philips-gasontladingslamp"
-            }
-          ]
-        },
-        {
-          "label": "Zo zetten we het in",
-          "tekst": [
-            "Zet je alleen vintage effecten in, dan oogt je show gedateerd. Zet je ze in als aanvulling op een lichtshow, dan krijg je een mooie mix van oud en nieuw, met effecten die ánders zijn dan de rest.",
-            "Omwille van de veiligheid kan de Astrodisco alleen worden ingezet in combinatie met truss, ofwel reeds aanwezig op het midden van de vloer of extra ingehuurd."
-          ]
-        }
-      ],
-      "links": [
-        {
-          "tekst": "Dansvloerverlichting",
-          "href": "dancefloor-lighting.html"
-        },
-        {
-          "tekst": "Dj-sets",
-          "href": "dj-sets.html"
-        }
-      ]
     },
     {
       "bestand": "av-as-a-service.html",

@@ -366,5 +366,5 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 ## 2026-10-28 · Namen en volgorde producten en diensten
 - "Advies en AV as a service" heet nu "Aankoopadvies licht en geluid"; het blok "AV as a service" op die pagina heet "Liever niet kopen?".
 - "Sets en playlists" / "Custom dj-sets, playlists en remixes" heet nu "Custom dj-mix of playlist".
-- Nieuwe volgorde, overal gelijk (homepage-blok, dropdown, overzicht diensten.html, footer, zijnavigatie): Dj-gear, Geluid, Sfeerlicht, Dansvloerlicht, Communicatieadvies, Dj's en artiesten, Custom dj-mix of playlist, 90's vintage licht, Aankoopadvies licht en geluid, Alle producten en diensten.
-- Reden: communicatieadvies stond onderaan en viel weg. Kernaanbod licht en geluid eerst, daarna communicatie en artiesten, de nichediensten (vintage, aankoopadvies) achteraan.
+- Nieuwe volgorde, overal gelijk (homepage-blok, dropdown, overzicht diensten.html, footer, zijnavigatie): Dj-gear, Geluid, Sfeerlicht, Dansvloerlicht, 90's vintage licht, Communicatieadvies, Dj's en artiesten, Custom dj-mix of playlist, Aankoopadvies licht en geluid, Alle producten en diensten.
+- Reden: communicatieadvies stond onderaan en viel weg. Op voorstel van Maarten: de lichtsoorten bij elkaar, dj's en playlists bij elkaar, communicatieadvies op plek 6 in plaats van onderaan.
