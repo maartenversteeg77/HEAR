@@ -602,3 +602,11 @@ button.knop:disabled{opacity:.6;cursor:wait}
 .voorbeeldlijst a:hover{color:var(--koraal)}
 .voorbeelden-alle a,.inline-pijl{color:var(--zwart);text-decoration:underline;text-underline-offset:4px}
 .voorbeelden{margin-top:8px}
+/* Coffee cuts-miniformulier (special-projects.html) */
+.cc-form{max-width:none;padding:22px 0 0;margin-top:10px;border-top:1px solid var(--lijn)}
+.cc-form[hidden]{display:none}
+.cc-form .keuze{margin:0 0 20px}
+.cc-keuzes{grid-template-columns:1fr}
+.cc-form .formvoet{margin-top:22px}
+.cc-open i{transition:transform .2s}
+.cc-open[aria-expanded=true] i{transform:rotate(180deg)}

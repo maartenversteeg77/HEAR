@@ -13,6 +13,7 @@ const VELDEN = [
   ["gasten", "Aantal gasten"], ["doelgroep", "Doelgroep"], ["diensten", "Diensten"], ["diensten_anders", "Diensten, anders"], ["communicatie", "Communicatie"], ["communicatie_anders", "Communicatie, anders"],
   ["ruimte", "Ruimte"], ["concept", "Concept / programma"], ["bericht", "Bericht"],
   ["budget", "Richtbudget"],
+  ["cc_wens", "Coffee cuts, ik wil"], ["cc_lengte", "Lengte playlist (uur)"], ["cc_sfeer", "Sfeer in de zaak"], ["cc_lijkt", "Moet lijken op"], ["cc_nummers", "Voorbeelden van nummers"],
 ];
 
 function schoon(v) { return String(v || "").replace(/\r/g, "").trim().slice(0, 4000); }
@@ -21,7 +22,7 @@ async function aanvraag(request, env) {
   const fd = await request.formData();
   if (schoon(fd.get("website"))) return antwoord(request, true); // honeypot: doen alsof het gelukt is
   const d = {};
-  for (const [k] of VELDEN) d[k] = (k === "diensten" || k === "communicatie") ? fd.getAll(k).map(schoon).filter(Boolean).join(", ") : schoon(fd.get(k));
+  for (const [k] of VELDEN) d[k] = (k === "diensten" || k === "communicatie" || k === "cc_wens") ? fd.getAll(k).map(schoon).filter(Boolean).join(", ") : schoon(fd.get(k));
   if (fd.get("budget_onbekend")) d.budget = "weet ik nog niet";
   else if (fd.get("budget_van") || fd.get("budget_tot")) d.budget = `€ ${schoon(fd.get("budget_van"))} – € ${schoon(fd.get("budget_tot"))}`;
   if (!d.naam || !d.email || (d.gesprek === "bellen" && !d.telefoon) || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email)) return antwoord(request, false, 400);
@@ -36,7 +37,7 @@ async function aanvraag(request, env) {
   for (const k of ["gesprek_datum", "datum"]) if (d[k]) d[k] = datum(d[k]);
   if (!fd.get("budget_onbekend") && fd.get("budget_van")) d.budget = `€ ${eur(fd.get("budget_van"))} – € ${eur(fd.get("budget_tot"))}${+fd.get("budget_tot") >= 25000 ? "+" : ""}`;
   const regels = VELDEN.filter(([k]) => d[k]).map(([k, l]) => `${l}: ${d[k]}`).join("\n");
-  const onderwerp = `Aanvraag via hear.nl: ${d.organisatie || d.naam}${d.datum ? ", " + d.datum : ""}`;
+  const onderwerp = `${schoon(fd.get("bron")) === "Coffee cuts" ? "Coffee cuts-aanvraag" : "Aanvraag via hear.nl"}: ${d.organisatie || d.naam}${d.datum ? ", " + d.datum : ""}`;
   const r = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, "Content-Type": "application/json" },
