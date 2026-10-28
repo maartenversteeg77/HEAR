@@ -500,7 +500,7 @@ body{font-variant-emoji:text}
 .venn a:hover .venn-p{fill-opacity:1;text-decoration:underline}
 
 /* Aanvraagformulier (aanvraag.html) */
-.aanvraag{max-width:760px;padding-bottom:clamp(60px,8vw,110px)}
+.aanvraag{display:block;max-width:760px;padding-bottom:clamp(60px,8vw,110px)}
 .aanvraag .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
 .formblok{margin:0 0 42px}
 .formblok h2{font:300 clamp(24px,2.6vw,30px)/1.2 var(--kop);margin:0 0 18px;color:var(--zwart)}
@@ -546,3 +546,20 @@ button.knop:disabled{opacity:.6;cursor:wait}
 .formmelding.fout{border-color:var(--koraal)}
 @media (max-width:760px){.dienstgrid{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.velden{grid-template-columns:1fr}.dienstgrid{grid-template-columns:1fr}}
+/* Aanvraag in drie stappen */
+.aanvraag .stap{margin:0 0 40px}
+.aanvraag .stap h2{font:300 clamp(24px,2.6vw,30px)/1.2 var(--kop);margin:0 0 20px;color:var(--zwart);outline:none}
+.stapteller{font:500 12px/1 var(--tekst);letter-spacing:.16em;color:var(--koraal);margin:0 0 10px}
+.aanvraag:not(.in-stappen) .stap+.stap{border-top:1px solid var(--lijn);padding-top:34px}
+.aanvraag:not(.in-stappen) .stapknop{display:none}
+.stap[hidden]{display:none}
+.keuzerij{display:flex;flex-wrap:wrap;gap:10px 26px}
+.keuze.veld-breed{grid-column:1/-1}
+.stapknop.terug{background:none;border:0;font:400 15px/1.4 var(--tekst);color:var(--tekstgrijs);text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:0}
+.privacyregel{margin:18px 0 0}
+.privacyregel a{color:inherit}
+.aanvraag .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.aanvraag .diensten{margin-top:0}
+.dienstkolom .vink span{overflow-wrap:anywhere}
+.aanvraag .stap>.veld-breed{display:flex;margin-top:30px}
+.privacyregel span{display:inline}

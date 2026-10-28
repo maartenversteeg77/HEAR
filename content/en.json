@@ -2423,8 +2423,8 @@
         "<title>Request · HEAR</title>"
       ],
       [
-        "Vul in wat je al weet; weet je iets nog niet, laat het veld dan leeg. Na je aanvraag bellen we je terug, meestal dezelfde werkdag. Liever mailen? Dat kan ook: <a href=\"mailto:maarten@hear.nl\">maarten@hear.nl</a>.",
-        "Fill in what you already know; if you don't know something yet, leave the field empty. After your request we call you back, usually the same working day. Prefer email? That works too: <a href=\"mailto:maarten@hear.nl\">maarten@hear.nl</a>."
+        "In drie korte stappen. Vul in wat je al weet; weet je iets nog niet, laat het veld dan leeg. Liever mailen? Dat kan ook: <a href=\"mailto:maarten@hear.nl\">maarten@hear.nl</a>.",
+        "In three short steps. Fill in what you already know; if you don't know something yet, leave the field empty. Prefer email? That works too: <a href=\"mailto:maarten@hear.nl\">maarten@hear.nl</a>."
       ],
       [
         ">Soort event<",
@@ -2479,6 +2479,46 @@
         ">I don&#x27;t know yet<"
       ],
       [
+        ">Hoe wil je je wensen bespreken?<",
+        ">How would you like to discuss your plans?<"
+      ],
+      [
+        ">Bel mij<",
+        ">Call me<"
+      ],
+      [
+        ">Microsoft Teams<",
+        ">Microsoft Teams<"
+      ],
+      [
+        ">Google Meet<",
+        ">Google Meet<"
+      ],
+      [
+        ">Wanneer schikt het?<",
+        ">When suits you?<"
+      ],
+      [
+        ">Dagdeel<",
+        ">Time of day<"
+      ],
+      [
+        ">Maakt niet uit<",
+        ">No preference<"
+      ],
+      [
+        ">Ochtend<",
+        ">Morning<"
+      ],
+      [
+        ">Middag<",
+        ">Afternoon<"
+      ],
+      [
+        ">Eind van de middag<",
+        ">Late afternoon<"
+      ],
+      [
         ">Naam<",
         ">Name<"
       ],
@@ -2487,16 +2527,24 @@
         ">Organisation<"
       ],
       [
-        ">Je functie<",
-        ">Your role<"
-      ],
-      [
         ">E-mail<",
         ">Email<"
       ],
       [
-        ">Telefoonnummer, dan bellen we je terug<",
-        ">Phone number, so we can call you back<"
+        ">Telefoonnummer<",
+        ">Phone number<"
+      ],
+      [
+        ">Je functie<",
+        ">Your role<"
+      ],
+      [
+        ">Volgende<",
+        ">Next<"
+      ],
+      [
+        ">Kennismaken<",
+        ">Getting acquainted<"
       ],
       [
         ">Naam van het event<",
@@ -2531,6 +2579,14 @@
         ">The concept or programme<"
       ],
       [
+        ">← Vorige<",
+        ">← Back<"
+      ],
+      [
+        ">Over je event<",
+        ">About your event<"
+      ],
+      [
         ">Geluid<",
         ">Sound<"
       ],
@@ -2543,24 +2599,24 @@
         ">Sound for a reception or party<"
       ],
       [
-        ">Dansvloersysteem<",
-        ">Dance floor system<"
+        ">Dansvloer geluidsysteem<",
+        ">Dance floor sound system<"
       ],
       [
         ">Technicus ter plekke<",
         ">Technician on site<"
       ],
       [
-        ">Licht<",
-        ">Light<"
+        ">Licht en audiovisueel<",
+        ">Light and audiovisual<"
       ],
       [
         ">Sfeerverlichting<",
         ">Atmospheric lighting<"
       ],
       [
-        ">Dansvloerverlichting en lichtshow<",
-        ">Dance floor lighting and light show<"
+        ">Lichtshow<",
+        ">Light show<"
       ],
       [
         ">90&#x27;s vintage lichteffecten<",
@@ -2569,6 +2625,10 @@
       [
         ">Theaterlicht voor product of spreker<",
         ">Theatre lighting for product or speaker<"
+      ],
+      [
+        ">Videoschermen en presentatie<",
+        ">Video screens and presentation<"
       ],
       [
         ">Muziek<",
@@ -2599,40 +2659,40 @@
         ">Advice on concept and programme<"
       ],
       [
-        ">Content: bedrijfsvideo of aftermovie<",
-        ">Content: corporate video or aftermovie<"
+        ">Communicatiemiddelen: uitnodigingen, design, presentatie, bedrijfsvideo, aftermovie of iets anders<",
+        ">Communication materials: invitations, design, presentation, corporate video, aftermovie or something else<"
       ],
       [
         ">Online uitzending<",
         ">Online broadcast<"
       ],
       [
-        ">Videoschermen en presentatie<",
-        ">Video screens and presentation<"
-      ],
-      [
-        ">Wat heb je nodig?<",
-        ">What do you need?<"
+        ">Diensten<",
+        ">Services<"
       ],
       [
         ">Wil je verder nog iets kwijt?<",
         ">Anything else you want to tell us?<"
       ],
       [
+        ">We gebruiken je gegevens alleen om je aanvraag te beantwoorden.<",
+        ">We only use your details to answer your request.<"
+      ],
+      [
         ">Verstuur je aanvraag<",
         ">Send your request<"
       ],
       [
-        ">We gebruiken je gegevens alleen om je aanvraag te beantwoorden.<",
-        ">We only use your details to answer your request.<"
+        ">Wat heb je nodig?<",
+        ">What do you need?<"
       ],
       [
         ">Vertel over je event<",
         ">Tell us about your event<"
       ],
       [
-        "=\"Dank je. We bellen je terug, meestal dezelfde werkdag.\"",
-        "=\"Thank you. We will call you back, usually the same working day.\""
+        "=\"Dank je. We nemen contact met je op om het gesprek in te plannen, meestal dezelfde werkdag.\"",
+        "=\"Thank you. We will get in touch to schedule the conversation, usually the same working day.\""
       ],
       [
         "=\"Versturen lukte niet. Mail ons op maarten@hear.nl of bel +31 6 24560220.\"",

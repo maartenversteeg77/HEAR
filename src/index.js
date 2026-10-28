@@ -7,10 +7,11 @@ const NAAR = "maarten@hear.nl";
 const VAN = "HEAR aanvraag <aanvraag@hear.nl>";
 
 const VELDEN = [
+  ["gesprek", "Gesprek via"], ["gesprek_datum", "Voorkeursdatum gesprek"], ["gesprek_dagdeel", "Dagdeel"],
   ["naam", "Naam"], ["organisatie", "Organisatie"], ["functie", "Functie"], ["email", "E-mail"], ["telefoon", "Telefoon"],
   ["soort", "Soort event"], ["soort_anders", "Soort, anders"], ["event", "Naam event"], ["locatie", "Locatie"], ["datum", "Datum"], ["tijd", "Tijd"],
   ["gasten", "Aantal gasten"], ["doelgroep", "Doelgroep"], ["diensten", "Diensten"], ["diensten_anders", "Diensten, anders"],
-  ["bericht", "Bericht"], ["concept", "Concept / programma"], ["m2", "Ruimte m²"], ["diepte", "Diepte (m)"], ["ruimte", "Ruimte"],
+  ["ruimte", "Ruimte"], ["concept", "Concept / programma"], ["bericht", "Bericht"],
   ["budget", "Richtbudget"],
 ];
 
@@ -23,7 +24,7 @@ async function aanvraag(request, env) {
   for (const [k] of VELDEN) d[k] = k === "diensten" ? fd.getAll("diensten").map(schoon).filter(Boolean).join(", ") : schoon(fd.get(k));
   if (fd.get("budget_onbekend")) d.budget = "weet ik nog niet";
   else if (fd.get("budget_van") || fd.get("budget_tot")) d.budget = `€ ${schoon(fd.get("budget_van"))} – € ${schoon(fd.get("budget_tot"))}`;
-  if (!d.naam || !d.email || !d.telefoon || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email)) return antwoord(request, false, 400);
+  if (!d.naam || !d.email || (d.gesprek === "bellen" && !d.telefoon) || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email)) return antwoord(request, false, 400);
 
   const regels = VELDEN.filter(([k]) => d[k]).map(([k, l]) => `${l}: ${d[k]}`).join("\n");
   const onderwerp = `Aanvraag via hear.nl: ${d.organisatie || d.naam}${d.datum ? ", " + d.datum : ""}`;
