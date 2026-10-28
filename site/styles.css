@@ -522,7 +522,7 @@ body{font-variant-emoji:text}
 .aanvraag>.veld-breed{display:flex;margin-top:30px}
 .aanvraag .formvoet{margin-top:30px}
 .diensten>legend{font:300 clamp(20px,2.2vw,24px)/1.2 var(--kop);color:var(--zwart);margin-bottom:14px}
-.dienstgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.dienstgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px 26px}
 .dienstkolom legend{font:500 12px/1.3 var(--tekst);letter-spacing:.14em;text-transform:uppercase;color:var(--koraal);margin-bottom:10px}
 .dienstkolom .vink{margin:0 0 9px}
 .diensten .veld-breed{margin-top:14px}
@@ -563,3 +563,11 @@ button.knop:disabled{opacity:.6;cursor:wait}
 .dienstkolom .vink span{overflow-wrap:anywhere}
 .aanvraag .stap>.veld-breed{display:flex;margin-top:30px}
 .privacyregel span{display:inline}
+.aanvraag .communicatie{margin-top:36px}
+.aanvraag .communicatie>legend{float:left;width:100%;font:300 clamp(19px,2vw,22px)/1.35 var(--kop);color:var(--zwart);margin:0 0 16px;padding-top:30px;border-top:1px solid var(--lijn)}
+.communicatie .keuzelijst{clear:both}
+.aanvraag .budget{margin-top:36px}
+.keuzelijst{display:grid;grid-template-columns:1fr 1fr;gap:9px 26px}
+.communicatie .veld-breed{margin-top:14px}
+@media (max-width:560px){.keuzelijst{grid-template-columns:1fr}}
+.aanvraag .vooruit{margin-right:4px}

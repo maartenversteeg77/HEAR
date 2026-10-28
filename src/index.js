@@ -10,7 +10,7 @@ const VELDEN = [
   ["gesprek", "Gesprek via"], ["gesprek_datum", "Voorkeursdatum gesprek"], ["gesprek_dagdeel", "Dagdeel"],
   ["naam", "Naam"], ["organisatie", "Organisatie"], ["functie", "Functie"], ["email", "E-mail"], ["telefoon", "Telefoon"],
   ["soort", "Soort event"], ["soort_anders", "Soort, anders"], ["event", "Naam event"], ["locatie", "Locatie"], ["datum", "Datum"], ["tijd", "Tijd"],
-  ["gasten", "Aantal gasten"], ["doelgroep", "Doelgroep"], ["diensten", "Diensten"], ["diensten_anders", "Diensten, anders"],
+  ["gasten", "Aantal gasten"], ["doelgroep", "Doelgroep"], ["diensten", "Diensten"], ["diensten_anders", "Diensten, anders"], ["communicatie", "Communicatie"], ["communicatie_anders", "Communicatie, anders"],
   ["ruimte", "Ruimte"], ["concept", "Concept / programma"], ["bericht", "Bericht"],
   ["budget", "Richtbudget"],
 ];
@@ -21,7 +21,7 @@ async function aanvraag(request, env) {
   const fd = await request.formData();
   if (schoon(fd.get("website"))) return antwoord(request, true); // honeypot: doen alsof het gelukt is
   const d = {};
-  for (const [k] of VELDEN) d[k] = k === "diensten" ? fd.getAll("diensten").map(schoon).filter(Boolean).join(", ") : schoon(fd.get(k));
+  for (const [k] of VELDEN) d[k] = (k === "diensten" || k === "communicatie") ? fd.getAll(k).map(schoon).filter(Boolean).join(", ") : schoon(fd.get(k));
   if (fd.get("budget_onbekend")) d.budget = "weet ik nog niet";
   else if (fd.get("budget_van") || fd.get("budget_tot")) d.budget = `€ ${schoon(fd.get("budget_van"))} – € ${schoon(fd.get("budget_tot"))}`;
   if (!d.naam || !d.email || (d.gesprek === "bellen" && !d.telefoon) || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email)) return antwoord(request, false, 400);

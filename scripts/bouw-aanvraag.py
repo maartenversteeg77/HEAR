@@ -36,27 +36,34 @@ DIENSTEN = [
         ("Sprekersversterking en microfoons", "Speech amplification and microphones"),
         ("Geluid voor borrel of feest", "Sound for a reception or party"),
         ("Dansvloer geluidsysteem", "Dance floor sound system"),
+        ("Dj-booth en gear voor je eigen dj", "DJ booth and gear for your own DJ"),
         ("Technicus ter plekke", "Technician on site"),
     ]),
     ("Licht en audiovisueel", "Light and audiovisual", [
         ("Sfeerverlichting", "Atmospheric lighting"),
         ("Lichtshow", "Light show"),
-        ("90's vintage lichteffecten", "90s vintage light effects"),
         ("Theaterlicht voor product of spreker", "Theatre lighting for product or speaker"),
         ("Videoschermen en presentatie", "Video screens and presentation"),
+        ("Online uitzending", "Online broadcast"),
     ]),
-    ("Muziek", "Music", [
+    ("Artiesten", "Artists", [
         ("Dj", "DJ"),
         ("Vocalist, saxofonist of percussionist", "Vocalist, saxophonist or percussionist"),
         ("Playlist op maat", "Custom playlist"),
-        ("Dj-booth en gear voor je eigen dj", "DJ booth and gear for your own DJ"),
-    ]),
-    ("Communicatieadvies", "Communication advice", [
-        ("Advies over concept en programma", "Advice on concept and programme"),
-        ("Communicatiemiddelen: uitnodigingen, design, presentatie, bedrijfsvideo, aftermovie of iets anders", "Communication materials: invitations, design, presentation, corporate video, aftermovie or something else"),
-        ("Online uitzending", "Online broadcast"),
+        ("Partyfotograaf", "Party photographer"),
     ]),
 ]
+COMMUNICATIE = [
+    ("Communicatieadvies", "Communication advice"),
+    ("Uitnodigingen en andere middelen", "Invitations and other materials"),
+    ("Speeches en presentaties", "Speeches and presentations"),
+    ("Bedrijfsvideo", "Corporate video"),
+    ("Aftermovie", "Aftermovie"),
+]
+def communicatie():
+    return (f'<fieldset class="communicatie"><legend>{T("Wij kunnen je ook helpen met de communicatie rondom je event. Vink aan wat je interessant vindt.", "We can also help with the communication around your event. Tick what interests you.")}</legend><div class="keuzelijst">'
+            + "".join(f'<label class="vink"><input type="checkbox" name="communicatie" value="{e(nl)}"><span>{T(nl, en)}</span></label>' for nl, en in COMMUNICATIE)
+            + f'</div><label class="veld veld-breed"><span>{T("Anders, namelijk", "Other, namely")}</span><input type="text" name="communicatie_anders"></label></fieldset>')
 def diensten():
     kol = ""
     for knl, ken, items in DIENSTEN:
@@ -114,6 +121,7 @@ stap2 = stap(2, "Over je event", "About your event", f'''<div class="velden">
 {tekstvak("concept", "Het concept of het programma", "The concept or programme", 4)}
 </div>''')
 stap3 = stap(3, "Wat heb je nodig?", "What do you need?", f'''{diensten()}
+{communicatie()}
 {budget}
 {tekstvak("bericht", "Wil je verder nog iets kwijt?", "Anything else you want to tell us?", 5)}
 <p class="uitleg privacyregel"><span>{T("We gebruiken je gegevens alleen om je aanvraag te beantwoorden.", "We only use your details to answer your request.")}</span> <a href="privacy.html">Privacyverklaring</a></p>''', laatste=True)
