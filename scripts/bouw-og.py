@@ -89,6 +89,9 @@ def coffeecuts():
     tekst_en = next((x[1].strip("<>") for x in en_paren if x[0].strip("<>") == html.escape(tekst_nl, quote=True).replace("&#x27;", "&#x27;")), None) \
         or next((x[1].strip("<>") for x in en_paren if html.unescape(x[0].strip("<>")) == tekst_nl), tekst_nl)
     beeld = f"{BASIS}/img/og/custom-dj-mix.jpg?v=" + hashlib.md5((ogdir / "custom-dj-mix.jpg").read_bytes()).hexdigest()[:8]
+    # korte deelregel (Facebook toont maar één regel); anders de bloktekst
+    tekst_nl = blok.get("deel_omschrijving") or tekst_nl
+    tekst_en = blok.get("deel_omschrijving_en") or tekst_en
     for taal, map_, tekst, verder, loc in (("nl", site, tekst_nl, "Door naar Coffee cuts", "nl_NL"), ("en", site / "en", html.unescape(tekst_en), "Continue to Coffee cuts", "en_GB")):
         pre = "/en" if taal == "en" else ""
         doel = f"{pre}/custom-dj-mix.html"
