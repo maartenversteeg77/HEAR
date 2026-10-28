@@ -291,6 +291,22 @@
     [
       ">of vul het formulier in<",
       ">or fill in the form<"
+    ],
+    [
+      ">Plan een gesprek<",
+      ">Plan a call<"
+    ],
+    [
+      ">of plan een gesprek<",
+      ">or plan a call<"
+    ],
+    [
+      "<small>Bel, Teams of Meet: vertel over je event</small>",
+      "<small>Phone, Teams or Meet: tell us about your event</small>"
+    ],
+    [
+      ">of stel je vraag via WhatsApp<",
+      ">or ask your question on WhatsApp<"
     ]
   ],
   "cases_json": {

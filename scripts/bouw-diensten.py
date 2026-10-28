@@ -16,7 +16,7 @@ def heel(t):  # koppeltekenwoorden niet afbreken
 
 SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1.1 2.7.1.2 1.8 2.8 4.4 3.9 1.7.7 2.3.8 3.1.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.8-.3Z"/></svg>'
 def waknop(tekst, bericht):
-    return f'<span class="wa-plus"><a class="wa" href="https://wa.me/31624560220?text={urllib.parse.quote(bericht)}" target="_blank" rel="noopener" data-whatsapp>{SVG}<span>{e(tekst)}</span><i aria-hidden="true">→</i></a><a class="mail-ook" href="mailto:maarten@hear.nl">mailen mag ook</a><a class="mail-ook" href="aanvraag.html">of vul het formulier in</a></span>'
+    return f'<span class="wa-plus"><a class="wa" href="https://wa.me/31624560220?text={urllib.parse.quote(bericht)}" target="_blank" rel="noopener" data-whatsapp>{SVG}<span>{e(tekst)}</span><i aria-hidden="true">→</i></a><a class="mail-ook" href="aanvraag.html">of plan een gesprek</a></span>'
 
 def blok(b):
     if "producten" in b:
@@ -68,7 +68,11 @@ for i, pg in enumerate(data["paginas"]):
     if pg.get("cta", True):
         knop = pg.get("cta_tekst", "Vraag een voorstel aan")
         bericht = pg.get("cta_bericht", f"Hoi Maarten, ik wil graag een voorstel voor {pg['titel'].lower()} voor mijn event.")
-        cta = f'<p class="knoprij cta-intro">{waknop(knop, bericht)}</p>'
+        if pg.get("cta_tekst"):  # eigen knoptekst (dj boeken, mix aanvragen): WhatsApp blijft de knop
+            cta = f'<p class="knoprij cta-intro">{waknop(knop, bericht)}</p>'
+        else:  # "Vraag een voorstel aan": naar het aanvraagformulier, WhatsApp als tekstlink (besluit 28 okt)
+            cta = (f'<p class="knoprij cta-intro"><span class="wa-plus"><a class="wa" href="aanvraag.html"><span>{e(knop)}</span><i aria-hidden="true">→</i></a>'
+                   f'<a class="mail-ook" href="https://wa.me/31624560220?text={urllib.parse.quote(bericht)}" target="_blank" rel="noopener" data-whatsapp>of stel je vraag via WhatsApp</a></span></p>')
     intro = (f'<section class="quick quick-breed"><p>{e(pg["intro"])}</p>{cta}</section>' if pg.get("intro") else (f'<section class="quick quick-breed">{cta}</section>' if cta else ""))
     beschrijving = pg.get("intro") or next((t for b in pg["blokken"] for t in b.get("tekst", [])), pg["kernzin"])
     main = f'''<main class="wrap">
