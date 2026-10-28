@@ -395,3 +395,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Regel op de homepage: "Van skatehal tot museum: een ruimte die een nieuwe beleving wordt. Of een vaste installatie die beter klinkt."
 - Bestandsnamen (corporate.html, venue-owners.html) blijven, zodat bestaande links werken. Aangepast in homepageblok, menu Voor wie, footer, paginatitels, zijnavigatie, overzicht en caselabels.
 - Korte URL voor advertenties: hear.nl/coffeecuts (ook /coffee-cuts, /en/coffeecuts) stuurt door naar het Coffee cuts-blok; utm-parameters blijven behouden. Tijdelijke doorverwijzing (302), zodat het doel later een eigen pagina kan worden.
+- Homepage, mobiel: Dj-gear-beeld (Euphonia) krijgt een staande uitsnede zonder de groene golf onderaan, zodat die niet met de witte knop concurreert; de rode ruimte bovenaan valt achter het keuzepaneel.
