@@ -40,6 +40,12 @@
       "naam": "Coffee cuts en custom dj-mixes",
       "beeld": "assets/radio-deep-radio.png",
       "tekst": "Mixen, playlists en edits op maat"
+    },
+    "communicatieadvies": {
+      "naam": "Communicatieadvies",
+      "beeld": "img/diensten/communicatieadvies-maarten.jpg",
+      "tekst": "Boodschap, speeches, uitnodigingen en video",
+      "positie": "50% 18%"
     }
   },
   "paginas": {
@@ -49,12 +55,26 @@
       "dancefloor-lighting"
     ],
     "zakelijke-events.html": [
-      "atmospheric-lighting",
       {
         "slug": "high-end-audio",
-        "tekst": "Geluid en draadloze microfoons"
+        "tekst": "Sprekersversterking met draadloze reversmicrofoons en warm geluid voor de borrel of het feest"
       },
-      "artiesten"
+      {
+        "slug": "atmospheric-lighting",
+        "tekst": "Sprekerverlichting en draadloos sfeerlicht in de kleuren van je event"
+      },
+      {
+        "slug": "artiesten",
+        "tekst": "Een dj, vocalist, saxofonist of percussionist"
+      },
+      {
+        "slug": "booth-dj-gear",
+        "tekst": "Een rider-proof booth met de nieuwste spelers en mixers"
+      },
+      {
+        "slug": "communicatieadvies",
+        "tekst": "Boodschap, speeches, uitnodigingen en video"
+      }
     ],
     "bijzondere-eventlocaties.html": [
       "aankoopadvies",

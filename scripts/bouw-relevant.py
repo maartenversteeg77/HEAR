@@ -20,7 +20,8 @@ for naam, items in d["paginas"].items():
     for it in items:
         slug, tekst = (it, None) if isinstance(it, str) else (it["slug"], it.get("tekst"))
         c = cat[slug]
-        tegels += (f'<a class="visual-card" href="{slug}.html"><img src="{e(c["beeld"])}" alt="{e(c["naam"])}" loading="lazy">'
+        pos = f' style="object-position:{e(c["positie"])}"' if c.get("positie") else ""
+        tegels += (f'<a class="visual-card" href="{slug}.html"><img src="{e(c["beeld"])}" alt="{e(c["naam"])}" loading="lazy"{pos}>'
                    f'<span class="visual-card-shade"></span><span class="tegel-bekijk">Bekijk →</span><h2>{e(c["naam"])}</h2><p>{e(tekst or c["tekst"])}</p></a>')
     blok = (f'<section class="relevant" aria-label="Relevante producten en diensten"><h2 class="relevant-kop">Relevante producten en diensten</h2>'
             f'<div class="relevant-grid n{len(items)}">{tegels}</div>'

@@ -613,3 +613,5 @@ button.knop:disabled{opacity:.6;cursor:wait}
 .blok-beeld{margin:0 0 22px}
 .blok-beeld img{display:block;width:100%;max-width:640px;height:auto}
 .veld .ster{color:var(--koraal);font-weight:600}
+.relevant-grid.n4,.relevant-grid.n5,.relevant-grid.n6{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:760px){.relevant-grid.n4,.relevant-grid.n5,.relevant-grid.n6{grid-template-columns:1fr 1fr}}
