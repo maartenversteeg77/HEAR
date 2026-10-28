@@ -2526,14 +2526,6 @@
         ">Our own edits, remixes and productions, mastered in analogue, turn up in sets, in the network of DJs we work with and, in future, in releases.<"
       ],
       [
-        "name=\"description\" content=\"Naast events werken we aan muziek zelf: dj-sets op maat, radio-uitzendingen, eigen edits en remixes, en playlists voor horeca.\"",
-        "name=\"description\" content=\"Besides events, we work on music itself: custom DJ sets, radio broadcasts, our own edits and remixes, and playlists for hospitality.\""
-      ],
-      [
-        ">Naast events werken we aan muziek zelf: dj-sets op maat, radio-uitzendingen, eigen edits en remixes, en playlists voor horeca.<",
-        ">Besides events, we work on music itself: custom DJ sets, radio broadcasts, our own edits and remixes, and playlists for hospitality.<"
-      ],
-      [
         "<title>Custom dj-mix of playlist · HEAR</title>",
         "<title>Custom DJ mix or playlist · HEAR</title>"
       ],
@@ -2632,6 +2624,14 @@
       [
         "<span>Een 2-uurs dj-mix voor jouw merk of locatie</span>",
         "<span>A 2-hour DJ mix for your brand or venue</span>"
+      ],
+      [
+        "name=\"description\" content=\"Bij HEAR huur je niet alleen hoogwaardig licht en geluid of dj&#x27;s voor events. Je kunt ook custom playlists of dj-sets afnemen. Elke lijst is uniek.\"",
+        "name=\"description\" content=\"At HEAR you don&#x27;t just hire high-end lighting and sound or DJs for events. You can also order custom playlists or DJ sets. Every list is unique.\""
+      ],
+      [
+        ">Bij HEAR huur je niet alleen hoogwaardig licht en geluid of dj&#x27;s voor events. Je kunt ook custom playlists of dj-sets afnemen. Elke lijst is uniek.<",
+        ">At HEAR you don&#x27;t just hire high-end lighting and sound or DJs for events. You can also order custom playlists or DJ sets. Every list is unique.<"
       ]
     ],
     "principes.html": [
