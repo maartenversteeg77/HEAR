@@ -371,3 +371,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 
 ## 2026-10-28 · Waarden, nawoord Open
 - Slotzin wordt: "…juist vanwege onze wortels in de inclusieve house- en discocultuur." (EN: "…our roots in the inclusive house and disco culture.")
+- Omschrijving onder "Custom dj-mix of playlist" op de homepage: "muziek die past bij jouw zaak of uitzending" (EN: "music that fits your venue or broadcast").
