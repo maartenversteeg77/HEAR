@@ -26,6 +26,15 @@ async function aanvraag(request, env) {
   else if (fd.get("budget_van") || fd.get("budget_tot")) d.budget = `€ ${schoon(fd.get("budget_van"))} – € ${schoon(fd.get("budget_tot"))}`;
   if (!d.naam || !d.email || (d.gesprek === "bellen" && !d.telefoon) || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email)) return antwoord(request, false, 400);
 
+  // leesbare waarden in de mail
+  const LABEL = { bellen: "telefoon", teams: "Microsoft Teams", meet: "Google Meet", zakelijk: "zakelijk (netwerk)event", lezing: "lezing of seminar",
+    personeelsfeest: "personeelsfeest", merkactivatie: "merkactivatie", dance: "dance event", anders: "anders" };
+  const MAAND = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"];
+  const datum = (v) => { const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(v); return m ? `${+m[3]} ${MAAND[+m[2] - 1]} ${m[1]}` : v; };
+  const eur = (v) => Number(v).toLocaleString("nl-NL");
+  for (const k of ["gesprek", "soort"]) if (LABEL[d[k]]) d[k] = LABEL[d[k]];
+  for (const k of ["gesprek_datum", "datum"]) if (d[k]) d[k] = datum(d[k]);
+  if (!fd.get("budget_onbekend") && fd.get("budget_van")) d.budget = `€ ${eur(fd.get("budget_van"))} – € ${eur(fd.get("budget_tot"))}${+fd.get("budget_tot") >= 25000 ? "+" : ""}`;
   const regels = VELDEN.filter(([k]) => d[k]).map(([k, l]) => `${l}: ${d[k]}`).join("\n");
   const onderwerp = `Aanvraag via hear.nl: ${d.organisatie || d.naam}${d.datum ? ", " + d.datum : ""}`;
   const r = await fetch("https://api.resend.com/emails", {
