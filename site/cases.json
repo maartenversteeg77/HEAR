@@ -89,6 +89,19 @@
     },
     {
       "status": "af",
+      "titel": "Radio-mixes voor Deep Radio",
+      "tekst": "Twee uur soulful house, deephouse, afro, latin, disco en houseclassics.",
+      "beeld": "assets/radio-deep-radio-green.png",
+      "alt": "Deep Radio-mix van Maarten Versteeg",
+      "link": "radio-mixes.html",
+      "doelgroepen": [
+        "dance"
+      ],
+      "titel_en": "Radio mixes for Deep Radio",
+      "tekst_en": "Two hours of soulful house, deep house, afro, latin, disco and house classics."
+    },
+    {
+      "status": "af",
       "titel": "Advies over het beste soundsystem voor jouw ruimte",
       "tekst": "Systeemadvies voor een licht- en geluidsverhuurbedrijf.",
       "beeld": "img/case-systeemadvies.jpg",

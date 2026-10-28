@@ -398,3 +398,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Homepage, mobiel: Dj-gear-beeld (Euphonia) krijgt een staande uitsnede zonder de groene golf onderaan, zodat die niet met de witte knop concurreert; de rode ruimte bovenaan valt achter het keuzepaneel.
 - Custom dj-mix of playlist: Radio-mixes noemt nu de genres soulful house, deephouse, afro, latin, disco en houseclassics; de links onderaan naar de case Radio-mixes en Case: dj-sets zijn weg (generieker, niet dieper).
 - Case Radio-mixes noemt de naam Coffee cuts en linkt met "Bekijk Coffee cuts →" naar het Coffee cuts-blok.
+- Casesoverzicht: tegel "Radio-mixes voor Deep Radio" toegevoegd na de dj-sets-case (label Dance events).
