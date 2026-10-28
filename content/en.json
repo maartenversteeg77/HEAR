@@ -576,12 +576,8 @@
         "data-i=\"6\">DJs and artists</button>"
       ],
       [
-        "data-bekijk=\"Bekijk custom dj-mix of playlist\"><span class=\"pl-titel\">Custom dj-mix of playlist</span><small>Coffee cuts: playlists voor je koffiebar, bar of andere zaak</small>",
-        "data-bekijk=\"See custom DJ mix or playlist\"><span class=\"pl-titel\">Custom DJ mix or playlist</span><small>Coffee cuts: playlists for your coffee bar, bar or other venue</small>"
-      ],
-      [
-        "data-i=\"7\">Custom dj-mix of playlist</button>",
-        "data-i=\"7\">Custom DJ mix or playlist</button>"
+        "data-bekijk=\"Bekijk Coffee cuts\"><span class=\"pl-titel\">Coffee cuts</span><small>playlists of een live dj voor je koffiebar of bar</small>",
+        "data-bekijk=\"See Coffee cuts\"><span class=\"pl-titel\">Coffee cuts</span><small>playlists or a live DJ for your coffee bar or bar</small>"
       ],
       [
         "data-bekijk=\"Bekijk alle producten en diensten\"><span class=\"pl-titel\">Alle producten en diensten</span><small>het complete aanbod</small>",
@@ -2246,8 +2242,8 @@
         ">DJ sets<"
       ],
       [
-        ">Of je nu een koffiebar hebt, een bar of een cocktailbar: je wilt warme muziek die past bij de identiteit van je zaak. Geen lichte, generieke achtergrondmuziek of AI-tracks. Met Coffee cuts stellen we een playlist samen die bij jouw zaak past, met de hand geselecteerd uit onze eigen collectie.<",
-        ">Whether you run a coffee bar, a bar or a cocktail bar: you want warm music that fits the identity of your venue. No light, generic background music or AI tracks. With Coffee cuts we put together a playlist that fits your venue, hand-picked from our own collection.<"
+        ">Of je nu een koffiebar hebt, een bar of een cocktailbar: je wilt warme muziek die past bij de identiteit van je zaak. Geen generieke (AI-)tracks. Met Coffee cuts stellen we een playlist samen voor jouw zaak, uit onze eigen collectie van nieuwe releases en classics. Of wil je liever een live dj?<",
+        ">Whether you run a coffee bar, a bar or a cocktail bar: you want warm music that fits the identity of your venue. No generic (AI) tracks. With Coffee cuts we put together a playlist for your venue, from our own collection of new releases and classics. Or would you rather have a live DJ?<"
       ],
       [
         ">Bestel een Coffee cuts<",
