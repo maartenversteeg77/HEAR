@@ -387,3 +387,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - "Alle producten en diensten" in de dropdown gaat direct naar het overzicht (geen extra klik via het beeld).
 - Doorklik "Bekijk …" is een witte knop met donkere tekst, gelijk aan de ronde dropdownknop.
 - Overzicht producten en diensten: tegel "Bekijk Coffee cuts" toegevoegd (naar het Coffee cuts-blok), naast de tegel voor custom dj-mix of playlist.
+- Custom dj-mix of playlist: de WhatsApp-knop "Vraag een mix of playlist aan" (en "of plan een gesprek") onder de intro is weg; Coffee cuts en Radio-mixes hebben elk een eigen knop of link.

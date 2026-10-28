@@ -499,8 +499,7 @@
           "href": "dj-sets.html"
         }
       ],
-      "cta_tekst": "Vraag een mix of playlist aan",
-      "cta_bericht": "Hoi Maarten, ik wil graag een mix of playlist op maat aanvragen."
+      "cta": false
     },
     {
       "bestand": "av-as-a-service.html",
