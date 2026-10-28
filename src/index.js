@@ -64,6 +64,14 @@ export default {
       url.protocol = "https:";
       return Response.redirect(url.toString(), 301);
     }
+    // korte advertentie-URL: hear.nl/coffeecuts -> Coffee cuts-blok (302, zodat het doel later kan wijzigen)
+    const kort = url.pathname.toLowerCase().replace(/\/+$/, "");
+    if (kort === "/coffeecuts" || kort === "/coffee-cuts" || kort === "/en/coffeecuts" || kort === "/en/coffee-cuts") {
+      const doel = new URL((kort.startsWith("/en/") ? "/en" : "") + "/special-projects.html", url);
+      doel.search = url.search; // utm-parameters van advertenties blijven behouden
+      doel.hash = "coffee-cuts";
+      return Response.redirect(doel.toString(), 302);
+    }
     if (url.pathname === "/api/aanvraag") {
       if (request.method !== "POST") return new Response("Method not allowed", { status: 405 });
       if (!env.RESEND_API_KEY) return antwoord(request, false, 503);
