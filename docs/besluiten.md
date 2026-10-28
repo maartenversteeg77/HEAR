@@ -372,3 +372,8 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 ## 2026-10-28 · Waarden, nawoord Open
 - Slotzin wordt: "…juist vanwege onze wortels in de inclusieve house- en discocultuur." (EN: "…our roots in the inclusive house and disco culture.")
 - Omschrijving onder "Custom dj-mix of playlist" op de homepage: "playlists voor je koffiebar of andere zaak" (EN: "playlists for your coffee bar or other venue"). Radio is portfolio, geen dienst voor klanten. Beeld bij deze rij wordt een koffiebar; de landingspagina krijgt twee beelden (koffiebar en Deep Radio).
+
+## 2026-10-28 · Coffee cuts
+- Op "Custom dj-mix of playlist" heet de playlistdienst voor zaken "Coffee cuts": koffiebar, bar of cocktailbar; warme muziek die past bij de identiteit van de zaak, geen lichte, generieke achtergrondmuziek of AI-tracks.
+- Landingspagina krijgt twee beelden: Coffee cuts en de Deep Radio-aankondiging. Homepage-omschrijving: "Coffee cuts: playlists voor je koffiebar, bar of andere zaak".
+- Beeld is tijdelijk: stockfoto met Coffee cuts-logo, rechten worden afgekocht bij iStock; Maarten levert later een definitieve versie (logo nog in ontwikkeling). Op mobiel een uitsnede zonder logo, omdat het keuzepaneel erover valt.
