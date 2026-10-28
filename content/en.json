@@ -692,6 +692,10 @@
     [
       "aria-label=\"Volgende: ",
       "aria-label=\"Next: "
+    ],
+    [
+      "alt=\"Akoestische meting van een speaker in een meetkamer\"",
+      "alt=\"Acoustic measurement of a loudspeaker in a measuring chamber\""
     ]
   ],
   "cases_json": {
@@ -918,10 +922,6 @@
       [
         "data-bekijk=\"Bekijk aankoopadvies\"><span class=\"pl-titel\">Aankoopadvies licht en geluid</span><small>merkonafhankelijk, voor venues</small>",
         "data-bekijk=\"See purchase advice\"><span class=\"pl-titel\">Purchase advice for light and sound</span><small>brand-independent, for venues</small>"
-      ],
-      [
-        "alt=\"Eventlocatie ingericht voor een gala\"",
-        "alt=\"Event venue set up for a gala\""
       ],
       [
         "data-i=\"8\">Aankoopadvies licht en geluid</button>",
@@ -1784,10 +1784,6 @@
       [
         ">Bekijk 90’s vintage licht <",
         ">View 90s vintage lighting <"
-      ],
-      [
-        "alt=\"Yamaha DM3 mengtafel\"",
-        "alt=\"Yamaha DM3 mixing console\""
       ],
       [
         ">Bekijk dansvloerlicht <",

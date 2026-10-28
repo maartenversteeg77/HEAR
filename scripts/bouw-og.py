@@ -10,7 +10,7 @@ site = root / "site"; ogdir = site / "img" / "og"; ogdir.mkdir(parents=True, exi
 BASIS = json.loads((root / "content" / "nieuws.json").read_text()).get("basis", "https://hear.nl").rstrip("/")
 OVERSLAAN = {"merken.html", "projectbrief.html", "coffeecuts.html"}  # coffeecuts: eigen deelpagina met vaste metadata
 # eigen deelbeeld per pagina waar de eerste foto niet de beste is
-BEELD = {"high-end-audio": "img/dance-events-zaal.jpg", "aankoopadvies": "img/diensten/gala.jpg", "custom-dj-mix": "img/diensten/coffee-cuts.jpg"}
+BEELD = {"high-end-audio": "img/dance-events-zaal.jpg", "aankoopadvies": "img/diensten/aankoopadvies-meting.jpg", "custom-dj-mix": "img/diensten/coffee-cuts.jpg"}
 # uitsnede per pagina (0 = bovenkant, 1 = onderkant); custom-dj-mix: Coffee cuts-logo volledig in beeld
 FOCUS = {"over-hear": 0.42, "custom-dj-mix": 0.15}
 e = lambda t: html.escape(t, quote=True)
