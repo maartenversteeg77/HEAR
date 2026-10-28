@@ -42,6 +42,8 @@ def blok(b):
         items = "".join(fig(p) for p in b["producten"])
         return f'<section class="producten" aria-label="Producten">{items}</section>'
     ps = "".join(f"<p>{e(t)}</p>" for t in b["tekst"]) + b.get("html_na", "")
+    if b.get("beeld"):  # beeld boven de tekst in het blok (bv. Coffee cuts, Radio-mixes)
+        ps = f'<figure class="blok-beeld"><img src="{e(b["beeld"])}" alt="{e(b.get("beeld_alt", ""))}" loading="lazy"></figure>' + ps
     kop = f'<h3 class="blok-kop">{e(b["kop"]).replace(chr(10), "<br>")}</h3>' if b.get("kop") else ""
     cls = "case-section donker" if b.get("donker") else "case-section"
     anker = f' id="{e(b["id"])}"' if b.get("id") else ""

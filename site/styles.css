@@ -610,3 +610,5 @@ button.knop:disabled{opacity:.6;cursor:wait}
 .cc-form .formvoet{margin-top:22px}
 .cc-open i{transition:transform .2s}
 .cc-open[aria-expanded=true] i{transform:rotate(180deg)}
+.blok-beeld{margin:0 0 22px}
+.blok-beeld img{display:block;width:100%;max-width:640px;height:auto}
