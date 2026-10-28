@@ -576,12 +576,8 @@
         "data-i=\"6\">DJs and artists</button>"
       ],
       [
-        "data-bekijk=\"Bekijk custom dj-mix of playlist\"><span class=\"pl-titel\">Custom dj-mix of playlist</span><small>playlists voor je koffiebar of andere zaak</small>",
-        "data-bekijk=\"See custom DJ mix or playlist\"><span class=\"pl-titel\">Custom DJ mix or playlist</span><small>playlists for your coffee bar or other venue</small>"
-      ],
-      [
-        "alt=\"Deep Radio\"",
-        "alt=\"Deep Radio\""
+        "data-bekijk=\"Bekijk custom dj-mix of playlist\"><span class=\"pl-titel\">Custom dj-mix of playlist</span><small>Coffee cuts: playlists voor je koffiebar, bar of andere zaak</small>",
+        "data-bekijk=\"See custom DJ mix or playlist\"><span class=\"pl-titel\">Custom DJ mix or playlist</span><small>Coffee cuts: playlists for your coffee bar, bar or other venue</small>"
       ],
       [
         "data-i=\"7\">Custom dj-mix of playlist</button>",
@@ -614,6 +610,10 @@
       [
         "alt=\"Maarten Versteeg in een blauw colbert\"",
         "alt=\"Maarten Versteeg in a blue jacket\""
+      ],
+      [
+        "alt=\"Bar met groene barkrukken en verlichte flessenwand\"",
+        "alt=\"Bar with green bar stools and a lit wall of bottles\""
       ]
     ],
     "cases.html": [
@@ -2198,10 +2198,6 @@
         ">Maarten regularly makes mixes for Deep Radio: soulful house, deep house and classics, two hours long. If you contemplate a booking, feel free to listen one of the sets on SoundCloud.<"
       ],
       [
-        ">Voor een koffiebar, café of andere horecazaak stellen we een playlist samen die past bij de zaak. Met de hand geselecteerd uit onze eigen collectie, zonder vervuiling door generieke AI-muziek.<",
-        ">For a coffee bar, café or other hospitality venue, we put together a playlist that suits the place. Hand-picked from our own collection, without the noise of generic AI music.<"
-      ],
-      [
         ">Eigen edits, remixes en producties, analoog gemasterd, duiken op in sets, in het netwerk van dj&#x27;s waarmee we werken en in de toekomst ook in releases.<",
         ">Our own edits, remixes and productions, mastered in analogue, turn up in sets, in the network of DJs we work with and, in future, in releases.<"
       ],
@@ -2238,10 +2234,6 @@
         ">EDITS AND PRODUCTIONS<"
       ],
       [
-        ">PLAYLISTS OP MAAT<",
-        ">CUSTOM PLAYLISTS<"
-      ],
-      [
         ">Case: dj-sets →<",
         ">Case: DJ sets →<"
       ],
@@ -2252,6 +2244,18 @@
       [
         ">Dj-sets<",
         ">DJ sets<"
+      ],
+      [
+        ">Of je nu een koffiebar hebt, een bar of een cocktailbar: je wilt warme muziek die past bij de identiteit van je zaak. Geen lichte, generieke achtergrondmuziek of AI-tracks. Met Coffee cuts stellen we een playlist samen die bij jouw zaak past, met de hand geselecteerd uit onze eigen collectie.<",
+        ">Whether you run a coffee bar, a bar or a cocktail bar: you want warm music that fits the identity of your venue. No light, generic background music or AI tracks. With Coffee cuts we put together a playlist that fits your venue, hand-picked from our own collection.<"
+      ],
+      [
+        "Playlists voor je koffiebar, bar of cocktailbar",
+        "Playlists for your coffee bar, bar or cocktail bar"
+      ],
+      [
+        "Soulful house, deephouse en classics voor Deep Radio",
+        "Soulful house, deep house and classics for Deep Radio"
       ]
     ],
     "principes.html": [

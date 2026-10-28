@@ -463,17 +463,37 @@
       "intro": "Naast events werken we aan muziek zelf: dj-sets op maat, radio-uitzendingen, eigen edits en remixes, en playlists voor horeca.",
       "blokken": [
         {
-          "label": "Playlists op maat",
-          "tekst": [
-            "Voor een koffiebar, café of andere horecazaak stellen we een playlist samen die past bij de zaak. Met de hand geselecteerd uit onze eigen collectie, zonder vervuiling door generieke AI-muziek."
+          "producten": [
+            {
+              "naam": "Coffee cuts",
+              "regel": "Playlists voor je koffiebar, bar of cocktailbar",
+              "beeld": "img/diensten/coffee-cuts-bar.jpg",
+              "vul": true
+            },
+            {
+              "naam": "Radio-mixes",
+              "regel": "Soulful house, deephouse en classics voor Deep Radio",
+              "beeld": "assets/radio-deep-radio.png"
+            }
+          ],
+          "rijen": [
+            2
           ]
+        },
+        {
+          "label": "Coffee cuts",
+          "tekst": [
+            "Of je nu een koffiebar hebt, een bar of een cocktailbar: je wilt warme muziek die past bij de identiteit van je zaak. Geen lichte, generieke achtergrondmuziek of AI-tracks. Met Coffee cuts stellen we een playlist samen die bij jouw zaak past, met de hand geselecteerd uit onze eigen collectie."
+          ],
+          "id": "coffee-cuts"
         },
         {
           "label": "Radio-mixes",
           "tekst": [
             "Maarten maakt regelmatig mixen voor Deep Radio: soulful house, deephouse en classics, twee uur lang. Overweeg je een boeking? Luister dan eens op SoundCloud."
           ],
-          "html_na": "<p class=\"knoprij\"><a class=\"link\" href=\"https://soundcloud.com/maartenversteeg\" target=\"_blank\" rel=\"noopener\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M1.5 14.5h1v3h-1zm2-1.5h1v4.5h-1zm2-1.5h1v6h-1zm2-2h1v8h-1zm2 .5h1v7.5h-1zm2-2h1v9.5h-1zm2 .5h1.5v9H13.5zm3.5-1.3a4.6 4.6 0 0 1 2 .1 4 4 0 0 1 3.5 4 4 4 0 0 1-4 4H15.5V8.4a3 3 0 0 1 1.5-1.2z\"/></svg>Deep Radio sets op SoundCloud<i aria-hidden=\"true\">→</i></a></p>"
+          "html_na": "<p class=\"knoprij\"><a class=\"link\" href=\"https://soundcloud.com/maartenversteeg\" target=\"_blank\" rel=\"noopener\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M1.5 14.5h1v3h-1zm2-1.5h1v4.5h-1zm2-1.5h1v6h-1zm2-2h1v8h-1zm2 .5h1v7.5h-1zm2-2h1v9.5h-1zm2 .5h1.5v9H13.5zm3.5-1.3a4.6 4.6 0 0 1 2 .1 4 4 0 0 1 3.5 4 4 4 0 0 1-4 4H15.5V8.4a3 3 0 0 1 1.5-1.2z\"/></svg>Deep Radio sets op SoundCloud<i aria-hidden=\"true\">→</i></a></p>",
+          "id": "radio-mixes"
         },
         {
           "label": "Edits en producties",
