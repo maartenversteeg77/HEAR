@@ -356,3 +356,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Homepage (28 okt, 14.10u): hoofdknop in hero en afsluiter wordt "Plan een gesprek" (formulier); WhatsApp als tekstlink "Korte vraag? Stuur een appje". Volgorde: cases → Voor wie is HEAR (koraal) → Producten en diensten → Over HEAR → nieuws.
 - Homepage productblok mobiel (28 okt, 14.25u): keuzeknop half-transparant bovenop het beeld (beeld 4:5), witte categorienaam, witte ronde knop met pijl (zelfde wit als de tekst) zodat duidelijk is dat het een knop is.
 - Dance events: link "Bekijk de case: een reis door 40 jaar elektronische muziek" onder de forward booth weggehaald.
+- Homepage (28 okt, 14.35u): foto en titel "Over HEAR" linken naar de founder story. Sfeerlicht op mobiel: eigen staande versie van het ElectraPix-beeld (bovenkant aangevuld met het donkerblauw van de foto), zodat het hele product in beeld is.
