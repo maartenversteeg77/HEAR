@@ -24,8 +24,8 @@ UIT = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / 'docs' / 'hear-teksten-
 PAGINAS = [
     ('index.html', 'Home'),
     ('doelgroepen.html', 'Voor wie (overzicht)'),
-    ('corporate.html', 'Voor wie · Corporate'),
-    ('venue-owners.html', 'Voor wie · Venue owners'),
+    ('corporate.html', 'Voor wie · Zakelijke events'),
+    ('venue-owners.html', 'Voor wie · Bijzondere eventlocaties'),
     ('dance-events.html', 'Voor wie · Dance events'),
     ('diensten.html', 'Producten en diensten (overzicht)'),
     ('booth-dj-gear.html', 'Producten · Dj-gear'),

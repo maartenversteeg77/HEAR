@@ -74,8 +74,8 @@
       "<span>Cases</span><small>Events that capture the imagination</small>"
     ],
     [
-      "<span>Voor wie is HEAR</span><small>Corporate, venue owners en dance events</small>",
-      "<span>Who HEAR is for</span><small>Corporate, venue owners and dance events</small>"
+      "<span>Voor wie is HEAR</span><small>Zakelijke events, bijzondere eventlocaties en dance events</small>",
+      "<span>Who HEAR is for</span><small>Corporate, special event venues and dance events</small>"
     ],
     [
       "<span>Waarden</span><small>Wat wij belangrijk vinden</small>",
@@ -98,8 +98,8 @@
       "<nav aria-label=\"Work\"><p class=\"label\">Work</p>"
     ],
     [
-      "<nav aria-label=\"Voor wie\"><p class=\"label\">Voor wie</p><a href=\"corporate.html\">Corporate</a><a href=\"venue-owners.html\">Venue owners</a><a href=\"dance-events.html\">Dance events</a>",
-      "<nav aria-label=\"Who it's for\"><p class=\"label\">Who it's for</p><a href=\"corporate.html\">Corporate</a><a href=\"venue-owners.html\">Venue owners</a><a href=\"dance-events.html\">Dance events</a>"
+      "<nav aria-label=\"Voor wie\"><p class=\"label\">Voor wie</p><a href=\"corporate.html\">Zakelijke events</a><a href=\"venue-owners.html\">Bijzondere eventlocaties</a><a href=\"dance-events.html\">Dance events</a>",
+      "<nav aria-label=\"Who it's for\"><p class=\"label\">Who it's for</p><a href=\"corporate.html\">Corporate</a><a href=\"venue-owners.html\">Special event venues</a><a href=\"dance-events.html\">Dance events</a>"
     ],
     [
       "<nav aria-label=\"Producten\"><p class=\"label\">Producten</p><a href=\"booth-dj-gear.html\">Booth en dj-gear</a><a href=\"high-end-audio.html\">High-end audio</a><a href=\"atmospheric-lighting.html\">Sfeerverlichting</a><a href=\"dancefloor-lighting.html\">Dansvloerverlichting</a><a href=\"vintage-lighting.html\">90's vintage licht</a><a href=\"av-as-a-service.html\">Aankoopadvies licht en geluid</a><a href=\"artiesten.html\">Artiesten</a><a href=\"special-projects.html\">Custom dj-mix of playlist</a>",
@@ -324,6 +324,70 @@
     [
       ">Communicatieadvies</a>",
       ">Communication advice</a>"
+    ],
+    [
+      ">Zakelijke events</a>",
+      ">Corporate</a>"
+    ],
+    [
+      ">Bijzondere eventlocaties</a>",
+      ">Special event venues</a>"
+    ],
+    [
+      "title=\"Zakelijke events\"",
+      "title=\"Corporate\""
+    ],
+    [
+      "title=\"Bijzondere eventlocaties\"",
+      "title=\"Special event venues\""
+    ],
+    [
+      "Volgende: Zakelijke events\"",
+      "Next: Corporate\""
+    ],
+    [
+      "Vorige: Zakelijke events\"",
+      "Previous: Corporate\""
+    ],
+    [
+      "Volgende: Bijzondere eventlocaties\"",
+      "Next: Special event venues\""
+    ],
+    [
+      "Vorige: Bijzondere eventlocaties\"",
+      "Previous: Special event venues\""
+    ],
+    [
+      "<span class=\"huidig\">Zakelijke events</span>",
+      "<span class=\"huidig\">Corporate</span>"
+    ],
+    [
+      "<span class=\"huidig\">Bijzondere eventlocaties</span>",
+      "<span class=\"huidig\">Special event venues</span>"
+    ],
+    [
+      "<h2>Zakelijke events</h2>",
+      "<h2>Corporate events</h2>"
+    ],
+    [
+      "<h2>Bijzondere eventlocaties</h2>",
+      "<h2>Special event venues</h2>"
+    ],
+    [
+      "Zakelijke events · HEAR",
+      "Corporate · HEAR"
+    ],
+    [
+      "Bijzondere eventlocaties · HEAR",
+      "Special event venues · HEAR"
+    ],
+    [
+      "v-titel\">Zakelijke events<",
+      "v-titel\">Corporate<"
+    ],
+    [
+      "v-titel\">Bijzondere eventlocaties<",
+      "v-titel\">Special event venues<"
     ]
   ],
   "cases_json": {
@@ -428,10 +492,6 @@
         "<section class=\"strook\" aria-label=\"Who and what\">"
       ],
       [
-        "<a href=\"corporate.html\">Zakelijke events</a>",
-        "<a href=\"corporate.html\">Business events</a>"
-      ],
-      [
         "<a href=\"venue-owners.html\">AV voor venues</a>",
         "<a href=\"venue-owners.html\">AV for venues</a>"
       ],
@@ -468,7 +528,7 @@
         "<span class=\"v-tekst\">From clear speech reinforcement to music at the reception.</span>"
       ],
       [
-        "<span class=\"v-tekst\">Van skatehal tot museum: een ruimte die een nieuwe beleving wordt.</span>",
+        "<span class=\"v-tekst\">Van skatehal tot museum: een ruimte die een nieuwe beleving wordt. Of een vaste installatie die beter klinkt.</span>",
         "<span class=\"v-tekst\">From skate hall to museum: a space that becomes a new experience.</span>"
       ],
       [
@@ -677,7 +737,7 @@
       ],
       [
         "<p>Daarnaast help ik venue-eigenaren hun ruimte om te bouwen tot een dansvloer voor een eenmalig event. Of ik adviseer ze hoe ze zelf hun licht en geluid kunnen inkopen: wat heeft de ruimte nodig, wat is er mogelijk en hoe zorg je dat het goed werkt, weinig onderhoud vraagt en lang meegaat? Daarbij breng ik ze in contact met de juiste leveranciers.</p>",
-        "<p>I also help venue owners turn their space into a dancefloor for a one-off event. Or I advise them on buying their own light and sound: what does the space require, what's feasible in budget and technology, and how do you make sure it works well and requires little maintenance? I then intermediate between the client and the right suppliers or facilitate a direct relationship.</p>"
+        "<p>I also help special event venues turn their space into a dancefloor for a one-off event. Or I advise them on buying their own light and sound: what does the space require, what's feasible in budget and technology, and how do you make sure it works well and requires little maintenance? I then intermediate between the client and the right suppliers or facilitate a direct relationship.</p>"
       ],
       [
         "<p>De naam HEAR heeft twee betekenissen. Allereerst staat het voor High End Audio Rental. Ik werk met merken waarvan de makers passie hebben voor hun vak. En een subtiele kwaliteit. Zoals bij een goed Italiaans maatpak: het hoeft geen aandacht te trekken, maar de kenner ziet de snit, materialen en afwerking.</p>",
@@ -1084,7 +1144,7 @@
         ">Together with the client or the advertising agency, we translate the identity of the brand or the purpose of the event into a made-to-measure musical approach. For instance the sound for a fashion show, a custom playlist for a networking evening or a DJ set that fits the brand.<"
       ],
       [
-        ">Corporate events zijn er in vele soorten en maten. Een personeelsfeest voor een 100-jarig bestaan. Een productdemonstratie. Een seminar of rondetafelgesprek, met microfoons voor sprekers.<",
+        ">Zakelijke events zijn er in vele soorten en maten. Een personeelsfeest voor een 100-jarig bestaan. Een productdemonstratie. Een seminar of rondetafelgesprek, met microfoons voor sprekers.<",
         ">Corporate events come in all shapes and sizes. A staff party for a 100th anniversary. A product demonstration. A seminar or round-table, with microphones for the speakers.<"
       ],
       [
@@ -2102,8 +2162,8 @@
         ">GUIDED PURCHASING<"
       ],
       [
-        ">Voor wie: venue owners →<",
-        ">Who it's for: venue owners →<"
+        ">Voor wie: bijzondere eventlocaties →<",
+        ">Who it's for: special event venues →<"
       ],
       [
         ">GRATIS TIPS EN ADVIEZEN<",

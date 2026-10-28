@@ -388,3 +388,9 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Doorklik "Bekijk …" is een witte knop met donkere tekst, gelijk aan de ronde dropdownknop.
 - Overzicht producten en diensten: tegel "Bekijk Coffee cuts" toegevoegd (naar het Coffee cuts-blok), naast de tegel voor custom dj-mix of playlist.
 - Custom dj-mix of playlist: de WhatsApp-knop "Vraag een mix of playlist aan" (en "of plan een gesprek") onder de intro is weg; Coffee cuts en Radio-mixes hebben elk een eigen knop of link.
+
+## 2026-10-28 · Namen doelgroepen
+- "Corporate" heet in het Nederlands "Zakelijke events" (dekt ook overheid en mkb; rijmt met "Dance events"). EN blijft "Corporate".
+- "Venue owners" heet "Bijzondere eventlocaties" (organisatoren die een bijzondere plek vinden én eigenaren); EN "Special event venues".
+- Regel op de homepage: "Van skatehal tot museum: een ruimte die een nieuwe beleving wordt. Of een vaste installatie die beter klinkt."
+- Bestandsnamen (corporate.html, venue-owners.html) blijven, zodat bestaande links werken. Aangepast in homepageblok, menu Voor wie, footer, paginatitels, zijnavigatie, overzicht en caselabels.
