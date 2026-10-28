@@ -102,8 +102,8 @@
       "<nav aria-label=\"Who it's for\"><p class=\"label\">Who it's for</p><a href=\"corporate.html\">Corporate</a><a href=\"venue-owners.html\">Venue owners</a><a href=\"dance-events.html\">Dance events</a>"
     ],
     [
-      "<nav aria-label=\"Producten\"><p class=\"label\">Producten</p><a href=\"booth-dj-gear.html\">Booth en dj-gear</a><a href=\"high-end-audio.html\">High-end audio</a><a href=\"atmospheric-lighting.html\">Sfeerverlichting</a><a href=\"dancefloor-lighting.html\">Dansvloerverlichting</a><a href=\"vintage-lighting.html\">90's vintage licht</a><a href=\"av-as-a-service.html\">Advies en AV as a service</a><a href=\"artiesten.html\">Artiesten</a><a href=\"special-projects.html\">Custom dj-sets, playlists en remixes</a>",
-      "<nav aria-label=\"Products\"><p class=\"label\">Products</p><a href=\"booth-dj-gear.html\">Booth and DJ gear</a><a href=\"high-end-audio.html\">High-end audio</a><a href=\"atmospheric-lighting.html\">Atmospheric lighting</a><a href=\"dancefloor-lighting.html\">Dancefloor lighting</a><a href=\"vintage-lighting.html\">90s vintage lighting</a><a href=\"av-as-a-service.html\">Advice and AV as a service</a><a href=\"artiesten.html\">Artists</a><a href=\"special-projects.html\">Custom DJ sets, playlists and remixes</a>"
+      "<nav aria-label=\"Producten\"><p class=\"label\">Producten</p><a href=\"booth-dj-gear.html\">Booth en dj-gear</a><a href=\"high-end-audio.html\">High-end audio</a><a href=\"atmospheric-lighting.html\">Sfeerverlichting</a><a href=\"dancefloor-lighting.html\">Dansvloerverlichting</a><a href=\"vintage-lighting.html\">90's vintage licht</a><a href=\"av-as-a-service.html\">Aankoopadvies licht en geluid</a><a href=\"artiesten.html\">Artiesten</a><a href=\"special-projects.html\">Custom dj-mix of playlist</a>",
+      "<nav aria-label=\"Products\"><p class=\"label\">Products</p><a href=\"booth-dj-gear.html\">Booth and DJ gear</a><a href=\"high-end-audio.html\">High-end audio</a><a href=\"atmospheric-lighting.html\">Atmospheric lighting</a><a href=\"dancefloor-lighting.html\">Dancefloor lighting</a><a href=\"vintage-lighting.html\">90s vintage lighting</a><a href=\"av-as-a-service.html\">Purchase advice for light and sound</a><a href=\"artiesten.html\">Artists</a><a href=\"special-projects.html\">Custom DJ mix or playlist</a>"
     ],
     [
       "<nav aria-label=\"Waarden\"><p class=\"label\">Waarden</p><a href=\"principes.html#samen\">Samen</a><a href=\"principes.html#open\">Open</a><a href=\"principes.html#vakmanschap\">Vakmanschap</a><a href=\"principes.html#warmte\">Warme sound</a></nav>",
@@ -234,12 +234,12 @@
       "<h2>90s vintage lighting</h2><p>Sound and wireless microphones</p>"
     ],
     [
-      "<h2>Advies en AV as a service</h2><p>Merkonafhankelijk advies voor locaties</p>",
-      "<h2>Advice and AV as a service</h2><p>Brand-independent advice for venues</p>"
+      "<h2>Aankoopadvies licht en geluid</h2><p>Merkonafhankelijk advies voor locaties</p>",
+      "<h2>Purchase advice for light and sound</h2><p>Brand-independent advice for venues</p>"
     ],
     [
-      "<h2>Advies en AV as a service</h2><p>Geluid en draadloze microfoons</p>",
-      "<h2>Advice and AV as a service</h2><p>Sound and wireless microphones</p>"
+      "<h2>Aankoopadvies licht en geluid</h2><p>Geluid en draadloze microfoons</p>",
+      "<h2>Purchase advice for light and sound</h2><p>Sound and wireless microphones</p>"
     ],
     [
       "<h2>Dj’s, vocalisten en instrumentalisten</h2><p>Dj’s en live muzikanten die bij het event passen</p>",
@@ -250,12 +250,12 @@
       "<h2>DJs, vocalists and instrumentalists</h2><p>Sound and wireless microphones</p>"
     ],
     [
-      "<h2>Custom dj-sets, playlists en remixes</h2><p>Mixen, playlists en edits op maat</p>",
-      "<h2>Custom DJ sets, playlists and remixes</h2><p>Custom mixes, playlists and edits</p>"
+      "<h2>Custom dj-mix of playlist</h2><p>Mixen, playlists en edits op maat</p>",
+      "<h2>Custom DJ mix or playlist</h2><p>Custom mixes, playlists and edits</p>"
     ],
     [
-      "<h2>Custom dj-sets, playlists en remixes</h2><p>Geluid en draadloze microfoons</p>",
-      "<h2>Custom DJ sets, playlists and remixes</h2><p>Sound and wireless microphones</p>"
+      "<h2>Custom dj-mix of playlist</h2><p>Geluid en draadloze microfoons</p>",
+      "<h2>Custom DJ mix or playlist</h2><p>Sound and wireless microphones</p>"
     ],
     [
       "aria-label=\"Stappen van het inkooptraject\"",
@@ -548,20 +548,20 @@
         "alt=\"Clay Paky Astrodisco\""
       ],
       [
-        "data-i=\"4\">90&#x27;s vintage licht</button>",
-        "data-i=\"4\">90s vintage lighting</button>"
+        "data-i=\"7\">90&#x27;s vintage licht</button>",
+        "data-i=\"7\">90s vintage lighting</button>"
       ],
       [
-        "data-bekijk=\"Bekijk advies\"><span class=\"pl-titel\">Advies en AV as a service</span><small>merkonafhankelijk, voor venues</small>",
-        "data-bekijk=\"See advice\"><span class=\"pl-titel\">Advice and AV as a service</span><small>brand-independent, for venues</small>"
+        "data-bekijk=\"Bekijk aankoopadvies\"><span class=\"pl-titel\">Aankoopadvies licht en geluid</span><small>merkonafhankelijk, voor venues</small>",
+        "data-bekijk=\"See purchase advice\"><span class=\"pl-titel\">Purchase advice for light and sound</span><small>brand-independent, for venues</small>"
       ],
       [
         "alt=\"Eventlocatie ingericht voor een gala\"",
         "alt=\"Event venue set up for a gala\""
       ],
       [
-        "data-i=\"5\">Advies en AV as a service</button>",
-        "data-i=\"5\">Advice and AV as a service</button>"
+        "data-i=\"8\">Aankoopadvies licht en geluid</button>",
+        "data-i=\"8\">Purchase advice for light and sound</button>"
       ],
       [
         "data-bekijk=\"Bekijk artiesten\"><span class=\"pl-titel\">Dj&#x27;s en artiesten</span><small>vocalist, saxofonist, percussionist</small>",
@@ -572,20 +572,20 @@
         "alt=\"Garden party with DJ and saxophonist\""
       ],
       [
-        "data-i=\"6\">Dj&#x27;s en artiesten</button>",
-        "data-i=\"6\">DJs and artists</button>"
+        "data-i=\"5\">Dj&#x27;s en artiesten</button>",
+        "data-i=\"5\">DJs and artists</button>"
       ],
       [
-        "data-bekijk=\"Bekijk sets en playlists\"><span class=\"pl-titel\">Sets en playlists</span><small>custom dj-sets, playlists, remixes</small>",
-        "data-bekijk=\"See sets and playlists\"><span class=\"pl-titel\">Sets and playlists</span><small>custom DJ sets, playlists, remixes</small>"
+        "data-bekijk=\"Bekijk custom dj-mix of playlist\"><span class=\"pl-titel\">Custom dj-mix of playlist</span><small>custom dj-sets, playlists, remixes</small>",
+        "data-bekijk=\"See custom DJ mix or playlist\"><span class=\"pl-titel\">Custom DJ mix or playlist</span><small>custom DJ sets, playlists, remixes</small>"
       ],
       [
         "alt=\"Deep Radio\"",
         "alt=\"Deep Radio\""
       ],
       [
-        "data-i=\"7\">Sets en playlists</button>",
-        "data-i=\"7\">Sets and playlists</button>"
+        "data-i=\"6\">Custom dj-mix of playlist</button>",
+        "data-i=\"6\">Custom DJ mix or playlist</button>"
       ],
       [
         "data-bekijk=\"Bekijk alle producten en diensten\"><span class=\"pl-titel\">Alle producten en diensten</span><small>het complete aanbod</small>",
@@ -608,8 +608,8 @@
         "data-bekijk=\"See communication advice\"><span class=\"pl-titel\">Communication advice</span><small>message, speeches, invitations, video</small>"
       ],
       [
-        "data-i=\"8\">Communicatieadvies</button>",
-        "data-i=\"8\">Communication advice</button>"
+        "data-i=\"4\">Communicatieadvies</button>",
+        "data-i=\"4\">Communication advice</button>"
       ],
       [
         "alt=\"Maarten Versteeg in een blauw colbert\"",
@@ -1274,8 +1274,8 @@
         ">What does this space and this type of event need?<"
       ],
       [
-        ">Lees meer over advies en AV as a service ↗<",
-        ">Read more about advice and AV as a service ↗<"
+        ">Lees meer over aankoopadvies ↗<",
+        ">Read more about purchase advice ↗<"
       ],
       [
         ">Vaste installatie op jouw locatie<",
@@ -1286,8 +1286,8 @@
         ">Operate it yourself after purchase.<"
       ],
       [
-        "alt=\"Advies en AV as a service\"",
-        "alt=\"Advice and AV as a service\""
+        "alt=\"Aankoopadvies licht en geluid\"",
+        "alt=\"Purchase advice for light and sound\""
       ],
       [
         ">Transformeer jouw locatie<",
@@ -1442,8 +1442,8 @@
         "alt=\"ADJ ElectraPix Par 7 with light columns\""
       ],
       [
-        ">Bekijk licht- en geluidsadvies en AV as a service <",
-        ">View sound & light consulting and AV as a service <"
+        ">Bekijk aankoopadvies licht en geluid <",
+        ">See purchase advice for light and sound <"
       ],
       [
         "alt=\"RCF KX-familie: KXL 4-A, KX 515-A en KXM 25-A\"",
@@ -1456,10 +1456,6 @@
       [
         "alt=\"Yamaha DM3 mengtafel\"",
         "alt=\"Yamaha DM3 mixing console\""
-      ],
-      [
-        ">, playlists en remixes <",
-        ">, playlists and remixes <"
       ],
       [
         ">Bekijk dansvloerlicht <",
@@ -1490,16 +1486,20 @@
         ">DJ gear<"
       ],
       [
-        ">dj-sets<",
-        ">DJ sets<"
-      ],
-      [
         "<h2>Bekijk communicatieadvies <i aria-hidden=\"true\">→</i></h2>",
         "<h2>See communication advice <i aria-hidden=\"true\">→</i></h2>"
       ],
       [
         "alt=\"Maarten Versteeg in een blauw colbert\"",
         "alt=\"Maarten Versteeg in a blue jacket\""
+      ],
+      [
+        ">dj-mix<",
+        ">DJ mix<"
+      ],
+      [
+        "> of playlist <",
+        "> or playlist <"
       ]
     ],
     "booth-dj-gear.html": [
@@ -2042,8 +2042,8 @@
         ">Do you have a question about the right light or sound for your venue? We're happy to think along, no strings attached.<"
       ],
       [
-        ">Merkonafhankelijk advies en AV as a service voor eventlocaties<",
-        ">Brand-independent advice and AV as a service for event venues<"
+        ">Merkonafhankelijk advies en begeleiding bij de aanschaf van licht en geluid<",
+        ">Brand-independent advice and guidance on buying light and sound<"
       ],
       [
         ">Een sound upgrade om aan hogere klanteisen te voldoen<",
@@ -2058,8 +2058,8 @@
         ">Brand-independent choice of suitable systems.<"
       ],
       [
-        "<title>Advies en AV as a service · HEAR</title>",
-        "<title>Advice and AV as a service · HEAR</title>"
+        "<title>Aankoopadvies licht en geluid · HEAR</title>",
+        "<title>Purchase advice for light and sound · HEAR</title>"
       ],
       [
         ">Producten zien en horen in jouw eigen ruimte.<",
@@ -2078,8 +2078,8 @@
         ">Operate it yourself after purchase.<"
       ],
       [
-        ">Advies en AV as a service<",
-        ">Advice and AV as a service<"
+        ">Aankoopadvies licht en geluid<",
+        ">Purchase advice for light and sound<"
       ],
       [
         ">BEGELEIDING INKOOPTRAJECT<",
@@ -2108,6 +2108,10 @@
       [
         ">Advies<",
         ">Advice<"
+      ],
+      [
+        ">LIEVER NIET KOPEN?</h2>",
+        ">RATHER NOT BUY?</h2>"
       ]
     ],
     "artiesten.html": [
@@ -2210,12 +2214,12 @@
         ">Besides events, we work on music itself: custom DJ sets, radio broadcasts, our own edits and remixes, and playlists for hospitality.<"
       ],
       [
-        "<title>Custom dj-sets, playlists en remixes · HEAR</title>",
-        "<title>Custom DJ sets, playlists and remixes · HEAR</title>"
+        "<title>Custom dj-mix of playlist · HEAR</title>",
+        "<title>Custom DJ mix or playlist · HEAR</title>"
       ],
       [
-        ">Custom dj-sets, playlists en remixes<",
-        ">Custom DJ sets, playlists and remixes<"
+        ">Custom dj-mix of playlist<",
+        ">Custom DJ mix or playlist<"
       ],
       [
         ">, playlists en remixes op maat<",

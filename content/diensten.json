@@ -330,92 +330,46 @@
       ]
     },
     {
-      "bestand": "vintage-lighting.html",
-      "titel": "90's vintage licht",
-      "kernzin": "Gereviseerde lichteffecten uit de discotijd, met hedendaagse lichtopbrengst",
-      "beeld": "img/diensten/astrodisco-breed.jpg",
-      "beeld_alt": "Een Clay Paky Astrodisco werpt tientallen bundels door een donkere zaal",
-      "intro": "Sommige lichteffecten zijn nooit overtroffen, alleen vergeten. Wij halen de klassiekers uit de discotheken van de jaren negentig terug, reviseren ze en geven ze een moderne lichtbron. Zo wordt een 'oh ja'-effect een 'oh wow'-effect.",
+      "bestand": "communicatieadvies.html",
+      "titel": "Communicatieadvies",
+      "kernzin": "Communicatieadvies rond je event: van boodschap tot aftermovie",
+      "beeld": "img/diensten/communicatieadvies-maarten.jpg",
+      "beeld_alt": "Maarten Versteeg in een blauw colbert",
+      "intro": "Een event is ook communicatie. Wat wil je dat gasten na afloop onthouden, en hoe zorg je dat het programma dat ondersteunt? Maarten werkt al zo'n 25 jaar als corporate communicatiespecialist voor grote organisaties. Die ervaring zet hij in naast licht, geluid en muziek, zodat techniek en boodschap elkaar versterken.",
+      "intro_beeld": "img/diensten/communicatieadvies-maarten.jpg",
+      "intro_beeld_alt": "Maarten Versteeg in een blauw colbert",
+      "cta_formulier": "Informeer naar de mogelijkheden",
       "blokken": [
         {
-          "producten": [
-            {
-              "beeld": "img/diensten/astrodisco.jpg",
-              "naam": "Clay Paky Astrodisco",
-              "regel": "Officieel heet dit effect een Astrodisco, maar in de volksmond noemde iedereen het een ufo. Alsof er een ronde schijf landt en dansers meeneemt naar een andere wereld. Who knows. Van het Italiaanse Clay Paky, veel te zien in Italiaanse clubs, maar ook in de oude legendarische Amsterdamse iT nachtclub"
-            },
-            {
-              "beeld": "img/diensten/goldenscan.jpg",
-              "naam": "Golden Scan en Roboscan",
-              "regel": "Scanners. Scanners werden uit de markt verdreven door moving heads die 360 graden om hun as draaien, maar ze zijn nog steeds erg effectief én snel. Met rijke, verzadigde kleuren uit een Philips-gasontladingslamp"
-            }
+          "label": "Advies",
+          "kop": "Meedenken over concept, boodschap en programma",
+          "tekst": [
+            "Wat is het doel van het event, en wat moet er blijven hangen? We denken mee over de opbouw van het programma, de volgorde van sprekers en de overgang van inhoud naar ontmoeting."
           ]
         },
         {
-          "label": "Zo zetten we het in",
+          "label": "Middelen",
+          "kop": "Van uitnodiging tot presentatie",
+          "tekst": [],
+          "html_na": "<ul><li>Uitnodigingen en andere communicatiemiddelen rond het event</li><li>Speeches en presentaties: van storyline tot de laatste versie</li><li>Een bedrijfsvideo die je op het event laat zien</li><li>Een aftermovie die het event na afloop laat voortleven</li></ul><p>Video en fotografie maken we samen met partners uit ons netwerk.</p>"
+        },
+        {
+          "label": "Zo werken we",
           "tekst": [
-            "Zet je alleen vintage effecten in, dan oogt je show gedateerd. Zet je ze in als aanvulling op een lichtshow, dan krijg je een mooie mix van oud en nieuw, met effecten die ánders zijn dan de rest.",
-            "Omwille van de veiligheid kan de Astrodisco alleen worden ingezet in combinatie met truss, ofwel reeds aanwezig op het midden van de vloer of extra ingehuurd."
+            "Communicatieadvies neem je af bij Maarten Versteeg communicatieadvies, los van de huur van licht en geluid via HEAR. Combineren kan en scheelt je tijd in de afstemming, want boodschap en techniek komen dan uit één hand. Het hoeft niet. Kies je voor beide, dan ontvang je twee aparte offertes."
           ]
         }
       ],
       "links": [
         {
-          "tekst": "Dansvloerverlichting",
-          "href": "dancefloor-lighting.html"
+          "tekst": "Voor wie: corporate",
+          "href": "corporate.html"
         },
         {
-          "tekst": "Dj-sets",
-          "href": "dj-sets.html"
+          "tekst": "Wat kost audiovisuele ondersteuning van een evenement eigenlijk?",
+          "href": "prijs.html"
         }
       ]
-    },
-    {
-      "bestand": "av-as-a-service.html",
-      "titel": "Advies en AV as a service",
-      "kernzin": "Merkonafhankelijk advies en AV as a service voor eventlocaties",
-      "beeld": "img/diensten/gala.jpg",
-      "beeld_alt": "Gala-opstelling met ronde tafels, moving heads en gekleurd licht in een hal",
-      "intro": "Heb je een eventlocatie zonder eigen licht en geluid? Of heb je wel eigen geluid, maar klagen gasten over 'vermoeiend geluid' of een gebrek aan impact? Wij kijken graag mee wat er mogelijk is om de gastbeleving te vergroten.",
-      "blokken": [
-        {
-          "label": "Gratis tips en adviezen",
-          "kop": "Even sparren?",
-          "tekst": [
-            "Heb je een vraag over het juiste licht of geluid voor jouw locatie? We denken vrijblijvend mee."
-          ],
-          "html_na": "<p class=\"knoprij\"><a class=\"wa\" href=\"https://wa.me/31624560220?text=Hoi%20Maarten%2C%20ik%20heb%20een%20vraag%20over%20licht%20en%20geluid%20voor%20mijn%20locatie.\" target=\"_blank\" rel=\"noopener\" data-whatsapp><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1.1 2.7.1.2 1.8 2.8 4.4 3.9 1.7.7 2.3.8 3.1.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.8-.3Z\"/></svg><span>Stel je vraag via WhatsApp</span><i aria-hidden=\"true\">→</i></a></p>"
-        },
-        {
-          "label": "Begeleiding inkooptraject",
-          "kop": "Een sound upgrade om aan hogere klanteisen te voldoen",
-          "tekst": [
-            "Sommige locaties vinden het een uitdaging om te voldoen aan steeds groeiende eisen die bezoekers stellen aan geluid. De opkomst van high-end listening bars en clubs in Europese steden brengt de verwachtingen omhoog. Het geluid moet impactvol zijn, maar mag de oren niet schaden. Of het geluid wordt niet genoeg gevoeld of is te schel en vermoeiend, of er zijn dode zones waardoor het publiek steeds gaat lopen op zoek naar een goede plek.",
-            "Met de eigenaar kijken we wat de locatie nodig heeft. Merkonafhankelijk, met de eigenschappen van de ruimte als vertrekpunt en een systeem dat medewerkers zelf kunnen bedienen als bedoeld eindpunt."
-          ],
-          "html_na": "<ol class=\"stappen\" aria-label=\"Stappen van het inkooptraject\"><li><b>01</b><strong>Ruimtescan</strong><span>Wat vraagt deze ruimte en het type events?</span></li><li><b>02</b><strong>Advies</strong><span>Merkonafhankelijke keuze van passende systemen.</span></li><li><b>03</b><strong>Demonstratie</strong><span>Producten zien en horen in jouw eigen ruimte.</span></li><li><b>04</b><strong>Training</strong><span>Zelfstandig bedienen na aanschaf.</span></li></ol>"
-        },
-        {
-          "label": "AV as a service",
-          "kop": "De kwaliteit van een eigen installatie, zonder de aanschaf.",
-          "donker": true,
-          "tekst": [
-            "Met AV as a service koop je geen licht en geluid, maar neem je het af als dienst, via HEAR zelf of via ons netwerk. Voor een vast bedrag per maand en een periode van minimaal 36 maanden krijgt de locatie toegang tot de meest recente licht- en geluidstechniek die er op de markt is, zonder zorgen over onderhoud of reparatie.",
-            "Na een training bedien je de apparatuur zelf. Voor installatie en onderhoud betrekken we indien nodig de productspecialisten van de gekozen merken."
-          ]
-        }
-      ],
-      "links": [
-        {
-          "tekst": "Case: systeemadvies voor een verhuurbedrijf",
-          "href": "systeemadvies.html"
-        },
-        {
-          "tekst": "Voor wie: venue owners",
-          "href": "venue-owners.html"
-        }
-      ],
-      "cta": false
     },
     {
       "bestand": "artiesten.html",
@@ -461,7 +415,7 @@
     },
     {
       "bestand": "special-projects.html",
-      "titel": "Custom dj-sets, playlists en remixes",
+      "titel": "Custom dj-mix of playlist",
       "kernzin": "Dj-sets, playlists en remixes op maat",
       "beeld": "assets/radio-deep-radio.png",
       "beeld_alt": "Aankondiging van een dj-set van Maarten Versteeg op Deep Radio",
@@ -501,46 +455,92 @@
       "cta_bericht": "Hoi Maarten, ik wil graag een mix of playlist op maat aanvragen."
     },
     {
-      "bestand": "communicatieadvies.html",
-      "titel": "Communicatieadvies",
-      "kernzin": "Communicatieadvies rond je event: van boodschap tot aftermovie",
-      "beeld": "img/diensten/communicatieadvies-maarten.jpg",
-      "beeld_alt": "Maarten Versteeg in een blauw colbert",
-      "intro": "Een event is ook communicatie. Wat wil je dat gasten na afloop onthouden, en hoe zorg je dat het programma dat ondersteunt? Maarten werkt al zo'n 25 jaar als corporate communicatiespecialist voor grote organisaties. Die ervaring zet hij in naast licht, geluid en muziek, zodat techniek en boodschap elkaar versterken.",
-      "intro_beeld": "img/diensten/communicatieadvies-maarten.jpg",
-      "intro_beeld_alt": "Maarten Versteeg in een blauw colbert",
-      "cta_formulier": "Informeer naar de mogelijkheden",
+      "bestand": "vintage-lighting.html",
+      "titel": "90's vintage licht",
+      "kernzin": "Gereviseerde lichteffecten uit de discotijd, met hedendaagse lichtopbrengst",
+      "beeld": "img/diensten/astrodisco-breed.jpg",
+      "beeld_alt": "Een Clay Paky Astrodisco werpt tientallen bundels door een donkere zaal",
+      "intro": "Sommige lichteffecten zijn nooit overtroffen, alleen vergeten. Wij halen de klassiekers uit de discotheken van de jaren negentig terug, reviseren ze en geven ze een moderne lichtbron. Zo wordt een 'oh ja'-effect een 'oh wow'-effect.",
       "blokken": [
         {
-          "label": "Advies",
-          "kop": "Meedenken over concept, boodschap en programma",
-          "tekst": [
-            "Wat is het doel van het event, en wat moet er blijven hangen? We denken mee over de opbouw van het programma, de volgorde van sprekers en de overgang van inhoud naar ontmoeting."
+          "producten": [
+            {
+              "beeld": "img/diensten/astrodisco.jpg",
+              "naam": "Clay Paky Astrodisco",
+              "regel": "Officieel heet dit effect een Astrodisco, maar in de volksmond noemde iedereen het een ufo. Alsof er een ronde schijf landt en dansers meeneemt naar een andere wereld. Who knows. Van het Italiaanse Clay Paky, veel te zien in Italiaanse clubs, maar ook in de oude legendarische Amsterdamse iT nachtclub"
+            },
+            {
+              "beeld": "img/diensten/goldenscan.jpg",
+              "naam": "Golden Scan en Roboscan",
+              "regel": "Scanners. Scanners werden uit de markt verdreven door moving heads die 360 graden om hun as draaien, maar ze zijn nog steeds erg effectief én snel. Met rijke, verzadigde kleuren uit een Philips-gasontladingslamp"
+            }
           ]
         },
         {
-          "label": "Middelen",
-          "kop": "Van uitnodiging tot presentatie",
-          "tekst": [],
-          "html_na": "<ul><li>Uitnodigingen en andere communicatiemiddelen rond het event</li><li>Speeches en presentaties: van storyline tot de laatste versie</li><li>Een bedrijfsvideo die je op het event laat zien</li><li>Een aftermovie die het event na afloop laat voortleven</li></ul><p>Video en fotografie maken we samen met partners uit ons netwerk.</p>"
-        },
-        {
-          "label": "Zo werken we",
+          "label": "Zo zetten we het in",
           "tekst": [
-            "Communicatieadvies neem je af bij Maarten Versteeg communicatieadvies, los van de huur van licht en geluid via HEAR. Combineren kan en scheelt je tijd in de afstemming, want boodschap en techniek komen dan uit één hand. Het hoeft niet. Kies je voor beide, dan ontvang je twee aparte offertes."
+            "Zet je alleen vintage effecten in, dan oogt je show gedateerd. Zet je ze in als aanvulling op een lichtshow, dan krijg je een mooie mix van oud en nieuw, met effecten die ánders zijn dan de rest.",
+            "Omwille van de veiligheid kan de Astrodisco alleen worden ingezet in combinatie met truss, ofwel reeds aanwezig op het midden van de vloer of extra ingehuurd."
           ]
         }
       ],
       "links": [
         {
-          "tekst": "Voor wie: corporate",
-          "href": "corporate.html"
+          "tekst": "Dansvloerverlichting",
+          "href": "dancefloor-lighting.html"
         },
         {
-          "tekst": "Wat kost audiovisuele ondersteuning van een evenement eigenlijk?",
-          "href": "prijs.html"
+          "tekst": "Dj-sets",
+          "href": "dj-sets.html"
         }
       ]
+    },
+    {
+      "bestand": "av-as-a-service.html",
+      "titel": "Aankoopadvies licht en geluid",
+      "kernzin": "Merkonafhankelijk advies en begeleiding bij de aanschaf van licht en geluid",
+      "beeld": "img/diensten/gala.jpg",
+      "beeld_alt": "Gala-opstelling met ronde tafels, moving heads en gekleurd licht in een hal",
+      "intro": "Heb je een eventlocatie zonder eigen licht en geluid? Of heb je wel eigen geluid, maar klagen gasten over 'vermoeiend geluid' of een gebrek aan impact? Wij kijken graag mee wat er mogelijk is om de gastbeleving te vergroten.",
+      "blokken": [
+        {
+          "label": "Gratis tips en adviezen",
+          "kop": "Even sparren?",
+          "tekst": [
+            "Heb je een vraag over het juiste licht of geluid voor jouw locatie? We denken vrijblijvend mee."
+          ],
+          "html_na": "<p class=\"knoprij\"><a class=\"wa\" href=\"https://wa.me/31624560220?text=Hoi%20Maarten%2C%20ik%20heb%20een%20vraag%20over%20licht%20en%20geluid%20voor%20mijn%20locatie.\" target=\"_blank\" rel=\"noopener\" data-whatsapp><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1.1 2.7.1.2 1.8 2.8 4.4 3.9 1.7.7 2.3.8 3.1.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.8-.3Z\"/></svg><span>Stel je vraag via WhatsApp</span><i aria-hidden=\"true\">→</i></a></p>"
+        },
+        {
+          "label": "Begeleiding inkooptraject",
+          "kop": "Een sound upgrade om aan hogere klanteisen te voldoen",
+          "tekst": [
+            "Sommige locaties vinden het een uitdaging om te voldoen aan steeds groeiende eisen die bezoekers stellen aan geluid. De opkomst van high-end listening bars en clubs in Europese steden brengt de verwachtingen omhoog. Het geluid moet impactvol zijn, maar mag de oren niet schaden. Of het geluid wordt niet genoeg gevoeld of is te schel en vermoeiend, of er zijn dode zones waardoor het publiek steeds gaat lopen op zoek naar een goede plek.",
+            "Met de eigenaar kijken we wat de locatie nodig heeft. Merkonafhankelijk, met de eigenschappen van de ruimte als vertrekpunt en een systeem dat medewerkers zelf kunnen bedienen als bedoeld eindpunt."
+          ],
+          "html_na": "<ol class=\"stappen\" aria-label=\"Stappen van het inkooptraject\"><li><b>01</b><strong>Ruimtescan</strong><span>Wat vraagt deze ruimte en het type events?</span></li><li><b>02</b><strong>Advies</strong><span>Merkonafhankelijke keuze van passende systemen.</span></li><li><b>03</b><strong>Demonstratie</strong><span>Producten zien en horen in jouw eigen ruimte.</span></li><li><b>04</b><strong>Training</strong><span>Zelfstandig bedienen na aanschaf.</span></li></ol>"
+        },
+        {
+          "label": "Liever niet kopen?",
+          "kop": "De kwaliteit van een eigen installatie, zonder de aanschaf.",
+          "donker": true,
+          "tekst": [
+            "Met AV as a service koop je geen licht en geluid, maar neem je het af als dienst, via HEAR zelf of via ons netwerk. Voor een vast bedrag per maand en een periode van minimaal 36 maanden krijgt de locatie toegang tot de meest recente licht- en geluidstechniek die er op de markt is, zonder zorgen over onderhoud of reparatie.",
+            "Na een training bedien je de apparatuur zelf. Voor installatie en onderhoud betrekken we indien nodig de productspecialisten van de gekozen merken."
+          ]
+        }
+      ],
+      "links": [
+        {
+          "tekst": "Case: systeemadvies voor een verhuurbedrijf",
+          "href": "systeemadvies.html"
+        },
+        {
+          "tekst": "Voor wie: venue owners",
+          "href": "venue-owners.html"
+        }
+      ],
+      "cta": false
     }
   ]
 }
