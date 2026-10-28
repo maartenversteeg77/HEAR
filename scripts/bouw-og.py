@@ -10,7 +10,9 @@ site = root / "site"; ogdir = site / "img" / "og"; ogdir.mkdir(parents=True, exi
 BASIS = json.loads((root / "content" / "nieuws.json").read_text()).get("basis", "https://hear.nl").rstrip("/")
 OVERSLAAN = {"merken.html", "projectbrief.html"}
 # eigen deelbeeld per pagina waar de eerste foto niet de beste is
-BEELD = {"high-end-audio": "img/dance-events-zaal.jpg", "aankoopadvies": "img/diensten/gala.jpg"}
+BEELD = {"high-end-audio": "img/dance-events-zaal.jpg", "aankoopadvies": "img/diensten/gala.jpg", "custom-dj-mix": "img/diensten/coffee-cuts.jpg"}
+# uitsnede per pagina (0 = bovenkant, 1 = onderkant); custom-dj-mix: Coffee cuts-logo volledig in beeld
+FOCUS = {"over-hear": 0.42, "custom-dj-mix": 0.15}
 e = lambda t: html.escape(t, quote=True)
 
 def deelbeeld(bron, doel, focus=0.4):
@@ -50,9 +52,10 @@ for p in pagina_s:
     bron = BEELD.get(p.stem) or beeld_van(s)
     naam = p.stem + ".jpg"
     if naam not in gemaakt:
-        deelbeeld(site / bron, ogdir / naam, focus=0.42 if p.stem == "over-hear" else 0.4)
+        deelbeeld(site / bron, ogdir / naam, focus=FOCUS.get(p.stem, 0.4))
         gemaakt[naam] = True
-    beeld_abs = f"{BASIS}/img/og/{naam}"
+    import hashlib
+    beeld_abs = f"{BASIS}/img/og/{naam}?v=" + hashlib.md5((ogdir / naam).read_bytes()).hexdigest()[:8]  # versie, zodat Facebook/LinkedIn een nieuw beeld ophalen
     tags = (f'<!--og--><meta property="og:title" content="{e(titel)}"><meta property="og:description" content="{e(omschr)}">'
             f'<meta property="og:url" content="{BASIS}{pad}"><meta property="og:site_name" content="HEAR"><meta property="og:type" content="website">'
             f'<meta property="og:locale" content="{"en_GB" if taal == "en" else "nl_NL"}">'
