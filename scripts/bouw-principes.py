@@ -41,6 +41,7 @@ pagina = f'''<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta na
   </button>
   <div class="jogtekst" id="tekst" aria-live="polite"></div>
 </section>
+<section class="quick quick-breed jog-leesook"><p class="inline-link lees-ook">Lees ook: <a href="over-hear.html">Founder story →</a></p></section>
 </main>
 {voet}
 <script>window.JOG={{midden:true,items:{json.dumps(items, ensure_ascii=False)}}};</script><script src="jog.js"></script>
