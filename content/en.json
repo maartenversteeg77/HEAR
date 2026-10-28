@@ -517,6 +517,42 @@
       [
         "alt=\"Deep Radio\"",
         "alt=\"Deep Radio\""
+      ],
+      [
+        "aria-label=\"Kies een categorie\"",
+        "aria-label=\"Choose a category\""
+      ],
+      [
+        ">Bekijk alle producten en diensten →</a></li>",
+        ">See all products and services →</a></li>"
+      ],
+      [
+        "<span class=\"pl-k-titel\">Dj-gear</span><small class=\"pl-k-sub\">CDJ-3000X, V10, Euphonia</small>",
+        "<span class=\"pl-k-titel\">DJ gear</span><small class=\"pl-k-sub\">CDJ-3000X, V10, Euphonia</small>"
+      ],
+      [
+        "<button type=\"button\" class=\"aan\" data-i=\"0\">Dj-gear</button>",
+        "<button type=\"button\" class=\"aan\" data-i=\"0\">DJ gear</button>"
+      ],
+      [
+        "<button type=\"button\" data-i=\"1\">Geluid</button>",
+        "<button type=\"button\" data-i=\"1\">Sound</button>"
+      ],
+      [
+        "<button type=\"button\" data-i=\"2\">Licht</button>",
+        "<button type=\"button\" data-i=\"2\">Light</button>"
+      ],
+      [
+        "<button type=\"button\" data-i=\"3\">Advies en AV as a service</button>",
+        "<button type=\"button\" data-i=\"3\">Advice and AV as a service</button>"
+      ],
+      [
+        "<button type=\"button\" data-i=\"4\">Dj&#x27;s en artiesten</button>",
+        "<button type=\"button\" data-i=\"4\">DJs and artists</button>"
+      ],
+      [
+        "<button type=\"button\" data-i=\"5\">Sets en playlists</button>",
+        "<button type=\"button\" data-i=\"5\">Sets and playlists</button>"
       ]
     ],
     "cases.html": [

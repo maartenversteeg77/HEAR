@@ -279,13 +279,25 @@ a.mail-ook,.quick.quick-breed p .mail-ook,.cta-brug .mail-ook{font:300 14px/1.3 
 .pl-titel{font:300 clamp(28px,3vw,46px)/1.05 var(--kop)}
 .pl-rij small{font:400 14px/1.4 var(--tekst);color:#a9a8a3;text-align:right;max-width:24ch}
 .pl-rij.aan,.pl-rij:hover{color:var(--koraal)}
+.pl-kiezer{display:none}
 @media (max-width:900px){
-  .pl-wrap{grid-template-columns:1fr;gap:0}
-  .pl-beeld{order:0;top:76px;z-index:2;margin:0 calc(var(--rand) * -1);aspect-ratio:16/10}
-  .pl-lijst{border-top:0;padding-top:8px}
-  .pl-rij{flex-direction:column;align-items:flex-start;gap:6px;padding:22px 0}
-  .pl-rij small{text-align:left}
+  .pl-wrap{grid-template-columns:1fr;gap:14px}
+  .pl-lijst{display:none}
+  .pl-kiezer{display:block;position:relative}
+  .pl-knop{display:grid;grid-template-columns:1fr auto;align-items:center;gap:4px 16px;width:100%;text-align:left;background:none;border:1px solid #444542;border-radius:6px;padding:14px 16px;color:var(--wit);cursor:pointer}
+  .pl-k-titel{font:300 30px/1.05 var(--kop);color:var(--koraal)}
+  .pl-k-sub{grid-column:1;font:400 14px/1.4 var(--tekst);color:#a9a8a3}
+  .pl-knop i{grid-column:2;grid-row:1/3;width:12px;height:12px;border-right:2px solid var(--wit);border-bottom:2px solid var(--wit);transform:rotate(45deg) translateY(-4px);transition:transform .2s}
+  .pl-knop[aria-expanded="true"] i{transform:rotate(-135deg) translateY(-2px)}
+  .pl-menu{position:absolute;left:0;right:0;top:calc(100% + 6px);z-index:5;list-style:none;margin:0;padding:6px 0;background:#232423;border:1px solid #444542;border-radius:6px;box-shadow:0 12px 30px rgba(0,0,0,.45)}
+  .pl-menu button,.pl-menu a{display:block;width:100%;text-align:left;background:none;border:0;padding:13px 16px;font:300 24px/1.1 var(--kop);color:var(--wit);text-decoration:none;cursor:pointer}
+  .pl-menu button:hover,.pl-menu button:focus{color:var(--koraal);outline:none}
+  .pl-menu .pl-alle{border-top:1px solid #444542;margin-top:6px;padding-top:4px}
+  .pl-menu .pl-alle a{font:400 15px/1.3 var(--tekst);color:#d9d8d3;text-decoration:underline;text-underline-offset:4px}
+  .pl-beeld{position:relative;top:auto;order:0;margin:0 calc(var(--rand) * -1);aspect-ratio:16/10}
+  .pl-kop a{display:none}
 }
+
 
 /* ---------- koraal blok: de drie doelgroepen ---------- */
 .doelgroepen-blok{align-items:start}
@@ -296,3 +308,4 @@ a.mail-ook,.quick.quick-breed p .mail-ook,.cta-brug .mail-ook{font:300 14px/1.3 
 .over-links{display:flex;flex-wrap:wrap;gap:14px 28px;margin:14px 0 0}
 .over-links .tekstlink{margin-top:0!important}
 @media (max-width:900px){.doelgroepen-blok>a{padding:24px 0!important}}
+@media (max-width:900px){.pl-menu button.aan{color:var(--koraal)}}
