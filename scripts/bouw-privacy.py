@@ -9,7 +9,7 @@ voet = idx[idx.index('<footer class="voet">'):idx.index('</footer>') + 9]
 e = lambda t: html.escape(t, quote=True)
 
 TITEL = "Privacyverklaring"
-INTRO = "HEAR is een handelsnaam van Maarten Versteeg communicatieadvies (KvK 42181393, Van Kinsbergenstraat 54, 1057 PT Amsterdam). We gaan zorgvuldig om met je gegevens. Hieronder staat wat we verwerken en waarom."
+INTRO = "HEAR is een handelsnaam van Maarten Versteeg communicatie advies B.V. (KvK 42181393, Van Kinsbergenstraat 54, 1057 PT Amsterdam). We gaan zorgvuldig om met je gegevens. Hieronder staat wat we verwerken en waarom."
 BLOKKEN = [
     ("Wat we verwerken", [
         "Als je ons een bericht stuurt via WhatsApp, e-mail of het aanvraagformulier: je naam, organisatie, telefoonnummer, e-mailadres en wat je over je event invult. We gebruiken dit alleen om je vraag te beantwoorden en, bij een opdracht, voor de uitvoering en administratie daarvan. Het formulier wordt als e-mail aan ons bezorgd via Resend en niet op de website opgeslagen.",

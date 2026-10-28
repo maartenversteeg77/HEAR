@@ -410,3 +410,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Copy: "Voor wie: zakelijke events" op communicatieadvies; dubbel "Een bijkomend voordeel" op dance events opgelost.
 - Bewust niet aangepast: Engelse woorden als midsize en EXPERIENCE (Maarten: Engels is prima).
 - Bug: telefoonlinks op Engelse en nieuwspagina's werkten niet (/tel:), hersteld.
+- Juridische regel: "HEAR is een handelsnaam van Maarten Versteeg communicatie advies B.V." (schrijfwijze volgens KvK-uittreksel, KvK 42181393). HEAR en Maarten Versteeg communicatieadvies zijn beide handelsnamen van deze BV; twee factuurstromen blijft.
