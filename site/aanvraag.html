@@ -54,7 +54,7 @@
 <label class="veld"><span>Naam van het event</span><input type="text" name="event"></label>
 <label class="veld"><span>Locatie</span><input type="text" name="locatie"></label>
 <label class="veld"><span>Beschrijf de ruimte</span><textarea name="ruimte" rows="2"></textarea></label>
-<fieldset class="keuze"><legend>Soort event</legend><label class="vink"><input type="radio" name="soort" value="zakelijk"><span>Zakelijk (netwerk)event</span></label><label class="vink"><input type="radio" name="soort" value="lezing"><span>Lezing of seminar</span></label><label class="vink"><input type="radio" name="soort" value="personeelsfeest"><span>Personeelsfeest</span></label><label class="vink"><input type="radio" name="soort" value="merkactivatie"><span>Merkactivatie</span></label><label class="vink"><input type="radio" name="soort" value="dance"><span>Dance event</span></label><label class="vink"><input type="radio" name="soort" value="anders"><span>Anders, namelijk</span></label><input type="text" name="soort_anders" class="inline" aria-label="Anders, namelijk"></fieldset>
+<label class="veld"><span>Soort event</span><select name="soort" id="soort"><option value="">Kies…</option><option value="zakelijk">Zakelijk (netwerk)event</option><option value="lezing">Lezing of seminar</option><option value="personeelsfeest">Personeelsfeest</option><option value="merkactivatie">Merkactivatie</option><option value="dance">Dance event</option><option value="anders">Anders, namelijk</option></select></label><label class="veld" id="soort_anders_veld" hidden><span>Anders, namelijk</span><input type="text" name="soort_anders"></label>
 <label class="veld"><span>Datum van het event</span><input type="date" name="datum"></label>
 <label class="veld"><span>Tijd, van tot</span><input type="text" name="tijd" placeholder="16:00 – 23:00"></label>
 <label class="veld"><span>Aantal gasten</span><input type="number" name="gasten" min="1" inputmode="numeric"></label>
@@ -76,6 +76,7 @@
     function eur(n){return '€ '+Number(n).toLocaleString('nl-NL')}
     function toon(){var v=+a[0].value,t=+a[1].value;if(v>t){if(this===a[0])a[1].value=v;else a[0].value=t;v=+a[0].value;t=+a[1].value}o.textContent=eur(v)+' – '+eur(t)+(t>=25000?'+':'')}
     a[0].addEventListener('input',toon);a[1].addEventListener('input',toon);toon()}
+  var so=document.getElementById('soort'),sa=document.getElementById('soort_anders_veld');if(so&&sa){so.addEventListener('change',function(){sa.hidden=so.value!=='anders'})}
   var q=location.search;if(/verzonden=1/.test(q)){m.hidden=false;m.textContent=f.dataset.dank;m.className='formmelding ok'}else if(/fout=1/.test(q)){m.hidden=false;m.textContent=f.dataset.fout;m.className='formmelding fout'}
   f.addEventListener('submit',function(ev){
     if(!window.fetch)return;ev.preventDefault();var b=f.querySelector('button');b.disabled=true;

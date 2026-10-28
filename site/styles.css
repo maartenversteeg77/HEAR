@@ -510,13 +510,12 @@ body{font-variant-emoji:text}
 .velden{display:grid;grid-template-columns:1fr 1fr;gap:16px 22px}
 .veld{display:flex;flex-direction:column;gap:6px;font:400 14px/1.4 var(--tekst);color:var(--tekstgrijs)}
 .veld-breed{grid-column:1/-1}
-.veld input,.veld textarea,.keuze .inline{font:400 16px/1.4 var(--tekst);color:var(--zwart);background:#fff;border:1px solid var(--lijn);border-radius:6px;padding:10px 12px;width:100%;box-sizing:border-box}
-.veld input:focus,.veld textarea:focus,.keuze .inline:focus{outline:2px solid var(--koraal);outline-offset:1px;border-color:var(--koraal)}
+.veld input,.veld textarea,.veld select{font:400 16px/1.4 var(--tekst);color:var(--zwart);background:#fff;border:1px solid var(--lijn);border-radius:6px;padding:10px 12px;width:100%;box-sizing:border-box}
+.veld input:focus,.veld textarea:focus,.veld select:focus{outline:2px solid var(--koraal);outline-offset:1px;border-color:var(--koraal)}
 .aanvraag fieldset{border:0;padding:0;margin:0;min-width:0}
 .aanvraag legend{font:400 14px/1.4 var(--tekst);color:var(--tekstgrijs);padding:0;margin:0 0 8px}
-.keuze{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:8px 22px;align-items:center}
-.keuze legend{width:100%}
-.keuze .inline{grid-column:1/-1;max-width:360px;padding:8px 10px;font-size:15px}
+.veld select{appearance:none;-webkit-appearance:none;background:#fff url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2712%27 height=%278%27%3E%3Cpath d=%27M1 1l5 5 5-5%27 fill=%27none%27 stroke=%27%23191A19%27 stroke-width=%271.5%27/%3E%3C/svg%3E") no-repeat right 12px center;padding-right:32px}
+.veld[hidden]{display:none}
 .vink{display:flex;align-items:flex-start;gap:9px;font:400 15px/1.45 var(--tekst);color:var(--zwart);cursor:pointer}
 .vink input{margin:3px 0 0;accent-color:var(--koraal);flex:none;width:17px;height:17px}
 .diensten{margin-top:40px}
@@ -546,4 +545,4 @@ button.knop:disabled{opacity:.6;cursor:wait}
 .formmelding.ok{border-color:var(--turquoise)}
 .formmelding.fout{border-color:var(--koraal)}
 @media (max-width:760px){.dienstgrid{grid-template-columns:1fr 1fr}}
-@media (max-width:560px){.velden,.keuze{grid-template-columns:1fr}.dienstgrid{grid-template-columns:1fr}}
+@media (max-width:560px){.velden{grid-template-columns:1fr}.dienstgrid{grid-template-columns:1fr}}

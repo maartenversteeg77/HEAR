@@ -2431,6 +2431,10 @@
         ">Type of event<"
       ],
       [
+        ">Kies…<",
+        ">Choose…<"
+      ],
+      [
         ">Zakelijk (netwerk)event<",
         ">Corporate (networking) event<"
       ],
@@ -2453,10 +2457,6 @@
       [
         ">Anders, namelijk<",
         ">Other, namely<"
-      ],
-      [
-        "=\"Anders, namelijk\"",
-        "=\"Other, namely\""
       ],
       [
         ">Richtbudget voor licht, geluid en muziek<",

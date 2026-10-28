@@ -67,10 +67,10 @@ def diensten():
 
 SOORTEN = [("zakelijk", "Zakelijk (netwerk)event", "Corporate (networking) event"), ("lezing", "Lezing of seminar", "Lecture or seminar"),
            ("personeelsfeest", "Personeelsfeest", "Staff party"), ("merkactivatie", "Merkactivatie", "Brand activation"), ("dance", "Dance event", "Dance event")]
-soort = (f'<fieldset class="keuze"><legend>{T("Soort event", "Type of event")}</legend>'
-         + "".join(f'<label class="vink"><input type="radio" name="soort" value="{w}"><span>{T(nl, en)}</span></label>' for w, nl, en in SOORTEN)
-         + f'<label class="vink"><input type="radio" name="soort" value="anders"><span>{T("Anders, namelijk", "Other, namely")}</span></label>'
-         f'<input type="text" name="soort_anders" class="inline" aria-label="{A("Anders, namelijk", "Other, namely")}"></fieldset>')
+soort = (f'<label class="veld"><span>{T("Soort event", "Type of event")}</span><select name="soort" id="soort"><option value="">{T("Kies…", "Choose…")}</option>'
+         + "".join(f'<option value="{w}">{T(nl, en)}</option>' for w, nl, en in SOORTEN)
+         + f'<option value="anders">{T("Anders, namelijk", "Other, namely")}</option></select></label>'
+         f'<label class="veld" id="soort_anders_veld" hidden><span>{T("Anders, namelijk", "Other, namely")}</span><input type="text" name="soort_anders"></label>')
 
 budget = (f'<fieldset class="budget"><legend>{T("Richtbudget voor licht, geluid en muziek", "Indicative budget for light, sound and music")}</legend>'
           f'<p class="uitleg">{T("Een range is genoeg; je hoeft geen bedrag te noemen.", "A range is enough; you don\'t have to name a figure.")}</p>'
@@ -116,6 +116,7 @@ main = f'''<main class="wrap">
     function eur(n){{return '€ '+Number(n).toLocaleString('nl-NL')}}
     function toon(){{var v=+a[0].value,t=+a[1].value;if(v>t){{if(this===a[0])a[1].value=v;else a[0].value=t;v=+a[0].value;t=+a[1].value}}o.textContent=eur(v)+' – '+eur(t)+(t>=25000?'+':'')}}
     a[0].addEventListener('input',toon);a[1].addEventListener('input',toon);toon()}}
+  var so=document.getElementById('soort'),sa=document.getElementById('soort_anders_veld');if(so&&sa){{so.addEventListener('change',function(){{sa.hidden=so.value!=='anders'}})}}
   var q=location.search;if(/verzonden=1/.test(q)){{m.hidden=false;m.textContent=f.dataset.dank;m.className='formmelding ok'}}else if(/fout=1/.test(q)){{m.hidden=false;m.textContent=f.dataset.fout;m.className='formmelding fout'}}
   f.addEventListener('submit',function(ev){{
     if(!window.fetch)return;ev.preventDefault();var b=f.querySelector('button');b.disabled=true;
