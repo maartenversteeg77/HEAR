@@ -73,14 +73,15 @@ export default {
       doel.search = url.search; doel.hash = url.hash;
       return Response.redirect(doel.toString(), 301);
     }
-    // korte advertentie-URL: hear.nl/coffeecuts -> Coffee cuts-blok (302, zodat het doel later kan wijzigen)
+    // korte advertentie-URL: hear.nl/coffeecuts is een eigen deelpagina (site/coffeecuts.html: eigen titel en deelbeeld,
+    // stuurt door naar het Coffee cuts-blok). Varianten sturen daarheen; /coffeecuts zelf wordt als pagina geserveerd.
     const kort = url.pathname.toLowerCase().replace(/\/+$/, "");
-    if (kort === "/coffeecuts" || kort === "/coffee-cuts" || kort === "/en/coffeecuts" || kort === "/en/coffee-cuts") {
-      const doel = new URL((kort.startsWith("/en/") ? "/en" : "") + "/custom-dj-mix.html", url);
-      doel.search = url.search; // utm-parameters van advertenties blijven behouden
-      doel.hash = "coffee-cuts";
-      return Response.redirect(doel.toString(), 302);
+    if ((kort === "/coffee-cuts" || kort === "/en/coffee-cuts" || url.pathname !== kort) && /^(\/en)?\/coffee-?cuts$/.test(kort)) {
+      const doel = new URL(kort.replace("coffee-cuts", "coffeecuts"), url);
+      doel.search = url.search;
+      return Response.redirect(doel.toString(), 301);
     }
+    // /coffeecuts zelf: gewoon doorvallen naar de statische assets (auto-trailing-slash serveert coffeecuts.html)
     if (url.pathname === "/api/aanvraag") {
       if (request.method !== "POST") return new Response("Method not allowed", { status: 405 });
       if (!env.RESEND_API_KEY) return antwoord(request, false, 503);

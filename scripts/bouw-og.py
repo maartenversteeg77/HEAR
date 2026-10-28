@@ -8,7 +8,7 @@ from PIL import Image, ImageDraw
 root = pathlib.Path(__file__).resolve().parent.parent
 site = root / "site"; ogdir = site / "img" / "og"; ogdir.mkdir(parents=True, exist_ok=True)
 BASIS = json.loads((root / "content" / "nieuws.json").read_text()).get("basis", "https://hear.nl").rstrip("/")
-OVERSLAAN = {"merken.html", "projectbrief.html"}
+OVERSLAAN = {"merken.html", "projectbrief.html", "coffeecuts.html"}  # coffeecuts: eigen deelpagina met vaste metadata
 # eigen deelbeeld per pagina waar de eerste foto niet de beste is
 BEELD = {"high-end-audio": "img/dance-events-zaal.jpg", "aankoopadvies": "img/diensten/gala.jpg", "custom-dj-mix": "img/diensten/coffee-cuts.jpg"}
 # uitsnede per pagina (0 = bovenkant, 1 = onderkant); custom-dj-mix: Coffee cuts-logo volledig in beeld
@@ -40,7 +40,7 @@ def beeld_van(s):
     return "img/hero-dansvloer-blauw.jpg"
 
 gemaakt = {}
-pagina_s = [p for p in site.glob("*.html") if p.name not in OVERSLAAN] + list((site / "en").glob("*.html"))
+pagina_s = [p for p in site.glob("*.html") if p.name not in OVERSLAAN] + [p for p in (site / "en").glob("*.html") if p.name not in OVERSLAAN]
 for p in pagina_s:
     s = p.read_text()
     taal = "en" if p.parent.name == "en" else "nl"
