@@ -29,7 +29,8 @@
     "privacy.html",
     "dj-mixes.html",
     "prijs.html",
-    "aanvraag.html"
+    "aanvraag.html",
+    "communicatieadvies.html"
   ],
   "globaal": [
     [
@@ -307,6 +308,22 @@
     [
       ">of stel je vraag via WhatsApp<",
       ">or ask your question on WhatsApp<"
+    ],
+    [
+      "title=\"Communicatieadvies\"",
+      "title=\"Communication advice\""
+    ],
+    [
+      "aria-label=\"Volgende: Communicatieadvies\"",
+      "aria-label=\"Next: Communication advice\""
+    ],
+    [
+      "aria-label=\"Vorige: Communicatieadvies\"",
+      "aria-label=\"Previous: Communication advice\""
+    ],
+    [
+      ">Communicatieadvies</a>",
+      ">Communication advice</a>"
     ]
   ],
   "cases_json": {
@@ -579,12 +596,24 @@
         "alt=\"Light beams above a stage\""
       ],
       [
-        "data-i=\"8\">Alle producten en diensten</button>",
-        "data-i=\"8\">All products and services</button>"
+        "data-i=\"9\">Alle producten en diensten</button>",
+        "data-i=\"9\">All products and services</button>"
       ],
       [
         ">Korte vraag? Stuur een appje</a>",
         ">Quick question? Send a WhatsApp</a>"
+      ],
+      [
+        "data-bekijk=\"Bekijk communicatieadvies\"><span class=\"pl-titel\">Communicatieadvies</span><small>boodschap, speeches, uitnodigingen, video</small>",
+        "data-bekijk=\"See communication advice\"><span class=\"pl-titel\">Communication advice</span><small>message, speeches, invitations, video</small>"
+      ],
+      [
+        "data-i=\"8\">Communicatieadvies</button>",
+        "data-i=\"8\">Communication advice</button>"
+      ],
+      [
+        "alt=\"Maarten Versteeg in een blauw colbert\"",
+        "alt=\"Maarten Versteeg in a blue jacket\""
       ]
     ],
     "cases.html": [
@@ -1039,10 +1068,6 @@
         ">Then there are business occasions that ask for something extra, where identity, technology and music meet. Maarten Versteeg has done this as a DJ for brands for years. Choosing the right music for a catwalk, for instance, agreeing beforehand on the collection and the sound that suits it. Or the music for the launch of a new line of watches in Basel, Switzerland. With 25 years of corporate communications background, we know what brand management is about.<"
       ],
       [
-        ">Complete realisatie van licht en geluid: sprekersversterking met draadloze reversmicrofoons, sprekerverlichting, sfeerlicht en een helder en warm klinkend geluidsysteem voor de borrel of het feest. Dj’s en aanverwante artiesten, zoals een vocalist, saxofonist of percussionist. Uiteraard doen we, wanneer nodig, een locatiebezoek vooraf en stemmen we het geluid af op de akoestiek.<",
-        ">Complete lighting and sound: speech reinforcement with wireless lavalier microphones, speaker lighting, ambient light and a warm and clear sounding soundsystem for the drinks or the party. DJs and related artists, such as a vocalist, saxophonist or percussionist. Where needed, we of course visit the venue beforehand and tune the sound to the acoustics.<"
-      ],
-      [
         ">Deze opdrachten vragen om aandacht voor detail. Sprekers moeten goed verstaanbaar en zichtbaar zijn. De techniek moet passen bij de ruimte en de uitstraling van het merk. Daarnaast moet het programma soepel kunnen overgaan van inhoud naar ontmoeting of feest.<",
         ">These jobs require a high attention to detail. Keynote speakers who need to be clearly heard and seen. The technology has to suit the room and the brand. And the atmosphere needs to shift smoothly between lectures and celebration.<"
       ],
@@ -1079,20 +1104,12 @@
         "alt=\"DJs, vocalists and instrumentalists\""
       ],
       [
-        ">Bekijk voorbeelden uit onze cases ↗<",
-        ">See examples from our cases ↗<"
-      ],
-      [
         ">Bekijk de case: productlancering ↗<",
         ">View the case: product launch ↗<"
       ],
       [
         "alt=\"Sfeerverlichting\"",
         "alt=\"Atmospheric lighting\""
-      ],
-      [
-        ">Wat we leveren<",
-        ">What we deliver<"
       ],
       [
         ">DOELGROEPEN<",
@@ -1105,10 +1122,6 @@
       [
         ">Op verzoek schuift Maarten eerder in het proces aan. Bijvoorbeeld om mee te denken over het concept, het draaiboek of de vertaling naar licht en geluid, op het moment dat het je event helpt. Werkt er een technicus mee, dan plannen we op verzoek een korte online briefing, zodat hij vooraf weet wat er speelt.<",
         ">On request, Maarten joins earlier in the process. For example to think along about the concept, the run sheet or the translation into light and sound, at the moment it helps your event. If a technician is involved, we schedule a short online briefing on request, so they know beforehand what is going on.<"
-      ],
-      [
-        ">Ook voor de communicatie rond je event kun je bij ons terecht: advies over de boodschap, speeches en presentaties, uitnodigingen, een bedrijfsvideo of een aftermovie.<",
-        ">For the communication around your event you can also come to us: advice on the message, speeches and presentations, invitations, a corporate video or an aftermovie.<"
       ],
       [
         "aria-label=\"Drie cirkels: muziek, communicatie, licht en geluid. Waar ze overlappen: curatie, atmosfeer en brand fit. In het midden jouw event.\"",
@@ -1173,6 +1186,46 @@
       [
         ">Lees ook het artikel: <a href=\"prijs.html\">Wat kost audiovisuele ondersteuning van een evenement eigenlijk?</a>",
         ">Read the article: <a href=\"prijs.html\">What does audiovisual support for an event actually cost?</a>"
+      ],
+      [
+        "<li><a href=\"high-end-audio.html\">Geluid</a> <span>sprekersversterking met draadloze reversmicrofoons en warm geluid voor de borrel of het feest</span></li>",
+        "<li><a href=\"high-end-audio.html\">Sound</a> <span>speech amplification with wireless lavalier microphones and warm sound for the drinks or the party</span></li>"
+      ],
+      [
+        "<li><a href=\"atmospheric-lighting.html\">Sfeerlicht</a> <span>sprekerverlichting en draadloos sfeerlicht in de kleuren van je event</span></li>",
+        "<li><a href=\"atmospheric-lighting.html\">Ambient lighting</a> <span>speaker lighting and wireless ambient light in the colours of your event</span></li>"
+      ],
+      [
+        "<li><a href=\"artiesten.html\">Dj's en artiesten</a> <span>een dj, vocalist, saxofonist of percussionist</span></li>",
+        "<li><a href=\"artiesten.html\">DJs and artists</a> <span>a DJ, vocalist, saxophonist or percussionist</span></li>"
+      ],
+      [
+        "<li><a href=\"booth-dj-gear.html\">Dj-gear</a> <span>een rider-proof booth met de nieuwste spelers en mixers</span></li>",
+        "<li><a href=\"booth-dj-gear.html\">DJ gear</a> <span>a rider-proof booth with the latest players and mixers</span></li>"
+      ],
+      [
+        " <span>boodschap, speeches, uitnodigingen en video</span></li>",
+        " <span>message, speeches, invitations and video</span></li>"
+      ],
+      [
+        ">Communicatie rond je event<",
+        ">Communication around your event<"
+      ],
+      [
+        "<p>Ook voor de communicatie rond je event kun je bij ons terecht: advies over de boodschap, speeches en presentaties, uitnodigingen, een bedrijfsvideo of een aftermovie. <a class=\"inline-pijl\" href=\"communicatieadvies.html\">Meer over communicatieadvies →</a></p>",
+        "<p>For the communication around your event you can also come to us: advice on the message, speeches and presentations, invitations, a corporate video or an aftermovie. <a class=\"inline-pijl\" href=\"communicatieadvies.html\">More about communication advice →</a></p>"
+      ],
+      [
+        ">Voorbeelden van producten en diensten<",
+        ">Examples of products and services<"
+      ],
+      [
+        "<p>Uiteraard doen we, wanneer nodig, een locatiebezoek vooraf en stemmen we het geluid af op de akoestiek.</p>",
+        "<p>Where needed, we of course visit the venue beforehand and tune the sound to the acoustics.</p>"
+      ],
+      [
+        ">Bekijk alle producten en diensten →</a></p></div>",
+        ">See all products and services →</a></p></div>"
       ]
     ],
     "venue-owners.html": [
@@ -1439,6 +1492,14 @@
       [
         ">dj-sets<",
         ">DJ sets<"
+      ],
+      [
+        "<h2>Bekijk communicatieadvies <i aria-hidden=\"true\">→</i></h2>",
+        "<h2>See communication advice <i aria-hidden=\"true\">→</i></h2>"
+      ],
+      [
+        "alt=\"Maarten Versteeg in een blauw colbert\"",
+        "alt=\"Maarten Versteeg in a blue jacket\""
       ]
     ],
     "booth-dj-gear.html": [
@@ -2565,8 +2626,8 @@
         ">from 750 euros<"
       ],
       [
-        "</strong> per uur. Denkt mee over het eventconcept en het programma. Ook in te zetten voor strategische communicatie, zoals de boodschap, speechwriting, een storyline en de creatie van een video.",
-        "</strong> per hour. Helps shape the event concept and programme. Also available for strategic communication, such as the message, speechwriting, a storyline and creating a video."
+        "</strong> per uur. Denkt mee over het eventconcept en het programma. Ook in te zetten voor de communicatie rond het event: de boodschap, speeches en presentaties, uitnodigingen en video.",
+        "</strong> per hour. Helps shape the event concept and programme. Also available for the communication around the event: the message, speeches and presentations, invitations and video."
       ],
       [
         "</strong> per uur. Vertaalt het eventconcept naar een licht- en geluidsplan, plant de technici, maakt het draaiboek en is ter plekke het vaste aanspreekpunt.",
@@ -2981,6 +3042,68 @@
       [
         "=\"Vraag licht, geluid, dj of advies aan voor je event. Vul in wat je al weet; we bellen je terug.\"",
         "=\"Request light, sound, a DJ or advice for your event. Fill in what you already know; we call you back.\""
+      ]
+    ],
+    "communicatieadvies.html": [
+      [
+        "<title>Communicatieadvies · HEAR</title>",
+        "<title>Communication advice · HEAR</title>"
+      ],
+      [
+        "<span class=\"huidig\">Communicatieadvies</span>",
+        "<span class=\"huidig\">Communication advice</span>"
+      ],
+      [
+        "Communicatieadvies rond je event: van boodschap tot aftermovie",
+        "Communication advice for your event: from message to aftermovie"
+      ],
+      [
+        "Een event is ook communicatie. Wat wil je dat gasten na afloop onthouden, en hoe zorg je dat het programma dat ondersteunt? Maarten werkt al zo&#x27;n 25 jaar als corporate communicatiespecialist voor grote organisaties. Die ervaring zet hij in naast licht, geluid en muziek, zodat techniek en boodschap elkaar versterken.",
+        "An event is also communication. What do you want guests to remember afterwards, and how do you make sure the programme supports that? Maarten has worked for some 25 years as a corporate communication specialist for large organisations. He brings that experience alongside light, sound and music, so that technology and message reinforce each other."
+      ],
+      [
+        "alt=\"Maarten Versteeg in een blauw colbert\"",
+        "alt=\"Maarten Versteeg in a blue jacket\""
+      ],
+      [
+        "<span>Informeer naar de mogelijkheden</span>",
+        "<span>Ask about the options</span>"
+      ],
+      [
+        ">ADVIES</h2>",
+        ">ADVICE</h2>"
+      ],
+      [
+        ">Meedenken over concept, boodschap en programma<",
+        ">Thinking along about concept, message and programme<"
+      ],
+      [
+        ">Wat is het doel van het event, en wat moet er blijven hangen? We denken mee over de opbouw van het programma, de volgorde van sprekers en de overgang van inhoud naar ontmoeting.<",
+        ">What is the goal of the event, and what should stick? We think along about the structure of the programme, the order of speakers and the transition from content to meeting.<"
+      ],
+      [
+        ">MIDDELEN</h2>",
+        ">MATERIALS</h2>"
+      ],
+      [
+        ">Van uitnodiging tot presentatie<",
+        ">From invitation to presentation<"
+      ],
+      [
+        "<li>Uitnodigingen en andere communicatiemiddelen rond het event</li><li>Speeches en presentaties: van storyline tot de laatste versie</li><li>Een bedrijfsvideo die je op het event laat zien</li><li>Een aftermovie die het event na afloop laat voortleven</li></ul><p>Video en fotografie maken we samen met partners uit ons netwerk.</p>",
+        "<li>Invitations and other communication materials around the event</li><li>Speeches and presentations: from storyline to final version</li><li>A corporate video to show at the event</li><li>An aftermovie that keeps the event alive afterwards</li></ul><p>We make video and photography together with partners from our network.</p>"
+      ],
+      [
+        ">ZO WERKEN WE</h2>",
+        ">HOW WE WORK</h2>"
+      ],
+      [
+        ">Communicatieadvies neem je af bij Maarten Versteeg communicatieadvies, los van de huur van licht en geluid via HEAR. Combineren kan en scheelt je tijd in de afstemming, want boodschap en techniek komen dan uit één hand. Het hoeft niet. Kies je voor beide, dan ontvang je twee aparte offertes.<",
+        ">You engage communication advice through Maarten Versteeg communicatieadvies, separately from hiring light and sound through HEAR. Combining is possible and saves you time on coordination, because message and technology then come from one hand. It is not required. If you choose both, you receive two separate quotes.<"
+      ],
+      [
+        ">Voor wie: corporate →</a>",
+        ">Who for: corporate →</a>"
       ]
     ]
   },

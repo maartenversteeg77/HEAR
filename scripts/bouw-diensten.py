@@ -68,12 +68,17 @@ for i, pg in enumerate(data["paginas"]):
     if pg.get("cta", True):
         knop = pg.get("cta_tekst", "Vraag een voorstel aan")
         bericht = pg.get("cta_bericht", f"Hoi Maarten, ik wil graag een voorstel voor {pg['titel'].lower()} voor mijn event.")
-        if pg.get("cta_tekst"):  # eigen knoptekst (dj boeken, mix aanvragen): WhatsApp blijft de knop
+        if pg.get("cta_formulier"):  # eigen knoptekst, maar naar het formulier
+            cta = f'<p class="knoprij cta-intro"><a class="wa" href="aanvraag.html"><span>{e(pg["cta_formulier"])}</span><i aria-hidden="true">→</i></a></p>'
+        elif pg.get("cta_tekst"):  # eigen knoptekst (dj boeken, mix aanvragen): WhatsApp blijft de knop
             cta = f'<p class="knoprij cta-intro">{waknop(knop, bericht)}</p>'
         else:  # "Vraag een voorstel aan": naar het aanvraagformulier, WhatsApp als tekstlink (besluit 28 okt)
             cta = (f'<p class="knoprij cta-intro"><span class="wa-plus"><a class="wa" href="aanvraag.html"><span>{e(knop)}</span><i aria-hidden="true">→</i></a>'
                    f'<a class="mail-ook" href="https://wa.me/31624560220?text={urllib.parse.quote(bericht)}" target="_blank" rel="noopener" data-whatsapp>of stel je vraag via WhatsApp</a></span></p>')
-    intro = (f'<section class="quick quick-breed"><p>{e(pg["intro"])}</p>{cta}</section>' if pg.get("intro") else (f'<section class="quick quick-breed">{cta}</section>' if cta else ""))
+    if pg.get("intro_beeld"):  # intro met portret ernaast (zoals het prijsstuk)
+        intro = (f'<section class="quick quick-breed intro-met-beeld"><div><p>{e(pg["intro"])}</p>{cta}</div>'
+                 f'<figure><img src="{e(pg["intro_beeld"])}" alt="{e(pg.get("intro_beeld_alt", ""))}"></figure></section>')
+    else: intro = (f'<section class="quick quick-breed"><p>{e(pg["intro"])}</p>{cta}</section>' if pg.get("intro") else (f'<section class="quick quick-breed">{cta}</section>' if cta else ""))
     beschrijving = pg.get("intro") or next((t for b in pg["blokken"] for t in b.get("tekst", [])), pg["kernzin"])
     main = f'''<main class="wrap">
 <section class="casehead"><a class="crumb" href="diensten.html"><span class="sectie">Producten</span><span class="scheiding" aria-hidden="true">|</span><span class="huidig">{e(pg["titel"])}</span></a>{zijnav(i)}<h1 class="kernzin">{heel(pg["kernzin"])}</h1>{('<p class="kop-knop">'+pg["kop_knop"]+'</p>') if pg.get("kop_knop") else ''}</section>

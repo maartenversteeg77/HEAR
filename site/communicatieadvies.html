@@ -1,0 +1,67 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Een event is ook communicatie. Wat wil je dat gasten na afloop onthouden, en hoe zorg je dat het programma dat ondersteunt? Maarten werkt al zo&#x27;n 25 jaar a"><title>Communicatieadvies · HEAR</title><!--og--><meta property="og:title" content="Communicatieadvies · HEAR"><meta property="og:description" content="Een event is ook communicatie. Wat wil je dat gasten na afloop onthouden, en hoe zorg je dat het programma dat ondersteunt? Maarten werkt al zo&#x27;n 25 jaar a"><meta property="og:url" content="https://hear.nl/communicatieadvies.html"><meta property="og:site_name" content="HEAR"><meta property="og:type" content="website"><meta property="og:locale" content="nl_NL"><meta property="og:image" content="https://hear.nl/img/og/communicatieadvies.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://hear.nl/img/og/communicatieadvies.jpg"><link rel="canonical" href="https://hear.nl/communicatieadvies.html"><link rel="alternate" hreflang="nl" href="https://hear.nl/communicatieadvies.html"><link rel="alternate" hreflang="en" href="https://hear.nl/en/communicatieadvies.html"><link rel="alternate" hreflang="x-default" href="https://hear.nl/communicatieadvies.html"><!--/og--><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="styles.css"></head><body class="pagina">
+<header class="top">
+  <a class="merk" href="index.html" aria-label="HEAR, naar de homepage"><img src="img/logo-white.png" alt="HEAR"></a>
+  <nav class="topnav" aria-label="Hoofdnavigatie">
+    <a href="cases.html">Cases</a>
+    <a href="doelgroepen.html">Voor wie</a>
+    <a href="diensten.html" aria-current="page">Producten</a>
+    <a href="principes.html">Waarden</a>
+    <a href="over-hear.html">Over HEAR</a>
+    <a href="nieuws/">Nieuws</a>
+  </nav>
+  <a class="plan" href="aanvraag.html">Plan een gesprek</a>
+  <a class="taal" href="/en/communicatieadvies.html" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+  <button class="menuknop" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu openen">
+    <span></span><span></span>
+  </button>
+</header>
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Hoofdmenu">
+      <a href="cases.html"><span>Voorbeeldcases</span><small>Events die tot de verbeelding spreken</small></a>
+      <a href="doelgroepen.html"><span>Voor wie is HEAR</span><small>Corporate, venue owners en dance events</small></a>
+      <a href="diensten.html"><span>Producten en diensten</span><small>Licht, geluid, dj-gear en advies</small></a>
+      <a href="principes.html"><span>Waarden</span><small>Wat wij belangrijk vinden</small></a>
+      <a href="over-hear.html"><span>Over HEAR</span><small>Oprichter Maarten stelt zich voor</small></a>
+      <a href="nieuws/"><span>Nieuws</span><small>Nieuwe producten, events en berichten</small></a>
+      <a href="aanvraag.html"><span>Plan een gesprek</span><small>Bel, Teams of Meet: vertel over je event</small></a>
+  </nav>
+</div>
+<script>
+  (function(){
+    var k=document.querySelector('.menuknop'), m=document.getElementById('menu');
+    function zet(open){ k.setAttribute('aria-expanded',open); k.setAttribute('aria-label',open?'Menu sluiten':'Menu openen'); m.hidden=!open; document.body.classList.toggle('menu-open',open); }
+    k.addEventListener('click',function(){ zet(k.getAttribute('aria-expanded')!=='true'); });
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape') zet(false); });
+    // Vegen over de zwarte kop (mobiel): links = volgende, rechts = vorige pagina op dit niveau
+    var x0=null, y0=null, hk=null;  // gedelegeerd: de kop staat verderop in de pagina dan dit script
+    document.addEventListener('touchstart',function(e){ hk=e.target.closest&&e.target.closest('.casehead'); if(!hk) return; x0=e.touches[0].clientX; y0=e.touches[0].clientY; },{passive:true});
+    document.addEventListener('touchend',function(e){
+      if(x0===null||!hk) return; var dx=e.changedTouches[0].clientX-x0, dy=e.changedTouches[0].clientY-y0; x0=null;
+      if(Math.abs(dx)<60||Math.abs(dy)>50) return;
+      var a=hk.querySelector(dx<0?'.zijnav .pijl:last-child':'.zijnav .pijl:first-child'); if(a&&a.href) location.href=a.href;
+    },{passive:true});
+  })();
+</script>
+<main class="wrap">
+<section class="casehead"><a class="crumb" href="diensten.html"><span class="sectie">Producten</span><span class="scheiding" aria-hidden="true">|</span><span class="huidig">Communicatieadvies</span></a><nav class="zijnav" aria-label="Andere categorieën"><a class="pijl" href="special-projects.html" title="Custom dj-sets, playlists en remixes" aria-label="Vorige: Custom dj-sets, playlists en remixes">←</a><span class="bollen"><a href="booth-dj-gear.html" title="Booth en dj-gear"></a><a href="high-end-audio.html" title="High-end audio"></a><a href="atmospheric-lighting.html" title="Sfeerverlichting"></a><a href="dancefloor-lighting.html" title="Dansvloerverlichting"></a><a href="vintage-lighting.html" title="90&#x27;s vintage licht"></a><a href="av-as-a-service.html" title="Advies en AV as a service"></a><a href="artiesten.html" title="Dj&#x27;s, vocalisten en instrumentalisten"></a><a href="special-projects.html" title="Custom dj-sets, playlists en remixes"></a><a href="communicatieadvies.html" title="Communicatieadvies" class="aan" aria-current="page"></a></span><a class="pijl" href="booth-dj-gear.html" title="Booth en dj-gear" aria-label="Volgende: Booth en dj-gear">→</a></nav><h1 class="kernzin">Communicatieadvies rond je event: van boodschap tot aftermovie</h1></section>
+<section class="quick quick-breed intro-met-beeld"><div><p>Een event is ook communicatie. Wat wil je dat gasten na afloop onthouden, en hoe zorg je dat het programma dat ondersteunt? Maarten werkt al zo&#x27;n 25 jaar als corporate communicatiespecialist voor grote organisaties. Die ervaring zet hij in naast licht, geluid en muziek, zodat techniek en boodschap elkaar versterken.</p><p class="knoprij cta-intro"><a class="wa" href="aanvraag.html"><span>Informeer naar de mogelijkheden</span><i aria-hidden="true">→</i></a></p></div><figure><img src="img/diensten/communicatieadvies-maarten.jpg" alt="Maarten Versteeg in een blauw colbert"></figure></section>
+
+<section class="case-sections"><article class="case-section"><h2>ADVIES</h2><div><h3 class="blok-kop">Meedenken over concept, boodschap en programma</h3><p>Wat is het doel van het event, en wat moet er blijven hangen? We denken mee over de opbouw van het programma, de volgorde van sprekers en de overgang van inhoud naar ontmoeting.</p></div></article><article class="case-section"><h2>MIDDELEN</h2><div><h3 class="blok-kop">Van uitnodiging tot presentatie</h3><ul><li>Uitnodigingen en andere communicatiemiddelen rond het event</li><li>Speeches en presentaties: van storyline tot de laatste versie</li><li>Een bedrijfsvideo die je op het event laat zien</li><li>Een aftermovie die het event na afloop laat voortleven</li></ul><p>Video en fotografie maken we samen met partners uit ons netwerk.</p></div></article><article class="case-section"><h2>ZO WERKEN WE</h2><div><p>Communicatieadvies neem je af bij Maarten Versteeg communicatieadvies, los van de huur van licht en geluid via HEAR. Combineren kan en scheelt je tijd in de afstemming, want boodschap en techniek komen dan uit één hand. Het hoeft niet. Kies je voor beide, dan ontvang je twee aparte offertes.</p></div></article></section>
+<nav class="verwijzingen" aria-label="Verder lezen"><a href="corporate.html">Voor wie: corporate →</a><a href="prijs.html">Wat kost audiovisuele ondersteuning van een evenement eigenlijk? →</a></nav>
+</main>
+<footer class="voet">
+  <div class="voet-kolommen">
+    <div class="voet-merk">
+      <img src="img/logo-white.png" alt="HEAR">
+      <p>High End Audio Rental · Amsterdam</p>
+      <p><a href="mailto:maarten@hear.nl">maarten@hear.nl</a><br><a href="tel:+31624560220">+31 6 24560220</a></p>
+      <p class="voet-klein">HEAR is een handelsnaam van Maarten Versteeg communicatieadvies<br>KvK 42181393 · Van Kinsbergenstraat 54, 1057 PT Amsterdam<br><a href="privacy.html">Privacyverklaring</a></p>
+    </div>
+    <nav aria-label="Werk"><p class="label">Werk</p><a href="cases.html">Cases</a><a href="nieuws/">Nieuws</a><a href="over-hear.html">Over HEAR</a></nav>
+    <nav aria-label="Voor wie"><p class="label">Voor wie</p><a href="corporate.html">Corporate</a><a href="venue-owners.html">Venue owners</a><a href="dance-events.html">Dance events</a></nav>
+    <nav aria-label="Producten"><p class="label">Producten</p><a href="booth-dj-gear.html">Booth en dj-gear</a><a href="high-end-audio.html">High-end audio</a><a href="atmospheric-lighting.html">Sfeerverlichting</a><a href="dancefloor-lighting.html">Dansvloerverlichting</a><a href="vintage-lighting.html">90's vintage licht</a><a href="av-as-a-service.html">Advies en AV as a service</a><a href="artiesten.html">Artiesten</a><a href="special-projects.html">Custom dj-sets, playlists en remixes</a>
+          <a href="communicatieadvies.html">Communicatieadvies</a></nav>
+    <nav aria-label="Waarden"><p class="label">Waarden</p><a href="principes.html#samen">Samen</a><a href="principes.html#open">Open</a><a href="principes.html#vakmanschap">Vakmanschap</a><a href="principes.html#warmte">Warme sound</a></nav>
+  </div>
+</footer>
+</body></html>

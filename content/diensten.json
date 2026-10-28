@@ -499,6 +499,48 @@
       ],
       "cta_tekst": "Vraag een mix of playlist aan",
       "cta_bericht": "Hoi Maarten, ik wil graag een mix of playlist op maat aanvragen."
+    },
+    {
+      "bestand": "communicatieadvies.html",
+      "titel": "Communicatieadvies",
+      "kernzin": "Communicatieadvies rond je event: van boodschap tot aftermovie",
+      "beeld": "img/diensten/communicatieadvies-maarten.jpg",
+      "beeld_alt": "Maarten Versteeg in een blauw colbert",
+      "intro": "Een event is ook communicatie. Wat wil je dat gasten na afloop onthouden, en hoe zorg je dat het programma dat ondersteunt? Maarten werkt al zo'n 25 jaar als corporate communicatiespecialist voor grote organisaties. Die ervaring zet hij in naast licht, geluid en muziek, zodat techniek en boodschap elkaar versterken.",
+      "intro_beeld": "img/diensten/communicatieadvies-maarten.jpg",
+      "intro_beeld_alt": "Maarten Versteeg in een blauw colbert",
+      "cta_formulier": "Informeer naar de mogelijkheden",
+      "blokken": [
+        {
+          "label": "Advies",
+          "kop": "Meedenken over concept, boodschap en programma",
+          "tekst": [
+            "Wat is het doel van het event, en wat moet er blijven hangen? We denken mee over de opbouw van het programma, de volgorde van sprekers en de overgang van inhoud naar ontmoeting."
+          ]
+        },
+        {
+          "label": "Middelen",
+          "kop": "Van uitnodiging tot presentatie",
+          "tekst": [],
+          "html_na": "<ul><li>Uitnodigingen en andere communicatiemiddelen rond het event</li><li>Speeches en presentaties: van storyline tot de laatste versie</li><li>Een bedrijfsvideo die je op het event laat zien</li><li>Een aftermovie die het event na afloop laat voortleven</li></ul><p>Video en fotografie maken we samen met partners uit ons netwerk.</p>"
+        },
+        {
+          "label": "Zo werken we",
+          "tekst": [
+            "Communicatieadvies neem je af bij Maarten Versteeg communicatieadvies, los van de huur van licht en geluid via HEAR. Combineren kan en scheelt je tijd in de afstemming, want boodschap en techniek komen dan uit één hand. Het hoeft niet. Kies je voor beide, dan ontvang je twee aparte offertes."
+          ]
+        }
+      ],
+      "links": [
+        {
+          "tekst": "Voor wie: corporate",
+          "href": "corporate.html"
+        },
+        {
+          "tekst": "Wat kost audiovisuele ondersteuning van een evenement eigenlijk?",
+          "href": "prijs.html"
+        }
+      ]
     }
   ]
 }
