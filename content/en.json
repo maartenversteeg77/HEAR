@@ -1488,10 +1488,6 @@
         ">Thinking along earlier, if you want<<"
       ],
       [
-        ">Op verzoek schuift Maarten eerder in het proces aan. Bijvoorbeeld om mee te denken over het concept, het draaiboek of de vertaling naar licht en geluid, op het moment dat het je event helpt. Werkt er een technicus mee, dan plannen we op verzoek een korte online briefing, zodat hij vooraf weet wat er speelt.<",
-        ">On request, Maarten joins earlier in the process. For example to think along about the concept, the run sheet or the translation into light and sound, at the moment it helps your event. If a technician is involved, we schedule a short online briefing on request, so they know beforehand what is going on.<"
-      ],
-      [
         "aria-label=\"Drie cirkels: muziek, communicatie, licht en geluid. Waar ze overlappen: curatie, atmosfeer en brand fit. In het midden jouw event.\"",
         "aria-label=\"Three circles: music, communication, light and sound. Where they overlap: curation, atmosphere and brand fit. In the middle, your event.\""
       ],
@@ -1556,18 +1552,6 @@
         ">Read the article: <a href=\"prijs.html\">What does audiovisual support for an event actually cost?</a>"
       ],
       [
-        ">Communicatie rond je event<",
-        ">Communication around your event<"
-      ],
-      [
-        "<p>Ook voor de communicatie rond je event kun je bij ons terecht: advies over de boodschap, speeches en presentaties, uitnodigingen, een bedrijfsvideo of een aftermovie. <a class=\"inline-pijl\" href=\"communicatieadvies.html\">Meer over communicatieadvies →</a></p>",
-        "<p>For the communication around your event you can also come to us: advice on the message, speeches and presentations, invitations, a corporate video or an aftermovie. <a class=\"inline-pijl\" href=\"communicatieadvies.html\">More about communication advice →</a></p>"
-      ],
-      [
-        "<p>Uiteraard doen we, wanneer nodig, een locatiebezoek vooraf en stemmen we het geluid af op de akoestiek.</p>",
-        "<p>Where needed, we of course visit the venue beforehand and tune the sound to the acoustics.</p>"
-      ],
-      [
         ">Sprekersversterking met draadloze reversmicrofoons en warm geluid voor de borrel of het feest<",
         ">Speech reinforcement with wireless lapel microphones and warm sound for drinks or the party<"
       ],
@@ -1586,6 +1570,22 @@
       [
         ">Boodschap, speeches, uitnodigingen en video<",
         ">Message, speeches, invitations and video<"
+      ],
+      [
+        ">Op verzoek schuift Maarten eerder in het proces aan, om mee te denken over het concept, het draaiboek en de vertaling naar licht en geluid. Ook voor advies over de communicatie rond je event kun je bij ons terecht:<",
+        ">On request, Maarten joins earlier in the process, to think along about the concept, the run sheet and the translation into light and sound. You can also come to us for advice on the communication around your event:<"
+      ],
+      [
+        "<li>Uitnodigingen en andere middelen</li><li>Speeches en presentaties</li><li>Bedrijfsvideo of aftermovie</li>",
+        "<li>Invitations and other materials</li><li>Speeches and presentations</li><li>Corporate video or aftermovie</li>"
+      ],
+      [
+        ">Meer over communicatieadvies →<",
+        ">More about communication advice →<"
+      ],
+      [
+        ">Waar nodig doen we vooraf een locatiebezoek en stemmen we het geluid af op de akoestiek. Werkt er een technicus mee, dan plannen we een korte online briefing, zodat hij vooraf weet wat er speelt.<",
+        ">Where needed, we visit the venue beforehand and tune the sound to the acoustics. If a technician is involved, we schedule a short online briefing so they know in advance what is going on.<"
       ]
     ],
     "bijzondere-eventlocaties.html": [
@@ -2538,18 +2538,6 @@
         "data-fout=\"Sending failed. Email us at maarten@hear.nl or call +31 6 24560220.\""
       ],
       [
-        "<legend>Ik wil</legend>",
-        "<legend>I would like</legend>"
-      ],
-      [
-        "<span>Een live dj</span>",
-        "<span>A live DJ</span>"
-      ],
-      [
-        "<span>Een live dj op vinyl</span>",
-        "<span>A live DJ on vinyl</span>"
-      ],
-      [
         "<span>Een playlist afgestemd op mijn zaak</span>",
         "<span>A playlist tailored to my venue</span>"
       ],
@@ -2616,6 +2604,14 @@
       [
         ">RADIO-MIXES, EDITS EN PRODUCTIES<",
         ">RADIO MIXES, EDITS AND PRODUCTIONS<"
+      ],
+      [
+        "<legend>Ik wil meer weten over:</legend>",
+        "<legend>I would like to know more about:</legend>"
+      ],
+      [
+        "<span>Een live dj (vinyl of digitaal)</span>",
+        "<span>A live DJ (vinyl or digital)</span>"
       ]
     ],
     "principes.html": [
