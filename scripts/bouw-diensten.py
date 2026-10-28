@@ -87,7 +87,7 @@ for i, pg in enumerate(data["paginas"]):
 {intro}
 {producten}
 {blokken}
-<nav class="verwijzingen" aria-label="Verder lezen">{links}</nav>
+{('<nav class="verwijzingen" aria-label="Verder lezen">'+links+'</nav>') if links else ''}
 </main>'''
     doc = f'''<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{e(beschrijving[:155])}"><title>{e(pg["titel"])} · HEAR</title><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="styles.css"></head><body class="pagina">
 {kop}

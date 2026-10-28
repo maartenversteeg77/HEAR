@@ -396,3 +396,5 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Bestandsnamen (corporate.html, venue-owners.html) blijven, zodat bestaande links werken. Aangepast in homepageblok, menu Voor wie, footer, paginatitels, zijnavigatie, overzicht en caselabels.
 - Korte URL voor advertenties: hear.nl/coffeecuts (ook /coffee-cuts, /en/coffeecuts) stuurt door naar het Coffee cuts-blok; utm-parameters blijven behouden. Tijdelijke doorverwijzing (302), zodat het doel later een eigen pagina kan worden.
 - Homepage, mobiel: Dj-gear-beeld (Euphonia) krijgt een staande uitsnede zonder de groene golf onderaan, zodat die niet met de witte knop concurreert; de rode ruimte bovenaan valt achter het keuzepaneel.
+- Custom dj-mix of playlist: Radio-mixes noemt nu de genres soulful house, deephouse, afro, latin, disco en houseclassics; de links onderaan naar de case Radio-mixes en Case: dj-sets zijn weg (generieker, niet dieper).
+- Case Radio-mixes noemt de naam Coffee cuts en linkt met "Bekijk Coffee cuts →" naar het Coffee cuts-blok.
