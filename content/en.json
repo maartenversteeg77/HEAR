@@ -475,16 +475,12 @@
         "<span class=\"pl-k-titel\">DJ gear</span><small class=\"pl-k-sub\">CDJ-3000X, V10, Euphonia, WARM2 and booth</small>"
       ],
       [
-        ">Bekijk alle producten en diensten →</a>",
-        ">See all products and services →</a>"
+        "<span>Bekijk dj-gear</span> →</a>",
+        "<span>See DJ gear</span> →</a>"
       ],
       [
-        "<span class=\"pl-bekijk\"><span>Bekijk alle dj-gear</span>",
-        "<span class=\"pl-bekijk\"><span>See all DJ gear</span>"
-      ],
-      [
-        "data-bekijk=\"Bekijk alle dj-gear\"><span class=\"pl-titel\">Dj-gear</span><small>CDJ-3000X, V10, Euphonia, WARM2 en booth</small>",
-        "data-bekijk=\"See all DJ gear\"><span class=\"pl-titel\">DJ gear</span><small>CDJ-3000X, V10, Euphonia, WARM2 and booth</small>"
+        "data-bekijk=\"Bekijk dj-gear\"><span class=\"pl-titel\">Dj-gear</span><small>CDJ-3000X, V10, Euphonia, WARM2 en booth</small>",
+        "data-bekijk=\"See DJ gear\"><span class=\"pl-titel\">DJ gear</span><small>CDJ-3000X, V10, Euphonia, WARM2 and booth</small>"
       ],
       [
         "alt=\"AlphaTheta Euphonia rotary mixer in rood licht\"",
@@ -495,8 +491,8 @@
         "data-i=\"0\">DJ gear</button>"
       ],
       [
-        "data-bekijk=\"Bekijk alle geluid\"><span class=\"pl-titel\">Geluid</span><small>RCF KX en Brooklyn Audio</small>",
-        "data-bekijk=\"See all sound\"><span class=\"pl-titel\">Sound</span><small>RCF KX and Brooklyn Audio</small>"
+        "data-bekijk=\"Bekijk geluid\"><span class=\"pl-titel\">Geluid</span><small>RCF KX en Brooklyn Audio</small>",
+        "data-bekijk=\"See sound\"><span class=\"pl-titel\">Sound</span><small>RCF KX and Brooklyn Audio</small>"
       ],
       [
         "alt=\"RCF-luidsprekers in een zaal met truss\"",
@@ -577,6 +573,18 @@
       [
         "data-i=\"7\">Sets en playlists</button>",
         "data-i=\"7\">Sets and playlists</button>"
+      ],
+      [
+        "data-bekijk=\"Bekijk alle producten en diensten\"><span class=\"pl-titel\">Alle producten en diensten</span><small>het complete aanbod</small>",
+        "data-bekijk=\"See all products and services\"><span class=\"pl-titel\">All products and services</span><small>the complete range</small>"
+      ],
+      [
+        "alt=\"Lichtbundels boven een podium\"",
+        "alt=\"Light beams above a stage\""
+      ],
+      [
+        "data-i=\"8\">Alle producten en diensten</button>",
+        "data-i=\"8\">All products and services</button>"
       ]
     ],
     "cases.html": [
