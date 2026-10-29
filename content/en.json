@@ -800,28 +800,8 @@
         "<p>High End Audio Rental · Amsterdam</p>"
       ],
       [
-        "<section class=\"strook\" aria-label=\"Voor wie en wat\">",
-        "<section class=\"strook\" aria-label=\"Who and what\">"
-      ],
-      [
-        "<a href=\"bijzondere-eventlocaties.html\">AV voor venues</a>",
-        "<a href=\"bijzondere-eventlocaties.html\">AV for venues</a>"
-      ],
-      [
-        "<a href=\"high-end-audio.html\">Geluidssystemen</a>",
-        "<a href=\"high-end-audio.html\">Sound systems</a>"
-      ],
-      [
         "<a href=\"booth-dj-gear.html\">Dj-gear</a>",
         "<a href=\"booth-dj-gear.html\">DJ gear</a>"
-      ],
-      [
-        "<a href=\"diensten.html\">Licht</a>",
-        "<a href=\"diensten.html\">Lighting</a>"
-      ],
-      [
-        "<a href=\"artiesten.html\">Dj's</a>",
-        "<a href=\"artiesten.html\">DJs</a>"
       ],
       [
         ">Producten en diensten</h2>",
@@ -994,6 +974,14 @@
       [
         "<p class=\"over-label\" aria-hidden=\"true\">Over HEAR</p>",
         "<p class=\"over-label\" aria-hidden=\"true\">About HEAR</p>"
+      ],
+      [
+        "<section class=\"strook\" aria-label=\"Aanbod\">",
+        "<section class=\"strook\" aria-label=\"What we offer\">"
+      ],
+      [
+        "<a href=\"high-end-audio.html\">Geluid</a>",
+        "<a href=\"high-end-audio.html\">Sound</a>"
       ]
     ],
     "cases.html": [
