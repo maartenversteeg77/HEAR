@@ -374,3 +374,5 @@ a.mail-ook,.quick.quick-breed p .mail-ook,.cta-brug .mail-ook{font:300 14px/1.3 
 .strook{justify-content:flex-start}
 @media (max-width:760px){.strook .strook-wat{flex-wrap:wrap;justify-content:flex-start;gap:4px 10px;white-space:normal}.strook .strook-wat a{white-space:nowrap}}
 @media (max-width:760px){.strook .strook-wat span{display:none}.strook .strook-wat{gap:6px 20px}}
+/* hamburgermenu: Plan een gesprek bovenaan, in koraal */
+.menu .menu-plan span{color:var(--koraal)}

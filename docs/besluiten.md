@@ -429,3 +429,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Intro custom-dj-mix ("Bij HEAR huur je niet alleen…") weg: bezoekers via menu weten het al, bezoekers via /coffeecuts springen naar het blok. Zoekomschrijving is nu het begin van de Coffee cuts-tekst.
 - "(AI-)tracks" met een onzichtbaar woordverbindingsteken (U+2060) zodat het niet na het koppelteken afbreekt.
 - Homepage, strook onder de hero: witte doelgroepenregel weg (staat al in hero en "Voor wie is HEAR", en had nog de oude naam "AV voor venues"); alleen de turquoise aanbodregel blijft: Geluid · Dj-gear · Licht · Dj's · Coffee cuts · Communicatieadvies. Op mobiel twee regels zonder scheidingspunten.
+- Navigatie (29 okt): "Waarden" uit het hamburgermenu én de desktopmenubalk (hoort bij Over HEAR; ondertitel Over HEAR: "Founder story en waarden"). "Plan een gesprek" staat bovenaan het hamburgermenu, in koraal.

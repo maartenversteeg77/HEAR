@@ -618,3 +618,4 @@ button.knop:disabled{opacity:.6;cursor:wait}
 .meedenk-lijst{margin:4px 0 18px;padding-left:1.2em}
 .meedenk-lijst li{margin:4px 0;color:var(--tekstgrijs)}
 .meedenk-lijst li::marker{color:var(--koraal)}
+.menu .menu-plan span{color:var(--koraal)}
