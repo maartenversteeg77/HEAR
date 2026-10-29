@@ -481,8 +481,8 @@
           ],
           "html_na": "<p class=\"knoprij\"><a class=\"link\" href=\"https://soundcloud.com/maartenversteeg\" target=\"_blank\" rel=\"noopener\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M1.5 14.5h1v3h-1zm2-1.5h1v4.5h-1zm2-1.5h1v6h-1zm2-2h1v8h-1zm2 .5h1v7.5h-1zm2-2h1v9.5h-1zm2 .5h1.5v9H13.5zm3.5-1.3a4.6 4.6 0 0 1 2 .1 4 4 0 0 1 3.5 4 4 4 0 0 1-4 4H15.5V8.4a3 3 0 0 1 1.5-1.2z\"/></svg>Deep Radio sets op SoundCloud<i aria-hidden=\"true\">→</i></a></p>",
           "id": "radio-mixes",
-          "beeld": "assets/radio-deep-radio.png",
-          "beeld_alt": "Aankondiging van een dj-set van Maarten Versteeg op Deep Radio"
+          "_beeld_bewaard": "assets/radio-deep-radio.png",
+          "_beeld_alt_bewaard": "Aankondiging van een dj-set van Maarten Versteeg op Deep Radio"
         }
       ],
       "links": [],
