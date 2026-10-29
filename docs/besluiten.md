@@ -433,3 +433,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Homepage-afsluiter ingekort: kop "Vertel wat je voor ogen hebt." en alinea weg; alleen knop "Plan een gesprek" en "Korte vraag? Stuur een appje" boven de footer (laatste uitgang voor wie helemaal doorscrolt).
 - Footer opgeschoond (29 okt): e-mail en telefoon op één regel; juridisch blok klein met bedrijfsnaam, KvK en adres die niet midden in een naam afbreken, privacyverklaring op eigen regel. Telefoonnummer blijft (ACM: verplicht gegeven bij verkoop aan consumenten; staat ook al in de WhatsApp-links). Btw-nummer van de BV volgt nog (verplicht voor dienstverleners).
 - Coffee cuts: onder de bestelknop kleine regel "Vertel over je zaak en smaak en ontvang een voorstel." (voorstel i.p.v. offerte: lichter voor horeca).
+- Coffee cuts-formulier: optie "Een 2-uurs dj-mix voor jouw merk of locatie" wordt "Een doorlopende dj-mix om te streamen".
