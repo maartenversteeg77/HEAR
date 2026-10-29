@@ -427,3 +427,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Intro custom-dj-mix: "Elke lijst is uniek." geschrapt (29 okt).
 - Coffee cuts: "Aangeleverd op Spotify of Tidal." na "classics"; knop heet "Bestel jouw eigen Coffee cuts" (29 okt).
 - Intro custom-dj-mix ("Bij HEAR huur je niet alleen…") weg: bezoekers via menu weten het al, bezoekers via /coffeecuts springen naar het blok. Zoekomschrijving is nu het begin van de Coffee cuts-tekst.
+- "(AI-)tracks" met een onzichtbaar woordverbindingsteken (U+2060) zodat het niet na het koppelteken afbreekt.
