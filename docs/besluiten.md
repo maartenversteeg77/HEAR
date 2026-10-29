@@ -430,3 +430,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - "(AI-)tracks" met een onzichtbaar woordverbindingsteken (U+2060) zodat het niet na het koppelteken afbreekt.
 - Homepage, strook onder de hero: witte doelgroepenregel weg (staat al in hero en "Voor wie is HEAR", en had nog de oude naam "AV voor venues"); alleen de turquoise aanbodregel blijft: Geluid · Dj-gear · Licht · Dj's · Coffee cuts · Communicatieadvies. Op mobiel twee regels zonder scheidingspunten.
 - Navigatie (29 okt): "Waarden" uit het hamburgermenu én de desktopmenubalk (hoort bij Over HEAR; ondertitel Over HEAR: "Founder story en waarden"). "Plan een gesprek" staat bovenaan het hamburgermenu, in koraal.
+- Homepage-afsluiter ingekort: kop "Vertel wat je voor ogen hebt." en alinea weg; alleen knop "Plan een gesprek" en "Korte vraag? Stuur een appje" boven de footer (laatste uitgang voor wie helemaal doorscrolt).
