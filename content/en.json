@@ -2594,8 +2594,12 @@
         "<p>Whether you run a coffee bar or, say, a cocktail bar: you want warm music that fits the identity of your venue. No generic (AI) tracks.</p>"
       ],
       [
-        "<p>Met Coffee cuts stellen we een playlist samen voor jouw zaak, uit onze eigen collectie van nieuwe releases en classics. Je ontvangt hem op <span class=\"merk merk-spotify\">Spotify</span> of <span class=\"merk merk-tidal\">Tidal</span>. Gebruik je een zakelijke streamingdienst zoals Soundtrack (voorheen Tunify), dan kun je hem daaraan koppelen. Liever een live dj? Dat kan ook.</p>",
-        "<p>With Coffee cuts we put together a playlist for your venue, from our own collection of new releases and classics. You receive it on <span class=\"merk merk-spotify\">Spotify</span> or <span class=\"merk merk-tidal\">Tidal</span>. If you use a business streaming service such as Soundtrack (formerly Tunify), you can connect it there. Rather have a live DJ? That works too.</p>"
+        "<p>Met Coffee cuts stellen we een playlist samen voor locaties, uit onze eigen collectie van nieuwe releases en classics. Je ontvangt hem op <span class=\"merk merk-spotify\">Spotify</span> of <span class=\"merk merk-tidal\">Tidal</span>.</p>",
+        "<p>With Coffee cuts we put together a playlist for venues, from our own collection of new releases and classics. You receive it on <span class=\"merk merk-spotify\">Spotify</span> or <span class=\"merk merk-tidal\">Tidal</span>.</p>"
+      ],
+      [
+        "<p>Gebruik een zakelijke streamingdienst zoals Soundtrack (voorheen Tunify) om de playlist te laden. Liever een live dj? Dat kan ook.</p>",
+        "<p>Use a business streaming service such as Soundtrack (formerly Tunify) to load the playlist. Rather have a live DJ? That works too.</p>"
       ]
     ],
     "principes.html": [
