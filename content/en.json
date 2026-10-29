@@ -2502,8 +2502,8 @@
         ">DJ sets<"
       ],
       [
-        ">Of je nu een koffiebar hebt of bijvoorbeeld een cocktailbar: je wilt warme muziek die past bij de identiteit van je zaak. Geen generieke (AI-⁠)tracks. Met Coffee cuts stellen we een playlist samen voor jouw zaak, uit onze eigen collectie van nieuwe releases en classics. Aangeleverd op Spotify of Tidal. Of wil je liever een live dj?<",
-        ">Whether you run a coffee bar or, say, a cocktail bar: you want warm music that fits the identity of your venue. No generic (AI) tracks. With Coffee cuts we put together a playlist for your venue, from our own collection of new releases and classics. Delivered on Spotify or Tidal. Or would you rather have a live DJ?<"
+        ">Of je nu een koffiebar hebt of bijvoorbeeld een cocktailbar: je wilt warme muziek die past bij de identiteit van je zaak. Geen generieke (AI-⁠)tracks. Met Coffee cuts stellen we een playlist samen voor jouw zaak, uit onze eigen collectie van nieuwe releases en classics. Aangeleverd op Spotify of Tidal. Of wil je liever een live dj? Je kunt kiezen voor een playlist die eenmalig wordt samengesteld, of een levende playlist waar regelmatig nummers worden toegevoegd en gewisseld. Het is ook mogelijk om meerdere playlists te bestellen, bijvoorbeeld voor overdag en in de avond.<",
+        ">Whether you run a coffee bar or, say, a cocktail bar: you want warm music that fits the identity of your venue. No generic (AI) tracks. With Coffee cuts we put together a playlist for your venue, from our own collection of new releases and classics. Delivered on Spotify or Tidal. Or would you rather have a live DJ? You can choose a playlist that is put together once, or a living playlist where tracks are regularly added and swapped. You can also order several playlists, for example for daytime and evening.<"
       ],
       [
         ">Ik wil ook Coffee cuts<",
@@ -2516,10 +2516,6 @@
       [
         "data-fout=\"Versturen lukte niet. Mail ons op maarten@hear.nl of bel +31 6 24560220.\"",
         "data-fout=\"Sending failed. Email us at maarten@hear.nl or call +31 6 24560220.\""
-      ],
-      [
-        "<span>Een playlist afgestemd op mijn zaak</span>",
-        "<span>A playlist tailored to my venue</span>"
       ],
       [
         "<span>Lengte playlist (uur)</span>",
@@ -2554,10 +2550,6 @@
         "alt=\"Coffee cuts: a glass of coffee on a vinyl record in the sun\""
       ],
       [
-        "<span>Een doorlopende dj-mix om te streamen</span>",
-        "<span>A continuous DJ mix for streaming</span>"
-      ],
-      [
         ">Maarten maakt regelmatig mixen voor Deep Radio: soulful house, deephouse, afro, latin, disco en houseclassics, twee uur lang. Overweeg je een boeking? Luister dan eens op SoundCloud. Eigen edits, remixes en producties, analoog gemasterd, duiken op in sets, in het netwerk van dj&#x27;s waarmee we werken en in toekomstige releases.<",
         ">Maarten regularly makes mixes for Deep Radio: soulful house, deep house, afro, latin, disco and house classics, two hours long. Considering a booking? Have a listen on SoundCloud. Our own edits, remixes and productions, mastered in analogue, turn up in sets, in the network of DJs we work with and in future releases.<"
       ],
@@ -2570,10 +2562,6 @@
         "<legend>I would like to know more about:</legend>"
       ],
       [
-        "<span>Een live dj (vinyl of digitaal)</span>",
-        "<span>A live DJ (vinyl or digital)</span>"
-      ],
-      [
         "name=\"description\" content=\"Of je nu een koffiebar hebt of bijvoorbeeld een cocktailbar: je wilt warme muziek die past bij de identiteit van je zaak. Geen generieke (AI-⁠)tracks. Met \"",
         "name=\"description\" content=\"Whether you run a coffee bar or, say, a cocktail bar: you want warm music that fits the identity of your venue. No generic (AI) tracks.\""
       ],
@@ -2584,6 +2572,22 @@
       [
         "<span>Beschrijf de sfeer in je zaak, of noem een plek waar het op moet lijken</span>",
         "<span>Describe the atmosphere in your venue, or name a place it should feel like</span>"
+      ],
+      [
+        "<span>Een of meer playlists afgestemd op mijn zaak</span>",
+        "<span>One or more playlists tailored to my venue</span>"
+      ],
+      [
+        "<span>Een of meer live playlists met regelmatige updates</span>",
+        "<span>One or more live playlists with regular updates</span>"
+      ],
+      [
+        "<span>Een doorlopende dj-mix om te streamen</span>",
+        "<span>A continuous DJ mix for streaming</span>"
+      ],
+      [
+        "<span>Een live dj (vinyl of digitaal)</span>",
+        "<span>A live DJ (vinyl or digital)</span>"
       ]
     ],
     "principes.html": [
