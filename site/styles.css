@@ -621,3 +621,4 @@ button.knop:disabled{opacity:.6;cursor:wait}
 .menu .menu-plan span{color:var(--koraal)}
 .cc-hint{margin:-6px 0 0;font-size:14px;color:var(--tekstgrijs)}
 .case-section p.cc-hint{font-size:14px!important;line-height:1.5;margin:10px 0 0!important;color:var(--tekstgrijs);opacity:.85}
+.case-section .hoe-kop{margin:26px 0 8px}
