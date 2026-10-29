@@ -262,8 +262,8 @@
       "aria-label=\"Steps of the purchasing process\""
     ],
     [
-      "<p class=\"voet-klein\">HEAR is een handelsnaam van Maarten Versteeg communicatie advies B.V.<br>",
-      "<p class=\"voet-klein\">HEAR is a trade name of Maarten Versteeg communicatie advies B.V.<br>"
+      "<span class=\"geen-breuk\">HEAR is een handelsnaam van Maarten Versteeg communicatie advies B.V.</span>",
+      "<span class=\"geen-breuk\">HEAR is a trade name of Maarten Versteeg communicatie advies B.V.</span>"
     ],
     [
       "<a href=\"privacy.html\">Privacyverklaring</a>",
