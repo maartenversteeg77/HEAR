@@ -13,7 +13,7 @@ const VELDEN = [
   ["gasten", "Aantal gasten"], ["doelgroep", "Doelgroep"], ["diensten", "Diensten"], ["diensten_anders", "Diensten, anders"], ["communicatie", "Communicatie"], ["communicatie_anders", "Communicatie, anders"],
   ["ruimte", "Ruimte"], ["concept", "Concept / programma"], ["bericht", "Bericht"],
   ["budget", "Richtbudget"],
-  ["cc_wens", "Coffee cuts, meer weten over"], ["cc_lengte", "Lengte playlist (uur)"], ["cc_sfeer", "Sfeer in de zaak"], ["cc_lijkt", "Moet lijken op"], ["cc_nummers", "Voorbeelden van nummers"],
+  ["cc_wens", "Coffee cuts, meer weten over"], ["cc_lengte", "Lengte playlist (uur)"], ["cc_sfeer", "Sfeer in de zaak / voorbeeldplek"], ["cc_lijkt", "Moet lijken op"], ["cc_nummers", "Voorbeelden van nummers"],
 ];
 
 function schoon(v) { return String(v || "").replace(/\r/g, "").trim().slice(0, 4000); }

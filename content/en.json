@@ -2526,14 +2526,6 @@
         "<span>Playlist length (hours)</span>"
       ],
       [
-        "<span>Beschrijf de sfeer in je zaak</span>",
-        "<span>Describe the atmosphere in your venue</span>"
-      ],
-      [
-        "<span>Noem een locatie of sfeer waar het op moet lijken</span>",
-        "<span>Name a place or atmosphere it should resemble</span>"
-      ],
-      [
         "<span>Geef een aantal voorbeelden van nummers die je vindt passen</span>",
         "<span>Give a few examples of tracks you think fit</span>"
       ],
@@ -2563,7 +2555,7 @@
       ],
       [
         "<span>Een doorlopende dj-mix om te streamen</span>",
-        "<span>A continuous DJ mix to stream</span>"
+        "<span>A continuous DJ mix for streaming</span>"
       ],
       [
         ">Maarten maakt regelmatig mixen voor Deep Radio: soulful house, deephouse, afro, latin, disco en houseclassics, twee uur lang. Overweeg je een boeking? Luister dan eens op SoundCloud. Eigen edits, remixes en producties, analoog gemasterd, duiken op in sets, in het netwerk van dj&#x27;s waarmee we werken en in toekomstige releases.<",
@@ -2588,6 +2580,10 @@
       [
         ">Vertel over je zaak en smaak en ontvang een voorstel.<",
         ">Tell us about your venue and taste and receive a proposal.<"
+      ],
+      [
+        "<span>Beschrijf de sfeer in je zaak, of noem een plek waar het op moet lijken</span>",
+        "<span>Describe the atmosphere in your venue, or name a place it should feel like</span>"
       ]
     ],
     "principes.html": [
