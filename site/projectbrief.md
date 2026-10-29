@@ -37,5 +37,5 @@ De gedachte is: hoogwaardige, festivalwaardige audiovisuele techniek toegankelij
 
 ## Site
 
-Homepage: https://rococo-kashata-6666fc.netlify.app/
-Deze briefing: https://rococo-kashata-6666fc.netlify.app/projectbrief.md
+Homepage: https://hear.nl/
+Deze briefing: https://hear.nl/projectbrief.md
