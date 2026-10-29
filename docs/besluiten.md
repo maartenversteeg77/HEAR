@@ -426,3 +426,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - 29 okt: Deep Radio-beeld weg uit het blok "Radio-mixes, edits en producties" op custom-dj-mix (Coffee cuts-pagina). Bewaard om terug te zetten: in content/diensten.json staan bij dat blok "_beeld_bewaard": "assets/radio-deep-radio.png" en "_beeld_alt_bewaard"; terugzetten = de velden hernoemen naar "beeld" en "beeld_alt" en bouw-diensten, bouw-en en bouw-og draaien (Engelse alt staat al als globaal paar).
 - Intro custom-dj-mix: "Elke lijst is uniek." geschrapt (29 okt).
 - Coffee cuts: "Aangeleverd op Spotify of Tidal." na "classics"; knop heet "Bestel jouw eigen Coffee cuts" (29 okt).
+- Intro custom-dj-mix ("Bij HEAR huur je niet alleen…") weg: bezoekers via menu weten het al, bezoekers via /coffeecuts springen naar het blok. Zoekomschrijving is nu het begin van de Coffee cuts-tekst.
