@@ -700,6 +700,74 @@
     [
       "alt=\"Aankondiging van een dj-set van Maarten Versteeg op Deep Radio\"",
       "alt=\"Announcement of a DJ set by Maarten Versteeg on Deep Radio\""
+    ],
+    [
+      "<span class=\"ps-tab-t\">Alle producten</span>",
+      "<span class=\"ps-tab-t\">All products</span>"
+    ],
+    [
+      "aria-label=\"Open het overzicht van producten en diensten\"",
+      "aria-label=\"Open the overview of products and services\""
+    ],
+    [
+      "<span class=\"ps-titel\">Producten en diensten</span>",
+      "<span class=\"ps-titel\">Products and services</span>"
+    ],
+    [
+      "id=\"ps\" aria-label=\"Producten en diensten\"",
+      "id=\"ps\" aria-label=\"Products and services\""
+    ],
+    [
+      "class=\"ps-dicht\" type=\"button\" aria-label=\"Sluiten\"",
+      "class=\"ps-dicht\" type=\"button\" aria-label=\"Close\""
+    ],
+    [
+      "<span class=\"ps-k\">Producten</span>",
+      "<span class=\"ps-k\">Products</span>"
+    ],
+    [
+      "<span class=\"ps-k\">Diensten</span>",
+      "<span class=\"ps-k\">Services</span>"
+    ],
+    [
+      "<span class=\"ps-t\">Dj-gear</span>",
+      "<span class=\"ps-t\">DJ gear</span>"
+    ],
+    [
+      "<span class=\"ps-t\">Geluid</span>",
+      "<span class=\"ps-t\">Sound</span>"
+    ],
+    [
+      "<span class=\"ps-t\">Sfeerlicht</span>",
+      "<span class=\"ps-t\">Ambient lighting</span>"
+    ],
+    [
+      "<span class=\"ps-t\">Dansvloerlicht</span>",
+      "<span class=\"ps-t\">Dance floor lighting</span>"
+    ],
+    [
+      "<span class=\"ps-t\">90&#x27;s vintage licht</span>",
+      "<span class=\"ps-t\">90s vintage lighting</span>"
+    ],
+    [
+      "<span class=\"ps-t\">Communicatieadvies</span>",
+      "<span class=\"ps-t\">Communication advice</span>"
+    ],
+    [
+      "<span class=\"ps-t\">Dj&#x27;s en artiesten</span>",
+      "<span class=\"ps-t\">DJs and artists</span>"
+    ],
+    [
+      "<span class=\"ps-t\">Coffee cuts en custom dj-mixes</span>",
+      "<span class=\"ps-t\">Coffee cuts and custom DJ mixes</span>"
+    ],
+    [
+      "<span class=\"ps-t\">Aankoopadvies licht en geluid</span>",
+      "<span class=\"ps-t\">Purchase advice for light and sound</span>"
+    ],
+    [
+      "<span class=\"ps-t\">Overzicht van alles</span>",
+      "<span class=\"ps-t\">See everything</span>"
     ]
   ],
   "cases_json": {

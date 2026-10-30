@@ -59,6 +59,21 @@ def zijnav(i):
     return (f'<nav class="zijnav" aria-label="Andere categorieën"><a class="pijl" href="{e(v["bestand"])}" title="{e(v["titel"])}" aria-label="Vorige: {e(v["titel"])}">←</a>'
             f'<span class="bollen">{bollen}</span><a class="pijl" href="{e(n["bestand"])}" title="{e(n["titel"])}" aria-label="Volgende: {e(n["titel"])}">→</a></nav>')
 
+# Uitschuifpaneel "Alle producten" (alleen desktop, besluit 30 okt 2026): tab links, paneel schuift over de pagina. Gedrag in site/ps.js.
+DIENSTEN = {"communicatieadvies.html", "artiesten.html", "custom-dj-mix.html", "aankoopadvies.html"}
+def paneel(i):
+    def lijst(items):
+        return "".join(f'<a href="{e(it["bestand"])}"{AAN if it is volgorde[i] else ""}><span class="ps-t">{e(it["titel"])}</span></a>' for it in items)
+    prod = [it for it in volgorde if it["bestand"] not in DIENSTEN]
+    dien = [it for it in volgorde if it["bestand"] in DIENSTEN]
+    return ('<button class="ps-tab" type="button" aria-expanded="false" aria-controls="ps" aria-label="Open het overzicht van producten en diensten"><span class="ps-tab-t">Alle producten</span><i aria-hidden="true">›</i></button>'
+            '<div class="ps-scherm" hidden></div>'
+            '<aside class="ps" id="ps" aria-label="Producten en diensten" hidden><div class="ps-kop"><span class="ps-titel">Producten en diensten</span><button class="ps-dicht" type="button" aria-label="Sluiten">×</button></div>'
+            f'<div class="ps-groep"><span class="ps-k">Producten</span>{lijst(prod)}</div>'
+            f'<div class="ps-groep"><span class="ps-k">Diensten</span>{lijst(dien)}</div>'
+            '<a class="ps-alles" href="diensten.html"><span class="ps-t">Overzicht van alles</span> →</a></aside>'
+            '<script src="ps.js" defer></script>')
+
 for i, pg in enumerate(data["paginas"]):
     pos = f' style="object-position:{e(pg["beeld_positie"])}"' if pg.get("beeld_positie") else ""
     # intro direct onder de kop, dan de productrij
@@ -95,6 +110,7 @@ for i, pg in enumerate(data["paginas"]):
     doc = f'''<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{e(beschrijving[:155])}"><title>{e(pg["titel"])} · HEAR</title><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="styles.css"></head><body class="pagina">
 {kop}
 {main}
+{paneel(i)}
 {voet}
 </body></html>'''
     (site / pg["bestand"]).write_text(doc)

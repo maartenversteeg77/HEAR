@@ -632,3 +632,28 @@ button.knop:disabled{opacity:.6;cursor:wait}
 .hoe-lijst li{margin:6px 0;color:var(--tekstgrijs)}
 .hoe-lijst li::marker{color:var(--koraal)}
 .case-section h3.blok-kop.hoe-kop{margin:36px 0 8px}
+
+/* ---------- uitschuifpaneel "Alle producten" op productpagina's (alleen desktop, besluit 30 okt 2026) ---------- */
+.ps-tab,.ps,.ps-scherm{display:none}
+@media (min-width:1101px){
+  .ps-tab{display:flex;position:fixed;left:0;top:50%;transform:translateY(-50%);z-index:40;flex-direction:column;align-items:center;gap:10px;padding:18px 9px;border:0;border-radius:0 6px 6px 0;background:var(--koraal);color:var(--zwart);cursor:pointer;box-shadow:2px 2px 12px rgba(0,0,0,.22);font:600 12px/1 var(--tekst)}
+  .ps-tab-t{writing-mode:vertical-rl;transform:rotate(180deg);letter-spacing:.18em;text-transform:uppercase}
+  .ps-tab i{font-style:normal;font-size:20px;line-height:1}
+  .ps-tab:focus-visible{outline:2px solid var(--wit);outline-offset:2px}
+  .ps-scherm{display:block;position:fixed;inset:0;z-index:41;background:rgba(0,0,0,.35);opacity:0;transition:opacity .3s}
+  .ps-scherm.open{opacity:1}
+  .ps{display:block;position:fixed;left:0;top:0;bottom:0;width:320px;z-index:42;overflow-y:auto;background:var(--zwart);padding:40px 32px;transform:translateX(-100%);transition:transform .3s ease}
+  .ps.open{transform:none;box-shadow:8px 0 40px rgba(0,0,0,.45)}
+  .ps[hidden],.ps-scherm[hidden]{display:none}
+  .ps-kop{display:flex;justify-content:space-between;align-items:center;margin-bottom:36px;color:var(--wit);font:600 12px/1 var(--tekst);letter-spacing:.18em;text-transform:uppercase}
+  .ps-titel{white-space:nowrap}
+  .ps-dicht{width:32px;height:32px;border:1px solid #555;border-radius:50%;background:none;color:var(--wit);font-size:18px;line-height:1;cursor:pointer}
+  .ps-dicht:hover{border-color:var(--koraal);color:var(--koraal)}
+  .ps-groep{margin-bottom:28px}
+  .ps-k{display:block;margin-bottom:10px;color:#8a8a8a;font:600 11px/1 var(--tekst);letter-spacing:.18em;text-transform:uppercase}
+  .ps a{display:block;padding:7px 0 7px 12px;border-left:2px solid transparent;color:var(--wit);text-decoration:none;font:400 15px/1.35 var(--tekst)}
+  .ps a:hover{color:var(--koraal)}
+  .ps a.aan{color:var(--koraal);border-left-color:var(--koraal)}
+  .ps a.ps-alles{margin-top:8px;color:#aaa;font-size:13px}
+}
+@media (min-width:1101px) and (prefers-reduced-motion:reduce){.ps,.ps-scherm{transition:none}}
