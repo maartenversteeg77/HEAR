@@ -20,8 +20,8 @@ def A(nl, en):  # attribuutwaarde (placeholder, aria-label)
 TITEL = "Aanvraag"
 KOP = "Vertel over je event"
 MAIL = '<a href="mailto:maarten@hear.nl">maarten@hear.nl</a>'
-INTRO_HTML = "Laat weten hoe en wanneer je wilt praten. Daarna kun je, als je wilt, alvast iets over je event vertellen. Liever mailen? Dat kan ook: " + MAIL + "."
-paren.append((INTRO_HTML, "Let us know how and when you would like to talk. After that, you can tell us a bit about your event if you like. Prefer email? That works too: " + MAIL + "."))
+INTRO_HTML = "Laat weten hoe en wanneer je wilt kennismaken. Daarna kun je alvast iets over je event vertellen. Liever mailen? Dat kan ook: " + MAIL + "."
+paren.append((INTRO_HTML, "Let us know how and when you would like to meet. After that, you can tell us a bit about your event. Prefer email? That works too: " + MAIL + "."))
 
 def veld(naam, nl, en, type="text", verplicht=False, extra=""):
     req = " required" if verplicht else ""
@@ -128,8 +128,8 @@ stap3 = stap(3, "Wat heb je nodig?", "What do you need?", f'''{diensten()}
 <p class="uitleg privacyregel"><span>{T("We gebruiken je gegevens alleen om je aanvraag te beantwoorden.", "We only use your details to answer your request.")}</span> <a href="privacy.html">Privacyverklaring</a></p>''', laatste=True)
 
 keuze = (f'<section class="stap keuzescherm" data-stap="keuze"><p class="stapteller">{T("Bijna klaar, nog niet verstuurd", "Almost done, not sent yet")}</p>'
-         f'<h2>{T("Heb je al een concreet event voor ogen?", "Do you already have a specific event in mind?")}</h2>'
-         f'<p class="keuzetekst">{T("Met een paar vragen over je event kunnen we het gesprek goed voorbereiden. Liever eerst praten? Dat kan ook.", "A few questions about your event help us prepare the conversation. Rather talk first? That works too.")}</p>'
+         f'<h2>{T("Met een paar vragen over je event kunnen we het gesprek goed voorbereiden.", "A few questions about your event help us prepare the conversation.")}</h2>'
+         f'<p class="keuzetekst">{T("Liever eerst praten? Dat kan ook.", "Rather talk first? That works too.")}</p>'
          f'<div class="keuzekaarten">'
          f'<button type="button" class="keuzekaart stapknop hoofd" data-naar="2"><strong>{T("Ja, ik vertel meer over mijn event", "Yes, I\'ll tell you more about my event")}</strong><span>{T("Nog twee korte stappen", "Two more short steps")}</span><i aria-hidden="true">→</i></button>'
          f'<button type="submit" class="keuzekaart kort"><strong>{T("Nu versturen", "Send now")}</strong><span>{T("De rest bespreken we in het gesprek", "We\'ll discuss the rest in the conversation")}</span><i aria-hidden="true">→</i></button>'
