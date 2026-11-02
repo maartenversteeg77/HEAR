@@ -389,10 +389,10 @@ em,i,cite,address,dfn,var{font-style:normal}
 .mixen .mixen-uitleg{margin:-14px 0 0;font-size:16px;color:var(--tekstgrijs)}
 .mixen.klassiek{border-top:1px solid var(--lijn)}
 .mix{margin:0;min-width:0}
-.mix iframe{display:block;width:100%;border:0;background:var(--zwart)}
+.mix iframe{display:block;width:100%;border:0;background:var(--zwart);aspect-ratio:1/1;height:auto}  /* vierkant: de artwork blijft heel */
 .mix figcaption{margin-top:10px;font-size:14px;line-height:1.45;color:var(--tekstgrijs)}
 .mix .jaar{display:inline-block;margin-left:8px;font:600 11px/1 var(--tekst);letter-spacing:.16em;color:var(--zacht)}
-@media (max-width:760px){.mixen{grid-template-columns:1fr 1fr;gap:22px 14px}.mix iframe{height:200px}.mix figcaption{font-size:13px}}
+@media (max-width:760px){.mixen{grid-template-columns:1fr;gap:22px 14px}.mix figcaption{font-size:13px}}
 /* prijs.html: verdeling, tabel, tarieven, stappen */
 .verdeling{margin:26px 0 0;max-width:64ch}
 .verdeling .rij{display:grid;grid-template-columns:140px 1fr;align-items:center;gap:14px;margin:0 0 12px}
