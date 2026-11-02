@@ -38,7 +38,10 @@ async function aanvraag(request, env) {
   for (const k of ["gesprek_datum", "datum"]) if (d[k]) d[k] = datum(d[k]);
   if (!fd.get("budget_onbekend") && fd.get("budget_van")) d.budget = `€ ${eur(fd.get("budget_van"))} – € ${eur(fd.get("budget_tot"))}${+fd.get("budget_tot") >= 25000 ? "+" : ""}`;
   const regels = VELDEN.filter(([k]) => d[k]).map(([k, l]) => `${l}: ${d[k]}`).join("\n");
-  const onderwerp = `${schoon(fd.get("bron")) === "Coffee cuts" ? "Coffee cuts-aanvraag" : "Aanvraag via hear.nl"}: ${d.organisatie || d.naam}${d.datum ? ", " + d.datum : ""}`;
+  const bron = schoon(fd.get("bron"));
+  const soortMail = bron === "Coffee cuts" ? "Coffee cuts-aanvraag" : /maartenversteeg/i.test(bron) ? "DJ-boeking via maartenversteeg.nl" : "Aanvraag via hear.nl";
+  const herkomst = /maartenversteeg/i.test(request.headers.get("Origin") || "") && bron === "Coffee cuts" ? " (via maartenversteeg.nl)" : "";
+  const onderwerp = `${soortMail}${herkomst}: ${d.organisatie || d.naam}${d.datum ? ", " + d.datum : ""}`;
   const r = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, "Content-Type": "application/json" },
@@ -47,9 +50,15 @@ async function aanvraag(request, env) {
   return antwoord(request, r.ok, r.ok ? 200 : 502);
 }
 
+// Formulieren op maartenversteeg.nl (en de testversie op workers.dev) mogen ook hierheen posten.
+function cors(request) {
+  const o = request.headers.get("Origin") || "";
+  return /^https:\/\/((www\.)?maartenversteeg\.nl|[a-z0-9-]+\.[a-z0-9-]+\.workers\.dev)$/.test(o) ? { "Access-Control-Allow-Origin": o, "Vary": "Origin" } : {};
+}
+
 function antwoord(request, ok, status = 200) {
   if ((request.headers.get("Accept") || "").includes("application/json"))
-    return new Response(JSON.stringify({ ok }), { status, headers: { "Content-Type": "application/json", "Cache-Control": "no-store" } });
+    return new Response(JSON.stringify({ ok }), { status, headers: { "Content-Type": "application/json", "Cache-Control": "no-store", ...cors(request) } });
   const terug = new URL(request.url);
   const en = (request.headers.get("Referer") || "").includes("/en/");
   terug.pathname = (en ? "/en" : "") + "/aanvraag.html";
