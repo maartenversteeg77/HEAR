@@ -49,6 +49,7 @@ def paden(s, naam):
     s = re.sub(r'href="([^"]+)"', href, s)
     s = s.replace('href="/nieuws/', 'href="/en/nieuws/')
     s = re.sub(r'src="(?!http|/)([^"]+)"', r'src="/\1"', s)
+    s = re.sub(r'srcset="([^"]+)"', lambda m: 'srcset="' + ", ".join(("/" + d if not d.startswith(("http", "/")) else d) for d in (x.strip() for x in m.group(1).split(","))) + '"', s)
     s = s.replace("fetch('cases.json')", "fetch('/cases.json')")
     # taalwissel: terug naar NL
     s = re.sub(r'<a class="taal"[^>]*>EN</a>', f'<a class="taal" href="/{naam}" lang="nl" hreflang="nl" aria-label="Schakel naar Nederlands">NL</a>', s)
