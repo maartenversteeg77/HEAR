@@ -80,13 +80,13 @@
       "datum": "2026-11-05",
       "status": "af",
       "standaard_en": true,
-      "titel": "ADE | HEAR kleurt Raw Drums in dramatisch rood",
-      "titel_en": "ADE | HEAR colours Raw Drums in dramatic reds",
+      "titel": "HEAR kleurt Raw Drums in dramatisch rood",
+      "titel_en": "HEAR colours Raw Drums in dramatic reds",
       "intro": "Tijdens ADE bracht Melandru Raw Drums: UK garage/bass house met live percussie, in het rode licht van HEAR.",
       "intro_en": "During ADE, Melandru brought Raw Drums: UK garage/bass house with live percussion, in HEAR's red light.",
-      "beeld": "img/nieuws/raw-drums-ade.jpg",
-      "beeld_alt": "Collage van Raw Drums tijdens ADE: dj met de arm omhoog voor een rood verlichte bakstenen muur, handen op conga's en twee lachende percussionisten",
-      "beeld_alt_en": "Collage of Raw Drums during ADE: DJ with his arm raised against a red-lit brick wall, hands on congas and two laughing percussionists",
+      "beeld": "img/nieuws/raw-drums-ade-collage.jpg",
+      "beeld_alt": "Collage van Raw Drums by Melandru tijdens ADE 2026: percussionisten, dj's en publiek in rood licht",
+      "beeld_alt_en": "Collage of Raw Drums by Melandru at ADE 2026: percussionists, DJs and crowd in red light",
       "lead": "Misschien denk je bij Dance Event aan grootschalige dance events: in de vernieuwde Gashouder, in de Ziggo Dome en in de Johan Cruijff ArenA, waar 40.000 mensen samenkwamen voor David Guetta, Armin van Buuren en Afrojack.",
       "lead_en": "When you think of Dance Event, you might think of large-scale dance events: in the renovated Gashouder, in the Ziggo Dome and in the Johan Cruijff ArenA, where 40,000 people came together for David Guetta, Armin van Buuren and Afrojack.",
       "tekst": [
@@ -105,7 +105,9 @@
         "tekst": "Bekijk het sfeerlicht",
         "href": "/atmospheric-lighting.html"
       },
-      "knop_tekst_en": "See ambient lighting"
+      "knop_tekst_en": "See ambient lighting",
+      "beeld_passend": true,
+      "beeld_positie": "center 18%"
     }
   ]
 }
