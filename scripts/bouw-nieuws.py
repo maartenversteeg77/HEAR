@@ -115,6 +115,7 @@ for taal in ("nl", "en"):
 <figure class="casehero{passend}{" met-mobiel" if b.get("beeld_m") else ""}">{("<picture><source media=\"(max-width:900px)\" srcset=\"/" + e(b["beeld_m"]) + "\">") if b.get("beeld_m") else ""}<img src="/{e(b["beeld"])}" alt="{e(v(b, "beeld_alt", taal) or "")}"{pos}>{"</picture>" if b.get("beeld_m") else ""}</figure>
 {kopregel}
 <article class="artikel"><p class="lead">{e(lead)}</p>{lopend}{knop}</article>
+{v(b, "na_artikel", taal) or ""}
 <nav class="verwijzingen" aria-label="Verder"><a href="{pre}/nieuws/">{T["alle"]}</a><a href="{T["home_href"]}">{T["home"]}</a></nav>
 </main>'''
         alt_pad = f"/en/nieuws/{b['slug']}.html" if taal == "nl" else nl_pad

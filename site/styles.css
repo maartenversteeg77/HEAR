@@ -662,8 +662,15 @@ button.knop:disabled{opacity:.6;cursor:wait}
 .casehero.met-mobiel picture{display:block;height:100%}
 @media (max-width:900px){.casehero.met-mobiel{height:auto}.casehero.met-mobiel picture,.casehero.met-mobiel img{display:block;width:100%;height:auto}}
 
-/* nieuwsbericht: beeld-en-linkblok onder de tekst */
-.nieuws-kaart{margin:clamp(28px,4vw,44px) 0 0}
-@media (min-width:901px){.nieuws-kaart .relevant-grid.n1{grid-template-columns:1fr;max-width:420px}}
-@media (max-width:900px){.nieuws-kaart .relevant-grid.n1{grid-template-columns:1fr}}
-.nieuws-kaart{padding:0;border:0;background:none}
+/* nieuwsbericht: productblok onder de tekst — beeld links, naam, tekst en knop rechts (zoals het productblok op de homepage) */
+.nieuws-product{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(30px,4vw,64px);align-items:center;background:var(--zwart);color:var(--wit);margin:clamp(40px,5vw,64px) calc(-1 * var(--rand)) 0;padding:clamp(50px,6vw,90px) var(--rand)}
+.nieuws-product .np-lead{color:var(--wit)}
+.np-beeld{display:block;aspect-ratio:4/3;overflow:hidden}
+.np-beeld img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s}
+.np-beeld:hover img{transform:scale(1.03)}
+.np-tekst{max-width:44ch}
+.np-titel{font:300 clamp(36px,3.4vw,54px)/1.05 var(--kop);color:var(--koraal);margin:0 0 22px}
+.np-lead{font:500 clamp(18px,1.35vw,21px)/1.6 var(--tekst);color:var(--wit);margin:0 0 32px}
+.np-knop{display:inline-flex}
+@media (max-width:900px){.nieuws-product{grid-template-columns:1fr;gap:22px}.np-beeld{margin:0 calc(-1 * var(--rand));aspect-ratio:16/10}.np-titel{font-size:34px;margin-bottom:14px}.np-lead{font-size:17px;margin-bottom:24px}}
+.nieuws-product+.verwijzingen{margin-top:clamp(32px,4vw,48px)}
