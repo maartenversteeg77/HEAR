@@ -112,7 +112,7 @@ for taal in ("nl", "en"):
         kopregel = f'<section class="quick quick-breed kopregel"><p>{e(v(b, "kop", taal))}</p></section>' if b.get("kop") else ""
         main = f'''<main class="wrap">
 <section class="casehead"><a class="crumb" href="{pre}/nieuws/"><span class="sectie">{T["nieuws"]}</span></a><p class="label nieuws-datum"><time datetime="{b["datum"]}">{datum(b["datum"], taal)}</time></p><h1 class="kernzin">{e(v(b, "titel", taal))}</h1></section>
-<figure class="casehero{passend}"><img src="/{e(b["beeld"])}" alt="{e(v(b, "beeld_alt", taal) or "")}"{pos}></figure>
+<figure class="casehero{passend}{" met-mobiel" if b.get("beeld_m") else ""}">{("<picture><source media=\"(max-width:900px)\" srcset=\"/" + e(b["beeld_m"]) + "\">") if b.get("beeld_m") else ""}<img src="/{e(b["beeld"])}" alt="{e(v(b, "beeld_alt", taal) or "")}"{pos}>{"</picture>" if b.get("beeld_m") else ""}</figure>
 {kopregel}
 <article class="artikel"><p class="lead">{e(lead)}</p>{lopend}{knop}</article>
 <nav class="verwijzingen" aria-label="Verder"><a href="{pre}/nieuws/">{T["alle"]}</a><a href="{T["home_href"]}">{T["home"]}</a></nav>

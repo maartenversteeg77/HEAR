@@ -84,7 +84,7 @@
       "titel_en": "HEAR colours Raw Drums in dramatic reds",
       "intro": "Tijdens ADE bracht Melandru Raw Drums: UK garage/bass house met live percussie, in het rode licht van HEAR.",
       "intro_en": "During ADE, Melandru brought Raw Drums: UK garage/bass house with live percussion, in HEAR's red light.",
-      "beeld": "img/nieuws/raw-drums-ade-collage.jpg",
+      "beeld": "img/nieuws/raw-drums-ade-liggend.jpg",
       "beeld_alt": "Collage van Raw Drums by Melandru tijdens ADE 2026: percussionisten, dj's en publiek in rood licht",
       "beeld_alt_en": "Collage of Raw Drums by Melandru at ADE 2026: percussionists, DJs and crowd in red light",
       "lead": "Misschien denk je bij Dance Event aan grootschalige dance events: in de vernieuwde Gashouder, in de Ziggo Dome en in de Johan Cruijff ArenA, waar 40.000 mensen samenkwamen voor David Guetta, Armin van Buuren en Afrojack.",
@@ -107,7 +107,7 @@
       },
       "knop_tekst_en": "See ambient lighting",
       "beeld_passend": true,
-      "beeld_positie": "center 18%"
+      "beeld_m": "img/nieuws/raw-drums-ade-collage.jpg"
     }
   ]
 }

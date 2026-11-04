@@ -657,3 +657,7 @@ button.knop:disabled{opacity:.6;cursor:wait}
   .ps a.ps-alles{margin-top:8px;color:#aaa;font-size:13px}
 }
 @media (min-width:1101px) and (prefers-reduced-motion:reduce){.ps,.ps-scherm{transition:none}}
+
+/* nieuwsbericht met aparte mobiele (staande) afbeelding: op mobiel de volle breedte, hele beeld */
+.casehero.met-mobiel picture{display:block;height:100%}
+@media (max-width:900px){.casehero.met-mobiel{height:auto}.casehero.met-mobiel picture,.casehero.met-mobiel img{display:block;width:100%;height:auto}}
