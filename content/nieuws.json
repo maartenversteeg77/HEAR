@@ -100,13 +100,10 @@
         "One such occasion was Melandru, a Dutch DJ and live percussionist performing 'Raw Drums' together with other percussion artists, creating a blend of UK garage/bass house and live percussion. They transformed the dancefloor into a unique, rhythmic experience where people are not watching the show or the DJ, but are part of an interactive experience. A sound of computers and humans.",
         "To add to the drama, HEAR supplied its atmospheric washlights, creating a red light zone in Amsterdam not to be confused with the harsh street life, but one of warmth, depth and community. Exactly what ADE is and should be all about."
       ],
-      "knop": {
-        "tekst": "Bekijk het sfeerlicht",
-        "href": "/atmospheric-lighting.html"
-      },
-      "knop_tekst_en": "See ambient lighting",
       "beeld_m": "img/nieuws/raw-drums-ade-collage.jpg",
-      "beeld_positie": "center 30%"
+      "beeld_positie": "center 30%",
+      "html_na": "<section class=\"relevant nieuws-kaart\"><div class=\"relevant-grid n1\"><a class=\"visual-card\" href=\"/atmospheric-lighting.html\"><img src=\"/img/diensten/pixelpars.jpg\" alt=\"Sfeerlicht\" loading=\"lazy\"><span class=\"visual-card-shade\"></span><span class=\"tegel-bekijk\">Bekijk →</span><h2>Sfeerlicht</h2><p>Draadloos sfeerlicht, full-colour</p></a></div></section>",
+      "html_na_en": "<section class=\"relevant nieuws-kaart\"><div class=\"relevant-grid n1\"><a class=\"visual-card\" href=\"/en/atmospheric-lighting.html\"><img src=\"/img/diensten/pixelpars.jpg\" alt=\"Ambient lighting\" loading=\"lazy\"><span class=\"visual-card-shade\"></span><span class=\"tegel-bekijk\">View →</span><h2>Ambient lighting</h2><p>Wireless full-colour ambient lighting</p></a></div></section>"
     }
   ]
 }

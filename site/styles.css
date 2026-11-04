@@ -661,3 +661,9 @@ button.knop:disabled{opacity:.6;cursor:wait}
 /* nieuwsbericht met aparte mobiele (staande) afbeelding: op mobiel de volle breedte, hele beeld */
 .casehero.met-mobiel picture{display:block;height:100%}
 @media (max-width:900px){.casehero.met-mobiel{height:auto}.casehero.met-mobiel picture,.casehero.met-mobiel img{display:block;width:100%;height:auto}}
+
+/* nieuwsbericht: beeld-en-linkblok onder de tekst */
+.nieuws-kaart{margin:clamp(28px,4vw,44px) 0 0}
+@media (min-width:901px){.nieuws-kaart .relevant-grid.n1{grid-template-columns:1fr;max-width:420px}}
+@media (max-width:900px){.nieuws-kaart .relevant-grid.n1{grid-template-columns:1fr}}
+.nieuws-kaart{padding:0;border:0;background:none}
