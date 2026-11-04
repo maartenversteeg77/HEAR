@@ -124,7 +124,7 @@ for taal in ("nl", "en"):
     tegels = "".join(
         f'<article class="case-tegel"><img src="/{e(b["beeld"])}" alt="{e(v(b, "beeld_alt", taal) or "")}" loading="lazy"{(" style=\"object-position:" + e(b["beeld_positie"]) + "\"") if b.get("beeld_positie") else ""}>'
         f'<div class="case-tekst"><p class="labels"><time datetime="{b["datum"]}">{datum(b["datum"], taal)}</time></p>'
-        f'<h2><a class="tegel-link" href="{(b.get("pad_en") if taal == "en" else b.get("pad")) or (pre + "/nieuws/" + b["slug"] + ".html")}">{e(v(b, "titel", taal))}</a></h2><p>{e(v(b, "intro", taal))}</p><span class="pijl" aria-hidden="true">→</span></div></article>'
+        f'<h2><a class="tegel-link" href="{(b.get("pad_en") if taal == "en" else b.get("pad")) or (("/en" if b.get("standaard_en") else pre) + "/nieuws/" + b["slug"] + ".html")}">{e(v(b, "titel", taal))}</a></h2><p>{e(v(b, "intro", taal))}</p><span class="pijl" aria-hidden="true">→</span></div></article>'
         for b in lijst)
     artikelen = [b for b in lijst if not b.get("pad")]
     eerste = f"{BASIS}/img/nieuws/{artikelen[0]['slug']}-social.jpg" if artikelen else None
@@ -144,7 +144,7 @@ for taal in ("nl", "en"):
         gewoon = [b for b in lijst if not b.get("niet_op_home") and not b.get("op_home_derde")]
         volgorde = gewoon[:2] + [b for b in lijst if b.get("op_home_derde")] + gewoon[2:]
         kaarten = "".join(
-            f'<a class="werk-kaart" href="{(b.get("pad_en") if taal == "en" else b.get("pad")) or (pre + "/nieuws/" + b["slug"] + ".html")}"><span class="werk-beeld"><img src="{rel}{e(b["beeld"])}" alt="{e(v(b, "beeld_alt", taal) or "")}" loading="lazy"'
+            f'<a class="werk-kaart" href="{(b.get("pad_en") if taal == "en" else b.get("pad")) or (("/en" if b.get("standaard_en") else pre) + "/nieuws/" + b["slug"] + ".html")}"><span class="werk-beeld"><img src="{rel}{e(b["beeld"])}" alt="{e(v(b, "beeld_alt", taal) or "")}" loading="lazy"'
             f'{(" style=\"object-position:" + e(b["beeld_positie"]) + "\"") if b.get("beeld_positie") else ""}><span class="bekijk-case">{T["lees"]}<i aria-hidden="true">→</i></span></span>'
             f'<time datetime="{b["datum"]}">{datum(b["datum"], taal)}</time><h3>{heel(e(v(b, "titel", taal)))}</h3></a>'
             for b in volgorde)
