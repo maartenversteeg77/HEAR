@@ -106,8 +106,8 @@
         "href": "/atmospheric-lighting.html"
       },
       "knop_tekst_en": "See ambient lighting",
-      "beeld_passend": true,
-      "beeld_m": "img/nieuws/raw-drums-ade-collage.jpg"
+      "beeld_m": "img/nieuws/raw-drums-ade-collage.jpg",
+      "beeld_positie": "center 30%"
     }
   ]
 }
