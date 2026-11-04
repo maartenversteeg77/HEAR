@@ -1888,6 +1888,194 @@
       [
         "alt=\"Coffee cuts: glas koffie op een vinylplaat in de zon\"",
         "alt=\"Coffee cuts: a glass of coffee on a vinyl record in the sun\""
+      ],
+      [
+        "aria-label=\"Producten en diensten\"",
+        "aria-label=\"Products and services\""
+      ],
+      [
+        "aria-label=\"Kies een categorie\"",
+        "aria-label=\"Choose a category\""
+      ],
+      [
+        "<span class=\"pl-k-titel\">Dj-gear</span><small class=\"pl-k-sub\">CDJ-3000X, V10, Euphonia, WARM2 en booth</small>",
+        "<span class=\"pl-k-titel\">DJ gear</span><small class=\"pl-k-sub\">CDJ-3000X, V10, Euphonia, WARM2 and booth</small>"
+      ],
+      [
+        "<span>Bekijk alle dj-gear</span> →</a>",
+        "<span>See all DJ gear</span> →</a>"
+      ],
+      [
+        "data-bekijk=\"Bekijk alle dj-gear\"><span class=\"pl-titel\">Dj-gear</span><small>CDJ-3000X, V10, Euphonia, WARM2 en booth</small>",
+        "data-bekijk=\"See all DJ gear\"><span class=\"pl-titel\">DJ gear</span><small>CDJ-3000X, V10, Euphonia, WARM2 and booth</small>"
+      ],
+      [
+        "alt=\"AlphaTheta Euphonia rotary mixer in rood licht\"",
+        "alt=\"AlphaTheta Euphonia rotary mixer in red light\""
+      ],
+      [
+        "data-i=\"0\">Dj-gear</button>",
+        "data-i=\"0\">DJ gear</button>"
+      ],
+      [
+        "data-bekijk=\"Bekijk al het geluid\"><span class=\"pl-titel\">Geluid</span><small>RCF KX en Brooklyn Audio</small>",
+        "data-bekijk=\"See all sound\"><span class=\"pl-titel\">Sound</span><small>RCF KX and Brooklyn Audio</small>"
+      ],
+      [
+        "alt=\"RCF KX-serie: drie topkasten naast elkaar\"",
+        "alt=\"RCF KX series: three tops side by side\""
+      ],
+      [
+        "data-i=\"1\">Geluid</button>",
+        "data-i=\"1\">Sound</button>"
+      ],
+      [
+        "data-bekijk=\"Bekijk al het sfeerlicht\"><span class=\"pl-titel\">Sfeerlicht</span><small>accu-washlights, theaterspots, hazer</small>",
+        "data-bekijk=\"See all ambient lighting\"><span class=\"pl-titel\">Ambient lighting</span><small>battery washlights, theatre spots, hazer</small>"
+      ],
+      [
+        "alt=\"ADJ ElectraPix Par 7 met lichtzuilen en bol\"",
+        "alt=\"ADJ ElectraPix Par 7 with light columns and globe\""
+      ],
+      [
+        "data-i=\"2\">Sfeerlicht</button>",
+        "data-i=\"2\">Ambient lighting</button>"
+      ],
+      [
+        "data-bekijk=\"Bekijk al het dansvloerlicht\"><span class=\"pl-titel\">Dansvloerlicht</span><small>hybride moving heads en lichtshows</small>",
+        "data-bekijk=\"See all dance floor lighting\"><span class=\"pl-titel\">Dance floor lighting</span><small>hybrid moving heads and light shows</small>"
+      ],
+      [
+        "alt=\"Rode en blauwe lichtbundels van moving heads\"",
+        "alt=\"Red and blue light beams from moving heads\""
+      ],
+      [
+        "data-i=\"3\">Dansvloerlicht</button>",
+        "data-i=\"3\">Dance floor lighting</button>"
+      ],
+      [
+        "data-bekijk=\"Bekijk al het vintage licht\"><span class=\"pl-titel\">90&#x27;s vintage licht</span><small>Astrodisco en Golden Scan</small>",
+        "data-bekijk=\"See all vintage lighting\"><span class=\"pl-titel\">90s vintage lighting</span><small>Astrodisco and Golden Scan</small>"
+      ],
+      [
+        "alt=\"Clay Paky Astrodisco\"",
+        "alt=\"Clay Paky Astrodisco\""
+      ],
+      [
+        "data-i=\"4\">90&#x27;s vintage licht</button>",
+        "data-i=\"4\">90s vintage lighting</button>"
+      ],
+      [
+        "data-bekijk=\"Bekijk aankoopadvies\"><span class=\"pl-titel\">Aankoopadvies licht en geluid</span><small>merkonafhankelijk, voor venues</small>",
+        "data-bekijk=\"See purchase advice\"><span class=\"pl-titel\">Purchase advice for light and sound</span><small>brand-independent, for venues</small>"
+      ],
+      [
+        "data-i=\"8\">Aankoopadvies licht en geluid</button>",
+        "data-i=\"8\">Purchase advice for light and sound</button>"
+      ],
+      [
+        "data-bekijk=\"Bekijk artiesten\"><span class=\"pl-titel\">Dj&#x27;s en artiesten</span><small>vocalist, saxofonist, percussionist</small>",
+        "data-bekijk=\"See artists\"><span class=\"pl-titel\">DJs and artists</span><small>vocalist, saxophonist, percussionist</small>"
+      ],
+      [
+        "alt=\"Tuinfeest met dj en saxofonist\"",
+        "alt=\"Garden party with DJ and saxophonist\""
+      ],
+      [
+        "data-i=\"6\">Dj&#x27;s en artiesten</button>",
+        "data-i=\"6\">DJs and artists</button>"
+      ],
+      [
+        "data-bekijk=\"Bekijk Coffee cuts\"><span class=\"pl-titel\">Coffee cuts</span><small>playlists of een live dj voor je koffiebar of bar</small>",
+        "data-bekijk=\"See Coffee cuts\"><span class=\"pl-titel\">Coffee cuts</span><small>playlists or a live DJ for your coffee bar or bar</small>"
+      ],
+      [
+        "data-bekijk=\"Bekijk alle producten en diensten\"><span class=\"pl-titel\">Alle producten en diensten</span><small>het complete aanbod</small>",
+        "data-bekijk=\"See all products and services\"><span class=\"pl-titel\">All products and services</span><small>the complete range</small>"
+      ],
+      [
+        "alt=\"Lichtbundels boven een podium\"",
+        "alt=\"Light beams above a stage\""
+      ],
+      [
+        "data-bekijk=\"Bekijk communicatieadvies\"><span class=\"pl-titel\">Communicatieadvies</span><small>boodschap, speeches, uitnodigingen, video</small>",
+        "data-bekijk=\"See communication advice\"><span class=\"pl-titel\">Communication advice</span><small>message, speeches, invitations, video</small>"
+      ],
+      [
+        "data-i=\"5\">Communicatieadvies</button>",
+        "data-i=\"5\">Communication advice</button>"
+      ],
+      [
+        "<li class=\"pl-groep\" aria-hidden=\"true\">Producten</li>",
+        "<li class=\"pl-groep\" aria-hidden=\"true\">Products</li>"
+      ],
+      [
+        "<li class=\"pl-groep\" aria-hidden=\"true\">Diensten</li>",
+        "<li class=\"pl-groep\" aria-hidden=\"true\">Services</li>"
+      ],
+      [
+        "<span class=\"pl-groep\">Producten</span>",
+        "<span class=\"pl-groep\">Products</span>"
+      ],
+      [
+        "<span class=\"pl-groep\">Diensten</span>",
+        "<span class=\"pl-groep\">Services</span>"
+      ],
+      [
+        "<section class=\"productlijst pl-ov\" aria-label=\"Producten en diensten kiezen\">",
+        "<section class=\"productlijst pl-ov\" aria-label=\"Choose products and services\">"
+      ],
+      [
+        "Of bekijk alles hieronder ↓",
+        "Or see everything below ↓"
+      ],
+      [
+        "<p class=\"tegels-kop\" id=\"alle-tegels\">Alle producten en diensten</p>",
+        "<p class=\"tegels-kop\" id=\"alle-tegels\">All products and services</p>"
+      ],
+      [
+        "data-lead=\"Een dj die binnenkomt en meteen aan het werk kan. Dat is het idee achter onze booth. Met de beste dj-gear, goede monitoring en voldoende werkruimte en opbergplaats.\"",
+        "data-lead=\"A DJ who walks in and can get straight to work. That&#x27;s the idea behind our booth. With the best DJ gear, proper monitoring and enough room to work and for storage.\""
+      ],
+      [
+        "data-lead=\"Modulair, praktisch, krachtig, helder en technologisch vooruitstrevend. Wij werken met actieve speakers van twee merken die hun hele systeem zelf ontwerpen en bouwen: RCF uit Italië en Brooklyn Audio uit Nederland. Beide systemen zijn modulair. Dezelfde kasten die een cocktailavond voor honderd gasten verzorgen kunnen gecombineerd en gekoppeld een dansvloer voor vijftienhonderd personen dekken.\"",
+        "data-lead=\"Modular, practical, powerful, clear and technologically advanced. We work with active speakers from two brands that design and build their entire systems themselves: RCF from Italy and Brooklyn Audio from the Netherlands. Both systems consist of modular building blocks. The same cabinets that handle a cocktail evening for a hundred guests can, if combined and coupled, cover a dancefloor for fifteen hundred.\""
+      ],
+      [
+        "data-lead=\"We ontwerpen een lichtplan en sturen daarvoor een offerte. Deze is gebaseerd op ofwel een locatiebezoek of foto’s, het type event en het doel, de fysieke ruimte en het budget. Afhankelijk van de locatie en de gekozen materialen is mogelijk een trussconstructie onderdeel van het advies.\"",
+        "data-lead=\"We propose a lighting plan that we quote. We base this plan on a pre-visit or pictures, the type of event, the physical space and the budget. Depending on the venue and the chosen equipment, a truss structure may be part of the proposal.\""
+      ],
+      [
+        "data-lead=\"Een hybride moving head projecteert een beam, spot en wash in één. Als je de juiste kiest (niet eentje die alles nét niet kan) dan is het een Zwitsers zakmes: je haalt daarmee uit één apparaat wat anders drie fixtures vraagt, en met een beperkt aantal stuks maak je een show met veel gezichten. De lampen wisselen bovendien van rol gedurende een avond: rustig als wash in de warm-up, impactvol als beam op peak hour.\"",
+        "data-lead=\"A hybrid moving head projects beam, spot and wash in one. When choosing the right device (not a jack of all trades that excels at nothing) this fixture can be like a Swiss army knife. You get from one fixture what would otherwise take three, and with a limited number you create a show with nearly limitless different styles and atmospheres. The fixtures also change role as a night progresses: calm as a wash during the warm-up, high-impact as a beam at peak hour.\""
+      ],
+      [
+        "data-lead=\"Sommige lichteffecten zijn nooit overtroffen, alleen vergeten. Wij halen de klassiekers uit de discotheken van de jaren negentig terug, reviseren ze en geven ze een moderne lichtbron. Zo wordt een &#x27;oh ja&#x27;-effect een &#x27;oh wow&#x27;-effect.\"",
+        "data-lead=\"Some lighting effects were never surpassed, only forgotten. We bring back the classics from the 1990s clubs, restore them and give them a modern light source. That turns an &#x27;oh I remember&#x27; effect into an &#x27;oh wow&#x27; effect.\""
+      ],
+      [
+        "data-lead=\"Een event is ook communicatie. Wat wil je dat gasten na afloop onthouden, en hoe zorg je dat het programma dat ondersteunt? Maarten werkt al zo&#x27;n 25 jaar als corporate communicatiespecialist voor grote organisaties. Die ervaring zet hij in zodat techniek en boodschap elkaar versterken.\"",
+        "data-lead=\"An event is also communication. What do you want guests to remember afterwards, and how do you make sure the programme supports that? Maarten has worked for some 25 years as a corporate communication specialist for large organisations. He uses that experience so that technology and message reinforce each other.\""
+      ],
+      [
+        "data-lead=\"Als oprichter van HEAR en dj sinds 1993 help ik opdrachtgevers aan een avondvullend programma: met mijzelf achter de booth of artiesten uit mijn netwerk.\"",
+        "data-lead=\"As founder of HEAR and a DJ since 1993, I help clients to a full evening&#x27;s programme: with me behind the booth or artists from my network.\""
+      ],
+      [
+        "data-lead=\"Of je nu een koffiebar hebt of bijvoorbeeld een cocktailbar: je wilt warme muziek die past bij de identiteit van je zaak. Geen generieke (AI-⁠)tracks.\"",
+        "data-lead=\"Whether you run a coffee bar or, say, a cocktail bar: you want warm music that fits the identity of your venue. No generic (AI) tracks.\""
+      ],
+      [
+        "data-lead=\"Heb je een eventlocatie zonder eigen licht en geluid? Of heb je wel eigen geluid, maar klagen gasten over &#x27;vermoeiend geluid&#x27; of een gebrek aan impact? Wij kijken graag mee wat er mogelijk is om de gastbeleving te vergroten.\"",
+        "data-lead=\"Do you run an event venue without owning lighting and sound? Or do you have your own soundsystem, but guests complain about &#x27;tiring sound&#x27; or a lack of impact? We are happy to look at what&#x27;s possible to improve customer experience.\""
+      ],
+      [
+        "data-lead=\"Het complete aanbod: dj-gear, geluid, licht en diensten voor zakelijke events en dance events.\"",
+        "data-lead=\"The complete range: DJ gear, sound, lighting and services for corporate events and dance events.\""
+      ],
+      [
+        "<div class=\"pl-intro\"><h3 class=\"pl-i-titel\">Dj-gear</h3><p class=\"pl-i-lead\">Een dj die binnenkomt en meteen aan het werk kan. Dat is het idee achter onze booth. Met de beste dj-gear, goede monitoring en voldoende werkruimte en opbergplaats.</p><a class=\"wa pl-i-knop\" href=\"booth-dj-gear.html\"><span>Bekijk alle dj-gear</span>",
+        "<div class=\"pl-intro\"><h3 class=\"pl-i-titel\">DJ gear</h3><p class=\"pl-i-lead\">A DJ who walks in and can get straight to work. That&#x27;s the idea behind our booth. With the best DJ gear, proper monitoring and enough room to work and for storage.</p><a class=\"wa pl-i-knop\" href=\"booth-dj-gear.html\"><span>See all DJ gear</span>"
       ]
     ],
     "booth-dj-gear.html": [

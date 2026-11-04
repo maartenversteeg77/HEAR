@@ -385,3 +385,34 @@ a.mail-ook,.quick.quick-breed p .mail-ook,.cta-brug .mail-ook{font:300 14px/1.3 
 .voet-merk .voet-klein .geen-breuk-adres{white-space:nowrap}
 @media (max-width:520px){.voet-merk .voet-sep{display:none}.voet-merk .geen-breuk-adres{display:block}}
 @media (max-width:520px){.voet-merk .geen-breuk-adres+br{display:none}}
+
+/* overzichtspagina diensten (4 nov): selector boven de tegels, alleen desktop. Selectoren met .pl-ov zodat de homepage (lijst + beeld) ongemoeid blijft */
+.pl-intro{display:none}
+@media (min-width:901px){
+  .pl-ov .pl-wrap{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);grid-template-areas:"beeld intro";position:relative;align-items:center}
+  .pl-ov .pl-lijst{display:none}
+  .pl-ov .pl-media{grid-area:beeld;position:relative;top:auto}
+  .pl-ov .pl-beeld{aspect-ratio:4/3}
+  .pl-ov .pl-verder{display:none!important}
+  .pl-ov .pl-kiezer{display:block;position:absolute;left:18px;top:18px;width:min(520px,calc(57% - 36px));z-index:3}
+  .pl-ov .pl-knop{display:grid;grid-template-columns:1fr auto;align-items:center;gap:4px 16px;width:100%;text-align:left;cursor:pointer;background:rgba(25,26,25,.5);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border:1px solid rgba(246,245,241,.55);border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.35);padding:14px 14px 14px 18px;color:var(--wit)}
+  .pl-ov .pl-k-titel{font:300 34px/1.05 var(--kop);color:var(--wit)}
+  .pl-ov .pl-k-sub{grid-column:1;font:400 14px/1.4 var(--tekst);color:#e6e5e0}
+  .pl-ov .pl-knop i{grid-column:2;grid-row:1/3;width:44px;height:44px;border-radius:50%;background:var(--wit);position:relative}
+  .pl-ov .pl-knop i::after{content:"";position:absolute;left:50%;top:50%;width:10px;height:10px;border-right:2px solid var(--zwart);border-bottom:2px solid var(--zwart);transform:translate(-50%,-70%) rotate(45deg);transition:transform .2s}
+  .pl-ov .pl-knop[aria-expanded="true"] i::after{transform:translate(-50%,-30%) rotate(-135deg)}
+  .pl-ov .pl-menu{position:absolute;left:0;right:0;top:calc(100% + 6px);z-index:5;list-style:none;margin:0;padding:6px 0;background:#232423;border:1px solid #444542;border-radius:10px;box-shadow:0 12px 30px rgba(0,0,0,.45);max-height:70vh;overflow:auto}
+  .pl-ov .pl-menu button,.pl-menu a{display:block;width:100%;text-align:left;background:none;border:0;padding:11px 18px;font:300 24px/1.1 var(--kop);color:var(--wit);text-decoration:none;cursor:pointer}
+  .pl-ov .pl-menu button:hover,.pl-menu button.aan{color:var(--koraal)}
+  .pl-ov .pl-menu .pl-alle a{font:400 15px/1.3 var(--tekst);color:#d9d8d3;text-decoration:underline;text-underline-offset:4px}
+  .pl-ov .pl-intro{display:block;grid-area:intro;max-width:44ch}
+  .pl-ov .pl-i-titel{font:300 clamp(36px,3.4vw,54px)/1.05 var(--kop);color:var(--koraal);margin:0 0 22px}
+  .pl-ov .pl-i-lead{font:500 clamp(18px,1.35vw,21px)/1.6 var(--tekst);color:var(--wit);margin:0 0 32px}
+  .pl-ov .pl-i-knop{display:inline-flex}
+  .pl-ov .pl-i-alle{display:block;margin-top:18px;font:400 15px/1.3 var(--tekst);color:var(--wit);text-decoration:underline;text-underline-offset:4px;width:max-content}
+  .pl-ov .pl-i-alle:hover{color:var(--koraal)}
+}
+
+.pl-ov{margin:0 calc(-1 * var(--rand));padding-top:0}
+.tegels-kop{font:500 13px/1 var(--tekst);letter-spacing:.16em;text-transform:uppercase;color:var(--koraal);margin:clamp(50px,6vw,80px) 0 -10px}
+@media (max-width:900px){.pl-ov,.tegels-kop{display:none}}
