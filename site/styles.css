@@ -679,3 +679,8 @@ button.knop:disabled{opacity:.6;cursor:wait}
 .rubriek{display:inline-block;padding:3px 9px;border:1px solid var(--turquoise);border-radius:999px;font:600 10.5px/1.4 var(--tekst);letter-spacing:.14em;text-transform:uppercase;margin-right:10px;vertical-align:1px}
 .rubriek-punt{display:none}
 .case-tekst .labels .rubriek{border-color:rgba(25,26,25,.45);color:var(--zwart)}
+/* nieuws: label boven de titel, datum eronder */
+.casehead .nieuws-rubriek{margin:0 0 14px}
+.casehead .nieuws-datum-onder{margin:16px 0 0}
+.nieuws-datum-tegel{margin:6px 0 0;font:500 11px/1.4 var(--tekst);letter-spacing:.14em;text-transform:uppercase;color:rgba(25,26,25,.6)}
+.case-tekst p.nieuws-datum-tegel{grid-column:1/-1;margin:4px 0 4px;font:600 10.5px/1.4 var(--tekst);letter-spacing:.14em;text-transform:uppercase;color:rgba(25,26,25,.62)}
