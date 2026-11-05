@@ -1,5 +1,5 @@
 {
-  "_uitleg": "Nieuwsberichten als artikel: zwarte kop met datum en titel, foto, optioneel een grote kopregel (kop), dan een vette intro (lead; valt terug op intro) en lopende tekst (tekst: alinea's; een regel die begint met '## ' wordt een vet tussenkopje; html_na: extra HTML zoals een lijst). intro is ook de tegel- en socialtekst. Overig: slug, datum, beeld, beeld_alt, beeld_positie, beeld_passend (hele foto tonen), knop {tekst, href}, status 'af' of 'concept'. basis = domein voor social-metadata; naar https://hear.nl bij livegang. Engels: velden met _en (titel_en, intro_en, lead_en, kop_en, tekst_en, html_na_en, beeld_alt_en, knop_tekst_en); zonder _en-veld valt het Engels terug op het Nederlands. Engelse pagina's in site/en/nieuws/. Achtergrondstukken die als eigen pagina bestaan: veld 'pad' (link naar die pagina, geen artikelpagina gebouwd), 'niet_op_home' (niet in het homepageblok), 'alleen_nl' (niet in het Engelse overzicht). 'op_home_derde': als derde tegel op de homepage, na de twee nieuwste berichten.",
+  "_uitleg": "Nieuwsberichten als artikel: zwarte kop met datum en titel, foto, optioneel een grote kopregel (kop), dan een vette intro (lead; valt terug op intro) en lopende tekst (tekst: alinea's; een regel die begint met '## ' wordt een vet tussenkopje; html_na: extra HTML zoals een lijst). intro is ook de tegel- en socialtekst. Overig: slug, datum, beeld, beeld_alt, beeld_positie, beeld_passend (hele foto tonen), knop {tekst, href}, status 'af' of 'concept'. basis = domein voor social-metadata; naar https://hear.nl bij livegang. Engels: velden met _en (titel_en, intro_en, lead_en, kop_en, tekst_en, html_na_en, beeld_alt_en, knop_tekst_en); zonder _en-veld valt het Engels terug op het Nederlands. Engelse pagina's in site/en/nieuws/. Achtergrondstukken die als eigen pagina bestaan: veld 'pad' (link naar die pagina, geen artikelpagina gebouwd), 'niet_op_home' (niet in het homepageblok), 'alleen_nl' (niet in het Engelse overzicht). 'op_home_derde': als derde tegel op de homepage, na de twee nieuwste berichten. rubriek: events | product | backstage | inspiratie (label voor de datum; toets: wiens werk is het onderwerp — van een ander = events, eigen werk en keuzes = backstage, product of techniek = product, iets wat je elders zag of leerde = inspiratie).",
   "basis": "https://hear.nl",
   "berichten": [
     {
@@ -32,7 +32,8 @@
         "The woofer and the horn are coaxial, on one axis. So the sound comes from a single point and stays coherent, even up close. That's exactly what you want in a DJ booth.",
         "From now on the KXM 25-A is the second monitoring option in our booth, alongside the compact sub-top combination of SUB 808-AS and KX 515-A."
       ],
-      "knop_tekst_en": "View the booth and DJ gear"
+      "knop_tekst_en": "View the booth and DJ gear",
+      "rubriek": "product"
     },
     {
       "slug": "twee-sets-808-515",
@@ -58,7 +59,8 @@
       "beeld_alt_en": "RCF KX 515-A top on a pole above a SUB 808-AS, freshly unpacked",
       "tekst_en": [],
       "html_na_en": "<h2 class=\"kopje\">Suitable for</h2><ul><li>Presentations</li><li>Intimate (cocktail) parties</li><li>DJ monitoring, left and right of the booth</li><li>Front fill or delay in a larger audio set</li></ul><p>As a complete set they suit a range of uses, from presentations to garden parties and cocktail parties of up to around 150 people.</p><p>The 515 top is also an ideal front fill in a larger system. With 100° × 70° coverage, it gives hi-fi’ish sound for the first few metres of the audience.</p><p>Using the KX 515-A as front fill makes it possible to fly its big brother, the KXL 4-A, higher and aim it further back. As the KX 515-A weighs under 10 kg, it is also a practical delay or fill to improve intelligibility at the back of the room, without heavy lifting.</p>",
-      "knop_tekst_en": "View high-end audio"
+      "knop_tekst_en": "View high-end audio",
+      "rubriek": "product"
     },
     {
       "slug": "wat-kost-av",
@@ -103,7 +105,8 @@
       "beeld_m": "img/nieuws/raw-drums-ade-collage.jpg",
       "beeld_positie": "center 30%",
       "na_artikel": "<section class=\"nieuws-product\"><a class=\"np-beeld\" href=\"/atmospheric-lighting.html\" tabindex=\"-1\" aria-hidden=\"true\"><img src=\"/img/diensten/pixelpars.jpg\" alt=\"ADE-washlights en lichtzuilen in full-colour\" loading=\"lazy\" style=\"object-position:60% center\"></a><div class=\"np-tekst\"><h2 class=\"np-titel\">Sfeerlicht</h2><p class=\"np-lead\">Voor presentaties en events: multi-inzetbaar, full-colour en veelal draadloos.</p><a class=\"wa np-knop\" href=\"/atmospheric-lighting.html\"><span>Bekijk al het sfeerlicht</span><i aria-hidden=\"true\">→</i></a></div></section>",
-      "na_artikel_en": "<section class=\"nieuws-product\"><a class=\"np-beeld\" href=\"/en/atmospheric-lighting.html\" tabindex=\"-1\" aria-hidden=\"true\"><img src=\"/img/diensten/pixelpars.jpg\" alt=\"Washlights and light columns in full colour\" loading=\"lazy\" style=\"object-position:60% center\"></a><div class=\"np-tekst\"><h2 class=\"np-titel\">Ambient lighting</h2><p class=\"np-lead\">For presentations and events: versatile, full-colour and mostly wireless.</p><a class=\"wa np-knop\" href=\"/en/atmospheric-lighting.html\"><span>See all ambient lighting</span><i aria-hidden=\"true\">→</i></a></div></section>"
+      "na_artikel_en": "<section class=\"nieuws-product\"><a class=\"np-beeld\" href=\"/en/atmospheric-lighting.html\" tabindex=\"-1\" aria-hidden=\"true\"><img src=\"/img/diensten/pixelpars.jpg\" alt=\"Washlights and light columns in full colour\" loading=\"lazy\" style=\"object-position:60% center\"></a><div class=\"np-tekst\"><h2 class=\"np-titel\">Ambient lighting</h2><p class=\"np-lead\">For presentations and events: versatile, full-colour and mostly wireless.</p><a class=\"wa np-knop\" href=\"/en/atmospheric-lighting.html\"><span>See all ambient lighting</span><i aria-hidden=\"true\">→</i></a></div></section>",
+      "rubriek": "events"
     }
   ]
 }

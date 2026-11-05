@@ -674,3 +674,8 @@ button.knop:disabled{opacity:.6;cursor:wait}
 .np-knop{display:inline-flex}
 @media (max-width:900px){.nieuws-product{grid-template-columns:1fr;gap:22px}.np-beeld{margin:0 calc(-1 * var(--rand));aspect-ratio:16/10}.np-titel{font-size:34px;margin-bottom:14px}.np-lead{font-size:17px;margin-bottom:24px}}
 .nieuws-product+.verwijzingen{margin-top:clamp(32px,4vw,48px)}
+
+/* nieuws: rubrieklabel voor de datum */
+.rubriek{color:var(--koraal)}
+.rubriek-punt{opacity:.6}
+.case-tekst .labels .rubriek,.case-tekst .labels .rubriek-punt{color:inherit;opacity:1}
