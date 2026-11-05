@@ -107,7 +107,11 @@
       "beeld_positie": "center 30%",
       "na_artikel": "<section class=\"nieuws-product\"><a class=\"np-beeld\" href=\"/atmospheric-lighting.html\" tabindex=\"-1\" aria-hidden=\"true\"><img src=\"/img/diensten/pixelpars.jpg\" alt=\"ADE-washlights en lichtzuilen in full-colour\" loading=\"lazy\" style=\"object-position:60% center\"></a><div class=\"np-tekst\"><h2 class=\"np-titel\">Sfeerlicht</h2><p class=\"np-lead\">Voor presentaties en events: multi-inzetbaar, full-colour en veelal draadloos.</p><a class=\"wa np-knop\" href=\"/atmospheric-lighting.html\"><span>Bekijk al het sfeerlicht</span><i aria-hidden=\"true\">→</i></a></div></section>",
       "na_artikel_en": "<section class=\"nieuws-product\"><a class=\"np-beeld\" href=\"/en/atmospheric-lighting.html\" tabindex=\"-1\" aria-hidden=\"true\"><img src=\"/img/diensten/pixelpars.jpg\" alt=\"Washlights and light columns in full colour\" loading=\"lazy\" style=\"object-position:60% center\"></a><div class=\"np-tekst\"><h2 class=\"np-titel\">Ambient lighting</h2><p class=\"np-lead\">For presentations and events: versatile, full-colour and wireless.</p><a class=\"wa np-knop\" href=\"/en/atmospheric-lighting.html\"><span>See all ambient lighting</span><i aria-hidden=\"true\">→</i></a></div></section>",
-      "rubriek": "events"
+      "rubriek": "events",
+      "foto_credit": {
+        "naam": "@capturesbysaar",
+        "url": "https://www.instagram.com/capturesbysaar/"
+      }
     }
   ]
 }

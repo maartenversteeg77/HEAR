@@ -684,3 +684,6 @@ button.knop:disabled{opacity:.6;cursor:wait}
 .casehead .nieuws-datum-onder{margin:16px 0 0}
 .nieuws-datum-tegel{margin:6px 0 0;font:500 11px/1.4 var(--tekst);letter-spacing:.14em;text-transform:uppercase;color:rgba(25,26,25,.6)}
 .case-tekst p.nieuws-datum-tegel{grid-column:1/-1;margin:4px 0 4px;font:600 10.5px/1.4 var(--tekst);letter-spacing:.14em;text-transform:uppercase;color:rgba(25,26,25,.62)}
+/* nieuws: fotocredit direct onder het beeld */
+.foto-credit{margin:10px 0 0;font:400 13px/1.4 var(--tekst);color:#6b6a66}
+.foto-credit a{color:inherit;text-underline-offset:3px}

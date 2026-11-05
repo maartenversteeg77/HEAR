@@ -8,7 +8,7 @@
       "beeld": "img/diensten/booth-bovenaf.jpg",
       "beeld_alt": "Dj-booth van bovenaf, met twee mediaspelers, een mixer en een koptelefoon",
       "beeld_positie": "center 40%",
-      "intro": "Een dj die binnenkomt en meteen aan het werk kan. Dat is het idee achter onze booth. Met de beste dj-gear, goede monitoring en voldoende werkruimte en opbergplaats.",
+      "intro": "Een dj die binnenkomt en meteen aan het werk kan. Dat is het idee achter onze booth. Met de beste dj-gear, goede monitoring en voldoende werkruimte en opbergplaats. We stemmen de opstelling graag af op de rider van je dj.",
       "blokken": [
         {
           "producten": [
@@ -104,7 +104,7 @@
       "kernzin": "PA-systemen van de hoogste RCF-lijn en Brooklyn Audio",
       "beeld": "img/systeem-breed.jpg",
       "beeld_alt": "RCF-luidsprekers onder een truss met moving heads",
-      "intro": "Modulair, praktisch, krachtig, helder en technologisch vooruitstrevend. Wij werken met actieve speakers van twee merken die hun hele systeem zelf ontwerpen en bouwen: RCF uit Italië en Brooklyn Audio uit Nederland. Beide systemen zijn modulair. Dezelfde kasten die een cocktailavond voor honderd gasten verzorgen kunnen gecombineerd en gekoppeld een dansvloer voor vijftienhonderd personen dekken.",
+      "intro": "Geluid bepaalt of gasten elkaar verstaan aan tafel en of de dansvloer volloopt. Wij werken met actieve speakers van twee merken die hun hele systeem zelf ontwerpen en bouwen: RCF uit Italië en Brooklyn Audio uit Nederland. Kasten, woofers, versterkers en DSP zijn daardoor op elkaar afgestemd, voor een helder en krachtig geluid dat ook na uren op volume betrouwbaar blijft. Dezelfde kasten die een cocktailavond voor honderd gasten verzorgen, dekken gekoppeld een dansvloer voor vijftienhonderd personen. We adviseren graag welke opstelling bij jouw ruimte past.",
       "blokken": [
         {
           "label": "RCF KX-serie",
@@ -211,7 +211,7 @@
       "beeld": "img/case-productpresentatie.jpg",
       "beeld_alt": "Sneakers op verlichte plateaus onder theaterspots, in een hal met blauw licht",
       "beeld_positie": "center 62%",
-      "intro": "We ontwerpen een lichtplan en sturen daarvoor een offerte. Deze is gebaseerd op ofwel een locatiebezoek of foto’s, het type event en het doel, de fysieke ruimte en het budget. Afhankelijk van de locatie en de gekozen materialen is mogelijk een trussconstructie onderdeel van het advies.",
+      "intro": "Licht bepaalt hoe een ruimte voelt, vaak meer dan de inrichting. Een kale zaal wordt warm, een product krijgt focus en de sfeer kan in de loop van de avond meebewegen. Daarom hebben we sfeerlicht dat vrijwel overal inzetbaar is: draadloze washlights op accu, theaterspots en lichtzuilen. We denken graag mee over wat jouw ruimte en event nodig hebben.",
       "blokken": [
         {
           "producten": [
@@ -256,6 +256,12 @@
               "regel": "Matzwarte truss van Nederlandse bodem. Zeer stevig en in diverse maten en opstellingen inzetbaar, in uitgesproken of juist onopvallende vormen"
             }
           ]
+        },
+        {
+          "label": "Zo werken we",
+          "tekst": [
+            "We ontwerpen een lichtplan en sturen daarvoor een offerte. Deze is gebaseerd op ofwel een locatiebezoek of foto’s, het type event en het doel, de fysieke ruimte en het budget. Afhankelijk van de locatie en de gekozen materialen is mogelijk een trussconstructie onderdeel van het advies."
+          ]
         }
       ],
       "links": [
@@ -275,8 +281,14 @@
       "kernzin": "Dansvloerverlichting",
       "beeld": "img/diensten/dansvloer.jpg",
       "beeld_alt": "Volle dansvloer in roze en blauw licht, met bundels vanaf het plafond",
-      "intro": "Een hybride moving head projecteert een beam, spot en wash in één. Als je de juiste kiest (niet eentje die alles nét niet kan) dan is het een Zwitsers zakmes: je haalt daarmee uit één apparaat wat anders drie fixtures vraagt, en met een beperkt aantal stuks maak je een show met veel gezichten. De lampen wisselen bovendien van rol gedurende een avond: rustig als wash in de warm-up, impactvol als beam op peak hour.",
+      "intro": "Op een dansvloer beweegt het licht mee met de avond: rustig en warm bij binnenkomst, uitbundig als de vloer vol staat. Daarvoor werken we met hybride moving heads, die beam, spot en wash in één combineren. Omdat elke lamp meerdere rollen kan spelen, maak je met een beperkt aantal stuks een show met veel variatie. Nevel, lichtzuilen en spiegelbollen maken het beeld compleet. We stemmen de show graag af op je event en je muziek.",
       "blokken": [
+        {
+          "label": "Hybride moving heads",
+          "tekst": [
+            "Een hybride moving head projecteert een beam, spot en wash in één. Als je de juiste kiest (niet eentje die alles nét niet kan) dan is het een Zwitsers zakmes: je haalt daarmee uit één apparaat wat anders drie fixtures vraagt, en met een beperkt aantal stuks maak je een show met veel gezichten. De lampen wisselen bovendien van rol gedurende een avond: rustig als wash in de warm-up, impactvol als beam op peak hour."
+          ]
+        },
         {
           "label": "Wat erbij komt",
           "tekst": [

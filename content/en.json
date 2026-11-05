@@ -2096,14 +2096,6 @@
         ">A two-metre oval unit in dark grey, with an illuminated front that changes colour with the night. The technology is built in: network hub, cabling and power stay out of sight.<"
       ],
       [
-        "name=\"description\" content=\"Een dj die binnenkomt en meteen aan het werk kan. Dat is het idee achter onze booth. Met de beste dj-gear, goede monitoring en voldoende werkruimte en opbe\"",
-        "name=\"description\" content=\"A DJ who walks in and can get straight to work. That's the idea behind our booth. With top DJ gear, good monitoring and enough room to work and store things.\""
-      ],
-      [
-        ">Een dj die binnenkomt en meteen aan het werk kan. Dat is het idee achter onze booth. Met de beste dj-gear, goede monitoring en voldoende werkruimte en opbergplaats.<",
-        ">A DJ who walks in and can get straight to work. That's the idea behind our booth. With the best DJ gear, proper monitoring and enough room to work and for storage.<"
-      ],
-      [
         ">Zorg voor memory drives met de meest actuele versie van Rekordbox, of in elk geval met dual file management. Neem bij vragen of twijfel altijd zo snel mogelijk contact op.<",
         ">Bring memory drives with the latest version of Rekordbox, or at least with dual file management. If in doubt or if you have any questions, please get in touch early.<"
       ],
@@ -2190,6 +2182,14 @@
       [
         ">DE BOOTH<",
         ">THE BOOTH<"
+      ],
+      [
+        ">Een dj die binnenkomt en meteen aan het werk kan. Dat is het idee achter onze booth. Met de beste dj-gear, goede monitoring en voldoende werkruimte en opbergplaats. We stemmen de opstelling graag af op de rider van je dj.<",
+        ">A DJ who walks in and can get straight to work. That's the idea behind our booth. With the best DJ gear, proper monitoring and enough room to work and for storage. We're happy to align the setup with your DJ's rider.<"
+      ],
+      [
+        "name=\"description\" content=\"Een dj die binnenkomt en meteen aan het werk kan. Dat is het idee achter onze booth. Met de beste dj-gear, goede monitoring en voldoende werkruimte en opbe\"",
+        "name=\"description\" content=\"A DJ who walks in and can get straight to work. That&#x27;s the idea behind our booth. With the best DJ gear, proper monitoring and enough room to work and for\""
       ]
     ],
     "high-end-audio.html": [
@@ -2200,10 +2200,6 @@
       [
         ">Brooklyn ontwerpt al zijn kasten met dezelfde fasekarakteristiek. Daardoor kun je ze in elke combinatie inzetten zonder dat het geluid uit elkaar valt, en klinkt een kleine en een grote opstelling hetzelfde. De subs hebben ingebouwde cardioïde presets: het laag richt zich op het publiek in plaats van het podium.<",
         ">Brooklyn designs all its cabinets with the same phase response. That means you can use them in any combination with the sound remaining coherent, and a small and a large set-up sound the same. The subs have built-in cardioid presets: the low end is aimed at the audience instead of the podium.<"
-      ],
-      [
-        ">Modulair, praktisch, krachtig, helder en technologisch vooruitstrevend. Wij werken met actieve speakers van twee merken die hun hele systeem zelf ontwerpen en bouwen: RCF uit Italië en Brooklyn Audio uit Nederland. Beide systemen zijn modulair. Dezelfde kasten die een cocktailavond voor honderd gasten verzorgen kunnen gecombineerd en gekoppeld een dansvloer voor vijftienhonderd personen dekken.<",
-        ">Modular, practical, powerful, clear and technologically advanced. We work with active speakers from two brands that design and build their entire systems themselves: RCF from Italy and Brooklyn Audio from the Netherlands. Both systems consist of modular building blocks. The same cabinets that handle a cocktail evening for a hundred guests can, if combined and coupled, cover a dancefloor for fifteen hundred.<"
       ],
       [
         ">Wat ons in RCF overtuigt, is de goede lokalisatie van het geluid. Je ‘ziet’ de zangeres staan waar de vocalen vandaan lijken te komen. Software zoals FiRPHASE zorgt dat alle frequenties tegelijk aankomen. Bass Motion Control versterkt de laagweergave en beschermt de woofer zonder te vervormen. We sturen de set aan met via de RDTAP-smartphone-app geladen ‘ACE’-presets of met RDNet: daarmee zien en sturen we elke kast op afstand: niveau, EQ, temperatuur, limiters.<",
@@ -2228,10 +2224,6 @@
       [
         ">Met een SUB 808-AS eronder is de KX 515-A een compacte set op zichzelf, met hifi-klank voor lezingen en intieme feesten tot zo&#x27;n 150 gasten. Dezelfde combinatie kan ook gebruikt worden in de dj-booth als monitor.<",
         ">With a SUB 808-AS underneath, the KX 515-A is a compact set in its own right, with hi-fi sound for talks and intimate parties of up to around 150 guests. This combination can also be used as a monitor in the DJ booth.<"
-      ],
-      [
-        "name=\"description\" content=\"Modulair, praktisch, krachtig, helder en technologisch vooruitstrevend. Wij werken met actieve speakers van twee merken die hun hele systeem zelf ontwerpen\"",
-        "name=\"description\" content=\"We work with active speakers from two brands that design and build their entire systems themselves: RCF from Italy and Brooklyn Audio from the Netherlands.\""
       ],
       [
         ">Hybride top met point source- én line source-kenmerken. 2× 10&quot; + 4&quot; hoorn 100° × 25°, verticaal te koppelen voor verre worp, met &#x27;far&#x27; DSP-presets<",
@@ -2352,6 +2344,14 @@
       [
         ">Bekijk Brooklyn Audio ↗<",
         ">View Brooklyn Audio ↗<"
+      ],
+      [
+        ">Geluid bepaalt of gasten elkaar verstaan aan tafel en of de dansvloer volloopt. Wij werken met actieve speakers van twee merken die hun hele systeem zelf ontwerpen en bouwen: RCF uit Italië en Brooklyn Audio uit Nederland. Kasten, woofers, versterkers en DSP zijn daardoor op elkaar afgestemd, voor een helder en krachtig geluid dat ook na uren op volume betrouwbaar blijft. Dezelfde kasten die een cocktailavond voor honderd gasten verzorgen, dekken gekoppeld een dansvloer voor vijftienhonderd personen. We adviseren graag welke opstelling bij jouw ruimte past.<",
+        ">Sound decides whether guests can hear each other at the table and whether the dance floor fills up. We work with active speakers from two brands that design and build their entire systems themselves: RCF from Italy and Brooklyn Audio from the Netherlands. Cabinets, woofers, amplifiers and DSP are matched to each other, for clear, powerful sound that stays reliable even after hours at full volume. The same cabinets that handle a cocktail evening for a hundred guests can be linked to cover a dance floor for fifteen hundred. We're happy to advise on the setup that suits your space.<"
+      ],
+      [
+        "name=\"description\" content=\"Geluid bepaalt of gasten elkaar verstaan aan tafel en of de dansvloer volloopt. Wij werken met actieve speakers van twee merken die hun hele systeem zelf o\"",
+        "name=\"description\" content=\"Sound decides whether guests can hear each other at the table and whether the dance floor fills up. We work with active speakers from two brands that\""
       ]
     ],
     "atmospheric-lighting.html": [
@@ -2370,10 +2370,6 @@
       [
         ">Accugevoede spot met 5 tot 20 uur werktijd. Drie instelbare breedtes tot volle wash waarmee je een ruimte inkleurt. Full-colour en diverse wittinten voor natuurlijke huidtint. Draadloos aangestuurd door een Wolfmix controller<",
         ">Battery-powered spot with 5 to 20 hours of run time. Three adjustable beam widths up to a full wash that colours a room. Full-colour and various white tones for natural skin colors. Wirelessly controlled by a Wolfmix controller<"
-      ],
-      [
-        "name=\"description\" content=\"We ontwerpen een lichtplan en sturen daarvoor een offerte. Deze is gebaseerd op ofwel een locatiebezoek of foto’s, het type event en het doel, de fysieke r\"",
-        "name=\"description\" content=\"We propose a lighting plan that we quote, based on a pre-visit or pictures, the type of event, the physical space and the budget.\""
       ],
       [
         ">Spots met volledige kleurmenging en focusbladen om randen te snijden, zoals je ze in theaters en musea ziet. Geschikt voor het uitlichten van producten, kunst of een spreker<",
@@ -2446,6 +2442,18 @@
       [
         ">Licht als onderdeel van de aankleding: lichtbuizen in draadkooien, uplight tussen planten of een spiegelbol als object. Afgestemd op de stijl van het event<",
         ">Light as part of the styling: light tubes in wire cages, uplighting between plants or a mirror ball as an object. Matched to the style of the event<"
+      ],
+      [
+        ">Licht bepaalt hoe een ruimte voelt, vaak meer dan de inrichting. Een kale zaal wordt warm, een product krijgt focus en de sfeer kan in de loop van de avond meebewegen. Daarom hebben we sfeerlicht dat vrijwel overal inzetbaar is: draadloze washlights op accu, theaterspots en lichtzuilen. We denken graag mee over wat jouw ruimte en event nodig hebben.<",
+        ">Light shapes how a room feels, often more than the decor. A bare hall becomes warm, a product gets focus and the atmosphere can shift as the evening unfolds. That's why we have ambient lighting that works almost anywhere: battery-powered wireless washlights, theatre spots and light columns. We're happy to help you work out what your space and event need.<"
+      ],
+      [
+        "name=\"description\" content=\"Licht bepaalt hoe een ruimte voelt, vaak meer dan de inrichting. Een kale zaal wordt warm, een product krijgt focus en de sfeer kan in de loop van de avond\"",
+        "name=\"description\" content=\"Light shapes how a room feels, often more than the decor. A bare hall becomes warm, a product gets focus and the atmosphere can shift as the evening\""
+      ],
+      [
+        ">ZO WERKEN WE<",
+        ">HOW WE WORK<"
       ]
     ],
     "dancefloor-lighting.html": [
@@ -2468,10 +2476,6 @@
       [
         ">Onze keuze, het Zwitserse zakmes onder de moving heads voor events van middelgroot formaat: 400 watt, zoom van 3° tot 52°, CMY-kleurmenging, twee gobowielen en prisma&#x27;s, draadloos aan te sturen<",
         ">Our choice, the Swiss army knife of moving heads for mid-sized events: 400 watts, zoom from 3° to 52°, CMY colour mixing, two gobo wheels and prisms, wirelessly controllable<"
-      ],
-      [
-        "name=\"description\" content=\"Een hybride moving head projecteert een beam, spot en wash in één. Als je de juiste kiest (niet eentje die alles nét niet kan) dan is het een Zwitsers zakm\"",
-        "name=\"description\" content=\"A hybrid moving head projects beam, spot and wash in one. When choosing the right device this fixture can be like a Swiss army knife: one fixture does what would otherwise take three.\""
       ],
       [
         "alt=\"Infinity iFX-640 met interne shutters\"",
@@ -2512,6 +2516,18 @@
       [
         ">WAT ERBIJ KOMT<",
         ">WHAT COMES WITH IT<"
+      ],
+      [
+        ">Op een dansvloer beweegt het licht mee met de avond: rustig en warm bij binnenkomst, uitbundig als de vloer vol staat. Daarvoor werken we met hybride moving heads, die beam, spot en wash in één combineren. Omdat elke lamp meerdere rollen kan spelen, maak je met een beperkt aantal stuks een show met veel variatie. Nevel, lichtzuilen en spiegelbollen maken het beeld compleet. We stemmen de show graag af op je event en je muziek.<",
+        ">On a dance floor, the light moves with the evening: calm and warm as guests arrive, exuberant once the floor fills up. We work with hybrid moving heads that combine beam, spot and wash in one. Because each fixture can play several roles, a limited number of them gives you a show with plenty of variety. Haze, light columns and mirror balls complete the picture. We're happy to tailor the show to your event and your music.<"
+      ],
+      [
+        "name=\"description\" content=\"Op een dansvloer beweegt het licht mee met de avond: rustig en warm bij binnenkomst, uitbundig als de vloer vol staat. Daarvoor werken we met hybride movin\"",
+        "name=\"description\" content=\"On a dance floor, the light moves with the evening: calm and warm as guests arrive, exuberant once the floor fills up. We work with hybrid moving heads\""
+      ],
+      [
+        ">HYBRIDE MOVING HEADS<",
+        ">HYBRID MOVING HEADS<"
       ]
     ],
     "vintage-lighting.html": [

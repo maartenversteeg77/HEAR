@@ -118,6 +118,7 @@ for taal in ("nl", "en"):
         main = f'''<main class="wrap">
 <section class="casehead"><a class="crumb" href="{pre}/nieuws/"><span class="sectie">{T["nieuws"]}</span></a>{("<p class=\"nieuws-rubriek\">" + rub(b, taal) + "</p>") if b.get("rubriek") else ""}<h1 class="kernzin">{e(v(b, "titel", taal))}</h1><p class="label nieuws-datum nieuws-datum-onder"><time datetime="{b["datum"]}">{datum(b["datum"], taal)}</time></p></section>
 <figure class="casehero{passend}{" met-mobiel" if b.get("beeld_m") else ""}">{("<picture><source media=\"(max-width:900px)\" srcset=\"/" + e(b["beeld_m"]) + "\">") if b.get("beeld_m") else ""}<img src="/{e(b["beeld"])}" alt="{e(v(b, "beeld_alt", taal) or "")}"{pos}>{"</picture>" if b.get("beeld_m") else ""}</figure>
+{("<p class=\"foto-credit\">" + ("Photography" if taal == "en" else "Fotografie") + ": <a href=\"" + e(b["foto_credit"]["url"]) + "\" target=\"_blank\" rel=\"noopener\">" + e(b["foto_credit"]["naam"]) + "</a></p>") if b.get("foto_credit") else ""}
 {kopregel}
 <article class="artikel"><p class="lead">{e(lead)}</p>{lopend}{knop}</article>
 {v(b, "na_artikel", taal) or ""}
