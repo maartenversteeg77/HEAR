@@ -15,3 +15,15 @@ Cases: Transformatie: van skatehal tot dansvloer · Van industriële ruimte naar
 Contact: Organiseer je een clubnacht, pop-up of eigen feest? Laat je gegevens achter, dan neem ik contact met je op.
 
 Open: "live bediend tijdens de set" klopt dat altijd? · "beheerst richting de buren" als belofte ok? · "kermis" publiek gebruiken?
+
+---
+# Versie 2 (6 nov), na feedback Maarten
+Lead: Je wilt dat je feest klinkt als een goede club. Ook als het plaatsvindt in een loods, een skatehal of een ruimte die maar één nacht van jou is.
+Als promotor of collectief werk je met een andere locatie per avond, korte opbouwtijden en dj's met een rider. Geef je een eigen feest, dan wil je hetzelfde niveau als de clubs waar je zelf graag komt.
+Wij zorgen dat de dansvloer de hele avond werkt: geluid dat overal goed klinkt, een booth waar elke dj meteen kan draaien en licht dat past bij het moment.
+Nieuw blok "Ons geluid — Gelijkmatig, warm en doorgerekend": Een goed geluidssysteem is niet het hardste systeem. Het geluid ligt gelijkmatig over de dansvloer: vooraan niet te hard, achterin niet dun. En het is warm, zodat het de hele nacht prettig blijft. Daarom werken we met speakers van Nederlandse en Italiaanse makelij, van Brooklyn Audio en RCF. Het systeem is modulair: dezelfde familie speakers past in een compacte ruimte en in een zaal tot 35 meter diep. De opstelling rekenen we vooraf door op de afmetingen van jouw zaal.
+Aanbod in drie kaarten:
+- Geluid en booth: modulair geluidssysteem (compacte tot grote ruimtes, doorgerekend op jouw zaal) · subs in cardioïde opstelling (laag blijft op de dansvloer, niet het podium en de booth in) · rider-proof booth (CDJ-3000X met V10 of Euphonia) · forward booth (dj meer de ruimte in, danszone om zich heen, monitoring als tweede PA)
+- Licht: moving heads die je op veel manieren inzet (sierlijk in de opbouw van de avond, impactvol op het hoogtepunt) · sfeerlicht dat de ruimte vormgeeft · vintage clublicht (opgeknapte verlichting uit de clubs van de jaren 90, zoals Astrodisco en Golden Scan)
+- Line-up: een complete line-up (hele avond samenstellen of aanvullen) · live muzikanten bij een dj-set (percussie, saxofoon of vocals) · Speciale wensen?
+Geschrapt: "vol op de dansvloer, beheerst richting de buren" (niet waar te maken; cardioïde is vooral tegen bass-spill op podium en booth).
