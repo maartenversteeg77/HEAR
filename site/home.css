@@ -439,3 +439,20 @@ a.mail-ook,.quick.quick-breed p .mail-ook,.cta-brug .mail-ook{font:300 14px/1.3 
 .productlijst .pl-groep{display:none}
 .productlijst [hidden]{display:none!important}
 @media (max-width:520px){.pl-tab{flex:1 1 auto;text-align:center;padding:11px 12px;font-size:11px;letter-spacing:.1em}}
+
+/* Casetegels als poster (7 nov 2026): label linksboven, teaser met pijl onderin het beeld, feiten als balk eronder in het beeld */
+.poster .werk-beeld,.poster .case-beeld{position:relative;display:block;margin:0;overflow:hidden}
+.poster .werk-beeld::after,.poster .case-beeld::after{content:"";position:absolute;inset:auto 0 0;height:58%;background:linear-gradient(transparent,rgba(25,26,25,.88));pointer-events:none;z-index:1}
+.poster .p-chips{position:absolute;left:14px;top:14px;z-index:2;display:flex;flex-wrap:wrap;gap:6px;margin:0}
+.poster .p-chips span{display:inline-block;padding:4px 10px;border:1px solid rgba(246,245,241,.75);border-radius:999px;background:rgba(25,26,25,.45);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);color:#F6F5F1;font:600 10.5px/1.4 var(--tekst);letter-spacing:.14em;text-transform:uppercase}
+.poster .p-onder{position:absolute;left:0;right:0;bottom:0;z-index:2;display:block;color:#F6F5F1}
+.poster .p-onder h2,.poster .p-onder h3{display:block;margin:0;padding:0 18px 12px;font:400 clamp(22px,2vw,28px)/1.12 var(--kop);color:#F6F5F1;white-space:normal;min-height:0;text-wrap:balance}
+.poster .p-onder h2 a{color:inherit}
+.poster .p-onder i{font-style:normal;display:inline-block;transition:transform .25s}
+.poster:hover .p-onder i{transform:translateX(6px)}
+.poster:hover .p-onder h2,.poster:hover .p-onder h3{text-decoration:none}
+.poster .p-feiten{display:flex;flex-wrap:wrap;align-items:center;gap:2px 0;margin:0;padding:10px 18px;background:rgba(25,26,25,.72);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);font:400 12.5px/1.4 var(--tekst);color:#E6E5E0}
+.poster .p-stip{display:inline-block;width:4px;height:4px;border-radius:50%;background:var(--koraal);margin:0 8px}
+.poster .werk-label{top:0;bottom:auto;right:14px;z-index:3}
+.case-tegel.poster img{aspect-ratio:4/5}
+.case-tegel.poster:hover img,.werk-kaart.poster:hover img{opacity:.92}

@@ -9,6 +9,8 @@ data = json.loads((site / "cases.json").read_text())
 TP = data["toepassingen"]
 e = lambda t: html.escape(t, quote=True)
 lbl = lambda c: f'<img class="werk-label" src="{c["label"]}" alt="">' if c.get("label") else ""
+def feiten(t):
+    return '<span class="p-stip" aria-hidden="true"></span>'.join(f'<span>{e(x.strip())}</span>' for x in t.split("|"))
 def tegels(taal="nl"):
     en = taal == "en"; v = lambda c, k: (c.get(k + "_en") if en else None) or c[k]
     gebruikt = [k for k in TP if any(k in c.get("toepassing", []) for c in data["cases"] if c.get("status") == "af")]
@@ -26,10 +28,11 @@ def tegels(taal="nl"):
         ext = c.get("extern"); pl = "↗" if ext else "→"
         if ext: bek = ("Read on maartenversteeg.nl" if en else "Lees op maartenversteeg.nl")
         doel = ' target="_blank" rel="noopener"' if ext else ""
-        out += (f'<article class="case-tegel" data-t="{" ".join(t)}"><div class="case-beeld"><img src="{e(c["beeld"])}" alt="{e(c["alt"])}" loading="lazy"{pos}>{lbl(c)}<span class="bekijk-case">{bek} <i aria-hidden="true">{pl}</i></span></div>'
-                f'<div class="case-tekst"><p class="labels">{labels}</p>'
-                f'<h2><a class="tegel-link" href="{e(c["link"])}"{doel}>{e(v(c, "tegel_titel") if c.get("tegel_titel") else v(c, "titel"))}{"<span class=\"vh\"> (" + ("opens in a new window" if en else "opent in een nieuw venster") + ")</span>" if ext else ""}</a></h2>'
-                f'<p>{e(v(c, "tegel_tekst") if c.get("tegel_tekst") else v(c, "tekst"))}</p><span class="pijl" aria-hidden="true">{pl}</span></div></article>')
+        tt = (v(c, "tegel_titel") if c.get("tegel_titel") else v(c, "titel")).replace(chr(10), " ")
+        tk = v(c, "tegel_tekst") if c.get("tegel_tekst") else v(c, "tekst")
+        out += (f'<article class="case-tegel poster" data-t="{" ".join(t)}"><div class="case-beeld"><img src="{e(c["beeld"])}" alt="{e(c["alt"])}" loading="lazy"{pos}>{lbl(c)}'
+                f'<p class="p-chips">{labels}</p><div class="p-onder"><h2><a class="tegel-link" href="{e(c["link"])}"{doel}>{e(tt)}{"<span class=\"vh\"> (" + ("opens in a new window" if en else "opent in een nieuw venster") + ")</span>" if ext else ""} <i aria-hidden="true">{pl}</i></a></h2>'
+                f'<p class="p-feiten">{feiten(tk)}</p></div></div></article>')
     js = ("<script>(function(){var b=document.querySelectorAll('.case-filter button'),t=document.querySelectorAll('.case-overzicht .case-tegel');"
           "function zet(f){b.forEach(function(x){x.classList.toggle('aan',x.dataset.f===f)});t.forEach(function(x){x.hidden=!!f&&(' '+x.dataset.t+' ').indexOf(' '+f+' ')<0});}"
           "b.forEach(function(x){x.addEventListener('click',function(){zet(x.dataset.f);history.replaceState(null,'',x.dataset.f?'#'+x.dataset.f:location.pathname)})});"
@@ -55,9 +58,10 @@ def werkrij(taal="nl"):
         if not c.get("uitgelicht"): continue
         pos = f' style="object-position:{e(c["positie"])}"' if c.get("positie") else ""
         lab = "".join(f'<span>{e(TP[k]["naam_en"] if en else TP[k]["naam"])}</span>' for k in c.get("toepassing", []))
-        kaarten += (f'<a class="werk-kaart" href="{e(c["link"])}"><span class="werk-beeld"><img loading="lazy" src="{e(c["beeld"])}" alt="{e(c["alt"])}"{pos}>'
-                    f'<span class="bekijk-case">{"View the case" if en else "Bekijk de case"} <i aria-hidden="true">→</i></span>{lbl(c)}</span>'
-                    f'<span class="label">{lab}</span><h3>{e((v(c, "tegel_titel") if c.get("tegel_titel") else v(c, "titel")).replace(chr(10), " "))}</h3><p>{e(v(c, "tegel_tekst") if c.get("tegel_tekst") else v(c, "tekst"))}</p></a>')
+        tt = (v(c, "tegel_titel") if c.get("tegel_titel") else v(c, "titel")).replace(chr(10), " ")
+        tk = v(c, "tegel_tekst") if c.get("tegel_tekst") else v(c, "tekst")
+        kaarten += (f'<a class="werk-kaart poster" href="{e(c["link"])}"><span class="werk-beeld"><img loading="lazy" src="{e(c["beeld"])}" alt="{e(c["alt"])}"{pos}>{lbl(c)}'
+                    f'<span class="p-chips">{lab}</span><span class="p-onder"><h3>{e(tt)} <i aria-hidden="true">→</i></h3><span class="p-feiten">{feiten(tk)}</span></span></span></a>')
     return filt, kaarten
 def plaats_werk(s, taal):
     filt, kaarten = werkrij(taal)
