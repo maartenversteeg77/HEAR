@@ -2,10 +2,11 @@
 
 Kop overzichtspagina: "Wij werken graag samen met…". Elke tegel maakt de zin af: kop (groep mensen) + uitlegregel.
 Werkwijze: één voor één bedenken, daarna alle vier naast elkaar beoordelen.
+Volgorde tegels (2×2): eventmanagers linksboven, dance-events rechtsboven, merken linksonder, locaties rechtsonder. Bij bouwen: "dance‑events" met niet-afbrekend streepje.
 Pagina-opbouw per doelgroep: scene setting (erkenning van hun vak) → scene rapport (trend) → herkenning → erkenning → oplossing → werkwijze (stappenkaart) → zekerheid (case) → contact (gegevens achterlaten).
 
-## 1. Feest / dans — concept 1 (6 nov)
-**Iedereen die een feest geeft waar gedanst wordt**
+## 1. Feest / dans — concept 2 (6 nov)
+**Organisatoren van dance-events** (eerder: "Iedereen die een feest geeft waar gedanst wordt")
 Promotors, collectieven en wie een eigen feest met een dj of artiesten organiseert.
 
 - Onderscheid met zakelijk: de dansvloer is het doel, niet een middel. Privéfeest hoort hier.
