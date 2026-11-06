@@ -15,7 +15,7 @@ AAN = ' class="aan" aria-current="page"'
 fouten = []
 
 # --- vorige/volgende op casepagina's, uit cases.json (NL), radio-mixes achteraan ---
-keten = [c for c in cases["cases"] if c.get("status") == "af" and not c.get("nieuws")]
+keten = [c for c in cases["cases"] if c.get("status") == "af" and not c.get("nieuws") and not c.get("extern")]
 keten.append({"link": "radio-mixes.html", "titel": "Radio-mixes voor Deep Radio", "titel_en": "Radio mixes for Deep Radio"})
 def kort(c, taal):
     t = (c.get("titel_en") if taal == "en" else c["titel"]) or c["titel"]

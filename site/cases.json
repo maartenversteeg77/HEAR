@@ -145,7 +145,26 @@
    "link": "/en/nieuws/raw-drums-ade.html",
    "toepassing": [
     "dance"
-   ]
+   ],
+   "label": "img/ade-label.png",
+   "datum": "2026-10"
+  },
+  {
+   "status": "af",
+   "nieuws": true,
+   "extern": true,
+   "uitgelicht": false,
+   "titel": "Muzikale reis van 2 uur\nop Deep Radio",
+   "titel_en": "A two-hour musical journey\non Deep Radio",
+   "tekst": "Vrijdag 20 november van 20:00 tot 22:00: een 1‑take mix bij Protechnive, het programma van Jeroen de Wolf.",
+   "tekst_en": "Friday 20 November, 20:00 to 22:00 (CET): a one‑take mix on Protechnive, the show of Jeroen de Wolf.",
+   "beeld": "img/nieuws/deep-radio-20-nov.jpg",
+   "alt": "Maarten Versteeg achter de draaitafels, met het logo van Deep Radio",
+   "link": "https://www.maartenversteeg.nl/news-deep-radio",
+   "toepassing": [
+    "dj"
+   ],
+   "datum": "2026-11"
   }
  ],
  "toepassingen": {
@@ -170,5 +189,5 @@
    "naam_en": "Advice"
   }
  },
- "_uitleg_labels": "toepassing = soort werk (label op de tegel, filter op cases.html). uitgelicht = in de carrousel op de homepage. nieuws = tegel linkt naar een nieuwsbericht (geen eigen casepagina, niet in vorige/volgende)."
+ "_uitleg_labels": "toepassing = soort werk (label op de tegel, filter op cases.html). uitgelicht = in de carrousel op de homepage. nieuws = tegel linkt naar een nieuwsbericht (geen eigen casepagina, niet in vorige/volgende). datum (JJJJ-MM) = volgorde in het overzicht, nieuwste eerst; cases zonder datum volgen in de volgorde van dit bestand. De carrousel volgt de volgorde van dit bestand. extern=true: tegel linkt naar een andere site, opent in een nieuw venster en toont ↗."
 }
