@@ -12,6 +12,9 @@ Promotors, collectieven en wie een eigen feest met een dj of artiesten organisee
 - "Geborreld" bewust weggelaten (woord van de zakelijke doelgroep); borrel kan in de paginatekst als omslagmoment.
 - Open: cocktailparty noemen, als signaal van niveau ("niet de verjaardag van tante Truus"). Mogelijke vorm: "…en wie een eigen feest of cocktailparty met een dj of artiesten organiseert."
 
-## 2. Zakelijk — nog te doen
+## 2. Zakelijk — concept 1 (6 nov)
+Maarten: "Eventmanagers of communicatieprofessionals die namens hun bedrijf een netwerkdag, seminar of zakelijke borrel organiseren."
+- De functie maakt duidelijk dat het corporate is.
+- Open: "bedrijf" sluit gemeenten en overheid uit (case gemeentelijk netwerkevent); alternatief "werkgever". Splitsen in kop + uitlegregel zoals bij 1? Jubileum noemen (case)?
 ## 3. Agencies — nog te doen
 ## 4. Locaties — nog te doen
