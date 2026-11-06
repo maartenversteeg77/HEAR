@@ -462,3 +462,6 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Toon voor brand activation-teksten: nuchter, concreet, vaktermen zonder uitleg (brand activation, scenografie); geen marketingbeloftes, geen uitleg van wat een creatief directeur al weet ("een truss vormt een frame"), geen van…naar, geen conclusies die de lezer zelf trekt.
 - Agency-pagina (stap 3): concepttekst ~70-80% af in docs/concepten/agency-pagina.md (5 nov). Morgen verder; eerst stap 2.
 - Caselabels (6 nov): één label per case. Skatehal = Dance events (Bijzondere eventlocaties weg), modemerk = Brand activation, 40 jaar en Deep Radio = Dj. Nieuwe sleutels "brand" (link naar de case zelf tot de agency-pagina er is) en "dj" (link artiesten.html) in cases.json. Labels mengen nu doelgroep en type; dit wordt rechtgetrokken in stap 2.
+- Open (6 nov): werkwijze voor events (gesprek → locatiebezoek → ontwerp → opbouw → de avond), als pagina of blok; nog te doen.
+- Klantnamen/logo's (6 nov): komt vanzelf; Maarten vraagt elke nieuwe klant of HEAR hen mag vermelden, soms met een nieuwsbericht.
+- Partners (6 nov): voorlopig in de bio; elders noemen waar het verheldert. Eventueel later een partnerpagina.
