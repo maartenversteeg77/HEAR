@@ -785,7 +785,7 @@
       "tekst": "Converted for a one-night pop-up event, with limited soundcheck needed."
     },
     "jubileum-ondernemersnetwerk.html": {
-      "titel": "Anniversary of a business network",
+      "titel": "Milestone celebration for a business network",
       "tekst": "A luxurious garden party in the middle of Oud-Zuid, without disturbing the neighbours."
     },
     "gemeentelijk-netwerkevent.html": {
@@ -901,8 +901,8 @@
         "alt=\"AlphaTheta Euphonia rotary mixer in red light\""
       ],
       [
-        "data-i=\"0\">Dj-gear</button>",
-        "data-i=\"0\">DJ gear</button>"
+        "data-i=\"0\" data-g=\"p\">Dj-gear</button>",
+        "data-i=\"0\" data-g=\"p\">DJ gear</button>"
       ],
       [
         "data-bekijk=\"Bekijk al het geluid\"><span class=\"pl-titel\">Geluid</span><small>RCF KX en Brooklyn Audio</small>",
@@ -913,8 +913,8 @@
         "alt=\"RCF KX series: three tops side by side\""
       ],
       [
-        "data-i=\"1\">Geluid</button>",
-        "data-i=\"1\">Sound</button>"
+        "data-i=\"1\" data-g=\"p\">Geluid</button>",
+        "data-i=\"1\" data-g=\"p\">Sound</button>"
       ],
       [
         "data-bekijk=\"Bekijk al het sfeerlicht\"><span class=\"pl-titel\">Sfeerlicht</span><small>accu-washlights, theaterspots, hazer</small>",
@@ -925,8 +925,8 @@
         "alt=\"ADJ ElectraPix Par 7 with light columns and globe\""
       ],
       [
-        "data-i=\"2\">Sfeerlicht</button>",
-        "data-i=\"2\">Ambient lighting</button>"
+        "data-i=\"2\" data-g=\"p\">Sfeerlicht</button>",
+        "data-i=\"2\" data-g=\"p\">Ambient lighting</button>"
       ],
       [
         "data-bekijk=\"Bekijk al het dansvloerlicht\"><span class=\"pl-titel\">Dansvloerlicht</span><small>hybride moving heads en lichtshows</small>",
@@ -937,8 +937,8 @@
         "alt=\"Red and blue light beams from moving heads\""
       ],
       [
-        "data-i=\"3\">Dansvloerlicht</button>",
-        "data-i=\"3\">Dance floor lighting</button>"
+        "data-i=\"3\" data-g=\"p\">Dansvloerlicht</button>",
+        "data-i=\"3\" data-g=\"p\">Dance floor lighting</button>"
       ],
       [
         "data-bekijk=\"Bekijk al het vintage licht\"><span class=\"pl-titel\">90&#x27;s vintage licht</span><small>Astrodisco en Golden Scan</small>",
@@ -949,16 +949,16 @@
         "alt=\"Clay Paky Astrodisco\""
       ],
       [
-        "data-i=\"4\">90&#x27;s vintage licht</button>",
-        "data-i=\"4\">90s vintage lighting</button>"
+        "data-i=\"4\" data-g=\"p\">90&#x27;s vintage licht</button>",
+        "data-i=\"4\" data-g=\"p\">90s vintage lighting</button>"
       ],
       [
         "data-bekijk=\"Bekijk aankoopadvies\"><span class=\"pl-titel\">Aankoopadvies licht en geluid</span><small>merkonafhankelijk, voor venues</small>",
         "data-bekijk=\"See purchase advice\"><span class=\"pl-titel\">Purchase advice for light and sound</span><small>brand-independent, for venues</small>"
       ],
       [
-        "data-i=\"8\">Aankoopadvies licht en geluid</button>",
-        "data-i=\"8\">Purchase advice for light and sound</button>"
+        "data-i=\"8\" data-g=\"d\">Aankoopadvies licht en geluid</button>",
+        "data-i=\"8\" data-g=\"d\">Purchase advice for light and sound</button>"
       ],
       [
         "data-bekijk=\"Bekijk artiesten\"><span class=\"pl-titel\">Dj&#x27;s en artiesten</span><small>vocalist, saxofonist, percussionist</small>",
@@ -969,8 +969,8 @@
         "alt=\"Garden party with DJ and saxophonist\""
       ],
       [
-        "data-i=\"6\">Dj&#x27;s en artiesten</button>",
-        "data-i=\"6\">DJs and artists</button>"
+        "data-i=\"6\" data-g=\"d\">Dj&#x27;s en artiesten</button>",
+        "data-i=\"6\" data-g=\"d\">DJs and artists</button>"
       ],
       [
         "data-bekijk=\"Bekijk Coffee cuts\"><span class=\"pl-titel\">Coffee cuts</span><small>playlists of een live dj voor je koffiebar of bar</small>",
@@ -993,8 +993,8 @@
         "data-bekijk=\"See communication advice\"><span class=\"pl-titel\">Communication advice</span><small>message, speeches, invitations, video</small>"
       ],
       [
-        "data-i=\"5\">Communicatieadvies</button>",
-        "data-i=\"5\">Communication advice</button>"
+        "data-i=\"5\" data-g=\"d\">Communicatieadvies</button>",
+        "data-i=\"5\" data-g=\"d\">Communication advice</button>"
       ],
       [
         "alt=\"Maarten Versteeg in een blauw colbert\"",
@@ -1079,6 +1079,18 @@
       [
         "<a href=\"diensten.html\">Licht</a>",
         "<a href=\"diensten.html\">Light</a>"
+      ],
+      [
+        "aria-label=\"Soort aanbod\"",
+        "aria-label=\"Type of offer\""
+      ],
+      [
+        ">Licht, geluid en dj-gear</button>",
+        ">Light, sound and DJ gear</button>"
+      ],
+      [
+        ">Dj&#x27;s, advies en meer</button>",
+        ">DJs, advice and more</button>"
       ]
     ],
     "cases.html": [
@@ -3484,7 +3496,7 @@
       ],
       [
         "<meta name=\"description\" content=\"Licht, geluid en muziek voor netwerkdagen, seminars en jubilea. Eén aanspreekpunt, met 25 jaar ervaring in corporate communicatie.\">",
-        "<meta name=\"description\" content=\"Light, sound and music for networking days, seminars and anniversaries. One point of contact, with 25 years of experience in corporate communications.\">"
+        "<meta name=\"description\" content=\"Light, sound and music for networking days, seminars and milestone celebrations. One point of contact, with 25 years of experience in corporate communications.\">"
       ],
       [
         ">Als eventmanager zorg je dat het programma soepel loopt: het dagdeel met sprekers, de omslag naar de borrel en het informele deel daarna.<",
@@ -3492,7 +3504,7 @@
       ],
       [
         ">Een netwerkdag, seminar of jubileum is het visitekaartje van je organisatie. En het moment waarop je je relaties fysiek ontmoet.<",
-        ">A networking day, seminar or anniversary is your organisation's calling card. And the moment you meet your relations in person.<"
+        ">A networking day, seminar or milestone celebration is your organisation's calling card. And the moment you meet your relations in person.<"
       ],
       [
         ">Het draaiboek naast de techniek. Werkt er een technicus van de locatie mee, dan krijgt die vooraf een korte online briefing.<",
@@ -3628,7 +3640,7 @@
       ],
       [
         ">Jubileum ondernemersnetwerk<",
-        ">Anniversary of a business network<"
+        ">Milestone celebration for a business network<"
       ],
       [
         "title=\"Merken en bureaus\"",
@@ -4967,7 +4979,7 @@
     "Hoi Maarten, ik zag de case over systeemadvies en wil meer weten over audio-advies voor mijn ruimte.": "Hi Maarten, I saw the system advice case and would like to know more about audio advice for my space.",
     "Hoi Maarten, ik zag de radio-mixes en heb een vraag voor mijn eigen event.": "Hi Maarten, I saw the radio mixes and have a question about my own event.",
     "Hoi Maarten, ik zag de case 'Seminar en netwerkevent' en heb een vraag voor mijn eigen event.": "Hi Maarten, I saw the case 'Seminar and networking event' and have a question about my own event.",
-    "Hoi Maarten, ik zag de case 'Jubileum ondernemersnetwerk' en heb een vraag voor mijn eigen event.": "Hi Maarten, I saw the case 'Anniversary of a business network' and have a question about my own event.",
+    "Hoi Maarten, ik zag de case 'Jubileum ondernemersnetwerk' en heb een vraag voor mijn eigen event.": "Hi Maarten, I saw the case 'Milestone celebration for a business network' and have a question about my own event.",
     "Hoi Maarten, ik zag de case 'Transformatie: van skatehal tot dansvloer' en heb een vraag voor mijn eigen event.": "Hi Maarten, I saw the case 'Transformation: from skate hall to dancefloor' and have a question about my own event.",
     "Hoi Maarten, ik zag de case 'Een reis door 40 jaar elektronische muziek' en heb een vraag voor mijn eigen event.": "Hi Maarten, I saw the case 'A journey through 40 years of electronic music' and have a question about my own event.",
     "Hoi Maarten, ik zag de case 'Advies over het beste soundsystem voor jouw ruimte' en heb een vraag voor mijn eigen event.": "Hi Maarten, I saw the case 'Advice on the right sound system for your space' and have a question about my own event.",
