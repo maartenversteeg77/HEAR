@@ -15,6 +15,10 @@ Promotors, collectieven en wie een eigen feest met een dj of artiesten organisee
 ## 2. Zakelijk — concept 1 (6 nov)
 Maarten: "Eventmanagers of communicatieprofessionals die namens hun bedrijf een netwerkdag, seminar of zakelijke borrel organiseren."
 - De functie maakt duidelijk dat het corporate is.
-- Open: "bedrijf" sluit gemeenten en overheid uit (case gemeentelijk netwerkevent); alternatief "werkgever". Splitsen in kop + uitlegregel zoals bij 1? Jubileum noemen (case)?
+Uitgewerkt:
+**Eventmanagers en communicatieprofessionals**
+Die namens hun werkgever of opdrachtgever een netwerkdag, seminar of zakelijke borrel organiseren.
+- "Werkgever of opdrachtgever": dekt bedrijf, overheid én externe freelancers (vaak externen).
+- Open: jubileum noemen (case)? Grens met agencies (die ook voor een opdrachtgever werken) bewaken bij 3.
 ## 3. Agencies — nog te doen
 ## 4. Locaties — nog te doen
