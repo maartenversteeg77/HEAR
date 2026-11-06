@@ -15,6 +15,16 @@
    "naam": "Dance events",
    "link": "dance-events.html",
    "naam_en": "Dance events"
+  },
+  "brand": {
+   "naam": "Brand activation",
+   "link": "productpresentatie.html",
+   "naam_en": "Brand activation"
+  },
+  "dj": {
+   "naam": "Dj",
+   "link": "artiesten.html",
+   "naam_en": "DJ"
   }
  },
  "cases": [
@@ -26,8 +36,7 @@
    "alt": "DJ-booth in een skatehal tijdens ADE",
    "link": "ade-dj.html",
    "doelgroepen": [
-    "dance",
-    "venue"
+    "dance"
    ],
    "titel_en": "Transformation: from skate hall to dancefloor",
    "tekst_en": "Converted for a one-night pop-up event, with limited soundcheck needed.",
@@ -41,7 +50,7 @@
    "alt": "Sneakers op verlichte plateaus onder theaterspots, in een hal met blauw licht",
    "link": "productpresentatie.html",
    "doelgroepen": [
-    "corporate"
+    "brand"
    ],
    "titel_en": "Brand activation\nfor a fashion brand",
    "tekst_en": "A collection of sneakers, clothing and accessories on platforms, and in the evening a party with the collection above the dance floor."
@@ -81,8 +90,7 @@
    "link": "dj-sets.html",
    "positie": "50% 0%",
    "doelgroepen": [
-    "dance",
-    "corporate"
+    "dj"
    ],
    "titel_en": "A journey through 40 years of electronic music",
    "tekst_en": "DJ sets for corporate events, sky lounges and cocktail bars: from speakeasy to dancefloor."
@@ -95,7 +103,7 @@
    "alt": "Deep Radio-mix van Maarten Versteeg",
    "link": "radio-mixes.html",
    "doelgroepen": [
-    "dance"
+    "dj"
    ],
    "titel_en": "Radio mixes for Deep Radio",
    "tekst_en": "Two hours of soulful house, deep house, afro, latin, disco and house classics."
