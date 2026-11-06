@@ -87,6 +87,8 @@
 
 /* 2x2-blok "Wij werken graag samen met…" (homepage en overzichtspagina) */
 .samen{padding:clamp(56px,7vw,104px) var(--rand);background:var(--wit,#F6F5F1);color:var(--zwart)}
+.werk~.samen{padding-top:clamp(8px,1.5vw,24px)}
+.samen{padding-bottom:clamp(56px,6vw,96px)}
 .samen h2{font:300 clamp(36px,4.4vw,64px)/1.05 var(--kop);margin:0 0 clamp(28px,3vw,44px);text-wrap:balance}
 .samen-raster{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(12px,1.4vw,20px)}
 .samen-tegel{display:grid;grid-template-columns:46% minmax(0,1fr);background:#FFFFFF;color:var(--zwart);text-decoration:none;min-height:290px}
