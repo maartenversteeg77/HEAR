@@ -102,7 +102,7 @@ def stap(n, kop_nl, kop_en, inhoud, laatste=False, terug=None, verder=None):
     return (f'<section class="stap" data-stap="{n}"><p class="stapteller">{n}/3</p><h2>{T(kop_nl, kop_en)}</h2>{inhoud}'
             f'<p class="formvoet">{volgende}{vorige}</p></section>')
 
-stap1 = stap(1, "Kennismaken", "Getting acquainted", verder="keuze", inhoud=f'''<p class="stapuitleg">{T("Velden met * zijn nodig om contact op te nemen.", "Fields marked * are needed to get in touch.")}</p><div class="velden">
+stap1 = stap(1, "Kennismaken", "Getting acquainted", verder="keuze", inhoud=f'''<p class="stapuitleg">{T("Velden met * zijn nodig om contact op te nemen. We reageren meestal dezelfde werkdag.", "Fields marked * are needed to get in touch. We usually reply the same working day.")}</p><div class="velden">
 {gesprek}
 {veld("naam", "Naam", "Name", verplicht=True, extra=' autocomplete="name"')}
 {veld("organisatie", "Organisatie", "Organisation", extra=' autocomplete="organization"')}

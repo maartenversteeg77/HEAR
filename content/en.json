@@ -765,6 +765,10 @@
     [
       "<span class=\"ps-t\">Overzicht van alles</span>",
       "<span class=\"ps-t\">See everything</span>"
+    ],
+    [
+      "<a href=\"prijs.html\">Tarieven</a></nav>",
+      "<a href=\"prijs.html\">Rates</a></nav>"
     ]
   ],
   "cases_json": {
@@ -1067,6 +1071,10 @@
       [
         "\"samen-uitleg\">Die steeds een andere klant moeten servicen: vandaag een modeshow, morgen een seminar, overmorgen een bedrijfsfeest met dj.<",
         "\"samen-uitleg\">Who serve a different client every time: a fashion show today, a seminar tomorrow, a company party with a DJ the day after.<"
+      ],
+      [
+        "<a href=\"diensten.html\">Licht</a>",
+        "<a href=\"diensten.html\">Light</a>"
       ]
     ],
     "cases.html": [
@@ -3171,8 +3179,8 @@
         ">Late afternoon<"
       ],
       [
-        ">Velden met * zijn nodig om contact op te nemen.<",
-        ">Fields marked * are needed to get in touch.<"
+        ">Velden met * zijn nodig om contact op te nemen. We reageren meestal dezelfde werkdag.<",
+        ">Fields marked * are needed to get in touch. We usually reply the same working day.<"
       ],
       [
         ">Naam<",

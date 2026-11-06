@@ -77,11 +77,12 @@ for naam in en["vertaald"]:
     s = (site / naam).read_text()
     s = vertaal(s, en["globaal"], naam, verplicht=False)
     s = vertaal(s, en["paginas"].get(naam, []), naam)
-    if naam == "cases.html":
+    if naam in ("cases.html", "index.html"):
         import importlib.util
         spec = importlib.util.spec_from_file_location("bouw_cases", root / "scripts" / "bouw-cases.py")
         bc = importlib.util.module_from_spec(spec); spec.loader.exec_module(bc)
-        s, _ = bc.plaats(s, "en")
+        if naam == "cases.html": s, _ = bc.plaats(s, "en")
+        else: s = bc.plaats_werk(s, "en")
     # vorige/volgende in het Engels
     for i, c in enumerate(keten):
         if c["link"] == naam:

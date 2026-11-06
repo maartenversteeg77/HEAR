@@ -78,30 +78,19 @@
 
   <section class="werk" aria-labelledby="werk-kop">
     <div class="werk-kop">
-      <h2 id="werk-kop">Uitgelicht werk</h2><nav class="werk-filter" aria-label="Soort werk"></nav>
+      <h2 id="werk-kop">Uitgelicht werk</h2><nav class="werk-filter" aria-label="Soort werk"><a href="cases.html#brand">Brand activation</a><a href="cases.html#zakelijk">Zakelijk event</a><a href="cases.html#dance">Dance event</a><a href="cases.html#dj">Dj</a><a href="cases.html#advies">Advies</a></nav>
       <div class="werk-pijlen">
         <button type="button" data-richting="-1" aria-label="Vorige cases">←</button>
         <button type="button" data-richting="1" aria-label="Volgende cases">→</button>
       </div>
     </div>
-    <div class="werk-rij" id="werk-rij">
-      <a class="werk-kaart werk-alle" href="cases.html"><span>Alle cases</span><span class="pijl" aria-hidden="true">→</span></a>
+    <div class="werk-rij" id="werk-rij"><a class="werk-kaart" href="ade-dj.html"><span class="werk-beeld"><img loading="lazy" src="img/case-ade.jpg" alt="DJ-booth in een skatehal tijdens ADE"><span class="bekijk-case">Bekijk de case <i aria-hidden="true">→</i></span><img class="werk-label" src="img/ade-label.png" alt=""></span><span class="label"><span>Dance event</span></span><h3>Transformatie: van skatehal tot dansvloer</h3><p>Eén avond omgebouwd voor een pop-upevent, met beperkte soundcheck nodig.</p></a><a class="werk-kaart" href="productpresentatie.html"><span class="werk-beeld"><img loading="lazy" src="img/case-productpresentatie.jpg" alt="Sneakers op verlichte plateaus onder theaterspots, in een hal met blauw licht"><span class="bekijk-case">Bekijk de case <i aria-hidden="true">→</i></span></span><span class="label"><span>Brand activation</span></span><h3>Brand activation voor een modemerk</h3><p>Een collectie sneakers, kleding en accessoires op plateaus, en &#x27;s avonds een feest met de collectie boven de dansvloer.</p></a><a class="werk-kaart" href="gemeentelijk-netwerkevent.html"><span class="werk-beeld"><img loading="lazy" src="img/case-gemeente.jpg" alt="Gesprek op een podium voor publiek"><span class="bekijk-case">Bekijk de case <i aria-hidden="true">→</i></span></span><span class="label"><span>Zakelijk event</span></span><h3>Seminar en netwerkevent</h3><p>Van seminars en workshops naar een swingende cocktail hour.</p></a><a class="werk-kaart" href="jubileum-ondernemersnetwerk.html"><span class="werk-beeld"><img loading="lazy" src="img/case-creativegrounds.jpg" alt="Gasten dansen met een glas wijn in de hand, een saxofonist speelt op de voorgrond"><span class="bekijk-case">Bekijk de case <i aria-hidden="true">→</i></span></span><span class="label"><span>Zakelijk event</span></span><h3>Jubileum ondernemersnetwerk</h3><p>Een luxe tuinfeest midden in Oud-Zuid, zonder overlast voor de buurt.</p></a><a class="werk-kaart" href="dj-sets.html"><span class="werk-beeld"><img loading="lazy" src="img/case-djsets.jpg" alt="Maarten Versteeg, zittend op een flightcase" style="object-position:50% 0%"><span class="bekijk-case">Bekijk de case <i aria-hidden="true">→</i></span></span><span class="label"><span>Dj</span></span><h3>Een reis door 40 jaar elektronische muziek</h3><p>Dj-sets voor corporate events, skylounges en cocktailbars: van speakeasy tot dansvloer.</p></a><a class="werk-kaart" href="radio-mixes.html"><span class="werk-beeld"><img loading="lazy" src="assets/radio-deep-radio-green.png" alt="Deep Radio-mix van Maarten Versteeg"><span class="bekijk-case">Bekijk de case <i aria-hidden="true">→</i></span></span><span class="label"><span>Dj</span></span><h3>Radio-mixes voor Deep Radio</h3><p>Twee uur soulful house, deephouse, afro, latin, disco en houseclassics.</p></a><a class="werk-kaart" href="systeemadvies.html"><span class="werk-beeld"><img loading="lazy" src="img/case-systeemadvies.jpg" alt="Luidsprekers op een stack"><span class="bekijk-case">Bekijk de case <i aria-hidden="true">→</i></span></span><span class="label"><span>Advies</span></span><h3>Advies over het beste soundsystem voor jouw ruimte</h3><p>Systeemadvies voor een licht- en geluidsverhuurbedrijf.</p></a><a class="werk-kaart" href="prive-event.html"><span class="werk-beeld"><img loading="lazy" src="img/case-prive.jpg" alt="Gasten op een dansvloer onder kleurrijk licht"><span class="bekijk-case">Bekijk de case <i aria-hidden="true">→</i></span></span><span class="label"><span>Dance event</span></span><h3>Van industriële ruimte naar intieme sfeer</h3><p>Een persoonlijk feest voor vrienden en relaties, met meerdere dj&#x27;s.</p></a><a class="werk-kaart werk-alle" href="cases.html"><span>Alle cases</span><span class="pijl" aria-hidden="true">→</span></a>
     </div>
   </section>
   <script>
     (function(){
       var rij=document.getElementById('werk-rij'), alle=rij.querySelector('.werk-alle'), L=document.documentElement.lang==='en'?'_en':'', B=L?'/':'', P=L?'/en/':'';
-      fetch('cases.json').then(function(r){return r.json()}).then(function(d){
-        var wf=document.querySelector('.werk-filter'); if(wf){Object.keys(d.toepassingen).filter(function(k){return d.cases.some(function(c){return c.status==='af'&&(c.toepassing||[]).indexOf(k)>-1})}).forEach(function(k){var x=document.createElement('a');x.href=P+'cases.html#'+k;x.textContent=(L&&d.toepassingen[k]['naam'+L])||d.toepassingen[k].naam;wf.appendChild(x);});}
-        d.cases.filter(function(c){return c.status==='af'&&c.uitgelicht}).forEach(function(c){
-          var a=document.createElement('a'); a.className='werk-kaart'; a.href=P+c.link;
-          a.innerHTML='<span class="werk-beeld"><img loading="lazy" alt=""><span class="bekijk-case">'+(L?'View the case':'Bekijk de case')+' <i aria-hidden="true">→</i></span></span><span class="label"></span><h3></h3><p></p>';
-          if(c.label){var lb=document.createElement('img');lb.className='werk-label';lb.src=B+c.label;lb.alt='';a.querySelector('.werk-beeld').appendChild(lb);} a.querySelector('img').src=B+c.beeld; a.querySelector('img').alt=c.alt; if(c.positie) a.querySelector('img').style.objectPosition=c.positie;
-          a.querySelector('.label').innerHTML=(c.toepassing||[]).map(function(k){return '<span>'+((L&&d.toepassingen[k]['naam'+L])||d.toepassingen[k].naam)+'</span>'}).join(''); a.querySelector('h3').textContent=(L&&c['titel'+L])||c.titel; a.querySelector('p').textContent=(L&&c['tekst'+L])||c.tekst;
-          rij.insertBefore(a,alle);
-        });
-        rij.scrollLeft=0;
-      });
+      
       document.querySelectorAll('.werk-pijlen button').forEach(function(k){
         k.addEventListener('click',function(){ var kaart=rij.querySelector('.werk-kaart'); var stap=kaart?kaart.getBoundingClientRect().width+22:400; rij.scrollBy({left:stap*k.dataset.richting,behavior:'smooth'}); });
       });
@@ -160,7 +149,7 @@
       <p class="voet-contact"><a href="mailto:maarten@hear.nl">maarten@hear.nl</a><span aria-hidden="true"> · </span><a href="tel:+31624560220">+31 6 24560220</a></p>
       <p class="voet-klein"><span class="geen-breuk">HEAR is een handelsnaam van Maarten Versteeg communicatie advies B.V.</span><br>KvK 42181393<span class="voet-sep"> · </span><span class="geen-breuk-adres">Van Kinsbergenstraat 54, 1057 PT Amsterdam</span><br><a href="privacy.html">Privacyverklaring</a></p>
     </div>
-    <nav aria-label="Werk"><p class="label">Werk</p><a href="cases.html">Cases</a><a href="nieuws/">Nieuws</a><a href="over-hear.html">Over HEAR</a></nav>
+    <nav aria-label="Werk"><p class="label">Werk</p><a href="cases.html">Cases</a><a href="nieuws/">Nieuws</a><a href="over-hear.html">Over HEAR</a><a href="prijs.html">Tarieven</a></nav>
     <nav aria-label="Met wie we werken"><p class="label">Met wie we werken</p><a href="zakelijke-events.html">Eventmanagers</a><a href="dance-events.html">Dance-events</a><a href="merken-en-bureaus.html">Merken en bureaus</a><a href="bijzondere-eventlocaties.html">Eventlocaties</a></nav>
     <nav aria-label="Producten en diensten"><p class="label">Producten en diensten</p><a href="booth-dj-gear.html">Dj-gear</a><a href="high-end-audio.html">Geluid</a><a href="atmospheric-lighting.html">Sfeerlicht</a><a href="dancefloor-lighting.html">Dansvloerlicht</a><a href="vintage-lighting.html">90's vintage licht</a><a href="communicatieadvies.html">Communicatieadvies</a><a href="artiesten.html">Dj's en artiesten</a><a href="custom-dj-mix.html">Coffee cuts en custom dj-mixes</a>
           <a href="aankoopadvies.html">Aankoopadvies licht en geluid</a></nav>

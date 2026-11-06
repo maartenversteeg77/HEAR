@@ -43,8 +43,31 @@ def plaats(s, taal):
                    lambda m: f'{filt}<section class="case-overzicht"><!-- gegenereerd uit cases.json door scripts/bouw-cases.py -->{out}</section>{js}',
                    s, count=1, flags=re.S)
     return s, n
+
+def werkrij(taal="nl"):
+    """Statische carrousel 'Uitgelicht werk' en filterknoppen voor de homepage (eerder met script gevuld; nu leesbaar zonder JS)."""
+    en = taal == "en"; v = lambda c, k: (c.get(k + "_en") if en else None) or c[k]
+    af = [c for c in data["cases"] if c.get("status") == "af"]
+    gebruikt = [k for k in TP if any(k in c.get("toepassing", []) for c in af)]
+    filt = "".join(f'<a href="cases.html#{k}">{e(TP[k]["naam_en"] if en else TP[k]["naam"])}</a>' for k in gebruikt)
+    kaarten = ""
+    for c in af:
+        if not c.get("uitgelicht"): continue
+        pos = f' style="object-position:{e(c["positie"])}"' if c.get("positie") else ""
+        lab = "".join(f'<span>{e(TP[k]["naam_en"] if en else TP[k]["naam"])}</span>' for k in c.get("toepassing", []))
+        kaarten += (f'<a class="werk-kaart" href="{e(c["link"])}"><span class="werk-beeld"><img loading="lazy" src="{e(c["beeld"])}" alt="{e(c["alt"])}"{pos}>'
+                    f'<span class="bekijk-case">{"View the case" if en else "Bekijk de case"} <i aria-hidden="true">→</i></span>{lbl(c)}</span>'
+                    f'<span class="label">{lab}</span><h3>{e(v(c, "titel").replace(chr(10), " "))}</h3><p>{e(v(c, "tekst"))}</p></a>')
+    return filt, kaarten
+def plaats_werk(s, taal):
+    filt, kaarten = werkrij(taal)
+    s = re.sub(r'<nav class="werk-filter"([^>]*)>.*?</nav>', lambda m: f'<nav class="werk-filter"{m.group(1)}>{filt}</nav>', s, count=1, flags=re.S)
+    s = re.sub(r'(<div class="werk-rij" id="werk-rij">).*?(<a class="werk-kaart werk-alle")', lambda m: m.group(1) + kaarten + m.group(2), s, count=1, flags=re.S)
+    s = re.sub(r"fetch\('/?cases\.json'\)\.then.*?rij\.scrollLeft=0;\s*\}\);", "", s, count=1, flags=re.S)
+    return s
 if __name__ == "__main__":
     p = site / "cases.html"
     s, n = plaats(p.read_text(), "nl")
     p.write_text(s)
     print("tegels:", s.count("case-tegel\""), "vervangen:", n)
+    ix = site / "index.html"; ix.write_text(plaats_werk(ix.read_text(), "nl"))

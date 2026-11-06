@@ -75,8 +75,8 @@ def split(beeld, alt, pos, label, kop, tekst):
             f'<p class="lp-meer"><a href="over-hear.html#partners">Zie hier onze partners</a> <span aria-hidden="true">→</span></p></div></section>')
 def stappen(items):
     return (f'<section class="lp-band"><p class="lp-label">Werkwijze</p><h2>Zo werken we</h2>'
-            f'<div class="lp-stappen" data-stappen=\'{e(json.dumps(items, ensure_ascii=False))}\'><h3>{items[0][0]}</h3><p>{items[0][1]}</p>'
-            f'<ol class="lp-stapjes" hidden>' + "".join(f'<li><b>{i+1}</b><div><b>{a}</b><br><span>{b}</span></div></li>' for i, (a, b) in enumerate(items)) + '</ol>'
+            f'<div class="lp-stappen" data-stappen=\'{e(json.dumps(items, ensure_ascii=False))}\'><h3 hidden>{items[0][0]}</h3><p hidden>{items[0][1]}</p>'
+            f'<ol class="lp-stapjes">' + "".join(f'<li><b>{i+1}</b><div><b>{a}</b><br><span>{b}</span></div></li>' for i, (a, b) in enumerate(items)) + '</ol>'
             '<div class="lp-stapbal"></div></div></section>')
 CASES = {c["link"]: c for c in json.loads((site / "cases.json").read_text())["cases"]}
 TP = json.loads((site / "cases.json").read_text())["toepassingen"]
@@ -98,7 +98,7 @@ def contact(kop, bron, voorbeeld):
 <label>E-mail<input name="email" type="email" autocomplete="email" required></label>
 <label>Telefoon<input name="telefoon" type="tel" autocomplete="tel"></label>
 <label>Waar gaat het over<textarea name="bericht" placeholder="{e(voorbeeld)}"></textarea></label>
-<button type="submit">Verstuur</button><p class="lp-privacy">We gebruiken je gegevens alleen om je te antwoorden. <a href="privacy.html">Privacyverklaring</a></p>
+<button type="submit">Verstuur</button><p class="lp-privacy">Ik reageer meestal dezelfde werkdag. We gebruiken je gegevens alleen om je te antwoorden. <a href="privacy.html">Privacyverklaring</a></p>
 <p class="lp-melding" hidden></p></form></div></section>'''
 
 # ---------- de vier pagina's ----------
