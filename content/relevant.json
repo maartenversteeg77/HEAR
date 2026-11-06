@@ -49,38 +49,6 @@
     }
   },
   "paginas": {
-    "dance-events.html": [
-      "booth-dj-gear",
-      "high-end-audio",
-      "dancefloor-lighting"
-    ],
-    "zakelijke-events.html": [
-      {
-        "slug": "high-end-audio",
-        "tekst": "Sprekersversterking met draadloze reversmicrofoons en warm geluid voor de borrel of het feest"
-      },
-      {
-        "slug": "atmospheric-lighting",
-        "tekst": "Sprekerverlichting en draadloos sfeerlicht in de kleuren van je event"
-      },
-      {
-        "slug": "artiesten",
-        "tekst": "Een dj, vocalist, saxofonist of percussionist"
-      },
-      {
-        "slug": "booth-dj-gear",
-        "tekst": "Een rider-proof booth met de nieuwste spelers en mixers"
-      },
-      {
-        "slug": "communicatieadvies",
-        "tekst": "Boodschap, speeches, uitnodigingen en video"
-      }
-    ],
-    "bijzondere-eventlocaties.html": [
-      "aankoopadvies",
-      "high-end-audio",
-      "atmospheric-lighting"
-    ],
     "productpresentatie.html": [
       "atmospheric-lighting",
       "high-end-audio",
@@ -124,8 +92,6 @@
     ]
   },
   "lees_ook": [
-    "dance-events.html",
-    "zakelijke-events.html",
     "productpresentatie.html",
     "gemeentelijk-netwerkevent.html",
     "jubileum-ondernemersnetwerk.html",

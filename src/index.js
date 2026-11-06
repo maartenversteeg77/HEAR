@@ -82,6 +82,9 @@ export default {
       doel.search = url.search; doel.hash = url.hash;
       return Response.redirect(doel.toString(), 301);
     }
+    // doelgroeppagina's zijn (nog) alleen Nederlands (6 nov 2026): Engelse adressen tijdelijk naar de Nederlandse versie
+    const nlAlleen = /^\/en\/(zakelijke-events|dance-events|bijzondere-eventlocaties|merken-en-bureaus)(\.html)?$/.exec(url.pathname);
+    if (nlAlleen) return Response.redirect(new URL("/" + nlAlleen[1] + ".html", url).toString(), 302);
     // korte advertentie-URL: hear.nl/coffeecuts is een eigen deelpagina (site/coffeecuts.html: eigen titel en deelbeeld,
     // stuurt door naar het Coffee cuts-blok). Varianten sturen daarheen; /coffeecuts zelf wordt als pagina geserveerd.
     const kort = url.pathname.toLowerCase().replace(/\/+$/, "");

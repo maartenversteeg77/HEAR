@@ -13,9 +13,6 @@
     "radio-mixes.html",
     "systeemadvies.html",
     "doelgroepen.html",
-    "zakelijke-events.html",
-    "bijzondere-eventlocaties.html",
-    "dance-events.html",
     "diensten.html",
     "booth-dj-gear.html",
     "high-end-audio.html",
@@ -38,8 +35,8 @@
       ">Cases</a>"
     ],
     [
-      ">Voor wie</a>",
-      ">Who it's for</a>"
+      ">Met wie we werken</a>",
+      ">Who we work with</a>"
     ],
     [
       ">Waarden</a>",
@@ -74,8 +71,8 @@
       "<span>Cases</span><small>Events that capture the imagination</small>"
     ],
     [
-      "<span>Voor wie is HEAR</span><small>Zakelijke events, bijzondere eventlocaties en dance events</small>",
-      "<span>Who HEAR is for</span><small>Corporate, special event venues and dance events</small>"
+      "<span>Met wie we werken</span><small>Eventmanagers, dance-events, merken en eventlocaties</small>",
+      "<span>Who we work with</span><small>Event managers, dance events, brands and venues</small>"
     ],
     [
       "<span>Waarden</span><small>Wat wij belangrijk vinden</small>",
@@ -98,8 +95,8 @@
       "<nav aria-label=\"Work\"><p class=\"label\">Work</p>"
     ],
     [
-      "<nav aria-label=\"Voor wie\"><p class=\"label\">Voor wie</p><a href=\"zakelijke-events.html\">Zakelijke events</a><a href=\"bijzondere-eventlocaties.html\">Bijzondere eventlocaties</a><a href=\"dance-events.html\">Dance events</a>",
-      "<nav aria-label=\"Who it's for\"><p class=\"label\">Who it's for</p><a href=\"zakelijke-events.html\">Corporate</a><a href=\"bijzondere-eventlocaties.html\">Special event venues</a><a href=\"dance-events.html\">Dance events</a>"
+      "<nav aria-label=\"Met wie we werken\"><p class=\"label\">Met wie we werken</p><a href=\"zakelijke-events.html\">Eventmanagers</a><a href=\"dance-events.html\">Dance-events</a><a href=\"merken-en-bureaus.html\">Merken en bureaus</a><a href=\"bijzondere-eventlocaties.html\">Eventlocaties</a>",
+      "<nav aria-label=\"Who we work with\"><p class=\"label\">Who we work with</p><a href=\"zakelijke-events.html\">Event managers</a><a href=\"dance-events.html\">Dance events</a><a href=\"merken-en-bureaus.html\">Brands and agencies</a><a href=\"bijzondere-eventlocaties.html\">Event venues</a>"
     ],
     [
       "<nav aria-label=\"Producten en diensten\"><p class=\"label\">Producten en diensten</p><a href=\"booth-dj-gear.html\">Dj-gear</a><a href=\"high-end-audio.html\">Geluid</a><a href=\"atmospheric-lighting.html\">Sfeerlicht</a><a href=\"dancefloor-lighting.html\">Dansvloerlicht</a><a href=\"vintage-lighting.html\">90's vintage licht</a><a href=\"communicatieadvies.html\">Communicatieadvies</a><a href=\"artiesten.html\">Dj's en artiesten</a><a href=\"custom-dj-mix.html\">Coffee cuts en custom dj-mixes</a>\n          <a href=\"aankoopadvies.html\">Aankoopadvies licht en geluid</a></nav>",
@@ -178,8 +175,8 @@
       "<span class=\"sectie\">Products</span>"
     ],
     [
-      "<span class=\"sectie\">Voor wie</span>",
-      "<span class=\"sectie\">Who it's for</span>"
+      "<span class=\"sectie\">Met wie we werken</span>",
+      "<span class=\"sectie\">Who we work with</span>"
     ],
     [
       "<span class=\"sectie\">Nieuws</span>",
@@ -872,22 +869,6 @@
         "aria-label=\"Products and services\""
       ],
       [
-        ">Voor wie is HEAR</a></h2>",
-        ">Who HEAR is for</a></h2>"
-      ],
-      [
-        "<span class=\"v-tekst\">Van heldere sprekersversterking tot muziek bij de borrel.</span>",
-        "<span class=\"v-tekst\">From clear speech reinforcement to music at the reception.</span>"
-      ],
-      [
-        "<span class=\"v-tekst\">Van skatehal tot museum: een ruimte die een nieuwe beleving wordt.</span>",
-        "<span class=\"v-tekst\">From skate hall to museum: a space that becomes a new experience.</span>"
-      ],
-      [
-        "<span class=\"v-tekst\">Rider-proof dj-gear, krachtig geluid en draadloze lichtshows.</span>",
-        "<span class=\"v-tekst\">Rider-proof DJ gear, powerful sound and wireless light shows.</span>"
-      ],
-      [
         "<a class=\"tekstlink\" href=\"over-hear.html\">Founder story</a><a class=\"tekstlink\" href=\"principes.html\">Waarden en uitgangspunten</a>",
         "<a class=\"tekstlink\" href=\"over-hear.html\">Founder story</a><a class=\"tekstlink\" href=\"principes.html\">Values and principles</a>"
       ],
@@ -1046,6 +1027,46 @@
       [
         "<section class=\"afsluiter afsluiter-kort\" aria-label=\"Contact\">",
         "<section class=\"afsluiter afsluiter-kort\" aria-label=\"Contact\">"
+      ],
+      [
+        ">Wij werken graag samen met…<",
+        ">We like working with…<"
+      ],
+      [
+        ">Dit ben ik <i",
+        ">That&#39;s me <i"
+      ],
+      [
+        "\"samen-kop\">Eventmanagers en communicatieprofessionals<",
+        "\"samen-kop\">Event managers and communications professionals<"
+      ],
+      [
+        "\"samen-uitleg\">Die namens hun werkgever of opdrachtgever een netwerkdag, seminar of zakelijke borrel organiseren.<",
+        "\"samen-uitleg\">Who organise a networking day, seminar or business drinks on behalf of their employer or client.<"
+      ],
+      [
+        "\"samen-kop\">Organisatoren van dance&#8209;events<",
+        "\"samen-kop\">Dance event organisers<"
+      ],
+      [
+        "\"samen-uitleg\">Promotors, collectieven en wie een eigen feest met een dj of artiesten organiseert.<",
+        "\"samen-uitleg\">Promoters, collectives and anyone throwing their own party with a DJ or artists.<"
+      ],
+      [
+        "\"samen-kop\">Merken, winkels, creatieven en bureaus<",
+        "\"samen-kop\">Brands, stores, creatives and agencies<"
+      ],
+      [
+        "\"samen-uitleg\">Die een merkactivatie, productlancering, collectiepresentatie, modeshow of in-store event organiseren.<",
+        "\"samen-uitleg\">Who organise a brand activation, product launch, collection presentation, fashion show or in-store event.<"
+      ],
+      [
+        "\"samen-kop\">Eigenaren en exploitanten van eventlocaties<",
+        "\"samen-kop\">Event venue owners and operators<"
+      ],
+      [
+        "\"samen-uitleg\">Die steeds een andere klant moeten servicen: vandaag een modeshow, morgen een seminar, overmorgen een bedrijfsfeest met dj.<",
+        "\"samen-uitleg\">Who serve a different client every time: a fashion show today, a seminar tomorrow, a company party with a DJ the day after.<"
       ]
     ],
     "cases.html": [
@@ -1454,350 +1475,60 @@
     ],
     "doelgroepen.html": [
       [
-        "name=\"description\" content=\"Elke klant en doel vraagt om een maatwerk invulling.\"",
-        "name=\"description\" content=\"Every client and purpose requires a custom approach.\""
+        "<title>Met wie we werken · HEAR</title>",
+        "<title>Who we work with · HEAR</title>"
       ],
       [
-        ">Elke klant en doel vraagt om een maatwerk invulling.<",
-        ">Every client and purpose requires a custom approach.<"
+        "<span class=\"huidig\">Met wie we werken</span>",
+        "<span class=\"huidig\">Who we work with</span>"
       ],
       [
-        "alt=\"Dansvloer in blauw licht met dj achter de booth\"",
-        "alt=\"Dancefloor in blue light with a DJ behind the booth\""
+        "<h1 class=\"kernzin\">Met wie we werken</h1>",
+        "<h1 class=\"kernzin\">Who we work with</h1>"
       ],
       [
-        "alt=\"Lezing met publiek tijdens een zakelijk event\"",
-        "alt=\"Talk with an audience at a business event\""
+        "content=\"HEAR werkt graag samen met eventmanagers en communicatieprofessionals, organisatoren van dance-events, merken en bureaus, en eigenaren van eventlocaties.\"",
+        "content=\"HEAR likes working with event managers and communications professionals, dance event organisers, brands and agencies, and event venue owners.\""
       ],
       [
-        ">Benieuwd wat HEAR voor jouw event kan doen?<",
-        ">Curious what HEAR can do for your event?<"
+        ">Wij werken graag samen met…<",
+        ">We like working with…<"
       ],
       [
-        "alt=\"Volle zaal met kleurrijk licht\"",
-        "alt=\"Packed room with colourful light\""
+        ">Dit ben ik <i",
+        ">That&#39;s me <i"
       ],
       [
-        "<title>Voor wie · HEAR</title>",
-        "<title>Who it's for · HEAR</title>"
+        "\"samen-kop\">Eventmanagers en communicatieprofessionals<",
+        "\"samen-kop\">Event managers and communications professionals<"
       ],
       [
-        ">Bekijk wat wij doen <",
-        ">See what we do <"
+        "\"samen-uitleg\">Die namens hun werkgever of opdrachtgever een netwerkdag, seminar of zakelijke borrel organiseren.<",
+        "\"samen-uitleg\">Who organise a networking day, seminar or business drinks on behalf of their employer or client.<"
       ],
       [
-        ">Bekijk onderdeel ↗<",
-        ">View section ↗<"
+        "\"samen-kop\">Organisatoren van dance&#8209;events<",
+        "\"samen-kop\">Dance event organisers<"
       ],
       [
-        ">Voor wie<",
-        ">Who it's for<"
-      ]
-    ],
-    "zakelijke-events.html": [
-      [
-        ">Daarnaast zijn er zakelijke toepassingen die iets extra’s vragen, op het snijvlak van identiteit, techniek en muziek. Al jaren doet Maarten Versteeg dit als dj voor merken. Bijvoorbeeld de best passende muziek voor een catwalk, waarbij er vooraf afstemming is over de collectie en welke sound daarbij past. Of de muziek bij de introductie van een nieuwe serie horloges in Bazel, Zwitserland. Met 25 jaar corporate communicatie achtergrond weten we hoe je een merk versterkt.<",
-        ">Then there are business occasions that ask for something extra, where identity, technology and music meet. Maarten Versteeg has done this as a DJ for brands for years. Choosing the right music for a catwalk, for instance, agreeing beforehand on the collection and the sound that suits it. Or the music for the launch of a new line of watches in Basel, Switzerland. With 25 years of corporate communications background, we know what brand management is about.<"
-      ],
-      [
-        ">Deze opdrachten vragen om aandacht voor detail. Sprekers moeten goed verstaanbaar en zichtbaar zijn. De techniek moet passen bij de ruimte en de uitstraling van het merk. Daarnaast moet het programma soepel kunnen overgaan van inhoud naar ontmoeting of feest.<",
-        ">These jobs require a high attention to detail. Keynote speakers who need to be clearly heard and seen. The technology has to suit the room and the brand. And the atmosphere needs to shift smoothly between lectures and celebration.<"
-      ],
-      [
-        ">Samen met de opdrachtgever of het reclamebureau vertalen we de identiteit van het merk of het doel van het event naar een muzikale invulling op maat. Dit kan de sound bij een modeshow zijn, een custom playlist voor een netwerkavond of een dj-set die bij het merk past.<",
-        ">Together with the client or the advertising agency, we translate the identity of the brand or the purpose of the event into a made-to-measure musical approach. For instance the sound for a fashion show, a custom playlist for a networking evening or a DJ set that fits the brand.<"
-      ],
-      [
-        ">Zakelijke events zijn er in vele soorten en maten. Een personeelsfeest voor een 100-jarig bestaan. Een productdemonstratie. Een seminar of rondetafelgesprek, met microfoons voor sprekers.<",
-        ">Corporate events come in all shapes and sizes. A staff party for a 100th anniversary. A product demonstration. A seminar or round-table, with microphones for the speakers.<"
-      ],
-      [
-        "name=\"description\" content=\"Audiovisuele ondersteuning voor zakelijke opdrachtgevers en bureaus.\"",
-        "name=\"description\" content=\"Audiovisual support for corporate clients and agencies.\""
-      ],
-      [
-        ">Zakelijke events: van heldere sprekersversterking tot muziek bij de borrel<",
-        ">Business events: from clear speech reinforcement to music at the afterparty<"
-      ],
-      [
-        ">Benieuwd wat HEAR voor jouw zakelijke event kan doen?<",
-        ">Curious what HEAR can do for your business event?<"
-      ],
-      [
-        "alt=\"Lezing met publiek tijdens een zakelijk event\"",
-        "alt=\"Talk with an audience at a business event\""
-      ],
-      [
-        ">Waar muziek en identiteit elkaar ontmoeten<",
-        ">Where music and identity meet<"
-      ],
-      [
-        ">Bekijk de case: brand activation ↗<",
-        ">View the case: brand activation ↗<"
-      ],
-      [
-        ">DOELGROEPEN<",
-        ">AUDIENCES<"
-      ],
-      [
-        ">Eerder meedenken, als je dat wilt<",
-        ">Thinking along earlier, if you want<<"
-      ],
-      [
-        "aria-label=\"Drie cirkels: muziek, communicatie, licht en geluid. Waar ze overlappen: curatie, atmosfeer en brand fit. In het midden jouw event.\"",
-        "aria-label=\"Three circles: music, communication, light and sound. Where they overlap: curation, atmosphere and brand fit. In the middle, your event.\""
-      ],
-      [
-        ">Muziek</text>",
-        ">Music</text>"
-      ],
-      [
-        ">Communicatie</text>",
-        ">Communication</text>"
-      ],
-      [
-        ">Licht &amp; geluid</text>",
-        ">Light &amp; sound</text>"
-      ],
-      [
-        ">Curatie</text>",
-        ">Curation</text>"
-      ],
-      [
-        ">Atmosfeer</text>",
-        ">Atmosphere</text>"
-      ],
-      [
-        ">dj's, artiesten</text>",
-        ">DJs, artists</text>"
-      ],
-      [
-        ">en playlists</text>",
-        ">and playlists</text>"
-      ],
-      [
-        ">en dj-gear</text>",
-        ">and DJ gear</text>"
-      ],
-      [
-        ">verlichting</text>",
-        ">lighting</text>"
-      ],
-      [
-        ">en decoratie</text>",
-        ">and decoration</text>"
-      ],
-      [
-        ">Jouw event</text>",
-        ">Your event</text>"
-      ],
-      [
-        ">Een strakke basis of een complete show? Dat is aan jou<",
-        ">A tight basic setup or a complete show? That is up to you<"
-      ],
-      [
-        ">Voor een seminar of netwerkborrel is een strakke basis vaak genoeg: heldere sprekersversterking, sfeerlicht en muziek bij de borrel. Daarop kun je uitbreiden met bijvoorbeeld een lichtshow, videoschermen, een livestream, een bedrijfsvideo of een dj.<",
-        ">For a seminar or networking drinks, a tight basic setup is often enough: clear speech amplification, ambient lighting and music for the drinks. From there you can expand with, for example, a light show, video screens, a livestream, a corporate video or a DJ.<"
-      ],
-      [
-        "<span>Informeer naar de mogelijkheden</span>",
-        "<span>Ask about the options</span>"
-      ],
-      [
-        ">Lees ook het artikel: <a href=\"prijs.html\">Wat kost audiovisuele ondersteuning van een evenement eigenlijk?</a>",
-        ">Read the article: <a href=\"prijs.html\">What does audiovisual support for an event actually cost?</a>"
-      ],
-      [
-        ">Sprekersversterking met draadloze reversmicrofoons en warm geluid voor de borrel of het feest<",
-        ">Speech reinforcement with wireless lapel microphones and warm sound for drinks or the party<"
-      ],
-      [
-        ">Sprekerverlichting en draadloos sfeerlicht in de kleuren van je event<",
-        ">Speaker lighting and wireless ambient lighting in the colours of your event<"
-      ],
-      [
-        ">Een dj, vocalist, saxofonist of percussionist<",
-        ">A DJ, vocalist, saxophonist or percussionist<"
-      ],
-      [
-        ">Een rider-proof booth met de nieuwste spelers en mixers<",
-        ">A rider-proof booth with the latest players and mixers<"
-      ],
-      [
-        ">Boodschap, speeches, uitnodigingen en video<",
-        ">Message, speeches, invitations and video<"
-      ],
-      [
-        ">Op verzoek schuift Maarten eerder in het proces aan, om mee te denken over het concept, het draaiboek en de vertaling naar licht en geluid. Ook voor advies over de communicatie rond je event kun je bij ons terecht:<",
-        ">On request, Maarten joins earlier in the process, to think along about the concept, the run sheet and the translation into light and sound. You can also come to us for advice on the communication around your event:<"
-      ],
-      [
-        "<li>Uitnodigingen en andere middelen</li><li>Speeches en presentaties</li><li>Bedrijfsvideo of aftermovie</li>",
-        "<li>Invitations and other materials</li><li>Speeches and presentations</li><li>Corporate video or aftermovie</li>"
-      ],
-      [
-        ">Meer over communicatieadvies →<",
-        ">More about communication advice →<"
-      ],
-      [
-        ">Waar nodig doen we vooraf een locatiebezoek en stemmen we het geluid af op de akoestiek. Werkt er een technicus mee, dan plannen we een korte online briefing, zodat hij vooraf weet wat er speelt.<",
-        ">Where needed, we visit the venue beforehand and tune the sound to the acoustics. If a technician is involved, we schedule a short online briefing so they know in advance what is going on.<"
-      ]
-    ],
-    "bijzondere-eventlocaties.html": [
-      [
-        ">Niet elke ruimte is van zichzelf geschikt voor een evenement. Misschien heeft de ruimte veel metaal en glas en een vorm die samen zorgen voor een ‘akoestische nachtmerrie’. Of de ruimte moet voor één keer worden getransformeerd. Bijvoorbeeld een skatehal als locatie voor een pop-upevent voor een Frans dj-duo tijdens Amsterdam Dance Event.<",
-        ">Not every space is in itself suited for a dancefloor or corporate speech and workshops. Perhaps the room has a lot of metal and glass and a shape that turns it into an 'acoustic nightmare'. Or a space is transformed for one night only. A skate hall, for example, as the venue for a pop-up event for a French DJ duo during Amsterdam Dance Event.<"
-      ],
-      [
-        ">Daarnaast merken we dat sommige locaties aanlopen tegen steeds hogere eisen die bezoekers stellen aan geluid. Het moet impactvol zijn, maar mag de oren niet schaden. Het geluid wordt niet genoeg gevoeld of is te schel en vermoeiend, of er zijn dode zones in bepaalde ruimtes, waardoor het publiek steeds gaat lopen op zoek naar een goede plek. Samen met partners in ons netwerk bieden we daar oplossingen voor:<",
-        ">We also notice that some venues want to meet the rising expectations visitors have of sound. It needs to have impact, but must not harm the ears. The sound is perceived as not immersive enough or it is shrill and tiring. Or there are dead zones in certain areas, resulting in the audience searching for a good spot. Together with partners in our network, we offer solutions for this:<"
-      ],
-      [
-        ">Met de eigenaar van een locatie kijken we wat deze locatie nodig heeft. Daarbij zijn opties voor AV as a service mogelijk, via HEAR zelf of via ons netwerk. Voor een vast bedrag per maand en een periode van minimaal 36 maanden krijgt de locatie de beschikking over geluid en licht: de meest recente technologie die op dit moment op de markt is, zonder zorgen over onderhoud of reparatie.<",
-        ">With the owner of a venue, we look at what the venue needs. AV as a service is one of the options, through HEAR itself or through our network. For a fixed monthly fee and a minimum term of 36 months, the venue has access to sound and light: the latest technology on the market, without worrying about maintenance or repairs.<"
-      ],
-      [
-        ">Een ruimte voor één event ombouwen tot dansvloer of podium, met licht en geluid afgestemd op de akoestiek. Of advies en begeleiding bij een inkoopproces: ruimtescan, merkonafhankelijk advies, productdemonstraties in je eigen ruimte en training. Met als optie ‘AV as a service’ voor een vast bedrag per maand.<",
-        ">Converting a space into a dancefloor or stage for a single event, with light and sound tuned to the acoustics. Or a guided sound procurement process: a room scan, brand-independent advice, product demonstrations in your own space and training. With optionally ‘AV as a service’ for a fixed monthly fee.<"
-      ],
-      [
-        "name=\"description\" content=\"Ruimtes tijdelijk een andere functie geven of adviseren over vaste techniek.\"",
-        "name=\"description\" content=\"Giving spaces a temporary new function, or advice on permanent technology.\""
-      ],
-      [
-        ">Van skatehal tot museum: een ruimte omtoveren tot een nieuwe beleving<",
-        ">From skate hall to museum: turning a space into a new experience<"
-      ],
-      [
-        "alt=\"Skatehal tijdelijk ingericht als eventlocatie\"",
-        "alt=\"Skate hall temporarily set up as an event venue\""
-      ],
-      [
-        ">Merkonafhankelijke keuze van passende systemen.<",
-        ">Brand-independent choice of suitable systems.<"
-      ],
-      [
-        ">Producten zien en horen in jouw eigen ruimte.<",
-        ">See and hear the products in your own space.<"
-      ],
-      [
-        ">Benieuwd wat HEAR voor jouw locatie kan doen?<",
-        ">Curious what HEAR can do for your venue?<"
-      ],
-      [
-        ">Wat vraagt deze ruimte en het type events?<",
-        ">What does this space and this type of event need?<"
-      ],
-      [
-        ">Lees meer over aankoopadvies ↗<",
-        ">Read more about purchase advice ↗<"
-      ],
-      [
-        ">Vaste installatie op jouw locatie<",
-        ">Fixed installation at your venue<"
-      ],
-      [
-        ">Zelfstandig bedienen na aanschaf.<",
-        ">Operate it yourself after purchase.<"
-      ],
-      [
-        ">Transformeer jouw locatie<",
-        ">Transform your venue<"
-      ],
-      [
-        ">Bekijk de ADE-case ↗<",
-        ">View the ADE case ↗<"
-      ],
-      [
-        ">Demonstratie<",
-        ">Demonstration<"
-      ],
-      [
-        ">DOELGROEPEN<",
-        ">AUDIENCES<"
-      ],
-      [
-        ">Ruimtescan<",
-        ">Room scan<"
-      ],
-      [
-        ">Advies<",
-        ">Advice<"
-      ]
-    ],
-    "dance-events.html": [
-      [
-        ">Een systeem voor intieme ruimtes van 0 tot 15 meter en een systeem voor zalen van 15 tot 35 meter diep, beide op basis van dezelfde bouwstenen. Een hybride PA-systeem met subs in cardioïde opstelling, zodat het laag op de dansvloer blijft en niet in de booth of op het podium. Frontfill die de eerste meters goed dekt. Mogelijk een dedicated kicklaag voor de midlage tonen. En waar nodig compacte topspeakers verderop in de zaal die als delay het geluid verlengen of specifieke zones dekken, zoals de bar.<",
-        ">A system for intimate spaces from 0 to 15 metres and a system for halls from 15 to 35 metres deep, both built from the same building blocks. A hybrid PA system with subs in a cardioid arrangement, so the low end stays on the dancefloor and doesn't reach the booth or podium. Front fill to cover the first few metres. Possibly a dedicated kick layer for the low-mids. Where needed, compact top speakers further into the room in a delay, to extend the sound or cover specific zones, such as a bar.<"
-      ],
-      [
-        ">Hoe het geluid zich moet gedragen, bepalen we samen met de opdrachtgever. Moet het geluid achterin even hard zijn als voorin, of wil je juist dat mensen naar voren lopen voor meer impact en achterin kunnen praten? Wil je verbeterde verstaanbaarheid van de muziek in een specifieke zone, zoals de bar, balkon of een nis? Met onze modulaire systemen is één familie van soortgelijke speakers inzetbaar in diverse configuraties, afhankelijk van de indeling van de ruimte en het doel van het event. We realiseren dit samen met professionals uit ons netwerk.<",
-        ">How the sound needs to behave in a venue is something we discuss with the client. Should the sound be equally loud front to back? Or do you want people to move forward for impact or move to the back and be able to talk? Do you want improved intelligibility in a specific zone, such as the bar or balcony? With our modular systems, one family of speakers can be used in different configurations, depending on the layout of the space and the purpose of the event. We make this happen together with professionals from our network.<"
-      ],
-      [
-        ">In een forward-boothopstelling wordt het monitorgeluid van de dj iets verder bij hem of haar vandaan gezet en verder versterkt. De dj heeft nog steeds hetzelfde geluid, zonder delays, maar ook gasten in de buurt van de dj hebben het geluid van deze zone. Dit kan met krachtige vloerspeakers (wedges) of met sub-top combinaties met statief. Optioneel met een trussconstructie met licht die de dj-zone afbakent.<",
-        ">In a forward booth set-up, the monitor sound is placed a little further away from the DJ and given more power. The DJ still hears the same sound as with a regular monitor (without delays), but the system also serves guests in the DJ zone. This can be done either with powerful floor wedges or sub-top combos on speaker poles. Optionally a truss structure with lights surrounds the DJ zone.<"
-      ],
-      [
-        ">Op verzoek zetten we de dj-booth naar voren, de zaal in: een forward booth. Achter de dj ontstaat dan een tweede danszone met publiek rondom. De PA doet de zaal; de booth heeft zijn eigen monitoring met subs, en die zetten we zo neer dat deze niet alleen de dj bedient, maar ook de mensen die eromheen dansen.<",
-        ">On request, we can move the DJ booth forward, into the room: a forward booth. Behind the DJ a second dance zone is then created, with the crowd all around. The main PA covers the dancefloor up front, while the booth has its own monitoring with subs, which not only serves the DJ for monitoring but also the people dancing around it.<"
-      ],
-      [
-        ">Een bijkomend voordeel van een forward booth is dat je twee plekken creëert met impactvol, direct geluid: aan het voorste gedeelte van de dansvloer en op het podium rondom de dj. Bovendien wordt het minder complex: de zaal wordt minder diep, bijvoorbeeld van 30 naar 20 meter, waardoor de noodzaak voor delayspeakers afneemt en het makkelijker wordt om tot achterin de zaal impactvol geluid te hebben.<",
-        ">An additional advantage of a forward booth deployment is that you create two zones with direct, high-impact sound: at the front of the dancefloor and on the stage around the DJ. A further advantage that reduces complexity: the room becomes less deep, for instance from 30 to 20 metres, which reduces the need for delay speakers and makes it easier to get high-impact sound all the way to the back.<"
-      ],
-      [
-        ">Daarom werken we met hybride geluidssystemen: de directheid van een ‘point source’ en de worp van een ‘line source’ systeem. Het laag heeft mogelijk een gelaagde aanpak, met de sub en kick elk uit hun eigen kast. Met als doel dat niet alleen het laag en hoog, maar ook het midlaag goed aanwezig is en tot ver hoorbaar. Zodat het geluid op afstand nog vol klinkt en niet alleen hard.<",
-        ">This is why we work with hybrid soundsystems: the directness of a point source system and the throw of a line source. The low end may have a layered approach: with sub and kick each having their own cabinet. A system built so that not only bass and highs travel far, but also the low-mids can be heard at a distance for a complete and full sound.<"
-      ],
-      [
-        ">Een dance event vraagt geluid dat je voelt, de hele avond, zonder dat het pijn doet. Met een gelijkmatige distributie: vooraan niet te hard, achterin niet dun, en geen dode zones waar het publiek omheen gaat staan. En de dj moet binnenkomen en meteen kunnen draaien.<",
-        ">A dance event needs a sound you can feel, all night long, without it hurting your ears. With an even distribution: not too loud at the front, not thin at the back, and no dead zones the crowd gathers around. And the DJ has to be able to walk in and start playing straight away.<"
-      ],
-      [
-        "name=\"description\" content=\"DJ-gear, audio en licht voor dance-events.\"",
-        "name=\"description\" content=\"DJ gear, audio and lighting for dance events.\""
-      ],
-      [
-        "alt=\"Volle industriële zaal met publiek, in rood en paars licht\"",
-        "alt=\"Packed industrial hall with a crowd, in red and purple light\""
-      ],
-      [
-        ">Benieuwd wat HEAR voor jouw dance event kan doen?<",
-        ">Curious what HEAR can do for your dance event?<"
-      ],
-      [
-        ">, krachtig geluid en draadloze lichtshows<",
-        ">, powerful sound and wireless light shows<"
-      ],
-      [
-        ">Een dansvloer van 150 tot 1.500 mensen<",
-        ">A dancefloor for 150 to 1,500 people<"
-      ],
-      [
-        ">Bekijk de ADE-case ↗<",
-        ">View the ADE case ↗<"
-      ],
-      [
-        ">De booth in de zaal<",
-        ">The booth in the room<"
+        "\"samen-uitleg\">Promotors, collectieven en wie een eigen feest met een dj of artiesten organiseert.<",
+        "\"samen-uitleg\">Promoters, collectives and anyone throwing their own party with a DJ or artists.<"
       ],
       [
-        ">Dance-events<",
-        ">Dance events<"
+        "\"samen-kop\">Merken, winkels, creatieven en bureaus<",
+        "\"samen-kop\">Brands, stores, creatives and agencies<"
       ],
       [
-        ">DOELGROEPEN<",
-        ">AUDIENCES<"
+        "\"samen-uitleg\">Die een merkactivatie, productlancering, collectiepresentatie, modeshow of in-store event organiseren.<",
+        "\"samen-uitleg\">Who organise a brand activation, product launch, collection presentation, fashion show or in-store event.<"
       ],
       [
-        ">← Voor wie<",
-        ">← Who it's for<"
+        "\"samen-kop\">Eigenaren en exploitanten van eventlocaties<",
+        "\"samen-kop\">Event venue owners and operators<"
       ],
       [
-        ">dj-gear<",
-        ">DJ gear<"
+        "\"samen-uitleg\">Die steeds een andere klant moeten servicen: vandaag een modeshow, morgen een seminar, overmorgen een bedrijfsfeest met dj.<",
+        "\"samen-uitleg\">Who serve a different client every time: a fashion show today, a seminar tomorrow, a company party with a DJ the day after.<"
       ]
     ],
     "diensten.html": [
@@ -2658,8 +2389,8 @@
         ">GUIDED PURCHASING<"
       ],
       [
-        ">Voor wie: bijzondere eventlocaties →<",
-        ">Who it's for: special event venues →<"
+        ">Met wie we werken: eventlocaties →<",
+        ">Who we work with: event venues →<"
       ],
       [
         ">GRATIS TIPS EN ADVIEZEN<",
@@ -3722,8 +3453,8 @@
         ">You engage communication advice through Maarten Versteeg communicatieadvies, separately from hiring light and sound through HEAR. Combining is possible and saves you time on coordination, because message and technology then come from one hand. It is not required. If you choose both, you receive two separate quotes.<"
       ],
       [
-        ">Voor wie: zakelijke events →</a>",
-        ">Who for: corporate →</a>"
+        ">Met wie we werken: eventmanagers →</a>",
+        ">Who we work with: event managers →</a>"
       ]
     ]
   },
