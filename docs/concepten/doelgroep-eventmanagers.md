@@ -44,3 +44,15 @@ Knop: Verstuur
 - Trend (blok 2): ziet Maarten dit zelf zo? Anders een andere trend.
 - "Swingende cocktail hour" in de case: past dat nog bij de toon?
 - Responstijd noemen bij contact (bijv. binnen een werkdag)? Alleen als het een vaste afspraak is.
+
+---
+# Versie 2 (6 nov): Maartens bewerking, aangescherpt (demo als privé-artifact)
+Lead: Een netwerkdag, seminar of jubileum is het visitekaartje van je organisatie. En het moment waarop je je relaties fysiek ontmoet.
+Als eventmanager zorg je dat het programma soepel loopt: het dagdeel met sprekers, de omslag naar de borrel en het informele deel daarna.
+Wij zorgen dat de audiovisuele ondersteuning het verhaal volgt. Sprekers zijn goed verstaanbaar, en de cocktail hour die erop volgt krijgt licht en muziek die bij het moment passen. Alles afgestemd op de ruimte, ook als dat een kale industriële hal is die we ombouwen tot eventlocatie.
+Dit kunnen we je bieden
+- Organisatie en techniek: je draaiboek vertaald naar een audiovisuele opzet (geluid, sfeerlicht, microfoons en wat er verder nodig is) · één aanspreekpunt voor de AV, ook op de dag zelf · een technicus, als je die nodig hebt · dj's en bijpassende artiesten
+- Concept en branding: meedenken over concept en sfeer (met 25 jaar ervaring in corporate communicatie) · licht op maat (bijv. een logoprojectie) · muziek op maat (bijv. bij een specifiek programmaonderdeel) · Speciale wensen? Laat het weten.
+Zo werken we: 1 Intake · 2 Locatiebezoek of foto's en plattegrond · 3 Voorstel · 4 Afstemming · 5 Opbouw en soundcheck · 6 Op de dag zelf (één aanspreekpunt voor licht, geluid en muziek)
+Cases: Seminar en netwerkevent · Jubileum ondernemersnetwerk
+Contact: Werk je aan een netwerkdag, seminar of zakelijke borrel? Laat je gegevens achter, dan neem ik contact met je op. (met naam en foto Maarten)
