@@ -29,3 +29,5 @@ Aanbod in drie kaarten:
 Geschrapt: "vol op de dansvloer, beheerst richting de buren" (niet waar te maken; cardioïde is vooral tegen bass-spill op podium en booth).
 
 Ons geluid, tweede alinea (v3): Daarom werken we met twee merken die hun hele systeem zelf ontwerpen en bouwen. Brooklyn Audio uit Nederland ontwerpt al zijn kasten met dezelfde fasekarakteristiek. Daardoor kun je ze in elke combinatie inzetten zonder dat het geluid uit elkaar valt, en klinkt een kleine opstelling hetzelfde als een grote. Van RCF uit Italië gebruiken we de KX-serie, de nieuwe topserie van het merk, met tops die de directheid van een point source combineren met de worp van een line source.
+
+Links per kaart (v4): Geluid en booth → "Meer over geluid (high-end-audio.html) en dj-gear (booth-dj-gear.html)"; Licht → "Meer over atmosfeerlicht (atmospheric-lighting.html) en dansvloerlicht (dancefloor-lighting.html)". Bron voor de demo is nu lp-dance.html zelf, niet meer maak-lp2.py.
