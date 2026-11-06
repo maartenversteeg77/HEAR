@@ -38,7 +38,7 @@ def tegels(en=False):
         kop = d["tegel_en"] if en else d["tegel"]; uit = d["uitleg_en"] if en else d["uitleg"]
         t += (f'<a class="samen-tegel" href="{d["bestand"]}"><span class="samen-beeld"><img src="{d["beeld"]}" alt="" loading="lazy" style="object-position:{d["pos"]}"></span>'
               f'<span class="samen-tekst"><span class="samen-kop">{kop}</span><span class="samen-uitleg">{e(uit)}</span>'
-              f'<span class="samen-knop">{"That&#39;s me" if en else "Dit ben ik"} <i aria-hidden="true">→</i></span></span></a>')
+              f'<span class="samen-knop">{"What we do for you" if en else "Wat we voor je doen"} <i aria-hidden="true">→</i></span></span></a>')
     return t
 def samenblok(kop="h2"):
     return (f'<section class="samen" aria-labelledby="samen-kop"><{kop} id="samen-kop">Wij werken graag samen met…</{kop}>'

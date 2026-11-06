@@ -501,3 +501,5 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - "Winkels" weg uit de doelgroepnaam: "Merken, creatieven en bureaus" (tegel, paginatitel, h1). De winkelier blijft bereikt via "in-store event" in de uitleg en het blok Music for retail.
 - Merkenbeeld vervangen door versie zonder Magnific-watermerk.
 - Homepage: Nieuws boven Over HEAR, zodat Over HEAR direct voor de afsluiter (contact) staat.
+- Knop op de doelgroeptegels: "Wat we voor je doen" (EN "What we do for you") in plaats van "Dit ben ik". Reden: "ik" botst met de ik-vorm van Maarten elders op de site, en de knop moet ook los van kop en tegel te begrijpen zijn (toegankelijkheid, dyslexie).
+- Nieuwstegel Melandru krijgt het ADE-label, net als de casetegel.
