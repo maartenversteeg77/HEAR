@@ -148,23 +148,6 @@
    ],
    "label": "img/ade-label.png",
    "datum": "2026-10"
-  },
-  {
-   "status": "af",
-   "nieuws": true,
-   "extern": true,
-   "uitgelicht": false,
-   "titel": "Muzikale reis van 2 uur\nop Deep Radio",
-   "titel_en": "A two-hour musical journey\non Deep Radio",
-   "tekst": "Vrijdag 20 november van 20:00 tot 22:00: een 1‑take mix bij Protechnive, het programma van Jeroen de Wolf.",
-   "tekst_en": "Friday 20 November, 20:00 to 22:00 (CET): a one‑take mix on Protechnive, the show of Jeroen de Wolf.",
-   "beeld": "img/nieuws/deep-radio-20-nov.jpg",
-   "alt": "Maarten Versteeg achter de draaitafels, met het logo van Deep Radio",
-   "link": "https://www.maartenversteeg.nl/news-deep-radio",
-   "toepassing": [
-    "dj"
-   ],
-   "datum": "2026-11"
   }
  ],
  "toepassingen": {

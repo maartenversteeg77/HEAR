@@ -112,6 +112,23 @@
         "naam": "@capturesbysaar",
         "url": "https://www.instagram.com/capturesbysaar/"
       }
+    },
+    {
+      "slug": "deep-radio-20-november",
+      "pad": "https://www.maartenversteeg.nl/news-deep-radio",
+      "pad_en": "https://www.maartenversteeg.nl/news-deep-radio",
+      "soort": "aankondiging",
+      "rubriek": "events",
+      "datum": "2026-11-06",
+      "status": "af",
+      "titel": "Muzikale reis van 2 uur op Deep Radio",
+      "titel_en": "A two-hour musical journey on Deep Radio",
+      "intro": "Vrijdag 20 november van 20:00 tot 22:00: een 1‑take mix bij Protechnive, het programma van Jeroen de Wolf.",
+      "intro_en": "Friday 20 November, 20:00 to 22:00 (CET): a one‑take mix on Protechnive, the show of Jeroen de Wolf.",
+      "beeld": "img/nieuws/deep-radio-20-nov.jpg",
+      "beeld_alt": "Maarten Versteeg achter de draaitafels, met het logo van Deep Radio",
+      "beeld_alt_en": "Maarten Versteeg behind the decks, with the Deep Radio logo",
+      "beeld_positie": "center 25%"
     }
   ]
 }
