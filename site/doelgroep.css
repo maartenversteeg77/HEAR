@@ -2,7 +2,8 @@
    Gebouwd door scripts/bouw-doelgroepen.py. Banden lopen over de volle breedte binnen main.wrap. */
 .lp [hidden]{display:none!important}
 .lp{--vlak:#FFFFFF;--lijn:rgba(25,26,25,.14);--zacht:#D9D8D3;--grijsd:#4A4A48}
-.lp-band{margin:0 calc(-1 * var(--rand));padding:clamp(48px,6vw,96px) var(--rand)}
+.lp-band{margin:0 calc(-1 * var(--rand));padding:clamp(40px,4.5vw,72px) var(--rand)}
+.lp-band:not(.lp-donker):not(.lp-contact)+.lp-band:not(.lp-donker):not(.lp-contact){padding-top:clamp(8px,1.5vw,24px)}
 .lp-band.lp-donker{background:var(--zwart);color:var(--wit)}
 .lp-band.lp-wit{background:var(--vlak)}
 .lp-held{margin:0 calc(-1 * var(--rand));padding:0 var(--rand);background:linear-gradient(var(--zwart) 50%,transparent 50%)}
@@ -12,20 +13,20 @@
 .lp h2{font:300 clamp(32px,3.6vw,52px)/1.08 var(--kop);margin:0 0 24px;text-wrap:balance}
 .lp-twee{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(20px,4vw,72px)}
 .lp-twee>.lp-label{grid-column:1/-1;margin-bottom:0}
-.lp-lead{font:300 clamp(26px,2.6vw,36px)/1.25 var(--kop);margin:0;text-wrap:balance}
-.lp-tekst p{margin:0 0 1em;max-width:62ch;font-size:17px;line-height:1.6}
+.lp-lead{font:300 clamp(26px,2.8vw,44px)/1.22 var(--kop);margin:0;text-wrap:balance}
+.lp-tekst p{margin:0 0 1em;max-width:62ch;font-size:clamp(17px,1.25vw,21px);line-height:1.6}
 .lp-sub{margin:-8px 0 0;color:var(--grijsd);max-width:36ch}
 .lp-momenten{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 32px;align-self:start}
 .lp-momenten li{padding:14px 0 14px 26px;border-top:1px solid var(--lijn);position:relative;font-size:18px}
 .lp-momenten li::before,.lp-lijst li::before{content:"";position:absolute;left:0;top:23px;width:9px;height:9px;border:1px solid var(--koraal);border-radius:50%}
 .lp-paar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(28px,4vw,64px)}
 .lp-paar img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;max-width:100%;margin-bottom:28px}
-.lp-paar p:not(.lp-label){margin:0;max-width:56ch;font-size:17px;line-height:1.6}
+.lp-paar p:not(.lp-label){margin:0;max-width:56ch;font-size:clamp(17px,1.2vw,20px);line-height:1.6}
 .lp-donker p:not(.lp-label){color:var(--zacht)}
 .lp-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;margin:0 calc(-1 * var(--rand));background:var(--vlak)}
 .lp-split img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;max-width:100%}
 .lp-split>div{padding:clamp(32px,5vw,80px)}
-.lp-split p:not(.lp-label){margin:0 0 1em;max-width:52ch;font-size:18px;line-height:1.6}
+.lp-split p:not(.lp-label){margin:0 0 1em;max-width:52ch;font-size:clamp(17px,1.25vw,21px);line-height:1.6}
 .lp-aanbod{display:grid;grid-template-columns:repeat(var(--kol,2),minmax(0,1fr));gap:20px}
 .lp-kaart{background:var(--vlak);padding:clamp(24px,3vw,40px);display:flex;flex-direction:column}
 .lp-kaart h3{font:400 clamp(22px,2vw,28px)/1.15 var(--kop);margin:0 0 18px}
