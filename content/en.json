@@ -821,10 +821,6 @@
         "content=\"Hear the difference. High-end light, sound and music for business events, dance events and venues. Plus audio advice, DJs and custom playlists.\""
       ],
       [
-        "alt=\"Dansvloer in blauw en rood licht, een dj achter de booth in de nevel\"",
-        "alt=\"Dancefloor in blue and red light, a DJ behind the booth in the haze\""
-      ],
-      [
         "Transformeer een locatie in een dansvloer, een zakelijk event in een belevenis, een dj-set in een muzikale reis.",
         "Transform a venue into a dancefloor, a business event into an experience, a DJ set into a musical journey."
       ],
@@ -1091,6 +1087,46 @@
       [
         "<a href=\"artiesten.html\">Dj's</a>",
         "<a href=\"artiesten.html\">DJs</a>"
+      ],
+      [
+        "alt=\"Dansvloer in blauw en rood licht, een dj achter de booth in de nevel\"",
+        "alt=\"Dancefloor in blue and red light, a DJ behind the booth in the haze\""
+      ],
+      [
+        "alt=\"Interview op een podium tijdens een seminar, met publiek op de voorgrond\"",
+        "alt=\"On-stage interview at a seminar, with the audience in the foreground\""
+      ],
+      [
+        "alt=\"Sneakers op verlichte plateaus tijdens een brand activation\"",
+        "alt=\"Sneakers on lit platforms at a brand activation\""
+      ],
+      [
+        "alt=\"Skatehal ingericht als dansvloer met een verlichte dj-booth\"",
+        "alt=\"Skate hall set up as a dancefloor with an illuminated DJ booth\""
+      ],
+      [
+        "aria-label=\"Kies een beeld\"",
+        "aria-label=\"Choose an image\""
+      ],
+      [
+        "aria-label=\"Beeld 1\"",
+        "aria-label=\"Image 1\""
+      ],
+      [
+        "aria-label=\"Beeld 2\"",
+        "aria-label=\"Image 2\""
+      ],
+      [
+        "aria-label=\"Beeld 3\"",
+        "aria-label=\"Image 3\""
+      ],
+      [
+        "aria-label=\"Beeld 4\"",
+        "aria-label=\"Image 4\""
+      ],
+      [
+        "aria-label=\"Beeld 5\"",
+        "aria-label=\"Image 5\""
       ]
     ],
     "cases.html": [

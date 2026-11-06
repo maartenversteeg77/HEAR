@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>HEAR · Light, sound and music for events</title><!--og--><meta property="og:title" content="HEAR · Light, sound and music for events"><meta property="og:description" content="Hear the difference. High-end light, sound and music for business events, dance events and venues. Plus audio advice, DJs and custom playlists."><meta property="og:url" content="https://hear.nl/en/"><meta property="og:site_name" content="HEAR"><meta property="og:type" content="website"><meta property="og:locale" content="en_GB"><meta property="og:image" content="https://hear.nl/img/og/index.jpg?v=8ae9a050"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://hear.nl/img/og/index.jpg?v=8ae9a050"><link rel="canonical" href="https://hear.nl/en/"><link rel="alternate" hreflang="nl" href="https://hear.nl/"><link rel="alternate" hreflang="en" href="https://hear.nl/en/"><link rel="alternate" hreflang="x-default" href="https://hear.nl/"><!--/og-->
+<title>HEAR · Light, sound and music for events</title><link rel="alternate" hreflang="nl" href="/index.html"><link rel="alternate" hreflang="en" href="/en/index.html"><!--og--><meta property="og:title" content="HEAR · Licht, geluid en muziek voor events"><meta property="og:description" content="Hear the difference. Hoogwaardig licht, geluid en muziek voor zakelijke events, dance events en venues. Met audio-advies, dj&#x27;s en playlists op maat."><meta property="og:url" content="https://hear.nl/"><meta property="og:site_name" content="HEAR"><meta property="og:type" content="website"><meta property="og:locale" content="nl_NL"><meta property="og:image" content="https://hear.nl/img/og/index.jpg?v=8ae9a050"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://hear.nl/img/og/index.jpg?v=8ae9a050"><link rel="canonical" href="https://hear.nl/"><link rel="alternate" hreflang="nl" href="https://hear.nl/"><link rel="alternate" hreflang="en" href="https://hear.nl/en/"><link rel="alternate" hreflang="x-default" href="https://hear.nl/"><!--/og-->
 <meta name="description" content="Hear the difference. High-end light, sound and music for business events, dance events and venues. Plus audio advice, DJs and custom playlists.">
 <link rel="stylesheet" href="/home.css"><link rel="stylesheet" href="/doelgroep.css">
 </head>
@@ -54,7 +54,7 @@
 <main>
 
   <section class="hero" aria-labelledby="hero-kop">
-    <img class="hero-bg" src="/img/hero-dansvloer-blauw.jpg" alt="Dancefloor in blue and red light, a DJ behind the booth in the haze" fetchpriority="high">
+    <img class="hero-bg aan" src="/img/hero-dansvloer-blauw.jpg" alt="Dancefloor in blue and red light, a DJ behind the booth in the haze" fetchpriority="high" data-i="0"><img class="hero-bg" src="/assets/image9.jpeg" alt="On-stage interview at a seminar, with the audience in the foreground" fetchpriority="low" data-i="1" style="object-position:center 35%" aria-hidden="true"><img class="hero-bg" src="/img/case-productpresentatie.jpg" alt="Sneakers on lit platforms at a brand activation" fetchpriority="low" data-i="2" style="object-position:center 55%" aria-hidden="true"><img class="hero-bg" src="/img/case-ade.jpg" alt="Skate hall set up as a dancefloor with an illuminated DJ booth" fetchpriority="low" data-i="3" style="object-position:center 45%" aria-hidden="true"><img class="hero-bg" src="/img/jubileum-breed.jpg" alt="Garden party with DJ and saxophonist" fetchpriority="low" data-i="4" style="object-position:center 40%" aria-hidden="true"><div class="hero-bollen" role="group" aria-label="Choose an image"><button type="button" data-i="0" class="aan" aria-current="true" aria-label="Image 1"></button><button type="button" data-i="1" aria-label="Image 2"></button><button type="button" data-i="2" aria-label="Image 3"></button><button type="button" data-i="3" aria-label="Image 4"></button><button type="button" data-i="4" aria-label="Image 5"></button></div>
     <div class="hero-inhoud">
       <img class="hero-logo" src="/img/logo-white.png" alt="HEAR">
       <div class="hero-blok">
@@ -66,7 +66,10 @@
         </div>
       </div>
     </div>
-  </section>
+  <script>(function(){var b=[].slice.call(document.querySelectorAll('.hero-bg')),k=[].slice.call(document.querySelectorAll('.hero-bollen button')),i=0,n=0,t;
+function zet(j){i=j;b.forEach(function(x,m){var a=m===j;x.classList.toggle('aan',a);a?x.removeAttribute('aria-hidden'):x.setAttribute('aria-hidden','true')});k.forEach(function(x,m){x.classList.toggle('aan',m===j);m===j?x.setAttribute('aria-current','true'):x.removeAttribute('aria-current')})}
+k.forEach(function(x){x.addEventListener('click',function(){clearInterval(t);zet(+x.dataset.i)})});
+if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){t=setInterval(function(){n++;zet((i+1)%b.length);if(n>=b.length)clearInterval(t)},5000)}})();</script></section>
 
   
 

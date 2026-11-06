@@ -456,3 +456,13 @@ a.mail-ook,.quick.quick-breed p .mail-ook,.cta-brug .mail-ook{font:300 14px/1.3 
 .poster .werk-label{top:0;bottom:auto;right:14px;z-index:3}
 .case-tegel.poster img{aspect-ratio:4/5}
 .case-tegel.poster:hover img,.werk-kaart.poster:hover img{opacity:.92}
+
+/* Headerbeeld als carrousel (7 nov 2026): wisselt elke 5 s, één rondje terug naar het eerste beeld en stopt; bolletjes rechtsboven om te kiezen */
+.hero .hero-bg{opacity:0;transition:opacity 1.2s ease}
+.hero .hero-bg.aan{opacity:1}
+.hero-bollen{position:absolute;top:clamp(36px,4vw,56px);right:var(--rand);z-index:3;display:flex;gap:10px}
+.hero-bollen button{width:10px;height:10px;padding:0;border-radius:50%;border:1px solid rgba(246,245,241,.85);background:transparent;cursor:pointer;transition:background .25s}
+.hero-bollen button.aan{background:#F6F5F1}
+.hero-bollen button:focus-visible{outline:2px solid var(--koraal);outline-offset:3px}
+@media (max-width:900px){.hero-bollen{top:18px}}
+@media (prefers-reduced-motion:reduce){.hero .hero-bg{transition:none}}
