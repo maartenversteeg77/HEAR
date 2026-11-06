@@ -2,8 +2,8 @@
 "Wij werken graag samen met…" op de homepage en op doelgroepen.html.
 Teksten staan hieronder per pagina; concepten en besluiten in docs/concepten/doelgroep-*.md.
 Opbouw per pagina: kop · beeld · intro · (eigen blokken) · aanbod · werkwijze (stappenkaart) · (vaste installatie) · contact · eerder werk.
-Het contactformulier post naar /api/aanvraag (bron = de pagina). De landingspagina's zijn (nog) alleen Nederlands;
-de taalknop gaat naar /en/doelgroepen.html. Draaien vóór bouw-en.py en bouw-og.py: python3 scripts/bouw-doelgroepen.py"""
+Het contactformulier post naar /api/aanvraag (bron = de pagina). De Engelse versies maakt bouw-en.py
+met de paren in content/en.json (paginas → de vier bestanden). Draaien vóór bouw-en.py en bouw-og.py: python3 scripts/bouw-doelgroepen.py"""
 import json, re, html, pathlib
 root = pathlib.Path(__file__).resolve().parent.parent
 site = root / "site"
@@ -75,7 +75,7 @@ def split(beeld, alt, pos, label, kop, tekst):
             f'<p class="lp-meer"><a href="over-hear.html#partners">Zie hier onze partners</a> <span aria-hidden="true">→</span></p></div></section>')
 def stappen(items):
     return (f'<section class="lp-band"><p class="lp-label">Werkwijze</p><h2>Zo werken we</h2>'
-            f'<div class="lp-stappen" data-stappen=\'{e(json.dumps(items, ensure_ascii=False))}\'><h3 hidden>{items[0][0]}</h3><p hidden>{items[0][1]}</p>'
+            f'<div class="lp-stappen"><h3 hidden>{items[0][0]}</h3><p hidden>{items[0][1]}</p>'
             f'<ol class="lp-stapjes">' + "".join(f'<li><b>{i+1}</b><div><b>{a}</b><br><span>{b}</span></div></li>' for i, (a, b) in enumerate(items)) + '</ol>'
             '<div class="lp-stapbal"></div></div></section>')
 CASES = {c["link"]: c for c in json.loads((site / "cases.json").read_text())["cases"]}
@@ -232,7 +232,7 @@ kop_html = re.sub(r'<link rel="alternate"[^>]*>', '', kop_html)
 kop_html = kop_html.replace('aria-current="page"', '')
 
 JS = """<script>(function(){
-document.querySelectorAll('.lp-stappen').forEach(function(k){var S=JSON.parse(k.dataset.stappen),i=0,alle=false,t=k.querySelector('h3'),x=k.querySelector('h3+p'),L=k.querySelector('.lp-stapjes'),b=k.querySelector('.lp-stapbal');
+document.querySelectorAll('.lp-stappen').forEach(function(k){var S=[].map.call(k.querySelectorAll('.lp-stapjes li'),function(li){var b=li.querySelectorAll('b');return [b[1].textContent,li.querySelector('span').textContent]}),i=0,alle=false,t=k.querySelector('h3'),x=k.querySelector('h3+p'),L=k.querySelector('.lp-stapjes'),b=k.querySelector('.lp-stapbal');
 function r(){t.textContent=S[i][0];x.textContent=S[i][1];t.hidden=x.hidden=alle;L.hidden=!alle;
 b.innerHTML=S.map(function(s,n){return '<button type="button" class="lp-n" data-n="'+n+'"'+(n===i&&!alle?' aria-current="step"':'')+' aria-label="Stap '+(n+1)+': '+s[0]+'">'+(n+1)+'</button>'}).join('')+'<button type="button" class="lp-alle">'+(alle?'Toon per stap':'Bekijk alle stappen')+'</button>'+(alle?'':'<button type="button" class="lp-volg">'+(i<S.length-1?'Volgende':'Opnieuw')+'</button>');}
 b.addEventListener('click',function(ev){var o=ev.target.closest('button');if(!o)return;if(o.dataset.n){i=+o.dataset.n;alle=false}else if(o.classList.contains('lp-alle')){alle=!alle}else{i=i<S.length-1?i+1:0}r();});r();});
@@ -252,7 +252,7 @@ for i, d in enumerate(DOEL):
     k = kop_html.replace('<link rel="stylesheet" href="styles.css">', '<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="doelgroep.css">')
     k = re.sub(r'<title>.*?</title>', f'<title>{e(p["titel"])} · HEAR</title>', k)
     k = re.sub(r'<meta name="description" content="[^"]*">', f'<meta name="description" content="{e(p["beschrijving"])}">', k)
-    k = re.sub(r'<a class="taal" href="[^"]*"', '<a class="taal" href="/en/doelgroepen.html"', k)
+    k = re.sub(r'<a class="taal" href="[^"]*"', f'<a class="taal" href="/en/{d["bestand"]}"', k)
     k = k.replace('<a href="doelgroepen.html">', '<a href="doelgroepen.html" aria-current="page">', 1)
     main = (f'<main class="wrap lp"><section class="casehead"><a class="crumb" href="doelgroepen.html"><span class="sectie">Met wie we werken</span>'
             f'<span class="scheiding" aria-hidden="true">|</span><span class="huidig">{d["kort"]}</span></a>{zijnav(i)}<h1 class="kernzin">{p["h1"]}</h1></section>'
