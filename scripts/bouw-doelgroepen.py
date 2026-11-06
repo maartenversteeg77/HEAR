@@ -64,10 +64,11 @@ def momenten(label, kop, items, sub=None):
     s = f'<p class="lp-sub">{sub}</p>' if sub else ''
     return (f'<section class="lp-band"><div class="lp-twee"><p class="lp-label">{label}</p><div><h2>{kop}</h2>{s}</div>'
             f'{lijst([(i, None) for i in items], "lp-momenten")}</div></section>')
-def paar(kolommen):
+def paar(kolommen, kop=None):
+    kk = f'<h2 class="lp-paarkop">{kop}</h2>' if kop else ''
     k = "".join(f'<div><img src="{b}" alt="{e(a)}" loading="lazy" style="object-position:{p}"><p class="lp-label">{l}</p><h2>{h}</h2><p>{t}</p></div>'
                 for b, a, p, l, h, t in kolommen)
-    return f'<section class="lp-band lp-donker"><div class="lp-paar">{k}</div></section>'
+    return f'<section class="lp-band lp-donker">{kk}<div class="lp-paar">{k}</div></section>'
 def split(beeld, alt, pos, label, kop, tekst):
     return (f'<section class="lp-split"><img src="{beeld}" alt="{e(alt)}" loading="lazy" style="object-position:{pos}">'
             f'<div><p class="lp-label">{label}</p><h2>{kop}</h2><p>{tekst}</p></div></section>')
@@ -164,10 +165,6 @@ P["merken-en-bureaus.html"] = dict(titel="Merken, winkels, creatieven en bureaus
   momenten("Samen vormgeven", "De momenten die het verschil maken", ["De reveal van een product of collectie", "Een demo-area waar het product centraal staat",
    "De etalage of het in-store moment", "De catwalk", "Een fotogenieke plek of branded backdrop", "Een interviewhoek voor pers en content",
    "De omslag naar een feest, als de avond daarom vraagt"]),
-  paar([("img/maarten-mixer.jpg", "Maarten Versteeg met een rotary mixer in een industriële ruimte", "50% 74%", "De sound van je merk", "Music for brands",
-         "Een merk heeft een eigen sound. Bij producten en collecties brengt Maarten een chique sound met wortels in warme elektronische muziek: verfijnd genoeg voor een presentatie, met genoeg groove voor de avond erna. Afgestemd op de collectie of de campagne, als dj-set of als playlist per moment."),
-        ("img/doelgroepen/winkel.jpg", "Eigenaresse van een kledingwinkel bij de toonbank, met kledingrekken op de achtergrond", "60% 40%", "Retail en conceptstores", "Music for retail",
-         "Ook in de winkel hoort de muziek bij je merk. Bij een in-store event, een lancering of een koopzondag met een dj wordt je winkel voor een middag of avond een plek waar mensen voor komen, met licht en geluid die bij je collectie passen.")]),
   aanbod("Dit kunnen we je bieden", [
    kaart("Licht en beeld", [("Productlicht met theaterspots", "Kleuren, materialen en details van de collectie naar voren"),
      ("Licht voor camera en social", "Een backdrop en interviewhoek die ook op een telefoon kloppen"),
@@ -179,6 +176,10 @@ P["merken-en-bureaus.html"] = dict(titel="Merken, winkels, creatieven en bureaus
    kaart("Concept en uitvoering", [("Meedenken vanaf de conceptfase", "Met het merk of het bureau, met 25 jaar ervaring in corporate communicatie"),
      ("Een lichtplan per moment", "Locatiebezoek, lichtontwerp en programmering"),
      ("Geluid en dj-booth", "Verstaanbare sprekers bij de presentatie, een volle dansvloer daarna")], wens=True)]),
+  paar([("img/maarten-mixer.jpg", "Maarten Versteeg met een rotary mixer in een industriële ruimte", "50% 74%", "De sound van je merk", "Music for brands",
+         "Een merk heeft een eigen sound. Bij producten en collecties brengt Maarten een chique sound met wortels in warme elektronische muziek: verfijnd genoeg voor een presentatie, met genoeg groove voor de avond erna. Afgestemd op de collectie of de campagne, als dj-set of als playlist per moment."),
+        ("img/doelgroepen/winkel.jpg", "Eigenaresse van een kledingwinkel bij de toonbank, met kledingrekken op de achtergrond", "60% 40%", "Retail en conceptstores", "Music for retail",
+         "Ook in de winkel hoort de muziek bij je merk. Bij een in-store event, een lancering of een koopzondag met een dj wordt je winkel voor een middag of avond een plek waar mensen voor komen, met licht en geluid die bij je collectie passen.")], kop="Daarnaast bieden we ook muzikale ondersteuning"),
   stappen([("Briefing", "Merk, campagne, doelgroep en de momenten van de avond. Hier bepalen we wat het event nodig heeft."),
    ("Locatiebezoek of foto's en plattegrond", "We bekijken de ruimte, de looproute en waar het product komt te staan."),
    ("Voorstel", "Licht en muziek per moment, met een duidelijke prijs."),
@@ -186,7 +187,7 @@ P["merken-en-bureaus.html"] = dict(titel="Merken, winkels, creatieven en bureaus
    ("Opbouw en programmering", "Licht ingesteld en geluid gecheckt voordat de eerste gast binnenkomt."),
    ("Op de avond zelf", "Eén aanspreekpunt, ook bij de omslag naar het feest.")]),
   contact("Werk je aan een lancering, collectie&shy;presentatie of in&#8209;store event?", "Landingspagina merken en bureaus", "Bijvoorbeeld: collectiepresentatie voor 150 gasten in een showroom, april"),
-  eerder("Dit merk ging je voor", ["productpresentatie.html"], quote="De uitstraling was precies zoals we wilden: clean, licht industrieel maar ook warm.")])
+  eerder("Voorbeeldcase", ["productpresentatie.html"], quote="De uitstraling was precies zoals we wilden: clean, licht industrieel maar ook warm.")])
 
 P["bijzondere-eventlocaties.html"] = dict(titel="Eigenaren en exploitanten van eventlocaties", h1="Eigenaren en exploitanten<br> van eventlocaties",
  beschrijving="Eén aanspreekpunt voor licht, geluid en muziek op je locatie: per klantvraag een passende opzet, en een vaste installatie voor wat je zelf doet.",

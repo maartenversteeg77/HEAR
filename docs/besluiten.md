@@ -481,3 +481,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Engels (6 nov): de vier landingspagina's zijn voorlopig alleen Nederlands. /en/-adressen sturen tijdelijk (302) naar de Nederlandse versie (src/index.js); de taalknop op die pagina's gaat naar /en/doelgroepen.html. Overzicht, homepageblok en menu zijn wel vertaald.
 - Open (6 nov): licenties/toestemming beelden (iStock-montage eventmanagers, galerie, hal, winkel; Raw Drums-foto via Darnell en de twee dj's); Engelse versies van de vier pagina's.
 - Merkenpagina (6 nov): "wortels in deephouse" wordt "wortels in warme elektronische muziek", breder, zodat Maartens eigen genre niet leidend lijkt voor wat een merk nodig heeft.
+- Merkenpagina (6 nov): "Dit kunnen we je bieden" vóór Music for brands/retail; daarboven nu de kop "Daarnaast bieden we ook muzikale ondersteuning", zodat muziek deel van het aanbod is. "Dit merk ging je voor" wordt "Voorbeeldcase" (merk wordt niet genoemd).
