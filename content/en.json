@@ -104,7 +104,7 @@
     ],
     [
       "<nav aria-label=\"Producten en diensten\"><p class=\"label\">Producten en diensten</p><a href=\"booth-dj-gear.html\">Dj-gear</a><a href=\"high-end-audio.html\">Geluid</a><a href=\"atmospheric-lighting.html\">Sfeerlicht</a><a href=\"dancefloor-lighting.html\">Dansvloerlicht</a><a href=\"vintage-lighting.html\">90's vintage licht</a><a href=\"communicatieadvies.html\">Communicatieadvies</a><a href=\"artiesten.html\">Dj's en artiesten</a><a href=\"custom-dj-mix.html\">Coffee cuts en custom dj-mixes</a>\n          <a href=\"aankoopadvies.html\">Aankoopadvies licht en geluid</a></nav>",
-      "<nav aria-label=\"Products and services\"><p class=\"label\">Products and services</p><a href=\"booth-dj-gear.html\">DJ gear</a><a href=\"high-end-audio.html\">Sound</a><a href=\"atmospheric-lighting.html\">Ambient lighting</a><a href=\"dancefloor-lighting.html\">Dance floor lighting</a><a href=\"vintage-lighting.html\">90s vintage lighting</a><a href=\"communicatieadvies.html\">Communication advice</a><a href=\"artiesten.html\">DJs and artists</a><a href=\"custom-dj-mix.html\">Coffee cuts and custom DJ mixes</a>\n          <a href=\"aankoopadvies.html\">Purchase advice for light and sound</a></nav>"
+      "<nav aria-label=\"Products and services\"><p class=\"label\">Products and services</p><a href=\"booth-dj-gear.html\">DJ gear</a><a href=\"high-end-audio.html\">Sound</a><a href=\"atmospheric-lighting.html\">Ambient lighting</a><a href=\"dancefloor-lighting.html\">Dancefloor lighting</a><a href=\"vintage-lighting.html\">90s vintage lighting</a><a href=\"communicatieadvies.html\">Communications advice</a><a href=\"artiesten.html\">DJs and artists</a><a href=\"custom-dj-mix.html\">Coffee cuts and custom DJ mixes</a>\n          <a href=\"aankoopadvies.html\">Purchase advice for light and sound</a></nav>"
     ],
     [
       "<nav aria-label=\"Waarden\"><p class=\"label\">Waarden</p><a href=\"principes.html#samen\">Samen</a><a href=\"principes.html#open\">Open</a><a href=\"principes.html#vakmanschap\">Vakmanschap</a><a href=\"principes.html#warmte\">Warme sound</a></nav>",
@@ -220,11 +220,11 @@
     ],
     [
       "<h2>Dansvloerlicht</h2><p>Moving heads die de muziek volgen</p>",
-      "<h2>Dance floor lighting</h2><p>Moving heads that follow the music</p>"
+      "<h2>Dancefloor lighting</h2><p>Moving heads that follow the music</p>"
     ],
     [
       "<h2>Dansvloerlicht</h2><p>Geluid en draadloze microfoons</p>",
-      "<h2>Dance floor lighting</h2><p>Sound and wireless microphones</p>"
+      "<h2>Dancefloor lighting</h2><p>Sound and wireless microphones</p>"
     ],
     [
       "<h2>90’s vintage licht</h2><p>Gereviseerde klassiekers uit de discotijd</p>",
@@ -312,19 +312,19 @@
     ],
     [
       "title=\"Communicatieadvies\"",
-      "title=\"Communication advice\""
+      "title=\"Communications advice\""
     ],
     [
       "aria-label=\"Volgende: Communicatieadvies\"",
-      "aria-label=\"Next: Communication advice\""
+      "aria-label=\"Next: Communications advice\""
     ],
     [
       "aria-label=\"Vorige: Communicatieadvies\"",
-      "aria-label=\"Previous: Communication advice\""
+      "aria-label=\"Previous: Communications advice\""
     ],
     [
       ">Communicatieadvies</a>",
-      ">Communication advice</a>"
+      ">Communications advice</a>"
     ],
     [
       ">Zakelijke events</a>",
@@ -464,27 +464,27 @@
     ],
     [
       "title=\"Dansvloerlicht\"",
-      "title=\"Dance floor lighting\""
+      "title=\"Dancefloor lighting\""
     ],
     [
       "Vorige: Dansvloerlicht\"",
-      "Previous: Dance floor lighting\""
+      "Previous: Dancefloor lighting\""
     ],
     [
       "Volgende: Dansvloerlicht\"",
-      "Next: Dance floor lighting\""
+      "Next: Dancefloor lighting\""
     ],
     [
       "alt=\"Dansvloerlicht\"",
-      "alt=\"Dance floor lighting\""
+      "alt=\"Dancefloor lighting\""
     ],
     [
       "<h2>Dansvloerlicht</h2>",
-      "<h2>Dance floor lighting</h2>"
+      "<h2>Dancefloor lighting</h2>"
     ],
     [
       "<span class=\"huidig\">Dansvloerlicht</span>",
-      "<span class=\"huidig\">Dance floor lighting</span>"
+      "<span class=\"huidig\">Dancefloor lighting</span>"
     ],
     [
       "title=\"90&#x27;s vintage licht\"",
@@ -536,23 +536,23 @@
     ],
     [
       "Vorige: Communicatieadvies\"",
-      "Previous: Communication advice\""
+      "Previous: Communications advice\""
     ],
     [
       "Volgende: Communicatieadvies\"",
-      "Next: Communication advice\""
+      "Next: Communications advice\""
     ],
     [
       "alt=\"Communicatieadvies\"",
-      "alt=\"Communication advice\""
+      "alt=\"Communications advice\""
     ],
     [
       "<h2>Communicatieadvies</h2>",
-      "<h2>Communication advice</h2>"
+      "<h2>Communications advice</h2>"
     ],
     [
       "<span class=\"huidig\">Communicatieadvies</span>",
-      "<span class=\"huidig\">Communication advice</span>"
+      "<span class=\"huidig\">Communications advice</span>"
     ],
     [
       "title=\"Dj&#x27;s en artiesten\"",
@@ -744,7 +744,7 @@
     ],
     [
       "<span class=\"ps-t\">Dansvloerlicht</span>",
-      "<span class=\"ps-t\">Dance floor lighting</span>"
+      "<span class=\"ps-t\">Dancefloor lighting</span>"
     ],
     [
       "<span class=\"ps-t\">90&#x27;s vintage licht</span>",
@@ -752,7 +752,7 @@
     ],
     [
       "<span class=\"ps-t\">Communicatieadvies</span>",
-      "<span class=\"ps-t\">Communication advice</span>"
+      "<span class=\"ps-t\">Communications advice</span>"
     ],
     [
       "<span class=\"ps-t\">Dj&#x27;s en artiesten</span>",
@@ -834,7 +834,7 @@
       ],
       [
         "Voor midsize events (150 tot 1.500 personen)",
-        "For midsize events (150 to 1,500 people)"
+        "For mid-sized events (150 to 1,500 people)"
       ],
       [
         "<h2 id=\"werk-kop\">Uitgelicht werk</h2>",
@@ -930,7 +930,7 @@
       ],
       [
         "data-bekijk=\"Bekijk al het dansvloerlicht\"><span class=\"pl-titel\">Dansvloerlicht</span><small>hybride moving heads en lichtshows</small>",
-        "data-bekijk=\"See all dance floor lighting\"><span class=\"pl-titel\">Dance floor lighting</span><small>hybrid moving heads and light shows</small>"
+        "data-bekijk=\"See all dancefloor lighting\"><span class=\"pl-titel\">Dancefloor lighting</span><small>hybrid moving heads and light shows</small>"
       ],
       [
         "alt=\"Rode en blauwe lichtbundels van moving heads\"",
@@ -938,7 +938,7 @@
       ],
       [
         "data-i=\"3\" data-g=\"p\">Dansvloerlicht</button>",
-        "data-i=\"3\" data-g=\"p\">Dance floor lighting</button>"
+        "data-i=\"3\" data-g=\"p\">Dancefloor lighting</button>"
       ],
       [
         "data-bekijk=\"Bekijk al het vintage licht\"><span class=\"pl-titel\">90&#x27;s vintage licht</span><small>Astrodisco en Golden Scan</small>",
@@ -990,11 +990,11 @@
       ],
       [
         "data-bekijk=\"Bekijk communicatieadvies\"><span class=\"pl-titel\">Communicatieadvies</span><small>boodschap, speeches, uitnodigingen, video</small>",
-        "data-bekijk=\"See communication advice\"><span class=\"pl-titel\">Communication advice</span><small>message, speeches, invitations, video</small>"
+        "data-bekijk=\"See communications advice\"><span class=\"pl-titel\">Communications advice</span><small>message, speeches, invitations, video</small>"
       ],
       [
         "data-i=\"5\" data-g=\"d\">Communicatieadvies</button>",
-        "data-i=\"5\" data-g=\"d\">Communication advice</button>"
+        "data-i=\"5\" data-g=\"d\">Communications advice</button>"
       ],
       [
         "alt=\"Maarten Versteeg in een blauw colbert\"",
@@ -1091,6 +1091,10 @@
       [
         ">Dj&#x27;s, advies en meer</button>",
         ">DJs, advice and more</button>"
+      ],
+      [
+        "<a href=\"artiesten.html\">Dj's</a>",
+        "<a href=\"artiesten.html\">DJs</a>"
       ]
     ],
     "cases.html": [
@@ -1130,11 +1134,11 @@
       ],
       [
         "<p>Daarnaast werk ik zo’n 25 jaar als corporate communicatiespecialist voor grote organisaties. Ik weet dus ook wat er belangrijk is bij een merkactivatie, productlancering of personeelsevent bij een opdrachtgever.</p>",
-        "<p>Alongside that, I've worked for some 25 years as a corporate communications specialist for large organisations. So I also know what’s important for a brand activation, product launch or staff event.</p>"
+        "<p>Alongside that, I've worked for some 25 years as a corporate communications specialist for large organisations. So I also know what matters to a client when it comes to a brand activation, product launch or staff event.</p>"
       ],
       [
         "<p class=\"founder-kern\">Uit die combinatie is HEAR ontstaan.</p>",
-        "<p class=\"founder-kern\">HEAR started out of that combination.</p>"
+        "<p class=\"founder-kern\">That combination is how HEAR came about.</p>"
       ],
       [
         "<p>Events worden groter en de show lijkt soms belangrijker dan de artiest. Bij HEAR staan licht en geluid in dienst van de artiest, met kleurrijke lichtshows die de muziek en de sfeer versterken.</p>",
@@ -1142,15 +1146,15 @@
       ],
       [
         "<p>Dat doe ik bij kleine tot middelgrote events: van 150 tot 1.500 personen, in venues tot 35 meter diep. Ik werk daarbij samen met een netwerk van ervaren freelance professionals.</p>",
-        "<p>I work with a network of experienced freelance professionals. Together we realize sound and light for small to medium-sized events: from 150 to 1,500 people, in venues up to 35 metres deep.</p>"
+        "<p>I work with a network of experienced freelance professionals. Together we deliver sound and light for small to mid-sized events: from 150 to 1,500 people, in venues up to 35 metres deep.</p>"
       ],
       [
         "<p>Daarnaast help ik venue-eigenaren hun ruimte om te bouwen tot een dansvloer voor een eenmalig event. Of ik adviseer ze hoe ze zelf hun licht en geluid kunnen inkopen: wat heeft de ruimte nodig, wat is er mogelijk en hoe zorg je dat het goed werkt, weinig onderhoud vraagt en lang meegaat? Daarbij breng ik ze in contact met de juiste leveranciers.</p>",
-        "<p>I also help special event venues turn their space into a dancefloor for a one-off event. Or I advise them on buying their own light and sound: what does the space require, what's feasible in budget and technology, and how do you make sure it works well and requires little maintenance? I then intermediate between the client and the right suppliers or facilitate a direct relationship.</p>"
+        "<p>I also help venue owners turn their space into a dancefloor for a one-off event. Or I advise them on buying their own light and sound: what does the space require, what's feasible in budget and technology, and how do you make sure it works well and requires little maintenance? I then act as a go-between with the right suppliers, or put them in touch directly.</p>"
       ],
       [
         "<p>De naam HEAR heeft twee betekenissen. Allereerst staat het voor High End Audio Rental. Ik werk met merken waarvan de makers passie hebben voor hun vak. En een subtiele kwaliteit. Zoals bij een goed Italiaans maatpak: het hoeft geen aandacht te trekken, maar de kenner ziet de snit, materialen en afwerking.</p>",
-        "<p>The name HEAR has two meanings. First of all, it stands for High End Audio Rental. I work with brands whose makers have a passion for their craft. And an understated quality. Like a good Italian tailored suit: it doesn't need to draw attention, but the connoisseur sees the cut, the materials and the finish.</p>"
+        "<p>The name HEAR has two meanings. First of all, it stands for High End Audio Rental. I work with brands whose makers are passionate about their craft, with an understated quality. Like a good Italian tailored suit: it doesn't need to draw attention, but the connoisseur sees the cut, the materials and the finish.</p>"
       ],
       [
         "<p>Ik probeer continu nieuwe merken en producten uit. Ik vind het heel leuk om een band op te bouwen met Europese licht- en geluidsfabrikanten en samen te werken met professionals uit het vak. Daar leer ik veel van. Het maakt je ook bescheiden: hoe meer je leert van echte vakidioten, hoe meer je merkt wat je nog niet weet.</p>",
@@ -1158,7 +1162,7 @@
       ],
       [
         "<p>Daarnaast staat HEAR voor ‘kiezen op gehoor’. Een rider-friendly assortiment is commercieel gezien natuurlijk heel belangrijk voor een AV-bedrijf. Je kunt alleen gear verhuren waar vraag naar is. Maar eigen smaak telt ook. Wat bij HEAR in de flightcase gaat, moet passen bij beide. Producten waar ik zelf achter sta, gemaakt met vakmanschap, respect voor de cultuur en innovatie.</p>",
-        "<p>HEAR also stands for choosing by ear. For an AV business a rider-friendly product range matters greatly, commercially speaking. You cannot rent out gear without demand in the market. However, taste also matters. So whatever goes into the HEAR flight case has to suit both. Products made with craftsmanship, respect for the culture and innovation.</p>"
+        "<p>HEAR also stands for choosing by ear. Commercially, a rider-friendly range is essential for an AV business: you can only rent out gear people ask for. But taste matters too. So whatever goes into a HEAR flight case has to meet both. Products made with craftsmanship, respect for the culture and innovation.</p>"
       ],
       [
         "<dl class=\"structuur\" id=\"partners\" aria-label=\"Structuur van HEAR\">",
@@ -1235,6 +1239,10 @@
       [
         "<a href=\"https://base-events.nl\" target=\"_blank\" rel=\"noopener\">Base Events</a>, <a href=\"https://www.biezema-geluidsverhuur.nl\" target=\"_blank\" rel=\"noopener\">Biezema AV</a>, <a href=\"https://luxonos.nl\" target=\"_blank\" rel=\"noopener\">Luxonos</a>, <a href=\"https://brandon-av.nl\" target=\"_blank\" rel=\"noopener\">Brandon AV</a> en diverse freelancers</dd>",
         "<a href=\"https://base-events.nl\" target=\"_blank\" rel=\"noopener\">Base Events</a>, <a href=\"https://www.biezema-geluidsverhuur.nl\" target=\"_blank\" rel=\"noopener\">Biezema AV</a>, <a href=\"https://luxonos.nl\" target=\"_blank\" rel=\"noopener\">Luxonos</a>, <a href=\"https://brandon-av.nl\" target=\"_blank\" rel=\"noopener\">Brandon AV</a> and various freelancers</dd>"
+      ],
+      [
+        "<p class=\"eyebrow page-kicker\">OVER HEAR</p>",
+        "<p class=\"eyebrow page-kicker\">ABOUT HEAR</p>"
       ]
     ],
     "ade-dj.html": [
@@ -1286,7 +1294,7 @@
       ],
       [
         "Maarten verbindt meerdere decennia dancemuziek naadloos aan elkaar. Zijn sets zijn avontuurlijk en gevarieerd, maar voelen toch als één geheel.",
-        "Maarten seamlessly connects several decades of dancemusic. His sets are adventurous and varied, yet feel like one whole."
+        "Maarten seamlessly connects several decades of dance music. His sets are adventurous and varied, yet feel like one whole."
       ],
       [
         "<p>Maarten Versteeg is rechtstreeks te boeken als dj en is daarnaast ook aangesloten bij Architects in Music, dat dj’s boekt op bijzondere locaties en evenementen. Van luxe cocktailbars en skylounges tot beachclubs en corporate events.</p>",
@@ -1298,7 +1306,7 @@
       ],
       [
         "<p>Zonder poespas of instagrammable moves is het juist de muziek die avontuurlijk is. De inhoud is de performance: het combineren van verschillende genres, van classics tot nieuwe releases in een coherente mix.</p>",
-        "<p>No fuss, no Instagrammable moves: it's the music that is adventurous. The sound is what makes the performance. To combine different genres, from classics to new releases in a cohesive mix.</p>"
+        "<p>No fuss, no Instagrammable moves: it's the music that is adventurous. The sound is what makes the performance. Combining genres, from classics to new releases, in one cohesive mix.</p>"
       ],
       [
         ">Meer over dj's boeken →<",
@@ -1320,7 +1328,7 @@
       ],
       [
         "Na diverse lezingen en workshops was er aansluitend een cocktail hour. Dat werden een paar uren waarin de sfeer naadloos overging van een inhoudelijk event naar een gezellige netwerkborrel.",
-        "After a series of lectures and workshops there was a cocktail hour. It turned into a few hours in which the ambience moved seamlessly from a substantive event to a convivial networking drinks reception."
+        "After a series of lectures and workshops there was a cocktail hour. It turned into a few hours in which the ambience moved seamlessly from a content-driven event to relaxed networking drinks."
       ],
       [
         "<strong>Opdrachtgever</strong>Gemeentelijke organisatie in Den Haag",
@@ -1336,7 +1344,7 @@
       ],
       [
         "<p>De opdrachtgever waardeerde de aandacht voor detail en de muziek als modern én toegankelijk.</p>",
-        "<p>The client appreciated the attention to detail and the polished look. With the music being modern yet accessible.</p>"
+        "<p>The client appreciated the attention to detail and the polished look. The music was modern yet accessible.</p>"
       ]
     ],
     "jubileum-ondernemersnetwerk.html": [
@@ -1366,7 +1374,7 @@
       ],
       [
         "<p>Speeches, dj's en muzikanten gingen naadloos in elkaar over. De gasten waren uitbundig, zonder overmatige overlast voor de buurt te veroorzaken. De techniek ging onzichtbaar op in de aankleding.</p>",
-        "<p>Speeches, DJs and musicians flowed seamlessly into one another. The guests were dancing all night, without causing excessive disturbance to the neighbourhood. The equipment blended in the entire look & feel.</p>"
+        "<p>Speeches, DJs and musicians flowed seamlessly into one another. The guests were dancing all night, without causing excessive disturbance to the neighbourhood. The equipment blended into the overall look & feel.</p>"
       ],
       [
         "<strong>Hugo Winnubst &amp; Lotte Nijborg</strong>Founders CreativeGrounds",
@@ -1380,7 +1388,7 @@
       ],
       [
         "Privéfeest voor 150 gasten: van gewone zaal tot kleurrijke dansvloer",
-        "Private party for 150 guests: from ordinary room to colourful dancefloor"
+        "Private party for 150 guests: from an ordinary room to a colourful dancefloor"
       ],
       [
         "alt=\"Sfeerbeeld van het privé-event met kleurrijke verlichting en gasten\"",
@@ -1388,11 +1396,11 @@
       ],
       [
         "Maarten doet met HEAR vooral werk voor dance-events en zakelijke evenementen. Ik vroeg me af of hij ook een privé-evenement voor mij zou willen verzorgen. Dat wilde hij graag doen. Voor mijn feest met 150 vrienden en relaties veranderde hij een zaal die overdag vrij gewoon oogde in een kleurrijke dansvloer, met verschillende DJ’s.",
-        "With HEAR, Maarten usually works on dance events and corporate events. I wondered whether he would also do a private event for me. He was happy to do so. For my party with 150 friends and relations, he turned a room that looked quite ordinary by day into a colourful dancefloor, with several DJs."
+        "With HEAR, Maarten usually works on dance events and corporate events. I wondered whether he would also do a private event for me. He was happy to do so. For my party with 150 friends and business contacts, he turned a room that looked quite ordinary by day into a colourful dancefloor, with several DJs."
       ],
       [
         "<p>Maarten werkt met HEAR vooral voor dance-events en zakelijke evenementen. Voor Ronald Pronk verzorgde hij ook een privé-evenement voor 150 vrienden en relaties. Maarten en Ronald kennen elkaar al langer als DJ’s.</p>",
-        "<p>With HEAR, Maarten mainly works on dance events and corporate events. For Ronald Pronk he also took care of a private event for 150 friends and relations. Maarten and Ronald have known each other as DJs for a long time.</p>"
+        "<p>With HEAR, Maarten mainly works on dance events and corporate events. For Ronald Pronk he also took care of a private event for 150 friends and business contacts. Maarten and Ronald have known each other as DJs for a long time.</p>"
       ],
       [
         "<p>Door een mix van washlights en zwarte doeken was er niks meer te zien van al het metaal in de ruimte en werd het geluid minder weerkaatst.</p>",
@@ -1400,7 +1408,7 @@
       ],
       [
         "<p>De ruimte werd voor één avond een levendige, kleurrijke dansvloer voor 150 vrienden en relaties, met meerdere DJ’s.</p>",
-        "<p>For one night, the space became a lively, colourful dancefloor for 150 friends and relations, with several DJs.</p>"
+        "<p>For one night, the space became a lively, colourful dancefloor for 150 friends and business contacts, with several DJs.</p>"
       ]
     ],
     "productpresentatie.html": [
@@ -1430,7 +1438,7 @@
       ],
       [
         "<p>HEAR verzorgde het locatiebezoek, het lichtontwerp en de programmering. Theaterspots brachten de kleuren, materialen en details van de collectie naar voren. Draadloze washlights op accu gaven de ruimte kleur, zonder zichtbare bekabeling.</p><p>Later op de avond veranderde het lichtbeeld. Lichtzuilen, spiegelbollen en lichte nevel begeleidden de overgang naar een feest met een disco-dj. Boven de dansvloer bleef de collectie zichtbaar, groot geprojecteerd met een laserprojector.</p>",
-        "<p>HEAR handled the site visit, the lighting design and the programming. Theatre spots brought out the colours, materials and details of the collection. Battery-powered wireless washlights coloured the room, without a cable in sight.</p><p>Later in the evening the lighting changed. Light columns, mirror balls and a light haze carried the shift to a party with a disco DJ. Above the dance floor the collection stayed in view, projected large by a laser projector.</p>"
+        "<p>HEAR handled the site visit, the lighting design and the programming. Theatre spots brought out the colours, materials and details of the collection. Battery-powered wireless washlights coloured the room, without a cable in sight.</p><p>Later in the evening the lighting changed. Light columns, mirror balls and a light haze carried the shift to a party with a disco DJ. Above the dancefloor the collection stayed in view, projected large by a laser projector.</p>"
       ],
       [
         "<p>De opdrachtgever was vooral tevreden over de uitstraling: strak en licht industrieel, maar nergens kil. Ook achter de booth klopte het: de dj was enthousiast over de mediaspelers, de monitoring en het geluid.</p>",
@@ -1456,7 +1464,7 @@
       ],
       [
         "<p>De mixes bewegen tussen soulful house, deephouse, afro, latin, disco en houseclassics. Een selectie is te beluisteren op SoundCloud. In toekomstige uitzendingen zal Maarten ook eigen producties introduceren.</p>",
-        "<p>The mixes move between soulful house, deep house, latin, afro, disco and houseclassics. A selection can be heard on SoundCloud. In future broadcasts Maarten will also introduce his own productions.</p>"
+        "<p>The mixes move between soulful house, deep house, latin, afro, disco and house classics. A selection can be heard on SoundCloud. In future broadcasts Maarten will also introduce his own productions.</p>"
       ],
       [
         "<p>Deep Radio: “Luisteraars geven positieve feedback over de variatie, de mix van oud en nieuw en de ‘storytelling’-stijl in strakke mixes”</p>",
@@ -1478,7 +1486,7 @@
       ],
       [
         "Mijn AV-bedrijf voor evenementen groeit duidelijk uit zijn jasje. Ik had krachtiger geluid nodig, maar vooral ook goed advies. Wat goed klinkt, welk systeem past bij welk type event en welke aanschaf is toekomstbestendig, doordat je het modulair kunt uitbreiden? Maarten adviseerde me bij de aanschaf van een nieuw geluidssysteem én regelde een scherpe prijs.",
-        "My events AV company is clearly outgrowing itself. I needed more powerful sound, but above all good advice. What sounds good, which system suits which type of event and which purchase is future-proof because you can expand it modularly? Maarten advised me on buying a new sound system and arranged a sharp price too."
+        "My AV company is clearly outgrowing its setup. I needed more powerful sound, but above all good advice. What sounds good, which system suits which type of event and which purchase is future-proof because you can expand it modularly? Maarten advised me on buying a new sound system and arranged a sharp price too."
       ],
       [
         "<strong>Audiovisueel (AV) verhuurbedrijf</strong>",
@@ -1486,11 +1494,11 @@
       ],
       [
         "<p>Een licht- en geluidsverhuurbedrijf voor privé-evenementen groeide uit zijn bestaande systeem. Er was krachtiger geluid nodig, maar vooral advies over geluidskwaliteit, merken en hun technische mogelijkheden en schaalbaarheid.</p>",
-        "<p>A lighting and sound rental company for private events was outgrowing its existing system capacity. More powerful sound was needed, but above all advice on sound signature, various brands and their systems functionalities and scalability.</p>"
+        "<p>A lighting and sound rental company for private events was outgrowing its existing system capacity. More powerful sound was needed, but above all advice on sound signature, different brands, their systems' features and scalability.</p>"
       ],
       [
         "<p>HEAR adviseerde welk type systeem past bij verschillende ruimtes, welke aanschaf kan meegroeien met de verhuurder en hoe het systeem goed wordt opgesteld. Maarten begeleidde ook de aankoop tegen een scherpe prijs.</p>",
-        "<p>HEAR advised on which type of system suits different rooms, which purchase can grow with the rental company and how to set the system up properly. Maarten also supported the procurement at a sharp price.</p>"
+        "<p>HEAR advised on which type of system suits different rooms, which purchase can grow with the rental company and how to set the system up properly. Maarten also helped secure a sharp price.</p>"
       ],
       [
         "<p>Goed advies verkleint de kans op een kostbare verkeerde aanschaf, bijvoorbeeld wanneer later blijkt dat je systeem niet schaalbaar is als je verder groeit.</p>",
@@ -1594,11 +1602,11 @@
       ],
       [
         ">Bekijk 90’s vintage licht <",
-        ">View 90s vintage lighting <"
+        ">See 90s vintage lighting <"
       ],
       [
         ">Bekijk dansvloerlicht <",
-        ">View dancefloor lighting <"
+        ">See dancefloor lighting <"
       ],
       [
         ">Producten en diensten<",
@@ -1610,7 +1618,7 @@
       ],
       [
         ">Bekijk sfeerlicht <",
-        ">View atmospheric lighting <"
+        ">See ambient lighting <"
       ],
       [
         ">Bekijk custom <",
@@ -1626,7 +1634,7 @@
       ],
       [
         "<h2>Bekijk communicatieadvies <i aria-hidden=\"true\">→</i></h2>",
-        "<h2>See communication advice <i aria-hidden=\"true\">→</i></h2>"
+        "<h2>See communications advice <i aria-hidden=\"true\">→</i></h2>"
       ],
       [
         "alt=\"Maarten Versteeg in een blauw colbert\"",
@@ -1702,7 +1710,7 @@
       ],
       [
         "data-bekijk=\"Bekijk al het dansvloerlicht\"><span class=\"pl-titel\">Dansvloerlicht</span><small>hybride moving heads en lichtshows</small>",
-        "data-bekijk=\"See all dance floor lighting\"><span class=\"pl-titel\">Dance floor lighting</span><small>hybrid moving heads and light shows</small>"
+        "data-bekijk=\"See all dancefloor lighting\"><span class=\"pl-titel\">Dancefloor lighting</span><small>hybrid moving heads and light shows</small>"
       ],
       [
         "alt=\"Rode en blauwe lichtbundels van moving heads\"",
@@ -1710,7 +1718,7 @@
       ],
       [
         "data-i=\"3\">Dansvloerlicht</button>",
-        "data-i=\"3\">Dance floor lighting</button>"
+        "data-i=\"3\">Dancefloor lighting</button>"
       ],
       [
         "data-bekijk=\"Bekijk al het vintage licht\"><span class=\"pl-titel\">90&#x27;s vintage licht</span><small>Astrodisco en Golden Scan</small>",
@@ -1758,11 +1766,11 @@
       ],
       [
         "data-bekijk=\"Bekijk communicatieadvies\"><span class=\"pl-titel\">Communicatieadvies</span><small>boodschap, speeches, uitnodigingen, video</small>",
-        "data-bekijk=\"See communication advice\"><span class=\"pl-titel\">Communication advice</span><small>message, speeches, invitations, video</small>"
+        "data-bekijk=\"See communications advice\"><span class=\"pl-titel\">Communications advice</span><small>message, speeches, invitations, video</small>"
       ],
       [
         "data-i=\"5\">Communicatieadvies</button>",
-        "data-i=\"5\">Communication advice</button>"
+        "data-i=\"5\">Communications advice</button>"
       ],
       [
         "<li class=\"pl-groep\" aria-hidden=\"true\">Producten</li>",
@@ -1802,11 +1810,11 @@
       ],
       [
         "data-lead=\"We ontwerpen een lichtplan en sturen daarvoor een offerte. Deze is gebaseerd op ofwel een locatiebezoek of foto’s, het type event en het doel, de fysieke ruimte en het budget. Afhankelijk van de locatie en de gekozen materialen is mogelijk een trussconstructie onderdeel van het advies.\"",
-        "data-lead=\"We propose a lighting plan that we quote. We base this plan on a pre-visit or pictures, the type of event, the physical space and the budget. Depending on the venue and the chosen equipment, a truss structure may be part of the proposal.\""
+        "data-lead=\"We put together a lighting plan with a quote, based on a site visit or photos, the type of event, the space and the budget. Depending on the venue and the chosen equipment, a truss structure may be part of the proposal.\""
       ],
       [
         "data-lead=\"Een hybride moving head projecteert een beam, spot en wash in één. Als je de juiste kiest (niet eentje die alles nét niet kan) dan is het een Zwitsers zakmes: je haalt daarmee uit één apparaat wat anders drie fixtures vraagt, en met een beperkt aantal stuks maak je een show met veel gezichten. De lampen wisselen bovendien van rol gedurende een avond: rustig als wash in de warm-up, impactvol als beam op peak hour.\"",
-        "data-lead=\"A hybrid moving head projects beam, spot and wash in one. When choosing the right device (not a jack of all trades that excels at nothing) this fixture can be like a Swiss army knife. You get from one fixture what would otherwise take three, and with a limited number you create a show with nearly limitless different styles and atmospheres. The fixtures also change role as a night progresses: calm as a wash during the warm-up, high-impact as a beam at peak hour.\""
+        "data-lead=\"A hybrid moving head projects beam, spot and wash in one. Choose the right one (not a jack of all trades that excels at nothing) and it works like a Swiss army knife. You get from one fixture what would otherwise take three, and with a limited number you create a show with nearly limitless different styles and atmospheres. The fixtures also change role as a night progresses: calm as a wash during the warm-up, high-impact as a beam at peak hour.\""
       ],
       [
         "data-lead=\"Sommige lichteffecten zijn nooit overtroffen, alleen vergeten. Wij halen de klassiekers uit de discotheken van de jaren negentig terug, reviseren ze en geven ze een moderne lichtbron. Zo wordt een &#x27;oh ja&#x27;-effect een &#x27;oh wow&#x27;-effect.\"",
@@ -1814,11 +1822,11 @@
       ],
       [
         "data-lead=\"Een event is ook communicatie. Wat wil je dat gasten na afloop onthouden, en hoe zorg je dat het programma dat ondersteunt? Maarten werkt al zo&#x27;n 25 jaar als corporate communicatiespecialist voor grote organisaties. Die ervaring zet hij in zodat techniek en boodschap elkaar versterken.\"",
-        "data-lead=\"An event is also communication. What do you want guests to remember afterwards, and how do you make sure the programme supports that? Maarten has worked for some 25 years as a corporate communication specialist for large organisations. He uses that experience so that technology and message reinforce each other.\""
+        "data-lead=\"An event is also communication. What do you want guests to remember afterwards, and how do you make sure the programme supports that? Maarten has worked for some 25 years as a corporate communications specialist for large organisations. He uses that experience so that technology and message reinforce each other.\""
       ],
       [
         "data-lead=\"Als oprichter van HEAR en dj sinds 1993 help ik opdrachtgevers aan een avondvullend programma: met mijzelf achter de booth of artiesten uit mijn netwerk.\"",
-        "data-lead=\"As founder of HEAR and a DJ since 1993, I help clients to a full evening&#x27;s programme: with me behind the booth or artists from my network.\""
+        "data-lead=\"As founder of HEAR and a DJ since 1993, I help clients put together a full evening&#x27;s programme: with me behind the booth or artists from my network.\""
       ],
       [
         "data-lead=\"Of je nu een koffiebar hebt of bijvoorbeeld een cocktailbar: je wilt warme muziek die past bij de identiteit van je zaak. Geen generieke (AI-⁠)tracks.\"",
@@ -1826,7 +1834,7 @@
       ],
       [
         "data-lead=\"Heb je een eventlocatie zonder eigen licht en geluid? Of heb je wel eigen geluid, maar klagen gasten over &#x27;vermoeiend geluid&#x27; of een gebrek aan impact? Wij kijken graag mee wat er mogelijk is om de gastbeleving te vergroten.\"",
-        "data-lead=\"Do you run an event venue without owning lighting and sound? Or do you have your own soundsystem, but guests complain about &#x27;tiring sound&#x27; or a lack of impact? We are happy to look at what&#x27;s possible to improve customer experience.\""
+        "data-lead=\"Do you run an event venue without owning lighting and sound? Or do you have your own sound system, but guests complain about &#x27;tiring sound&#x27; or a lack of impact? We&#x27;re happy to look at how to improve the guest experience.\""
       ],
       [
         "data-lead=\"Het complete aanbod: dj-gear, geluid, licht en diensten voor zakelijke events en dance events.\"",
@@ -1840,7 +1848,7 @@
     "booth-dj-gear.html": [
       [
         ">Voor het event stemmen we de rider en de opstelling af met de dj of zijn management. Onze standaard booth biedt ruimte voor drie CDJ-3000X mediaspelers in een netwerk en een mixer naar keuze: de Pioneer DJ V10 of de AlphaTheta Euphonia. Voor smalle ruimtes is ook een Ecler WARM2 beschikbaar. Aanvullende wensen zijn mogelijk op aanvraag, met indien nodig een alternatieve booth.<",
-        ">Before the event, we discuss the rider and the set-up with the DJ or his/her management. Our standard booth offers room for three networked CDJ-3000X media players and a mixer of choice: the Pioneer DJ V10 or the AlphaTheta Euphonia. For limited spaces there is also an Ecler WARM2 available. Additional requests are possible, with an alternative booth if needed.<"
+        ">Before the event, we discuss the rider and the set-up with the DJ or their management. Our standard booth offers room for three networked CDJ-3000X media players and a mixer of choice: the Pioneer DJ V10 or the AlphaTheta Euphonia. For tight spaces, an Ecler WARM2 is also available. Other requests are welcome, with an alternative booth if needed.<"
       ],
       [
         ">Van de dj en entourage verwachten we dat zij erop toezien dat er geen drankjes op de booth worden gezet of over de booth heen worden aangereikt. Een ongeluk kan niet alleen de gear schaden, maar ook het event zelf, bijvoorbeeld door kortsluiting.<",
@@ -1856,7 +1864,7 @@
       ],
       [
         ">Zorg voor memory drives met de meest actuele versie van Rekordbox, of in elk geval met dual file management. Neem bij vragen of twijfel altijd zo snel mogelijk contact op.<",
-        ">Bring memory drives with the latest version of Rekordbox, or at least with dual file management. If in doubt or if you have any questions, please get in touch early.<"
+        ">Bring USB drives with the latest version of Rekordbox, or at least with dual file management. If in doubt or if you have any questions, please get in touch early.<"
       ],
       [
         ">Deze compacte sub-topcombo is niet alleen nuttig voor lezingen en intieme cocktailparty&#x27;s, maar ook als dj-boothmonitor<",
@@ -1876,11 +1884,11 @@
       ],
       [
         ">Industry standard mediaplayer. Met extra groot scherm voor snelle trackselectie<",
-        ">Industry-standard media player. With an extra-large screen for quick track selection<"
+        ">The industry-standard media player, with an extra-large screen for quick track selection<"
       ],
       [
         ">Industry standard workhorse. Met pristine geluidskwaliteit<",
-        ">Industry-standard workhorse. With pristine sound quality<"
+        ">The industry-standard workhorse, with pristine sound quality<"
       ],
       [
         ">Maak van de booth geen garderobe voor gasten ;-)<",
@@ -1958,7 +1966,7 @@
       ],
       [
         ">Brooklyn ontwerpt al zijn kasten met dezelfde fasekarakteristiek. Daardoor kun je ze in elke combinatie inzetten zonder dat het geluid uit elkaar valt, en klinkt een kleine en een grote opstelling hetzelfde. De subs hebben ingebouwde cardioïde presets: het laag richt zich op het publiek in plaats van het podium.<",
-        ">Brooklyn designs all its cabinets with the same phase response. That means you can use them in any combination with the sound remaining coherent, and a small and a large set-up sound the same. The subs have built-in cardioid presets: the low end is aimed at the audience instead of the podium.<"
+        ">Brooklyn designs all its cabinets with the same phase response. That means you can combine them freely and the sound stays coherent, and a small setup sounds the same as a large one. The subs have built-in cardioid presets: the low end is aimed at the audience instead of the stage.<"
       ],
       [
         ">Wat ons in RCF overtuigt, is de goede lokalisatie van het geluid. Je ‘ziet’ de zangeres staan waar de vocalen vandaan lijken te komen. Software zoals FiRPHASE zorgt dat alle frequenties tegelijk aankomen. Bass Motion Control versterkt de laagweergave en beschermt de woofer zonder te vervormen. We sturen de set aan met via de RDTAP-smartphone-app geladen ‘ACE’-presets of met RDNet: daarmee zien en sturen we elke kast op afstand: niveau, EQ, temperatuur, limiters.<",
@@ -1970,7 +1978,7 @@
       ],
       [
         ">De KX 515-A is de kleine top uit dezelfde familie als de KXL 4-A. Bij grotere events zetten we hem in als frontfill voor de eerste meters, of als delay verderop in de zaal, ter ondersteuning van de KXL-toppen. Dezelfde klank in een compact formaat dat het geluid aanvult daar waar het nodig is.<",
-        ">The KX 515-A is the small top from the same family as the KXL 4-A. At larger events we use it as front fill for the first few metres, or as delay further into the room, supporting the KXL tops. The same sound, in a compact size that can play different roles to fill voids where required.<"
+        ">The KX 515-A is the small top from the same family as the KXL 4-A. At larger events we use it as front fill for the first few metres, or as delay further into the room, supporting the KXL tops. The same sound, in a compact size that can play different roles to fill gaps where needed.<"
       ],
       [
         ">Brooklyn Audio bouwt in eigen huis haar eigen speakerontwerpen, in Nederland. De Prospect-top is een 15-inch driewegkast met ingebouwde versterkers, die als losse fullrange-kast werkt of met elke Brooklyn-sub te combineren is. De X21 is de bijbehorende (beestachtige) sub met een 21-inch woofer.<",
@@ -2106,17 +2114,17 @@
       ],
       [
         ">Geluid bepaalt of gasten elkaar verstaan aan tafel en of de dansvloer volloopt. Wij werken met actieve speakers van twee merken die hun hele systeem zelf ontwerpen en bouwen: RCF uit Italië en Brooklyn Audio uit Nederland. Kasten, woofers, versterkers en DSP zijn daardoor op elkaar afgestemd, voor een helder en krachtig geluid dat ook na uren op volume betrouwbaar blijft. Dezelfde kasten die een cocktailavond voor honderd gasten verzorgen, dekken gekoppeld een dansvloer voor vijftienhonderd personen. We adviseren graag welke opstelling bij jouw ruimte past.<",
-        ">Sound decides whether guests can hear each other at the table and whether the dance floor fills up. We work with active speakers from two brands that design and build their entire systems themselves: RCF from Italy and Brooklyn Audio from the Netherlands. Cabinets, woofers, amplifiers and DSP are matched to each other, for clear, powerful sound that stays reliable even after hours at full volume. The same cabinets that handle a cocktail evening for a hundred guests can be linked to cover a dance floor for fifteen hundred. We're happy to advise on the setup that suits your space.<"
+        ">Sound decides whether guests can hear each other at the table and whether the dancefloor fills up. We work with active speakers from two brands that design and build their entire systems themselves: RCF from Italy and Brooklyn Audio from the Netherlands. Cabinets, woofers, amplifiers and DSP are matched to each other, for clear, powerful sound that stays reliable even after hours at full volume. The same cabinets that handle a cocktail evening for a hundred guests can be linked to cover a dancefloor for fifteen hundred. We're happy to advise on the setup that suits your space.<"
       ],
       [
         "name=\"description\" content=\"Geluid bepaalt of gasten elkaar verstaan aan tafel en of de dansvloer volloopt. Wij werken met actieve speakers van twee merken die hun hele systeem zelf o\"",
-        "name=\"description\" content=\"Sound decides whether guests can hear each other at the table and whether the dance floor fills up. We work with active speakers from two brands that\""
+        "name=\"description\" content=\"Sound decides whether guests can hear each other at the table and whether the dancefloor fills up. We work with active speakers from two brands that\""
       ]
     ],
     "atmospheric-lighting.html": [
       [
         ">We ontwerpen een lichtplan en sturen daarvoor een offerte. Deze is gebaseerd op ofwel een locatiebezoek of foto’s, het type event en het doel, de fysieke ruimte en het budget. Afhankelijk van de locatie en de gekozen materialen is mogelijk een trussconstructie onderdeel van het advies.<",
-        ">We propose a lighting plan that we quote. We base this plan on a pre-visit or pictures, the type of event, the physical space and the budget. Depending on the venue and the chosen equipment, a truss structure may be part of the proposal.<"
+        ">We put together a lighting plan with a quote, based on a site visit or photos, the type of event, the space and the budget. Depending on the venue and the chosen equipment, a truss structure may be part of the proposal.<"
       ],
       [
         ">Deze hazer creëert een egale, lichte nevel in de zaal die het zicht niet beperkt en lichteffecten veel meer impact geeft. Op waterbasis, dus het laat geen plakkerige olie achter op de vloer en meubels in de venue. Let op: een hazer triggert minder snel een brandalarm dan een rookmachine, maar check dit altijd bij de locatie<",
@@ -2124,11 +2132,11 @@
       ],
       [
         ">Ledspot met zeven lenzen die elk apart aan te sturen zijn, waardoor hij lijkt te bewegen en verlopen. Per zes stuks in een oplaadcase, met een gebruiksduur instelbaar van 5 tot 20 uur. Deze spot is met een bijpassend accessoire te transformeren tot glazen lichtzuil van een meter hoog<",
-        ">LED spot with seven lenses that can each be individually controlled, so it appears to move and fade. Six pieces are fitted in a charging case, run time adjustable from 5 to 20 hours. Each spot comes with a custom accessory that turns it into a one-metre-high glass light column<"
+        ">LED spot with seven lenses that can each be individually controlled, so it appears to move and fade. Six of them come in a charging case, run time adjustable from 5 to 20 hours. Each spot comes with a custom accessory that turns it into a one-metre-high glass light column<"
       ],
       [
         ">Accugevoede spot met 5 tot 20 uur werktijd. Drie instelbare breedtes tot volle wash waarmee je een ruimte inkleurt. Full-colour en diverse wittinten voor natuurlijke huidtint. Draadloos aangestuurd door een Wolfmix controller<",
-        ">Battery-powered spot with 5 to 20 hours of run time. Three adjustable beam widths up to a full wash that colours a room. Full-colour and various white tones for natural skin colors. Wirelessly controlled by a Wolfmix controller<"
+        ">Battery-powered spot with 5 to 20 hours of run time. Three adjustable beam widths up to a full wash that colours a room. Full-colour and various white tones for natural skin tones. Wirelessly controlled by a Wolfmix controller<"
       ],
       [
         ">Spots met volledige kleurmenging en focusbladen om randen te snijden, zoals je ze in theaters en musea ziet. Geschikt voor het uitlichten van producten, kunst of een spreker<",
@@ -2222,11 +2230,11 @@
       ],
       [
         ">Indien de opdrachtgever dit wenst programmeren we vooraf een show die past bij zijn of haar event. We bouwen scènes die passen bij het verloop van de avond: ingetogen bij de opening, voller als de dansvloer vol staat. De lichttafel staat bij de booth, zodat licht en muziek elkaar volgen. De aansturing is draadloos waar het kan, dus (vrijwel) geen kabelgoten door de zaal.<",
-        ">If desired by the client, we programme a show in advance that suits his or her event. We build scenes that follow the course of the night: restrained at the opening, fuller once the dancefloor fills up. The lighting desk sits by the booth, so light and music follow each other. We use wireless controls wherever possible, so you see no or limited cable ducts across the room.<"
+        ">If you like, we pre-programme a show to suit your event. We build scenes that follow the course of the night: restrained at the opening, fuller once the dancefloor fills up. The lighting desk sits by the booth, so light and music follow each other. We use wireless controls wherever possible, so there are few or no cables running across the room.<"
       ],
       [
         ">Een hybride moving head projecteert een beam, spot en wash in één. Als je de juiste kiest (niet eentje die alles nét niet kan) dan is het een Zwitsers zakmes: je haalt daarmee uit één apparaat wat anders drie fixtures vraagt, en met een beperkt aantal stuks maak je een show met veel gezichten. De lampen wisselen bovendien van rol gedurende een avond: rustig als wash in de warm-up, impactvol als beam op peak hour.<",
-        ">A hybrid moving head projects beam, spot and wash in one. When choosing the right device (not a jack of all trades that excels at nothing) this fixture can be like a Swiss army knife. You get from one fixture what would otherwise take three, and with a limited number you create a show with nearly limitless different styles and atmospheres. The fixtures also change role as a night progresses: calm as a wash during the warm-up, high-impact as a beam at peak hour.<"
+        ">A hybrid moving head projects beam, spot and wash in one. Choose the right one (not a jack of all trades that excels at nothing) and it works like a Swiss army knife. You get from one fixture what would otherwise take three, and with a limited number you create a show with nearly limitless different styles and atmospheres. The fixtures also change role as a night progresses: calm as a wash during the warm-up, high-impact as a beam at peak hour.<"
       ],
       [
         ">Lichte nevel maakt de bundels zichtbaar. Lichtzuilen en spiegelbollen geven diepte en een knipoog naar de disco. En de accuwashlights uit ons sfeerlicht aanbod kleuren de muren mee. Alles samen vormt één beeld dat met de avond meebeweegt.<",
@@ -2242,7 +2250,7 @@
       ],
       [
         "<title>Dansvloerlicht · HEAR</title>",
-        "<title>Dance floor lighting · HEAR</title>"
+        "<title>Dancefloor lighting · HEAR</title>"
       ],
       [
         ">Infinity iFX-640 met interne shutters<",
@@ -2278,21 +2286,25 @@
       ],
       [
         ">Op een dansvloer beweegt het licht mee met de avond: rustig en warm bij binnenkomst, uitbundig als de vloer vol staat. Daarvoor werken we met hybride moving heads, die beam, spot en wash in één combineren. Omdat elke lamp meerdere rollen kan spelen, maak je met een beperkt aantal stuks een show met veel variatie. Nevel, lichtzuilen en spiegelbollen maken het beeld compleet. We stemmen de show graag af op je event en je muziek.<",
-        ">On a dance floor, the light moves with the evening: calm and warm as guests arrive, exuberant once the floor fills up. We work with hybrid moving heads that combine beam, spot and wash in one. Because each fixture can play several roles, a limited number of them gives you a show with plenty of variety. Haze, light columns and mirror balls complete the picture. We're happy to tailor the show to your event and your music.<"
+        ">On a dancefloor, the light moves with the evening: calm and warm as guests arrive, exuberant once the floor fills up. We work with hybrid moving heads that combine beam, spot and wash in one. Because each fixture can play several roles, a limited number of them gives you a show with plenty of variety. Haze, light columns and mirror balls complete the picture. We're happy to tailor the show to your event and your music.<"
       ],
       [
         "name=\"description\" content=\"Op een dansvloer beweegt het licht mee met de avond: rustig en warm bij binnenkomst, uitbundig als de vloer vol staat. Daarvoor werken we met hybride movin\"",
-        "name=\"description\" content=\"On a dance floor, the light moves with the evening: calm and warm as guests arrive, exuberant once the floor fills up. We work with hybrid moving heads\""
+        "name=\"description\" content=\"On a dancefloor, the light moves with the evening: calm and warm as guests arrive, exuberant once the floor fills up. We work with hybrid moving heads\""
       ],
       [
         ">HYBRIDE MOVING HEADS<",
         ">HYBRID MOVING HEADS<"
+      ],
+      [
+        ">Dansvloerverlichting<",
+        ">Dancefloor lighting<"
       ]
     ],
     "vintage-lighting.html": [
       [
         ">Officieel heet dit effect een Astrodisco, maar in de volksmond noemde iedereen het een ufo. Alsof er een ronde schijf landt en dansers meeneemt naar een andere wereld. Who knows. Van het Italiaanse Clay Paky, veel te zien in Italiaanse clubs, maar ook in de oude legendarische Amsterdamse iT nachtclub<",
-        ">Officially this effect is called an Astrodisco, but everyone called it a UFO. As if a round disc lands and takes the dancers off to another world. Who knows. From the Italian Clay Paky, this effect was often seen in Italian clubs, but also in Amsterdam's renowned iT nightclub<"
+        ">Officially this effect is called an Astrodisco, but everyone called it a UFO. As if a round disc lands and takes the dancers off to another world. Who knows. Made by Italy's Clay Paky, this effect was a regular sight in Italian clubs, but also in Amsterdam's renowned iT nightclub<"
       ],
       [
         ">Sommige lichteffecten zijn nooit overtroffen, alleen vergeten. Wij halen de klassiekers uit de discotheken van de jaren negentig terug, reviseren ze en geven ze een moderne lichtbron. Zo wordt een &#x27;oh ja&#x27;-effect een &#x27;oh wow&#x27;-effect.<",
@@ -2304,7 +2316,7 @@
       ],
       [
         ">Scanners. Scanners werden uit de markt verdreven door moving heads die 360 graden om hun as draaien, maar ze zijn nog steeds erg effectief én snel. Met rijke, verzadigde kleuren uit een Philips-gasontladingslamp<",
-        ">Scanners. These items were pushed out of the market by moving heads that turn 360 degrees on their axis, but they are still very effective and fast. With rich, saturated colours from a Philips discharge lamp<"
+        ">Scanners. These were pushed off the market by moving heads that turn 360 degrees on their axis, but they are still very effective and fast. With rich, saturated colours from a Philips discharge lamp<"
       ],
       [
         "name=\"description\" content=\"Sommige lichteffecten zijn nooit overtroffen, alleen vergeten. Wij halen de klassiekers uit de discotheken van de jaren negentig terug, reviseren ze en gev\"",
@@ -2354,15 +2366,15 @@
       ],
       [
         ">Sommige locaties vinden het een uitdaging om te voldoen aan steeds groeiende eisen die bezoekers stellen aan geluid. De opkomst van high-end listening bars en clubs in Europese steden brengt de verwachtingen omhoog. Het geluid moet impactvol zijn, maar mag de oren niet schaden. Of het geluid wordt niet genoeg gevoeld of is te schel en vermoeiend, of er zijn dode zones waardoor het publiek steeds gaat lopen op zoek naar een goede plek.<",
-        ">Some venues are trying to meet the rising expectations that visitors have of sound. The rise of high-end listening bars and clubs in cities around Europe raises customer expectations. The sound needs to have impact, but must not harm the ears. Or the sound isn't felt enough, or it is shrill and tiring, or there are dead zones, so the audience keeps wandering in search of a good spot.<"
+        ">Venues are facing rising expectations of sound. The rise of high-end listening bars and clubs in cities around Europe raises customer expectations. The sound needs to have impact, but must not harm the ears. Or the sound lacks impact, or it is shrill and tiring, or there are dead zones, so the audience keeps wandering in search of a good spot.<"
       ],
       [
         ">Heb je een eventlocatie zonder eigen licht en geluid? Of heb je wel eigen geluid, maar klagen gasten over &#x27;vermoeiend geluid&#x27; of een gebrek aan impact? Wij kijken graag mee wat er mogelijk is om de gastbeleving te vergroten.<",
-        ">Do you run an event venue without owning lighting and sound? Or do you have your own soundsystem, but guests complain about &#x27;tiring sound&#x27; or a lack of impact? We are happy to look at what&#x27;s possible to improve customer experience.<"
+        ">Do you run an event venue without owning lighting and sound? Or do you have your own sound system, but guests complain about &#x27;tiring sound&#x27; or a lack of impact? We&#x27;re happy to look at how to improve the guest experience.<"
       ],
       [
         "name=\"description\" content=\"Heb je een eventlocatie zonder eigen licht en geluid? Of heb je wel eigen geluid, maar klagen gasten over &#x27;vermoeiend geluid&#x27; of een gebrek aan impact? Wij\"",
-        "name=\"description\" content=\"Do you run an event venue without owning lighting and sound? Or do you have your own soundsystem, but guests complain about 'tiring sound' or a lack of impact? We are happy to look at what's possible to improve customer experience.\""
+        "name=\"description\" content=\"Do you run an event venue without owning lighting and sound? Or do you have your own sound system, but guests complain about 'tiring sound' or a lack of impact? We're happy to look at how to improve the guest experience.\""
       ],
       [
         ">Met de eigenaar kijken we wat de locatie nodig heeft. Merkonafhankelijk, met de eigenschappen van de ruimte als vertrekpunt en een systeem dat medewerkers zelf kunnen bedienen als bedoeld eindpunt.<",
@@ -2452,7 +2464,7 @@
       ],
       [
         ">Als dj vertaal ik het concept naar een line-up en tijdschema. Daarvoor werk ik rechtstreeks met dj&#x27;s en artiesten en met enkele artiestenbureaus.<",
-        ">As a DJ I translate the concept to a fitting line-up and timetable. For this I work directly with DJs and artists and with a few artist agencies.<"
+        ">As a DJ, I translate the concept into a fitting line-up and timetable. For this I work directly with DJs and artists and with a few artist agencies.<"
       ],
       [
         ">Een saxofonist die meespeelt met de dj of een vocalist of percussionist. Live muziek bij een dj-set geeft een event iets dat mensen onthouden.<",
@@ -2460,11 +2472,11 @@
       ],
       [
         "name=\"description\" content=\"Als oprichter van HEAR en dj sinds 1993 help ik opdrachtgevers aan een avondvullend programma: met mijzelf achter de booth of artiesten uit mijn netwerk.\"",
-        "name=\"description\" content=\"As founder of HEAR and a DJ since 1993, I help clients to a full evening's programme: with me behind the booth or artists from my network.\""
+        "name=\"description\" content=\"As founder of HEAR and a DJ since 1993, I help clients put together a full evening's programme: with me behind the booth or artists from my network.\""
       ],
       [
         ">Als oprichter van HEAR en dj sinds 1993 help ik opdrachtgevers aan een avondvullend programma: met mijzelf achter de booth of artiesten uit mijn netwerk.<",
-        ">As founder of HEAR and a DJ since 1993, I help clients to a full evening's programme: with me behind the booth or artists from my network.<"
+        ">As founder of HEAR and a DJ since 1993, I help clients put together a full evening's programme: with me behind the booth or artists from my network.<"
       ],
       [
         ">Vertel wat je wensen zijn en ik doe een passend voorstel. Met één aanspreekpunt voor de muziek én de technische realisatie.<",
@@ -2640,7 +2652,7 @@
       ],
       [
         "\"HEAR komt voort uit corporate communicatie, wat staat voor het in dialoog staan met je omgeving en sensitief zijn voor wat er speelt. HEAR komt ook voort uit de dancescene, met de dansvloer als vrijplaats en veilige plek waar je mag zijn wie je bent. Die openheid zie je terug in kleine dingen:\"",
-        "\"HEAR grew out of corporate communication, which means being in dialogue with your surroundings and being sensitive to what is going on. HEAR also grew out of the dance scene, with the dance floor as a free and safe place where you can be who you are. You see that openness in small things:\""
+        "\"HEAR grew out of corporate communication, which means being in dialogue with your surroundings and being sensitive to what is going on. HEAR also grew out of the dance scene, with the dancefloor as a free and safe place where you can be who you are. You see that openness in small things:\""
       ],
       [
         ">Achter alles wat we doen zit een intentie. Dat is althans wel de bedoeling :-) Die bepaalt wat voor keuzes we maken, bijvoorbeeld in ons productassortiment of onze manier van samenwerken. Twee waarden en twee uitgangspunten bepalen die keuzes.<",
@@ -2840,11 +2852,11 @@
       ],
       [
         "content=\"Alle dj-sets op SoundCloud: soulful house, deephouse, afro, latin, disco en garage. Please enjoy!\"",
-        "content=\"All DJ sets on SoundCloud: soulful house, deep house, afro, latin, disco and garage. Please enjoy!\""
+        "content=\"All DJ sets on SoundCloud: soulful house, deep house, afro, latin, disco and garage. Enjoy!\""
       ],
       [
         ">Alle dj-sets op SoundCloud: soulful house, deephouse, afro, latin, disco en garage. Please enjoy!<",
-        ">All DJ sets on SoundCloud: soulful house, deep house, afro, latin, disco and garage. Please enjoy!<"
+        ">All DJ sets on SoundCloud: soulful house, deep house, afro, latin, disco and garage. Enjoy!<"
       ],
       [
         ">Livesets van vroeger, alleen met platen gedraaid.<",
@@ -2946,7 +2958,7 @@
       ],
       [
         ">Licht, geluid en sprekersversterking, inclusief transport, op- en afbouw, bediening en aanwezigheid ter plekke. De audiovisuele diensten ondersteunen de beleving.<",
-        ">Light, sound and speaker amplification, including transport, setup and teardown, operation and presence on site. The audiovisual services support the experience.<"
+        ">Light, sound and speech amplification, including transport, setup and teardown, operation and presence on site. The audiovisual services support the experience.<"
       ],
       [
         ">Uitbreidingen<",
@@ -2962,7 +2974,7 @@
       ],
       [
         ">Hoe complex het draaiboek is, hoeveel ruimtes er zijn en hoeveel technici er nodig zijn.<",
-        ">How complex the run sheet is, how many rooms there are and how many technicians are needed.<"
+        ">How complex the run of show is, how many rooms there are and how many technicians are needed.<"
       ],
       [
         ">Meer dan 20 procent<",
@@ -3010,7 +3022,7 @@
       ],
       [
         "</strong> per uur. Vertaalt het eventconcept naar een licht- en geluidsplan, plant de technici, maakt het draaiboek en is ter plekke het vaste aanspreekpunt.",
-        "</strong> per hour. Translates the event concept into a lighting and sound plan, schedules the technicians, writes the run sheet and is the fixed point of contact on site."
+        "</strong> per hour. Translates the event concept into a lighting and sound plan, schedules the technicians, writes the run of show and is the fixed point of contact on site."
       ],
       [
         "</strong> per uur<",
@@ -3022,7 +3034,7 @@
       ],
       [
         ">Communicatieadvies<",
-        ">Communication advice<"
+        ">Communications advice<"
       ],
       [
         ">AV-projectmanagement<",
@@ -3042,7 +3054,7 @@
       ],
       [
         ">Dj met (inter)nationale bekendheid<",
-        ">DJ with a (inter)national name<"
+        ">DJ with a national or international name<"
       ],
       [
         ">Saxofonist, vocalist of percussionist<",
@@ -3082,7 +3094,7 @@
       ],
       [
         ">Vraag een intakegesprek aan<",
-        ">Request an intake conversation<"
+        ">Request an intake call<"
       ],
       [
         ">Bekijk voorbeelden uit onze cases →<",
@@ -3430,15 +3442,15 @@
     "communicatieadvies.html": [
       [
         "<title>Communicatieadvies · HEAR</title>",
-        "<title>Communication advice · HEAR</title>"
+        "<title>Communications advice · HEAR</title>"
       ],
       [
         "Communicatieadvies rond je event: van boodschap tot aftermovie",
-        "Communication advice for your event: from message to aftermovie"
+        "Communications advice for your event: from message to aftermovie"
       ],
       [
         "Een event is ook communicatie. Wat wil je dat gasten na afloop onthouden, en hoe zorg je dat het programma dat ondersteunt? Maarten werkt al zo&#x27;n 25 jaar als corporate communicatiespecialist voor grote organisaties. Die ervaring zet hij in zodat techniek en boodschap elkaar versterken.",
-        "An event is also communication. What do you want guests to remember afterwards, and how do you make sure the programme supports that? Maarten has worked for some 25 years as a corporate communication specialist for large organisations. He uses that experience so that technology and message reinforce each other."
+        "An event is also communication. What do you want guests to remember afterwards, and how do you make sure the programme supports that? Maarten has worked for some 25 years as a corporate communications specialist for large organisations. He uses that experience so that technology and message reinforce each other."
       ],
       [
         "alt=\"Maarten Versteeg in een blauw colbert\"",
@@ -3454,11 +3466,11 @@
       ],
       [
         ">Meedenken over concept, boodschap en programma<",
-        ">Thinking along about concept, message and programme<"
+        ">Input on concept, message and programme<"
       ],
       [
         ">Wat is het doel van het event, en wat moet er blijven hangen? We denken mee over de opbouw van het programma, de volgorde van sprekers en de overgang van inhoud naar ontmoeting.<",
-        ">What is the goal of the event, and what should stick? We think along about the structure of the programme, the order of speakers and the transition from content to meeting.<"
+        ">What is the goal of the event, and what should stick? We help shape the structure of the programme, the order of speakers and the transition from content to networking.<"
       ],
       [
         ">MIDDELEN</h2>",
@@ -3478,7 +3490,7 @@
       ],
       [
         ">Communicatieadvies neem je af bij Maarten Versteeg communicatieadvies, los van de huur van licht en geluid via HEAR. Combineren kan en scheelt je tijd in de afstemming, want boodschap en techniek komen dan uit één hand. Het hoeft niet. Kies je voor beide, dan ontvang je twee aparte offertes.<",
-        ">You engage communication advice through Maarten Versteeg communicatieadvies, separately from hiring light and sound through HEAR. Combining is possible and saves you time on coordination, because message and technology then come from one hand. It is not required. If you choose both, you receive two separate quotes.<"
+        ">Communications advice is provided by Maarten Versteeg communicatieadvies, separately from hiring light and sound through HEAR. Combining is possible and saves you time on coordination, because message and technology then come from a single source. But it's not required. If you choose both, you receive two separate quotes.<"
       ],
       [
         ">Met wie we werken: eventmanagers →</a>",
@@ -3870,11 +3882,11 @@
       ],
       [
         ">Eén avond omgebouwd voor een pop-upevent, met beperkte soundcheck nodig.<",
-        ">Converted for a one-night pop-up event, with limited soundcheck needed.<"
+        ">Transformed for a one-night pop-up, with only a short soundcheck needed.<"
       ],
       [
         ">Een persoonlijk feest voor vrienden en relaties, met meerdere dj&#x27;s.<",
-        ">A private party for friends and relations, with several DJs.<"
+        ">A private party for friends and business contacts, with several DJs.<"
       ],
       [
         "data-dank=\"Dank je. Ik neem contact met je op, meestal dezelfde werkdag.\"",
@@ -4184,7 +4196,7 @@
       ],
       [
         ">Een collectie sneakers, kleding en accessoires op plateaus, en &#x27;s avonds een feest met de collectie boven de dansvloer.<",
-        ">A collection of sneakers, clothing and accessories on platforms, and in the evening a party with the collection above the dance floor.<"
+        ">A collection of sneakers, clothing and accessories on raised platforms, followed by an evening party with the collection projected above the dancefloor.<"
       ],
       [
         ">Zo wordt een productdemo, een etalage of een catwalk een moment dat past bij de rest van de campagne.<",
@@ -4622,7 +4634,7 @@
       ],
       [
         ">Eén avond omgebouwd voor een pop-upevent, met beperkte soundcheck nodig.<",
-        ">Converted for a one-night pop-up event, with limited soundcheck needed.<"
+        ">Transformed for a one-night pop-up, with only a short soundcheck needed.<"
       ],
       [
         "data-dank=\"Dank je. Ik neem contact met je op, meestal dezelfde werkdag.\"",
@@ -4666,7 +4678,7 @@
       ],
       [
         ">Systeemadvies voor een licht- en geluidsverhuurbedrijf.<",
-        ">Audiosystem consulting for a lighting and sound rental company.<"
+        ">Sound system advice for a light and sound rental company.<"
       ],
       [
         ">Licht, geluid en muziek, afgestemd op het type event<",
