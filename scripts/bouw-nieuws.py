@@ -129,7 +129,7 @@ for taal in ("nl", "en"):
             + taalknop(K, taal, nl_pad) + main + V + "</body></html>")
         print(f"ok {taal} nieuws/{b['slug']}.html")
     tegels = "".join(
-        f'<article class="case-tegel"><img src="/{e(b["beeld"])}" alt="{e(v(b, "beeld_alt", taal) or "")}" loading="lazy"{(" style=\"object-position:" + e(b["beeld_positie"]) + "\"") if b.get("beeld_positie") else ""}>'
+        f'<article class="case-tegel">{"<span class=\"nieuws-beeld\">" if b.get("label") else ""}<img src="/{e(b["beeld"])}" alt="{e(v(b, "beeld_alt", taal) or "")}" loading="lazy"{(" style=\"object-position:" + e(b["beeld_positie"]) + "\"") if b.get("beeld_positie") else ""}>{("<img class=\"werk-label\" src=\"/" + e(b["label"]) + "\" alt=\"\"></span>") if b.get("label") else ""}'
         f'<div class="case-tekst"><p class="labels">{rub(b, taal)}</p>'
         f'<h2><a class="tegel-link" href="{(b.get("pad_en") if taal == "en" else b.get("pad")) or (("/en" if b.get("standaard_en") else pre) + "/nieuws/" + b["slug"] + ".html")}"{' target="_blank" rel="noopener"' if str((b.get("pad_en") if taal == "en" else b.get("pad")) or "").startswith("http") else ""}>{e(v(b, "titel", taal))}</a></h2><p class="nieuws-datum-tegel"><time datetime="{b["datum"]}">{datum(b["datum"], taal)}</time></p><p>{e(v(b, "intro", taal))}</p><span class="pijl" aria-hidden="true">→</span></div></article>'
         for b in lijst)
@@ -152,7 +152,7 @@ for taal in ("nl", "en"):
         volgorde = gewoon[:2] + [b for b in lijst if b.get("op_home_derde")] + gewoon[2:]
         kaarten = "".join(
             f'<a class="werk-kaart" href="{(b.get("pad_en") if taal == "en" else b.get("pad")) or (("/en" if b.get("standaard_en") else pre) + "/nieuws/" + b["slug"] + ".html")}"{' target="_blank" rel="noopener"' if str((b.get("pad_en") if taal == "en" else b.get("pad")) or "").startswith("http") else ""}><span class="werk-beeld"><img src="{rel}{e(b["beeld"])}" alt="{e(v(b, "beeld_alt", taal) or "")}" loading="lazy"'
-            f'{(" style=\"object-position:" + e(b["beeld_positie"]) + "\"") if b.get("beeld_positie") else ""}><span class="bekijk-case">{T["lees"]}<i aria-hidden="true">→</i></span></span>'
+            f'{(" style=\"object-position:" + e(b["beeld_positie"]) + "\"") if b.get("beeld_positie") else ""}><span class="bekijk-case">{T["lees"]}<i aria-hidden="true">→</i></span>{("<img class=\"werk-label\" src=\"" + rel + e(b["label"]) + "\" alt=\"\">") if b.get("label") else ""}</span>'
             f'{("<span class=\"nieuws-home-rub\">" + rub(b, taal) + "</span>") if b.get("rubriek") else ""}<h3>{heel(e(v(b, "titel", taal)))}</h3><time datetime="{b["datum"]}">{datum(b["datum"], taal)}</time></a>'
             for b in volgorde)
         vorige, volgende = ("Previous posts", "Next posts") if taal == "en" else ("Vorige berichten", "Volgende berichten")
