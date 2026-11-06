@@ -165,7 +165,7 @@ P["merken-en-bureaus.html"] = dict(titel="Merken, winkels, creatieven en bureaus
    "De etalage of het in-store moment", "De catwalk", "Een fotogenieke plek of branded backdrop", "Een interviewhoek voor pers en content",
    "De omslag naar een feest, als de avond daarom vraagt"]),
   paar([("img/maarten-mixer.jpg", "Maarten Versteeg met een rotary mixer in een industriële ruimte", "50% 74%", "De sound van je merk", "Music for brands",
-         "Een merk heeft een eigen sound. Bij producten en collecties brengt Maarten een chique sound met wortels in deephouse: verfijnd genoeg voor een presentatie, met genoeg groove voor de avond erna. Afgestemd op de collectie of de campagne, als dj-set of als playlist per moment."),
+         "Een merk heeft een eigen sound. Bij producten en collecties brengt Maarten een chique sound met wortels in warme elektronische muziek: verfijnd genoeg voor een presentatie, met genoeg groove voor de avond erna. Afgestemd op de collectie of de campagne, als dj-set of als playlist per moment."),
         ("img/doelgroepen/winkel.jpg", "Eigenaresse van een kledingwinkel bij de toonbank, met kledingrekken op de achtergrond", "60% 40%", "Retail en conceptstores", "Music for retail",
          "Ook in de winkel hoort de muziek bij je merk. Bij een in-store event, een lancering of een koopzondag met een dj wordt je winkel voor een middag of avond een plek waar mensen voor komen, met licht en geluid die bij je collectie passen.")]),
   aanbod("Dit kunnen we je bieden", [
