@@ -199,7 +199,7 @@ P["bijzondere-eventlocaties.html"] = dict(titel="Eigenaren en exploitanten van e
         ["Wij vertalen de vraag van je klant naar een passende opzet in licht, geluid en muziek. In overleg met jou loopt het contact met de eindklant via jou of via ons, en we houden je steeds op de hoogte. Als je wilt, koppelen we daar een digitale planner aan."]),
   momenten("Je klanten", "De vragen die op je afkomen", ["Een seminar met sprekers en een presentatie", "Een modeshow of collectiepresentatie",
    "Een bedrijfsfeest met dj", "Een productlancering", "Een diner met muziek op de achtergrond", "Een clubnacht of pop-up", "Een bruiloft of privéfeest"],
-   sub="Je moet van alle markten thuis zijn. Maar sommige dingen kun je ook uitbesteden."),
+   sub="Je moet van alle markten thuis zijn. HEAR en ons netwerk kunnen die vragen voor je oppakken."),
   aanbod("Dit kunnen we je bieden bij events", [
    kaart("Per event", [("Een opzet per klantvraag", "Licht, geluid en muziek, afgestemd op het type event"),
      ("Contact met de eindklant", "Via jou of via ons, in overleg, met een digitale planner als je wilt"),
@@ -214,8 +214,7 @@ P["bijzondere-eventlocaties.html"] = dict(titel="Eigenaren en exploitanten van e
    ("Op de dag zelf", "Wij bouwen op en zijn het aanspreekpunt, voor jou en voor je klant."),
    ("Terugkijken", "Na het event kort evalueren, zodat het de volgende keer nog soepeler loopt.")]),
   '''<section class="lp-band lp-donker"><div class="lp-inst"><div><p class="lp-label">Vaste installatie</p><h2>Zelf doen waar het kan, expertise als het nodig is</h2>
-<div class="lp-tekst"><p>Veel locaties willen het grootste deel van hun events zelf kunnen draaien: een presentatie, een borrel, muziek bij een diner. Met een goede vaste installatie doe je zo'n 80 procent van je events zelf.</p>
-<p>Voor de rest huur je expertise in: extra geluid of licht, een technicus of een dj. Dat snappen we goed, en daar richten we de installatie ook op in.</p></div>'''
+<div class="lp-tekst"><p>Sommige dingen kun je zelf doen, bijvoorbeeld met een eigen PA of basislicht. Wij geven je onafhankelijk advies bij de aanschaf. En we zorgen dat we daarop kunnen aansluiten als er meer nodig is.</p></div>'''
   + lijst([("Merkonafhankelijk advies", "Met de eigenschappen van de ruimte als vertrekpunt"), ("Begeleiding bij aanschaf en installatie", "Ook bij de ingebruikname"),
            ("AV as a service", "Een vast bedrag per maand in plaats van een grote investering")])
   + '''<p class="lp-meer">Meer over <a href="aankoopadvies.html">aankoopadvies</a> <span aria-hidden="true">→</span></p></div>
