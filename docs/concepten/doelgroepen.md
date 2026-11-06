@@ -27,7 +27,7 @@ Die een merkactivatie, productlancering, collectiepresentatie, modeshow (EN: fas
 - Open: vijf voorbeelden is lang naast de andere tegels. Besloten: "modeshow" i.p.v. "catwalk".
 ## 4. Locaties — concept 1 (6 nov)
 **Eigenaren en exploitanten van eventlocaties**
-Die steeds een andere klant moeten servicen: vandaag een modeshow, morgen een seminar, overmorgen een dj.
+Die steeds een andere klant moeten servicen: vandaag een modeshow, morgen een seminar, overmorgen een bedrijfsfeest met dj.
 - Doelgroep: vooral de eigenaar/exploitant, niet de huurder van een lege ruimte (die zit bij 1 en 3).
 
 Materiaal voor de pagina (Maarten, 6 nov):
