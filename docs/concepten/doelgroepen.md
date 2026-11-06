@@ -20,5 +20,9 @@ Uitgewerkt:
 Die namens hun werkgever of opdrachtgever een netwerkdag, seminar of zakelijke borrel organiseren.
 - "Werkgever of opdrachtgever": dekt bedrijf, overheid én externe freelancers (vaak externen).
 - Open: jubileum noemen (case)? Grens met agencies (die ook voor een opdrachtgever werken) bewaken bij 3.
-## 3. Agencies — nog te doen
+## 3. Merken en bureaus — concept 1 (6 nov)
+**Merken, winkels, creatieven en bureaus**
+Die een merkactivatie, productlancering, collectiepresentatie, catwalk of in-store event organiseren.
+- "Merkactivatie" is bureautaal; modemerk en winkel herkennen zich in de vormen (catwalk, in-store event). Winkel is geen aparte doelgroep: zelfde behoefte, andere woorden.
+- Open: vijf voorbeelden is lang naast de andere tegels; "catwalk" of "modeshow".
 ## 4. Locaties — nog te doen
