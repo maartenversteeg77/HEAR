@@ -27,3 +27,5 @@ Aanbod in drie kaarten:
 - Licht: moving heads die je op veel manieren inzet (sierlijk in de opbouw van de avond, impactvol op het hoogtepunt) · sfeerlicht dat de ruimte vormgeeft · vintage clublicht (opgeknapte verlichting uit de clubs van de jaren 90, zoals Astrodisco en Golden Scan)
 - Line-up: een complete line-up (hele avond samenstellen of aanvullen) · live muzikanten bij een dj-set (percussie, saxofoon of vocals) · Speciale wensen?
 Geschrapt: "vol op de dansvloer, beheerst richting de buren" (niet waar te maken; cardioïde is vooral tegen bass-spill op podium en booth).
+
+Ons geluid, tweede alinea (v3): Daarom werken we met twee merken die hun hele systeem zelf ontwerpen en bouwen. Brooklyn Audio uit Nederland ontwerpt al zijn kasten met dezelfde fasekarakteristiek. Daardoor kun je ze in elke combinatie inzetten zonder dat het geluid uit elkaar valt, en klinkt een kleine opstelling hetzelfde als een grote. Van RCF uit Italië gebruiken we de KX-serie, de nieuwe topserie van het merk, met tops die de directheid van een point source combineren met de worp van een line source.
