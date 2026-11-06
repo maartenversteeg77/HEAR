@@ -84,7 +84,7 @@ def eerder(kop, links, quote=None):
     t = ""
     for l in links:
         c = CASES[l]; chip = TP[c["toepassing"][0]]["naam"]
-        t += (f'<a class="lp-case" href="{l}"><img src="{c["beeld"]}" alt="" loading="lazy"' + (f' style="object-position:{c["positie"]}"' if c.get("positie") else "")
+        t += (f'<a class="lp-case" href="{l}"><img src="{c.get("beeld_breed") or c["beeld"]}" alt="" loading="lazy"' + (f' style="object-position:{c["positie"]}"' if c.get("positie") and not c.get("beeld_breed") else "")
               + f'><div><span class="lp-chip">{chip}</span><h3>{e(c.get("tegel_titel") or c["titel"].replace(chr(10), " "))}</h3><p>{e(c.get("tegel_tekst") or c["tekst"])}</p></div></a>')
     if quote: t += f'<blockquote class="lp-quote"><p>“{quote}”</p><footer>De opdrachtgever</footer></blockquote>'
     kol = len(links) + (1 if quote else 0)
