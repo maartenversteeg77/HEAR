@@ -71,3 +71,10 @@ Telefoon of e-mail
 Waar gaat het over
 Verstuur
 Demo. Links en formulier werken hier niet; beelden zijn kandidaten.
+
+---
+# Versie 2 (6 nov), na feedback Maarten
+- Intro begint met "Wij vertalen de vraag van je klant…"; de wissewasje-zinnen zijn eruit (te kort, kwam lomp binnen).
+- "Eén aanspreekpunt" over de volle breedte: beeld links, tekst rechts.
+- Aanbod "Dit kunnen we je bieden bij events": kaarten Per event en Netwerk.
+- Zwart eindblok "Vaste installatie — Zelf doen waar het kan, expertise als het nodig is": Veel locaties willen het grootste deel van hun events zelf kunnen draaien: een presentatie, een borrel, muziek bij een diner. Met een goede vaste installatie doe je zo'n 80 procent van je events zelf. Voor de rest huur je expertise in: extra geluid of licht, een technicus of een dj. Dat snappen we goed, en daar richten we de installatie ook op in. Bullets: merkonafhankelijk advies · begeleiding bij aanschaf en installatie · AV as a service. Link: aankoopadvies.
