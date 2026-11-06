@@ -1141,18 +1141,6 @@
         "<dl class=\"structuur\" id=\"partners\" aria-label=\"Structure of HEAR\">"
       ],
       [
-        "<dt>Oprichter</dt><dd>Maarten Versteeg, dj en corporate communicatiespecialist<br>",
-        "<dt>Founder</dt><dd>Maarten Versteeg, DJ and corporate communications specialist<br>"
-      ],
-      [
-        "<dt>Techniek</dt><dd>Diverse freelance technici</dd>",
-        "<dt>Crew</dt><dd>Various freelance technicians</dd>"
-      ],
-      [
-        "<div><dt>Partners en leveranciers</dt><dd><a href=\"https://output.nl\" target=\"_blank\" rel=\"noopener\">Output Professional</a>, <a href=\"https://www.highlite.com\" target=\"_blank\" rel=\"noopener\">Highlite</a>, <a href=\"https://moonbears.eu\" target=\"_blank\" rel=\"noopener\">Moonbears</a>, <a href=\"https://chauvetprofessional.com\" target=\"_blank\" rel=\"noopener\">Chauvet Benelux</a>, <a href=\"https://www.rcf.it\" target=\"_blank\" rel=\"noopener\">RCF</a>, <a href=\"https://brooklyn-audio.com\" target=\"_blank\" rel=\"noopener\">Brooklyn Audio</a>, <a href=\"https://architectsinmusic.com\" target=\"_blank\" rel=\"noopener\">Architects in Music</a>, <a href=\"https://iammentertainment.com\" target=\"_blank\" rel=\"noopener\">AIMM Entertainment</a>, <a href=\"https://base-events.nl\" target=\"_blank\" rel=\"noopener\">Base Events</a>, <a href=\"https://www.biezema-geluidsverhuur.nl\" target=\"_blank\" rel=\"noopener\">Biezema AV</a>, <a href=\"https://luxonos.nl\" target=\"_blank\" rel=\"noopener\">Luxonos</a>, <a href=\"https://brandon-av.nl\" target=\"_blank\" rel=\"noopener\">Brandon AV</a>, <a href=\"https://deep.radio\" target=\"_blank\" rel=\"noopener\">Deep Radio</a>, <a href=\"https://ronaldpronk.com\" target=\"_blank\" rel=\"noopener\">Ronald Pronk Photography</a> en anderen</dd></div>",
-        "<div><dt>Partners and suppliers</dt><dd><a href=\"https://output.nl\" target=\"_blank\" rel=\"noopener\">Output Professional</a>, <a href=\"https://www.highlite.com\" target=\"_blank\" rel=\"noopener\">Highlite</a>, <a href=\"https://moonbears.eu\" target=\"_blank\" rel=\"noopener\">Moonbears</a>, <a href=\"https://chauvetprofessional.com\" target=\"_blank\" rel=\"noopener\">Chauvet Benelux</a>, <a href=\"https://www.rcf.it\" target=\"_blank\" rel=\"noopener\">RCF</a>, <a href=\"https://brooklyn-audio.com\" target=\"_blank\" rel=\"noopener\">Brooklyn Audio</a>, <a href=\"https://architectsinmusic.com\" target=\"_blank\" rel=\"noopener\">Architects in Music</a>, <a href=\"https://iammentertainment.com\" target=\"_blank\" rel=\"noopener\">AIMM Entertainment</a>, <a href=\"https://base-events.nl\" target=\"_blank\" rel=\"noopener\">Base Events</a>, <a href=\"https://www.biezema-geluidsverhuur.nl\" target=\"_blank\" rel=\"noopener\">Biezema AV</a>, <a href=\"https://luxonos.nl\" target=\"_blank\" rel=\"noopener\">Luxonos</a>, <a href=\"https://brandon-av.nl\" target=\"_blank\" rel=\"noopener\">Brandon AV</a>, <a href=\"https://deep.radio\" target=\"_blank\" rel=\"noopener\">Deep Radio</a>, <a href=\"https://ronaldpronk.com\" target=\"_blank\" rel=\"noopener\">Ronald Pronk Photography</a> and others</dd></div>"
-      ],
-      [
         "<span>Stuur me een appje</span>",
         "<span>Send me a message</span>"
       ],
@@ -1207,6 +1195,22 @@
       [
         ">Lees ook: <a href=\"principes.html\">Waarden en uitgangspunten →</a></p>",
         ">Read also: <a href=\"principes.html\">Values and principles →</a></p>"
+      ],
+      [
+        "<dt>Oprichter</dt><dd>Maarten Versteeg, <a href=\"https://www.maartenversteeg.nl\" target=\"_blank\" rel=\"noopener\">dj</a> en corporate communicatiespecialist<br>",
+        "<dt>Founder</dt><dd>Maarten Versteeg, <a href=\"https://www.maartenversteeg.nl\" target=\"_blank\" rel=\"noopener\">DJ</a> and corporate communications specialist<br>"
+      ],
+      [
+        "<dt>Leveranciers</dt>",
+        "<dt>Suppliers</dt>"
+      ],
+      [
+        "<dt>Muziek en media</dt>",
+        "<dt>Music and media</dt>"
+      ],
+      [
+        "<a href=\"https://base-events.nl\" target=\"_blank\" rel=\"noopener\">Base Events</a>, <a href=\"https://www.biezema-geluidsverhuur.nl\" target=\"_blank\" rel=\"noopener\">Biezema AV</a>, <a href=\"https://luxonos.nl\" target=\"_blank\" rel=\"noopener\">Luxonos</a>, <a href=\"https://brandon-av.nl\" target=\"_blank\" rel=\"noopener\">Brandon AV</a> en diverse freelancers</dd>",
+        "<a href=\"https://base-events.nl\" target=\"_blank\" rel=\"noopener\">Base Events</a>, <a href=\"https://www.biezema-geluidsverhuur.nl\" target=\"_blank\" rel=\"noopener\">Biezema AV</a>, <a href=\"https://luxonos.nl\" target=\"_blank\" rel=\"noopener\">Luxonos</a>, <a href=\"https://brandon-av.nl\" target=\"_blank\" rel=\"noopener\">Brandon AV</a> and various freelancers</dd>"
       ]
     ],
     "ade-dj.html": [
