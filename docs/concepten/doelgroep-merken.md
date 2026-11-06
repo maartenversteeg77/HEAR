@@ -61,3 +61,12 @@ Telefoon of e-mail
 Waar gaat het over
 Verstuur
 Demo. Links en formulier werken hier niet; beelden zijn kandidaten.
+
+---
+# Versie 2 (6 nov), na feedback Maarten (samenwerking met creatieven, minder uitleggerig)
+Lead: Je merk, je product of je catwalk is het vertrekpunt. Daaromheen bedenken we samen de hele beleving.
+We werken graag samen met de creatieven van het merk of het bureau. Jullie brengen het concept en de merkidentiteit, wij de vertaling naar licht, geluid en muziek.
+Zo wordt een productdemo, een etalage of een catwalk een moment dat past bij de rest van de campagne.
+Samen vormgeven — De momenten die het verschil maken: de reveal van een product of collectie · een demo-area waar het product centraal staat · de etalage of het in-store moment · de catwalk · een fotogenieke plek of branded backdrop · een interviewhoek voor pers en content · de omslag naar een feest, als de avond daarom vraagt
+Music for brands — De sound van je merk: Een merk heeft een eigen sound. Bij producten en collecties brengt Maarten een chique sound met wortels in deephouse: verfijnd genoeg voor een presentatie, met genoeg groove voor de avond erna. Afgestemd op de collectie of de campagne, als dj-set of als playlist per moment.
+Geschrapt: blok "Het product centraal, het merk overal" (invulling, uitleggerig) en de zin over jaren dj voor merken.
