@@ -495,3 +495,8 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Casetegels als poster (7 nov): label linksboven in het beeld, teaser met pijl onderin het beeld (geen "Bekijk de case" meer), feitenregel als donkere balk onderin het beeld met koraalkleurige stippen. ADE-label rechtsboven als tab. Homepage-carrousel en casesoverzicht; "eerder werk" op de doelgroeppagina's nog in de oude turquoise stijl.
 - Eventlocaties (7 nov): onder "De vragen die op je afkomen": "Je moet van alle markten thuis zijn. HEAR en ons netwerk kunnen die vragen voor je oppakken." Vaste installatie: geen 80/20-tekst meer, maar "Sommige dingen kun je zelf doen, bijvoorbeeld met een eigen PA of basislicht. Wij geven je onafhankelijk advies bij de aanschaf. En we zorgen dat we daarop kunnen aansluiten als er meer nodig is."
 - Headerbeeld (7 nov): carrousel van vijf beelden (dansvloer blauw, lezing, sneakers, skatehal, tuinfeest), wisselt elke 5 s, eindigt na één rondje weer op blauw en stopt. Witte bolletjes rechtsboven, altijd klikbaar. Geen automatische wissel bij "beperkte beweging". Reden: header voelde voor sommigen te veel dance event.
+
+## 7 nov 2026 — Hero-regel en kop merken
+- Hero-regel: "Transformeer een locatie in een dansvloer, een zakelijk event in een merkbelevenis, een dj-set in een muzikale reis." (EN: "a business event into a brand experience"). "Merkactivatie" afgevallen: een activatie is al een event, en het is jargon in plaats van beleving.
+- "Winkels" weg uit de doelgroepnaam: "Merken, creatieven en bureaus" (tegel, paginatitel, h1). De winkelier blijft bereikt via "in-store event" in de uitleg en het blok Music for retail.
+- Merkenbeeld vervangen door versie zonder Magnific-watermerk.

@@ -20,7 +20,7 @@ DOEL = [
       uitleg="Promotors, collectieven en wie een eigen feest met een dj of artiesten organiseert.",
       tegel_en="Dance event organisers", uitleg_en="Promoters, collectives and anyone throwing their own party with a DJ or artists.",
       beeld="img/doelgroepen/dance.jpg", pos="50% 45%", alt="Twee dj's overleggen achter de booth in rood licht"),
- dict(bestand="merken-en-bureaus.html", kort="Merken en bureaus", tegel="Merken, winkels, creatieven en bureaus",
+ dict(bestand="merken-en-bureaus.html", kort="Merken en bureaus", tegel="Merken, creatieven en bureaus",
       uitleg="Die een merkactivatie, productlancering, collectiepresentatie, modeshow of in-store event organiseren.",
       tegel_en="Brands, stores, creatives and agencies",
       uitleg_en="Who organise a brand activation, product launch, collection presentation, fashion show or in-store event.",
@@ -159,7 +159,7 @@ P["dance-events.html"] = dict(titel="Organisatoren van dance-events", h1="Organi
   contact("Organiseer je een clubnacht, pop&#8209;up of eigen feest?", "Landingspagina dance-events", "Bijvoorbeeld: pop-up voor 400 gasten in een loods, eind maart"),
   eerder("Deze organisatoren gingen je voor", ["ade-dj.html", "prive-event.html", "/en/nieuws/raw-drums-ade.html"])])
 
-P["merken-en-bureaus.html"] = dict(titel="Merken, winkels, creatieven en bureaus", h1="Merken, winkels,<br> creatieven en bureaus",
+P["merken-en-bureaus.html"] = dict(titel="Merken, creatieven en bureaus", h1="Merken, creatieven<br> en bureaus",
  beschrijving="Licht, geluid en muziek rond je merk, product of catwalk. Samen met de creatieven van het merk of het bureau. Music for brands en music for retail.",
  delen=[
   intro("Je merk, je product of je catwalk is het vertrekpunt. Daaromheen bedenken we samen de hele beleving.",

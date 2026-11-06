@@ -1,4 +1,4 @@
-# Concept landingspagina: merken, winkels, creatieven en bureaus (6 nov, v1, demo als privé-artifact)
+# Concept landingspagina: merken, creatieven en bureaus (6 nov, v1, demo als privé-artifact)
 Stappen: Briefing · Locatiebezoek of foto's en plattegrond · Voorstel · Afstemming met het bureau · Opbouw en programmering · Op de avond zelf
 Landingspagina merken en bureaus
 Cases
@@ -8,7 +8,7 @@ Over HEAR
 Nieuws
 Plan een gesprek
 Met wie we werken | Merken en bureaus
-## Merken, winkels, creatieven en bureaus
+## Merken, creatieven en bureaus
 Een campagne heeft al een beeldtaal, een kleur en vaak een muzikale richting. Op de avond zelf moet dat werken in een ruimte vol mensen.
 Een collectiepresentatie, een productlancering of een in-store event heeft momenten die moeten kloppen. Een reveal die blijft hangen. Een demo-area waar het product centraal staat. Een backdrop waar gasten zich laten fotograferen. En halverwege de avond wordt de presentatie vaak een feest, en de ruimte moet mee.
 Wij vertalen het merk naar licht en muziek, samen met het merk of het bureau. Als je wilt, denken we mee vanaf de conceptfase.
