@@ -71,7 +71,8 @@ def paar(kolommen, kop=None):
     return f'<section class="lp-band lp-donker">{kk}<div class="lp-paar">{k}</div></section>'
 def split(beeld, alt, pos, label, kop, tekst):
     return (f'<section class="lp-split"><img src="{beeld}" alt="{e(alt)}" loading="lazy" style="object-position:{pos}">'
-            f'<div><p class="lp-label">{label}</p><h2>{kop}</h2><p>{tekst}</p></div></section>')
+            f'<div><p class="lp-label">{label}</p><h2>{kop}</h2><p>{tekst}</p>'
+            f'<p class="lp-meer"><a href="over-hear.html#partners">Zie hier onze partners</a> <span aria-hidden="true">→</span></p></div></section>')
 def stappen(items):
     return (f'<section class="lp-band"><p class="lp-label">Werkwijze</p><h2>Zo werken we</h2>'
             f'<div class="lp-stappen" data-stappen=\'{e(json.dumps(items, ensure_ascii=False))}\'><h3>{items[0][0]}</h3><p>{items[0][1]}</p>'
@@ -108,6 +109,8 @@ P["zakelijke-events.html"] = dict(titel="Eventmanagers en communicatieprofession
   intro("Een netwerkdag, seminar of jubileum is het visitekaartje van je organisatie. En het moment waarop je je relaties fysiek ontmoet.",
         ["Als eventmanager zorg je dat het programma soepel loopt: het dagdeel met sprekers, de omslag naar de borrel en het informele deel daarna.",
          "Wij zorgen dat de audiovisuele ondersteuning het verhaal volgt. Sprekers zijn goed verstaanbaar, en de cocktail hour die erop volgt krijgt licht en muziek die bij het moment passen. Alles afgestemd op de ruimte, ook als dat een kale industriële hal is die we ombouwen tot eventlocatie."]),
+  split("img/maarten-adviseur.jpg", "Maarten Versteeg", "50% 25%", "Hoe we samenwerken", "Eén aanspreekpunt",
+        "We zijn je vaste aanspreekpunt voor licht, geluid en muziek. Waar nodig werken we met professionals uit ons netwerk, om op te schalen of om je in contact te brengen met wie je nodig hebt."),
   aanbod("Dit kunnen we je bieden", [
    kaart("Concept en branding", [("Meedenken over concept en sfeer", "Met 25 jaar ervaring in corporate communicatie"),
      ("Je huisstijl in licht", "Sfeerlicht in je huisstijlkleuren en je logo geprojecteerd op wand of vloer"),

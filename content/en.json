@@ -1137,8 +1137,8 @@
         "<p>HEAR also stands for choosing by ear. For an AV business a rider-friendly product range matters greatly, commercially speaking. You cannot rent out gear without demand in the market. However, taste also matters. So whatever goes into the HEAR flight case has to suit both. Products made with craftsmanship, respect for the culture and innovation.</p>"
       ],
       [
-        "<dl class=\"structuur\" aria-label=\"Structuur van HEAR\">",
-        "<dl class=\"structuur\" aria-label=\"Structure of HEAR\">"
+        "<dl class=\"structuur\" id=\"partners\" aria-label=\"Structuur van HEAR\">",
+        "<dl class=\"structuur\" id=\"partners\" aria-label=\"Structure of HEAR\">"
       ],
       [
         "<dt>Oprichter</dt><dd>Maarten Versteeg, dj en corporate communicatiespecialist<br>",

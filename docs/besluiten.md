@@ -482,3 +482,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Open (6 nov): licenties/toestemming beelden (iStock-montage eventmanagers, galerie, hal, winkel; Raw Drums-foto via Darnell en de twee dj's); Engelse versies van de vier pagina's.
 - Merkenpagina (6 nov): "wortels in deephouse" wordt "wortels in warme elektronische muziek", breder, zodat Maartens eigen genre niet leidend lijkt voor wat een merk nodig heeft.
 - Merkenpagina (6 nov): "Dit kunnen we je bieden" vóór Music for brands/retail; daarboven nu de kop "Daarnaast bieden we ook muzikale ondersteuning", zodat muziek deel van het aanbod is. "Dit merk ging je voor" wordt "Voorbeeldcase" (merk wordt niet genoemd).
+- Eén aanspreekpunt (6 nov): het blok "Hoe we samenwerken" staat nu ook op de eventmanagerspagina (na de intro), met op beide pagina's de link "Zie hier onze partners" naar over-hear.html#partners (anker op de structuurlijst).
