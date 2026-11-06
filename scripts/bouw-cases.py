@@ -28,8 +28,8 @@ def tegels(taal="nl"):
         doel = ' target="_blank" rel="noopener"' if ext else ""
         out += (f'<article class="case-tegel" data-t="{" ".join(t)}"><div class="case-beeld"><img src="{e(c["beeld"])}" alt="{e(c["alt"])}" loading="lazy"{pos}>{lbl(c)}<span class="bekijk-case">{bek} <i aria-hidden="true">{pl}</i></span></div>'
                 f'<div class="case-tekst"><p class="labels">{labels}</p>'
-                f'<h2><a class="tegel-link" href="{e(c["link"])}"{doel}>{e(v(c, "titel"))}{"<span class=\"vh\"> (" + ("opens in a new window" if en else "opent in een nieuw venster") + ")</span>" if ext else ""}</a></h2>'
-                f'<p>{e(v(c, "tekst"))}</p><span class="pijl" aria-hidden="true">{pl}</span></div></article>')
+                f'<h2><a class="tegel-link" href="{e(c["link"])}"{doel}>{e(v(c, "tegel_titel") if c.get("tegel_titel") else v(c, "titel"))}{"<span class=\"vh\"> (" + ("opens in a new window" if en else "opent in een nieuw venster") + ")</span>" if ext else ""}</a></h2>'
+                f'<p>{e(v(c, "tegel_tekst") if c.get("tegel_tekst") else v(c, "tekst"))}</p><span class="pijl" aria-hidden="true">{pl}</span></div></article>')
     js = ("<script>(function(){var b=document.querySelectorAll('.case-filter button'),t=document.querySelectorAll('.case-overzicht .case-tegel');"
           "function zet(f){b.forEach(function(x){x.classList.toggle('aan',x.dataset.f===f)});t.forEach(function(x){x.hidden=!!f&&(' '+x.dataset.t+' ').indexOf(' '+f+' ')<0});}"
           "b.forEach(function(x){x.addEventListener('click',function(){zet(x.dataset.f);history.replaceState(null,'',x.dataset.f?'#'+x.dataset.f:location.pathname)})});"
@@ -57,7 +57,7 @@ def werkrij(taal="nl"):
         lab = "".join(f'<span>{e(TP[k]["naam_en"] if en else TP[k]["naam"])}</span>' for k in c.get("toepassing", []))
         kaarten += (f'<a class="werk-kaart" href="{e(c["link"])}"><span class="werk-beeld"><img loading="lazy" src="{e(c["beeld"])}" alt="{e(c["alt"])}"{pos}>'
                     f'<span class="bekijk-case">{"View the case" if en else "Bekijk de case"} <i aria-hidden="true">→</i></span>{lbl(c)}</span>'
-                    f'<span class="label">{lab}</span><h3>{e(v(c, "titel").replace(chr(10), " "))}</h3><p>{e(v(c, "tekst"))}</p></a>')
+                    f'<span class="label">{lab}</span><h3>{e((v(c, "tegel_titel") if c.get("tegel_titel") else v(c, "titel")).replace(chr(10), " "))}</h3><p>{e(v(c, "tegel_tekst") if c.get("tegel_tekst") else v(c, "tekst"))}</p></a>')
     return filt, kaarten
 def plaats_werk(s, taal):
     filt, kaarten = werkrij(taal)

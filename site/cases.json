@@ -31,7 +31,11 @@
    "toepassing": [
     "dance"
    ],
-   "uitgelicht": true
+   "uitgelicht": true,
+   "tegel_titel": "Een skatehal, één nacht en nauwelijks soundcheck",
+   "tegel_titel_en": "A skate hall, one night and hardly any soundcheck",
+   "tegel_tekst": "Pop-up event | Frans dj-duo tijdens ADE | locatie ombouw",
+   "tegel_tekst_en": "Pop-up event | French DJ duo at ADE | venue transformation"
   },
   {
    "status": "af",
@@ -45,7 +49,11 @@
    "toepassing": [
     "brand"
    ],
-   "uitgelicht": true
+   "uitgelicht": true,
+   "tegel_titel": "Sneakers in de spotlight, daarna een feest",
+   "tegel_titel_en": "Sneakers in the spotlight, then a party",
+   "tegel_tekst": "Brand activation | modemerk | productlicht en lichtshow",
+   "tegel_tekst_en": "Brand activation | fashion brand | product lighting and light show"
   },
   {
    "status": "af",
@@ -59,7 +67,11 @@
    "toepassing": [
     "zakelijk"
    ],
-   "uitgelicht": true
+   "uitgelicht": true,
+   "tegel_titel": "Van lezingen naar cocktail hour",
+   "tegel_titel_en": "From lectures to cocktail hour",
+   "tegel_tekst": "Seminar en netwerkevent | 500 gasten | gemeente Den Haag",
+   "tegel_tekst_en": "Seminar and networking event | 500 guests | The Hague municipality"
   },
   {
    "status": "af",
@@ -73,7 +85,11 @@
    "toepassing": [
     "zakelijk"
    ],
-   "uitgelicht": true
+   "uitgelicht": true,
+   "tegel_titel": "Een tuinfeest midden in een woonwijk",
+   "tegel_titel_en": "A garden party in the middle of a residential area",
+   "tegel_tekst": "5 jaar CreativeGrounds | dj en saxofonist | geluid binnen de perken",
+   "tegel_tekst_en": "5 years of CreativeGrounds | DJ and saxophonist | sound kept in check"
   },
   {
    "status": "af",
@@ -88,7 +104,11 @@
    "toepassing": [
     "dj"
    ],
-   "uitgelicht": true
+   "uitgelicht": true,
+   "tegel_titel": "40 jaar elektronische muziek in één set",
+   "tegel_titel_en": "40 years of electronic music in one set",
+   "tegel_tekst": "Dj-sets | cocktailbars en corporate events | via Architects in Music",
+   "tegel_tekst_en": "DJ sets | cocktail bars and corporate events | via Architects in Music"
   },
   {
    "status": "af",
@@ -102,7 +122,11 @@
    "toepassing": [
     "dj"
    ],
-   "uitgelicht": true
+   "uitgelicht": true,
+   "tegel_titel": "Twee uur live op Deep Radio",
+   "tegel_titel_en": "Two hours live on Deep Radio",
+   "tegel_tekst": "Radiomixes | soulful en deep house | 2 uur per uitzending",
+   "tegel_tekst_en": "Radio mixes | soulful and deep house | 2 hours per show"
   },
   {
    "status": "af",
@@ -116,7 +140,11 @@
    "toepassing": [
     "advies"
    ],
-   "uitgelicht": true
+   "uitgelicht": true,
+   "tegel_titel": "Een geluidssysteem dat meegroeit",
+   "tegel_titel_en": "A sound system that grows with you",
+   "tegel_tekst": "Systeemadvies | verhuurbedrijf | inkoop tegen scherpe prijs",
+   "tegel_tekst_en": "System advice | rental company | purchase at a sharp price"
   },
   {
    "status": "af",
@@ -130,7 +158,11 @@
    "toepassing": [
     "dance"
    ],
-   "uitgelicht": true
+   "uitgelicht": true,
+   "tegel_titel": "Van gewone zaal naar kleurrijke dansvloer",
+   "tegel_titel_en": "From ordinary room to colourful dancefloor",
+   "tegel_tekst": "Privéfeest | 150 gasten | meerdere dj's",
+   "tegel_tekst_en": "Private party | 150 guests | several DJs"
   },
   {
    "status": "af",
@@ -147,7 +179,9 @@
     "dance"
    ],
    "label": "img/ade-label.png",
-   "datum": "2026-10"
+   "datum": "2026-10",
+   "tegel_tekst": "ADE | live percussie | rood licht",
+   "tegel_tekst_en": "ADE | live percussion | red light"
   }
  ],
  "toepassingen": {
@@ -172,5 +206,5 @@
    "naam_en": "Advice"
   }
  },
- "_uitleg_labels": "toepassing = soort werk (label op de tegel, filter op cases.html). uitgelicht = in de carrousel op de homepage. nieuws = tegel linkt naar een nieuwsbericht (geen eigen casepagina, niet in vorige/volgende). datum (JJJJ-MM) = volgorde in het overzicht, nieuwste eerst; cases zonder datum volgen in de volgorde van dit bestand. De carrousel volgt de volgorde van dit bestand. extern=true: tegel linkt naar een andere site, opent in een nieuw venster en toont ↗."
+ "_uitleg_labels": "toepassing = soort werk (label op de tegel, filter op cases.html). uitgelicht = in de carrousel op de homepage. nieuws = tegel linkt naar een nieuwsbericht (geen eigen casepagina, niet in vorige/volgende). datum (JJJJ-MM) = volgorde in het overzicht, nieuwste eerst; cases zonder datum volgen in de volgorde van dit bestand. De carrousel volgt de volgorde van dit bestand. extern=true: tegel linkt naar een andere site, opent in een nieuw venster en toont ↗. tegel_titel/tegel_tekst (+_en): titel (teaser) en feitenregel op de tegels; de casepagina zelf gebruikt titel/tekst."
 }

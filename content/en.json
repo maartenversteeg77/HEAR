@@ -3555,10 +3555,6 @@
         "placeholder=\"For example: a seminar for 120 guests in March, followed by drinks\""
       ],
       [
-        ">Een luxe tuinfeest midden in Oud-Zuid, zonder overlast voor de buurt.<",
-        ">A luxurious garden party in the middle of Oud-Zuid, without disturbing the neighbours.<"
-      ],
-      [
         ">We bekijken vooraf de ruimte: akoestiek, stroom en opbouwtijden.<",
         ">We check out the space beforehand: acoustics, power and load-in times.<"
       ],
@@ -3569,10 +3565,6 @@
       [
         ">Een opzet per programmaonderdeel, met een duidelijke prijs.<",
         ">A plan for each part of the programme, with a clear price.<"
-      ],
-      [
-        ">Van seminars en workshops naar een swingende cocktail hour.<",
-        ">From seminars and workshops to a swinging cocktail hour.<"
       ],
       [
         ">Geluid, sfeerlicht, microfoons en wat er verder nodig is<",
@@ -3647,10 +3639,6 @@
         ">Music that fits your brand<"
       ],
       [
-        ">Jubileum ondernemersnetwerk<",
-        ">Milestone celebration for a business network<"
-      ],
-      [
         "title=\"Merken en bureaus\"",
         "title=\"Brands and agencies\""
       ],
@@ -3661,10 +3649,6 @@
       [
         ">Organisatie en techniek<",
         ">Organisation and production<"
-      ],
-      [
-        ">Seminar en netwerkevent<",
-        ">Seminar and networking event<"
       ],
       [
         ">Zie hier onze partners<",
@@ -3809,6 +3793,22 @@
       [
         "Previous: Eventlocaties\"",
         "Previous: Event venues\""
+      ],
+      [
+        ">Van lezingen naar cocktail hour<",
+        ">From lectures to cocktail hour<"
+      ],
+      [
+        ">Seminar en netwerkevent | 500 gasten | gemeente Den Haag<",
+        ">Seminar and networking event | 500 guests | The Hague municipality<"
+      ],
+      [
+        ">Een tuinfeest midden in een woonwijk<",
+        ">A garden party in the middle of a residential area<"
+      ],
+      [
+        ">5 jaar CreativeGrounds | dj en saxofonist | geluid binnen de perken<",
+        ">5 years of CreativeGrounds | DJ and saxophonist | sound kept in check<"
       ]
     ],
     "dance-events.html": [
@@ -3845,10 +3845,6 @@
         ">The DJ moves into the crowd, with people dancing all around. The booth monitors double as a second PA.<"
       ],
       [
-        ">Tijdens ADE bracht Melandru UK garage/bass house met live percussie, in het rode licht van HEAR.<",
-        ">During ADE, Melandru brought UK garage/bass house with live percussion, in HEAR&#x27;s red light.<"
-      ],
-      [
         ">Ik reageer meestal dezelfde werkdag. We gebruiken je gegevens alleen om je te antwoorden. <",
         ">I usually reply the same working day. We only use your details to respond to you. <"
       ],
@@ -3875,14 +3871,6 @@
       [
         "placeholder=\"Bijvoorbeeld: pop-up voor 400 gasten in een loods, eind maart\"",
         "placeholder=\"For example: a pop-up for 400 guests in a warehouse, late March\""
-      ],
-      [
-        ">Eén avond omgebouwd voor een pop-upevent, met beperkte soundcheck nodig.<",
-        ">Transformed for a one-night pop-up, with only a short soundcheck needed.<"
-      ],
-      [
-        ">Een persoonlijk feest voor vrienden en relaties, met meerdere dj&#x27;s.<",
-        ">A private party for friends and business contacts, with several DJs.<"
       ],
       [
         "data-dank=\"Dank je. Ik neem contact met je op, meestal dezelfde werkdag.\"",
@@ -3943,14 +3931,6 @@
       [
         ">Moving heads die je op veel manieren inzet<",
         ">Versatile moving heads<"
-      ],
-      [
-        ">Transformatie: van skatehal tot dansvloer<",
-        ">Transformation: from skate hall to dancefloor<"
-      ],
-      [
-        ">Van industriële ruimte naar intieme sfeer<",
-        ">From industrial space to intimate atmosphere<"
       ],
       [
         "<span class=\"huidig\">Dance-events</span>",
@@ -4171,6 +4151,26 @@
       [
         "Next: Merken en bureaus\"",
         "Next: Brands and agencies\""
+      ],
+      [
+        ">Een skatehal, één nacht en nauwelijks soundcheck<",
+        ">A skate hall, one night and hardly any soundcheck<"
+      ],
+      [
+        ">Pop-up event | Frans dj-duo tijdens ADE | locatie ombouw<",
+        ">Pop-up event | French DJ duo at ADE | venue transformation<"
+      ],
+      [
+        ">Van gewone zaal naar kleurrijke dansvloer<",
+        ">From ordinary room to colourful dancefloor<"
+      ],
+      [
+        ">Privéfeest | 150 gasten | meerdere dj&#x27;s<",
+        ">Private party | 150 guests | several DJs<"
+      ],
+      [
+        ">ADE | live percussie | rood licht<",
+        ">ADE | live percussion | red light<"
       ]
     ],
     "merken-en-bureaus.html": [
@@ -4189,10 +4189,6 @@
       [
         ">We werken graag samen met de creatieven van het merk of het bureau. Jullie brengen het concept en de merkidentiteit, wij de vertaling naar licht, geluid en muziek.<",
         ">We love working with the creatives at the brand or agency. You bring the concept and brand identity; we translate them into light, sound and music.<"
-      ],
-      [
-        ">Een collectie sneakers, kleding en accessoires op plateaus, en &#x27;s avonds een feest met de collectie boven de dansvloer.<",
-        ">A collection of sneakers, clothing and accessories on raised platforms, followed by an evening party with the collection projected above the dancefloor.<"
       ],
       [
         ">Zo wordt een productdemo, een etalage of een catwalk een moment dat past bij de rest van de campagne.<",
@@ -4345,10 +4341,6 @@
       [
         ">Een dj-set of playlists per moment<",
         ">A DJ set or playlists per moment<"
-      ],
-      [
-        ">Brand activation voor een modemerk<",
-        ">Brand activation for a fashion brand<"
       ],
       [
         ">De etalage of het in-store moment<",
@@ -4577,6 +4569,14 @@
       [
         "Next: Eventlocaties\"",
         "Next: Event venues\""
+      ],
+      [
+        ">Sneakers in de spotlight, daarna een feest<",
+        ">Sneakers in the spotlight, then a party<"
+      ],
+      [
+        ">Brand activation | modemerk | productlicht en lichtshow<",
+        ">Brand activation | fashion brand | product lighting and light show<"
       ]
     ],
     "bijzondere-eventlocaties.html": [
@@ -4629,10 +4629,6 @@
         ">How we'll work together: per event, with standard setups or with an installation.<"
       ],
       [
-        ">Eén avond omgebouwd voor een pop-upevent, met beperkte soundcheck nodig.<",
-        ">Transformed for a one-night pop-up, with only a short soundcheck needed.<"
-      ],
-      [
         "data-dank=\"Dank je. Ik neem contact met je op, meestal dezelfde werkdag.\"",
         "data-dank=\"Thanks. I'll get back to you, usually the same working day.\""
       ],
@@ -4673,10 +4669,6 @@
         ">Leave your details and I'll get back to you.<"
       ],
       [
-        ">Systeemadvies voor een licht- en geluidsverhuurbedrijf.<",
-        ">Sound system advice for a light and sound rental company.<"
-      ],
-      [
         ">Licht, geluid en muziek, afgestemd op het type event<",
         ">Light, sound and music, matched to the type of event<"
       ],
@@ -4687,10 +4679,6 @@
       [
         ">Met de eigenschappen van de ruimte als vertrekpunt<",
         ">With the characteristics of the space as the starting point<"
-      ],
-      [
-        ">Advies over het beste soundsystem voor jouw ruimte<",
-        ">Advice on the right sound system for your space<"
       ],
       [
         ">Akoestiek, stroom, ophangpunten en opbouwtijden.<",
@@ -4707,10 +4695,6 @@
       [
         ">Een seminar met sprekers en een presentatie<",
         ">A seminar with speakers and a presentation<"
-      ],
-      [
-        ">Transformatie: van skatehal tot dansvloer<",
-        ">Transformation: from skate hall to dancefloor<"
       ],
       [
         ">Voor een feest of borrel op jouw locatie<",
@@ -4967,6 +4951,22 @@
       [
         "Previous: Merken en bureaus\"",
         "Previous: Brands and agencies\""
+      ],
+      [
+        ">Een skatehal, één nacht en nauwelijks soundcheck<",
+        ">A skate hall, one night and hardly any soundcheck<"
+      ],
+      [
+        ">Pop-up event | Frans dj-duo tijdens ADE | locatie ombouw<",
+        ">Pop-up event | French DJ duo at ADE | venue transformation<"
+      ],
+      [
+        ">Een geluidssysteem dat meegroeit<",
+        ">A sound system that grows with you<"
+      ],
+      [
+        ">Systeemadvies | verhuurbedrijf | inkoop tegen scherpe prijs<",
+        ">System advice | rental company | purchase at a sharp price<"
       ]
     ]
   },
