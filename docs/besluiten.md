@@ -500,3 +500,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Hero-regel: "Transformeer een locatie in een dansvloer, een zakelijk event in een merkbelevenis, een dj-set in een muzikale reis." (EN: "a business event into a brand experience"). "Merkactivatie" afgevallen: een activatie is al een event, en het is jargon in plaats van beleving.
 - "Winkels" weg uit de doelgroepnaam: "Merken, creatieven en bureaus" (tegel, paginatitel, h1). De winkelier blijft bereikt via "in-store event" in de uitleg en het blok Music for retail.
 - Merkenbeeld vervangen door versie zonder Magnific-watermerk.
+- Homepage: Nieuws boven Over HEAR, zodat Over HEAR direct voor de afsluiter (contact) staat.

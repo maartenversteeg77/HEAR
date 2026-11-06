@@ -144,7 +144,7 @@ for taal in ("nl", "en"):
     print(f"ok {taal} nieuws/index.html")
 
     heel = lambda t: re.sub(r'(\S*\w-\w\S*)', r'<span class="heel">\1</span>', t)  # modelnamen niet afbreken op het koppelteken
-    # homepage: twee laatste berichten tussen Over HEAR en de afsluiter (markers <!--nieuws-home-->)
+    # homepage: laatste berichten tussen Producten en Over HEAR (markers <!--nieuws-home-->)
     home = site / "en" / "index.html" if taal == "en" else site / "index.html"
     if home.exists() and "<!--nieuws-home-->" in home.read_text():
         rel = "/" if taal == "en" else ""
