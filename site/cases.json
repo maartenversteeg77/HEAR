@@ -15,16 +15,6 @@
    "naam": "Dance events",
    "link": "dance-events.html",
    "naam_en": "Dance events"
-  },
-  "brand": {
-   "naam": "Brand activation",
-   "link": "productpresentatie.html",
-   "naam_en": "Brand activation"
-  },
-  "dj": {
-   "naam": "Dj",
-   "link": "artiesten.html",
-   "naam_en": "DJ"
   }
  },
  "cases": [
@@ -35,12 +25,13 @@
    "beeld": "img/case-ade.jpg",
    "alt": "DJ-booth in een skatehal tijdens ADE",
    "link": "ade-dj.html",
-   "doelgroepen": [
-    "dance"
-   ],
    "titel_en": "Transformation: from skate hall to dancefloor",
    "tekst_en": "Converted for a one-night pop-up event, with limited soundcheck needed.",
-   "label": "img/ade-label.png"
+   "label": "img/ade-label.png",
+   "toepassing": [
+    "dance"
+   ],
+   "uitgelicht": true
   },
   {
    "status": "af",
@@ -49,11 +40,12 @@
    "beeld": "img/case-productpresentatie.jpg",
    "alt": "Sneakers op verlichte plateaus onder theaterspots, in een hal met blauw licht",
    "link": "productpresentatie.html",
-   "doelgroepen": [
+   "titel_en": "Brand activation\nfor a fashion brand",
+   "tekst_en": "A collection of sneakers, clothing and accessories on platforms, and in the evening a party with the collection above the dance floor.",
+   "toepassing": [
     "brand"
    ],
-   "titel_en": "Brand activation\nfor a fashion brand",
-   "tekst_en": "A collection of sneakers, clothing and accessories on platforms, and in the evening a party with the collection above the dance floor."
+   "uitgelicht": true
   },
   {
    "status": "af",
@@ -62,11 +54,12 @@
    "beeld": "img/case-gemeente.jpg",
    "alt": "Gesprek op een podium voor publiek",
    "link": "gemeentelijk-netwerkevent.html",
-   "doelgroepen": [
-    "corporate"
-   ],
    "titel_en": "Seminar and networking event",
-   "tekst_en": "From seminars and workshops to a swinging cocktail hour."
+   "tekst_en": "From seminars and workshops to a swinging cocktail hour.",
+   "toepassing": [
+    "zakelijk"
+   ],
+   "uitgelicht": true
   },
   {
    "status": "af",
@@ -75,11 +68,12 @@
    "beeld": "img/case-creativegrounds.jpg",
    "alt": "Gasten dansen met een glas wijn in de hand, een saxofonist speelt op de voorgrond",
    "link": "jubileum-ondernemersnetwerk.html",
-   "doelgroepen": [
-    "corporate"
-   ],
    "titel_en": "Anniversary of a business network",
-   "tekst_en": "A luxurious garden party in the middle of Oud-Zuid, without disturbing the neighbours."
+   "tekst_en": "A luxurious garden party in the middle of Oud-Zuid, without disturbing the neighbours.",
+   "toepassing": [
+    "zakelijk"
+   ],
+   "uitgelicht": true
   },
   {
    "status": "af",
@@ -89,11 +83,12 @@
    "alt": "Maarten Versteeg, zittend op een flightcase",
    "link": "dj-sets.html",
    "positie": "50% 0%",
-   "doelgroepen": [
+   "titel_en": "A journey through 40 years of electronic music",
+   "tekst_en": "DJ sets for corporate events, sky lounges and cocktail bars: from speakeasy to dancefloor.",
+   "toepassing": [
     "dj"
    ],
-   "titel_en": "A journey through 40 years of electronic music",
-   "tekst_en": "DJ sets for corporate events, sky lounges and cocktail bars: from speakeasy to dancefloor."
+   "uitgelicht": true
   },
   {
    "status": "af",
@@ -102,11 +97,12 @@
    "beeld": "assets/radio-deep-radio-green.png",
    "alt": "Deep Radio-mix van Maarten Versteeg",
    "link": "radio-mixes.html",
-   "doelgroepen": [
+   "titel_en": "Radio mixes for Deep Radio",
+   "tekst_en": "Two hours of soulful house, deep house, afro, latin, disco and house classics.",
+   "toepassing": [
     "dj"
    ],
-   "titel_en": "Radio mixes for Deep Radio",
-   "tekst_en": "Two hours of soulful house, deep house, afro, latin, disco and house classics."
+   "uitgelicht": true
   },
   {
    "status": "af",
@@ -115,11 +111,12 @@
    "beeld": "img/case-systeemadvies.jpg",
    "alt": "Luidsprekers op een stack",
    "link": "systeemadvies.html",
-   "doelgroepen": [
-    "dance"
-   ],
    "titel_en": "Advice on the right sound system for your space",
-   "tekst_en": "Audiosystem consulting for a lighting and sound rental company."
+   "tekst_en": "Audiosystem consulting for a lighting and sound rental company.",
+   "toepassing": [
+    "advies"
+   ],
+   "uitgelicht": true
   },
   {
    "status": "af",
@@ -128,11 +125,50 @@
    "beeld": "img/case-prive.jpg",
    "alt": "Gasten op een dansvloer onder kleurrijk licht",
    "link": "prive-event.html",
-   "doelgroepen": [
+   "titel_en": "From industrial space to intimate atmosphere",
+   "tekst_en": "A private party for friends and relations, with several DJs.",
+   "toepassing": [
     "dance"
    ],
-   "titel_en": "From industrial space to intimate atmosphere",
-   "tekst_en": "A private party for friends and relations, with several DJs."
+   "uitgelicht": true
+  },
+  {
+   "status": "af",
+   "nieuws": true,
+   "uitgelicht": false,
+   "titel": "Melandru speelt ‘Raw Drums’\nin dramatisch rood",
+   "titel_en": "Melandru playing ‘Raw Drums’\nin dramatic red",
+   "tekst": "Tijdens ADE bracht Melandru UK garage/bass house met live percussie, in het rode licht van HEAR.",
+   "tekst_en": "During ADE, Melandru brought UK garage/bass house with live percussion, in HEAR's red light.",
+   "beeld": "img/nieuws/raw-drums-ade-liggend.jpg",
+   "alt": "Percussionisten en dj's in rood licht tijdens Raw Drums op ADE",
+   "link": "/en/nieuws/raw-drums-ade.html",
+   "toepassing": [
+    "dance"
+   ]
   }
- ]
+ ],
+ "toepassingen": {
+  "brand": {
+   "naam": "Brand activation",
+   "naam_en": "Brand activation"
+  },
+  "zakelijk": {
+   "naam": "Zakelijk event",
+   "naam_en": "Corporate event"
+  },
+  "dance": {
+   "naam": "Dance event",
+   "naam_en": "Dance event"
+  },
+  "dj": {
+   "naam": "Dj",
+   "naam_en": "DJ"
+  },
+  "advies": {
+   "naam": "Advies",
+   "naam_en": "Advice"
+  }
+ },
+ "_uitleg_labels": "toepassing = soort werk (label op de tegel, filter op cases.html). uitgelicht = in de carrousel op de homepage. nieuws = tegel linkt naar een nieuwsbericht (geen eigen casepagina, niet in vorige/volgende)."
 }

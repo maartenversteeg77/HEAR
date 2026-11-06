@@ -687,3 +687,9 @@ button.knop:disabled{opacity:.6;cursor:wait}
 /* nieuws: fotocredit direct onder het beeld */
 .foto-credit{margin:10px 0 0;font:400 13px/1.4 var(--tekst);color:#6b6a66}
 .foto-credit a{color:inherit;text-underline-offset:3px}
+/* casesoverzicht: filter op soort werk */
+.case-filter{display:flex;flex-wrap:wrap;gap:8px;margin:clamp(28px,4vw,48px) 0 0}
+.case-filter button{padding:5px 12px;border:1px solid var(--turquoise);border-radius:999px;background:none;font:600 11px/1.4 var(--tekst);letter-spacing:.14em;text-transform:uppercase;color:var(--zwart);cursor:pointer}
+.case-filter button.aan,.case-filter button:hover{background:var(--turquoise)}
+.case-tekst .labels span{display:inline-block;padding:3px 9px;border:1px solid rgba(25,26,25,.45);border-radius:999px;font:600 10.5px/1.4 var(--tekst);letter-spacing:.14em;text-transform:uppercase}
+.case-overzicht .case-tegel[hidden]{display:none}

@@ -15,7 +15,7 @@ AAN = ' class="aan" aria-current="page"'
 fouten = []
 
 # --- vorige/volgende op casepagina's, uit cases.json (NL), radio-mixes achteraan ---
-keten = [c for c in cases["cases"] if c.get("status") == "af"]
+keten = [c for c in cases["cases"] if c.get("status") == "af" and not c.get("nieuws")]
 keten.append({"link": "radio-mixes.html", "titel": "Radio-mixes voor Deep Radio", "titel_en": "Radio mixes for Deep Radio"})
 def kort(c, taal):
     t = (c.get("titel_en") if taal == "en" else c["titel"]) or c["titel"]
@@ -78,17 +78,10 @@ for naam in en["vertaald"]:
     s = vertaal(s, en["globaal"], naam, verplicht=False)
     s = vertaal(s, en["paginas"].get(naam, []), naam)
     if naam == "cases.html":
-        # tegels opnieuw uit cases.json met EN-velden
-        dg = cases["doelgroepen"]
-        def tegel(c):
-            pos = f' style="object-position:{e(c["positie"])}"' if c.get("positie") else ""
-            labels = "".join(f'<a href="{e(dg[k]["link"])}">{e(dg[k].get("naam_en", dg[k]["naam"]))}</a>' for k in c["doelgroepen"])
-            return (f'<article class="case-tegel"><div class="case-beeld"><img src="{e(c["beeld"])}" alt="{e(c["alt"])}" loading="lazy"{pos}>{lbl(c)}<span class="bekijk-case">View the case <i aria-hidden="true">→</i></span></div>'
-                    f'<div class="case-tekst"><p class="labels">{labels}</p>'
-                    f'<h2><a class="tegel-link" href="{e(c["link"])}">{e(c.get("titel_en", c["titel"]))}</a></h2>'
-                    f'<p>{e(c.get("tekst_en", c["tekst"]))}</p><span class="pijl" aria-hidden="true">→</span></div></article>')
-        tegels = "".join(tegel(c) for c in cases["cases"] if c.get("status") == "af")
-        s = re.sub(r'<section class="case-overzicht">.*?</section>', lambda m: f'<section class="case-overzicht">{tegels}</section>', s, count=1, flags=re.S)
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("bouw_cases", root / "scripts" / "bouw-cases.py")
+        bc = importlib.util.module_from_spec(spec); spec.loader.exec_module(bc)
+        s, _ = bc.plaats(s, "en")
     # vorige/volgende in het Engels
     for i, c in enumerate(keten):
         if c["link"] == naam:
