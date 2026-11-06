@@ -25,4 +25,15 @@ Die namens hun werkgever of opdrachtgever een netwerkdag, seminar of zakelijke b
 Die een merkactivatie, productlancering, collectiepresentatie, modeshow (EN: fashion show) of in-store event organiseren.
 - "Merkactivatie" is bureautaal; modemerk en winkel herkennen zich in de vormen (modeshow, in-store event). Winkel is geen aparte doelgroep: zelfde behoefte, andere woorden.
 - Open: vijf voorbeelden is lang naast de andere tegels. Besloten: "modeshow" i.p.v. "catwalk".
-## 4. Locaties — nog te doen
+## 4. Locaties — concept 1 (6 nov)
+**Eigenaren en exploitanten van eventlocaties**
+Die steeds een andere klant moeten servicen: vandaag een modeshow, morgen een seminar, overmorgen een dj.
+- Doelgroep: vooral de eigenaar/exploitant, niet de huurder van een lege ruimte (die zit bij 1 en 3).
+
+Materiaal voor de pagina (Maarten, 6 nov):
+- Herkenning: elke klantvraag vraagt een andere opzet.
+- Erkenning (zijn woorden): "ik hoef niet alles zelf te kunnen, maar wil ook niet voor elk wissewasje een verhuurbedrijf inschakelen".
+- Oplossing: HEAR vertaalt verschillende klantvragen naar oplossingen; neemt desgewenst het contact met de eindklant over en houdt de venue owner continu in de loop.
+- Positie: geen one-stop-shop, wel single point of contact. Netwerk om op te schalen of uit te breiden; HEAR brengt in contact met andere professionals.
+- Vaste installatie: "waarmee je 80% van de zaken zelf kunt doen"; HEAR houdt de optie open voor de overige 20%.
+- Mogelijke extra dienst: planner/communicatietool op maat waarin alle afspraken worden vastgelegd (met Claude te bouwen).
