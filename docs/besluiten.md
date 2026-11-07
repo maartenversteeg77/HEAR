@@ -507,3 +507,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Hoofdmenu (balk en uitklapmenu, NL en EN): Nieuws vóór Over HEAR, zelfde volgorde als op de homepage. Site op 7 nov door Maarten "af" verklaard.
 - Jubileum/CreativeGrounds: volledige diptiek (sax + dansende gasten) in header-carrousel (slide 5), casepagina-header (desktop: beeld 70% links, citaat rechts op donker) en liggende tegel bij Eventmanagers. Staande tegels en artiesten-tegels houden het oude beeld.
 - Experiment (7 nov): hear.nl/v2.html, één scherm zonder scroll (header-carrousel, socials, menu als navigatie, CTA). Niet gelinkt, noindex. Social-links zijn nog placeholders: HEAR heeft nog geen eigen accounts.
+- Capaciteitsregel homepage: "Van intieme tot midsize events tot 1.500 personen" (EN "From intimate to mid-size events of up to 1,500 people"). Experiment v2 (één scherm): te veel weg, niet doorgezet.
