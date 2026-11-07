@@ -45,6 +45,8 @@ def deelbeeld(bron, doel):
     canvas.save(doel, quality=88)
 
 def head(titel, omschrijving, pad, beeld_abs=None, artikel=False, taal="nl", alt_pad=None):
+    schoon = lambda x: (x[:-len("index.html")] if x.endswith("/index.html") else x[:-5] if x.endswith(".html") else x) if x else x  # eindadres zonder .html (7 nov)
+    pad, alt_pad = schoon(pad), schoon(alt_pad)
     og = (f'<meta property="og:title" content="{e(titel)}"><meta property="og:description" content="{e(omschrijving)}">'
           f'<meta property="og:url" content="{BASIS}{pad}"><meta property="og:site_name" content="HEAR">'
           f'<meta property="og:type" content="{"article" if artikel else "website"}"><meta property="og:locale" content="{"en_GB" if taal == "en" else "nl_NL"}">')
@@ -54,7 +56,7 @@ def head(titel, omschrijving, pad, beeld_abs=None, artikel=False, taal="nl", alt
     alt = ""
     if alt_pad:
         nl, en_ = (pad, alt_pad) if taal == "nl" else (alt_pad, pad)
-        alt = f'<link rel="alternate" hreflang="nl" href="{nl}"><link rel="alternate" hreflang="en" href="{en_}">'
+        alt = f'<link rel="alternate" hreflang="nl" href="{BASIS}{nl}"><link rel="alternate" hreflang="en" href="{BASIS}{en_}">'
     return (f'<!doctype html><html lang="{taal}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
             f'<meta name="description" content="{e(omschrijving[:155])}"><title>{e(titel)} · HEAR</title>{og}{alt}'
             f'<link rel="canonical" href="{BASIS}{pad}">'

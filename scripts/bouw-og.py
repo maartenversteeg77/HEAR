@@ -46,6 +46,7 @@ for p in pagina_s:
     taal = "en" if p.parent.name == "en" else "nl"
     pad = ("/en/" if taal == "en" else "/") + p.name
     if p.name == "index.html": pad = pad[:-len("index.html")]
+    else: pad = pad[:-len(".html")]  # Cloudflare stuurt /x.html door naar /x; canonical moet naar het eindadres wijzen (7 nov)
     titel = html.unescape(re.search(r"<title>(.*?)</title>", s, re.S).group(1))
     m = re.search(r'<meta name="description" content="([^"]*)"', s)
     omschr = html.unescape(m.group(1)) if m else ""
@@ -63,8 +64,9 @@ for p in pagina_s:
             f'<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{beeld_abs}"><!--/og-->')
     alt_pad = pad.replace("/en/", "/", 1) if taal == "en" else "/en" + pad
     alt_bestaat = (site / "en" / p.name).exists() if taal == "nl" else True
-    tags += f'<link rel="canonical" href="{BASIS}{pad}">'
-    if alt_bestaat:
+    noindex = 'name="robots" content="noindex' in s
+    if not noindex: tags += f'<link rel="canonical" href="{BASIS}{pad}">'
+    if alt_bestaat and not noindex:
         nl_pad, en_pad = (pad, alt_pad) if taal == "nl" else (alt_pad, pad)
         tags += f'<link rel="alternate" hreflang="nl" href="{BASIS}{nl_pad}"><link rel="alternate" hreflang="en" href="{BASIS}{en_pad}"><link rel="alternate" hreflang="x-default" href="{BASIS}{nl_pad}">'
     tags = tags.replace("<!--/og-->", "") + "<!--/og-->"
@@ -94,7 +96,7 @@ def coffeecuts():
     tekst_en = blok.get("deel_omschrijving_en") or tekst_en
     for taal, map_, tekst, verder, loc in (("nl", site, tekst_nl, "Door naar Coffee cuts", "nl_NL"), ("en", site / "en", html.unescape(tekst_en), "Continue to Coffee cuts", "en_GB")):
         pre = "/en" if taal == "en" else ""
-        doel = f"{pre}/custom-dj-mix.html"
+        doel = f"{pre}/custom-dj-mix"
         d = e(tekst)
         s = (f'<!doctype html><html lang="{taal}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
              f'<title>Coffee cuts · HEAR</title><meta name="description" content="{d}">'

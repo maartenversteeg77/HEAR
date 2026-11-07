@@ -530,3 +530,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - ADE-case tegel: "Franse DJ Rivo & friends" (meestal met z'n tweeën, Rivo is de bekende).
 - Cases-kop "Wat we voor hen doen" definitief; productblok akkoord. Beeldlicenties door Maarten opgeslagen.
 - Mobiele tegel Communicatieadvies: nieuwe foto (roze shirt, hand aan kin), uitsnede op gezicht.
+- Canonical, hreflang en og:url wijzen naar het eindadres zonder .html (Cloudflare stuurt /x.html door naar /x); noindex-pagina's zonder canonical. Melding Briljant (64 pagina's).
