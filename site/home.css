@@ -481,3 +481,8 @@ a.mail-ook,.quick.quick-breed p .mail-ook,.cta-brug .mail-ook{font:300 14px/1.3 
 /* Koppen als doorlopend verhaal (7 nov): productkop even groot als de andere koppen */
 .home #producten-kop{font:300 clamp(30px,3vw,44px)/1.1 var(--kop);letter-spacing:0;text-transform:none;color:var(--wit,#F6F5F1);text-wrap:balance}
 .werk-kop h2{text-wrap:balance}
+/* Mobiel: 'Bekijk …' direct onder het keuzekader (7 nov) */
+@media (max-width:900px){
+  .pl-kiezer .pl-verder{position:static!important;display:inline-flex;align-items:center;gap:8px;margin:10px 0 0!important}
+  .pl-kiezer:has(.pl-knop[aria-expanded="true"]) .pl-verder{display:none}
+}

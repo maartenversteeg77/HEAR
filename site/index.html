@@ -124,6 +124,10 @@ if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){t=setInterval
       menu.querySelectorAll('button').forEach(function(k){k.addEventListener('click',function(){zet(+k.dataset.i);open(false)})});
       document.addEventListener('click',function(ev){if(!menu.hidden&&!menu.contains(ev.target))open(false)});
       document.addEventListener('keydown',function(ev){if(ev.key==='Escape')open(false)});
+      /* mobiel: knop direct onder de keuze, zodat het oog niet hoeft te zoeken (7 nov) */
+      var mq=matchMedia('(max-width:900px)'),kz=document.querySelector('.pl-kiezer'),thuis=verder.parentNode,na=verder.nextSibling;
+      function plaats(){if(mq.matches){kz.appendChild(verder)}else if(verder.parentNode!==thuis){thuis.insertBefore(verder,na)}}
+      plaats();if(mq.addEventListener)mq.addEventListener('change',plaats);
     })();
     </script>
   <script>(function(){var sec=document.querySelector('.productlijst'),tabs=sec.querySelectorAll('.pl-tab');
