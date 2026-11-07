@@ -466,3 +466,15 @@ a.mail-ook,.quick.quick-breed p .mail-ook,.cta-brug .mail-ook{font:300 14px/1.3 
 .hero-bollen button:focus-visible{outline:2px solid var(--koraal);outline-offset:3px}
 @media (max-width:900px){.hero-bollen{top:18px}}
 @media (prefers-reduced-motion:reduce){.hero .hero-bg{transition:none}}
+/* Over HEAR als strook: beeld | tekst | CTA (7 nov) */
+.over-cta{align-self:center}
+@media (min-width:901px){
+  .over{grid-template-columns:minmax(0,4fr) minmax(0,5fr) minmax(0,3fr);align-items:center}
+  .over-beeld{height:auto}
+  .over img{height:auto;min-height:0;aspect-ratio:1/1;object-position:50% 40%}
+  .over>div.over-cta{padding:0 var(--rand) 0 0;justify-self:end}
+  .over-cta .wa-plus{display:flex;flex-direction:column;align-items:flex-start;gap:16px}
+}
+@media (max-width:900px){
+  .over>div.over-cta{padding:0 var(--rand) clamp(50px,8vw,80px)}
+}

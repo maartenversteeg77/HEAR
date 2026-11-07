@@ -503,3 +503,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Homepage: Nieuws boven Over HEAR, zodat Over HEAR direct voor de afsluiter (contact) staat.
 - Knop op de doelgroeptegels: "Wat we voor je doen" (EN "What we do for you") in plaats van "Dit ben ik". Reden: "ik" botst met de ik-vorm van Maarten elders op de site, en de knop moet ook los van kop en tegel te begrijpen zijn (toegankelijkheid, dyslexie).
 - Nieuwstegel Melandru krijgt het ADE-label, net als de casetegel.
+- Homepage: Over HEAR is een strook van drie delen op desktop (beeld | tekst | CTA); het losse afsluitblok eronder is opgegaan in die strook. Mobiel: beeld, tekst, CTA onder elkaar.
