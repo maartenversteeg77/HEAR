@@ -509,3 +509,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Experiment (7 nov): hear.nl/v2.html, één scherm zonder scroll (header-carrousel, socials, menu als navigatie, CTA). Niet gelinkt, noindex. Social-links zijn nog placeholders: HEAR heeft nog geen eigen accounts.
 - Capaciteitsregel homepage: "Van intieme tot midsize events tot 1.500 personen" (EN "From intimate to mid-size events of up to 1,500 people"). Experiment v2 (één scherm): te veel weg, niet doorgezet.
 - Header-carrousel: tuinfeest-beeld eruit (vier beelden). Alleen de dansers als header gaat niet: die helft is 768 px breed, te zacht op volle breedte; een gesplitst beeld in de header is niet mooi.
+- Homepage-volgorde: header → Wij werken graag samen met… → Wat doen we dan voor hen? (cases, voorheen "Uitgelicht werk") → producten → nieuws → over HEAR. Koppen vormen samen een doorlopend verhaal (voorstel Maarten); overige koppen nog in bespreking.
