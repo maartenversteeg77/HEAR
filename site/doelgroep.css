@@ -100,8 +100,9 @@
 .samen-uitleg{font-size:15px;line-height:1.5;color:#4A4A48}
 .samen-knop{margin-top:auto;align-self:flex-start;font:500 12px/1 var(--tekst);letter-spacing:.14em;text-transform:uppercase;background:var(--zwart);color:var(--wit,#F6F5F1);border-radius:999px;padding:12px 18px;transition:background .25s}
 .samen-knop i{font-style:normal;margin-left:6px}
-.samen-tegel:hover .samen-knop,.samen-tegel:focus-visible .samen-knop{background:var(--koraal)}
-.samen-tegel:hover img{transform:scale(1.03)}
+.samen-tegel:focus-visible .samen-knop{background:var(--koraal)}
+/* hover alleen op apparaten met een muis: op een telefoon bleef de laatst aangetikte knop koraal (7 nov) */
+@media (hover:hover){.samen-tegel:hover .samen-knop{background:var(--koraal)}.samen-tegel:hover img{transform:scale(1.03)}}
 .samen-tegel:focus-visible{outline:2px solid var(--koraal);outline-offset:3px}
 @media(max-width:900px){.samen-raster{grid-template-columns:1fr}}
 @media(max-width:560px){.samen-tegel{grid-template-columns:1fr}.samen-beeld{aspect-ratio:3/2;max-width:100%}}
