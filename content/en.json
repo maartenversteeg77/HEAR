@@ -1119,6 +1119,10 @@
       [
         "aria-label=\"Beeld 4\"",
         "aria-label=\"Image 4\""
+      ],
+      [
+        "<span class=\"pl-k-label\">Kies een categorie</span>",
+        "<span class=\"pl-k-label\">Choose a category</span>"
       ]
     ],
     "cases.html": [

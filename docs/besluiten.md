@@ -513,3 +513,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Koppen homepage: "Daarbij leveren we deze producten en diensten" (productkop nu even groot als de andere koppen) en "Ondertussen bij ons en ons netwerk" (nieuws). EN: "For that, we supply these products and services" / "Meanwhile, at HEAR and across our network". Over HEAR blijft ongemoeid.
 - Productkop gewijzigd in "Met hoogwaardige producten en diverse diensten" (EN "With high-end products and a range of services").
 - Productblok mobiel (lichte optie): "Bekijk …" staat direct onder het keuzekader in plaats van rechtsonder in het beeld; verdwijnt zolang het menu open is. Desktop ongewijzigd. Zwaardere optie (tegels per product, toggle Producten/Diensten + "switch naar diensten" onderaan) staat klaar als dit niet genoeg is.
+- Mobiel keuzekader: klein label "Kies een categorie" boven de huidige keuze (groot); subregel met merken weg op mobiel. EN "Choose a category".
