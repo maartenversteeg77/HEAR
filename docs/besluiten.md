@@ -516,3 +516,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Mobiel keuzekader: klein label "Kies een categorie" boven de huidige keuze (groot); subregel met merken weg op mobiel. EN "Choose a category".
 - Desktop productlijst: zelfde label "Kies een categorie" boven de lijst.
 - Voorbeeld (7 nov): hear.nl/voorbeeld-producten.html — productblok als tegels met vijf tabs (Geluid incl. dj-gear, Licht, Muziek, Diensten, Alles), "Kies een categorie" erboven, onderaan "Verder naar …". Niet gelinkt, noindex.
+- Homepage mobiel: productblok is nu "Kies een categorie" + vijf tabs (Geluid, Licht, Muziek, Diensten, Alles) + tegels, met "Verder naar …" onderaan (zoals voorbeeld-producten). Desktop: lijst + beeld ongewijzigd. Zonder JS: alle tegels zichtbaar, tabs verborgen.

@@ -1127,6 +1127,82 @@
       [
         "<span class=\"pl-k-label pl-lijst-label\">Kies een categorie</span>",
         "<span class=\"pl-k-label pl-lijst-label\">Choose a category</span>"
+      ],
+      [
+        "<div class=\"pm-tabs\" role=\"tablist\" aria-labelledby=\"pm-kies\" hidden><button type=\"button\" class=\"pm-tab\" role=\"tab\" aria-selected=\"true\" data-c=\"geluid\">Geluid</button><button type=\"button\" class=\"pm-tab\" role=\"tab\" aria-selected=\"false\" data-c=\"licht\">Licht</button><button type=\"button\" class=\"pm-tab\" role=\"tab\" aria-selected=\"false\" data-c=\"muziek\">Muziek</button><button type=\"button\" class=\"pm-tab\" role=\"tab\" aria-selected=\"false\" data-c=\"diensten\">Diensten</button><button type=\"button\" class=\"pm-tab\" role=\"tab\" aria-selected=\"false\" data-c=\"alles\">Alles</button></div>",
+        "<div class=\"pm-tabs\" role=\"tablist\" aria-labelledby=\"pm-kies\" hidden><button type=\"button\" class=\"pm-tab\" role=\"tab\" aria-selected=\"true\" data-c=\"geluid\">Sound</button><button type=\"button\" class=\"pm-tab\" role=\"tab\" aria-selected=\"false\" data-c=\"licht\">Light</button><button type=\"button\" class=\"pm-tab\" role=\"tab\" aria-selected=\"false\" data-c=\"muziek\">Music</button><button type=\"button\" class=\"pm-tab\" role=\"tab\" aria-selected=\"false\" data-c=\"diensten\">Services</button><button type=\"button\" class=\"pm-tab\" role=\"tab\" aria-selected=\"false\" data-c=\"alles\">All</button></div>"
+      ],
+      [
+        "<span class=\"pm-label\" id=\"pm-kies\">Kies een categorie</span>",
+        "<span class=\"pm-label\" id=\"pm-kies\">Choose a category</span>"
+      ],
+      [
+        "<span class=\"pm-titel\">Geluid</span>",
+        "<span class=\"pm-titel\">Sound</span>"
+      ],
+      [
+        "<span class=\"pm-sub\">RCF KX en Brooklyn Audio</span>",
+        "<span class=\"pm-sub\">RCF KX and Brooklyn Audio</span>"
+      ],
+      [
+        "<span class=\"pm-titel\">Dj-gear</span>",
+        "<span class=\"pm-titel\">DJ gear</span>"
+      ],
+      [
+        "<span class=\"pm-sub\">CDJ-3000X, V10, Euphonia, WARM2 en booth</span>",
+        "<span class=\"pm-sub\">CDJ-3000X, V10, Euphonia, WARM2 and booth</span>"
+      ],
+      [
+        "<span class=\"pm-titel\">Sfeerlicht</span>",
+        "<span class=\"pm-titel\">Ambient lighting</span>"
+      ],
+      [
+        "<span class=\"pm-sub\">accu-washlights, theaterspots, hazer</span>",
+        "<span class=\"pm-sub\">battery washlights, theatre spots, hazer</span>"
+      ],
+      [
+        "<span class=\"pm-titel\">Dansvloerlicht</span>",
+        "<span class=\"pm-titel\">Dancefloor lighting</span>"
+      ],
+      [
+        "<span class=\"pm-sub\">hybride moving heads en lichtshows</span>",
+        "<span class=\"pm-sub\">hybrid moving heads and light shows</span>"
+      ],
+      [
+        "<span class=\"pm-titel\">90&#x27;s vintage licht</span>",
+        "<span class=\"pm-titel\">90s vintage lighting</span>"
+      ],
+      [
+        "<span class=\"pm-sub\">Astrodisco en Golden Scan</span>",
+        "<span class=\"pm-sub\">Astrodisco and Golden Scan</span>"
+      ],
+      [
+        "<span class=\"pm-titel\">Dj&#x27;s en artiesten</span>",
+        "<span class=\"pm-titel\">DJs and artists</span>"
+      ],
+      [
+        "<span class=\"pm-sub\">vocalist, saxofonist, percussionist</span>",
+        "<span class=\"pm-sub\">vocalist, saxophonist, percussionist</span>"
+      ],
+      [
+        "<span class=\"pm-sub\">playlists of een live dj voor je koffiebar of bar</span>",
+        "<span class=\"pm-sub\">playlists or a live DJ for your coffee bar or bar</span>"
+      ],
+      [
+        "<span class=\"pm-titel\">Communicatieadvies</span>",
+        "<span class=\"pm-titel\">Communications advice</span>"
+      ],
+      [
+        "<span class=\"pm-sub\">boodschap, speeches, uitnodigingen, video</span>",
+        "<span class=\"pm-sub\">message, speeches, invitations, video</span>"
+      ],
+      [
+        "<span class=\"pm-titel\">Aankoopadvies licht en geluid</span>",
+        "<span class=\"pm-titel\">Purchase advice for light and sound</span>"
+      ],
+      [
+        "<span class=\"pm-sub\">merkonafhankelijk, voor venues</span>",
+        "<span class=\"pm-sub\">brand-independent, for venues</span>"
       ]
     ],
     "cases.html": [
