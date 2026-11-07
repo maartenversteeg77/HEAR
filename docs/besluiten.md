@@ -505,3 +505,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Nieuwstegel Melandru krijgt het ADE-label, net als de casetegel.
 - Homepage: Over HEAR is een strook van drie delen op desktop (beeld | tekst | CTA); het losse afsluitblok eronder is opgegaan in die strook. Mobiel: beeld, tekst, CTA onder elkaar.
 - Hoofdmenu (balk en uitklapmenu, NL en EN): Nieuws vóór Over HEAR, zelfde volgorde als op de homepage. Site op 7 nov door Maarten "af" verklaard.
+- Jubileum/CreativeGrounds: volledige diptiek (sax + dansende gasten) in header-carrousel (slide 5), casepagina-header (desktop: beeld 70% links, citaat rechts op donker) en liggende tegel bij Eventmanagers. Staande tegels en artiesten-tegels houden het oude beeld.

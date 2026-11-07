@@ -697,3 +697,5 @@ button.knop:disabled{opacity:.6;cursor:wait}
 .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .nieuws-beeld{position:relative;display:block}
 .labels .rubriek-punt{display:none}
+/* Jubileum: diptiek links, citaat rechts op donker (7 nov) */
+@media (min-width:901px){.casehero.diptiek>div{width:70%}}
