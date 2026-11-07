@@ -511,3 +511,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Header-carrousel: tuinfeest-beeld eruit (vier beelden). Alleen de dansers als header gaat niet: die helft is 768 px breed, te zacht op volle breedte; een gesplitst beeld in de header is niet mooi.
 - Homepage-volgorde: header → Wij werken graag samen met… → Wat doen we dan voor hen? (cases, voorheen "Uitgelicht werk") → producten → nieuws → over HEAR. Koppen vormen samen een doorlopend verhaal (voorstel Maarten); overige koppen nog in bespreking.
 - Koppen homepage: "Daarbij leveren we deze producten en diensten" (productkop nu even groot als de andere koppen) en "Ondertussen bij ons en ons netwerk" (nieuws). EN: "For that, we supply these products and services" / "Meanwhile, at HEAR and across our network". Over HEAR blijft ongemoeid.
+- Productkop gewijzigd in "Met hoogwaardige producten en diverse diensten" (EN "With high-end products and a range of services").
