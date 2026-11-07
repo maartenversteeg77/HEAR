@@ -1,7 +1,7 @@
 # Concept landingspagina: organisatoren van dance-events (6 nov, versie 1, demo als privé-artifact)
 Bronnen: huidige dance-events.html, cases ade-dj, prive-event, Raw Drums.
 
-Kop: Organisatoren van dance-events
+Kop: Organisatoren van (dance) events
 Lead: Een goede avond onthoudt je publiek aan de dansvloer. Aan de muziek, het geluid dat je voelt en het licht dat de ruimte verandert.
 Als promotor of collectief bouw je die avond vaak op een plek die er niet voor gemaakt is: een loods, een skatehal, een ruimte die maar één nacht van jou is. Of je geeft een eigen feest en wilt dat het klinkt als in een goede club.
 Wij zorgen dat de dansvloer werkt. Geluid dat tot achterin vol klinkt, zonder dat het vooraan pijn doet. Een booth waar elke dj binnenkomt en meteen kan draaien. En licht dat de muziek volgt, zonder dat de ruimte een kermis wordt.

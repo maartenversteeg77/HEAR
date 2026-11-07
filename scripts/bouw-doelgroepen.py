@@ -18,7 +18,7 @@ DOEL = [
       beeld="img/doelgroepen/eventmanagers.jpg", pos="62% 40%", alt="Twee eventmanagers overleggen met laptop en tablet op het terras van een eventlocatie"),
  dict(bestand="dance-events.html", kort="Dance-events", tegel="Organisatoren van (dance)&nbsp;events",
       uitleg="Promotors of andere ondernemers die een feest met dj's en artiesten organiseren.",
-      tegel_en="Dance event organisers", uitleg_en="Promoters, collectives and anyone throwing their own party with a DJ or artists.",
+      tegel_en="(Dance) event organisers", uitleg_en="Promoters and other entrepreneurs throwing a party with DJs and artists.",
       beeld="img/doelgroepen/dance.jpg", pos="50% 45%", alt="Twee dj's overleggen achter de booth in rood licht"),
  dict(bestand="merken-en-bureaus.html", kort="Merken en bureaus", tegel="Merken, creatieven en bureaus",
       uitleg="Die een merkactivatie, productlancering, collectiepresentatie, modeshow of in-store event organiseren.",
@@ -128,7 +128,7 @@ P["zakelijke-events.html"] = dict(titel="Eventmanagers en communicatieprofession
   contact("Werk je aan een netwerkdag, seminar of zakelijke borrel?", "Landingspagina eventmanagers", "Bijvoorbeeld: seminar voor 120 gasten in maart, met borrel"),
   eerder("Deze opdrachtgevers gingen je voor", ["gemeentelijk-netwerkevent.html", "jubileum-ondernemersnetwerk.html"])])
 
-P["dance-events.html"] = dict(titel="Organisatoren van dance-events", h1="Organisatoren van<br> dance&#8209;events",
+P["dance-events.html"] = dict(titel="Organisatoren van (dance) events", h1="Organisatoren van<br> (dance)&nbsp;events",
  beschrijving="Clubgeluid op elke plek: een modulair, doorgerekend geluidssysteem van Brooklyn Audio en RCF, een rider-proof booth en licht dat bij het moment past.",
  delen=[
   intro("Je wilt dat je feest klinkt als een goede club. Ook als het plaatsvindt in een loods, een skatehal of een ruimte die maar één nacht van jou is.",

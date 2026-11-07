@@ -524,3 +524,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Doelgroeptegel dance: "Organisatoren van (dance) events" / "Promotors of andere ondernemers die een feest met dj's en artiesten organiseren." (homepage + overzicht; landingspagina-h1 ongewijzigd). Cases-kop: label CASES + "Wat we voor hen doen" (EN "What we do for them").
 - Mobiele tegel Communicatieadvies: staande foto, uitsnede op het gezicht.
 - Mobiele tegel Coffee cuts: uitsnede bovenaan (tekst in beeld). Worker stuurt http:// door naar https:// (melding Briljant-scan).
+- Dance-landingspagina: titel en kop "Organisatoren van (dance) events" (EN title "(Dance) event organisers", h1 "Organisers of (dance) events").
