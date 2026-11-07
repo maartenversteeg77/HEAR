@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>HEAR · Experiment één scherm</title>
+<link rel="stylesheet" href="home.css">
+<style>
+  /* Experiment (7 nov): één scherm, geen scroll. Niet gelinkt, noindex. */
+  html,body{height:100%;margin:0;overflow:hidden;background:var(--zwart,#1b1b1b)}
+  .scherm{position:relative;height:100svh;min-height:100svh;display:grid;grid-template-rows:auto 1fr auto;color:#F6F5F1;overflow:hidden}
+  .scherm .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.6s ease;z-index:0}
+  .scherm .bg.aan{opacity:1}
+  .scherm::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(20,20,20,.82) 0%,rgba(20,20,20,.55) 45%,rgba(20,20,20,.25) 100%),linear-gradient(0deg,rgba(20,20,20,.7) 0%,transparent 40%)}
+  .scherm>*{position:relative;z-index:2}
+  .boven{display:flex;justify-content:space-between;align-items:center;padding:clamp(20px,3vw,40px) var(--rand,clamp(20px,4vw,56px)) 0}
+  .boven .logo{width:clamp(130px,16vw,230px);display:block}
+  .boven .rechts{display:flex;align-items:center;gap:18px}
+  .social{display:flex;gap:14px}
+  .social a{display:grid;place-items:center;width:38px;height:38px;border:1px solid rgba(246,245,241,.5);border-radius:50%;color:#F6F5F1;transition:background .2s,color .2s,border-color .2s}
+  .social a:hover{background:#F6F5F1;color:#1b1b1b;border-color:#F6F5F1}
+  .social svg{width:17px;height:17px;fill:currentColor}
+  .taal-v2{font:500 13px/1 var(--tekst);letter-spacing:.16em;color:#F6F5F1;text-decoration:none;border:1px solid rgba(246,245,241,.7);padding:10px 12px}
+  .midden{align-self:center;padding:0 var(--rand,clamp(20px,4vw,56px));display:grid;gap:clamp(18px,3vh,34px);max-width:1400px}
+  .midden h1{font:300 clamp(34px,5.4vw,84px)/1 var(--kop);margin:0;letter-spacing:-.01em}
+  .midden .lead{font:400 clamp(16px,1.35vw,21px)/1.45 var(--tekst);margin:0;max-width:50ch;color:#e9e8e3}
+  nav.v2{display:flex;flex-direction:column;gap:clamp(4px,1.2vh,12px);margin-top:clamp(6px,2vh,20px)}
+  nav.v2 a{font:300 clamp(26px,3.6vw,54px)/1.1 var(--kop);color:#F6F5F1;text-decoration:none;display:inline-flex;align-items:baseline;gap:.4em;width:max-content;max-width:100%}
+  nav.v2 a small{font:500 clamp(10px,.8vw,12px)/1 var(--tekst);letter-spacing:.18em;text-transform:uppercase;color:var(--koraal,#d97b63);opacity:0;transform:translateX(-6px);transition:opacity .2s,transform .2s}
+  nav.v2 a:hover,nav.v2 a:focus-visible{color:var(--koraal,#d97b63)}
+  nav.v2 a:hover small,nav.v2 a:focus-visible small{opacity:1;transform:none}
+  .onder{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding:0 var(--rand,clamp(20px,4vw,56px)) clamp(20px,3.5vh,40px)}
+  .onder .feiten{font:500 11px/1.4 var(--tekst);letter-spacing:.18em;text-transform:uppercase;color:#cfcec9;margin:0}
+  .bollen-v2{display:flex;gap:8px}
+  .bollen-v2 button{width:9px;height:9px;border-radius:50%;border:1px solid #F6F5F1;background:transparent;padding:0;cursor:pointer}
+  .bollen-v2 button.aan{background:#F6F5F1}
+  @media (max-width:700px){
+    .boven .rechts{gap:10px}.social{gap:8px}.social a{width:34px;height:34px}
+    .midden .lead{display:none}
+    nav.v2 a small{display:none}
+    .onder .feiten{display:none}
+  }
+  @media (max-height:760px) and (min-width:701px){.midden .lead{display:none}.midden h1{font-size:clamp(30px,4vw,60px)}nav.v2 a{font-size:clamp(22px,3vw,42px)}}
+  @media (prefers-reduced-motion:reduce){.scherm .bg{transition:none}}
+</style>
+</head>
+<body>
+<main class="scherm">
+  <img class="bg aan" src="img/hero-dansvloer-blauw.jpg" alt="">
+  <img class="bg" src="assets/image9.jpeg" alt="" loading="lazy">
+  <img class="bg" src="img/case-productpresentatie.jpg" alt="" loading="lazy">
+  <img class="bg" src="img/case-ade.jpg" alt="" loading="lazy">
+  <img class="bg" src="img/jubileum-diptiek.jpg" alt="" loading="lazy" style="object-position:center 15%">
+
+  <div class="boven">
+    <a href="index.html" aria-label="HEAR"><img class="logo" src="img/logo-white.png" alt="HEAR"></a>
+    <div class="rechts">
+      <div class="social">
+        <a href="#" aria-label="HEAR op LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3zm7 0h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.6 4.77 6v5.45h-4v-4.83c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.91h-4z"/></svg></a>
+        <a href="#" aria-label="HEAR op Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.3A4.7 4.7 0 1 0 12 16.7 4.7 4.7 0 0 0 12 7.3zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm4.9-8.95a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2zM12 3.2c2.4 0 2.68 0 3.63.05 2.43.11 3.56 1.26 3.67 3.67.05.95.05 1.23.05 3.63s0 2.68-.05 3.63c-.11 2.4-1.24 3.56-3.67 3.67-.95.05-1.23.05-3.63.05s-2.68 0-3.63-.05c-2.44-.11-3.56-1.27-3.67-3.67C4.65 15.23 4.65 14.95 4.65 12.55s0-2.68.05-3.63C4.81 6.5 5.94 5.36 8.37 5.25 9.32 5.2 9.6 5.2 12 5.2zm0-1.7c-2.44 0-2.75 0-3.71.06-3.27.15-5.09 1.96-5.24 5.24C3 7.76 3 8.07 3 10.5v3c0 2.44 0 2.75.06 3.71.15 3.27 1.96 5.09 5.24 5.24.95.05 1.26.05 3.7.05s2.75 0 3.71-.06c3.26-.15 5.1-1.96 5.24-5.24.05-.95.05-1.26.05-3.7v-3c0-2.44 0-2.75-.06-3.71-.15-3.26-1.96-5.09-5.24-5.24C14.75 1.5 14.44 1.5 12 1.5z"/></svg></a>
+        <a href="#" aria-label="HEAR op Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.87.25-1.46 1.5-1.46H16.6V4.46A21 21 0 0 0 14.3 4.3c-2.3 0-3.8 1.4-3.8 3.95v2.25H8v3h2.5V21z"/></svg></a>
+      </div>
+      <a class="taal-v2" href="/en/index.html" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+    </div>
+  </div>
+
+  <div class="midden">
+    <h1>Hear the difference</h1>
+    <p class="lead">Transformeer een locatie in een dansvloer, een zakelijk event in een merkbelevenis, een dj-set in een muzikale reis.</p>
+    <nav class="v2" aria-label="Hoofdnavigatie">
+      <a href="cases.html">Cases <small>Events die tot de verbeelding spreken</small></a>
+      <a href="doelgroepen.html">Met wie we werken <small>Eventmanagers, dance, merken, locaties</small></a>
+      <a href="diensten.html">Producten <small>Licht, geluid, dj-gear en advies</small></a>
+      <a href="nieuws/">Nieuws <small>Producten, events en berichten</small></a>
+      <a href="over-hear.html">Over HEAR <small>Founder story en waarden</small></a>
+    </nav>
+  </div>
+
+  <div class="onder">
+    <span class="wa-plus"><a class="wa" href="aanvraag.html"><span>Plan een gesprek</span><i aria-hidden="true">→</i></a><a class="mail-ook" href="https://wa.me/31624560220?text=Hoi%20Maarten%2C%20ik%20heb%20een%20vraag%20over%20HEAR%20voor%20mijn%20event." target="_blank" rel="noopener">Korte vraag? Stuur een appje</a></span>
+    <p class="feiten">Voor kleine en middelgrote events tot 1.500 personen</p>
+    <div class="bollen-v2" aria-label="Beelden"></div>
+  </div>
+</main>
+<script>
+(function(){
+  var b=[].slice.call(document.querySelectorAll('.scherm .bg')),w=document.querySelector('.bollen-v2'),i=0,n=0,t;
+  b.forEach(function(_,j){var k=document.createElement('button');k.type='button';k.setAttribute('aria-label','Beeld '+(j+1));if(!j)k.className='aan';k.onclick=function(){clearInterval(t);toon(j)};w.appendChild(k)});
+  var k=[].slice.call(w.children);
+  function toon(j){b[i].classList.remove('aan');k[i].classList.remove('aan');i=j;b[i].classList.add('aan');k[i].classList.add('aan')}
+  if(!matchMedia('(prefers-reduced-motion: reduce)').matches){t=setInterval(function(){n++;toon((i+1)%b.length);if(n>=b.length)clearInterval(t)},5000)}
+})();
+</script>
+</body>
+</html>
