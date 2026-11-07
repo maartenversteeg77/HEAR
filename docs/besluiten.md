@@ -529,3 +529,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Gemeentelijk netwerkevent: "gemeente Den Haag" niet noemen; nu "top 5 gemeente" (tegel, opdrachtgever, tekst; EN "one of the five largest Dutch cities" / tegel "top 5 Dutch city").
 - ADE-case tegel: "Franse DJ Rivo & friends" (meestal met z'n tweeën, Rivo is de bekende).
 - Cases-kop "Wat we voor hen doen" definitief; productblok akkoord. Beeldlicenties door Maarten opgeslagen.
+- Mobiele tegel Communicatieadvies: nieuwe foto (roze shirt, hand aan kin), uitsnede op gezicht.
