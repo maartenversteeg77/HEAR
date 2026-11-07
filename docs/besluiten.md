@@ -514,3 +514,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Productkop gewijzigd in "Met hoogwaardige producten en diverse diensten" (EN "With high-end products and a range of services").
 - Productblok mobiel (lichte optie): "Bekijk …" staat direct onder het keuzekader in plaats van rechtsonder in het beeld; verdwijnt zolang het menu open is. Desktop ongewijzigd. Zwaardere optie (tegels per product, toggle Producten/Diensten + "switch naar diensten" onderaan) staat klaar als dit niet genoeg is.
 - Mobiel keuzekader: klein label "Kies een categorie" boven de huidige keuze (groot); subregel met merken weg op mobiel. EN "Choose a category".
+- Desktop productlijst: zelfde label "Kies een categorie" boven de lijst.

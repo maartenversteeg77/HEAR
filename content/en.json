@@ -1123,6 +1123,10 @@
       [
         "<span class=\"pl-k-label\">Kies een categorie</span>",
         "<span class=\"pl-k-label\">Choose a category</span>"
+      ],
+      [
+        "<span class=\"pl-k-label pl-lijst-label\">Kies een categorie</span>",
+        "<span class=\"pl-k-label pl-lijst-label\">Choose a category</span>"
       ]
     ],
     "cases.html": [
