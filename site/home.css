@@ -469,10 +469,10 @@ a.mail-ook,.quick.quick-breed p .mail-ook,.cta-brug .mail-ook{font:300 14px/1.3 
 /* Over HEAR als strook: beeld | tekst | CTA (7 nov) */
 .over-cta{align-self:center}
 @media (min-width:901px){
-  .over{grid-template-columns:minmax(0,4fr) minmax(0,5fr) minmax(0,3fr);align-items:center}
+  .over{grid-template-columns:repeat(3,minmax(0,1fr));align-items:center}
   .over-beeld{height:auto}
   .over img{height:auto;min-height:0;aspect-ratio:4/5;object-position:50% 100%}
-  .over>div.over-cta{padding:0 var(--rand) 0 0;justify-self:end}
+  .over>div.over-cta{padding:0 var(--rand) 0 clamp(24px,3vw,56px);justify-self:start}
   .over-cta .wa-plus{display:flex;flex-direction:column;align-items:flex-start;gap:16px}
 }
 @media (max-width:900px){
