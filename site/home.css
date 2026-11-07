@@ -478,3 +478,6 @@ a.mail-ook,.quick.quick-breed p .mail-ook,.cta-brug .mail-ook{font:300 14px/1.3 
 @media (max-width:900px){
   .over>div.over-cta{padding:0 var(--rand) clamp(50px,8vw,80px)}
 }
+/* Koppen als doorlopend verhaal (7 nov): productkop even groot als de andere koppen */
+.home #producten-kop{font:300 clamp(30px,3vw,44px)/1.1 var(--kop);letter-spacing:0;text-transform:none;color:var(--wit,#F6F5F1);text-wrap:balance}
+.werk-kop h2{text-wrap:balance}
