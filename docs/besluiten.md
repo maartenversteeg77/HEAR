@@ -526,3 +526,6 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Mobiele tegel Coffee cuts: uitsnede bovenaan (tekst in beeld). Worker stuurt http:// door naar https:// (melding Briljant-scan).
 - Dance-landingspagina: titel en kop "Organisatoren van (dance) events" (EN title "(Dance) event organisers", h1 "Organisers of (dance) events").
 - Doelgroepknoppen: zwart; koraal alleen bij hover met muis (op telefoon bleef de aangetikte knop koraal hangen).
+- Gemeentelijk netwerkevent: "gemeente Den Haag" niet noemen; nu "top 5 gemeente" (tegel, opdrachtgever, tekst; EN "one of the five largest Dutch cities" / tegel "top 5 Dutch city").
+- ADE-case tegel: "Franse DJ Rivo & friends" (meestal met z'n tweeën, Rivo is de bekende).
+- Cases-kop "Wat we voor hen doen" definitief; productblok akkoord. Beeldlicenties door Maarten opgeslagen.
