@@ -519,3 +519,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Homepage mobiel: productblok is nu "Kies een categorie" + vijf tabs (Geluid, Licht, Muziek, Diensten, Alles) + tegels, met "Verder naar …" onderaan (zoals voorbeeld-producten). Desktop: lijst + beeld ongewijzigd. Zonder JS: alle tegels zichtbaar, tabs verborgen.
 - Productpagina-intro's ingekort (sfeerlicht, dansvloerlicht, geluid, dj-gear): geen algemene sfeerlaag en geen "we denken/adviseren graag mee"; alleen inhoud. Sfeerlicht: washlights en lichtzuilen op accu, theaterspots hebben stroom nodig. Vintage ongewijzigd. Meta-descriptions NL/EN mee aangepast.
 - Dj-gear intro: "Rider-approved spelers, mixer en monitoring staan klaar…" (Maarten).
+- Capaciteitsregel hero: "Van intieme tot midsize events" / harde enter / "van 50 tot 1.500 personen" (EN "for 50 to 1,500 people").
