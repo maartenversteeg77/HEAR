@@ -532,3 +532,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Mobiele tegel Communicatieadvies: nieuwe foto (roze shirt, hand aan kin), uitsnede op gezicht.
 - Canonical, hreflang en og:url wijzen naar het eindadres zonder .html (Cloudflare stuurt /x.html door naar /x); noindex-pagina's zonder canonical. Melding Briljant (64 pagina's).
 - Mobiel productblok: secundaire link "Alle producten en diensten" weg; scheidingslijn verdwijnt als er geen "Verder naar" is (tab Alles).
+- Volgorde doelgroepen: eventmanagers, merken, (dance) events, locaties. Reden: de header is al zeer dance; merken op 2 geeft tegenwicht (homepage, overzicht, vorige/volgende op landingspagina's).

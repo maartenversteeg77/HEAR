@@ -3899,14 +3899,6 @@
         ">Name<"
       ],
       [
-        "Next: Dance-events\"",
-        "Next: Dance events\""
-      ],
-      [
-        "Previous: Eventlocaties\"",
-        "Previous: Event venues\""
-      ],
-      [
         ">Van lezingen naar cocktail hour<",
         ">From lectures to cocktail hour<"
       ],
@@ -3921,6 +3913,14 @@
       [
         ">5 jaar CreativeGrounds | dj en saxofonist | gericht geluid<",
         ">5 years of CreativeGrounds | DJ and saxophonist | directional sound<"
+      ],
+      [
+        "Previous: Eventlocaties\"",
+        "Previous: Event venues\""
+      ],
+      [
+        "Next: Merken en bureaus\"",
+        "Next: Brands and agencies\""
       ]
     ],
     "dance-events.html": [
@@ -4253,14 +4253,6 @@
         ">Name<"
       ],
       [
-        "Previous: Eventmanagers\"",
-        "Previous: Event managers\""
-      ],
-      [
-        "Next: Merken en bureaus\"",
-        "Next: Brands and agencies\""
-      ],
-      [
         ">Een skatehal, één nacht en nauwelijks soundcheck<",
         ">A skate hall, one night and hardly any soundcheck<"
       ],
@@ -4279,6 +4271,14 @@
       [
         ">ADE | live percussie | rood licht<",
         ">ADE | live percussion | red light<"
+      ],
+      [
+        "Previous: Merken en bureaus\"",
+        "Previous: Brands and agencies\""
+      ],
+      [
+        "Next: Eventlocaties\"",
+        "Next: Event venues\""
       ]
     ],
     "merken-en-bureaus.html": [
@@ -4671,20 +4671,20 @@
         ">Name<"
       ],
       [
-        "Previous: Dance-events\"",
-        "Previous: Dance events\""
-      ],
-      [
-        "Next: Eventlocaties\"",
-        "Next: Event venues\""
-      ],
-      [
         ">Sneakers in de spotlight, daarna een feest<",
         ">Sneakers in the spotlight, then a party<"
       ],
       [
         ">Brand activation | modemerk | productlicht en lichtshow<",
         ">Brand activation | fashion brand | product lighting and light show<"
+      ],
+      [
+        "Previous: Eventmanagers\"",
+        "Previous: Event managers\""
+      ],
+      [
+        "Next: Dance-events\"",
+        "Next: Dance events\""
       ]
     ],
     "bijzondere-eventlocaties.html": [
@@ -5041,14 +5041,6 @@
         ">Name<"
       ],
       [
-        "Next: Eventmanagers\"",
-        "Next: Event managers\""
-      ],
-      [
-        "Previous: Merken en bureaus\"",
-        "Previous: Brands and agencies\""
-      ],
-      [
         ">Een skatehal, één nacht en nauwelijks soundcheck<",
         ">A skate hall, one night and hardly any soundcheck<"
       ],
@@ -5071,6 +5063,14 @@
       [
         ">Sommige dingen kun je zelf doen, bijvoorbeeld met een eigen PA of basislicht. Wij geven je onafhankelijk advies bij de aanschaf. En we zorgen dat we daarop kunnen aansluiten als er meer nodig is.<",
         ">Some things you can handle yourself, for example with your own PA or basic lighting. We give you independent advice on what to buy, and make sure we can plug into it when you need more.<"
+      ],
+      [
+        "Previous: Dance-events\"",
+        "Previous: Dance events\""
+      ],
+      [
+        "Next: Eventmanagers\"",
+        "Next: Event managers\""
       ]
     ]
   },
