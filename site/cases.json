@@ -20,6 +20,24 @@
  "cases": [
   {
    "status": "af",
+   "titel": "Brand activation\nvoor een modemerk",
+   "tekst": "Een collectie sneakers, kleding en accessoires op plateaus, en 's avonds een feest met de collectie boven de dansvloer.",
+   "beeld": "img/case-productpresentatie.jpg",
+   "alt": "Sneakers op verlichte plateaus onder theaterspots, in een hal met blauw licht",
+   "link": "productpresentatie.html",
+   "titel_en": "Brand activation\nfor a fashion brand",
+   "tekst_en": "A collection of sneakers, clothing and accessories on raised platforms, followed by an evening party with the collection projected above the dancefloor.",
+   "toepassing": [
+    "brand"
+   ],
+   "uitgelicht": true,
+   "tegel_titel": "Sneakers in de spotlight, daarna een feest",
+   "tegel_titel_en": "Sneakers in the spotlight, then a party",
+   "tegel_tekst": "Brand activation | modemerk | productlicht en lichtshow",
+   "tegel_tekst_en": "Brand activation | fashion brand | product lighting and light show"
+  },
+  {
+   "status": "af",
    "titel": "Transformatie: van skatehal tot dansvloer",
    "tekst": "Eén avond omgebouwd voor een pop-upevent, met beperkte soundcheck nodig.",
    "beeld": "img/case-ade.jpg",
@@ -39,24 +57,6 @@
   },
   {
    "status": "af",
-   "titel": "Brand activation\nvoor een modemerk",
-   "tekst": "Een collectie sneakers, kleding en accessoires op plateaus, en 's avonds een feest met de collectie boven de dansvloer.",
-   "beeld": "img/case-productpresentatie.jpg",
-   "alt": "Sneakers op verlichte plateaus onder theaterspots, in een hal met blauw licht",
-   "link": "productpresentatie.html",
-   "titel_en": "Brand activation\nfor a fashion brand",
-   "tekst_en": "A collection of sneakers, clothing and accessories on raised platforms, followed by an evening party with the collection projected above the dancefloor.",
-   "toepassing": [
-    "brand"
-   ],
-   "uitgelicht": true,
-   "tegel_titel": "Sneakers in de spotlight, daarna een feest",
-   "tegel_titel_en": "Sneakers in the spotlight, then a party",
-   "tegel_tekst": "Brand activation | modemerk | productlicht en lichtshow",
-   "tegel_tekst_en": "Brand activation | fashion brand | product lighting and light show"
-  },
-  {
-   "status": "af",
    "titel": "Seminar en netwerkevent",
    "tekst": "Van seminars en workshops naar een swingende cocktail hour.",
    "beeld": "img/case-gemeente.jpg",
@@ -72,6 +72,25 @@
    "tegel_titel_en": "From lectures to cocktail hour",
    "tegel_tekst": "Seminar en netwerkevent | 500 gasten | top 5 gemeente",
    "tegel_tekst_en": "Seminar and networking event | 500 guests | top 5 Dutch city"
+  },
+  {
+   "status": "af",
+   "nieuws": true,
+   "uitgelicht": true,
+   "titel": "Melandru speelt ‘Raw Drums’\nin dramatisch rood",
+   "titel_en": "Melandru playing ‘Raw Drums’\nin dramatic red",
+   "tekst": "Tijdens ADE bracht Melandru UK garage/bass house met live percussie, in het rode licht van HEAR.",
+   "tekst_en": "During ADE, Melandru brought UK garage/bass house with live percussion, in HEAR's red light.",
+   "beeld": "img/nieuws/raw-drums-ade-liggend.jpg",
+   "alt": "Percussionisten en dj's in rood licht tijdens Raw Drums op ADE",
+   "link": "/en/nieuws/raw-drums-ade.html",
+   "toepassing": [
+    "dance"
+   ],
+   "label": "img/ade-label.png",
+   "datum": "2026-10",
+   "tegel_tekst": "ADE | live percussie | rood licht",
+   "tegel_tekst_en": "ADE | live percussion | red light"
   },
   {
    "status": "af",
@@ -164,25 +183,6 @@
    "tegel_titel_en": "From ordinary room to colourful dancefloor",
    "tegel_tekst": "Privéfeest | 150 gasten | meerdere dj's",
    "tegel_tekst_en": "Private party | 150 guests | several DJs"
-  },
-  {
-   "status": "af",
-   "nieuws": true,
-   "uitgelicht": false,
-   "titel": "Melandru speelt ‘Raw Drums’\nin dramatisch rood",
-   "titel_en": "Melandru playing ‘Raw Drums’\nin dramatic red",
-   "tekst": "Tijdens ADE bracht Melandru UK garage/bass house met live percussie, in het rode licht van HEAR.",
-   "tekst_en": "During ADE, Melandru brought UK garage/bass house with live percussion, in HEAR's red light.",
-   "beeld": "img/nieuws/raw-drums-ade-liggend.jpg",
-   "alt": "Percussionisten en dj's in rood licht tijdens Raw Drums op ADE",
-   "link": "/en/nieuws/raw-drums-ade.html",
-   "toepassing": [
-    "dance"
-   ],
-   "label": "img/ade-label.png",
-   "datum": "2026-10",
-   "tegel_tekst": "ADE | live percussie | rood licht",
-   "tegel_tekst_en": "ADE | live percussion | red light"
   }
  ],
  "toepassingen": {

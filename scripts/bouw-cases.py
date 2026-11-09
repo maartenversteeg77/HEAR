@@ -19,7 +19,7 @@ def tegels(taal="nl"):
             + "".join(f'<button type="button" data-f="{k}">{e(TP[k]["naam_en"] if en else TP[k]["naam"])}</button>' for k in gebruikt) + '</nav>')
     out = ""
     af = [c for c in data["cases"] if c.get("status") == "af"]
-    af = sorted([c for c in af if c.get("datum")], key=lambda c: c["datum"], reverse=True) + [c for c in af if not c.get("datum")]
+    # volgorde = volgorde in cases.json (Maarten kiest wat het meest zichtbaar moet zijn; 9 nov). Nieuws blijft chronologisch.
     for c in af:
         pos = f' style="object-position:{e(c["positie"])}"' if c.get("positie") else ""
         t = c.get("toepassing", [])
