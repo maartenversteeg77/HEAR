@@ -433,24 +433,28 @@
       "intro": "Als oprichter van HEAR en dj sinds 1993 help ik opdrachtgevers aan een avondvullend programma: met mijzelf achter de booth of artiesten uit mijn netwerk.",
       "blokken": [
         {
+          "label": "Zo werk ik",
+          "tekst": [
+            "Als dj vertaal ik het concept naar een line-up en tijdschema. Vertel wat je wensen zijn en ik doe een passend voorstel. Met één aanspreekpunt voor de muziek én de technische realisatie."
+          ]
+        },
+        {
           "label": "Dj's",
           "tekst": [
-            "Van ontspannen achtergrond tijdens een borrel tot een volle dansvloer: soulful house, deephouse, afro, latin, disco en garage, gedraaid door dj's die weten hoe je een avond opbouwt."
+            "Ik werk met diverse dj's: meestal rechtstreeks, soms via hun agent. Van ontspannen achtergrond tijdens een borrel tot een volle dansvloer: soulful house, deephouse, afro, latin, disco en garage, gedraaid door dj's die weten hoe je een avond opbouwt."
           ],
           "html_na": "<p>Een van die dj's ben ik zelf.</p><p class=\"dj-links\"><a href=\"https://maartenversteeg.nl\" target=\"_blank\" rel=\"noopener\">Dj-website: maartenversteeg.nl ↗</a><a href=\"dj-mixes.html\">Alle SoundCloud-dj-mixes ↗</a></p><div class=\"sc-player\"><iframe title=\"Nieuwste dj-set van Maarten Versteeg op SoundCloud\" width=\"100%\" height=\"300\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" loading=\"lazy\" src=\"https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/maartenversteeg/060b985b-42cd-4846-8766-8164c6c243fd&color=%23D47763&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true\"></iframe></div>"
         },
         {
           "label": "Vocalisten en instrumentalisten",
           "tekst": [
-            "Een saxofonist die meespeelt met de dj of een vocalist of percussionist. Live muziek bij een dj-set geeft een event iets dat mensen onthouden."
+            "Een saxofonist die meespeelt met de dj of een vocalist of percussionist. Live muziek bij een dj-set geeft een event iets dat mensen onthouden. Ook hier werk ik rechtstreeks of via een artiestenbureau."
           ]
         },
         {
-          "label": "Zo werk ik",
-          "tekst": [
-            "Als dj vertaal ik het concept naar een line-up en tijdschema. Daarvoor werk ik rechtstreeks met dj's en artiesten en met enkele artiestenbureaus.",
-            "Vertel wat je wensen zijn en ik doe een passend voorstel. Met één aanspreekpunt voor de muziek én de technische realisatie."
-          ]
+          "label": "Playlist",
+          "tekst": [],
+          "html_na": "<p>Geen dj nodig, maar wel een fijne playlist? <a href=\"custom-dj-mix.html#coffee-cuts\">Kijk dan eens bij Coffee cuts →</a></p>"
         }
       ],
       "links": [
