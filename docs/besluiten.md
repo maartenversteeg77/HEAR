@@ -543,3 +543,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Over HEAR: op verzoek van Maarten volledig teruggezet naar de tekst van vóór 9 nov (naamverhaal, bruggetje, kernzin en naamalinea teruggedraaid); Maarten komt zelf met nieuwe tekst. Footerregel "Licht, geluid en muziek voor events" blijft.
 - Casetegel jubileum: "Een tuinfeest voor een ondernemersnetwerk" (was "…midden in een woonwijk"; EN "A garden party for a business network").
 - Casepagina jubileum: kop "Vijf jaar CreativeGrounds: een luxe tuinfeest voor een ondernemersnetwerk" (was "…in Oud-Zuid"). Netwerk = herkenning; gericht geluid/woonwijk blijft in de tekst als propositie.
+- Casetegel productpresentatie: "Lancering nieuwe sneakercollectie, daarna een feest" (was "Sneakers in de spotlight…"; EN "Launch of a new sneaker collection, then a party").
