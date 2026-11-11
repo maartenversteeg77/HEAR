@@ -18,7 +18,7 @@ GROEPEN = [
         ("Moonbears", "https://moonbears.eu", "Distributeur van licht en rigging uit Breda, en dealer van onder meer de pro-line van ADJ, ROXX, GLP en Vari-Lite, en truss van Sixty82."),
         ("Chauvet Benelux", "https://chauvetprofessional.com", "De Benelux-tak van lichtmerk Chauvet: moving heads, washlights, effecten en besturing."),
         ("RCF", "https://www.rcf.it", "Italiaanse fabrikant van professionele luidsprekers en elektronica, sinds 1949."),
-        ("Brooklyn Audio", "https://brooklyn-audio.com", "Nederlands merk van precisieluidsprekers."),
+        ("Brooklyn Audio", "https://brooklyn-audio.com", "Nederlands merk van precisieluidsprekers voor clubs: fasecoherent, met veel fysieke impact en een verre worp."),
     ]),
     ("Muziek en media", None, [
         ("Architects in Music", "https://architectsinmusic.com", "Bureau voor muziek en entertainment in de hospitality, met artiestenboekingen, audio en AV."),
