@@ -569,3 +569,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Regel: werkwoord alleen waar je ergens heen gaat; bijvoeglijk naamwoord alleen waar het iets zegt.
 - EN: Who HEAR is for · See the cases · High-end products and services · Recent news and stories · See an example case · See previous work on location · Bespoke permanent installation.
 - 11 nov: nieuwstegels op mobiel liggend 3/2 i.p.v. 4/5 (liggende foto's werden te ver ingezoomd); Deep Radio-beeld hoger uitgelijnd.
+- 11 nov: favicon en apple-touch-icon: de driehoekige A uit het logo, gebroken wit op zwart (#F6F5F1 op #191A19), lijn iets dikker op 16/32 px voor leesbaarheid. Links via scripts/bouw-icoon.py (alle pagina's, ook nieuws); bouwvolgorde: … nieuws en og icoon sitemap.
