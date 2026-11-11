@@ -14,8 +14,8 @@ INTRO = "Zonder samenwerking bestaan we niet. Dit zijn de leveranciers, makers e
 GROEPEN = [
     ("Leveranciers", None, [
         ("Output Professional", "https://output.nl", "Distributeur van professionele audio, video en licht uit ’s-Hertogenbosch, en importeur van onder meer RCF."),
-        ("Highlite", "https://www.highlite.com", "Fabrikant en groothandel in licht, geluid en video uit Kerkrade, het bedrijf achter onder meer Showtec."),
-        ("Moonbears", "https://moonbears.eu", "Distributeur van licht en riggingmateriaal uit Breda, voor verhuurbedrijven, theaters en lichtontwerpers."),
+        ("Highlite", "https://www.highlite.com", "Fabrikant en groothandel in licht, geluid en video uit Kerkrade, met onder meer het high-end lichtmerk Infinity en veel accessoires, zoals theaterdoeken en flightcases."),
+        ("Moonbears", "https://moonbears.eu", "Distributeur van licht en rigging uit Breda, en dealer van onder meer de pro-line van ADJ, ROXX, GLP en Vari-Lite, en truss van Sixty82."),
         ("Chauvet Benelux", "https://chauvetprofessional.com", "De Benelux-tak van lichtmerk Chauvet: moving heads, washlights, effecten en besturing."),
         ("RCF", "https://www.rcf.it", "Italiaanse fabrikant van professionele luidsprekers en elektronica, sinds 1949."),
         ("Brooklyn Audio", "https://brooklyn-audio.com", "Nederlands merk van precisieluidsprekers."),
@@ -29,7 +29,7 @@ GROEPEN = [
     ("Partners", "Met hen kunnen we opschalen voor grotere events.", [
         ("Base Events", "https://base-events.nl", "Full-service eventbureau uit Vianen met eigen licht, geluid, video en entertainment."),
         ("Biezema AV", "https://www.biezema-geluidsverhuur.nl", "Verhuur en verkoop van licht, beeld en geluid uit Stadskanaal, voor festivals, concerten en zakelijke events."),
-        ("Luxonos", "https://luxonos.nl", "Audiovisuele dienstverlener uit Soest voor licht, geluid, video en podiumtechniek op beurzen en events."),
+        ("Luxonos", "https://luxonos.nl", "Allround audiovisuele dienstverlener uit Almere voor licht, geluid, video en podiumtechniek op beurzen en events."),
         ("Brandon AV", "https://brandon-av.nl", "Geluid, licht en video uit Hilversum voor festivals, beurzen en feesten."),
     ]),
 ]
