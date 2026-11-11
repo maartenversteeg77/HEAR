@@ -553,3 +553,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Partnerpagina: Highlite met Infinity (high-end) en accessoires (theaterdoeken, flightcases); Moonbears dealer van o.a. ADJ pro-line, ROXX, GLP, Vari-Lite en Sixty82-truss; Luxonos allround uit Almere (Maarten).
 - Mobiel: "Toon alles" als knop over de volle breedte direct onder de tegels, zonder scheidingslijn, met ruimte eronder.
 - Partnerpagina Brooklyn Audio: "…precisieluidsprekers voor clubs: fasecoherent, met veel fysieke impact en een verre worp."
+- Over HEAR: partnerlijst weg; alleen nog een link "Netwerkpartners →" in de Lees ook-regel onderaan. Lijst staat op partners.html.
