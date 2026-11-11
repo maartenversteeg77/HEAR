@@ -50,10 +50,10 @@
     "dance"
    ],
    "uitgelicht": true,
-   "tegel_titel": "Een skatehal, één nacht en nauwelijks soundcheck",
-   "tegel_titel_en": "A skate hall, one night and hardly any soundcheck",
-   "tegel_tekst": "Pop-up event | Franse DJ Rivo & friends tijdens ADE | locatie ombouw",
-   "tegel_tekst_en": "Pop-up event | French DJ Rivo & friends at ADE | venue transformation"
+   "tegel_titel": "Pop-up feest tijdens ADE, in een skatehal",
+   "tegel_titel_en": "Pop-up party during ADE, in a skate hall",
+   "tegel_tekst": "Franse DJ Rivo & friends | nauwelijks soundcheck | locatie ombouw",
+   "tegel_tekst_en": "French DJ Rivo & friends | barely a soundcheck | venue transformation"
   },
   {
    "status": "af",
@@ -68,10 +68,10 @@
     "zakelijk"
    ],
    "uitgelicht": true,
-   "tegel_titel": "Van lezingen naar cocktail hour",
-   "tegel_titel_en": "From lectures to cocktail hour",
-   "tegel_tekst": "Seminar en netwerkevent | 500 gasten | top 5 gemeente",
-   "tegel_tekst_en": "Seminar and networking event | 500 guests | top 5 Dutch city"
+   "tegel_titel": "Seminar voor 500 gasten, daarna cocktail hour",
+   "tegel_titel_en": "Seminar for 500 guests, then cocktail hour",
+   "tegel_tekst": "Netwerkevent | top 5 gemeente",
+   "tegel_tekst_en": "Networking event | top 5 Dutch city"
   },
   {
    "status": "af",
@@ -89,8 +89,10 @@
    ],
    "label": "img/ade-label.png",
    "datum": "2026-10",
-   "tegel_tekst": "ADE | live percussie | rood licht",
-   "tegel_tekst_en": "ADE | live percussion | red light"
+   "tegel_tekst": "Melandru | Raw Drums",
+   "tegel_tekst_en": "Melandru | Raw Drums",
+   "tegel_titel": "Live percussie tijdens ADE, in dramatisch rood",
+   "tegel_titel_en": "Live percussion during ADE, in dramatic red"
   },
   {
    "status": "af",
@@ -125,10 +127,10 @@
     "dj"
    ],
    "uitgelicht": true,
-   "tegel_titel": "40 jaar elektronische muziek in één set",
-   "tegel_titel_en": "40 years of electronic music in one set",
-   "tegel_tekst": "Dj-sets | cocktailbars en corporate events | via Architects in Music",
-   "tegel_tekst_en": "DJ sets | cocktail bars and corporate events | via Architects in Music"
+   "tegel_titel": "Dj-sets met 40 jaar elektronische muziek",
+   "tegel_titel_en": "DJ sets with 40 years of electronic music",
+   "tegel_tekst": "Cocktailbars en corporate events | via Architects in Music",
+   "tegel_tekst_en": "Cocktail bars and corporate events | via Architects in Music"
   },
   {
    "status": "af",
@@ -143,10 +145,10 @@
     "dj"
    ],
    "uitgelicht": true,
-   "tegel_titel": "Twee uur live op Deep Radio",
-   "tegel_titel_en": "Two hours live on Deep Radio",
-   "tegel_tekst": "Radiomixes | soulful en deep house | 2 uur per uitzending",
-   "tegel_tekst_en": "Radio mixes | soulful and deep house | 2 hours per show"
+   "tegel_titel": "Radioshow van twee uur op Deep Radio",
+   "tegel_titel_en": "Two-hour radio show on Deep Radio",
+   "tegel_tekst": "Radiomixes | soulful en deep house",
+   "tegel_tekst_en": "Radio mixes | soulful and deep house"
   },
   {
    "status": "af",
@@ -161,10 +163,10 @@
     "advies"
    ],
    "uitgelicht": true,
-   "tegel_titel": "Een geluidssysteem dat meegroeit",
-   "tegel_titel_en": "A sound system that grows with you",
-   "tegel_tekst": "Systeemadvies | verhuurbedrijf | inkoop tegen scherpe prijs",
-   "tegel_tekst_en": "System advice | rental company | purchase at a sharp price"
+   "tegel_titel": "Systeemadvies voor een verhuurbedrijf",
+   "tegel_titel_en": "System advice for a rental company",
+   "tegel_tekst": "Een systeem dat meegroeit | inkoop tegen scherpe prijs",
+   "tegel_tekst_en": "A system that grows with you | purchased at a sharp price"
   },
   {
    "status": "af",
@@ -179,10 +181,10 @@
     "dance"
    ],
    "uitgelicht": true,
-   "tegel_titel": "Van gewone zaal naar kleurrijke dansvloer",
-   "tegel_titel_en": "From ordinary room to colourful dancefloor",
-   "tegel_tekst": "Privéfeest | 150 gasten | meerdere dj's",
-   "tegel_tekst_en": "Private party | 150 guests | several DJs"
+   "tegel_titel": "Privéfeest voor 150 gasten, met meerdere dj's",
+   "tegel_titel_en": "Private party for 150 guests, with several DJs",
+   "tegel_tekst": "Gewone zaal, kleurrijke dansvloer",
+   "tegel_tekst_en": "Ordinary hall, colourful dancefloor"
   }
  ],
  "toepassingen": {

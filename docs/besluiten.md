@@ -544,3 +544,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Casetegel jubileum: "Een tuinfeest voor een ondernemersnetwerk" (was "…midden in een woonwijk"; EN "A garden party for a business network").
 - Casepagina jubileum: kop "Vijf jaar CreativeGrounds: een luxe tuinfeest voor een ondernemersnetwerk" (was "…in Oud-Zuid"). Netwerk = herkenning; gericht geluid/woonwijk blijft in de tekst als propositie.
 - Casetegel productpresentatie: "Lancering nieuwe sneakercollectie, daarna een feest" (was "Sneakers in de spotlight…"; EN "Launch of a new sneaker collection, then a party").
+- Casetegels: titels volgens "eerst herkenning (soort event), dan de twist"; vondsten (nauwelijks soundcheck, systeem dat meegroeit, gewone zaal → dansvloer) naar de feitenregel. Geen van…naar meer in titels. NL+EN.
