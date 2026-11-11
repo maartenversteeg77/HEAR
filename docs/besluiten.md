@@ -548,3 +548,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Over HEAR: kop "Netwerkpartners" boven de lijst (EN "Network partners"); bij Partners: "Met hen kunnen we opschalen voor grotere events." "Netwerkorganisatie" bewust niet gebruikt (belooft te veel).
 - Mobiel productblok: Dj-gear eigen tab (zes tabs: Geluid, Dj-gear, Licht, Muziek, Diensten, Alles), in twee rijen van drie. Reden: één tab met twee ingangen verwarde.
 - Mobiel productblok: tab "Alles" vervangen door "Playlists" (Coffee cuts); "Alles" is nu een knop "Toon alles" onderaan; knop "Verder naar …" weg. Tabs: Geluid, Dj-gear, Licht, Muziek, Diensten, Playlists.
+- Mobiele tab "Muziek" heet nu "Dj's" (EN "DJs").
