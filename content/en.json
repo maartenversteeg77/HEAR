@@ -1273,10 +1273,6 @@
         "<p>HEAR also stands for choosing by ear. Commercially, a rider-friendly range is essential for an AV business: you can only rent out gear people ask for. But taste matters too. So whatever goes into a HEAR flight case has to meet both. Products made with craftsmanship, respect for the culture and innovation.</p>"
       ],
       [
-        "<dl class=\"structuur\" id=\"partners\" aria-label=\"Structuur van HEAR\">",
-        "<dl class=\"structuur\" id=\"partners\" aria-label=\"Structure of HEAR\">"
-      ],
-      [
         "<span>Stuur me een appje</span>",
         "<span>Send me a message</span>"
       ],
@@ -1345,12 +1341,16 @@
         "<dt>Music and media</dt>"
       ],
       [
-        "<a href=\"https://base-events.nl\" target=\"_blank\" rel=\"noopener\">Base Events</a>, <a href=\"https://www.biezema-geluidsverhuur.nl\" target=\"_blank\" rel=\"noopener\">Biezema AV</a>, <a href=\"https://luxonos.nl\" target=\"_blank\" rel=\"noopener\">Luxonos</a>, <a href=\"https://brandon-av.nl\" target=\"_blank\" rel=\"noopener\">Brandon AV</a> en diverse freelancers</dd>",
-        "<a href=\"https://base-events.nl\" target=\"_blank\" rel=\"noopener\">Base Events</a>, <a href=\"https://www.biezema-geluidsverhuur.nl\" target=\"_blank\" rel=\"noopener\">Biezema AV</a>, <a href=\"https://luxonos.nl\" target=\"_blank\" rel=\"noopener\">Luxonos</a>, <a href=\"https://brandon-av.nl\" target=\"_blank\" rel=\"noopener\">Brandon AV</a> and various freelancers</dd>"
+        "<a href=\"https://base-events.nl\" target=\"_blank\" rel=\"noopener\">Base Events</a>, <a href=\"https://www.biezema-geluidsverhuur.nl\" target=\"_blank\" rel=\"noopener\">Biezema AV</a>, <a href=\"https://luxonos.nl\" target=\"_blank\" rel=\"noopener\">Luxonos</a>, <a href=\"https://brandon-av.nl\" target=\"_blank\" rel=\"noopener\">Brandon AV</a> en diverse freelancers. Met hen kunnen we opschalen voor grotere events.</dd>",
+        "<a href=\"https://base-events.nl\" target=\"_blank\" rel=\"noopener\">Base Events</a>, <a href=\"https://www.biezema-geluidsverhuur.nl\" target=\"_blank\" rel=\"noopener\">Biezema AV</a>, <a href=\"https://luxonos.nl\" target=\"_blank\" rel=\"noopener\">Luxonos</a>, <a href=\"https://brandon-av.nl\" target=\"_blank\" rel=\"noopener\">Brandon AV</a> and various freelancers. With them we can scale up for larger events.</dd>"
       ],
       [
         "<p class=\"eyebrow page-kicker\">OVER HEAR</p>",
         "<p class=\"eyebrow page-kicker\">ABOUT HEAR</p>"
+      ],
+      [
+        "<h2 class=\"structuur-kop\" id=\"partners\">Netwerkpartners</h2>",
+        "<h2 class=\"structuur-kop\" id=\"partners\">Network partners</h2>"
       ]
     ],
     "ade-dj.html": [
