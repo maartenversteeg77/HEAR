@@ -527,3 +527,5 @@ a.mail-ook,.quick.quick-breed p .mail-ook,.cta-brug .mail-ook{font:300 14px/1.3 
   .pm-volgende{width:100%;text-align:center;font:500 13px/1 var(--tekst);letter-spacing:.14em;text-transform:uppercase;padding:16px 18px}
 }
 @media (max-width:760px){.strook .strook-wat{gap:4px 14px}}
+/* Sectietitels als strip-header: klein, kapitaal, koraal (11 nov) */
+h2.strip-kop,.home h2.strip-kop,.samen h2.strip-kop,.home #producten-kop.strip-kop{font:500 13px/1.2 var(--tekst)!important;letter-spacing:.16em!important;text-transform:uppercase;color:var(--koraal)!important;margin:0 0 22px;text-wrap:initial}

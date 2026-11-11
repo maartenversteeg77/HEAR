@@ -555,3 +555,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Partnerpagina Brooklyn Audio: "…precisieluidsprekers voor clubs: fasecoherent, met veel fysieke impact en een verre worp."
 - Over HEAR: partnerlijst weg; alleen nog een link "Netwerkpartners →" in de Lees ook-regel onderaan. Lijst staat op partners.html.
 - Homepage-strook onder de hero: "Playlists" (Coffee cuts) en "Advies" (→ communicatieadvies) in plaats van "Coffee cuts" en "Communicatieadvies"; kleinere tussenruimte, zodat het op mobiel op één regel past (behalve iPhone SE). EN: Playlists, Advice.
+- Homepage: sectietitels als strip-headers (klein, kapitaal, koraal) in plaats van koppen: VOOR WIE (was "Wij werken graag samen met…", ook op Met wie we werken), CASES (kop "Wat we voor hen doen" weg), PRODUCTEN EN DIENSTEN, NIEUWS EN ACHTERGRONDEN. EN: Who it’s for, Cases, Products and services, News and background.

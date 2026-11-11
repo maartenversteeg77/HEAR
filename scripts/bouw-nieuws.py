@@ -90,8 +90,8 @@ def taalknop(k, taal, doel):
 
 berichten = sorted([b for b in data["berichten"] if b.get("status") == "af"], key=lambda b: b["datum"], reverse=True)
 (site / "en" / "nieuws").mkdir(parents=True, exist_ok=True)
-L = {"nl": {"nieuws": "Nieuws", "overzicht_titel": "Nieuws en achtergronden", "laatste": "Ondertussen bij ons en ons netwerk", "overzicht": "Naar het nieuwsoverzicht →", "lees": "Lees het bericht", "alle": "Alle berichten →", "home": "Naar de homepage →", "omschr": "Nieuwe producten, events en berichten van HEAR.", "home_href": "/index.html"},
-     "en": {"nieuws": "News", "overzicht_titel": "News and background", "laatste": "Meanwhile, at HEAR and across our network", "overzicht": "To the news overview →", "lees": "Read the post", "alle": "All posts →", "home": "To the homepage →", "omschr": "New products, events and news from HEAR.", "home_href": "/en/index.html"}}
+L = {"nl": {"nieuws": "Nieuws", "overzicht_titel": "Nieuws en achtergronden", "laatste": "Nieuws en achtergronden", "overzicht": "Naar het nieuwsoverzicht →", "lees": "Lees het bericht", "alle": "Alle berichten →", "home": "Naar de homepage →", "omschr": "Nieuwe producten, events en berichten van HEAR.", "home_href": "/index.html"},
+     "en": {"nieuws": "News", "overzicht_titel": "News and background", "laatste": "News and background", "overzicht": "To the news overview →", "lees": "Read the post", "alle": "All posts →", "home": "To the homepage →", "omschr": "New products, events and news from HEAR.", "home_href": "/en/index.html"}}
 
 for taal in ("nl", "en"):
     pre = "/en" if taal == "en" else ""
@@ -159,7 +159,7 @@ for taal in ("nl", "en"):
             for b in volgorde)
         vorige, volgende = ("Previous posts", "Next posts") if taal == "en" else ("Vorige berichten", "Volgende berichten")
         alle = "News and background" if taal == "en" else "Nieuws en achtergronden"
-        blok = (f'<!--nieuws-home--><section class="nieuws-home" aria-labelledby="nieuws-kop"><div class="werk-kop"><h2 id="nieuws-kop">{T["laatste"]}</h2>'
+        blok = (f'<!--nieuws-home--><section class="nieuws-home" aria-labelledby="nieuws-kop"><div class="werk-kop"><h2 class="strip-kop" id="nieuws-kop">{T["laatste"]}</h2>'
                 f'<div class="nieuws-pijlen"><button type="button" data-richting="-1" aria-label="{vorige}">←</button><button type="button" data-richting="1" aria-label="{volgende}">→</button></div></div>'
                 f'<div class="werk-rij nieuws-rij" id="nieuws-rij">{kaarten}<a class="werk-kaart werk-alle" href="{pre}/nieuws/"><span>{alle}</span><span class="pijl" aria-hidden="true">→</span></a></div>'
                 '<script>(function(){var r=document.getElementById("nieuws-rij");document.querySelectorAll(".nieuws-pijlen button").forEach(function(k){k.addEventListener("click",function(){var c=r.querySelector(".werk-kaart");var s=c?c.getBoundingClientRect().width+22:400;r.scrollBy({left:s*k.dataset.richting,behavior:"smooth"});});});})();</script>'

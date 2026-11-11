@@ -41,7 +41,7 @@ def tegels(en=False):
               f'<span class="samen-knop">{"What we do for you" if en else "Wat we voor je doen"} <i aria-hidden="true">→</i></span></span></a>')
     return t
 def samenblok(kop="h2"):
-    return (f'<section class="samen" aria-labelledby="samen-kop"><{kop} id="samen-kop">Wij werken graag samen met…</{kop}>'
+    return (f'<section class="samen" aria-labelledby="samen-kop"><{kop} class="strip-kop" id="samen-kop">Voor wie</{kop}>'
             f'<div class="samen-raster">{tegels()}</div></section>')
 
 # ---------- bouwstenen ----------
