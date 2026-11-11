@@ -1,0 +1,60 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><!--icoon--><link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><!--/icoon--><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Deze pagina bestaat niet (meer) · HEAR</title><link rel="stylesheet" href="/home.css"><link rel="stylesheet" href="/styles.css"></head><body class="pagina">
+<header class="top">
+  <a class="merk" href="/index.html" aria-label="HEAR, naar de homepage"><img src="/img/logo-white.png" alt="HEAR"></a>
+  <nav class="topnav" aria-label="Hoofdnavigatie">
+    <a href="/cases.html">Cases</a>
+    <a href="/doelgroepen.html">Met wie we werken</a>
+    <a href="/diensten.html">Producten</a>
+    <a href="/nieuws/">Nieuws</a>
+    <a href="/over-hear.html">Over HEAR</a>
+  </nav>
+  <a class="plan" href="/aanvraag.html">Plan een gesprek</a>
+  <a class="taal" href="/en/index.html" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+  <button class="menuknop" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu openen">
+    <span></span><span></span>
+  </button>
+</header>
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Hoofdmenu">
+      <a class="menu-plan" href="/aanvraag.html"><span>Plan een gesprek</span><small>Bel, Teams of Meet: vertel over je event</small></a>
+      <a href="/cases.html"><span>Voorbeeldcases</span><small>Events die tot de verbeelding spreken</small></a>
+      <a href="/doelgroepen.html"><span>Met wie we werken</span><small>Eventmanagers, dance-events, merken en eventlocaties</small></a>
+      <a href="/diensten.html"><span>Producten en diensten</span><small>Licht, geluid, dj-gear en advies</small></a>
+      <a href="/nieuws/"><span>Nieuws</span><small>Nieuwe producten, events en berichten</small></a>
+      <a href="/over-hear.html"><span>Over HEAR</span><small>Founder story en waarden</small></a>
+  </nav>
+</div>
+<script>
+  (function(){
+    var k=document.querySelector('.menuknop'), m=document.getElementById('menu');
+    function zet(open){ k.setAttribute('aria-expanded',open); k.setAttribute('aria-label',open?'Menu sluiten':'Menu openen'); m.hidden=!open; document.body.classList.toggle('menu-open',open); }
+    k.addEventListener('click',function(){ zet(k.getAttribute('aria-expanded')!=='true'); });
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape') zet(false); });
+    // Vegen over de zwarte kop (mobiel): links = volgende, rechts = vorige pagina op dit niveau
+    var x0=null, y0=null, hk=null;  // gedelegeerd: de kop staat verderop in de pagina dan dit script
+    document.addEventListener('touchstart',function(e){ hk=e.target.closest&&e.target.closest('.casehead'); if(!hk) return; x0=e.touches[0].clientX; y0=e.touches[0].clientY; },{passive:true});
+    document.addEventListener('touchend',function(e){
+      if(x0===null||!hk) return; var dx=e.changedTouches[0].clientX-x0, dy=e.changedTouches[0].clientY-y0; x0=null;
+      if(Math.abs(dx)<60||Math.abs(dy)>50) return;
+      var a=hk.querySelector(dx<0?'.zijnav .pijl:last-child':'.zijnav .pijl:first-child'); if(a&&a.href) location.href=a.href;
+    },{passive:true});
+  })();
+</script>
+<main class="wrap"><section class="casehead"><h1>Deze pagina bestaat niet (meer)</h1></section><article class="artikel"><p class="lead">Misschien kwam je via een oude link. Hieronder vind je de weg terug.</p></article>
+<nav class="verwijzingen" aria-label="Verder"><a href="/">Naar de homepage →</a><a href="/cases.html">Bekijk de cases →</a><a href="/diensten.html">Producten en diensten →</a><a href="/aanvraag.html">Plan een gesprek →</a></nav></main>
+<footer class="voet">
+  <div class="voet-kolommen">
+    <div class="voet-merk">
+      <img src="/img/logo-white.png" alt="HEAR">
+      <p>Licht, geluid en muziek voor events · Amsterdam</p>
+      <p class="voet-contact"><a href="mailto:maarten@hear.nl">maarten@hear.nl</a><span aria-hidden="true"> · </span><a href="tel:+31624560220">+31 6 24560220</a></p>
+      <p class="voet-klein"><span class="geen-breuk">HEAR is een handelsnaam van Maarten Versteeg communicatie advies B.V.</span><br>KvK 42181393<span class="voet-sep"> · </span><span class="geen-breuk-adres">Van Kinsbergenstraat 54, 1057 PT Amsterdam</span><br><a href="/privacy.html">Privacyverklaring</a></p>
+    </div>
+    <nav aria-label="Werk"><p class="label">Werk</p><a href="/cases.html">Cases</a><a href="/nieuws/">Nieuws</a><a href="/over-hear.html">Over HEAR</a></nav>
+    <nav aria-label="Met wie we werken"><p class="label">Met wie we werken</p><a href="/zakelijke-events.html">Eventmanagers</a><a href="/merken-en-bureaus.html">Merken en bureaus</a><a href="/dance-events.html">Dance-events</a><a href="/bijzondere-eventlocaties.html">Eventlocaties</a></nav>
+    <nav aria-label="Producten en diensten"><p class="label">Producten en diensten</p><a href="/booth-dj-gear.html">Dj-gear</a><a href="/high-end-audio.html">Geluid</a><a href="/atmospheric-lighting.html">Sfeerlicht</a><a href="/dancefloor-lighting.html">Dansvloerlicht</a><a href="/vintage-lighting.html">90's vintage licht</a><a href="/communicatieadvies.html">Communicatieadvies</a><a href="/artiesten.html">Dj's en artiesten</a><a href="/custom-dj-mix.html">Coffee cuts en custom dj-mixes</a>
+          <a href="/aankoopadvies.html">Aankoopadvies licht en geluid</a></nav>
+    <nav aria-label="Waarden"><p class="label">Waarden</p><a href="/principes.html#samen">Samen</a><a href="/principes.html#open">Open</a><a href="/principes.html#vakmanschap">Vakmanschap</a><a href="/principes.html#warmte">Warme sound</a></nav>
+  </div>
+</footer>
+</body></html>
