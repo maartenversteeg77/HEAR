@@ -107,3 +107,10 @@
 @media(max-width:900px){.samen-raster{grid-template-columns:1fr}}
 @media(max-width:560px){.samen-tegel{grid-template-columns:1fr}.samen-beeld{aspect-ratio:3/2;max-width:100%}}
 @media(prefers-reduced-motion:reduce){.samen-beeld img,.samen-knop{transition:none}}
+/* Strip-headers in plaats van label + kop (11 nov) */
+.lp .lp-strip{font:500 13px/1.3 var(--tekst)!important;letter-spacing:.16em!important;text-transform:uppercase;color:var(--koraal)!important;margin:0 0 22px!important;max-width:none}
+.lp-twee>.lp-strip{grid-column:1/-1;margin-bottom:0!important}
+.lp-motto{font:300 clamp(24px,2.4vw,36px)/1.25 var(--kop);font-style:italic;margin:0;text-wrap:balance}
+.lp-donker .lp-motto{color:var(--wit,#F6F5F1)}
+.lp-paar .lp-strip{margin:18px 0 10px!important}
+.lp-inst .lp-motto{margin:0 0 18px}

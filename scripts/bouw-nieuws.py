@@ -91,7 +91,7 @@ def taalknop(k, taal, doel):
 berichten = sorted([b for b in data["berichten"] if b.get("status") == "af"], key=lambda b: b["datum"], reverse=True)
 (site / "en" / "nieuws").mkdir(parents=True, exist_ok=True)
 L = {"nl": {"nieuws": "Nieuws", "overzicht_titel": "Nieuws en achtergronden", "laatste": "Nieuws en achtergronden", "overzicht": "Naar het nieuwsoverzicht →", "lees": "Lees het bericht", "alle": "Alle berichten →", "home": "Naar de homepage →", "omschr": "Nieuwe producten, events en berichten van HEAR.", "home_href": "/index.html"},
-     "en": {"nieuws": "News", "overzicht_titel": "News and background", "laatste": "News and background", "overzicht": "To the news overview →", "lees": "Read the post", "alle": "All posts →", "home": "To the homepage →", "omschr": "New products, events and news from HEAR.", "home_href": "/en/index.html"}}
+     "en": {"nieuws": "News", "overzicht_titel": "News and background", "laatste": "News and stories", "overzicht": "To the news overview →", "lees": "Read the post", "alle": "All posts →", "home": "To the homepage →", "omschr": "New products, events and news from HEAR.", "home_href": "/en/index.html"}}
 
 for taal in ("nl", "en"):
     pre = "/en" if taal == "en" else ""

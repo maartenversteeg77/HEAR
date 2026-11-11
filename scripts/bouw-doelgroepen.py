@@ -52,29 +52,29 @@ def kaart(titel, items, meer=None, wens=False):
     if meer: m = '<p class="lp-meer">Meer over ' + " en ".join(f'<a href="{h}">{t}</a>' for t, h in meer) + ' <span aria-hidden="true">→</span></p>'
     return f'<div class="lp-kaart"><h3>{titel}</h3>{lijst(items)}{m}' + ('<p class="lp-wens">Speciale wensen? Laat het weten.</p>' if wens else '') + '</div>'
 def aanbod(kop, kaarten):
-    return (f'<section class="lp-band"><p class="lp-label">Wat we leveren</p><h2>{kop}</h2>'
+    return (f'<section class="lp-band"><h2 class="lp-strip">{kop}</h2>'
             f'<div class="lp-aanbod" style="--kol:{len(kaarten)}">{"".join(kaarten)}</div></section>')
 def intro(lead, alineas):
     return (f'<section class="lp-band"><div class="lp-twee"><p class="lp-lead">{lead}</p>'
             f'<div class="lp-tekst">{"".join(f"<p>{a}</p>" for a in alineas)}</div></div></section>')
 def filo(label, kop, alineas):
-    return (f'<section class="lp-band"><div class="lp-twee"><p class="lp-label">{label}</p><h2>{kop}</h2>'
+    return (f'<section class="lp-band"><div class="lp-twee"><h2 class="lp-strip">{label}</h2><p class="lp-motto">{kop}</p>'
             f'<div class="lp-tekst">{"".join(f"<p>{a}</p>" for a in alineas)}</div></div></section>')
 def momenten(label, kop, items, sub=None):
     s = f'<p class="lp-sub">{sub}</p>' if sub else ''
-    return (f'<section class="lp-band"><div class="lp-twee"><p class="lp-label">{label}</p><div><h2>{kop}</h2>{s}</div>'
+    return (f'<section class="lp-band"><div class="lp-twee"><h2 class="lp-strip">{kop}</h2><div>{s}</div>'
             f'{lijst([(i, None) for i in items], "lp-momenten")}</div></section>')
 def paar(kolommen, kop=None):
-    kk = f'<h2 class="lp-paarkop">{kop}</h2>' if kop else ''
-    k = "".join(f'<div><img src="{b}" alt="{e(a)}" loading="lazy" style="object-position:{p}"><p class="lp-label">{l}</p><h2>{h}</h2><p>{t}</p></div>'
+    kk = f'<h2 class="lp-strip lp-paarkop">{kop}</h2>' if kop else ''
+    k = "".join(f'<div><img src="{b}" alt="{e(a)}" loading="lazy" style="object-position:{p}"><h3 class="lp-strip">{h}</h3><p>{t}</p></div>'
                 for b, a, p, l, h, t in kolommen)
     return f'<section class="lp-band lp-donker">{kk}<div class="lp-paar">{k}</div></section>'
 def split(beeld, alt, pos, label, kop, tekst):
     return (f'<section class="lp-split"><img src="{beeld}" alt="{e(alt)}" loading="lazy" style="object-position:{pos}">'
-            f'<div><p class="lp-label">{label}</p><h2>{kop}</h2><p>{tekst}</p>'
+            f'<div><h2 class="lp-strip">{label}: {kop.replace('Eén','één')}</h2><p>{tekst}</p>'
             f'<p class="lp-meer"><a href="partners.html">Zie hier onze partners</a> <span aria-hidden="true">→</span></p></div></section>')
 def stappen(items):
-    return (f'<section class="lp-band"><p class="lp-label">Werkwijze</p><h2>Zo werken we</h2>'
+    return (f'<section class="lp-band"><h2 class="lp-strip">Werkwijze</h2>'
             f'<div class="lp-stappen"><h3 hidden>{items[0][0]}</h3><p hidden>{items[0][1]}</p>'
             f'<ol class="lp-stapjes">' + "".join(f'<li><b>{i+1}</b><div><b>{a}</b><br><span>{b}</span></div></li>' for i, (a, b) in enumerate(items)) + '</ol>'
             '<div class="lp-stapbal"></div></div></section>')
@@ -88,7 +88,7 @@ def eerder(kop, links, quote=None):
               + f'><div><span class="lp-chip">{chip}</span><h3>{e(c.get("tegel_titel") or c["titel"].replace(chr(10), " "))}</h3><p>{e(c.get("tegel_tekst") or c["tekst"])}</p></div></a>')
     if quote: t += f'<blockquote class="lp-quote"><p>“{quote}”</p><footer>De opdrachtgever</footer></blockquote>'
     kol = len(links) + (1 if quote else 0)
-    return f'<section class="lp-band"><h2>{kop}</h2><div class="lp-cases" style="--kol:{max(2, kol)}">{t}</div></section>'
+    return f'<section class="lp-band"><h2 class="lp-strip">{kop}</h2><div class="lp-cases" style="--kol:{max(2, kol)}">{t}</div></section>'
 def contact(kop, bron, voorbeeld):
     return f'''<section class="lp-band lp-contact" id="contact"><div class="lp-twee"><div><h2>{kop}</h2><p>Laat je gegevens achter, dan neem ik contact met je op.</p>
 <div class="lp-wie"><img src="img/maarten-adviseur.jpg" alt="Maarten Versteeg" loading="lazy" style="object-position:50% 20%"><div><b>Maarten Versteeg</b><span>Oprichter HEAR</span></div></div></div>
@@ -109,7 +109,7 @@ P["zakelijke-events.html"] = dict(titel="Eventmanagers en communicatieprofession
   intro("Een netwerkdag, seminar of jubileum is het visitekaartje van je organisatie. En het moment waarop je je relaties fysiek ontmoet.",
         ["Als eventmanager zorg je dat het programma soepel loopt: het dagdeel met sprekers, de omslag naar de borrel en het informele deel daarna.",
          "Wij zorgen dat de audiovisuele ondersteuning het verhaal volgt. Sprekers zijn goed verstaanbaar, en de cocktail hour die erop volgt krijgt licht en muziek die bij het moment passen. Alles afgestemd op de ruimte, ook als dat een kale industriële hal is die we ombouwen tot eventlocatie."]),
-  aanbod("Dit kunnen we je bieden", [
+  aanbod("Wat we je bieden", [
    kaart("Concept en branding", [("Meedenken over concept en sfeer", "Met 25 jaar ervaring in corporate communicatie"),
      ("Je huisstijl in licht", "Sfeerlicht in je huisstijlkleuren en je logo geprojecteerd op wand of vloer"),
      ("Muziek die bij je merk past", "Een playlist of dj-set in de toon van je organisatie, en opkomstmuziek voor sprekers"),
@@ -138,7 +138,7 @@ P["dance-events.html"] = dict(titel="Organisatoren van (dance) events", h1="Orga
    "Een goed geluidssysteem is niet het hardste systeem. Het geluid ligt gelijkmatig over de dansvloer: vooraan niet te hard, achterin niet dun. Het geluid is vol, goed verstaanbaar en niet schel, zodat het voor bezoekers prettig blijft.",
    "Daarvoor werken we met twee merken die hun hele systeem zelf ontwerpen en bouwen. Brooklyn Audio uit Nederland ontwerpt al zijn kasten met dezelfde fasekarakteristiek. Daardoor kun je ze in elke combinatie inzetten zonder dat het geluid uit elkaar valt, en klinkt een kleine opstelling hetzelfde als een grote. Van RCF uit Italië gebruiken we de KX-serie, de nieuwe topserie van het merk, met tops die de directheid van een point source combineren met de worp van een line source.",
    "Het systeem is modulair: dezelfde familie speakers past in een compacte ruimte en in een zaal tot 35 meter diep. De opstelling rekenen we vooraf door op de afmetingen van jouw zaal."]),
-  aanbod("Dit kunnen we je bieden", [
+  aanbod("Wat we je bieden", [
    kaart("Geluid en booth", [("Een modulair geluidssysteem", "Geschikt voor compacte tot grote ruimtes, doorgerekend op jouw zaal"),
      ("Subs in cardioïde opstelling", "Het laag blijft op de dansvloer en loopt niet het podium en de booth in"),
      ("Een rider-proof booth", "CDJ-3000X met V10 of Euphonia"),
@@ -168,7 +168,7 @@ P["merken-en-bureaus.html"] = dict(titel="Merken, creatieven en bureaus", h1="Me
   momenten("Samen vormgeven", "De momenten die het verschil maken", ["De reveal van een product of collectie", "Een demo-area waar het product centraal staat",
    "De etalage of het in-store moment", "De catwalk", "Een fotogenieke plek of branded backdrop", "Een interviewhoek voor pers en content",
    "De omslag naar een feest, als de avond daarom vraagt"]),
-  aanbod("Dit kunnen we je bieden", [
+  aanbod("Wat we je bieden", [
    kaart("Licht en beeld", [("Productlicht met theaterspots", "Kleuren, materialen en details van de collectie naar voren"),
      ("Licht voor camera en social", "Een backdrop en interviewhoek die ook op een telefoon kloppen"),
      ("Kleur in de ruimte", "Draadloze washlights in de campagnekleuren, zonder zichtbare bekabeling"),
@@ -179,9 +179,9 @@ P["merken-en-bureaus.html"] = dict(titel="Merken, creatieven en bureaus", h1="Me
    kaart("Concept en uitvoering", [("Meedenken vanaf de conceptfase", "Met het merk of het bureau, met 25 jaar ervaring in corporate communicatie"),
      ("Een lichtplan per moment", "Locatiebezoek, lichtontwerp en programmering"),
      ("Geluid en dj-booth", "Verstaanbare sprekers bij de presentatie, een volle dansvloer daarna")], wens=True)]),
-  paar([("img/maarten-mixer.jpg", "Maarten Versteeg met een rotary mixer in een industriële ruimte", "50% 74%", "De sound van je merk", "Music for brands",
+  paar([("img/maarten-mixer.jpg", "Maarten Versteeg met een rotary mixer in een industriële ruimte", "50% 74%", "De sound van je merk", "De sound van je merk",
          "Een merk heeft een eigen sound. Bij producten en collecties brengt Maarten een chique sound met wortels in warme elektronische muziek: verfijnd genoeg voor een presentatie, met genoeg groove voor de avond erna. Afgestemd op de collectie of de campagne, als dj-set of als playlist per moment."),
-        ("img/doelgroepen/winkel.jpg", "Eigenaresse van een kledingwinkel bij de toonbank, met kledingrekken op de achtergrond", "60% 40%", "Retail en conceptstores", "Music for retail",
+        ("img/doelgroepen/winkel.jpg", "Eigenaresse van een kledingwinkel bij de toonbank, met kledingrekken op de achtergrond", "60% 40%", "Retail en conceptstores", "Music for retail en conceptstores",
          "Ook in de winkel hoort de muziek bij je merk. Bij een in-store event, een lancering of een koopzondag met een dj wordt je winkel voor een middag of avond een plek waar mensen voor komen, met licht en geluid die bij je collectie passen.")], kop="Daarnaast bieden we ook muzikale ondersteuning"),
   stappen([("Briefing", "Merk, campagne, doelgroep en de momenten van de avond. Hier bepalen we wat het event nodig heeft."),
    ("Locatiebezoek of foto's en plattegrond", "We bekijken de ruimte, de looproute en waar het product komt te staan."),
@@ -197,10 +197,10 @@ P["bijzondere-eventlocaties.html"] = dict(titel="Eigenaren en exploitanten van e
  delen=[
   intro("Vandaag een modeshow, morgen een seminar, overmorgen een bedrijfsfeest met dj. Elke klant vraagt om een andere opzet.",
         ["Wij vertalen de vraag van je klant naar een passende opzet in licht, geluid en muziek. In overleg met jou loopt het contact met de eindklant via jou of via ons, en we houden je steeds op de hoogte. Als je wilt, koppelen we daar een digitale planner aan."]),
-  momenten("Je klanten", "De vragen die op je afkomen", ["Een seminar met sprekers en een presentatie", "Een modeshow of collectiepresentatie",
+  momenten("Je klanten", "Je klanten en hun vragen", ["Een seminar met sprekers en een presentatie", "Een modeshow of collectiepresentatie",
    "Een bedrijfsfeest met dj", "Een productlancering", "Een diner met muziek op de achtergrond", "Een clubnacht of pop-up", "Een bruiloft of privéfeest"],
    sub="Je moet van alle markten thuis zijn. HEAR en ons netwerk kunnen die vragen voor je oppakken."),
-  aanbod("Dit kunnen we je bieden bij events", [
+  aanbod("Wat we je bieden", [
    kaart("Per event", [("Een opzet per klantvraag", "Licht, geluid en muziek, afgestemd op het type event"),
      ("Contact met de eindklant", "Via jou of via ons, in overleg, met een digitale planner als je wilt"),
      ("Dj's en artiesten", "Voor een feest of borrel op jouw locatie")], meer=[("geluid", "high-end-audio.html"), ("atmosfeerlicht", "atmospheric-lighting.html")]),
@@ -213,7 +213,7 @@ P["bijzondere-eventlocaties.html"] = dict(titel="Eigenaren en exploitanten van e
    ("Per klantvraag een voorstel", "Wij vertalen de vraag van je klant, jij houdt het overzicht."),
    ("Op de dag zelf", "Wij bouwen op en zijn het aanspreekpunt, voor jou en voor je klant."),
    ("Terugkijken", "Na het event kort evalueren, zodat het de volgende keer nog soepeler loopt.")]),
-  '''<section class="lp-band lp-donker"><div class="lp-inst"><div><p class="lp-label">Vaste installatie</p><h2>Zelf doen waar het kan, expertise als het nodig is</h2>
+  '''<section class="lp-band lp-donker"><div class="lp-inst"><div><h2 class="lp-strip">Vaste installatie</h2><p class="lp-motto">Zelf doen waar het kan, expertise als het nodig is</p>
 <div class="lp-tekst"><p>Sommige dingen kun je zelf doen, bijvoorbeeld met een eigen PA of basislicht. Wij geven je onafhankelijk advies bij de aanschaf. En we zorgen dat we daarop kunnen aansluiten als er meer nodig is.</p></div>'''
   + lijst([("Merkonafhankelijk advies", "Met de eigenschappen van de ruimte als vertrekpunt"), ("Begeleiding bij aanschaf en installatie", "Ook bij de ingebruikname"),
            ("AV as a service", "Een vast bedrag per maand in plaats van een grote investering")])
