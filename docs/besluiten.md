@@ -554,3 +554,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - Mobiel: "Toon alles" als knop over de volle breedte direct onder de tegels, zonder scheidingslijn, met ruimte eronder.
 - Partnerpagina Brooklyn Audio: "…precisieluidsprekers voor clubs: fasecoherent, met veel fysieke impact en een verre worp."
 - Over HEAR: partnerlijst weg; alleen nog een link "Netwerkpartners →" in de Lees ook-regel onderaan. Lijst staat op partners.html.
+- Homepage-strook onder de hero: "Playlists" (Coffee cuts) en "Advies" (→ communicatieadvies) in plaats van "Coffee cuts" en "Communicatieadvies"; kleinere tussenruimte, zodat het op mobiel op één regel past (behalve iPhone SE). EN: Playlists, Advice.
