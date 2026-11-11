@@ -41,7 +41,7 @@ def tegels(en=False):
               f'<span class="samen-knop">{"What we do for you" if en else "Wat we voor je doen"} <i aria-hidden="true">→</i></span></span></a>')
     return t
 def samenblok(kop="h2"):
-    return (f'<section class="samen" aria-labelledby="samen-kop"><{kop} class="strip-kop" id="samen-kop">Voor wie</{kop}>'
+    return (f'<section class="samen" aria-labelledby="samen-kop"><{kop} class="strip-kop" id="samen-kop">Voor wie is HEAR</{kop}>'
             f'<div class="samen-raster">{tegels()}</div></section>')
 
 # ---------- bouwstenen ----------
@@ -74,7 +74,7 @@ def split(beeld, alt, pos, label, kop, tekst):
             f'<div><h2 class="lp-strip">{label}: {kop.replace('Eén','één')}</h2><p>{tekst}</p>'
             f'<p class="lp-meer"><a href="partners.html">Zie hier onze partners</a> <span aria-hidden="true">→</span></p></div></section>')
 def stappen(items):
-    return (f'<section class="lp-band"><h2 class="lp-strip">Werkwijze</h2>'
+    return (f'<section class="lp-band"><h2 class="lp-strip">Zo werken we</h2>'
             f'<div class="lp-stappen"><h3 hidden>{items[0][0]}</h3><p hidden>{items[0][1]}</p>'
             f'<ol class="lp-stapjes">' + "".join(f'<li><b>{i+1}</b><div><b>{a}</b><br><span>{b}</span></div></li>' for i, (a, b) in enumerate(items)) + '</ol>'
             '<div class="lp-stapbal"></div></div></section>')
@@ -190,7 +190,7 @@ P["merken-en-bureaus.html"] = dict(titel="Merken, creatieven en bureaus", h1="Me
    ("Opbouw en programmering", "Licht ingesteld en geluid gecheckt voordat de eerste gast binnenkomt."),
    ("Op de avond zelf", "Eén aanspreekpunt, ook bij de omslag naar het feest.")]),
   contact("Werk je aan een lancering, collectie&shy;presentatie of in&#8209;store event?", "Landingspagina merken en bureaus", "Bijvoorbeeld: collectiepresentatie voor 150 gasten in een showroom, april"),
-  eerder("Voorbeeldcase", ["productpresentatie.html"], quote="De uitstraling was precies zoals we wilden: clean, licht industrieel maar ook warm.")])
+  eerder("Bekijk een voorbeeldcase", ["productpresentatie.html"], quote="De uitstraling was precies zoals we wilden: clean, licht industrieel maar ook warm.")])
 
 P["bijzondere-eventlocaties.html"] = dict(titel="Eigenaren en exploitanten van eventlocaties", h1="Eigenaren en exploitanten<br> van eventlocaties",
  beschrijving="Eén aanspreekpunt voor licht, geluid en muziek op je locatie: per klantvraag een passende opzet, en een vaste installatie voor wat je zelf doet.",
@@ -213,14 +213,14 @@ P["bijzondere-eventlocaties.html"] = dict(titel="Eigenaren en exploitanten van e
    ("Per klantvraag een voorstel", "Wij vertalen de vraag van je klant, jij houdt het overzicht."),
    ("Op de dag zelf", "Wij bouwen op en zijn het aanspreekpunt, voor jou en voor je klant."),
    ("Terugkijken", "Na het event kort evalueren, zodat het de volgende keer nog soepeler loopt.")]),
-  '''<section class="lp-band lp-donker"><div class="lp-inst"><div><h2 class="lp-strip">Vaste installatie</h2><p class="lp-motto">Zelf doen waar het kan, expertise als het nodig is</p>
+  '''<section class="lp-band lp-donker"><div class="lp-inst"><div><h2 class="lp-strip">Vaste installatie op maat</h2><p class="lp-motto">Zelf doen waar het kan, expertise als het nodig is</p>
 <div class="lp-tekst"><p>Sommige dingen kun je zelf doen, bijvoorbeeld met een eigen PA of basislicht. Wij geven je onafhankelijk advies bij de aanschaf. En we zorgen dat we daarop kunnen aansluiten als er meer nodig is.</p></div>'''
   + lijst([("Merkonafhankelijk advies", "Met de eigenschappen van de ruimte als vertrekpunt"), ("Begeleiding bij aanschaf en installatie", "Ook bij de ingebruikname"),
            ("AV as a service", "Een vast bedrag per maand in plaats van een grote investering")])
   + '''<p class="lp-meer">Meer over <a href="aankoopadvies.html">aankoopadvies</a> <span aria-hidden="true">→</span></p></div>
 <img src="img/systeem-breed.jpg" alt="Speakers van een vaste geluidsinstallatie" loading="lazy" style="object-position:30% 50%"></div></section>''',
   contact("Zoek je een (vaste) partner voor licht en geluid op je locatie?", "Landingspagina eventlocaties", "Bijvoorbeeld: eventlocatie voor 300 gasten, zo'n vier events per maand"),
-  eerder("Eerder werk op locatie", ["ade-dj.html", "systeemadvies.html"])])
+  eerder("Bekijk eerder werk op locatie", ["ade-dj.html", "systeemadvies.html"])])
 
 # ---------- sjabloon uit een bestaande pagina ----------
 sjabloon = (site / "over-hear.html").read_text()

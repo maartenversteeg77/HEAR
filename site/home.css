@@ -529,3 +529,6 @@ a.mail-ook,.quick.quick-breed p .mail-ook,.cta-brug .mail-ook{font:300 14px/1.3 
 @media (max-width:760px){.strook .strook-wat{gap:4px 14px}}
 /* Sectietitels als strip-header: klein, kapitaal, koraal (11 nov) */
 h2.strip-kop,.home h2.strip-kop,.samen h2.strip-kop,.home #producten-kop.strip-kop{font:500 13px/1.2 var(--tekst)!important;letter-spacing:.16em!important;text-transform:uppercase;color:var(--koraal)!important;margin:0 0 22px;text-wrap:initial}
+/* 11 nov: kop "Bekijk de cases" linkt naar het overzicht */
+h2.strip-kop a{color:inherit;text-decoration:none}
+h2.strip-kop a:hover,h2.strip-kop a:focus-visible{text-decoration:underline;text-underline-offset:4px}
