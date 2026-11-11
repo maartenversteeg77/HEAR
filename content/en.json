@@ -31,7 +31,8 @@
     "zakelijke-events.html",
     "dance-events.html",
     "merken-en-bureaus.html",
-    "bijzondere-eventlocaties.html"
+    "bijzondere-eventlocaties.html",
+    "partners.html"
   ],
   "globaal": [
     [
@@ -869,8 +870,8 @@
         "aria-label=\"Products and services\""
       ],
       [
-        "<a class=\"tekstlink\" href=\"over-hear.html\">Founder story</a><a class=\"tekstlink\" href=\"principes.html\">Waarden en uitgangspunten</a>",
-        "<a class=\"tekstlink\" href=\"over-hear.html\">Founder story</a><a class=\"tekstlink\" href=\"principes.html\">Values and principles</a>"
+        "<a class=\"tekstlink\" href=\"over-hear.html\">Founder story</a><a class=\"tekstlink\" href=\"partners.html\">Netwerkpartners</a><a class=\"tekstlink\" href=\"principes.html\">Waarden en uitgangspunten</a>",
+        "<a class=\"tekstlink\" href=\"over-hear.html\">Founder story</a><a class=\"tekstlink\" href=\"partners.html\">Network partners</a><a class=\"tekstlink\" href=\"principes.html\">Values and principles</a>"
       ],
       [
         "aria-label=\"Kies een categorie\"",
@@ -1351,6 +1352,10 @@
       [
         "<h2 class=\"structuur-kop\" id=\"partners\">Netwerkpartners</h2>",
         "<h2 class=\"structuur-kop\" id=\"partners\">Network partners</h2>"
+      ],
+      [
+        "<a href=\"partners.html\">Meer over onze netwerkpartners →</a>",
+        "<a href=\"partners.html\">More about our network partners →</a>"
       ]
     ],
     "ade-dj.html": [
@@ -2883,8 +2888,8 @@
         "\"The cultural roots of the house and disco underground are inclusion, social safety and free expression. We hold clients and partners to account when these are compromised. Large investors sometimes put the independence of the sector under pressure, and sometimes also fund actors who do not respect democracy and the rule of law. That is why we like to work with independent organisers, venues, labels, suppliers and artists. They are the beating heart of the industry and drive innovation.\""
       ],
       [
-        ">Lees ook: <a href=\"over-hear.html\">Founder story →</a></p>",
-        ">Read also: <a href=\"over-hear.html\">Founder story →</a></p>"
+        ">Lees ook: <a href=\"over-hear.html\">Founder story →</a> · <a href=\"partners.html\">Netwerkpartners →</a></p>",
+        ">Read also: <a href=\"over-hear.html\">Founder story →</a> · <a href=\"partners.html\">Network partners →</a></p>"
       ]
     ],
     "privacy.html": [
@@ -5075,6 +5080,112 @@
       [
         "Next: Eventmanagers\"",
         "Next: Event managers\""
+      ]
+    ],
+    "partners.html": [
+      [
+        ">Netwerkpartners<",
+        ">Network partners<"
+      ],
+      [
+        ">Zonder samenwerking bestaan we niet. Dit zijn de leveranciers, makers en vakgenoten met wie we werken.<",
+        ">Without collaboration, we wouldn&#x27;t exist. These are the suppliers, makers and fellow professionals we work with.<"
+      ],
+      [
+        ">Leveranciers<",
+        ">Suppliers<"
+      ],
+      [
+        ">Muziek en media<",
+        ">Music and media<"
+      ],
+      [
+        ">Met hen kunnen we opschalen voor grotere events.<",
+        ">With them we can scale up for larger events.<"
+      ],
+      [
+        "<p>Distributeur van professionele audio, video en licht uit ’s-Hertogenbosch, en importeur van onder meer RCF. <a",
+        "<p>Distributor of professional audio, video and lighting from ’s-Hertogenbosch, and importer of brands including RCF. <a"
+      ],
+      [
+        "<p>Fabrikant en groothandel in licht, geluid en video uit Kerkrade, het bedrijf achter onder meer Showtec. <a",
+        "<p>Manufacturer and wholesaler of lighting, sound and video from Kerkrade, the company behind brands including Showtec. <a"
+      ],
+      [
+        "<p>Distributeur van licht en riggingmateriaal uit Breda, voor verhuurbedrijven, theaters en lichtontwerpers. <a",
+        "<p>Distributor of lighting and rigging equipment from Breda, for rental companies, theatres and lighting designers. <a"
+      ],
+      [
+        "<p>De Benelux-tak van lichtmerk Chauvet: moving heads, washlights, effecten en besturing. <a",
+        "<p>The Benelux branch of lighting brand Chauvet: moving heads, washlights, effects and control. <a"
+      ],
+      [
+        "<p>Italiaanse fabrikant van professionele luidsprekers en elektronica, sinds 1949. <a",
+        "<p>Italian manufacturer of professional loudspeakers and electronics, since 1949. <a"
+      ],
+      [
+        "<p>Nederlands merk van precisieluidsprekers. <a",
+        "<p>Dutch brand of precision loudspeakers. <a"
+      ],
+      [
+        "<p>Bureau voor muziek en entertainment in de hospitality, met artiestenboekingen, audio en AV. <a",
+        "<p>Music and entertainment agency for hospitality, covering artist bookings, audio and AV. <a"
+      ],
+      [
+        "<p>Entertainmentbureau uit Amsterdam dat dj’s en live muzikanten boekt voor clubs, festivals en bedrijfsevents. <a",
+        "<p>Amsterdam entertainment agency booking DJs and live musicians for clubs, festivals and corporate events. <a"
+      ],
+      [
+        "<p>Online dance-radiostation dat 24 uur per dag uitzendt. <a",
+        "<p>Online dance radio station broadcasting 24 hours a day. <a"
+      ],
+      [
+        "<p>Event- en portretfotograaf, van corporate events tot festivals. <a",
+        "<p>Event and portrait photographer, from corporate events to festivals. <a"
+      ],
+      [
+        "<p>Full-service eventbureau uit Vianen met eigen licht, geluid, video en entertainment. <a",
+        "<p>Full-service event agency from Vianen with its own lighting, sound, video and entertainment. <a"
+      ],
+      [
+        "<p>Verhuur en verkoop van licht, beeld en geluid uit Stadskanaal, voor festivals, concerten en zakelijke events. <a",
+        "<p>Rental and sales of lighting, video and sound from Stadskanaal, for festivals, concerts and corporate events. <a"
+      ],
+      [
+        "<p>Audiovisuele dienstverlener uit Soest voor licht, geluid, video en podiumtechniek op beurzen en events. <a",
+        "<p>Audiovisual service provider from Soest for lighting, sound, video and stage technology at trade fairs and events. <a"
+      ],
+      [
+        "<p>Geluid, licht en video uit Hilversum voor festivals, beurzen en feesten. <a",
+        "<p>Sound, lighting and video from Hilversum for festivals, trade fairs and parties. <a"
+      ],
+      [
+        ">En diverse freelancers.<",
+        ">And various freelancers.<"
+      ],
+      [
+        ">Naar de website →<",
+        ">Visit website →<"
+      ],
+      [
+        "<title>Netwerkpartners · HEAR</title>",
+        "<title>Network partners · HEAR</title>"
+      ],
+      [
+        "name=\"description\" content=\"Zonder samenwerking bestaan we niet. Dit zijn de leveranciers, makers en vakgenoten met wie we werken.\"",
+        "name=\"description\" content=\"Without collaboration, we wouldn&#x27;t exist. These are the suppliers, makers and fellow professionals we work with.\""
+      ],
+      [
+        ">Waarden en uitgangspunten →<",
+        ">Values and principles →<"
+      ],
+      [
+        "<p>Licht, geluid en muziek voor events · Amsterdam</p>",
+        "<p>Light, sound and music for events · Amsterdam</p>"
+      ],
+      [
+        "<span class=\"sectie\">Over HEAR</span>",
+        "<span class=\"sectie\">About HEAR</span>"
       ]
     ]
   },

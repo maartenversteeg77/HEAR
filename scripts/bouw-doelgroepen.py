@@ -72,7 +72,7 @@ def paar(kolommen, kop=None):
 def split(beeld, alt, pos, label, kop, tekst):
     return (f'<section class="lp-split"><img src="{beeld}" alt="{e(alt)}" loading="lazy" style="object-position:{pos}">'
             f'<div><p class="lp-label">{label}</p><h2>{kop}</h2><p>{tekst}</p>'
-            f'<p class="lp-meer"><a href="over-hear.html#partners">Zie hier onze partners</a> <span aria-hidden="true">→</span></p></div></section>')
+            f'<p class="lp-meer"><a href="partners.html">Zie hier onze partners</a> <span aria-hidden="true">→</span></p></div></section>')
 def stappen(items):
     return (f'<section class="lp-band"><p class="lp-label">Werkwijze</p><h2>Zo werken we</h2>'
             f'<div class="lp-stappen"><h3 hidden>{items[0][0]}</h3><p hidden>{items[0][1]}</p>'

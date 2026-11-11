@@ -1,0 +1,63 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Zonder samenwerking bestaan we niet. Dit zijn de leveranciers, makers en vakgenoten met wie we werken."><title>Netwerkpartners · HEAR</title><!--og--><meta property="og:title" content="Netwerkpartners · HEAR"><meta property="og:description" content="Zonder samenwerking bestaan we niet. Dit zijn de leveranciers, makers en vakgenoten met wie we werken."><meta property="og:url" content="https://hear.nl/partners"><meta property="og:site_name" content="HEAR"><meta property="og:type" content="website"><meta property="og:locale" content="nl_NL"><meta property="og:image" content="https://hear.nl/img/og/partners.jpg?v=8ae9a050"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://hear.nl/img/og/partners.jpg?v=8ae9a050"><link rel="canonical" href="https://hear.nl/partners"><link rel="alternate" hreflang="nl" href="https://hear.nl/partners"><link rel="alternate" hreflang="en" href="https://hear.nl/en/partners"><link rel="alternate" hreflang="x-default" href="https://hear.nl/partners"><!--/og--><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="styles.css"></head><body class="pagina">
+<header class="top">
+  <a class="merk" href="index.html" aria-label="HEAR, naar de homepage"><img src="img/logo-white.png" alt="HEAR"></a>
+  <nav class="topnav" aria-label="Hoofdnavigatie">
+    <a href="cases.html">Cases</a>
+    <a href="doelgroepen.html">Met wie we werken</a>
+    <a href="diensten.html">Producten</a>
+    <a href="nieuws/">Nieuws</a>
+    <a href="over-hear.html">Over HEAR</a>
+  </nav>
+  <a class="plan" href="aanvraag.html">Plan een gesprek</a>
+  <a class="taal" href="/en/partners.html" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+  <button class="menuknop" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu openen">
+    <span></span><span></span>
+  </button>
+</header>
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Hoofdmenu">
+      <a class="menu-plan" href="aanvraag.html"><span>Plan een gesprek</span><small>Bel, Teams of Meet: vertel over je event</small></a>
+      <a href="cases.html"><span>Voorbeeldcases</span><small>Events die tot de verbeelding spreken</small></a>
+      <a href="doelgroepen.html"><span>Met wie we werken</span><small>Eventmanagers, dance-events, merken en eventlocaties</small></a>
+      <a href="diensten.html"><span>Producten en diensten</span><small>Licht, geluid, dj-gear en advies</small></a>
+      <a href="nieuws/"><span>Nieuws</span><small>Nieuwe producten, events en berichten</small></a>
+      <a href="over-hear.html"><span>Over HEAR</span><small>Founder story en waarden</small></a>
+  </nav>
+</div>
+<script>
+  (function(){
+    var k=document.querySelector('.menuknop'), m=document.getElementById('menu');
+    function zet(open){ k.setAttribute('aria-expanded',open); k.setAttribute('aria-label',open?'Menu sluiten':'Menu openen'); m.hidden=!open; document.body.classList.toggle('menu-open',open); }
+    k.addEventListener('click',function(){ zet(k.getAttribute('aria-expanded')!=='true'); });
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape') zet(false); });
+    // Vegen over de zwarte kop (mobiel): links = volgende, rechts = vorige pagina op dit niveau
+    var x0=null, y0=null, hk=null;  // gedelegeerd: de kop staat verderop in de pagina dan dit script
+    document.addEventListener('touchstart',function(e){ hk=e.target.closest&&e.target.closest('.casehead'); if(!hk) return; x0=e.touches[0].clientX; y0=e.touches[0].clientY; },{passive:true});
+    document.addEventListener('touchend',function(e){
+      if(x0===null||!hk) return; var dx=e.changedTouches[0].clientX-x0, dy=e.changedTouches[0].clientY-y0; x0=null;
+      if(Math.abs(dx)<60||Math.abs(dy)>50) return;
+      var a=hk.querySelector(dx<0?'.zijnav .pijl:last-child':'.zijnav .pijl:first-child'); if(a&&a.href) location.href=a.href;
+    },{passive:true});
+  })();
+</script>
+<main class="wrap">
+<section class="casehead"><a class="crumb" href="over-hear.html"><span class="sectie">Over HEAR</span></a><h1>Netwerkpartners</h1></section>
+<article class="artikel"><p class="lead">Zonder samenwerking bestaan we niet. Dit zijn de leveranciers, makers en vakgenoten met wie we werken.</p><h2 class="kopje">Leveranciers</h2><div class="partner-lijst"><details class="partner"><summary>Output Professional</summary><p>Distributeur van professionele audio, video en licht uit ’s-Hertogenbosch, en importeur van onder meer RCF. <a href="https://output.nl" target="_blank" rel="noopener">Naar de website →</a></p></details><details class="partner"><summary>Highlite</summary><p>Fabrikant en groothandel in licht, geluid en video uit Kerkrade, het bedrijf achter onder meer Showtec. <a href="https://www.highlite.com" target="_blank" rel="noopener">Naar de website →</a></p></details><details class="partner"><summary>Moonbears</summary><p>Distributeur van licht en riggingmateriaal uit Breda, voor verhuurbedrijven, theaters en lichtontwerpers. <a href="https://moonbears.eu" target="_blank" rel="noopener">Naar de website →</a></p></details><details class="partner"><summary>Chauvet Benelux</summary><p>De Benelux-tak van lichtmerk Chauvet: moving heads, washlights, effecten en besturing. <a href="https://chauvetprofessional.com" target="_blank" rel="noopener">Naar de website →</a></p></details><details class="partner"><summary>RCF</summary><p>Italiaanse fabrikant van professionele luidsprekers en elektronica, sinds 1949. <a href="https://www.rcf.it" target="_blank" rel="noopener">Naar de website →</a></p></details><details class="partner"><summary>Brooklyn Audio</summary><p>Nederlands merk van precisieluidsprekers. <a href="https://brooklyn-audio.com" target="_blank" rel="noopener">Naar de website →</a></p></details></div><h2 class="kopje">Muziek en media</h2><div class="partner-lijst"><details class="partner"><summary>Architects in Music</summary><p>Bureau voor muziek en entertainment in de hospitality, met artiestenboekingen, audio en AV. <a href="https://architectsinmusic.com" target="_blank" rel="noopener">Naar de website →</a></p></details><details class="partner"><summary>IAMM Entertainment</summary><p>Entertainmentbureau uit Amsterdam dat dj’s en live muzikanten boekt voor clubs, festivals en bedrijfsevents. <a href="https://iammentertainment.com" target="_blank" rel="noopener">Naar de website →</a></p></details><details class="partner"><summary>Deep Radio</summary><p>Online dance-radiostation dat 24 uur per dag uitzendt. <a href="https://deep.radio" target="_blank" rel="noopener">Naar de website →</a></p></details><details class="partner"><summary>Ronald Pronk Photography</summary><p>Event- en portretfotograaf, van corporate events tot festivals. <a href="https://ronaldpronk.com" target="_blank" rel="noopener">Naar de website →</a></p></details></div><h2 class="kopje">Partners</h2><p class="partner-sub">Met hen kunnen we opschalen voor grotere events.</p><div class="partner-lijst"><details class="partner"><summary>Base Events</summary><p>Full-service eventbureau uit Vianen met eigen licht, geluid, video en entertainment. <a href="https://base-events.nl" target="_blank" rel="noopener">Naar de website →</a></p></details><details class="partner"><summary>Biezema AV</summary><p>Verhuur en verkoop van licht, beeld en geluid uit Stadskanaal, voor festivals, concerten en zakelijke events. <a href="https://www.biezema-geluidsverhuur.nl" target="_blank" rel="noopener">Naar de website →</a></p></details><details class="partner"><summary>Luxonos</summary><p>Audiovisuele dienstverlener uit Soest voor licht, geluid, video en podiumtechniek op beurzen en events. <a href="https://luxonos.nl" target="_blank" rel="noopener">Naar de website →</a></p></details><details class="partner"><summary>Brandon AV</summary><p>Geluid, licht en video uit Hilversum voor festivals, beurzen en feesten. <a href="https://brandon-av.nl" target="_blank" rel="noopener">Naar de website →</a></p></details></div><p class="partner-extra">En diverse freelancers.</p></article>
+<nav class="verwijzingen" aria-label="Verder"><a href="over-hear.html">Founder story →</a><a href="principes.html">Waarden en uitgangspunten →</a></nav>
+</main>
+<footer class="voet">
+  <div class="voet-kolommen">
+    <div class="voet-merk">
+      <img src="img/logo-white.png" alt="HEAR">
+      <p>Licht, geluid en muziek voor events · Amsterdam</p>
+      <p class="voet-contact"><a href="mailto:maarten@hear.nl">maarten@hear.nl</a><span aria-hidden="true"> · </span><a href="tel:+31624560220">+31 6 24560220</a></p>
+      <p class="voet-klein"><span class="geen-breuk">HEAR is een handelsnaam van Maarten Versteeg communicatie advies B.V.</span><br>KvK 42181393<span class="voet-sep"> · </span><span class="geen-breuk-adres">Van Kinsbergenstraat 54, 1057 PT Amsterdam</span><br><a href="privacy.html">Privacyverklaring</a></p>
+    </div>
+    <nav aria-label="Werk"><p class="label">Werk</p><a href="cases.html">Cases</a><a href="nieuws/">Nieuws</a><a href="over-hear.html">Over HEAR</a></nav>
+    <nav aria-label="Met wie we werken"><p class="label">Met wie we werken</p><a href="zakelijke-events.html">Eventmanagers</a><a href="merken-en-bureaus.html">Merken en bureaus</a><a href="dance-events.html">Dance-events</a><a href="bijzondere-eventlocaties.html">Eventlocaties</a></nav>
+    <nav aria-label="Producten en diensten"><p class="label">Producten en diensten</p><a href="booth-dj-gear.html">Dj-gear</a><a href="high-end-audio.html">Geluid</a><a href="atmospheric-lighting.html">Sfeerlicht</a><a href="dancefloor-lighting.html">Dansvloerlicht</a><a href="vintage-lighting.html">90's vintage licht</a><a href="communicatieadvies.html">Communicatieadvies</a><a href="artiesten.html">Dj's en artiesten</a><a href="custom-dj-mix.html">Coffee cuts en custom dj-mixes</a>
+          <a href="aankoopadvies.html">Aankoopadvies licht en geluid</a></nav>
+    <nav aria-label="Waarden"><p class="label">Waarden</p><a href="principes.html#samen">Samen</a><a href="principes.html#open">Open</a><a href="principes.html#vakmanschap">Vakmanschap</a><a href="principes.html#warmte">Warme sound</a></nav>
+  </div>
+</footer>
+</body></html>
