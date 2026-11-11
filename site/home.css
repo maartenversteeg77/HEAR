@@ -532,3 +532,5 @@ h2.strip-kop,.home h2.strip-kop,.samen h2.strip-kop,.home #producten-kop.strip-k
 /* 11 nov: kop "Bekijk de cases" linkt naar het overzicht */
 h2.strip-kop a{color:inherit;text-decoration:none}
 h2.strip-kop a:hover,h2.strip-kop a:focus-visible{text-decoration:underline;text-underline-offset:4px}
+/* 11 nov: nieuwsbeelden op mobiel liggend (4/5 sneed liggende foto's te ver af) */
+@media (max-width:760px){.nieuws-home .werk-kaart img,.nieuws-home .werk-alle{aspect-ratio:3/2}}
