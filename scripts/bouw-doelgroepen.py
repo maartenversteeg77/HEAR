@@ -106,9 +106,9 @@ P = {}
 P["zakelijke-events.html"] = dict(titel="Eventmanagers en communicatieprofessionals", h1="Eventmanagers en<br> communicatie&shy;professionals",
  beschrijving="Licht, geluid en muziek voor netwerkdagen, seminars en jubilea. Eén aanspreekpunt, met 25 jaar ervaring in corporate communicatie.",
  delen=[
-  intro("Een netwerkdag, seminar of jubileum is het visitekaartje van je organisatie. En het moment waarop je je relaties fysiek ontmoet.",
-        ["Als eventmanager zorg je dat het programma soepel loopt: het dagdeel met sprekers, de omslag naar de borrel en het informele deel daarna.",
-         "Wij zorgen dat de audiovisuele ondersteuning het verhaal volgt. Sprekers zijn goed verstaanbaar, en de cocktail hour die erop volgt krijgt licht en muziek die bij het moment passen. Alles afgestemd op de ruimte, ook als dat een kale industriële hal is die we ombouwen tot eventlocatie."]),
+  intro("Een relatie-event, jubileum, personeelsfeest of (nieuwjaars)borrel is het visitekaartje van je organisatie. En het moment waarop je collega's en relaties fysiek ontmoet.",
+        ["Als eventmanager zorg je dat het programma soepel loopt. Soms is dat een dagdeel met sprekers en daarna een borrel, soms is het de hele avond feest, voor personeel, relaties of allebei.",
+         "Wij zorgen dat de audiovisuele ondersteuning het verhaal volgt. Sprekers zijn goed verstaanbaar, en de borrel of het feest krijgt licht en muziek die bij het moment passen. Alles afgestemd op de ruimte, ook als dat een kale industriële hal is die we ombouwen tot eventlocatie."]),
   aanbod("Wat we je bieden", [
    kaart("Concept en branding", [("Meedenken over concept en sfeer", "Met 25 jaar ervaring in corporate communicatie"),
      ("Je huisstijl in licht", "Sfeerlicht in je huisstijlkleuren en je logo geprojecteerd op wand of vloer"),
