@@ -261,8 +261,8 @@ for i, d in enumerate(DOEL):
     print("ok", d["bestand"])
 
 # ---------- verborgen campagnepagina's (niet in navigatie, noindex) ----------
-CAMPAGNE = {"nieuwjaarsborrel.html": dict(titel="Nieuwjaarsborrel", h1="Nieuwjaarsborrel",
- beschrijving="Licht, geluid en muziek voor je nieuwjaarsborrel. Voor collega's, relaties of allebei.",
+CAMPAGNE = {"nieuwjaarsborrel.html": dict(titel="Heb jij al een nieuwjaarsborrel gepland?", h1="Heb jij al een nieuwjaarsborrel gepland?<br>Wij helpen je graag",
+ beschrijving="Wij helpen je graag met licht, geluid en muziek voor je nieuwjaarsborrel. Voor collega's, relaties of allebei.",
  beeld="img/nieuwjaarsborrel.jpg", pos="50% 45%", alt="Gasten op een borrel in een verlichte industriële hal, met live muziek",
  delen=[
   intro("De nieuwjaarsborrel is het eerste moment van het jaar waarop iedereen elkaar weer ziet. Collega's, relaties, of allebei.",
@@ -273,7 +273,7 @@ CAMPAGNE = {"nieuwjaarsborrel.html": dict(titel="Nieuwjaarsborrel", h1="Nieuwjaa
      ("Sfeerlicht, truss en decoraties, eventueel met dansvloerlicht", None),
      ("Dj’s, eventueel aangevuld met een live muzikant", None),
      ("Jouw aanvullende wensen, bijvoorbeeld videoschermen, logoprojecties, fotografie of een aftermovie", None)])]),
-  contact("Organiseer je een nieuwjaarsborrel?", "Landingspagina nieuwjaarsborrel", "Bijvoorbeeld: nieuwjaarsborrel voor 150 collega's en relaties, vrijdag 15 januari"),
+  contact("Check of jouw datum nog vrij is", "Landingspagina nieuwjaarsborrel", "Bijvoorbeeld: nieuwjaarsborrel voor 150 collega's en relaties, vrijdag 15 januari"),
   eerder("Deze opdrachtgevers gingen je voor", ["gemeentelijk-netwerkevent.html", "jubileum-ondernemersnetwerk.html"])])}
 for bestand, p in CAMPAGNE.items():
     k = kop_html.replace('<link rel="stylesheet" href="styles.css">', '<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="doelgroep.css">')
