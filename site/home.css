@@ -534,3 +534,9 @@ h2.strip-kop a{color:inherit;text-decoration:none}
 h2.strip-kop a:hover,h2.strip-kop a:focus-visible{text-decoration:underline;text-underline-offset:4px}
 /* 11 nov: nieuwsbeelden op mobiel liggend (4/5 sneed liggende foto's te ver af) */
 @media (max-width:760px){.nieuws-home .werk-kaart img,.nieuws-home .werk-alle{aspect-ratio:3/2}}
+/* 12 nov: subtiele campagnestrook naar /nieuwjaarsborrel (alleen NL) */
+.nj-strip{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;background:var(--zwart);color:var(--wit);text-decoration:none;padding:14px var(--rand);border-top:1px solid rgba(246,245,241,.18);font:400 15px/1.4 var(--tekst)}
+.nj-strip b{font-weight:500}
+.nj-strip small{font-size:13px;color:#a9a8a3}
+.nj-strip i{font-style:normal;color:var(--koraal);margin-left:auto}
+.nj-strip:hover b,.nj-strip:focus-visible b{color:var(--koraal)}

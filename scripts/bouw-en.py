@@ -75,6 +75,7 @@ def vertaal(s, paren, naam, verplicht=True):
 
 for naam in en["vertaald"]:
     s = (site / naam).read_text()
+    s = re.sub(r'<a class="nj-strip".*?</a>\s*', '', s, flags=re.S)  # campagnestrook alleen in het Nederlands
     s = vertaal(s, en["globaal"], naam, verplicht=False)
     s = vertaal(s, en["paginas"].get(naam, []), naam)
     if naam in ("cases.html", "index.html"):

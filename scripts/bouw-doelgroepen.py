@@ -263,17 +263,16 @@ for i, d in enumerate(DOEL):
 # ---------- verborgen campagnepagina's (niet in navigatie, noindex) ----------
 CAMPAGNE = {"nieuwjaarsborrel.html": dict(titel="Nieuwjaarsborrel", h1="Nieuwjaarsborrel",
  beschrijving="Licht, geluid en muziek voor je nieuwjaarsborrel. Voor collega's, relaties of allebei.",
- beeld="img/case-prive.jpg", pos="50% 40%", alt="Gasten op een feestavond onder rode kerstballen",
+ beeld="img/nieuwjaarsborrel.jpg", pos="50% 45%", alt="Gasten op een borrel in een verlichte industriële hal, met live muziek",
  delen=[
   intro("De nieuwjaarsborrel is het eerste moment van het jaar waarop iedereen elkaar weer ziet. Collega's, relaties, of allebei.",
         ["Soms begint de avond met een toespraak, soms is het de hele avond feest. Wij zorgen voor licht, geluid en muziek die daarbij passen.",
          "Alles afgestemd op de ruimte, ook als dat je eigen kantoor is of een (industriële) ruimte om te toveren tot eventlocatie."]),
   aanbod("Wat we je bieden", [
-   kaart("Toespraak en toost", [("De mogelijkheid om versterkt een speech te geven", None), ("Opkomstmuziek", None)]),
-   kaart("Sfeer", [("Sfeerlicht in je huisstijlkleuren", None), ("Je logo geprojecteerd op wand of vloer", None)],
-     meer=[("atmosfeerlicht", "atmospheric-lighting.html")]),
-   kaart("Muziek", [("Een dj die het event van begin tot eind muzikaal omlijst", None),
-     ("Een live muzikant bij de dj-set", "Saxofoon, percussie of vocals")], meer=[("dj's en artiesten", "artiesten.html")], wens=True)]),
+   kaart("Licht, geluid en muziek", [("De mogelijkheid om versterkt een speech te geven", None), ("Opkomstmuziek", None),
+     ("Sfeerlicht in je huisstijlkleuren", None), ("Je logo geprojecteerd op wand of vloer", None),
+     ("Een dj die het event van begin tot eind muzikaal omlijst", None), ("Een live muzikant bij de dj-set", "Saxofoon, percussie of vocals"),
+     ("En jouw speciale wensen", None)])]),
   contact("Organiseer je een nieuwjaarsborrel?", "Landingspagina nieuwjaarsborrel", "Bijvoorbeeld: nieuwjaarsborrel voor 150 collega's en relaties, vrijdag 15 januari"),
   eerder("Deze opdrachtgevers gingen je voor", ["gemeentelijk-netwerkevent.html", "jubileum-ondernemersnetwerk.html"])])}
 for bestand, p in CAMPAGNE.items():
