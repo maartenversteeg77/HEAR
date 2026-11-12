@@ -300,8 +300,9 @@ for bestand, p in CAMPAGNE.items():
     k = re.sub(r'<meta name="description" content="[^"]*">', f'<meta name="description" content="{e(p["beschrijving"])}"><meta name="robots" content="noindex">', k)
     k = re.sub(r'<a class="taal" href="[^"]*"', '<a class="taal" href="/en/index.html"', k)
     main = (f'<main class="wrap lp"><section class="casehead"><h1 class="kernzin">{p["h1"]}</h1>'
-            f'<div class="actie-cta"><a class="wa" href="#contact"><span>Check nu of je datum nog vrij is</span><i aria-hidden="true">→</i></a><small>Nog enkele data in januari vrij</small></div></section>'
-            f'<div class="lp-held"><img src="{p["beeld"]}" alt="{e(p["alt"])}" style="object-position:{p["pos"]}"></div>'
+            f'</section><div class="lp-held"><div class="actie-beeld"><img src="{p["beeld"]}" alt="{e(p["alt"])}" style="object-position:{p["pos"]}">'
+            f'<span class="actie-label">Nog enkele data in januari vrij</span>'
+            f'<a class="wa actie-knop" href="#contact"><span>Check nu of je datum nog vrij is</span><i aria-hidden="true">→</i></a></div></div>'
             + "".join(p["delen"]) + '</main>')
     voet_actie = '<footer class="actie-voet"><p>HEAR is een handelsnaam van Maarten Versteeg communicatie advies B.V. · KvK 42181393 · <a href="privacy.html">Privacyverklaring</a></p></footer></body></html>'
     (site / bestand).write_text(k + main + JS + voet_actie)

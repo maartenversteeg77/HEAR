@@ -116,15 +116,18 @@
 .lp-inst .lp-motto{margin:0 0 18px}
 .samen~.nj-strip+.werk{padding-top:clamp(56px,7vw,104px)} /* 12 nov: ruimte onder campagnestrook */
 /* 12 nov: actiepagina's (nieuwjaarsborrel): knop onder de titel, geen voet met links */
-.actie-cta{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin-top:clamp(22px,3vw,34px)}
-.actie-cta small{font:400 14px/1.4 var(--tekst);color:#cfcec9}
 .actie-voet{background:var(--zwart);color:#a9a8a3;padding:22px var(--rand);font:400 12px/1.5 var(--tekst)}
 .actie-voet p{margin:0}.actie-voet a{color:#cfcec9}
 .lp-prijs p{margin:0 0 6px;font:400 17px/1.5 var(--tekst);max-width:60ch}
-.lp-prijs .lp-prijs-hoofd{font:300 clamp(24px,2.6vw,36px)/1.2 var(--kop);margin:0 0 14px}
+.lp-prijs .lp-prijs-hoofd{font-weight:600;margin:0 0 6px}
 .lp-prijs .lp-prijs-klein{font-size:14px;color:#6b6b68;margin-top:12px}
 /* 12 nov: iOS geeft een leeg datumveld een afwijkende hoogte; gelijk aan de andere velden */
 .lp-form input[type=date]{-webkit-appearance:none;appearance:none;display:block;width:100%;box-sizing:border-box;height:48px;min-height:48px;line-height:20px;text-align:left;background:var(--wit,#F6F5F1);color:var(--zwart,#191A19)}
 .lp-form input[type=date]::-webkit-date-and-time-value{text-align:left;min-height:20px}
 /* prijsblok als witte kaart, gelijk aan het aanbod */
 .lp-prijs .lp-prijs-kaart{background:#fff;padding:clamp(22px,3vw,36px);max-width:none}
+/* 12 nov: actiepagina: knop en label óp het beeld, zodat de titel met witregel vrij blijft staan */
+.actie-beeld{position:relative}
+.actie-label{position:absolute;top:0;left:0;background:#7AC3C9;color:#191A19;font:500 12px/1 var(--tekst);letter-spacing:.14em;text-transform:uppercase;padding:11px 14px}
+.actie-knop{position:absolute;left:clamp(14px,2.4vw,32px);bottom:clamp(14px,2.4vw,32px);max-width:calc(100% - 28px);box-shadow:0 6px 24px rgba(0,0,0,.35)}
+@media(min-width:900px){.actie-knop{bottom:auto;left:auto;top:clamp(18px,2vw,28px);right:clamp(18px,2vw,28px)}}
