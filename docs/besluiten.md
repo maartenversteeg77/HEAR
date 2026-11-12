@@ -571,3 +571,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - 11 nov: nieuwstegels op mobiel liggend 3/2 i.p.v. 4/5 (liggende foto's werden te ver ingezoomd); Deep Radio-beeld hoger uitgelijnd.
 - 11 nov: favicon en apple-touch-icon: de driehoekige A uit het logo, gebroken wit op zwart (#F6F5F1 op #191A19), lijn iets dikker op 16/32 px voor leesbaarheid. Links via scripts/bouw-icoon.py (alle pagina's, ook nieuws); bouwvolgorde: … nieuws en og icoon sitemap.
 - 11 nov: eigen 404-pagina (NL /404.html, EN /en/404.html) via scripts/bouw-404.py; absolute links, noindex, niet in sitemap. Bouwvolgorde: … nieuws en og 404 icoon sitemap.
+- 12 nov: verborgen campagnepagina hear.nl/nieuwjaarsborrel (noindex, niet in navigatie of sitemap, alleen NL) via CAMPAGNE in bouw-doelgroepen.py; formulierbron 'Landingspagina nieuwjaarsborrel'. Voorstel aangepaste intro zakelijke-events nog niet doorgevoerd.

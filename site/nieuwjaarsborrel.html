@@ -1,0 +1,72 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><!--icoon--><link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><!--/icoon--><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Licht, geluid en muziek voor je nieuwjaarsborrel. Voor collega&#x27;s, relaties of allebei."><meta name="robots" content="noindex"><title>Nieuwjaarsborrel · HEAR</title><!--og--><meta property="og:title" content="Nieuwjaarsborrel · HEAR"><meta property="og:description" content="Licht, geluid en muziek voor je nieuwjaarsborrel. Voor collega&#x27;s, relaties of allebei."><meta property="og:url" content="https://hear.nl/nieuwjaarsborrel"><meta property="og:site_name" content="HEAR"><meta property="og:type" content="website"><meta property="og:locale" content="nl_NL"><meta property="og:image" content="https://hear.nl/img/og/nieuwjaarsborrel.jpg?v=768fa8a8"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://hear.nl/img/og/nieuwjaarsborrel.jpg?v=768fa8a8"><!--/og--><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="doelgroep.css"></head><body class="pagina"><header class="top">
+  <a class="merk" href="index.html" aria-label="HEAR, naar de homepage"><img src="img/logo-white.png" alt="HEAR"></a>
+  <nav class="topnav" aria-label="Hoofdnavigatie">
+    <a href="cases.html">Cases</a>
+    <a href="doelgroepen.html">Met wie we werken</a>
+    <a href="diensten.html">Producten</a>
+    <a href="nieuws/">Nieuws</a>
+    <a href="over-hear.html" >Over HEAR</a>
+  </nav>
+  <a class="plan" href="aanvraag.html">Plan een gesprek</a>
+  <a class="taal" href="/en/index.html" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+  <button class="menuknop" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu openen">
+    <span></span><span></span>
+  </button>
+</header>
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Hoofdmenu">
+      <a class="menu-plan" href="aanvraag.html"><span>Plan een gesprek</span><small>Bel, Teams of Meet: vertel over je event</small></a>
+      <a href="cases.html"><span>Voorbeeldcases</span><small>Events die tot de verbeelding spreken</small></a>
+      <a href="doelgroepen.html"><span>Met wie we werken</span><small>Eventmanagers, dance-events, merken en eventlocaties</small></a>
+      <a href="diensten.html"><span>Producten en diensten</span><small>Licht, geluid, dj-gear en advies</small></a>
+      <a href="nieuws/"><span>Nieuws</span><small>Nieuwe producten, events en berichten</small></a>
+      <a href="over-hear.html"><span>Over HEAR</span><small>Founder story en waarden</small></a>
+  </nav>
+</div>
+<script>
+  (function(){
+    var k=document.querySelector('.menuknop'), m=document.getElementById('menu');
+    function zet(open){ k.setAttribute('aria-expanded',open); k.setAttribute('aria-label',open?'Menu sluiten':'Menu openen'); m.hidden=!open; document.body.classList.toggle('menu-open',open); }
+    k.addEventListener('click',function(){ zet(k.getAttribute('aria-expanded')!=='true'); });
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape') zet(false); });
+    // Vegen over de zwarte kop (mobiel): links = volgende, rechts = vorige pagina op dit niveau
+    var x0=null, y0=null, hk=null;  // gedelegeerd: de kop staat verderop in de pagina dan dit script
+    document.addEventListener('touchstart',function(e){ hk=e.target.closest&&e.target.closest('.casehead'); if(!hk) return; x0=e.touches[0].clientX; y0=e.touches[0].clientY; },{passive:true});
+    document.addEventListener('touchend',function(e){
+      if(x0===null||!hk) return; var dx=e.changedTouches[0].clientX-x0, dy=e.changedTouches[0].clientY-y0; x0=null;
+      if(Math.abs(dx)<60||Math.abs(dy)>50) return;
+      var a=hk.querySelector(dx<0?'.zijnav .pijl:last-child':'.zijnav .pijl:first-child'); if(a&&a.href) location.href=a.href;
+    },{passive:true});
+  })();
+</script><main class="wrap lp"><section class="casehead"><a class="crumb" href="zakelijke-events.html"><span class="sectie">Met wie we werken</span><span class="scheiding" aria-hidden="true">|</span><span class="huidig">Eventmanagers</span></a><h1 class="kernzin">Nieuwjaarsborrel</h1></section><div class="lp-held"><img src="img/case-prive.jpg" alt="Gasten op een feestavond onder rode kerstballen" style="object-position:50% 40%"></div><section class="lp-band"><div class="lp-twee"><p class="lp-lead">De nieuwjaarsborrel is het eerste moment van het jaar waarop iedereen elkaar weer ziet. Collega's, relaties, of allebei.</p><div class="lp-tekst"><p>Soms begint de avond met een toespraak, soms is het de hele avond feest. Wij zorgen voor licht, geluid en muziek die daarbij passen.</p><p>Alles afgestemd op de ruimte, ook als dat een kale industriële hal is die we ombouwen tot eventlocatie.</p></div></div></section><section class="lp-band"><h2 class="lp-strip">Wat we je bieden</h2><div class="lp-aanbod" style="--kol:3"><div class="lp-kaart"><h3>Toespraak en toost</h3><ul class="lp-lijst"><li>Een microfoon die goed klinkt<small>Ook achterin de zaal verstaanbaar</small></li><li>Opkomstmuziek</li></ul></div><div class="lp-kaart"><h3>Sfeer</h3><ul class="lp-lijst"><li>Sfeerlicht in je huisstijlkleuren</li><li>Je logo geprojecteerd op wand of vloer</li></ul><p class="lp-meer">Meer over <a href="atmospheric-lighting.html">atmosfeerlicht</a> <span aria-hidden="true">→</span></p></div><div class="lp-kaart"><h3>Muziek</h3><ul class="lp-lijst"><li>Een playlist of dj die meegaat met de avond<small>Rustig bij binnenkomst, dansbaar als het zover is</small></li><li>Een live muzikant bij de dj-set<small>Saxofoon, percussie of vocals</small></li></ul><p class="lp-meer">Meer over <a href="artiesten.html">dj's en artiesten</a> <span aria-hidden="true">→</span></p><p class="lp-wens">Speciale wensen? Laat het weten.</p></div></div></section><section class="lp-band lp-contact" id="contact"><div class="lp-twee"><div><h2>Organiseer je een nieuwjaarsborrel?</h2><p>Laat je gegevens achter, dan neem ik contact met je op.</p>
+<div class="lp-wie"><img src="img/maarten-adviseur.jpg" alt="Maarten Versteeg" loading="lazy" style="object-position:50% 20%"><div><b>Maarten Versteeg</b><span>Oprichter HEAR</span></div></div></div>
+<form class="lp-form" method="post" action="/api/aanvraag" data-dank="Dank je. Ik neem contact met je op, meestal dezelfde werkdag." data-fout="Versturen lukte niet. Mail naar maarten@hear.nl of bel +31 6 24560220.">
+<input type="hidden" name="bron" value="Landingspagina nieuwjaarsborrel"><input type="text" name="website" class="lp-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<label>Naam<input name="naam" autocomplete="name" required></label>
+<label>E-mail<input name="email" type="email" autocomplete="email" required></label>
+<label>Telefoon<input name="telefoon" type="tel" autocomplete="tel"></label>
+<label>Waar gaat het over<textarea name="bericht" placeholder="Bijvoorbeeld: nieuwjaarsborrel voor 150 collega&#x27;s en relaties, vrijdag 15 januari"></textarea></label>
+<button type="submit">Verstuur</button><p class="lp-privacy">Ik reageer meestal dezelfde werkdag. We gebruiken je gegevens alleen om je te antwoorden. <a href="privacy.html">Privacyverklaring</a></p>
+<p class="lp-melding" hidden></p></form></div></section><section class="lp-band"><h2 class="lp-strip">Deze opdrachtgevers gingen je voor</h2><div class="lp-cases" style="--kol:2"><a class="lp-case" href="gemeentelijk-netwerkevent.html"><img src="img/case-gemeente.jpg" alt="" loading="lazy"><div><span class="lp-chip">Zakelijk event</span><h3>Seminar voor 500 gasten, daarna cocktail hour</h3><p>Netwerkevent | top 5 gemeente</p></div></a><a class="lp-case" href="jubileum-ondernemersnetwerk.html"><img src="img/jubileum-diptiek.jpg" alt="" loading="lazy"><div><span class="lp-chip">Zakelijk event</span><h3>Een tuinfeest voor een ondernemersnetwerk</h3><p>5 jaar CreativeGrounds | dj en saxofonist | gericht geluid</p></div></a></div></section></main><script>(function(){
+document.querySelectorAll('.lp-stappen').forEach(function(k){var S=[].map.call(k.querySelectorAll('.lp-stapjes li'),function(li){var b=li.querySelectorAll('b');return [b[1].textContent,li.querySelector('span').textContent]}),i=0,alle=false,t=k.querySelector('h3'),x=k.querySelector('h3+p'),L=k.querySelector('.lp-stapjes'),b=k.querySelector('.lp-stapbal');
+function r(){t.textContent=S[i][0];x.textContent=S[i][1];t.hidden=x.hidden=alle;L.hidden=!alle;
+b.innerHTML=S.map(function(s,n){return '<button type="button" class="lp-n" data-n="'+n+'"'+(n===i&&!alle?' aria-current="step"':'')+' aria-label="Stap '+(n+1)+': '+s[0]+'">'+(n+1)+'</button>'}).join('')+'<button type="button" class="lp-alle">'+(alle?'Toon per stap':'Bekijk alle stappen')+'</button>'+(alle?'':'<button type="button" class="lp-volg">'+(i<S.length-1?'Volgende':'Opnieuw')+'</button>');}
+b.addEventListener('click',function(ev){var o=ev.target.closest('button');if(!o)return;if(o.dataset.n){i=+o.dataset.n;alle=false}else if(o.classList.contains('lp-alle')){alle=!alle}else{i=i<S.length-1?i+1:0}r();});r();});
+document.querySelectorAll('.lp-form').forEach(function(f){var m=f.querySelector('.lp-melding');f.addEventListener('submit',function(ev){if(!window.fetch)return;ev.preventDefault();var k=f.querySelector('button');k.disabled=true;
+fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}}).then(function(r){return r.json()}).then(function(r){m.hidden=false;
+if(r.ok){m.textContent=f.dataset.dank;[].forEach.call(f.querySelectorAll('label,button,.lp-privacy'),function(x){x.hidden=true})}else{m.textContent=f.dataset.fout;k.disabled=false}}).catch(function(){m.hidden=false;m.textContent=f.dataset.fout;k.disabled=false});});});
+})();</script><footer class="voet">
+  <div class="voet-kolommen">
+    <div class="voet-merk">
+      <img src="img/logo-white.png" alt="HEAR">
+      <p>Licht, geluid en muziek voor events · Amsterdam</p>
+      <p class="voet-contact"><a href="mailto:maarten@hear.nl">maarten@hear.nl</a><span aria-hidden="true"> · </span><a href="tel:+31624560220">+31 6 24560220</a></p>
+      <p class="voet-klein"><span class="geen-breuk">HEAR is een handelsnaam van Maarten Versteeg communicatie advies B.V.</span><br>KvK 42181393<span class="voet-sep"> · </span><span class="geen-breuk-adres">Van Kinsbergenstraat 54, 1057 PT Amsterdam</span><br><a href="privacy.html">Privacyverklaring</a></p>
+    </div>
+    <nav aria-label="Werk"><p class="label">Werk</p><a href="cases.html">Cases</a><a href="nieuws/">Nieuws</a><a href="over-hear.html">Over HEAR</a></nav>
+    <nav aria-label="Met wie we werken"><p class="label">Met wie we werken</p><a href="zakelijke-events.html">Eventmanagers</a><a href="merken-en-bureaus.html">Merken en bureaus</a><a href="dance-events.html">Dance-events</a><a href="bijzondere-eventlocaties.html">Eventlocaties</a></nav>
+    <nav aria-label="Producten en diensten"><p class="label">Producten en diensten</p><a href="booth-dj-gear.html">Dj-gear</a><a href="high-end-audio.html">Geluid</a><a href="atmospheric-lighting.html">Sfeerlicht</a><a href="dancefloor-lighting.html">Dansvloerlicht</a><a href="vintage-lighting.html">90's vintage licht</a><a href="communicatieadvies.html">Communicatieadvies</a><a href="artiesten.html">Dj's en artiesten</a><a href="custom-dj-mix.html">Coffee cuts en custom dj-mixes</a>
+          <a href="aankoopadvies.html">Aankoopadvies licht en geluid</a></nav>
+    <nav aria-label="Waarden"><p class="label">Waarden</p><a href="principes.html#samen">Samen</a><a href="principes.html#open">Open</a><a href="principes.html#vakmanschap">Vakmanschap</a><a href="principes.html#warmte">Warme sound</a></nav>
+  </div>
+</footer></body></html>
