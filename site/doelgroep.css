@@ -119,8 +119,8 @@
 .actie-voet{background:var(--zwart);color:#a9a8a3;padding:22px var(--rand);font:400 12px/1.5 var(--tekst)}
 .actie-voet p{margin:0}.actie-voet a{color:#cfcec9}
 .lp-prijs p{margin:0 0 6px;font:400 17px/1.5 var(--tekst);max-width:60ch}
-.lp-prijs .lp-prijs-hoofd{font-weight:600;margin:0 0 6px}
-.lp-prijs .lp-prijs-klein{font-size:14px;color:#6b6b68;margin-top:12px}
+
+.lp-prijs .lp-prijs-klein{font-size:14px;color:#6b6b68;margin:0 0 4px}.lp-prijs .lp-lijst{margin-bottom:16px}
 /* 12 nov: iOS geeft een leeg datumveld een afwijkende hoogte; gelijk aan de andere velden */
 .lp-form input[type=date]{-webkit-appearance:none;appearance:none;display:block;width:100%;box-sizing:border-box;height:48px;min-height:48px;line-height:20px;text-align:left;background:var(--wit,#F6F5F1);color:var(--zwart,#191A19)}
 .lp-form input[type=date]::-webkit-date-and-time-value{text-align:left;min-height:20px}

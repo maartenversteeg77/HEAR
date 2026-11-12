@@ -588,3 +588,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - 12 nov: nieuwjaarsborrel: blok 'Wat kost dat?' met richtprijs (Maarten, letterlijk): € 10 per gast, minimum € 1.500; vanaf 500 gasten op aanvraag; licht, geluid, transport, opbouw en dj/technicus inbegrepen; afhankelijk van concept, locatie en technische vereisten; excl. btw. Aantal uur dj bewust niet genoemd. Geen kortingsactie.
 - 12 nov: actiepagina: datumveld vaste hoogte (iOS gaf leeg datumveld afwijkende hoogte); prijsblok als witte kaart zoals het aanbod.
 - 12 nov: actiepagina: knop en 'Nog enkele data in januari vrij' (turquoise label) staan óp het beeld, zodat de titel op twee regels met witregel vrij blijft; mobiel knop onderin het beeld, desktop rechtsboven. Richtprijs in dezelfde lettergrootte als de rest, vet.
+- 12 nov: prijsblok (Maarten): de twee prijzen als bullets, niet vet; beide toelichtingen in dezelfde kleine grijze letter.
