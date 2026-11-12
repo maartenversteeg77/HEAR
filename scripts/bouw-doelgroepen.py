@@ -262,9 +262,9 @@ for i, d in enumerate(DOEL):
 
 def actieformulier(kop, bron):
     """Formulier voor campagnepagina's: datum en aantal gasten erbij, zodat de aanvraag meteen concreet is."""
-    return f'''<section class="lp-band lp-contact" id="contact"><div class="lp-twee"><div><h2>{kop}</h2><p>Laat je datum en gegevens achter, dan laat ik je dezelfde werkdag weten of het kan.</p>
+    return f'''<section class="lp-band lp-contact" id="contact"><div class="lp-twee"><div><h2>{kop}</h2><p>Laat je datum en gegevens achter, dan hoor je dezelfde werkdag van me.</p>
 <div class="lp-wie"><img src="img/maarten-adviseur.jpg" alt="Maarten Versteeg" loading="lazy" style="object-position:50% 20%"><div><b>Maarten Versteeg</b><span>Oprichter HEAR</span></div></div></div>
-<form class="lp-form" method="post" action="/api/aanvraag" data-dank="Dank je. Ik laat je dezelfde werkdag weten of je datum vrij is." data-fout="Versturen lukte niet. Mail naar maarten@hear.nl of bel +31 6 24560220.">
+<form class="lp-form" method="post" action="/api/aanvraag" data-dank="Dank je. Je hoort dezelfde werkdag van me." data-fout="Versturen lukte niet. Mail naar maarten@hear.nl of bel +31 6 24560220.">
 <input type="hidden" name="bron" value="{e(bron)}"><input type="text" name="website" class="lp-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 <label>Datum van je event<input name="datum" type="date" required></label>
 <label>Aantal gasten<input name="gasten" type="number" min="1" inputmode="numeric"></label>
@@ -273,7 +273,7 @@ def actieformulier(kop, bron):
 <label>E-mail<input name="email" type="email" autocomplete="email" required></label>
 <label>Telefoon<input name="telefoon" type="tel" autocomplete="tel"></label>
 <label>Locatie of wensen<textarea name="bericht" placeholder="Bijvoorbeeld: op ons kantoor in Amsterdam, met een dj en sfeerlicht"></textarea></label>
-<button type="submit">Check mijn datum</button><p class="lp-privacy">We gebruiken je gegevens alleen om je te antwoorden. <a href="privacy.html">Privacyverklaring</a></p>
+<button type="submit">Vraag offerte aan</button><p class="lp-privacy">We gebruiken je gegevens alleen om je te antwoorden. <a href="privacy.html">Privacyverklaring</a></p>
 <p class="lp-melding" hidden></p></form></div></section>'''
 
 # ---------- verborgen campagnepagina's (niet in navigatie, noindex) ----------
@@ -293,7 +293,7 @@ CAMPAGNE = {"nieuwjaarsborrel.html": dict(titel="Heb jij al een nieuwjaarsborrel
   + lijst([("Richtprijs: € 10 per gast, met een minimum van € 1.500.", None), ("Vanaf 500 gasten: prijs op aanvraag.", None)]) +
   '<p class="lp-prijs-klein">Licht, geluid, transport, opbouw en dj/technicus inbegrepen.</p>'
   '<p class="lp-prijs-klein">Afhankelijk van concept, locatie en technische vereisten. Exclusief btw.</p></div></section>',
-  actieformulier("Check of jouw datum nog vrij is", "Landingspagina nieuwjaarsborrel")])}
+  actieformulier("Vraag vrijblijvend een offerte aan", "Landingspagina nieuwjaarsborrel")])}
 for bestand, p in CAMPAGNE.items():
     k = kop_html.replace('<link rel="stylesheet" href="styles.css">', '<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="doelgroep.css">')
     k = re.sub(r'<title>.*?</title>', f'<title>{e(p["titel"])} · HEAR</title>', k)
@@ -302,7 +302,7 @@ for bestand, p in CAMPAGNE.items():
     main = (f'<main class="wrap lp"><section class="casehead"><h1 class="kernzin">{p["h1"]}</h1>'
             f'</section><div class="lp-held"><div class="actie-beeld"><img src="{p["beeld"]}" alt="{e(p["alt"])}" style="object-position:{p["pos"]}">'
             f'<span class="actie-label">Nog enkele data in januari vrij</span>'
-            f'<a class="wa actie-knop" href="#contact"><span>Check nu of je datum nog vrij is</span><i aria-hidden="true">→</i></a></div></div>'
+            f'<a class="wa actie-knop" href="#contact"><span>Vraag vrijblijvend een offerte aan</span><i aria-hidden="true">→</i></a></div></div>'
             + "".join(p["delen"]) + '</main>')
     voet_actie = '<footer class="actie-voet"><p>HEAR is een handelsnaam van Maarten Versteeg communicatie advies B.V. · KvK 42181393 · <a href="privacy.html">Privacyverklaring</a></p></footer></body></html>'
     (site / bestand).write_text(k + main + JS + voet_actie)

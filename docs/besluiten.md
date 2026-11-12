@@ -589,3 +589,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - 12 nov: actiepagina: datumveld vaste hoogte (iOS gaf leeg datumveld afwijkende hoogte); prijsblok als witte kaart zoals het aanbod.
 - 12 nov: actiepagina: knop en 'Nog enkele data in januari vrij' (turquoise label) staan óp het beeld, zodat de titel op twee regels met witregel vrij blijft; mobiel knop onderin het beeld, desktop rechtsboven. Richtprijs in dezelfde lettergrootte als de rest, vet.
 - 12 nov: prijsblok (Maarten): de twee prijzen als bullets, niet vet; beide toelichtingen in dezelfde kleine grijze letter.
+- 12 nov: actiepagina: knop en formulierkop 'Vraag vrijblijvend een offerte aan' (was 'Check nu of je datum nog vrij is', dubbel met het label 'Nog enkele data in januari vrij'); verzendknop 'Vraag offerte aan'.
