@@ -544,4 +544,3 @@ h2.strip-kop a:hover,h2.strip-kop a:focus-visible{text-decoration:underline;text
 .nj-knop i{font-style:normal}
 .nj-strip:hover .nj-knop,.nj-strip:focus-visible .nj-knop{background:#000}
 @media(max-width:700px){.nj-knop{width:100%;justify-content:space-between}}
-.nj-strip + .werk{padding-top:clamp(56px,7vw,104px)}

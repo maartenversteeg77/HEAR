@@ -114,3 +114,4 @@
 .lp-donker .lp-motto{color:var(--wit,#F6F5F1)}
 .lp-paar .lp-strip{margin:18px 0 10px!important}
 .lp-inst .lp-motto{margin:0 0 18px}
+.samen~.nj-strip+.werk{padding-top:clamp(56px,7vw,104px)} /* 12 nov: ruimte onder campagnestrook */
