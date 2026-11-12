@@ -115,3 +115,8 @@
 .lp-paar .lp-strip{margin:18px 0 10px!important}
 .lp-inst .lp-motto{margin:0 0 18px}
 .samen~.nj-strip+.werk{padding-top:clamp(56px,7vw,104px)} /* 12 nov: ruimte onder campagnestrook */
+/* 12 nov: actiepagina's (nieuwjaarsborrel): knop onder de titel, geen voet met links */
+.actie-cta{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin-top:clamp(22px,3vw,34px)}
+.actie-cta small{font:400 14px/1.4 var(--tekst);color:#cfcec9}
+.actie-voet{background:var(--zwart);color:#a9a8a3;padding:22px var(--rand);font:400 12px/1.5 var(--tekst)}
+.actie-voet p{margin:0}.actie-voet a{color:#cfcec9}

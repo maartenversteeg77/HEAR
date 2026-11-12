@@ -260,12 +260,28 @@ for i, d in enumerate(DOEL):
     (site / d["bestand"]).write_text(k + main + JS + voet_html)
     print("ok", d["bestand"])
 
+def actieformulier(kop, bron):
+    """Formulier voor campagnepagina's: datum en aantal gasten erbij, zodat de aanvraag meteen concreet is."""
+    return f'''<section class="lp-band lp-contact" id="contact"><div class="lp-twee"><div><h2>{kop}</h2><p>Laat je datum en gegevens achter, dan laat ik je dezelfde werkdag weten of het kan.</p>
+<div class="lp-wie"><img src="img/maarten-adviseur.jpg" alt="Maarten Versteeg" loading="lazy" style="object-position:50% 20%"><div><b>Maarten Versteeg</b><span>Oprichter HEAR</span></div></div></div>
+<form class="lp-form" method="post" action="/api/aanvraag" data-dank="Dank je. Ik laat je dezelfde werkdag weten of je datum vrij is." data-fout="Versturen lukte niet. Mail naar maarten@hear.nl of bel +31 6 24560220.">
+<input type="hidden" name="bron" value="{e(bron)}"><input type="text" name="website" class="lp-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<label>Datum van je event<input name="datum" type="date" required></label>
+<label>Aantal gasten<input name="gasten" type="number" min="1" inputmode="numeric"></label>
+<label>Naam<input name="naam" autocomplete="name" required></label>
+<label>Organisatie<input name="organisatie" autocomplete="organization"></label>
+<label>E-mail<input name="email" type="email" autocomplete="email" required></label>
+<label>Telefoon<input name="telefoon" type="tel" autocomplete="tel"></label>
+<label>Locatie of wensen<textarea name="bericht" placeholder="Bijvoorbeeld: op ons kantoor in Amsterdam, met een dj en sfeerlicht"></textarea></label>
+<button type="submit">Check mijn datum</button><p class="lp-privacy">We gebruiken je gegevens alleen om je te antwoorden. <a href="privacy.html">Privacyverklaring</a></p>
+<p class="lp-melding" hidden></p></form></div></section>'''
+
 # ---------- verborgen campagnepagina's (niet in navigatie, noindex) ----------
 CAMPAGNE = {"nieuwjaarsborrel.html": dict(titel="Heb jij al een nieuwjaarsborrel gepland?", h1="Heb jij al een nieuwjaarsborrel gepland?<br><br>Wij helpen je graag!",
  beschrijving="Wij helpen je graag met licht, geluid en muziek voor je nieuwjaarsborrel. Voor collega's, relaties of allebei.",
  beeld="img/nieuwjaarsborrel.jpg", pos="50% 45%", alt="Gasten op een borrel in een verlichte industriële hal, met live muziek",
  delen=[
-  intro("De nieuwjaarsborrel is het eerste moment van het jaar waarop iedereen elkaar weer ziet. Collega's, relaties, of allebei.",
+  intro("De nieuwjaarsborrel is het eerste moment van het jaar waarop iedereen elkaar weer ziet.",
         ["Soms begint de avond met een toespraak, soms is het de hele avond feest. Wij zorgen voor licht, geluid en muziek die daarbij passen.",
          "Alles afgestemd op de ruimte: je eigen kantoor of een (industriële) ruimte die we omtoveren tot eventlocatie."]),
   aanbod("Wat we je bieden", [
@@ -273,17 +289,18 @@ CAMPAGNE = {"nieuwjaarsborrel.html": dict(titel="Heb jij al een nieuwjaarsborrel
      ("Sfeerlicht, truss en decoraties, eventueel met dansvloerlicht", None),
      ("Dj’s, eventueel aangevuld met een live muzikant", None),
      ("Jouw aanvullende wensen, bijvoorbeeld videoschermen, logoprojecties, fotografie of een aftermovie", None)])]),
-  contact("Check of jouw datum nog vrij is", "Landingspagina nieuwjaarsborrel", "Bijvoorbeeld: nieuwjaarsborrel voor 150 collega's en relaties, vrijdag 15 januari"),
-  eerder("Deze opdrachtgevers gingen je voor", ["gemeentelijk-netwerkevent.html", "jubileum-ondernemersnetwerk.html"])])}
+  actieformulier("Check of jouw datum nog vrij is", "Landingspagina nieuwjaarsborrel")])}
 for bestand, p in CAMPAGNE.items():
     k = kop_html.replace('<link rel="stylesheet" href="styles.css">', '<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="doelgroep.css">')
     k = re.sub(r'<title>.*?</title>', f'<title>{e(p["titel"])} · HEAR</title>', k)
     k = re.sub(r'<meta name="description" content="[^"]*">', f'<meta name="description" content="{e(p["beschrijving"])}"><meta name="robots" content="noindex">', k)
     k = re.sub(r'<a class="taal" href="[^"]*"', '<a class="taal" href="/en/index.html"', k)
-    main = (f'<main class="wrap lp"><section class="casehead"><h1 class="kernzin">{p["h1"]}</h1></section>'
+    main = (f'<main class="wrap lp"><section class="casehead"><h1 class="kernzin">{p["h1"]}</h1>'
+            f'<div class="actie-cta"><a class="wa" href="#contact"><span>Check nu of je datum nog vrij is</span><i aria-hidden="true">→</i></a><small>Nog enkele data in januari vrij</small></div></section>'
             f'<div class="lp-held"><img src="{p["beeld"]}" alt="{e(p["alt"])}" style="object-position:{p["pos"]}"></div>'
             + "".join(p["delen"]) + '</main>')
-    (site / bestand).write_text(k + main + JS + voet_html)
+    voet_actie = '<footer class="actie-voet"><p>HEAR is een handelsnaam van Maarten Versteeg communicatie advies B.V. · KvK 42181393 · <a href="privacy.html">Privacyverklaring</a></p></footer></body></html>'
+    (site / bestand).write_text(k + main + JS + voet_actie)
     print("ok", bestand, "(verborgen)")
 
 # ---------- overzichtspagina en homepage ----------

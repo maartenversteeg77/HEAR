@@ -584,3 +584,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - 12 nov: nieuwjaarsborrel: geen label/kruimel boven de titel (het is geen doelgroep en geen actie); witregel na 'gepland?', uitroepteken na 'graag'.
 - 12 nov: campagnestrook verplaatst naar tussen 'Voor wie is HEAR' en 'Bekijk de cases' (ter beoordeling).
 - 12 nov: strook blijft tussen doelgroepen en cases (Maarten: beter zo); meer ruimte boven 'Bekijk de cases'.
+- 12 nov: nieuwjaarsborrel als actiepagina: koraal knop 'Check nu of je datum nog vrij is' onder de titel (naar formulier) met 'Nog enkele data in januari vrij'; zin 'Collega's, relaties, of allebei.' weg; formulier met datum en aantal gasten, knop 'Check mijn datum'; geen cases en geen voet met links onder het formulier, alleen een juridische regel (handelsnaam, KvK, privacy). Korting nog niet besloten.
