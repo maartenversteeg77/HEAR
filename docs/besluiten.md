@@ -582,3 +582,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - 12 nov: nieuwjaarsborrel-aanbod (Maarten): Versterkt geluid voor speeches en muziek · Sfeerlicht, truss en decoraties, eventueel met dansvloerlicht · Dj’s, eventueel aangevuld met een live muzikant · Jouw aanvullende wensen, bijvoorbeeld videoschermen, logoprojecties, fotografie of een aftermovie
 - 12 nov: nieuwjaarsborrel: titel 'Heb jij al een nieuwjaarsborrel gepland? / Wij helpen je graag' (ook og:title, voor linkpreview als advertentie); contactkop 'Check of jouw datum nog vrij is'.
 - 12 nov: nieuwjaarsborrel: geen label/kruimel boven de titel (het is geen doelgroep en geen actie); witregel na 'gepland?', uitroepteken na 'graag'.
+- 12 nov: campagnestrook verplaatst naar tussen 'Voor wie is HEAR' en 'Bekijk de cases' (ter beoordeling).
