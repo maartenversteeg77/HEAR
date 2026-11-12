@@ -50,7 +50,7 @@ def lijst(items, cls="lp-lijst"):
 def kaart(titel, items, meer=None, wens=False):
     m = ""
     if meer: m = '<p class="lp-meer">Meer over ' + " en ".join(f'<a href="{h}">{t}</a>' for t, h in meer) + ' <span aria-hidden="true">→</span></p>'
-    return f'<div class="lp-kaart"><h3>{titel}</h3>{lijst(items)}{m}' + ('<p class="lp-wens">Speciale wensen? Laat het weten.</p>' if wens else '') + '</div>'
+    return f'<div class="lp-kaart">' + (f'<h3>{titel}</h3>' if titel else '') + f'{lijst(items)}{m}' + ('<p class="lp-wens">Speciale wensen? Laat het weten.</p>' if wens else '') + '</div>'
 def aanbod(kop, kaarten):
     return (f'<section class="lp-band"><h2 class="lp-strip">{kop}</h2>'
             f'<div class="lp-aanbod" style="--kol:{len(kaarten)}">{"".join(kaarten)}</div></section>')
@@ -267,9 +267,9 @@ CAMPAGNE = {"nieuwjaarsborrel.html": dict(titel="Nieuwjaarsborrel", h1="Nieuwjaa
  delen=[
   intro("De nieuwjaarsborrel is het eerste moment van het jaar waarop iedereen elkaar weer ziet. Collega's, relaties, of allebei.",
         ["Soms begint de avond met een toespraak, soms is het de hele avond feest. Wij zorgen voor licht, geluid en muziek die daarbij passen.",
-         "Alles afgestemd op de ruimte, ook als dat je eigen kantoor is of een (industriële) ruimte om te toveren tot eventlocatie."]),
+         "Alles afgestemd op de ruimte: je eigen kantoor of een (industriële) ruimte die we omtoveren tot eventlocatie."]),
   aanbod("Wat we je bieden", [
-   kaart("Licht, geluid en muziek", [("De mogelijkheid om versterkt een speech te geven", None), ("Opkomstmuziek", None),
+   kaart(None, [("De mogelijkheid om versterkt een speech te geven", None), ("Opkomstmuziek", None),
      ("Sfeerlicht in je huisstijlkleuren", None), ("Je logo geprojecteerd op wand of vloer", None),
      ("Een dj die het event van begin tot eind muzikaal omlijst", None), ("Een live muzikant bij de dj-set", "Saxofoon, percussie of vocals"),
      ("En jouw speciale wensen", None)])]),
