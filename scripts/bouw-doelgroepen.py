@@ -267,7 +267,7 @@ CAMPAGNE = {"nieuwjaarsborrel.html": dict(titel="Nieuwjaarsborrel", h1="Nieuwjaa
  delen=[
   intro("De nieuwjaarsborrel is het eerste moment van het jaar waarop iedereen elkaar weer ziet. Collega's, relaties, of allebei.",
         ["Soms begint de avond met een toespraak, soms is het de hele avond feest. Wij zorgen voor licht, geluid en muziek die daarbij passen.",
-         "Alles afgestemd op de ruimte, ook als dat een kale industriële hal is die we ombouwen tot eventlocatie."]),
+         "Alles afgestemd op de ruimte, ook als dat je eigen kantoor is of een (industriële) ruimte om te toveren tot eventlocatie."]),
   aanbod("Wat we je bieden", [
    kaart("Toespraak en toost", [("De mogelijkheid om versterkt een speech te geven", None), ("Opkomstmuziek", None)]),
    kaart("Sfeer", [("Sfeerlicht in je huisstijlkleuren", None), ("Je logo geprojecteerd op wand of vloer", None)],
