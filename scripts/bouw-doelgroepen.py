@@ -261,7 +261,7 @@ for i, d in enumerate(DOEL):
     print("ok", d["bestand"])
 
 # ---------- verborgen campagnepagina's (niet in navigatie, noindex) ----------
-CAMPAGNE = {"nieuwjaarsborrel.html": dict(titel="Heb jij al een nieuwjaarsborrel gepland?", h1="Heb jij al een nieuwjaarsborrel gepland?<br>Wij helpen je graag",
+CAMPAGNE = {"nieuwjaarsborrel.html": dict(titel="Heb jij al een nieuwjaarsborrel gepland?", h1="Heb jij al een nieuwjaarsborrel gepland?<br><br>Wij helpen je graag!",
  beschrijving="Wij helpen je graag met licht, geluid en muziek voor je nieuwjaarsborrel. Voor collega's, relaties of allebei.",
  beeld="img/nieuwjaarsborrel.jpg", pos="50% 45%", alt="Gasten op een borrel in een verlichte industriële hal, met live muziek",
  delen=[
@@ -280,8 +280,7 @@ for bestand, p in CAMPAGNE.items():
     k = re.sub(r'<title>.*?</title>', f'<title>{e(p["titel"])} · HEAR</title>', k)
     k = re.sub(r'<meta name="description" content="[^"]*">', f'<meta name="description" content="{e(p["beschrijving"])}"><meta name="robots" content="noindex">', k)
     k = re.sub(r'<a class="taal" href="[^"]*"', '<a class="taal" href="/en/index.html"', k)
-    main = (f'<main class="wrap lp"><section class="casehead"><a class="crumb" href="zakelijke-events.html"><span class="sectie">Voor wie we werken</span>'
-            f'<span class="scheiding" aria-hidden="true">|</span><span class="huidig">Eventmanagers</span></a><h1 class="kernzin">{p["h1"]}</h1></section>'
+    main = (f'<main class="wrap lp"><section class="casehead"><h1 class="kernzin">{p["h1"]}</h1></section>'
             f'<div class="lp-held"><img src="{p["beeld"]}" alt="{e(p["alt"])}" style="object-position:{p["pos"]}"></div>'
             + "".join(p["delen"]) + '</main>')
     (site / bestand).write_text(k + main + JS + voet_html)
