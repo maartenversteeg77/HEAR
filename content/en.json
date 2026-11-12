@@ -40,8 +40,8 @@
       ">Cases</a>"
     ],
     [
-      ">Met wie we werken</a>",
-      ">Who we work with</a>"
+      ">Voor wie we werken</a>",
+      ">Who we work for</a>"
     ],
     [
       ">Waarden</a>",
@@ -76,8 +76,8 @@
       "<span>Cases</span><small>Events that capture the imagination</small>"
     ],
     [
-      "<span>Met wie we werken</span><small>Eventmanagers, dance-events, merken en eventlocaties</small>",
-      "<span>Who we work with</span><small>Event managers, dance events, brands and venues</small>"
+      "<span>Voor wie we werken</span><small>Eventmanagers, dance-events, merken en eventlocaties</small>",
+      "<span>Who we work for</span><small>Event managers, dance events, brands and venues</small>"
     ],
     [
       "<span>Waarden</span><small>Wat wij belangrijk vinden</small>",
@@ -100,8 +100,8 @@
       "<nav aria-label=\"Work\"><p class=\"label\">Work</p>"
     ],
     [
-      "<nav aria-label=\"Met wie we werken\"><p class=\"label\">Met wie we werken</p><a href=\"zakelijke-events.html\">Eventmanagers</a><a href=\"merken-en-bureaus.html\">Merken en bureaus</a><a href=\"dance-events.html\">Dance-events</a><a href=\"bijzondere-eventlocaties.html\">Eventlocaties</a>",
-      "<nav aria-label=\"Who we work with\"><p class=\"label\">Who we work with</p><a href=\"zakelijke-events.html\">Event managers</a><a href=\"merken-en-bureaus.html\">Brands and agencies</a><a href=\"dance-events.html\">Dance events</a><a href=\"bijzondere-eventlocaties.html\">Event venues</a>"
+      "<nav aria-label=\"Voor wie we werken\"><p class=\"label\">Voor wie we werken</p><a href=\"zakelijke-events.html\">Eventmanagers</a><a href=\"merken-en-bureaus.html\">Merken en bureaus</a><a href=\"dance-events.html\">Dance-events</a><a href=\"bijzondere-eventlocaties.html\">Eventlocaties</a>",
+      "<nav aria-label=\"Who we work for\"><p class=\"label\">Who we work for</p><a href=\"zakelijke-events.html\">Event managers</a><a href=\"merken-en-bureaus.html\">Brands and agencies</a><a href=\"dance-events.html\">Dance events</a><a href=\"bijzondere-eventlocaties.html\">Event venues</a>"
     ],
     [
       "<nav aria-label=\"Producten en diensten\"><p class=\"label\">Producten en diensten</p><a href=\"booth-dj-gear.html\">Dj-gear</a><a href=\"high-end-audio.html\">Geluid</a><a href=\"atmospheric-lighting.html\">Sfeerlicht</a><a href=\"dancefloor-lighting.html\">Dansvloerlicht</a><a href=\"vintage-lighting.html\">90's vintage licht</a><a href=\"communicatieadvies.html\">Communicatieadvies</a><a href=\"artiesten.html\">Dj's en artiesten</a><a href=\"custom-dj-mix.html\">Coffee cuts en custom dj-mixes</a>\n          <a href=\"aankoopadvies.html\">Aankoopadvies licht en geluid</a></nav>",
@@ -180,8 +180,8 @@
       "<span class=\"sectie\">Products</span>"
     ],
     [
-      "<span class=\"sectie\">Met wie we werken</span>",
-      "<span class=\"sectie\">Who we work with</span>"
+      "<span class=\"sectie\">Voor wie we werken</span>",
+      "<span class=\"sectie\">Who we work for</span>"
     ],
     [
       "<span class=\"sectie\">Nieuws</span>",
@@ -1608,16 +1608,16 @@
     ],
     "doelgroepen.html": [
       [
-        "<title>Met wie we werken · HEAR</title>",
-        "<title>Who we work with · HEAR</title>"
+        "<title>Voor wie we werken · HEAR</title>",
+        "<title>Who we work for · HEAR</title>"
       ],
       [
-        "<span class=\"huidig\">Met wie we werken</span>",
-        "<span class=\"huidig\">Who we work with</span>"
+        "<span class=\"huidig\">Voor wie we werken</span>",
+        "<span class=\"huidig\">Who we work for</span>"
       ],
       [
-        "<h1 class=\"kernzin\">Met wie we werken</h1>",
-        "<h1 class=\"kernzin\">Who we work with</h1>"
+        "<h1 class=\"kernzin\">Voor wie we werken</h1>",
+        "<h1 class=\"kernzin\">Who we work for</h1>"
       ],
       [
         "content=\"HEAR werkt graag samen met eventmanagers en communicatieprofessionals, organisatoren van dance-events, merken en bureaus, en eigenaren van eventlocaties.\"",
@@ -2526,8 +2526,8 @@
         ">GUIDED PURCHASING<"
       ],
       [
-        ">Met wie we werken: eventlocaties →<",
-        ">Who we work with: event venues →<"
+        ">Voor wie we werken: eventlocaties →<",
+        ">Who we work for: event venues →<"
       ],
       [
         ">GRATIS TIPS EN ADVIEZEN<",
@@ -3594,8 +3594,8 @@
         ">Communications advice is provided by Maarten Versteeg communicatieadvies, separately from hiring light and sound through HEAR. Combining is possible and saves you time on coordination, because message and technology then come from a single source. But it's not required. If you choose both, you receive two separate quotes.<"
       ],
       [
-        ">Met wie we werken: eventmanagers →</a>",
-        ">Who we work with: event managers →</a>"
+        ">Voor wie we werken: eventmanagers →</a>",
+        ">Who we work for: event managers →</a>"
       ]
     ],
     "zakelijke-events.html": [

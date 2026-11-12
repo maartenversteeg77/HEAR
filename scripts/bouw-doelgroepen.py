@@ -1,4 +1,4 @@
-"""Bouwt de vier doelgroeppagina's onder "Met wie we werken" (besluit 6 nov 2026) en het 2x2-blok
+"""Bouwt de vier doelgroeppagina's onder "Voor wie we werken" (besluit 6 nov 2026) en het 2x2-blok
 "Wij werken graag samen met…" op de homepage en op doelgroepen.html.
 Teksten staan hieronder per pagina; concepten en besluiten in docs/concepten/doelgroep-*.md.
 Opbouw per pagina: kop · beeld · intro · (eigen blokken) · aanbod · werkwijze (stappenkaart) · (vaste installatie) · contact · eerder werk.
@@ -253,7 +253,7 @@ for i, d in enumerate(DOEL):
     k = re.sub(r'<meta name="description" content="[^"]*">', f'<meta name="description" content="{e(p["beschrijving"])}">', k)
     k = re.sub(r'<a class="taal" href="[^"]*"', f'<a class="taal" href="/en/{d["bestand"]}"', k)
     k = k.replace('<a href="doelgroepen.html">', '<a href="doelgroepen.html" aria-current="page">', 1)
-    main = (f'<main class="wrap lp"><section class="casehead"><a class="crumb" href="doelgroepen.html"><span class="sectie">Met wie we werken</span>'
+    main = (f'<main class="wrap lp"><section class="casehead"><a class="crumb" href="doelgroepen.html"><span class="sectie">Voor wie we werken</span>'
             f'<span class="scheiding" aria-hidden="true">|</span><span class="huidig">{d["kort"]}</span></a>{zijnav(i)}<h1 class="kernzin">{p["h1"]}</h1></section>'
             f'<div class="lp-held"><img src="{d["beeld"]}" alt="{e(d["alt"])}" style="object-position:{d["pos"]}"></div>'
             + "".join(p["delen"]) + '</main>')
@@ -280,7 +280,7 @@ for bestand, p in CAMPAGNE.items():
     k = re.sub(r'<title>.*?</title>', f'<title>{e(p["titel"])} · HEAR</title>', k)
     k = re.sub(r'<meta name="description" content="[^"]*">', f'<meta name="description" content="{e(p["beschrijving"])}"><meta name="robots" content="noindex">', k)
     k = re.sub(r'<a class="taal" href="[^"]*"', '<a class="taal" href="/en/index.html"', k)
-    main = (f'<main class="wrap lp"><section class="casehead"><a class="crumb" href="zakelijke-events.html"><span class="sectie">Met wie we werken</span>'
+    main = (f'<main class="wrap lp"><section class="casehead"><a class="crumb" href="zakelijke-events.html"><span class="sectie">Voor wie we werken</span>'
             f'<span class="scheiding" aria-hidden="true">|</span><span class="huidig">Eventmanagers</span></a><h1 class="kernzin">{p["h1"]}</h1></section>'
             f'<div class="lp-held"><img src="{p["beeld"]}" alt="{e(p["alt"])}" style="object-position:{p["pos"]}"></div>'
             + "".join(p["delen"]) + '</main>')
@@ -290,10 +290,10 @@ for bestand, p in CAMPAGNE.items():
 # ---------- overzichtspagina en homepage ----------
 ov = site / "doelgroepen.html"; s = ov.read_text()
 nieuw = (f'<main class="wrap"><section class="casehead"><a class="crumb" href="index.html"><span class="sectie">HEAR</span><span class="scheiding" aria-hidden="true">|</span>'
-         f'<span class="huidig">Met wie we werken</span></a><h1 class="kernzin">Met wie we werken</h1></section>{samenblok()}</main>')
+         f'<span class="huidig">Voor wie we werken</span></a><h1 class="kernzin">Voor wie we werken</h1></section>{samenblok()}</main>')
 s = re.sub(r'<main.*?</main>', lambda m: nieuw, s, count=1, flags=re.S)
 if 'doelgroep.css' not in s: s = s.replace('<link rel="stylesheet" href="styles.css">', '<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="doelgroep.css">', 1)
-s = re.sub(r'<title>.*?</title>', '<title>Met wie we werken · HEAR</title>', s, count=1)
+s = re.sub(r'<title>.*?</title>', '<title>Voor wie we werken · HEAR</title>', s, count=1)
 s = re.sub(r'<meta name="description" content="[^"]*">', '<meta name="description" content="HEAR werkt graag samen met eventmanagers en communicatieprofessionals, organisatoren van dance-events, merken en bureaus, en eigenaren van eventlocaties.">', s, count=1)
 ov.write_text(s); print("ok doelgroepen.html")
 

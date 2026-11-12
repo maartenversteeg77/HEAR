@@ -23,11 +23,11 @@ UIT = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / 'docs' / 'hear-teksten-
 # (bestand, label) in navigatievolgorde
 PAGINAS = [
     ('index.html', 'Home'),
-    ('doelgroepen.html', 'Met wie we werken (overzicht)'),
-    ('zakelijke-events.html', 'Met wie we werken · Eventmanagers'),
-    ('bijzondere-eventlocaties.html', 'Met wie we werken · Eventlocaties'),
-    ('dance-events.html', 'Met wie we werken · Dance-events'),
-    ('merken-en-bureaus.html', 'Met wie we werken · Merken en bureaus'),
+    ('doelgroepen.html', 'Voor wie we werken (overzicht)'),
+    ('zakelijke-events.html', 'Voor wie we werken · Eventmanagers'),
+    ('bijzondere-eventlocaties.html', 'Voor wie we werken · Eventlocaties'),
+    ('dance-events.html', 'Voor wie we werken · Dance-events'),
+    ('merken-en-bureaus.html', 'Voor wie we werken · Merken en bureaus'),
     ('diensten.html', 'Producten en diensten (overzicht)'),
     ('booth-dj-gear.html', 'Producten · Dj-gear'),
     ('high-end-audio.html', 'Producten · High-end audio'),
