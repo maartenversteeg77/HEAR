@@ -289,6 +289,10 @@ CAMPAGNE = {"nieuwjaarsborrel.html": dict(titel="Heb jij al een nieuwjaarsborrel
      ("Sfeerlicht, truss en decoraties, eventueel met dansvloerlicht", None),
      ("Dj’s, eventueel aangevuld met een live muzikant", None),
      ("Jouw aanvullende wensen, bijvoorbeeld videoschermen, logoprojecties, fotografie of een aftermovie", None)])]),
+  '<section class="lp-band lp-prijs"><h2 class="lp-strip">Wat kost dat?</h2>'
+  '<p class="lp-prijs-hoofd">Richtprijs: € 10 per gast, met een minimum van € 1.500.</p>'
+  '<p>Vanaf 500 gasten: prijs op aanvraag.</p><p>Licht, geluid, transport, opbouw en dj/technicus inbegrepen.</p>'
+  '<p class="lp-prijs-klein">Afhankelijk van concept, locatie en technische vereisten. Exclusief btw.</p></section>',
   actieformulier("Check of jouw datum nog vrij is", "Landingspagina nieuwjaarsborrel")])}
 for bestand, p in CAMPAGNE.items():
     k = kop_html.replace('<link rel="stylesheet" href="styles.css">', '<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="doelgroep.css">')

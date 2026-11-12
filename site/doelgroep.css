@@ -120,3 +120,6 @@
 .actie-cta small{font:400 14px/1.4 var(--tekst);color:#cfcec9}
 .actie-voet{background:var(--zwart);color:#a9a8a3;padding:22px var(--rand);font:400 12px/1.5 var(--tekst)}
 .actie-voet p{margin:0}.actie-voet a{color:#cfcec9}
+.lp-prijs p{margin:0 0 6px;font:400 17px/1.5 var(--tekst);max-width:60ch}
+.lp-prijs .lp-prijs-hoofd{font:300 clamp(24px,2.6vw,36px)/1.2 var(--kop);margin:0 0 14px}
+.lp-prijs .lp-prijs-klein{font-size:14px;color:#6b6b68;margin-top:12px}
