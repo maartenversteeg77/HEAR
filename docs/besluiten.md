@@ -579,3 +579,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - 12 nov: nieuwjaarsborrel: zin herschreven tot 'Alles afgestemd op de ruimte: je eigen kantoor of een (industriële) ruimte die we omtoveren tot eventlocatie.'; kopje boven de aanbodlijst weg.
 - 12 nov: campagnestrook homepage valt meer op: turquoise steunkleur (#7AC3C9) met zwart, kop / 'Boek nu je licht, geluid en dj' / '(Nog enkele data in januari vrij)' op aparte regels, zwarte knop 'Bekijk de mogelijkheden →'.
 - 12 nov: menu- en kruimellabel 'Met wie we werken' → 'Voor wie we werken' (EN 'Who we work for'), sitebreed. Bloktitel homepage blijft 'Voor wie is HEAR'.
+- 12 nov: nieuwjaarsborrel-aanbod (Maarten): Versterkt geluid voor speeches en muziek · Sfeerlicht, truss en decoraties, eventueel met dansvloerlicht · Dj’s, eventueel aangevuld met een live muzikant · Jouw aanvullende wensen, bijvoorbeeld videoschermen, logoprojecties, fotografie of een aftermovie
