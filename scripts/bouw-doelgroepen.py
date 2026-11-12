@@ -269,10 +269,10 @@ CAMPAGNE = {"nieuwjaarsborrel.html": dict(titel="Nieuwjaarsborrel", h1="Nieuwjaa
         ["Soms begint de avond met een toespraak, soms is het de hele avond feest. Wij zorgen voor licht, geluid en muziek die daarbij passen.",
          "Alles afgestemd op de ruimte, ook als dat een kale industriële hal is die we ombouwen tot eventlocatie."]),
   aanbod("Wat we je bieden", [
-   kaart("Toespraak en toost", [("Een microfoon die goed klinkt", "Ook achterin de zaal verstaanbaar"), ("Opkomstmuziek", None)]),
+   kaart("Toespraak en toost", [("De mogelijkheid om versterkt een speech te geven", None), ("Opkomstmuziek", None)]),
    kaart("Sfeer", [("Sfeerlicht in je huisstijlkleuren", None), ("Je logo geprojecteerd op wand of vloer", None)],
      meer=[("atmosfeerlicht", "atmospheric-lighting.html")]),
-   kaart("Muziek", [("Een playlist of dj die meegaat met de avond", "Rustig bij binnenkomst, dansbaar als het zover is"),
+   kaart("Muziek", [("Een dj die het event van begin tot eind muzikaal omlijst", None),
      ("Een live muzikant bij de dj-set", "Saxofoon, percussie of vocals")], meer=[("dj's en artiesten", "artiesten.html")], wens=True)]),
   contact("Organiseer je een nieuwjaarsborrel?", "Landingspagina nieuwjaarsborrel", "Bijvoorbeeld: nieuwjaarsborrel voor 150 collega's en relaties, vrijdag 15 januari"),
   eerder("Deze opdrachtgevers gingen je voor", ["gemeentelijk-netwerkevent.html", "jubileum-ondernemersnetwerk.html"])])}
