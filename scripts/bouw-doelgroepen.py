@@ -277,7 +277,7 @@ def actieformulier(kop, bron):
 <p class="lp-melding" hidden></p></form></div></section>'''
 
 # ---------- verborgen campagnepagina's (niet in navigatie, noindex) ----------
-CAMPAGNE = {"nieuwjaarsborrel.html": dict(titel="Licht, geluid en muziek voor jouw nieuwjaarsborrel | HEAR", h1="Heb jij al een nieuwjaarsborrel gepland?<br><br>Wij helpen je graag!",
+CAMPAGNE = {"nieuwjaarsborrel.html": dict(titel="Jouw nieuwjaarsborrel | HEAR", h1="Heb jij al een nieuwjaarsborrel gepland?<br><br>Wij helpen je graag!",
  beschrijving="Wij helpen je graag met licht, geluid en muziek voor je nieuwjaarsborrel. Voor collega's, relaties of allebei.",
  beeld="img/nieuwjaarsborrel.jpg", pos="50% 45%", alt="Gasten op een borrel in een verlichte industriële hal, met live muziek",
  delen=[
