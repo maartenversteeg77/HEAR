@@ -84,11 +84,24 @@ Onschuldige waarschuwingen van check-css: cc-, nieuws-rij, systeemadvies, v2- en
 - Opbouw: titel op twee regels ("Heb jij al een nieuwjaarsborrel gepland?" en "Wij helpen je graag!"), beeld met het turquoise label "Nog enkele data in januari vrij" en de knop "Vraag vrijblijvend een offerte aan", korte intro, vier punten aanbod, richtprijs, formulier met datum en aantal gasten. Onder het formulier staat alleen een juridische regel.
 - Prijs: "Vanaf € 10 per gast, met een minimum van € 1.500", vanaf 500 gasten op aanvraag. Geen aantal uren, geen kortingsactie.
 - Op de homepage staat een turquoise strook naar deze pagina, tussen "Voor wie is HEAR" en "Bekijk de cases". **Na januari weghalen.**
-- LinkedIn toont bij gewone posts met een link alleen een kleine tegel. Daarom is er een los beeld voor de post gemaakt (staand, 4:5). De kop daarvan is nog niet gekozen.
+- LinkedIn toont bij gewone posts met een link alleen een kleine tegel. Daarom plaatst Maarten een los beeld met de link in de tekst. De advertentie die hij op 13 november plaatste, heeft hij zelf gemaakt; zie hoofdstuk 8.
+- De advertentie zegt "Vraag vrijblijvend een voorstel aan", de actiepagina zegt nog "offerte". Niet gelijkgetrokken; aan Maarten voorleggen.
 
-## 8. Open punten
+## 8. Advertenties: wat Maartens eigen versie leert
 
-- Kop voor het LinkedIn-beeld. Kandidaten: "Laat je nieuwjaarsborrel klinken", "Maak van je nieuwjaarsborrel een event". Maarten vond "Jij: het nieuwjaarsfeest / Wij: de slingers" kort maar te facilitair.
+Mijn versies van het LinkedIn-beeld pakten hem niet. Zijn eindversie (13 november): de foto over het hele vlak, de kop "Breng je nieuwjaarsborrel *tot leven*.", daaronder "Met een DJ, licht, geluid en aankleding.", klein "Nog enkele data in januari vrij", een turquoise knop "Vraag vrijblijvend een voorstel aan" en het adres. Wat daaruit volgt voor een volgende advertentie:
+
+1. **Een advertentie is geen pagina.** Ik nam de opbouw van de webpagina over: zwarte balk, foto, voetregel. Hij liet de foto het hele vlak vullen en zette de tekst erop. Begin bij het beeld, niet bij de paginaopbouw.
+2. **Kop is een belofte, de regel eronder zegt wat je levert.** "Breng … tot leven" belooft iets, en "Met een DJ, licht, geluid en aankleding" maakt het meteen concreet. Ik zette wat HEAR doet in een kleine voetregel, los van de kop. Belofte en bewijs horen direct onder elkaar.
+3. **Begin bij het merkprincipe.** Zijn kop is de transformatie uit de huisstijl. Ik noemde die richting wel ("Maak van je nieuwjaarsborrel een event"), maar zette in op een woordspeling en een rolverdeling. Werk bij een kop eerst het merkprincipe uit, en pas daarna andere vormen.
+4. **Eén accent.** Bij hem is alleen de knop gekleurd en staat de schaarste er klein boven. Ik gaf de schaarste een groot turquoise label en zette ook de voetregel in turquoise, waardoor twee dingen om aandacht vroegen. Dit is dezelfde correctie als "niet één element te zwaar maken".
+5. **Een knop in het beeld mag.** Ik liet hem weg omdat je er niet op kunt tikken. Dat was te letterlijk gedacht: in een advertentie is de knopvorm een afspraak die zegt wat je moet doen. De knoptekst komt terug in de tekst van de post, met de link.
+6. **Gewone woorden.** "Voorstel" in plaats van "offerte", "aankleding" in plaats van "truss en decoraties".
+7. **Zijn regels gelden per soort tekst.** In de posttekst schrijft hij zelf "Van openingsspeech tot de laatste dans". De regel tegen van…tot geldt voor de teksten op de site; leg hem niet ongevraagd op aan zijn advertentieteksten.
+
+## 9. Open punten
+
+- "Offerte" of "voorstel" op de actiepagina (de advertentie zegt "voorstel").
 - Scherper origineel van de borrelfoto (het huidige bestand is 1533 pixels breed).
 - Een quote van een klant of klantlogo's op de actiepagina, zonder link.
 - Artikel "Wanneer licht het geluid versterkt": Maarten schrijft de eerste versie zelf. Opzet en bronnen staan in het projectdocument `claude/artikel-licht-versterkt-geluid.md`. Als hij een versie indient: beoordelen, en zijn tekst met de patronen opslaan in een projectdocument "Content structuur en tone of voice".
