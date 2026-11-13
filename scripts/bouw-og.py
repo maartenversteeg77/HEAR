@@ -48,6 +48,9 @@ for p in pagina_s:
     if p.name == "index.html": pad = pad[:-len("index.html")]
     else: pad = pad[:-len(".html")]  # Cloudflare stuurt /x.html door naar /x; canonical moet naar het eindadres wijzen (7 nov)
     titel = html.unescape(re.search(r"<title>(.*?)</title>", s, re.S).group(1))
+    # Afwijkende deeltitel: een pagina kan <meta name="deeltitel" content="…"> hebben. Facebook toont de deeltitel in een advertentie links van de knop (14 nov).
+    dm = re.search(r'<meta name="deeltitel" content="([^"]*)"', s)
+    if dm: titel = html.unescape(dm.group(1))
     m = re.search(r'<meta name="description" content="([^"]*)"', s)
     omschr = html.unescape(m.group(1)) if m else ""
     bron = BEELD.get(p.stem) or beeld_van(s)

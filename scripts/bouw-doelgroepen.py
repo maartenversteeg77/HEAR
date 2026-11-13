@@ -277,8 +277,8 @@ def actieformulier(kop, bron):
 <p class="lp-melding" hidden></p></form></div></section>'''
 
 # ---------- verborgen campagnepagina's (niet in navigatie, noindex) ----------
-CAMPAGNE = {"nieuwjaarsborrel.html": dict(titel="Jouw nieuwjaarsborrel | HEAR", h1="Heb jij al een nieuwjaarsborrel gepland?<br><br>Wij helpen je graag!",
- beschrijving="Wij helpen je graag met licht, geluid en muziek voor je nieuwjaarsborrel. Voor collega's, relaties of allebei.",
+CAMPAGNE = {"nieuwjaarsborrel.html": dict(titel="Licht, geluid en muziek voor jouw nieuwjaarsborrel | HEAR", deeltitel="Wij helpen je graag", h1="Heb jij al een nieuwjaarsborrel gepland?<br><br>Wij helpen je graag!",
+ beschrijving="Licht, geluid en muziek voor je nieuwjaarsborrel. Voor collega's, relaties of allebei.",
  beeld="img/nieuwjaarsborrel.jpg", pos="50% 45%", alt="Gasten op een borrel in een verlichte industriële hal, met live muziek",
  delen=[
   intro("De nieuwjaarsborrel is het eerste moment van het jaar waarop iedereen elkaar weer ziet.",
@@ -299,7 +299,7 @@ CAMPAGNE = {"nieuwjaarsborrel.html": dict(titel="Jouw nieuwjaarsborrel | HEAR", 
 for bestand, p in CAMPAGNE.items():
     k = kop_html.replace('<link rel="stylesheet" href="styles.css">', '<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="doelgroep.css">')
     k = re.sub(r'<title>.*?</title>', f'<title>{e(p["titel"])}</title>', k)
-    k = re.sub(r'<meta name="description" content="[^"]*">', f'<meta name="description" content="{e(p["beschrijving"])}"><meta name="robots" content="noindex">', k)
+    k = re.sub(r'<meta name="description" content="[^"]*">', f'<meta name="description" content="{e(p["beschrijving"])}"><meta name="deeltitel" content="{e(p.get("deeltitel", p["titel"]))}"><meta name="robots" content="noindex">', k)
     k = re.sub(r'<a class="taal" href="[^"]*"', '<a class="taal" href="/en/index.html"', k)
     main = (f'<main class="wrap lp"><section class="casehead"><h1 class="kernzin">{p["h1"]}</h1>'
             f'</section><div class="lp-held"><div class="actie-beeld"><img src="{p["beeld"]}" alt="{e(p["alt"])}" style="object-position:{p["pos"]}">'
