@@ -277,7 +277,7 @@ def actieformulier(kop, bron):
 <p class="lp-melding" hidden></p></form></div></section>'''
 
 # ---------- verborgen campagnepagina's (niet in navigatie, noindex) ----------
-CAMPAGNE = {"nieuwjaarsborrel.html": dict(titel="Heb jij al een nieuwjaarsborrel gepland?", h1="Heb jij al een nieuwjaarsborrel gepland?<br><br>Wij helpen je graag!",
+CAMPAGNE = {"nieuwjaarsborrel.html": dict(titel="Licht, geluid en muziek voor jouw nieuwjaarsborrel | HEAR", h1="Heb jij al een nieuwjaarsborrel gepland?<br><br>Wij helpen je graag!",
  beschrijving="Wij helpen je graag met licht, geluid en muziek voor je nieuwjaarsborrel. Voor collega's, relaties of allebei.",
  beeld="img/nieuwjaarsborrel.jpg", pos="50% 45%", alt="Gasten op een borrel in een verlichte industriële hal, met live muziek",
  delen=[
@@ -298,7 +298,7 @@ CAMPAGNE = {"nieuwjaarsborrel.html": dict(titel="Heb jij al een nieuwjaarsborrel
   '<span class="samen-tekst"><span class="samen-kop">Voor wie we werken</span><span class="samen-knop">Bekijk het overzicht <i aria-hidden="true">→</i></span></span></a></section>'])}
 for bestand, p in CAMPAGNE.items():
     k = kop_html.replace('<link rel="stylesheet" href="styles.css">', '<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="doelgroep.css">')
-    k = re.sub(r'<title>.*?</title>', f'<title>{e(p["titel"])} · HEAR</title>', k)
+    k = re.sub(r'<title>.*?</title>', f'<title>{e(p["titel"])}</title>', k)
     k = re.sub(r'<meta name="description" content="[^"]*">', f'<meta name="description" content="{e(p["beschrijving"])}"><meta name="robots" content="noindex">', k)
     k = re.sub(r'<a class="taal" href="[^"]*"', '<a class="taal" href="/en/index.html"', k)
     main = (f'<main class="wrap lp"><section class="casehead"><h1 class="kernzin">{p["h1"]}</h1>'
