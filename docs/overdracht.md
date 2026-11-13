@@ -104,6 +104,7 @@ Mijn versies van het LinkedIn-beeld pakten hem niet. Zijn eindversie (13 novembe
 ## 9. Open punten
 
 - "Offerte" of "voorstel" op de actiepagina (de advertentie zegt "voorstel").
+- Meta-campagne nieuwjaarsborrel loopt sinds 14 november als eerste oefening: één advertentieset, brede selectie op functies, klein budget. Na afloop: resultaten bekijken (aanvraagmails met "Herkomst", uitsplitsing in Advertentiebeheer of een CSV-export) en dan een betrouwbare koppeling tussen Meta en Claude kiezen, zodat Claude campagnes kan bouwen en Maarten ze per opdracht aanstuurt. Kandidaten uit de connectorlijst, nog niet beoordeeld: Adspirer Social Ads, Windsor.ai for Paid Media, Supermetrics.
 - Scherper origineel van de borrelfoto (het huidige bestand is 1533 pixels breed).
 - Een quote van een klant of klantlogo's op de actiepagina, zonder link.
 - Artikel "Wanneer licht het geluid versterkt": Maarten schrijft de eerste versie zelf. Opzet en bronnen staan in het projectdocument `claude/artikel-licht-versterkt-geluid.md`. Als hij een versie indient: beoordelen, en zijn tekst met de patronen opslaan in een projectdocument "Content structuur en tone of voice".
