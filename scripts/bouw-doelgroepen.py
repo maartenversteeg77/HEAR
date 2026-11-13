@@ -265,7 +265,7 @@ def actieformulier(kop, bron):
     return f'''<section class="lp-band lp-contact" id="contact"><div class="lp-twee"><div><h2>{kop}</h2><p>Laat je datum en gegevens achter, dan hoor je dezelfde werkdag van me.</p>
 <div class="lp-wie"><img src="img/maarten-adviseur.jpg" alt="Maarten Versteeg" loading="lazy" style="object-position:50% 20%"><div><b>Maarten Versteeg</b><span>Oprichter HEAR</span></div></div></div>
 <form class="lp-form" method="post" action="/api/aanvraag" data-dank="Dank je. Je hoort dezelfde werkdag van me." data-fout="Versturen lukte niet. Mail naar maarten@hear.nl of bel +31 6 24560220.">
-<input type="hidden" name="bron" value="{e(bron)}"><input type="text" name="website" class="lp-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<input type="hidden" name="bron" value="{e(bron)}"><input type="hidden" name="utm" value=""><input type="text" name="website" class="lp-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 <label>Datum van je event<input name="datum" type="date" required></label>
 <label>Aantal gasten<input name="gasten" type="number" min="1" inputmode="numeric"></label>
 <label>Naam<input name="naam" autocomplete="name" required></label>
@@ -306,8 +306,12 @@ for bestand, p in CAMPAGNE.items():
             f'<span class="actie-label">Nog enkele data in januari vrij</span>'
             f'<a class="wa actie-knop" href="#contact"><span>Vraag vrijblijvend een offerte aan</span><i aria-hidden="true">→</i></a></div></div>'
             + "".join(p["delen"]) + '</main>')
+    # herkomst van de advertentie (utm_-parameters) meesturen met het formulier; geen cookies, alleen deze sessie
+    utm_js = ('<script>(function(){try{var q=new URLSearchParams(location.search),k=["utm_source","utm_medium","utm_campaign","utm_content"],v=k.map(function(n){return q.get(n)||""});'
+              'var t=v.some(Boolean)?v.filter(Boolean).join(" / "):"";try{if(t)sessionStorage.setItem("hear_utm",t);else t=sessionStorage.getItem("hear_utm")||""}catch(e){}'
+              '[].forEach.call(document.querySelectorAll(\'input[name="utm"]\'),function(i){i.value=t})}catch(e){}})();</script>')
     voet_actie = '<footer class="actie-voet"><p>HEAR is een handelsnaam van Maarten Versteeg communicatie advies B.V. · KvK 42181393 · <a href="privacy.html">Privacyverklaring</a></p></footer></body></html>'
-    (site / bestand).write_text(k + main + JS + voet_actie)
+    (site / bestand).write_text(k + main + JS + utm_js + voet_actie)
     print("ok", bestand, "(verborgen)")
 
 # ---------- overzichtspagina en homepage ----------

@@ -42,10 +42,13 @@ async function aanvraag(request, env) {
   const soortMail = bron === "Coffee cuts" ? "Coffee cuts-aanvraag" : /maartenversteeg/i.test(bron) ? "DJ-boeking via maartenversteeg.nl" : "Aanvraag via hear.nl";
   const herkomst = /maartenversteeg/i.test(request.headers.get("Origin") || "") && bron === "Coffee cuts" ? " (via maartenversteeg.nl)" : "";
   const onderwerp = `${soortMail}${herkomst}: ${d.organisatie || d.naam}${d.datum ? ", " + d.datum : ""}`;
+  // Onderaan de mail: via welke pagina en (bij advertenties) via welke bron de aanvraag kwam. De pagina vult "utm" uit de utm_-parameters in het adres.
+  const utm = schoon(fd.get("utm")).slice(0, 300);
+  const extra = [bron && `Pagina: ${bron}`, utm && `Herkomst: ${utm}`].filter(Boolean).map((r) => "\n" + r).join("");
   const r = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, "Content-Type": "application/json" },
-    body: JSON.stringify({ from: VAN, to: [NAAR], reply_to: d.email, subject: onderwerp, text: regels + "\n" }),
+    body: JSON.stringify({ from: VAN, to: [NAAR], reply_to: d.email, subject: onderwerp, text: regels + extra + "\n" }),
   });
   return antwoord(request, r.ok, r.ok ? 200 : 502);
 }
