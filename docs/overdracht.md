@@ -81,7 +81,7 @@ Onschuldige waarschuwingen van check-css: cc-, nieuws-rij, systeemadvies, v2- en
 ## 7. Actiepagina nieuwjaarsborrel (campagne tot en met januari 2027)
 
 - Adres: hear.nl/nieuwjaarsborrel. Niet in het menu, niet in de sitemap, niet in Google, alleen Nederlands.
-- Opbouw: titel op twee regels ("Heb jij al een nieuwjaarsborrel gepland?" en "Wij helpen je graag!"), beeld met het turquoise label "Nog enkele data in januari vrij" en de knop "Vraag vrijblijvend een offerte aan", korte intro, vier punten aanbod, richtprijs, formulier met datum en aantal gasten. Onder het formulier staat alleen een juridische regel.
+- Opbouw: titel op twee regels ("Heb jij al een nieuwjaarsborrel gepland?" en "Wij helpen je graag!"), beeld met het turquoise label "Nog enkele data in januari vrij" en de knop "Vraag vrijblijvend een offerte aan", korte intro, vier punten aanbod, richtprijs, formulier met datum en aantal gasten. Onder het formulier staat één klikbare tegel "Voor wie we werken" (naar het doelgroepenoverzicht, met het beeld van de eventmanagers-tegel) en daaronder alleen een juridische regel.
 - Prijs: "Vanaf € 10 per gast, met een minimum van € 1.500", vanaf 500 gasten op aanvraag. Geen aantal uren, geen kortingsactie.
 - Op de homepage staat een turquoise strook naar deze pagina, tussen "Voor wie is HEAR" en "Bekijk de cases". **Na januari weghalen.**
 - LinkedIn toont bij gewone posts met een link alleen een kleine tegel. Daarom plaatst Maarten een los beeld met de link in de tekst. De advertentie die hij op 13 november plaatste, heeft hij zelf gemaakt; zie hoofdstuk 8.

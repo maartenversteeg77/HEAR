@@ -293,7 +293,9 @@ CAMPAGNE = {"nieuwjaarsborrel.html": dict(titel="Heb jij al een nieuwjaarsborrel
   + lijst([("Vanaf € 10 per gast, met een minimum van € 1.500.", None), ("Vanaf 500 gasten: prijs op aanvraag.", None)]) +
   '<p class="lp-prijs-klein">Licht, geluid, transport, opbouw en dj/technicus inbegrepen.</p>'
   '<p class="lp-prijs-klein">Afhankelijk van concept, locatie en technische vereisten. Exclusief btw.</p></div></section>',
-  actieformulier("Vraag vrijblijvend een offerte aan", "Landingspagina nieuwjaarsborrel")])}
+  actieformulier("Vraag vrijblijvend een offerte aan", "Landingspagina nieuwjaarsborrel"),
+  '<section class="lp-band actie-verder"><a class="samen-tegel" href="doelgroepen.html"><span class="samen-beeld"><img src="img/doelgroepen/eventmanagers.jpg" alt="" loading="lazy" style="object-position:62% 40%"></span>'
+  '<span class="samen-tekst"><span class="samen-kop">Voor wie we werken</span><span class="samen-knop">Bekijk het overzicht <i aria-hidden="true">→</i></span></span></a></section>'])}
 for bestand, p in CAMPAGNE.items():
     k = kop_html.replace('<link rel="stylesheet" href="styles.css">', '<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="doelgroep.css">')
     k = re.sub(r'<title>.*?</title>', f'<title>{e(p["titel"])} · HEAR</title>', k)

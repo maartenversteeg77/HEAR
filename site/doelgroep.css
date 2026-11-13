@@ -131,3 +131,4 @@
 .actie-label{position:absolute;top:0;left:0;background:#7AC3C9;color:#191A19;font:500 12px/1 var(--tekst);letter-spacing:.14em;text-transform:uppercase;padding:11px 14px}
 .actie-knop{position:absolute;left:clamp(14px,2.4vw,32px);bottom:clamp(14px,2.4vw,32px);max-width:calc(100% - 28px);box-shadow:0 6px 24px rgba(0,0,0,.35)}
 @media(min-width:900px){.actie-knop{bottom:auto;left:auto;top:clamp(18px,2vw,28px);right:clamp(18px,2vw,28px)}}
+.actie-verder .samen-tegel{max-width:560px} /* 13 nov: één doorverwijzing onder het formulier */
