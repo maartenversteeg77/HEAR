@@ -595,3 +595,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - 13 nov: actiepagina: 'Vanaf € 10 per gast, met een minimum van € 1.500.' (was 'Richtprijs: …').
 - 13 nov: actiepagina: onder het formulier één klikbare tegel 'Voor wie we werken' naar /doelgroepen, met het beeld van de eventmanagers-tegel van de homepage (Maarten). Verder geen links onder het formulier.
 - 13 nov: actiepagina: SEO-titel en og:title 'Licht, geluid en muziek voor jouw nieuwjaarsborrel | HEAR' (Maarten). De kop op de pagina blijft 'Heb jij al een nieuwjaarsborrel gepland?'.
+- 13 nov: homepage productblok (desktop): knop op het beeld groter, in het midden en deels doorzichtig, met vaste tekst 'Bekijk assortiment' voor de productcategorieën en 'Alle producten en diensten' (EN 'View the range'). De diensten in het tweede tabblad houden hun eigen tekst (Bekijk artiesten enz.).

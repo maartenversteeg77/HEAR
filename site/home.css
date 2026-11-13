@@ -544,3 +544,8 @@ h2.strip-kop a:hover,h2.strip-kop a:focus-visible{text-decoration:underline;text
 .nj-knop i{font-style:normal}
 .nj-strip:hover .nj-knop,.nj-strip:focus-visible .nj-knop{background:#000}
 @media(max-width:700px){.nj-knop{width:100%;justify-content:space-between}}
+/* 13 nov: knop op het productbeeld (desktop) groter, gecentreerd en deels doorzichtig */
+@media (min-width:901px){
+  .pl-media .pl-verder{right:auto!important;bottom:auto!important;left:50%;top:50%;transform:translate(-50%,-50%);padding:18px 36px!important;font:400 20px/1.2 var(--tekst)!important;background:rgba(246,245,241,.14)!important;color:var(--wit)!important;border:1px solid rgba(246,245,241,.75)!important;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:none!important}
+  .pl-media .pl-verder:hover{background:rgba(246,245,241,.3)!important;color:var(--wit)!important}
+}
