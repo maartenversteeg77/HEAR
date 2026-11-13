@@ -82,7 +82,7 @@ Onschuldige waarschuwingen van check-css: cc-, nieuws-rij, systeemadvies, v2- en
 
 - Adres: hear.nl/nieuwjaarsborrel. Niet in het menu, niet in de sitemap, niet in Google, alleen Nederlands.
 - Opbouw: titel op twee regels ("Heb jij al een nieuwjaarsborrel gepland?" en "Wij helpen je graag!"), beeld met het turquoise label "Nog enkele data in januari vrij" en de knop "Vraag vrijblijvend een offerte aan", korte intro, vier punten aanbod, richtprijs, formulier met datum en aantal gasten. Onder het formulier staat alleen een juridische regel.
-- Richtprijs: € 10 per gast, minimum € 1.500, vanaf 500 gasten op aanvraag. Geen aantal uren, geen kortingsactie.
+- Prijs: "Vanaf € 10 per gast, met een minimum van € 1.500", vanaf 500 gasten op aanvraag. Geen aantal uren, geen kortingsactie.
 - Op de homepage staat een turquoise strook naar deze pagina, tussen "Voor wie is HEAR" en "Bekijk de cases". **Na januari weghalen.**
 - LinkedIn toont bij gewone posts met een link alleen een kleine tegel. Daarom is er een los beeld voor de post gemaakt (staand, 4:5). De kop daarvan is nog niet gekozen.
 

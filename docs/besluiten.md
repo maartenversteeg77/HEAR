@@ -592,3 +592,4 @@ Nieuws: de EN-knop op nieuwspagina's leidt naar de Engelse homepage (ging naar d
 - 12 nov: actiepagina: knop en formulierkop 'Vraag vrijblijvend een offerte aan' (was 'Check nu of je datum nog vrij is', dubbel met het label 'Nog enkele data in januari vrij'); verzendknop 'Vraag offerte aan'.
 - 13 nov: Over HEAR (Maarten): zin over grotere events en de show geschrapt; nu 'Bij HEAR staan licht en geluid in dienst van de artiest, met kleurrijke lichtshows die de muziek en de sfeer versterken, maar nooit overstemmen.'
 - 13 nov: EN Over HEAR (Maarten): '…colourful light shows that add to the music and atmosphere without overwhelming.' Werkwijze Engels: niet zin voor zin vertalen maar vanuit de betekenis opnieuw schrijven.
+- 13 nov: actiepagina: 'Vanaf € 10 per gast, met een minimum van € 1.500.' (was 'Richtprijs: …').
