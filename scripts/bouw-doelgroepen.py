@@ -307,7 +307,7 @@ for bestand, p in CAMPAGNE.items():
             f'<a class="wa actie-knop" href="#contact"><span>Vraag vrijblijvend een offerte aan</span><i aria-hidden="true">→</i></a></div></div>'
             + "".join(p["delen"]) + '</main>')
     # herkomst van de advertentie (utm_-parameters) meesturen met het formulier; geen cookies, alleen deze sessie
-    utm_js = ('<script>(function(){try{var q=new URLSearchParams(location.search),k=["utm_source","utm_medium","utm_campaign","utm_content"],v=k.map(function(n){return q.get(n)||""});'
+    utm_js = ('<script>(function(){try{var q=new URLSearchParams(location.search),k=["utm_source","utm_medium","utm_campaign","utm_term","utm_content"],v=k.map(function(n){return q.get(n)||""});'
               'var t=v.some(Boolean)?v.filter(Boolean).join(" / "):"";try{if(t)sessionStorage.setItem("hear_utm",t);else t=sessionStorage.getItem("hear_utm")||""}catch(e){}'
               '[].forEach.call(document.querySelectorAll(\'input[name="utm"]\'),function(i){i.value=t})}catch(e){}})();</script>')
     voet_actie = '<footer class="actie-voet"><p>HEAR is een handelsnaam van Maarten Versteeg communicatie advies B.V. · KvK 42181393 · <a href="privacy.html">Privacyverklaring</a></p></footer></body></html>'
