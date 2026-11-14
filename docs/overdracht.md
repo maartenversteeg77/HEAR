@@ -28,6 +28,7 @@ Dit zijn de correcties die Maarten het vaakst heeft moeten herhalen. Loop ze elk
 
 - **Privé:** privé-mail en privénummer nooit publiceren. Publiek zijn alleen maarten@hear.nl en +31 6 24560220. De Resend-sleutel staat alleen in Cloudflare.
 - **Beeld:** geen AI-beelden. Stockbeeld alleen als je het er niet aan afziet.
+- **Cookies:** alleen de Meta-pixel op de actiepagina, en alleen na akkoord. Nergens anders trackers toevoegen zonder besluit van Maarten.
 - **Prijzen:** maatwerk. Geen prijspagina in het menu. De enige prijs op de site is de richtprijs op de actiepagina nieuwjaarsborrel.
 - **Huisstijl:** zwart `#191A19`, wit `#F6F5F1`, koraal `#D47763`, turquoise `#7AC3C9` als steunkleur. Maximaal twee kleuren per onderdeel. Koppen in Advent Pro Light, lopende tekst Helvetica.
 - **Loggen:** elk besluit met datum in `docs/besluiten.md`.
@@ -84,7 +85,8 @@ Onschuldige waarschuwingen van check-css: cc-, nieuws-rij, systeemadvies, v2- en
 - Opbouw: titel op twee regels ("Heb jij al een nieuwjaarsborrel gepland?" en "Wij helpen je graag!"), beeld met het turquoise label "Nog enkele data in januari vrij" en de knop "Vraag vrijblijvend een offerte aan", korte intro, vier punten aanbod, richtprijs, formulier met datum en aantal gasten. Onder het formulier staat één klikbare tegel "Voor wie we werken" (naar het doelgroepenoverzicht, met het beeld van de eventmanagers-tegel) en daaronder alleen een juridische regel.
 - Prijs: "Vanaf € 10 per gast, met een minimum van € 1.500", vanaf 500 gasten op aanvraag. Geen aantal uren, geen kortingsactie.
 - Titels: het tabblad heeft "Licht, geluid en muziek voor jouw nieuwjaarsborrel | HEAR"; de deeltitel (`og:title`) is apart ingesteld op "Wij helpen je graag", omdat Facebook die in de advertentie links van de knop toont en na ongeveer 33 tekens afbreekt. Een afwijkende deeltitel stel je in met `<meta name="deeltitel">`; `bouw-og.py` neemt die over.
-- Meten: de Meta-advertenties krijgen utm-parameters (`utm_source={{site_source_name}}&utm_medium=paid_social&utm_campaign=nieuwjaarsborrel_2027&utm_term={{adset.name}}&utm_content={{ad.name}}`; `utm_term` is de advertentieset, dus de doelgroep). De pagina zet die in een verborgen formulierveld `utm`, en de mail sluit af met "Pagina: …" en "Herkomst: …". Geen statistiekprogramma, geen pixel, geen cookies.
+- Meten: de Meta-advertenties krijgen utm-parameters (`utm_source={{site_source_name}}&utm_medium=paid_social&utm_campaign=nieuwjaarsborrel_2027&utm_term={{adset.name}}&utm_content={{ad.name}}`; `utm_term` is de advertentieset, dus de doelgroep). De pagina zet die in een verborgen formulierveld `utm`, en de mail sluit af met "Pagina: …" en "Herkomst: …". Geen statistiekprogramma.
+- Meta-pixel (ID 1122856917017005, gegevensset "pixel-nieuwjaarsborrel") staat alleen op de actiepagina en laadt pas na "Akkoord" in de cookiemelding; keuze in localStorage (`hear_meta`), te wijzigen via "Cookiekeuze" in de voet. Bij een verzonden formulier gaat de gebeurtenis Lead naar Meta. De rest van de site zet geen cookies. De privacyverklaring is hierop aangepast (NL en EN).
 - Op de homepage staat een turquoise strook naar deze pagina, tussen "Voor wie is HEAR" en "Bekijk de cases". **Na januari weghalen.**
 - LinkedIn toont bij gewone posts met een link alleen een kleine tegel. Daarom plaatst Maarten een los beeld met de link in de tekst. De advertentie die hij op 13 november plaatste, heeft hij zelf gemaakt; zie hoofdstuk 8.
 - De advertentie zegt "Vraag vrijblijvend een voorstel aan", de actiepagina zegt nog "offerte". Niet gelijkgetrokken; aan Maarten voorleggen.
@@ -104,7 +106,6 @@ Mijn versies van het LinkedIn-beeld pakten hem niet. Zijn eindversie (13 novembe
 ## 9. Open punten
 
 - "Offerte" of "voorstel" op de actiepagina (de advertentie zegt "voorstel").
-- Meta-pixel: gebouwd en getest op 14 november (cookiemelding met Akkoord / Liever niet, gebeurtenis Lead bij een aanvraag, privacyverklaring aangepast), maar op verzoek van Maarten weer uitgezet. De site zet dus geen cookies. Terugzetten: de commit "f98ffdf" opnieuw toepassen (`git revert` van de terugdraai-commit). Pixel-ID 1122856917017005, gegevensset "pixel-nieuwjaarsborrel". Nodig als hij wil sturen op weergaven van de landingspagina.
 - Meta-campagne nieuwjaarsborrel loopt sinds 14 november als eerste oefening: één advertentieset, brede selectie op functies, klein budget. Na afloop: resultaten bekijken (aanvraagmails met "Herkomst", uitsplitsing in Advertentiebeheer of een CSV-export) en dan een betrouwbare koppeling tussen Meta en Claude kiezen, zodat Claude campagnes kan bouwen en Maarten ze per opdracht aanstuurt. Kandidaten uit de connectorlijst, nog niet beoordeeld: Adspirer Social Ads, Windsor.ai for Paid Media, Supermetrics.
 - Scherper origineel van de borrelfoto (het huidige bestand is 1533 pixels breed).
 - Een quote van een klant of klantlogo's op de actiepagina, zonder link.
