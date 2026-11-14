@@ -14,7 +14,7 @@ BLOKKEN = [
     ("Wat we verwerken", [
         "Als je ons een bericht stuurt via WhatsApp, e-mail of het aanvraagformulier: je naam, organisatie, telefoonnummer, e-mailadres en wat je over je event invult. We gebruiken dit alleen om je vraag te beantwoorden en, bij een opdracht, voor de uitvoering en administratie daarvan. Het formulier wordt als e-mail aan ons bezorgd via Resend en niet op de website opgeslagen.",
         "Bij een opdracht: de gegevens die nodig zijn voor offerte, overeenkomst en factuur. Facturen bewaren we zeven jaar, zoals de wet voorschrijft. Andere gegevens bewaren we niet langer dan nodig voor het doel waarvoor je ze gaf.",
-        "Deze website plaatst zelf geen cookies en gebruikt geen bezoekersstatistieken. Er zijn twee uitzonderingen. Op de actiepagina voor de nieuwjaarsborrel gebruiken we de Meta-pixel, en alleen als je daar op Akkoord klikt. Meta plaatst dan cookies waarmee wij kunnen zien of een advertentie op Facebook of Instagram tot een bezoek of een aanvraag leidt; Meta kan die gegevens ook voor eigen doeleinden gebruiken. Je keuze kun je onderaan die pagina wijzigen via Cookiekeuze. Op de pagina over dj's staat een ingebouwde SoundCloud-player; die wordt door SoundCloud geleverd en kan cookies van SoundCloud plaatsen zodra je hem gebruikt.",
+        "Deze website plaatst zelf geen cookies en gebruikt geen bezoekersstatistieken of trackers. Op de pagina over dj's staat een ingebouwde SoundCloud-player; die wordt door SoundCloud geleverd en kan cookies van SoundCloud plaatsen zodra je hem gebruikt.",
     ]),
     ("Technische dienstverleners", [
         "De website wordt gehost door Cloudflare. Bij het laden van een pagina ziet Cloudflare je IP-adres en de opgevraagde pagina, zoals elke hostingpartij.",
@@ -25,7 +25,7 @@ BLOKKEN = [
         "Je kunt inzage, correctie of verwijdering van je gegevens vragen via maarten@hear.nl. Ben je het niet eens met hoe we met je gegevens omgaan, dan kun je een klacht indienen bij de Autoriteit Persoonsgegevens.",
     ]),
 ]
-DATUM = "Laatst bijgewerkt: 14 november 2026."
+DATUM = "Laatst bijgewerkt: 28 oktober 2026."
 
 blokken = "".join(f'<h2 class="kopje">{e(k)}</h2>' + "".join(f"<p>{e(t)}</p>" for t in ts) for k, ts in BLOKKEN)
 main = f'''<main class="wrap">
