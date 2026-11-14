@@ -56,7 +56,7 @@ b.innerHTML=S.map(function(s,n){return '<button type="button" class="lp-n" data-
 b.addEventListener('click',function(ev){var o=ev.target.closest('button');if(!o)return;if(o.dataset.n){i=+o.dataset.n;alle=false}else if(o.classList.contains('lp-alle')){alle=!alle}else{i=i<S.length-1?i+1:0}r();});r();});
 document.querySelectorAll('.lp-form').forEach(function(f){var m=f.querySelector('.lp-melding');f.addEventListener('submit',function(ev){if(!window.fetch)return;ev.preventDefault();var k=f.querySelector('button');k.disabled=true;
 fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}}).then(function(r){return r.json()}).then(function(r){m.hidden=false;
-if(r.ok){m.textContent=f.dataset.dank;[].forEach.call(f.querySelectorAll('label,button,.lp-privacy'),function(x){x.hidden=true})}else{m.textContent=f.dataset.fout;k.disabled=false}}).catch(function(){m.hidden=false;m.textContent=f.dataset.fout;k.disabled=false});});});
+if(r.ok){m.textContent=f.dataset.dank;[].forEach.call(f.querySelectorAll('label,button,.lp-privacy'),function(x){x.hidden=true});try{document.dispatchEvent(new Event('hear:aanvraag'))}catch(e){}}else{m.textContent=f.dataset.fout;k.disabled=false}}).catch(function(){m.hidden=false;m.textContent=f.dataset.fout;k.disabled=false});});});
 })();</script><footer class="voet">
   <div class="voet-kolommen">
     <div class="voet-merk">

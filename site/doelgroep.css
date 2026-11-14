@@ -132,3 +132,10 @@
 .actie-knop{position:absolute;left:clamp(14px,2.4vw,32px);bottom:clamp(14px,2.4vw,32px);max-width:calc(100% - 28px);box-shadow:0 6px 24px rgba(0,0,0,.35)}
 @media(min-width:900px){.actie-knop{bottom:auto;left:auto;top:clamp(18px,2vw,28px);right:clamp(18px,2vw,28px)}}
 .actie-verder .samen-tegel{max-width:560px} /* 13 nov: één doorverwijzing onder het formulier */
+/* 14 nov: cookiemelding op de actiepagina (Meta-pixel alleen na akkoord) */
+.cookie-balk{position:fixed;left:0;right:0;bottom:0;z-index:50;background:#191A19;color:#F6F5F1;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;padding:16px var(--rand);padding-bottom:calc(16px + env(safe-area-inset-bottom,0px));border-top:1px solid rgba(246,245,241,.2);font:400 14px/1.45 var(--tekst)}
+.cookie-balk p{margin:0;max-width:62ch}.cookie-balk a{color:#F6F5F1}
+.cookie-balk div{display:flex;gap:10px}
+.cookie-balk button{font:500 14px/1 var(--tekst);padding:11px 18px;border-radius:999px;border:1px solid #F6F5F1;background:transparent;color:#F6F5F1;cursor:pointer}
+.cookie-balk button:hover,.cookie-balk button:focus-visible{background:#F6F5F1;color:#191A19}
+.cookie-balk[hidden]{display:none}
