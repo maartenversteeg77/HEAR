@@ -16,16 +16,13 @@ body.proef .hero h1{margin-bottom:14px}
 body.proef .hero .feiten{margin-bottom:22px}
 body.proef .hero-bollen{top:auto;bottom:clamp(24px,3vw,44px)}
 
-.kamers{flex:none;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));background:var(--zwart);border-top:1px solid rgba(246,245,241,.22)}
+.kamers{flex:none;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));background:var(--zwart);border-top:1px solid rgba(246,245,241,.22)}
 .kamer-link{display:flex;flex-direction:column;justify-content:space-between;gap:14px;min-height:clamp(104px,13vh,150px);padding:18px clamp(14px,1.6vw,26px) 16px;color:var(--wit);text-decoration:none;border-left:1px solid rgba(246,245,241,.22);transition:background .2s,color .2s}
 .kamer-link:first-child{border-left:0}
 .kamer-link span{font:400 clamp(19px,1.55vw,26px)/1.15 var(--kop);text-wrap:balance}
 .kamer-link i{font-style:normal;font-size:22px;line-height:1;color:var(--koraal);transition:transform .2s,color .2s}
 .kamer-link:hover,.kamer-link:focus-visible{background:var(--wit);color:var(--zwart)}
 .kamer-link:hover i,.kamer-link:focus-visible i{transform:translateX(6px);color:var(--zwart)}
-.kamer-link.kamer-actie{background:var(--turquoise);color:var(--zwart)}
-.kamer-link.kamer-actie i{color:var(--zwart)}
-.kamer-link.kamer-actie:hover,.kamer-link.kamer-actie:focus-visible{background:var(--wit)}
 
 /* laag scherm (kleine laptop): tekst compacter zodat alles past */
 @media (min-width:901px) and (max-height:760px){
@@ -68,8 +65,6 @@ body.proef .hero-bollen{top:auto;bottom:clamp(24px,3vw,44px)}
 .kamer-merk{justify-self:center;line-height:0}
 .kamer-merk img{width:104px;height:auto}
 .kamer-top .proef-plan{justify-self:end}
-body.kamer main>section:not(.over){min-height:calc(100vh - 68px);min-height:calc(100dvh - 68px)}
-body.kamer .samen~.werk,body.kamer .werk{padding-top:clamp(56px,7vw,104px)}
 @media (max-width:700px){
   .kamer-top{grid-template-columns:auto 1fr;padding:12px var(--rand)}
   .kamer-merk{display:none}

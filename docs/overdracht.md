@@ -59,7 +59,7 @@ Menu: **Cases · Voor wie we werken · Producten · Nieuws · Over HEAR**, plus 
 Volledige build, in deze volgorde:
 
 ```
-for f in doelgroepen cases diensten principes relevant privacy partners prijs mixes aanvraag nieuws en og 404 icoon sitemap; do python3 scripts/bouw-$f.py; done
+for f in doelgroepen cases diensten principes relevant privacy partners prijs mixes aanvraag nieuws en og 404 icoon sitemap proef-home; do python3 scripts/bouw-$f.py; done
 python3 scripts/check-css.py
 ```
 
@@ -106,7 +106,7 @@ Mijn versies van het LinkedIn-beeld pakten hem niet. Zijn eindversie (13 novembe
 - "Offerte" of "voorstel" op de actiepagina (de advertentie zegt "voorstel").
 - Meta-pixel: gebouwd en getest op 14 november (cookiemelding met Akkoord / Liever niet, gebeurtenis Lead bij een aanvraag, privacyverklaring aangepast), maar op verzoek van Maarten weer uitgezet. De site zet dus geen cookies. Terugzetten: de commit "f98ffdf" opnieuw toepassen (`git revert` van de terugdraai-commit). Pixel-ID 1122856917017005, gegevensset "pixel-nieuwjaarsborrel". Nodig als hij wil sturen op weergaven van de landingspagina. Op 14 november nogmaals aangezet en dezelfde nacht definitief weggehaald: geen pixel, geen cookiemelding. Daardoor kan Meta niet sturen op 'weergaven van landingspagina'; het prestatiedoel is 'klikken op links'. Terugzetten kan met een revert van de commit die hem weghaalde.
 - Meta-campagne nieuwjaarsborrel loopt sinds 14 november als eerste oefening: één advertentieset, brede selectie op functies, klein budget. Na afloop: resultaten bekijken (aanvraagmails met "Herkomst", uitsplitsing in Advertentiebeheer of een CSV-export) en dan een betrouwbare koppeling tussen Meta en Claude kiezen, zodat Claude campagnes kan bouwen en Maarten ze per opdracht aanstuurt. Kandidaten uit de connectorlijst, nog niet beoordeeld: Adspirer Social Ads, Windsor.ai for Paid Media, Supermetrics.
-- Proef 'home als vertrekpunt' staat op `/proef-home` (15 nov): vast scherm zonder scrollen, links naar 'kamers' (`proef-*.html`) met een terugknop. Bouwen met `python3 scripts/bouw-proef-home.py` ná wijzigingen aan `site/index.html`, anders loopt de proef achter. Niet gelinkt, noindex, alleen Nederlands. Wacht op Maartens oordeel; daarna doorvoeren of opruimen.
+- Proef 'home als vertrekpunt' staat op `/proef-home` (15 nov): vast scherm zonder scrollen, alleen de koraal knop rechtsboven, onder de hero vijf links (teksten = koppen van de strips) naar proefkopieën van de bestaande pagina's (`proef-doelgroepen`, `proef-cases`, `proef-diensten`, `proef-nieuws`, `proef-over-hear`). In die kopieën is het menu vervangen door een vaste balk 'Terug naar home'. Geen link naar de nieuwjaarsborrel. `python3 scripts/bouw-proef-home.py` draait als laatste in de build, anders lopen de kopieën achter. Niet gelinkt, noindex, alleen Nederlands. Wacht op Maartens oordeel; daarna doorvoeren of opruimen.
 - Scherper origineel van de borrelfoto (het huidige bestand is 1533 pixels breed).
 - Een quote van een klant of klantlogo's op de actiepagina, zonder link.
 - Artikel "Wanneer licht het geluid versterkt": Maarten schrijft de eerste versie zelf. Opzet en bronnen staan in het projectdocument `claude/artikel-licht-versterkt-geluid.md`. Als hij een versie indient: beoordelen, en zijn tekst met de patronen opslaan in een projectdocument "Content structuur en tone of voice".
