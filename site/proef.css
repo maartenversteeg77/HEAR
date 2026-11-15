@@ -1,0 +1,78 @@
+/* Proef (15 nov): home als vast vertrekpunt met kamers. Alleen geladen door proef-*.html. */
+
+/* knop rechtsboven, op home en in elke kamer */
+.proef-plan{text-decoration:none;font:500 12px/1 var(--tekst);letter-spacing:.16em;text-transform:uppercase;background:var(--koraal);color:var(--zwart);padding:11px 14px 10px;border-radius:2px;white-space:nowrap}
+.proef-plan:hover{background:var(--wit)}
+
+/* ---------- home: één vast scherm ---------- */
+html:has(body.proef){height:100%;overflow:hidden}
+body.proef{height:100vh;height:100dvh;overflow:hidden;margin:0;background:var(--zwart)}
+body.proef main{height:100%;display:flex;flex-direction:column}
+body.proef>.proef-plan{position:fixed;top:clamp(18px,2.2vw,30px);right:var(--rand);z-index:40}
+body.proef .hero{flex:1 1 auto;min-height:0}
+body.proef .hero-inhoud{min-height:0;height:100%;gap:20px;padding:clamp(22px,3vw,44px) var(--rand) clamp(24px,3vw,44px)}
+body.proef .hero-logo{width:clamp(200px,30vw,520px)}
+body.proef .hero h1{margin-bottom:14px}
+body.proef .hero .feiten{margin-bottom:22px}
+body.proef .hero-bollen{top:auto;bottom:clamp(24px,3vw,44px)}
+
+.kamers{flex:none;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));background:var(--zwart);border-top:1px solid rgba(246,245,241,.22)}
+.kamer-link{display:flex;flex-direction:column;justify-content:space-between;gap:14px;min-height:clamp(104px,13vh,150px);padding:18px clamp(14px,1.6vw,26px) 16px;color:var(--wit);text-decoration:none;border-left:1px solid rgba(246,245,241,.22);transition:background .2s,color .2s}
+.kamer-link:first-child{border-left:0}
+.kamer-link span{font:400 clamp(19px,1.55vw,26px)/1.15 var(--kop);text-wrap:balance}
+.kamer-link i{font-style:normal;font-size:22px;line-height:1;color:var(--koraal);transition:transform .2s,color .2s}
+.kamer-link:hover,.kamer-link:focus-visible{background:var(--wit);color:var(--zwart)}
+.kamer-link:hover i,.kamer-link:focus-visible i{transform:translateX(6px);color:var(--zwart)}
+.kamer-link.kamer-actie{background:var(--turquoise);color:var(--zwart)}
+.kamer-link.kamer-actie i{color:var(--zwart)}
+.kamer-link.kamer-actie:hover,.kamer-link.kamer-actie:focus-visible{background:var(--wit)}
+
+/* laag scherm (kleine laptop): tekst compacter zodat alles past */
+@media (min-width:901px) and (max-height:760px){
+  body.proef .hero .feiten{display:none}
+  body.proef .hero-logo{width:clamp(200px,24vw,400px)}
+  .kamer-link{min-height:92px;padding-top:14px;padding-bottom:12px}
+}
+
+@media (max-width:1100px) and (min-width:901px){
+  .kamers{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .kamer-link{min-height:76px;flex-direction:row;align-items:center}
+  .kamer-link:nth-child(4){border-left:0}
+  .kamer-link:nth-child(n+4){border-top:1px solid rgba(246,245,241,.22)}
+}
+
+/* mobiel: links onder elkaar, hero krijgt de rest */
+@media (max-width:900px){
+  body.proef>.proef-plan{top:14px;font-size:11px;padding:10px 12px 9px}
+  body.proef .hero-inhoud{gap:12px;padding:16px var(--rand) 18px}
+  body.proef .hero-logo{width:clamp(150px,44vw,220px)}
+  body.proef .hero h1{font-size:clamp(30px,8.6vw,44px);margin-bottom:8px}
+  body.proef .hero .lead{font-size:16px;line-height:1.4;margin-bottom:0}
+  body.proef .hero .feiten,body.proef .hero-acties{display:none}
+  body.proef .hero-bollen{bottom:auto;top:62px}
+  .kamers{grid-template-columns:1fr}
+  .kamer-link{flex-direction:row;align-items:center;min-height:0;padding:0 var(--rand);height:clamp(44px,6.6vh,56px);border-left:0;border-top:1px solid rgba(246,245,241,.22)}
+  .kamer-link:first-child{border-top:0}
+  .kamer-link span{font-size:clamp(18px,5vw,21px)}
+}
+@media (max-width:900px) and (max-height:620px){
+  body.proef .hero .lead{display:none}
+}
+
+/* ---------- kamers ---------- */
+.kamer-top{position:sticky;top:0;z-index:40;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;padding:14px var(--rand);background:var(--zwart);border-bottom:1px solid rgba(246,245,241,.18)}
+.kamer-terug{justify-self:start;display:inline-flex;align-items:center;gap:12px;padding:11px 18px 10px 14px;border:1px solid var(--wit);border-radius:2px;color:var(--wit);text-decoration:none;font:500 12px/1 var(--tekst);letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;transition:background .2s,color .2s}
+.kamer-terug i{font-style:normal;font-size:20px;line-height:.6;transition:transform .2s}
+.kamer-terug:hover,.kamer-terug:focus-visible{background:var(--wit);color:var(--zwart)}
+.kamer-terug:hover i{transform:translateX(-4px)}
+.kamer-merk{justify-self:center;line-height:0}
+.kamer-merk img{width:104px;height:auto}
+.kamer-top .proef-plan{justify-self:end}
+body.kamer main>section:not(.over){min-height:calc(100vh - 68px);min-height:calc(100dvh - 68px)}
+body.kamer .samen~.werk,body.kamer .werk{padding-top:clamp(56px,7vw,104px)}
+@media (max-width:700px){
+  .kamer-top{grid-template-columns:auto 1fr;padding:12px var(--rand)}
+  .kamer-merk{display:none}
+  .kamer-terug{padding:10px 14px 9px 11px;font-size:11px;letter-spacing:.12em}
+  .kamer-top .proef-plan{font-size:11px;letter-spacing:.12em;padding:10px 11px 9px}
+}

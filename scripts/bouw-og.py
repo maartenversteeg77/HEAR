@@ -40,7 +40,7 @@ def beeld_van(s):
     return "img/hero-dansvloer-blauw.jpg"
 
 gemaakt = {}
-pagina_s = [p for p in site.glob("*.html") if p.name not in OVERSLAAN] + [p for p in (site / "en").glob("*.html") if p.name not in OVERSLAAN]
+pagina_s = [p for p in site.glob("*.html") if p.name not in OVERSLAAN and not p.name.startswith("proef-")] + [p for p in (site / "en").glob("*.html") if p.name not in OVERSLAAN]
 for p in pagina_s:
     s = p.read_text()
     taal = "en" if p.parent.name == "en" else "nl"
