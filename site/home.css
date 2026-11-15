@@ -232,8 +232,8 @@ em,i,cite,address,dfn,var{font-style:normal}
 .nieuws-home .onder{display:none}
 @media (max-width:760px){.nieuws-home-rij{gap:14px}.nieuws-home .werk-kaart img{aspect-ratio:4/5}.nieuws-home .werk-kaart h3{font-size:18px}.nieuws-home .werk-kaart .bekijk-case{left:12px;bottom:12px;font-size:10px}.nieuws-home .werk-kop .tekstlink{display:none}.nieuws-home .onder{display:inline-block;margin-top:26px}}
 
-.voet-merk .voet-klein{font-size:12px;line-height:1.6;color:rgba(246,245,241,.6);margin-top:14px}
-.voet-merk .voet-klein a{color:inherit}
+.voet .voet-klein{font-size:12px;line-height:1.6;color:rgba(246,245,241,.6);margin:36px 0 0}
+.voet .voet-klein a{color:inherit}
 .artikel .datum{font-size:13px;color:var(--tekstgrijs);margin-top:28px}
 
 /* strook onder de hero, zoals op het visitekaartje: doelgroepen (wit) en aanbod (turquoise) */
@@ -380,11 +380,9 @@ a.mail-ook,.quick.quick-breed p .mail-ook,.cta-brug .mail-ook{font:300 14px/1.3 
 .afsluiter.afsluiter-kort{display:block;padding:clamp(40px,6vw,70px) var(--rand)}
 /* footer: contact op één regel, juridische regels klein; bedrijfsnaam breekt niet midden in "B.V." */
 .voet-merk .voet-contact{margin-top:10px}
-.voet-merk .voet-klein .geen-breuk{white-space:nowrap}
-@media (max-width:520px){.voet-merk .voet-klein .geen-breuk{white-space:normal}.voet-merk .voet-klein .geen-breuk{display:inline}}
-.voet-merk .voet-klein .geen-breuk-adres{white-space:nowrap}
-@media (max-width:520px){.voet-merk .voet-sep{display:none}.voet-merk .geen-breuk-adres{display:block}}
-@media (max-width:520px){.voet-merk .geen-breuk-adres+br{display:none}}
+.voet .voet-klein>span:not(.voet-sep){white-space:nowrap}
+.voet .voet-sep{margin:0 .5em;opacity:.6}
+@media (max-width:1180px){.voet .voet-klein>span:not(.voet-sep){display:block;white-space:normal}.voet .voet-sep{display:none}}
 
 /* overzichtspagina diensten (4 nov): selector boven de tegels, alleen desktop. Selectoren met .pl-ov zodat de homepage (lijst + beeld) ongemoeid blijft */
 .pl-intro{display:none}
