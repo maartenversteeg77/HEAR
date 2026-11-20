@@ -11,6 +11,7 @@ const VELDEN = [
   ["naam", "Naam"], ["organisatie", "Organisatie"], ["functie", "Functie"], ["email", "E-mail"], ["telefoon", "Telefoon"],
   ["soort", "Soort event"], ["soort_anders", "Soort, anders"], ["event", "Naam event"], ["locatie", "Locatie"], ["datum", "Datum"], ["tijd", "Tijd"],
   ["gasten", "Aantal gasten"], ["doelgroep", "Doelgroep"], ["diensten", "Diensten"], ["diensten_anders", "Diensten, anders"], ["communicatie", "Communicatie"], ["communicatie_anders", "Communicatie, anders"],
+  ["geluid", "Geluid"], ["scherm", "Scherm"], ["personeel", "Personeel"], ["licht", "Licht en aankleding"], ["indicatie", "Indicatie"],
   ["ruimte", "Ruimte"], ["concept", "Concept / programma"], ["bericht", "Bericht"],
   ["budget", "Richtbudget"],
   ["cc_wens", "Coffee cuts, meer weten over"], ["cc_lengte", "Lengte playlist (uur)"], ["cc_sfeer", "Sfeer in de zaak / voorbeeldplek"], ["cc_lijkt", "Moet lijken op"], ["cc_nummers", "Voorbeelden van nummers"],
@@ -22,7 +23,7 @@ async function aanvraag(request, env) {
   const fd = await request.formData();
   if (schoon(fd.get("website"))) return antwoord(request, true); // honeypot: doen alsof het gelukt is
   const d = {};
-  for (const [k] of VELDEN) d[k] = (k === "diensten" || k === "communicatie" || k === "cc_wens") ? fd.getAll(k).map(schoon).filter(Boolean).join(", ") : schoon(fd.get(k));
+  for (const [k] of VELDEN) d[k] = (k === "diensten" || k === "communicatie" || k === "cc_wens" || k === "licht") ? fd.getAll(k).map(schoon).filter(Boolean).join(", ") : schoon(fd.get(k));
   if (fd.get("budget_onbekend")) d.budget = "weet ik nog niet";
   else if (fd.get("budget_van") || fd.get("budget_tot")) d.budget = `€ ${schoon(fd.get("budget_van"))} – € ${schoon(fd.get("budget_tot"))}`;
   const hoofdformulier = !schoon(fd.get("bron")); // aanvraagformulier: naam, e-mail, telefoon en contactmoment verplicht

@@ -1,0 +1,91 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><!--icoon--><link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><!--/icoon--><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Stel in twee minuten licht, geluid en dj samen voor je event bij Conscious Hotels of Hotel V."><meta name="robots" content="noindex"><title>Licht, geluid en dj voor je event bij Conscious Hotels of Hotel V | HEAR</title><!--og--><meta property="og:title" content="Licht, geluid en dj voor je event bij Conscious Hotels of Hotel V | HEAR"><meta property="og:description" content="Stel in twee minuten licht, geluid en dj samen voor je event bij Conscious Hotels of Hotel V."><meta property="og:url" content="https://hear.nl/conscious-met-prijzen"><meta property="og:site_name" content="HEAR"><meta property="og:type" content="website"><meta property="og:locale" content="nl_NL"><meta property="og:image" content="https://hear.nl/img/og/conscious-met-prijzen.jpg?v=65f85275"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://hear.nl/img/og/conscious-met-prijzen.jpg?v=65f85275"><!--/og--><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="doelgroep.css"><link rel="stylesheet" href="conscious.css"></head><body class="pagina"><header class="top">
+  <a class="merk" href="index.html" aria-label="HEAR, naar de homepage"><img src="img/logo-white.png" alt="HEAR"></a>
+  <nav class="topnav" aria-label="Hoofdnavigatie">
+    <a href="cases.html">Cases</a>
+    <a href="doelgroepen.html">Voor wie we werken</a>
+    <a href="diensten.html">Producten</a>
+    <a href="nieuws/">Nieuws</a>
+    <a href="over-hear.html" >Over HEAR</a>
+  </nav>
+  <a class="plan" href="aanvraag.html">Plan een gesprek</a>
+  <a class="taal" href="/en/index.html" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+  <button class="menuknop" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu openen">
+    <span></span><span></span>
+  </button>
+</header>
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Hoofdmenu">
+      <a class="menu-plan" href="aanvraag.html"><span>Plan een gesprek</span><small>Bel, Teams of Meet: vertel over je event</small></a>
+      <a href="cases.html"><span>Voorbeeldcases</span><small>Events die tot de verbeelding spreken</small></a>
+      <a href="doelgroepen.html"><span>Voor wie we werken</span><small>Eventmanagers, dance-events, merken en eventlocaties</small></a>
+      <a href="diensten.html"><span>Producten en diensten</span><small>Licht, geluid, dj-gear en advies</small></a>
+      <a href="nieuws/"><span>Nieuws</span><small>Nieuwe producten, events en berichten</small></a>
+      <a href="over-hear.html"><span>Over HEAR</span><small>Founder story en waarden</small></a>
+  </nav>
+</div>
+<script>
+  (function(){
+    var k=document.querySelector('.menuknop'), m=document.getElementById('menu');
+    function zet(open){ k.setAttribute('aria-expanded',open); k.setAttribute('aria-label',open?'Menu sluiten':'Menu openen'); m.hidden=!open; document.body.classList.toggle('menu-open',open); }
+    k.addEventListener('click',function(){ zet(k.getAttribute('aria-expanded')!=='true'); });
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape') zet(false); });
+    // Vegen over de zwarte kop (mobiel): links = volgende, rechts = vorige pagina op dit niveau
+    var x0=null, y0=null, hk=null;  // gedelegeerd: de kop staat verderop in de pagina dan dit script
+    document.addEventListener('touchstart',function(e){ hk=e.target.closest&&e.target.closest('.casehead'); if(!hk) return; x0=e.touches[0].clientX; y0=e.touches[0].clientY; },{passive:true});
+    document.addEventListener('touchend',function(e){
+      if(x0===null||!hk) return; var dx=e.changedTouches[0].clientX-x0, dy=e.changedTouches[0].clientY-y0; x0=null;
+      if(Math.abs(dx)<60||Math.abs(dy)>50) return;
+      var a=hk.querySelector(dx<0?'.zijnav .pijl:last-child':'.zijnav .pijl:first-child'); if(a&&a.href) location.href=a.href;
+    },{passive:true});
+  })();
+</script><main class="wrap lp cs" data-prijzen="1">
+<section class="casehead"><h1 class="kernzin">Jouw event bij Conscious Hotels of Hotel V</h1></section>
+<div class="lp-held"><div class="actie-beeld"><img src="img/case-prive-breed.jpg" alt="Gasten op de dansvloer in een zaal met gekleurd licht en ballonnen" style="object-position:50% 88%"><a class="wa actie-knop" href="#bouwstenen"><span>Stel je event samen</span><i aria-hidden="true">→</i></a></div></div>
+<section class="lp-band"><div class="lp-twee"><p class="lp-lead">Leuk dat je bij Conscious Hotels of Hotel V een event organiseert.</p><div class="lp-tekst"><p>Of het nou om een congres gaat, een cocktailparty met dj of misschien wel beide: wij verzorgen het voor je van A tot Z.</p><p>Vul hier je aanvraag in twee minuten in.</p></div></div></section>
+<form class="cs-form" method="post" action="/api/aanvraag" data-dank="Dank je. Je hoort dezelfde werkdag van me." data-fout="Versturen lukte niet. Mail naar maarten@hear.nl of bel +31 6 24560220.">
+<input type="hidden" name="bron" value="Landingspagina Conscious (met prijzen)"><input type="hidden" name="utm" value=""><input type="hidden" name="indicatie" value=""><input type="text" name="website" class="lp-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<section class="lp-band cs-bouw" id="bouwstenen"><div class="cs-kolommen"><div class="cs-keuzes">
+<fieldset class="cs-stap cs-zin"><legend class="lp-strip">Je event</legend>
+<label class="cs-kies"><span>Ik organiseer een</span><select name="soort"><option>congres of seminar</option><option>vergadering of training</option><option>borrel of cocktailparty</option><option>diner</option><option>bedrijfsfeest</option><option>productpresentatie</option><option>bruiloft of privéfeest</option><option>iets anders</option></select></label>
+<label class="cs-kies"><span>in</span><select name="locatie"><option>Bar Kantoor (Conscious Hotel Westerpark)</option><option>Moer (The Tire Station)</option><option>The Vondel Bar (Conscious Hotel Vondelpark)</option><option>The Private (Hotel V)</option><option>The Palm (Hotel V)</option><option>een vergaderruimte</option><option>een andere ruimte of nog niet bekend</option></select></label>
+</fieldset>
+<fieldset class="cs-stap"><legend class="lp-strip">Kies de bouwstenen van je event</legend>
+<h3 class="cs-groep">Geluid</h3><p class="cs-intro">Hoogwaardig geluid, afgestemd op de ruimte.</p>
+<div class="cs-blokken"><label class="cs-blok cs-geluid"><input type="checkbox" name="geluid" value="Geluid voor muziek" data-groep="geluid" data-prijs="600"><span class="cs-blok-in"><span class="cs-titel">Geluid voor muziek</span><span class="cs-sub">Met dj-booth en dj-gear</span><span class="cs-prijs">€ 600</span></span></label><label class="cs-blok cs-geluid"><input type="checkbox" name="geluid" value="Geluid voor spraak" data-groep="geluid" data-prijs="500"><span class="cs-blok-in"><span class="cs-titel">Geluid voor spraak</span><span class="cs-sub">Met mengtafel en tot vier handmicrofoons</span><span class="cs-prijs">€ 500</span></span></label><label class="cs-blok cs-geluid"><input type="checkbox" name="geluid" value="Geluid voor muziek en spraak" data-groep="geluid" data-prijs="700"><span class="cs-blok-in"><span class="cs-titel">Geluid voor muziek en spraak</span><span class="cs-sub">Voor een event met sprekers en een dj</span><span class="cs-prijs">€ 700</span></span></label><label class="cs-blok cs-scherm"><input type="checkbox" name="scherm" value="Led-presentatiescherm" data-groep="" data-prijs="150"><span class="cs-blok-in"><span class="cs-titel">Led-presentatiescherm</span><span class="cs-sub">Meerdere schermen mogelijk</span><span class="cs-prijs">vanaf € 150</span></span></label></div>
+<p class="cs-noot">Meer dan vier sprekers of reversmicrofoons, bijvoorbeeld voor een rondetafelgesprek: op aanvraag.</p>
+<h3 class="cs-groep">Personeel</h3>
+<div class="cs-blokken"><label class="cs-blok cs-personeel"><input type="checkbox" name="personeel" value="Geluidsman" data-groep="personeel" data-prijs="400"><span class="cs-blok-in"><span class="cs-titel">Geluidsman</span><span class="cs-sub">Voor de spraakversterking</span><span class="cs-prijs">€ 400</span></span></label><label class="cs-blok cs-personeel"><input type="checkbox" name="personeel" value="Dj" data-groep="personeel" data-prijs="600"><span class="cs-blok-in"><span class="cs-titel">Dj</span><span class="cs-sub">Voor je cocktail of feestavond</span><span class="cs-prijs">€ 600</span></span></label><label class="cs-blok cs-personeel"><input type="checkbox" name="personeel" value="Dj en geluid voor sprekers" data-groep="personeel" data-prijs="800"><span class="cs-blok-in"><span class="cs-titel">Dj en geluid voor sprekers</span><span class="cs-sub">Voor een event met sprekers en een dj</span><span class="cs-prijs">€ 800</span></span></label></div>
+<p class="cs-noot">Bij alleen muziek regelt de dj het geluid zelf.</p>
+<h3 class="cs-groep">Licht en aankleding</h3>
+<div class="cs-blokken"><label class="cs-blok cs-licht"><input type="checkbox" name="licht" value="Sfeerlicht" data-groep="" data-prijs="0"><span class="cs-blok-in"><span class="cs-titel">Sfeerlicht</span><span class="cs-sub">De ruimte in kleur</span></span></label><label class="cs-blok cs-licht"><input type="checkbox" name="licht" value="Decoratie" data-groep="" data-prijs="0"><span class="cs-blok-in"><span class="cs-titel">Decoratie</span><span class="cs-sub">Led-tubes, spiegelbollen en props</span></span></label><label class="cs-blok cs-licht"><input type="checkbox" name="licht" value="Dansvloerlicht" data-groep="" data-prijs="0"><span class="cs-blok-in"><span class="cs-titel">Dansvloerlicht</span><span class="cs-sub">Bewegend licht boven de dansvloer</span></span></label></div><p class="cs-noot">Eén onderdeel € 350, twee € 600, alle drie € 800.</p>
+</fieldset></div>
+<aside class="cs-stapel" aria-live="polite"><h2 class="cs-stapel-kop">Jouw event</h2><ol class="cs-stenen" id="cs-stenen"></ol><p class="cs-leeg" id="cs-leeg">Kies je eerste bouwsteen.</p><p class="cs-totaal"><span>Vanaf</span><b id="cs-som">€ 0</b><small>exclusief btw</small></p><p class="cs-voordeel" id="cs-voordeel" hidden></p><a class="cs-verder" href="#contact">Naar je gegevens <i aria-hidden="true">→</i></a></aside>
+</div></section>
+<section class="lp-band lp-contact" id="contact"><div class="lp-twee"><div><h2>Verstuur je aanvraag</h2><p>Laat je datum en gegevens achter, dan hoor je dezelfde werkdag van me of de datum vrij is.</p>
+<div class="lp-wie"><img src="img/maarten-adviseur.jpg" alt="Maarten Versteeg" loading="lazy" style="object-position:50% 20%"><div><b>Maarten Versteeg</b><span>Oprichter HEAR</span></div></div></div>
+<div class="lp-form">
+<label>Datum van je event<input name="datum" type="date" required></label>
+<label>Aantal gasten<input name="gasten" type="number" min="1" inputmode="numeric"></label>
+<label>Naam<input name="naam" autocomplete="name" required></label>
+<label>Organisatie<input name="organisatie" autocomplete="organization"></label>
+<label>E-mail<input name="email" type="email" autocomplete="email" required></label>
+<label>Telefoon<input name="telefoon" type="tel" autocomplete="tel"></label>
+<label>Wensen of vragen<textarea name="bericht"></textarea></label>
+<button type="submit">Verstuur aanvraag</button><p class="lp-privacy">We gebruiken je gegevens alleen om je te antwoorden. <a href="privacy.html">Privacyverklaring</a></p>
+<p class="lp-melding" hidden></p></div></div></section>
+</form></main><script>(function(){
+var f=document.querySelector('.cs-form'),P=document.querySelector('.cs').dataset.prijzen==='1',stenen=document.getElementById('cs-stenen'),leeg=document.getElementById('cs-leeg'),som=document.getElementById('cs-som'),vd=document.getElementById('cs-voordeel'),ind=f.querySelector('[name=indicatie]');
+var LICHT=[0,350,600,800];
+function eur(n){return '\u20ac\u00a0'+String(n).replace(/\B(?=(\d{3})+$)/g,'.')}
+function reken(){var k=[].slice.call(f.querySelectorAll('.cs-blok input:checked')),t=0,nl=0,vanaf=false,h='';
+ k.forEach(function(i){var s=i.closest('.cs-blok').className.replace('cs-blok ','');if(i.name==='licht')nl++;else t+=+i.dataset.prijs;h='<li class="'+s+'">'+i.value+'</li>'+h});
+ t+=LICHT[nl];stenen.innerHTML=h;leeg.hidden=k.length>0;
+ [].forEach.call(f.querySelectorAll('.cs-blok'),function(b){b.classList.toggle('is-aan',b.querySelector('input').checked)});
+ if(P){som.textContent=eur(t);var b=nl*350-LICHT[nl];vd.hidden=!b;vd.textContent=b?'Je bespaart '+eur(b)+' op licht en aankleding.':'';ind.value=k.length?'vanaf '+eur(t).replace('\u00a0',' ')+' excl. btw':''}}
+f.addEventListener('change',function(ev){var i=ev.target;if(!i.matches||!i.matches('.cs-blok input'))return;
+ if(i.checked&&i.dataset.groep)[].forEach.call(f.querySelectorAll('input[data-groep="'+i.dataset.groep+'"]'),function(o){if(o!==i)o.checked=false});reken()});
+reken();
+var m=f.querySelector('.lp-melding');f.addEventListener('submit',function(ev){if(!window.fetch)return;ev.preventDefault();var k=f.querySelector('button[type=submit]');k.disabled=true;
+fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}}).then(function(r){return r.json()}).then(function(r){m.hidden=false;
+if(r.ok){m.textContent=f.dataset.dank;[].forEach.call(f.querySelectorAll('.lp-form label,.lp-form button,.lp-privacy'),function(x){x.hidden=true})}else{m.textContent=f.dataset.fout;k.disabled=false}}).catch(function(){m.hidden=false;m.textContent=f.dataset.fout;k.disabled=false})});
+})();</script><script>(function(){try{var q=new URLSearchParams(location.search),k=["utm_source","utm_medium","utm_campaign","utm_term","utm_content"],v=k.map(function(n){return q.get(n)||""});var t=v.some(Boolean)?v.filter(Boolean).join(" / "):"";try{if(t)sessionStorage.setItem("hear_utm",t);else t=sessionStorage.getItem("hear_utm")||""}catch(e){}[].forEach.call(document.querySelectorAll('input[name="utm"]'),function(i){i.value=t})}catch(e){}})();</script><footer class="actie-voet"><p>HEAR is een handelsnaam van Maarten Versteeg communicatie advies B.V. · KvK 42181393 · <a href="privacy.html">Privacyverklaring</a></p></footer></body></html>
