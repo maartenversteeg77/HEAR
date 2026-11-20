@@ -115,8 +115,9 @@ def programma():
               + "".join(vink("communicatie" if nl in comm_namen else "diensten", nl, en) for nl, en in EXTRAS) + '</div></details>')
     weetniet = (f'<label class="vink poortvraag poort-los"><input type="checkbox" name="programma" id="weetniet" value="Weet nog niet wat nodig is, bespreekt dit graag in een call">'
                 f'<span>{T("Ik weet nog niet wat ik nodig heb en bespreek dit graag in een call", "I don\'t know what I need yet and would like to discuss it in a call")}</span></label>')
-    return (f'<div class="programma">{weetniet}{blokken}</div>{extras}'
-            f'<label class="veld veld-breed"><span>{T("Iets anders nodig? Namelijk", "Need something else? Namely")}</span><input type="text" name="diensten_anders" id="anders-los"></label>')
+    return (f'<div class="programma">{blokken}</div>{extras}'
+            f'<label class="veld veld-breed"><span>{T("Iets anders nodig? Namelijk", "Need something else? Namely")}</span><input type="text" name="diensten_anders" id="anders-los"></label>'
+            f'<div class="weetniet-rij">{weetniet}</div>')
 
 budget = (f'<fieldset class="budget"><legend>{T("Richtbudget voor licht, geluid en muziek", "Indicative budget for light, sound and music")}</legend>'
           f'<p class="uitleg">{T("Een bandbreedte is genoeg.", "A range is enough.")}</p>'
@@ -210,13 +211,13 @@ main = f"""<main class="wrap">
     var dv=document.getElementById('v-datum').value;if(dv){{var dd=new Date(dv+'T12:00:00');ev.push(dd.toLocaleDateString(location.pathname.indexOf('/en/')===0?'en-GB':'nl-NL',{{day:'numeric',month:'long',year:'numeric'}}))}}
     var tv=f.querySelector('[name=tijd]').value.trim();if(tv)ev.push(tv);var lv=document.getElementById('v-locatie').value.trim();if(lv)ev.push(lv);var gv=document.getElementById('v-gasten').value;if(gv)ev.push(gv+' '+L.gasten);
     if(ev.length)h+='<ul class="sv-event">'+ev.map(function(x){{return '<li>'+esc(x)+'</li>'}}).join('')+'</ul>';
-    if(document.getElementById('weetniet').checked)h+='<p class="sv-regel sv-eerste">'+esc(document.getElementById('weetniet').closest('label').querySelector('span').textContent)+'</p>';
     [].forEach.call(f.querySelectorAll('.poort'),function(p){{var q=p.querySelector('[data-poort]');if(!q.checked)return;var it=[];[].forEach.call(p.querySelectorAll('.poort-opties input[type=checkbox]:checked'),function(i){{if(!i.closest('label').classList.contains('reeds'))it.push(i.closest('label').querySelector('span').firstChild.textContent)}});
       var an=p.querySelector('.poort-opties input[type=text]');if(an&&an.value.trim())it.push(an.value.trim());
       h+='<h3>'+esc(q.closest('label').querySelector('span').textContent)+'</h3>'+(it.length?'<ul>'+it.map(function(x){{return '<li>'+esc(x)+'</li>'}}).join('')+'</ul>':'')}});
     var ex=[];[].forEach.call(f.querySelectorAll('.extras input:checked'),function(i){{if(!i.closest('label').classList.contains('reeds'))ex.push(i.closest('label').querySelector('span').firstChild.textContent)}});
     if(ex.length)h+='<h3>'+esc(f.querySelector('.extras summary').textContent)+'</h3><ul>'+ex.map(function(x){{return '<li>'+esc(x)+'</li>'}}).join('')+'</ul>';
     var da=document.getElementById('anders-los').value.trim();if(da)h+='<p class="sv-regel">'+esc(da)+'</p>';
+    if(document.getElementById('weetniet').checked)h+='<p class="sv-regel">'+esc(document.getElementById('weetniet').closest('label').querySelector('span').textContent)+'</p>';
     if(f.querySelector('[name=budget_onbekend]').checked)h+='<p class="sv-regel">'+esc(L.onbekend)+'</p>';else if(budgetAan)h+='<p class="sv-regel">'+esc(L.budget)+': '+esc(document.getElementById('budget_uit').textContent)+'</p>';
     var rk=f.querySelector('[name=route]:checked');if(rk)h+='<p class="sv-regel sv-route">'+esc(rk.closest('label').querySelector('strong').textContent)+'</p>';
     sv.classList.toggle('leeg',!h);svi.innerHTML=h||'<p class="sv-leeg">'+esc(L.leeg)+'</p>'}}

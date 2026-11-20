@@ -777,3 +777,5 @@ details.extras summary::-webkit-details-marker{display:none}
 details.extras summary::after{content:"+";font:300 26px/1 var(--tekst);color:var(--koraal);flex:none}
 details.extras[open] summary::after{content:"–"}
 details.extras .extras-opties{padding:2px 18px 18px;margin-top:0}
+.weetniet-rij{margin-top:22px}
+.aanvraag .extras+.veld-breed{display:flex;margin-top:22px}
