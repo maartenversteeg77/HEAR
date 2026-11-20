@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-"""Demo (20 nov): landingspagina voor eventklanten van Conscious Hotels en Hotel V.
-Vorm ('route 3', gekozen door Maarten op 20 nov): de foto blijft één foto; de blokjes zijn een eigen tekening,
-schuin van boven met ronde noppen, in de kleuren van de samensteller. Ze staan bij de knop bovenaan, op elke bouwsteen
-(wit, kleurt bij kiezen) en als stapel in 'Jouw event' die groeit met elke keuze. Geen puzzelvormen, geen foto in blokjes.
-Twee varianten om te vergelijken: conscious-met-prijzen.html en conscious-zonder-prijzen.html.
-De definitieve pagina komt op hear.nl/conscious zodra Maarten een variant kiest.
+"""Samensteller (20 nov): algemene aanvraagpagina waarop de klant zijn event samenstelt uit bouwstenen.
+Begonnen als demo voor een partnerlocatie; op 20 nov algemeen gemaakt (Maarten): geen locatienamen meer, de klant vult zelf de locatie in.
+Vorm ('route 3'): de foto blijft één foto; de blokjes zijn een eigen tekening, schuin van boven met ronde noppen.
+Ze staan bij de knop bovenaan, op elke bouwsteen (wit, kleurt bij kiezen) en als stapel in 'Jouw event' die groeit met elke keuze.
+Twee varianten: samenstellen.html (met prijzen) en samenstellen-zonder-prijzen.html.
 Kop, menu en voet komen uit site/nieuwjaarsborrel.html (draai dit script dus na bouw-doelgroepen).
 Niet gelinkt vanaf de site, noindex."""
 import pathlib, re, sys, html
@@ -20,8 +19,8 @@ if not utm_js:
     sys.exit("utm-script niet gevonden in nieuwjaarsborrel.html")
 utm_js = utm_js.group(0)
 
-TITEL = "Licht, geluid en dj voor je event bij Conscious Hotels of Hotel V | HEAR"
-OMSCHR = "Stel in twee minuten licht, geluid en dj samen voor je event bij Conscious Hotels of Hotel V."
+TITEL = "Stel je event samen | HEAR"
+OMSCHR = "Stel in twee minuten licht, geluid en dj samen voor je event."
 
 def e(t):
     return html.escape(t, quote=True)
@@ -44,9 +43,6 @@ LICHT = [
 ]
 SOORTEN = ["congres of seminar", "vergadering of training", "borrel of cocktailparty", "diner", "bedrijfsfeest",
            "productpresentatie", "bruiloft of privéfeest", "iets anders"]
-# namen uit de brochure Conscious Meetings & Events (2023) en hotelv.com/en/groups/meetings-and-events
-LOCATIES = ["Bar Kantoor (Conscious Hotel Westerpark)", "Moer (The Tire Station)", "The Vondel Bar (Conscious Hotel Vondelpark)",
-            "The Private (Hotel V)", "The Palm (Hotel V)", "een vergaderruimte", "een andere ruimte of nog niet bekend"]
 
 def eur(n):
     return "€ " + f"{n:,}".replace(",", ".")
@@ -73,15 +69,15 @@ def pagina(prijzen):
     totaal = ('<p class="cs-totaal"><span>Vanaf</span><b id="cs-som">€ 0</b><small>exclusief btw</small></p><p class="cs-voordeel" id="cs-voordeel" hidden></p>'
               if prijzen else '<p class="cs-totaal cs-zonder"><span>Je hoort dezelfde werkdag wat dit kost.</span></p>')
     main = f"""<main class="wrap lp cs" data-prijzen="{1 if prijzen else 0}">
-<section class="casehead"><h1 class="kernzin">Jouw event bij Conscious Hotels of Hotel V</h1></section>
+<section class="casehead"><h1 class="kernzin">Stel je event samen</h1></section>
 <div class="lp-held cs-held"><div class="cs-foto"><img src="{HOOFDBEELD[0]}" alt="{e(HOOFDBEELD[2])}" style="object-position:{HOOFDBEELD[1]}"><a class="cs-samen" href="#bouwstenen">{iso_stapel([KLEUR["geluid"], KLEUR["personeel"], KLEUR["licht"]], 40, 2)}<b>Stel je<br>event samen</b><i aria-hidden="true">→</i></a></div></div>
-<section class="lp-band"><div class="lp-twee"><p class="lp-lead">Leuk dat je bij Conscious Hotels of Hotel V een event organiseert.</p><div class="lp-tekst"><p>Of het nou om een congres gaat, een cocktailparty met dj of misschien wel beide: wij verzorgen het voor je van A tot Z.</p><p>Vul hier je aanvraag in twee minuten in.</p><p class="cs-hulp"><a class="wa" href="https://wa.me/31624560220?text=Hoi%20Maarten%2C%20ik%20heb%20een%20vraag%20over%20mijn%20event%20bij%20Conscious%20Hotels%20of%20Hotel%20V." target="_blank" rel="noopener"><span>Weet je niet wat je moet invullen? Stuur me een appje</span><i aria-hidden="true">→</i></a></p></div></div></section>
+<section class="lp-band"><div class="lp-twee"><p class="lp-lead">Leuk dat je een event organiseert.</p><div class="lp-tekst"><p>Of het nou om een congres gaat, een cocktailparty met dj of misschien wel beide: wij verzorgen het voor je van A tot Z.</p><p>Vul hier je aanvraag in twee minuten in.</p><p class="cs-hulp"><a class="wa" href="https://wa.me/31624560220?text=Hoi%20Maarten%2C%20ik%20heb%20een%20vraag%20over%20mijn%20event." target="_blank" rel="noopener"><span>Weet je niet wat je moet invullen? Stuur me een appje</span><i aria-hidden="true">→</i></a></p></div></div></section>
 <form class="cs-form" method="post" action="/api/aanvraag" data-dank="Dank je. Je hoort dezelfde werkdag van me." data-fout="Versturen lukte niet. Mail naar maarten@hear.nl of bel +31 6 24560220.">
-<input type="hidden" name="bron" value="Landingspagina Conscious ({variant})"><input type="hidden" name="utm" value=""><input type="hidden" name="indicatie" value=""><input type="text" name="website" class="lp-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<input type="hidden" name="bron" value="Pagina Samenstellen ({variant})"><input type="hidden" name="utm" value=""><input type="hidden" name="indicatie" value=""><input type="text" name="website" class="lp-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 <section class="lp-band cs-bouw" id="bouwstenen"><div class="cs-kolommen"><div class="cs-keuzes">
 <fieldset class="cs-stap cs-zin"><legend class="lp-strip">Je event</legend>
 <label class="cs-kies"><span>Ik organiseer een</span><select name="soort">{"".join(f"<option>{e(x)}</option>" for x in SOORTEN)}</select></label>
-<label class="cs-kies"><span>in</span><select name="locatie">{"".join(f"<option>{e(x)}</option>" for x in LOCATIES)}</select></label>
+<label class="cs-kies"><span>in</span><input class="cs-locatie" name="locatie" placeholder="naam locatie" aria-label="Naam van de locatie" autocomplete="off"></label>
 <label class="cs-kies cs-gasten"><span>voor</span><input name="gasten" type="number" min="1" inputmode="numeric" aria-label="Aantal gasten"><span>gasten</span></label>
 </fieldset>
 <fieldset class="cs-stap"><legend class="lp-strip">Kies de bouwstenen van je event</legend>
@@ -131,11 +127,11 @@ if(r.ok){m.textContent=f.dataset.dank;[].forEach.call(f.querySelectorAll('.lp-fo
     k = re.sub(r'<meta name="description" content="[^"]*">', f'<meta name="description" content="{e(OMSCHR)}">', k, count=1)
     k = re.sub(r'<meta name="deeltitel" content="[^"]*">', "", k, count=1)
     k = re.sub(r"<!--og-->.*?<!--/og-->", "", k, flags=re.S)
-    k = k.replace('<link rel="stylesheet" href="doelgroep.css">', '<link rel="stylesheet" href="doelgroep.css"><link rel="stylesheet" href="conscious.css">', 1)
-    if "conscious.css" not in k or 'content="noindex' not in k:
+    k = k.replace('<link rel="stylesheet" href="doelgroep.css">', '<link rel="stylesheet" href="doelgroep.css"><link rel="stylesheet" href="samenstellen.css">', 1)
+    if "samenstellen.css" not in k or 'content="noindex' not in k:
         sys.exit("kop van nieuwjaarsborrel.html is veranderd: stylesheet of noindex niet gevonden")
     return k + main + js.replace('__ISO_JS__', ISO_JS) + utm_js + voet
 
-for prijzen, naam in ((True, "conscious-met-prijzen.html"), (False, "conscious-zonder-prijzen.html")):
+for prijzen, naam in ((True, "samenstellen.html"), (False, "samenstellen-zonder-prijzen.html")):
     (site / naam).write_text(pagina(prijzen), encoding="utf-8")
-print("conscious-met-prijzen.html en conscious-zonder-prijzen.html gebouwd")
+print("samenstellen.html en samenstellen-zonder-prijzen.html gebouwd")

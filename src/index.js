@@ -86,6 +86,13 @@ export default {
       doel.search = url.search; doel.hash = url.hash;
       return Response.redirect(doel.toString(), 301);
     }
+    // de samensteller heette eerst anders (demo, 20 nov 2026); oude adressen doorsturen naar /samenstellen
+    const sm = /^\/conscious(-met-prijzen|-zonder-prijzen)?(\.html)?\/?$/.exec(url.pathname);
+    if (sm) {
+      const doel = new URL(sm[1] === "-zonder-prijzen" ? "/samenstellen-zonder-prijzen" : "/samenstellen", url);
+      doel.search = url.search; doel.hash = url.hash;
+      return Response.redirect(doel.toString(), 302);
+    }
     // korte advertentie-URL: hear.nl/coffeecuts is een eigen deelpagina (site/coffeecuts.html: eigen titel en deelbeeld,
     // stuurt door naar het Coffee cuts-blok). Varianten sturen daarheen; /coffeecuts zelf wordt als pagina geserveerd.
     const kort = url.pathname.toLowerCase().replace(/\/+$/, "");

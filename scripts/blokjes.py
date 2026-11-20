@@ -1,5 +1,5 @@
 """Gedeelde tekening van de blokjes (20 nov): schuin van boven, ronde noppen, in de huiskleuren.
-Gebruikt door bouw-conscious.py en bouw-proef-aanvraag.py. De pagina's hebben dezelfde tekening in JavaScript (ISO_JS)
+Gebruikt door bouw-samenstellen.py. De pagina's hebben dezelfde tekening in JavaScript (ISO_JS)
 voor de stapel die groeit; houd beide gelijk."""
 # Blokjes, schuin van boven getekend met ronde noppen (20 nov, 'route 3'). Eigen tekening, in de kleuren van de samensteller.
 # Dezelfde tekening staat in het script onderaan de pagina (functie isoStapel) voor de stapel die groeit; houd beide gelijk.

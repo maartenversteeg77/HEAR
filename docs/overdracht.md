@@ -59,7 +59,7 @@ Menu: **Cases · Voor wie we werken · Producten · Nieuws · Over HEAR**, plus 
 Volledige build, in deze volgorde:
 
 ```
-for f in doelgroepen cases diensten principes relevant privacy partners prijs mixes aanvraag nieuws en og 404 icoon sitemap proef-home conscious og icoon; do python3 scripts/bouw-$f.py; done
+for f in doelgroepen cases diensten principes relevant privacy partners prijs mixes aanvraag nieuws en og 404 icoon sitemap proef-home samenstellen og icoon; do python3 scripts/bouw-$f.py; done
 python3 scripts/check-css.py
 ```
 
@@ -120,4 +120,5 @@ Mijn versies van het LinkedIn-beeld pakten hem niet. Zijn eindversie (13 novembe
 - Toestemming van mensen op foto's; een groter origineel van de dansers op het tuinfeest.
 - Opruimen: `site/v2.html` en `site/voorbeeld-producten.html` (proefpagina's, niet gelinkt).
 - Search Console: de lijst met niet-geïndexeerde adressen opnieuw bekijken zodra Google de sitemap heeft verwerkt.
-- Bouwvolgorde (20 nov): altijd de volledige build draaien, nooit alleen `bouw-en.py`: die zet de Engelse pagina's en nieuws terug zonder deelgegevens. Volgorde: doelgroepen cases diensten principes relevant privacy partners prijs mixes aanvraag nieuws en og 404 icoon sitemap proef-home conscious og icoon (og en icoon draaien twee keer: de sitemap heeft de deelgegevens van de Engelse pagina's nodig, en de Conscious-pagina's krijgen hun deelgegevens en icoon pas in de tweede ronde).
+- Bouwvolgorde (20 nov): altijd de volledige build draaien, nooit alleen `bouw-en.py`: die zet de Engelse pagina's en nieuws terug zonder deelgegevens. Volgorde: doelgroepen cases diensten principes relevant privacy partners prijs mixes aanvraag nieuws en og 404 icoon sitemap proef-home samenstellen og icoon (og en icoon draaien twee keer: de sitemap heeft de deelgegevens van de Engelse pagina's nodig, en de Conscious-pagina's krijgen hun deelgegevens en icoon pas in de tweede ronde).
+- **Samensteller (20 nov, vervangt de Conscious-demo):** de pagina is algemeen gemaakt en staat op `/samenstellen` (met prijzen) en `/samenstellen-zonder-prijzen`. Nergens meer een hotelnaam; de locatie is een vrij invulveld 'naam locatie'. Script `scripts/bouw-samenstellen.py`, opmaak `site/samenstellen.css`. De oude adressen `/conscious…` sturen in de worker door. Noindex, niet gelinkt. Wat hierboven over de Conscious-demo staat, geldt voor deze pagina. Open: welke variant blijft; de prijzen zijn gekozen voor zalen tot ongeveer 100 gasten en staan nu op een pagina voor elke locatie en elk aantal gasten.

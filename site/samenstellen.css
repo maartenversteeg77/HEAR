@@ -1,4 +1,4 @@
-/* Blokjes-samensteller (20 nov). Geladen door conscious-*.html (demo Conscious Hotels / Hotel V) en proef-aanvraag.html. */
+/* Blokjes-samensteller (20 nov). Geladen door samenstellen.html en samenstellen-zonder-prijzen.html. */
 .cs-form{display:contents}
 .cs .lp-tekst p:nth-last-child(2){font-weight:500}
 .cs-hulp{margin-top:22px}
@@ -25,6 +25,8 @@
 .cs-kies select{font:400 17px/1.2 var(--tekst);padding:12px 40px 12px 14px;border:1px solid var(--zwart);border-radius:0;background:var(--vlak,#fff) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23191A19' stroke-width='1.6'/%3E%3C/svg%3E") no-repeat right 14px center;color:var(--zwart);-webkit-appearance:none;appearance:none;max-width:100%}
 
 .cs-kies input{font:400 17px/1.2 var(--tekst);padding:12px 10px 12px 14px;border:1px solid var(--zwart);border-radius:0;background:var(--vlak,#fff);color:var(--zwart);width:96px;box-sizing:border-box}
+.cs-kies input.cs-locatie{width:clamp(220px,26vw,340px);padding-right:14px}
+.cs-kies input.cs-locatie::placeholder{color:var(--grijsd);opacity:1}
 .cs-groep{font:400 clamp(22px,2vw,28px)/1.1 var(--kop);margin:clamp(26px,3vw,40px) 0 6px}
 .cs-stap legend+.cs-groep{margin-top:0}
 .cs-intro{margin:0 0 14px;font-size:16px;color:var(--grijsd)}
@@ -74,6 +76,7 @@
   .cs-kolommen{grid-template-columns:minmax(0,1fr)}
   .cs-keuzes{min-width:0}
   .cs-kies select{width:100%;min-width:0;text-overflow:ellipsis}
+  .cs-kies input.cs-locatie{flex:1 1 0;width:auto;min-width:0}
   .cs-stapel{position:sticky;top:auto;bottom:0;z-index:20;margin:0 calc(-1 * var(--rand));padding:12px var(--rand) 14px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:6px 14px}
   .cs-stapel-kop,.cs-leeg,.cs-voordeel,.cs-totaal small,.cs-stenen{display:none}
   .cs-toren{display:block;align-self:end}.cs-toren svg{width:46px}
