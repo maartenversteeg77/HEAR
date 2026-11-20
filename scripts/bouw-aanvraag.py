@@ -41,6 +41,7 @@ def tekstvak(naam, nl, en, rijen=4, verplicht=False, breed=True):
 DENKMEE = ("Weet ik nog niet, denk met me mee", "Not sure yet, help me decide")
 WEBCAST = ("Online uitzending (webcast)", "Online broadcast (webcast)")
 AFTERMOVIE = ("Aftermovie", "Aftermovie")
+LOGO = ("Logoprojectie", "Logo projection")
 SFEER = ("Sfeerverlichting", "Atmospheric lighting")
 DECO = ("Decoratie: led-tubes, spiegelbollen en props", "Decoration: LED tubes, mirror balls and props")
 PROGRAMMA = [
@@ -56,7 +57,8 @@ PROGRAMMA = [
         ("Dj en dj-gear", "DJ and DJ gear"),
         ("Muziek in lijn met de brand (vooraf afgestemd)", "Music in line with the brand (agreed in advance)"),
         ("Maatwerk playlist", "Bespoke playlist"),
-        ("Licht in huisstijlkleuren, logoprojecties", "Lighting in brand colours, logo projections"),
+        ("Licht in huisstijlkleuren", "Lighting in brand colours"),
+        LOGO, DECO,
         ("Videoscherm(en)", "Video screen(s)"),
     ]),
     ("borrel", "Borrel of diner met muziek", "Drinks or dinner with music", [
@@ -79,7 +81,7 @@ EXTRAS = [
     ("Vocalist, saxofonist of percussionist", "Vocalist, saxophonist or percussionist"),
     ("Geuren-dj", "Scent DJ"),
     ("Partyfotograaf", "Party photographer"),
-    AFTERMOVIE, WEBCAST,
+    LOGO, AFTERMOVIE, WEBCAST,
 ]
 COMMUNICATIE = [
     ("Communicatieadvies", "Communication advice"),
