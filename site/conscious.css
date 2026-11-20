@@ -110,3 +110,18 @@
 .cs-kort .cs-titel{min-height:44px;display:flex;align-items:center}
 @media (max-width:900px){.cs-blokken:has(.cs-kort){grid-template-columns:1fr;gap:8px}.cs-kort .cs-blok-in{min-height:58px}.cs-kort .cs-titel{min-height:34px}.cs-stapel .cs-totaal.cs-zonder{display:none}.cs-stapel:has(.cs-zonder){grid-template-columns:auto 1fr}.cs-stapel:has(.cs-zonder) .cs-verder{justify-self:end}.cs-stapel:has(.cs-zonder):has(.cs-toren[hidden]){grid-template-columns:1fr}}
 @media (max-width:700px){.pa-keuzes{grid-template-columns:1fr}.pa-keuze{min-height:170px;padding:22px 70px 20px 22px}.pa-keuze svg{width:64px;left:22px;top:18px}.pa-anders{width:100%}.cs-kort .cs-blok-in{min-height:70px}}
+/* Desktop (20 nov): kop en intro bij elkaar, stapel naast de bouwstenen, grotere letters in de tegels */
+@media (min-width:901px){
+  .cs .lp-twee,.cs-kolommen{max-width:1400px}
+  .cs>.lp-band:not(.lp-contact) .lp-twee{grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(24px,3vw,48px)}
+  .cs-kolommen{grid-template-columns:minmax(0,1fr) 340px;gap:clamp(24px,3vw,44px)}
+  .cs-blokken{grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}
+  .cs-blok-in{min-height:150px;padding:18px 18px 16px}
+  .cs-titel{font-size:24px}
+  .cs-sub{font-size:16px;line-height:1.4}
+  .cs-prijs{font-size:16px}
+  .cs-intro{font-size:18px}
+  .cs-noot{font-size:16px}
+  .cs-stenen{font-size:15px}
+  .cs-kies select,.cs-kies input{font-size:18px}
+}

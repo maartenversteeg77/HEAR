@@ -33,9 +33,9 @@ GELUID = [
     ("Geluid voor muziek en spraak", "Voor een event met sprekers en een dj", 700),
 ]
 PERSONEEL = [
-    ("Geluidsman", "Bij spraakversterking voor een seminar of workshop", 400),
-    ("Dj", "Voor je cocktail of feestavond", 600),
-    ("Geluidsman en daarna dj", "Voor een event met sprekers en een dj", 800),
+    ("Alleen geluidstechnicus", "Bij spraakversterking voor een seminar of workshop", 400),
+    ("Alleen een dj", "Voor je cocktail of feestavond", 600),
+    ("Geluidstechnicus en daarna dj", "Voor een event met sprekers en een dj", 800),
 ]
 LICHT = [
     ("Sfeerlicht", "De ruimte in kleur"),
@@ -68,7 +68,7 @@ def pagina(prijzen):
     scherm = blok("scherm", "Ledscherm", "Voor presentatie of visuals, meerdere schermen mogelijk", 150, "", "scherm", prijzen, vanaf=True)
     personeel = "".join(blok("personeel", t, s, p, "personeel", "personeel", prijzen) for t, s, p in PERSONEEL)
     licht = "".join(blok("licht", t, s, None, "", "licht", prijzen) for t, s in LICHT)
-    logo = blok("logo", "Ledscherm met logo", "Je logo groot in beeld", None, "", "licht", prijzen, prijstekst="op aanvraag")
+    logo = blok("logo", "Ledscherm met logo", "Je logo en mooie animaties op led-panelen", None, "", "licht", prijzen, prijstekst="op aanvraag")
     lichtprijs = '<p class="cs-noot">Sfeerlicht, decoratie en dansvloerlicht: één onderdeel € 350, twee € 600, alle drie € 800.</p>' if prijzen else ""
     totaal = ('<p class="cs-totaal"><span>Vanaf</span><b id="cs-som">€ 0</b><small>exclusief btw</small></p><p class="cs-voordeel" id="cs-voordeel" hidden></p>'
               if prijzen else '<p class="cs-totaal cs-zonder"><span>Je hoort dezelfde werkdag wat dit kost.</span></p>')

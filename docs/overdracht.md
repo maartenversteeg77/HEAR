@@ -59,7 +59,7 @@ Menu: **Cases · Voor wie we werken · Producten · Nieuws · Over HEAR**, plus 
 Volledige build, in deze volgorde:
 
 ```
-for f in doelgroepen cases diensten principes relevant privacy partners prijs mixes aanvraag nieuws en 404 sitemap proef-home conscious og icoon; do python3 scripts/bouw-$f.py; done
+for f in doelgroepen cases diensten principes relevant privacy partners prijs mixes aanvraag nieuws en og 404 icoon sitemap proef-home conscious og icoon; do python3 scripts/bouw-$f.py; done
 python3 scripts/check-css.py
 ```
 
@@ -120,4 +120,4 @@ Mijn versies van het LinkedIn-beeld pakten hem niet. Zijn eindversie (13 novembe
 - Toestemming van mensen op foto's; een groter origineel van de dansers op het tuinfeest.
 - Opruimen: `site/v2.html` en `site/voorbeeld-producten.html` (proefpagina's, niet gelinkt).
 - Search Console: de lijst met niet-geïndexeerde adressen opnieuw bekijken zodra Google de sitemap heeft verwerkt.
-- Bouwvolgorde (20 nov): altijd de volledige build draaien, nooit alleen `bouw-en.py`: die zet de Engelse pagina's en nieuws terug zonder deelgegevens. Volgorde: doelgroepen cases diensten principes relevant privacy partners prijs mixes aanvraag nieuws en 404 sitemap proef-home conscious og icoon (og en icoon als laatste, anders missen de Conscious-pagina's hun deelgegevens en icoon).
+- Bouwvolgorde (20 nov): altijd de volledige build draaien, nooit alleen `bouw-en.py`: die zet de Engelse pagina's en nieuws terug zonder deelgegevens. Volgorde: doelgroepen cases diensten principes relevant privacy partners prijs mixes aanvraag nieuws en og 404 icoon sitemap proef-home conscious og icoon (og en icoon draaien twee keer: de sitemap heeft de deelgegevens van de Engelse pagina's nodig, en de Conscious-pagina's krijgen hun deelgegevens en icoon pas in de tweede ronde).
