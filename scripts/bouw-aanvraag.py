@@ -47,6 +47,14 @@ PROGRAMMA = [
         ("Online uitzending", "Online broadcast"),
         ("Technicus ter plekke", "Technician on site"),
     ]),
+    ("merk", "Productlancering, merkactivatie of modeshow", "Product launch, brand activation or fashion show", [
+        ("Geluidssysteem", "Sound system"),
+        ("Dj en dj-gear", "DJ and DJ gear"),
+        ("Muziek in lijn met de brand (vooraf afgestemd)", "Music in line with the brand (agreed in advance)"),
+        ("Maatwerk playlist", "Bespoke playlist"),
+        ("Licht in huisstijlkleuren, logoprojecties", "Lighting in brand colours, logo projections"),
+        ("Videoscherm(en)", "Video screen(s)"),
+    ]),
     ("borrel", "Borrel of diner met muziek", "Drinks or dinner with music", [
         ("Geluid voor borrel of feest", "Sound for a reception or party"),
         ("Playlist op maat", "Custom playlist"),
