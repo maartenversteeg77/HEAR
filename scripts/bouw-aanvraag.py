@@ -23,8 +23,10 @@ TITEL = "Aanvraag"
 KOP = "Vertel over je event"
 MAIL = '<a href="mailto:maarten@hear.nl">maarten@hear.nl</a>'
 TEL = '<a href="tel:+31624560220">+31 6 24560220</a>'
-INTRO_HTML = "Vertel in een paar stappen wat je nodig hebt. Daarna kies je: een vrijblijvend voorstel of een call. Liever meteen bellen of appen? " + TEL + ". Mailen kan ook: " + MAIL + "."
-paren.append((INTRO_HTML, "Tell us what you need in a few steps. Then choose: a no-obligation proposal or a call. Rather call or message straight away? " + TEL + ". Email works too: " + MAIL + "."))
+INTRO_HTML = "Vertel in een paar stappen wat je nodig hebt. Daarna kies je: een vrijblijvend voorstel of een call."
+paren.append((">" + INTRO_HTML + "<", ">Tell us what you need in a few steps. Then choose: a no-obligation proposal or a call.<"))
+INTRO2_HTML = "Liever meteen bellen of appen? " + TEL + ".<br>Mailen kan ook: " + MAIL + "."
+paren.append((INTRO2_HTML, "Rather call or message straight away? " + TEL + ".<br>Email works too: " + MAIL + "."))
 
 def veld(naam, nl, en, type="text", verplicht=False, extra=""):
     req = " required" if verplicht else ""
@@ -177,7 +179,7 @@ form = f"""<form class="aanvraag" method="post" action="/api/aanvraag" id="aanvr
 
 main = f"""<main class="wrap">
 <section class="casehead"><a class="crumb" href="index.html"><span class="sectie">HEAR</span></a><h1 class="kernzin">{e(KOP)}</h1></section>
-<section class="quick quick-breed"><p>{INTRO_HTML}</p></section>
+<section class="quick quick-breed"><p>{INTRO_HTML}</p><p class="quick-licht">{INTRO2_HTML}</p></section>
 <div class="aanvraag-kolommen">
 {form}
 <aside class="samenvatting" id="samenvatting" aria-live="polite" data-leeg="{A("Nog niets gekozen.", "Nothing chosen yet.")}" data-gasten="{A("gasten", "guests")}" data-budget="{A("Richtbudget", "Indicative budget")}" data-onbekend="{A("budget nog niet bekend", "budget not known yet")}"><h2>{T("Je aanvraag", "Your request")}</h2><div id="sv-inhoud"></div></aside>

@@ -3240,8 +3240,12 @@
         "<html lang=\"en\">"
       ],
       [
-        "Vertel in een paar stappen wat je nodig hebt. Daarna kies je: een vrijblijvend voorstel of een call. Liever meteen bellen of appen? <a href=\"tel:+31624560220\">+31 6 24560220</a>. Mailen kan ook: <a href=\"mailto:maarten@hear.nl\">maarten@hear.nl</a>.",
-        "Tell us what you need in a few steps. Then choose: a no-obligation proposal or a call. Rather call or message straight away? <a href=\"tel:+31624560220\">+31 6 24560220</a>. Email works too: <a href=\"mailto:maarten@hear.nl\">maarten@hear.nl</a>."
+        ">Vertel in een paar stappen wat je nodig hebt. Daarna kies je: een vrijblijvend voorstel of een call.<",
+        ">Tell us what you need in a few steps. Then choose: a no-obligation proposal or a call.<"
+      ],
+      [
+        "Liever meteen bellen of appen? <a href=\"tel:+31624560220\">+31 6 24560220</a>.<br>Mailen kan ook: <a href=\"mailto:maarten@hear.nl\">maarten@hear.nl</a>.",
+        "Rather call or message straight away? <a href=\"tel:+31624560220\">+31 6 24560220</a>.<br>Email works too: <a href=\"mailto:maarten@hear.nl\">maarten@hear.nl</a>."
       ],
       [
         ">Soort event<",
