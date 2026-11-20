@@ -59,7 +59,7 @@ Menu: **Cases · Voor wie we werken · Producten · Nieuws · Over HEAR**, plus 
 Volledige build, in deze volgorde:
 
 ```
-for f in doelgroepen cases diensten principes relevant privacy partners prijs mixes aanvraag nieuws en og 404 icoon sitemap proef-home conscious; do python3 scripts/bouw-$f.py; done
+for f in doelgroepen cases diensten principes relevant privacy partners prijs mixes aanvraag nieuws en 404 sitemap proef-home conscious og icoon; do python3 scripts/bouw-$f.py; done
 python3 scripts/check-css.py
 ```
 
