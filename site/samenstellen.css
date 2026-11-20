@@ -128,3 +128,7 @@
   .cs-stenen{font-size:15px}
   .cs-kies select,.cs-kies input{font-size:18px}
 }
+/* Uren en grootte in de zin; personeel volgt uit de uren (20 nov) */
+.cs-uren select{min-width:108px}
+.cs-mens{cursor:pointer}
+@media (max-width:900px){.cs-kies.cs-uren{flex-wrap:nowrap}.cs-kies.cs-uren select{width:auto;flex:1 1 0}}

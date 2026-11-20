@@ -26,16 +26,15 @@ def e(t):
     return html.escape(t, quote=True)
 
 # (groep, waarde in de mail, titel, ondertitel, prijs, 'vanaf'?)
+# geluid: prijs per grootte (intiem, midsize, groot). Maarten gaf 750 / 1000 / 1250; de drie soorten houden hun onderlinge verschil van 100.
+GROOTTES = ["intiem (tot 200 gasten)", "midsize (200 tot 500 gasten)", "groot (500 tot 1.000 gasten)"]
 GELUID = [
-    ("Geluid voor spraak", "Met mengtafel en tot vier handmicrofoons", 500),
-    ("Geluid voor muziek", "Met dj-booth en dj-gear", 600),
-    ("Geluid voor muziek en spraak", "Voor een event met sprekers en een dj", 700),
+    ("Geluid voor spraak", "Met mengtafel en tot vier handmicrofoons", (650, 900, 1150)),
+    ("Geluid voor muziek", "Met dj-booth en dj-gear", (750, 1000, 1250)),
+    ("Geluid voor muziek en spraak", "Voor een event met sprekers en een dj", (850, 1100, 1350)),
 ]
-PERSONEEL = [
-    ("Alleen geluidstechnicus", "Bij spraakversterking voor een seminar of workshop", 400),
-    ("Alleen een dj", "Voor je cocktail of feestavond", 600),
-    ("Geluidstechnicus en daarna dj", "Voor een event met sprekers en een dj", 800),
-]
+# personeel: per uur, het aantal uren kiest de klant in de zin bovenaan
+TARIEF_TECHNICUS, TARIEF_DJ = 100, 150
 LICHT = [
     ("Sfeerlicht", "De ruimte in kleur"),
     ("Decoratie", "Led-tubes, spiegelbollen en props"),
@@ -48,10 +47,14 @@ def eur(n):
     return "€ " + f"{n:,}".replace(",", ".")
 
 def blok(naam, titel, sub, prijs, groep, soort, prijzen, vanaf=False, prijstekst=None):
+    staffel = ""
+    if isinstance(prijs, tuple):
+        staffel = f' data-staffel="{",".join(str(x) for x in prijs)}"'
+        prijs = prijs[0]
     p = f'<span class="cs-prijs">{"vanaf " if vanaf else ""}{eur(prijs)}</span>' if prijzen and prijs else ""
     if prijzen and prijstekst:
         p = f'<span class="cs-prijs">{prijstekst}</span>'
-    return (f'<label class="cs-blok cs-{soort}"><input type="checkbox" name="{naam}" value="{e(titel)}" data-groep="{groep}" data-prijs="{prijs or 0}" data-kleur="{KLEUR[soort]}">'
+    return (f'<label class="cs-blok cs-{soort}"><input type="checkbox" name="{naam}" value="{e(titel)}" data-groep="{groep}" data-prijs="{prijs or 0}"{staffel} data-kleur="{KLEUR[soort]}">'
             f'<span class="cs-blok-in"><span class="cs-titel">{titel}</span><span class="cs-sub">{sub}</span>{p}'
             f'{iso_stapel([KLEUR["wit"]], 30, 2.2, "cs-ic cs-ic-uit")}{iso_stapel([KLEUR[soort]], 30, 2.2, "cs-ic cs-ic-aan")}</span></label>')
 
@@ -62,7 +65,14 @@ def pagina(prijzen):
     variant = "met prijzen" if prijzen else "zonder prijzen"
     geluid = "".join(blok("geluid", t, s, p, "geluid", "geluid", prijzen) for t, s, p in GELUID)
     scherm = blok("scherm", "Ledscherm", "Voor presentatie of visuals, meerdere schermen mogelijk", 150, "", "scherm", prijzen, vanaf=True)
-    personeel = "".join(blok("personeel", t, s, p, "personeel", "personeel", prijzen) for t, s, p in PERSONEEL)
+    def mens(veld, titel, sub, tarief):
+        pr = f'<span class="cs-prijs" data-tarief="{eur(tarief)} per uur">{eur(tarief)} per uur</span>' if prijzen else '<span class="cs-prijs" data-tarief=""></span>'
+        return (f'<label class="cs-blok cs-personeel cs-mens" for="cs-{veld}" data-veld="{veld}" data-naam="{e(titel)}" data-tarief="{tarief}" data-kleur="{KLEUR["personeel"]}">'
+                f'<span class="cs-blok-in"><span class="cs-titel">{titel}</span><span class="cs-sub">{sub}</span>{pr}'
+                f'{iso_stapel([KLEUR["wit"]], 30, 2.2, "cs-ic cs-ic-uit")}{iso_stapel([KLEUR["personeel"]], 30, 2.2, "cs-ic cs-ic-aan")}</span></label>')
+    personeel = (mens("uren_dag", "Geluidstechnicus", "Tijdens je dagprogramma", TARIEF_TECHNICUS)
+                 + mens("uren_dj", "Dj", "Voor je cocktail of feestavond", TARIEF_DJ))
+    uren = lambda n: '<option value="0">geen</option>' + "".join(f'<option value="{i}">{i} uur</option>' for i in range(1, n + 1))
     licht = "".join(blok("licht", t, s, None, "", "licht", prijzen) for t, s in LICHT)
     logo = blok("logo", "Ledscherm met logo", "Je logo en mooie animaties op led-panelen", None, "", "licht", prijzen, prijstekst="op aanvraag")
     lichtprijs = '<p class="cs-noot">Sfeerlicht, decoratie en dansvloerlicht: één onderdeel € 350, twee € 600, alle drie € 800.</p>' if prijzen else ""
@@ -73,22 +83,24 @@ def pagina(prijzen):
 <div class="lp-held cs-held"><div class="cs-foto"><img src="{HOOFDBEELD[0]}" alt="{e(HOOFDBEELD[2])}" style="object-position:{HOOFDBEELD[1]}"><a class="cs-samen" href="#bouwstenen">{iso_stapel([KLEUR["geluid"], KLEUR["personeel"], KLEUR["licht"]], 40, 2)}<b>Stel je<br>event samen</b><i aria-hidden="true">→</i></a></div></div>
 <section class="lp-band"><div class="lp-twee"><p class="lp-lead">Leuk dat je een event organiseert.</p><div class="lp-tekst"><p>Of het nou om een congres gaat, een cocktailparty met dj of misschien wel beide: wij verzorgen het voor je van A tot Z.</p><p>Vul hier je aanvraag in twee minuten in.</p><p class="cs-hulp"><a class="wa" href="https://wa.me/31624560220?text=Hoi%20Maarten%2C%20ik%20heb%20een%20vraag%20over%20mijn%20event." target="_blank" rel="noopener"><span>Weet je niet wat je moet invullen? Stuur me een appje</span><i aria-hidden="true">→</i></a></p></div></div></section>
 <form class="cs-form" method="post" action="/api/aanvraag" data-dank="Dank je. Je hoort dezelfde werkdag van me." data-fout="Versturen lukte niet. Mail naar maarten@hear.nl of bel +31 6 24560220.">
-<input type="hidden" name="bron" value="Pagina Samenstellen ({variant})"><input type="hidden" name="utm" value=""><input type="hidden" name="indicatie" value=""><input type="text" name="website" class="lp-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<input type="hidden" name="bron" value="Pagina Samenstellen ({variant})"><input type="hidden" name="utm" value=""><input type="hidden" name="indicatie" value=""><input type="hidden" name="personeel" value=""><input type="text" name="website" class="lp-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 <section class="lp-band cs-bouw" id="bouwstenen"><div class="cs-kolommen"><div class="cs-keuzes">
 <fieldset class="cs-stap cs-zin"><legend class="lp-strip">Je event</legend>
 <label class="cs-kies"><span>Ik organiseer een</span><select name="soort">{"".join(f"<option>{e(x)}</option>" for x in SOORTEN)}</select></label>
 <label class="cs-kies"><span>in</span><input class="cs-locatie" name="locatie" placeholder="naam locatie" aria-label="Naam van de locatie" autocomplete="off"></label>
-<label class="cs-kies cs-gasten"><span>voor</span><input name="gasten" type="number" min="1" inputmode="numeric" aria-label="Aantal gasten"><span>gasten</span></label>
+<label class="cs-kies"><span>voor</span><select name="gasten" id="cs-grootte" aria-label="Grootte van je event">{"".join(f"<option>{e(x)}</option>" for x in GROOTTES)}</select></label>
+<label class="cs-kies cs-uren"><span>met</span><select name="uren_dag" id="cs-uren_dag" aria-label="Aantal uren dagprogramma">{uren(12)}</select><span>dagprogramma</span></label>
+<label class="cs-kies cs-uren"><span>en</span><select name="uren_dj" id="cs-uren_dj" aria-label="Aantal uren dj">{uren(8)}</select><span>dj</span></label>
 </fieldset>
 <fieldset class="cs-stap"><legend class="lp-strip">Kies de bouwstenen van je event</legend>
 <h3 class="cs-groep">Geluid</h3><p class="cs-intro">Hoogwaardig geluid, afgestemd op de ruimte.</p>
-<div class="cs-blokken">{geluid}{scherm}</div>
+<div class="cs-blokken">{geluid}</div>
 <p class="cs-noot">Meer dan vier sprekers of reversmicrofoons, bijvoorbeeld voor een rondetafelgesprek: op aanvraag.</p>
 <h3 class="cs-groep">Personeel</h3>
 <div class="cs-blokken">{personeel}</div>
-<p class="cs-noot">Bij alleen muziek regelt de dj het geluid zelf.</p>
+<p class="cs-noot">Het aantal uren kies je bovenaan. Bij alleen muziek regelt de dj het geluid zelf.</p>
 <h3 class="cs-groep">Licht en aankleding</h3>
-<div class="cs-blokken">{licht}{logo}</div>{lichtprijs}
+<div class="cs-blokken">{licht}{scherm}{logo}</div>{lichtprijs}
 </fieldset></div>
 <aside class="cs-stapel" aria-live="polite"><h2 class="cs-stapel-kop">Jouw event</h2><div class="cs-toren" id="cs-toren" hidden><span id="cs-toren-beeld"></span><ul class="cs-stenen" id="cs-stenen"></ul></div><p class="cs-leeg" id="cs-leeg">Kies je eerste bouwsteen.</p>{totaal}<a class="cs-verder" href="#contact">Naar je gegevens <i aria-hidden="true">→</i></a></aside>
 </div></section>
@@ -110,12 +122,18 @@ var LICHT=[0,350,600,800];
 __ISO_JS__
 var toren=document.getElementById('cs-toren'),torenbeeld=document.getElementById('cs-toren-beeld');
 function eur(n){return '\\u20ac\\u00a0'+String(n).replace(/\\B(?=(\\d{3})+$)/g,'.')}
-function reken(){var k=[].slice.call(f.querySelectorAll('.cs-blok input:checked')),t=0,nl=0,vanaf=false,h='';
- k.forEach(function(i){if(i.name==='licht')nl++;else t+=+i.dataset.prijs;h='<li style="--k:'+i.dataset.kleur+'">'+i.value+'</li>'+h});
- t+=LICHT[nl];stenen.innerHTML=h;leeg.hidden=k.length>0;toren.hidden=!k.length;torenbeeld.innerHTML=k.length?isoStapel(k.map(function(i){return i.dataset.kleur})):'';
- [].forEach.call(f.querySelectorAll('.cs-blok'),function(b){b.classList.toggle('is-aan',b.querySelector('input').checked)});
+var gr=document.getElementById('cs-grootte'),pers=f.querySelector('[name=personeel]');
+function reken(){var g=gr.selectedIndex,k=[],t=0,nl=0,h='',pt=[];
+ [].forEach.call(f.querySelectorAll('.cs-blok'),function(b){var i=b.querySelector('input');
+  if(!i){var u=+document.getElementById('cs-'+b.dataset.veld).value,pr=b.querySelector('.cs-prijs'),som=u*b.dataset.tarief;b.classList.toggle('is-aan',u>0);
+   if(pr)pr.textContent=u?(P?u+' uur: '+eur(som):u+' uur'):pr.dataset.tarief;
+   if(u){k.push({naam:b.dataset.naam+', '+u+' uur',kleur:b.dataset.kleur});t+=som;pt.push(b.dataset.naam+' '+u+' uur')}return}
+  if(i.dataset.staffel){i.dataset.prijs=i.dataset.staffel.split(',')[g];var ps=b.querySelector('.cs-prijs');if(ps)ps.textContent=eur(+i.dataset.prijs)}
+  b.classList.toggle('is-aan',i.checked);if(!i.checked)return;k.push({naam:i.value,kleur:i.dataset.kleur});if(i.name==='licht')nl++;else t+=+i.dataset.prijs});
+ pers.value=pt.join(', ');k.forEach(function(x){h='<li style="--k:'+x.kleur+'">'+x.naam+'</li>'+h});
+ t+=LICHT[nl];stenen.innerHTML=h;leeg.hidden=k.length>0;toren.hidden=!k.length;torenbeeld.innerHTML=k.length?isoStapel(k.map(function(x){return x.kleur})):'';
  if(P){som.textContent=eur(t);var b=nl*350-LICHT[nl];vd.hidden=!b;vd.textContent=b?'Je bespaart '+eur(b)+' op licht en aankleding.':'';ind.value=k.length?'vanaf '+eur(t).replace('\\u00a0',' ')+' excl. btw':''}}
-f.addEventListener('change',function(ev){var i=ev.target;if(!i.matches||!i.matches('.cs-blok input'))return;
+f.addEventListener('change',function(ev){var i=ev.target;if(i.matches&&i.matches('.cs-zin select')){reken();return}if(!i.matches||!i.matches('.cs-blok input'))return;
  if(i.checked&&i.dataset.groep)[].forEach.call(f.querySelectorAll('input[data-groep="'+i.dataset.groep+'"]'),function(o){if(o!==i)o.checked=false});reken()});
 reken();
 var m=f.querySelector('.lp-melding');f.addEventListener('submit',function(ev){if(!window.fetch)return;ev.preventDefault();var k=f.querySelector('button[type=submit]');k.disabled=true;

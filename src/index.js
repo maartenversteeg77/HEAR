@@ -11,7 +11,7 @@ const VELDEN = [
   ["naam", "Naam"], ["organisatie", "Organisatie"], ["functie", "Functie"], ["email", "E-mail"], ["telefoon", "Telefoon"],
   ["rol", "Aanvrager is"], ["rol_anders", "Aanvrager is, anders"], ["soort", "Soort event"], ["soort_anders", "Soort, anders"], ["event", "Naam event"], ["locatie", "Locatie"], ["datum", "Datum"], ["tijd", "Tijd"],
   ["gasten", "Aantal gasten"], ["doelgroep", "Doelgroep"], ["diensten", "Diensten"], ["diensten_anders", "Diensten, anders"], ["communicatie", "Communicatie"], ["communicatie_anders", "Communicatie, anders"],
-  ["geluid", "Geluid"], ["scherm", "Scherm"], ["personeel", "Personeel"], ["licht", "Licht en aankleding"], ["logo", "Logo"], ["indicatie", "Indicatie"],
+  ["geluid", "Geluid"], ["scherm", "Scherm"], ["uren_dag", "Uren dagprogramma"], ["uren_dj", "Uren dj"], ["personeel", "Personeel"], ["licht", "Licht en aankleding"], ["logo", "Logo"], ["indicatie", "Indicatie"],
   ["ruimte", "Ruimte"], ["concept", "Concept / programma"], ["bericht", "Bericht"],
   ["budget", "Richtbudget"],
   ["cc_wens", "Coffee cuts, meer weten over"], ["cc_lengte", "Lengte playlist (uur)"], ["cc_sfeer", "Sfeer in de zaak / voorbeeldplek"], ["cc_lijkt", "Moet lijken op"], ["cc_nummers", "Voorbeelden van nummers"],
