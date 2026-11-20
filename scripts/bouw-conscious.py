@@ -26,8 +26,8 @@ def e(t):
 
 # (groep, waarde in de mail, titel, ondertitel, prijs, 'vanaf'?)
 GELUID = [
-    ("Geluid voor muziek", "Met dj-booth en dj-gear", 600),
     ("Geluid voor spraak", "Met mengtafel en tot vier handmicrofoons", 500),
+    ("Geluid voor muziek", "Met dj-booth en dj-gear", 600),
     ("Geluid voor muziek en spraak", "Voor een event met sprekers en een dj", 700),
 ]
 PERSONEEL = [
@@ -49,8 +49,10 @@ LOCATIES = ["Bar Kantoor (Conscious Hotel Westerpark)", "Moer (The Tire Station)
 def eur(n):
     return "€ " + f"{n:,}".replace(",", ".")
 
-def blok(naam, titel, sub, prijs, groep, soort, prijzen, vanaf=False):
+def blok(naam, titel, sub, prijs, groep, soort, prijzen, vanaf=False, prijstekst=None):
     p = f'<span class="cs-prijs">{"vanaf " if vanaf else ""}{eur(prijs)}</span>' if prijzen and prijs else ""
+    if prijzen and prijstekst:
+        p = f'<span class="cs-prijs">{prijstekst}</span>'
     return (f'<label class="cs-blok cs-{soort}"><input type="checkbox" name="{naam}" value="{e(titel)}" data-groep="{groep}" data-prijs="{prijs or 0}" data-kleur="{KLEUR[soort]}">'
             f'<span class="cs-blok-in"><span class="cs-titel">{titel}</span><span class="cs-sub">{sub}</span>{p}'
             f'{iso_stapel([KLEUR["wit"]], 30, 2.2, "cs-ic cs-ic-uit")}{iso_stapel([KLEUR[soort]], 30, 2.2, "cs-ic cs-ic-aan")}</span></label>')
@@ -90,10 +92,11 @@ def iso_stapel(kleuren, u=40, dik=2, klasse=""):
 def pagina(prijzen):
     variant = "met prijzen" if prijzen else "zonder prijzen"
     geluid = "".join(blok("geluid", t, s, p, "geluid", "geluid", prijzen) for t, s, p in GELUID)
-    scherm = blok("scherm", "Led-presentatiescherm", "Meerdere schermen mogelijk", 150, "", "scherm", prijzen, vanaf=True)
+    scherm = blok("scherm", "Ledscherm", "Voor presentatie of visuals, meerdere schermen mogelijk", 150, "", "scherm", prijzen, vanaf=True)
     personeel = "".join(blok("personeel", t, s, p, "personeel", "personeel", prijzen) for t, s, p in PERSONEEL)
     licht = "".join(blok("licht", t, s, None, "", "licht", prijzen) for t, s in LICHT)
-    lichtprijs = '<p class="cs-noot">Eén onderdeel € 350, twee € 600, alle drie € 800.</p>' if prijzen else ""
+    logo = blok("logo", "Logoprojectie", "Je logo op wand of vloer", None, "", "licht", prijzen, prijstekst="op aanvraag")
+    lichtprijs = '<p class="cs-noot">Sfeerlicht, decoratie en dansvloerlicht: één onderdeel € 350, twee € 600, alle drie € 800.</p>' if prijzen else ""
     totaal = ('<p class="cs-totaal"><span>Vanaf</span><b id="cs-som">€ 0</b><small>exclusief btw</small></p><p class="cs-voordeel" id="cs-voordeel" hidden></p>'
               if prijzen else '<p class="cs-totaal cs-zonder"><span>Je hoort dezelfde werkdag wat dit kost.</span></p>')
     main = f"""<main class="wrap lp cs" data-prijzen="{1 if prijzen else 0}">
@@ -116,13 +119,12 @@ def pagina(prijzen):
 <div class="cs-blokken">{personeel}</div>
 <p class="cs-noot">Bij alleen muziek regelt de dj het geluid zelf.</p>
 <h3 class="cs-groep">Licht en aankleding</h3>
-<div class="cs-blokken">{licht}</div>{lichtprijs}
+<div class="cs-blokken">{licht}{logo}</div>{lichtprijs}
 </fieldset></div>
 <aside class="cs-stapel" aria-live="polite"><h2 class="cs-stapel-kop">Jouw event</h2><div class="cs-toren" id="cs-toren" hidden><span id="cs-toren-beeld"></span><ul class="cs-stenen" id="cs-stenen"></ul></div><p class="cs-leeg" id="cs-leeg">Kies je eerste bouwsteen.</p>{totaal}<a class="cs-verder" href="#contact">Naar je gegevens <i aria-hidden="true">→</i></a></aside>
 </div></section>
 <section class="lp-band lp-contact" id="contact"><div class="lp-twee"><div><h2>Verstuur je aanvraag</h2><p>Laat je datum en gegevens achter, dan hoor je dezelfde werkdag van me of de datum vrij is.</p>
-<div class="lp-wie"><img src="img/maarten-adviseur.jpg" alt="Maarten Versteeg" loading="lazy" style="object-position:50% 20%"><div><b>Maarten Versteeg</b><span>Oprichter HEAR</span></div></div>
-<div class="cs-app"><p>Is iets niet duidelijk of heb je een vraag?</p><a class="cs-appknop" href="https://wa.me/31624560220?text=Hoi%20Maarten%2C%20ik%20heb%20een%20vraag%20over%20mijn%20event%20bij%20Conscious%20Hotels%20of%20Hotel%20V." target="_blank" rel="noopener"><span>Stuur me een appje</span><i aria-hidden="true">→</i></a></div></div>
+<div class="lp-wie"><img src="img/maarten-adviseur.jpg" alt="Maarten Versteeg" loading="lazy" style="object-position:50% 20%"><div><b>Maarten Versteeg</b><span>Oprichter HEAR</span></div></div></div>
 <div class="lp-form">
 <label>Datum van je event<input name="datum" type="date" required></label>
 <label>Naam<input name="naam" autocomplete="name" required></label>

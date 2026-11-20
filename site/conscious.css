@@ -35,9 +35,9 @@
 /* bouwsteen: een tegel met rechtsboven een blokje dat kleurt als je hem kiest */
 .cs-blok{position:relative;display:grid;cursor:pointer;min-width:0}
 .cs-blok input{position:absolute;opacity:0;width:1px;height:1px}
-.cs-blok-in{position:relative;display:grid;gap:4px;grid-template-rows:auto auto 1fr;min-height:124px;padding:16px 64px 14px 16px;border:1px solid var(--zwart);background:#fff;transition:transform .15s,box-shadow .15s}
-.cs-titel{font:400 21px/1.15 var(--kop);hyphens:auto;overflow-wrap:anywhere}
-.cs-sub{font-size:14px;line-height:1.35;color:var(--grijsd)}
+.cs-blok-in{position:relative;display:grid;gap:9px;grid-template-rows:auto auto 1fr;min-height:124px;padding:16px 16px 14px;border:1px solid var(--zwart);background:#fff;transition:transform .15s,box-shadow .15s}
+.cs-titel{font:400 21px/1.15 var(--kop);padding-right:52px;min-height:32px;overflow-wrap:break-word;text-wrap:balance}
+.cs-sub{font-size:14px;line-height:1.35;color:var(--grijsd);text-wrap:pretty}
 .cs-prijs{align-self:end;padding-top:10px;font:500 14px/1 var(--tekst)}
 .cs-ic{position:absolute;right:10px;top:10px;width:46px;height:auto}
 .cs-ic-aan{display:none}
@@ -70,13 +70,6 @@
 .cs-verder i{font-style:normal;font-size:18px;line-height:.6}
 .cs-verder:hover{background:var(--wit)}
 
-/* appje in het aanvraagscherm */
-.cs-app{margin-top:32px;padding:22px 22px 24px;background:var(--zwart);color:var(--wit);max-width:440px}
-.cs-app p{margin:0 0 16px;font:300 clamp(22px,2vw,28px)/1.2 var(--kop);text-wrap:balance}
-.cs-appknop{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:15px 18px 14px;background:var(--wit);color:var(--zwart);text-decoration:none;font:500 13px/1 var(--tekst);letter-spacing:.14em;text-transform:uppercase}
-.cs-appknop i{font-style:normal;font-size:20px;line-height:.6}
-.cs-appknop:hover{background:var(--turquoise)}
-
 @media (max-width:900px){
   .cs-kolommen{grid-template-columns:minmax(0,1fr)}
   .cs-keuzes{min-width:0}
@@ -90,11 +83,11 @@
   .cs-totaal.cs-zonder span{font-size:16px}
   .cs-verder{margin:0;padding:12px 14px 11px;gap:10px}
   .cs-blokken{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-  .cs-blok-in{min-height:112px;padding:14px 52px 12px 12px}
+  .cs-blok-in{min-height:112px;padding:14px 12px 12px}
+  .cs-titel{padding-right:42px}
   .cs-ic{width:38px;right:8px;top:8px}
   .cs-titel{font-size:19px}
   .cs-kies{flex:1 1 100%}
   .cs-kies.cs-gasten{flex-wrap:nowrap}
-  .cs-app{max-width:none;margin-bottom:8px}
 }
 @media (max-width:380px){.cs-blokken{grid-template-columns:1fr}.cs-blok-in{min-height:0}}
