@@ -51,38 +51,30 @@ def blok(naam, titel, sub, prijs, groep, soort, prijzen, vanaf=False):
     return (f'<label class="cs-blok cs-{soort}"><input type="checkbox" name="{naam}" value="{e(titel)}" data-groep="{groep}" data-prijs="{prijs or 0}">'
             f'<span class="cs-blok-in"><span class="cs-titel">{titel}</span><span class="cs-sub">{sub}</span>{p}</span></label>')
 
-# Hoofdbeeld als puzzel: één beeld in vier stukjes, op elk stukje een woord. Het geheel is één knop naar de bouwstenen.
-PUZZEL_BEELD = ("img/case-prive-breed.jpg", "xMidYMax", "Gasten op de dansvloer in een zaal met gekleurd licht en ballonnen")
-PUZZEL_WOORDEN = ["Stel", "je", "event", "samen"]
+# Hoofdbeeld: één foto, opgebouwd uit vier blokjes met noppen (dezelfde vorm als de bouwstenen in de samensteller).
+# Op elk blokje staat een woord; het geheel is één knop naar de bouwstenen.
+HOOFDBEELD = ("img/case-prive-breed.jpg", "xMidYMax", "Gasten op de dansvloer in een zaal met gekleurd licht en ballonnen")
+WOORDEN = ["Stel", "je", "event", "samen"]
 
-def steen(mx, my, woord, bw=236, bh=92):
-    """Wit blokje met twee noppen, dezelfde vorm als de bouwstenen in de samensteller, met het woord erin."""
-    x, y = mx - bw / 2, my - bh / 2
-    nop = "".join(f'<rect x="{x + dx}" y="{y - 14}" width="38" height="15"/>' for dx in (24, 76))
-    return (f'<g class="cs-steen">{nop}<rect x="{x}" y="{y}" width="{bw}" height="{bh}"/>'
-            f'<text x="{mx}" y="{my + 2}" text-anchor="middle" dominant-baseline="central">{woord}</text></g>')
-
-def puzzel(kol, rij, w, h, r, klasse):
-    """SVG met kol x rij puzzelstukjes uit één beeld; elk stukje heeft een nop naar rechts en naar onder, en een uitsparing links en boven."""
-    n = round(r * 0.5)
-    beeld, uitsnede, alt = PUZZEL_BEELD
-    B, H = kol * w, rij * h
+def blokkenbeeld(kol, rij, w, h, klasse, tussen=16, nop=26):
+    """SVG: kol x rij blokjes uit één foto. Elk blokje is een rechthoek met twee noppen bovenop; de foto loopt over alle blokjes door."""
+    beeld, uitsnede, alt = HOOFDBEELD
+    B = kol * w + (kol - 1) * tussen
+    H = rij * (h + nop) + (rij - 1) * tussen
+    nw = round(w * 0.16)
     deel = []
-    for k, woord in enumerate(PUZZEL_WOORDEN):
+    for k, woord in enumerate(WOORDEN):
         c, q = k % kol, k // kol
-        x, y = c * w, q * h
-        cx, cy = x + w / 2, y + h / 2
-        d = f"M{x},{y}"
-        d += (f"L{cx - n},{y}A{r},{r} 0 1 0 {cx + n},{y}" if q > 0 else "") + f"L{x + w},{y}"
-        d += (f"L{x + w},{cy - n}A{r},{r} 0 1 1 {x + w},{cy + n}" if c < kol - 1 else "") + f"L{x + w},{y + h}"
-        d += (f"L{cx + n},{y + h}A{r},{r} 0 1 1 {cx - n},{y + h}" if q < rij - 1 else "") + f"L{x},{y + h}"
-        d += (f"L{x},{cy + n}A{r},{r} 0 1 0 {x},{cy - n}" if c > 0 else "") + "Z"
+        x = c * (w + tussen)
+        y = q * (h + nop + tussen) + nop
+        n1, n2 = x + round(w * 0.08), x + round(w * 0.08) + nw + round(w * 0.06)
+        d = (f"M{x},{y}H{n1}V{y - nop}H{n1 + nw}V{y}H{n2}V{y - nop}H{n2 + nw}V{y}H{x + w}V{y + h}H{x}Z")
         deel.append(
-            f'<g class="cs-stuk"><clipPath id="{klasse}{k}"><path d="{d}"/></clipPath>'
+            f'<g class="cs-bouwsteen" style="--i:{k}"><clipPath id="{klasse}{k}"><path d="{d}"/></clipPath>'
             f'<g clip-path="url(#{klasse}{k})"><image href="{beeld}" x="0" y="0" width="{B}" height="{H}" preserveAspectRatio="{uitsnede} slice"/>'
-            f'<rect x="0" y="0" width="{B}" height="{H}" fill="#191A19" fill-opacity=".34"/></g>'
-            f'<path class="cs-naad" d="{d}"/>{steen(cx + (r * 0.9 if c > 0 else 0), cy + (r * 0.7 if q > 0 else 0), woord)}</g>')
-    return (f'<svg class="cs-puzzel {klasse}" viewBox="0 0 {B} {H}" aria-hidden="true">' + "".join(deel) + "</svg>")
+            f'<rect x="0" y="0" width="{B}" height="{H}" fill="#191A19" fill-opacity=".38"/></g>'
+            f'<text x="{x + w / 2}" y="{y + h / 2}" text-anchor="middle" dominant-baseline="central">{woord}</text></g>')
+    return f'<svg class="cs-blokkenbeeld {klasse}" viewBox="0 0 {B} {H}" aria-hidden="true">' + "".join(deel) + "</svg>"
 
 def pagina(prijzen):
     variant = "met prijzen" if prijzen else "zonder prijzen"
@@ -95,7 +87,7 @@ def pagina(prijzen):
               if prijzen else '<p class="cs-totaal cs-zonder"><span>Je hoort dezelfde werkdag wat dit kost.</span></p>')
     main = f"""<main class="wrap lp cs" data-prijzen="{1 if prijzen else 0}">
 <section class="casehead"><h1 class="kernzin">Jouw event bij Conscious Hotels of Hotel V</h1></section>
-<div class="lp-held cs-held"><a class="cs-puzzelknop" href="#bouwstenen" aria-label="Stel je event samen">{puzzel(4, 1, 400, 500, 44, "cs-breed")}{puzzel(2, 2, 400, 380, 44, "cs-smal")}</a></div>
+<div class="lp-held cs-held"><a class="cs-beeldknop" href="#bouwstenen" aria-label="Stel je event samen">{blokkenbeeld(4, 1, 388, 470, "cs-breed")}{blokkenbeeld(2, 2, 392, 350, "cs-smal")}</a></div>
 <section class="lp-band"><div class="lp-twee"><p class="lp-lead">Leuk dat je bij Conscious Hotels of Hotel V een event organiseert.</p><div class="lp-tekst"><p>Of het nou om een congres gaat, een cocktailparty met dj of misschien wel beide: wij verzorgen het voor je van A tot Z.</p><p>Vul hier je aanvraag in twee minuten in.</p></div></div></section>
 <form class="cs-form" method="post" action="/api/aanvraag" data-dank="Dank je. Je hoort dezelfde werkdag van me." data-fout="Versturen lukte niet. Mail naar maarten@hear.nl of bel +31 6 24560220.">
 <input type="hidden" name="bron" value="Landingspagina Conscious ({variant})"><input type="hidden" name="utm" value=""><input type="hidden" name="indicatie" value=""><input type="text" name="website" class="lp-hp" tabindex="-1" autocomplete="off" aria-hidden="true">

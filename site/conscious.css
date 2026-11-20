@@ -3,17 +3,17 @@
 .cs .lp-tekst p:last-child{font-weight:500}
 .cs-bouw{background:var(--wit)}
 
-/* hoofdbeeld als puzzel */
-.cs-puzzel{display:block;width:100%;height:auto;overflow:visible}
-.cs-puzzel.cs-smal{display:none}
-.cs-puzzelknop{display:block}
-.cs-stuk{transition:transform .3s}
-.cs-puzzelknop:hover .cs-stuk:nth-child(odd),.cs-puzzelknop:focus-visible .cs-stuk:nth-child(odd){transform:translateY(-5px)}
-.cs-puzzelknop:hover .cs-stuk:nth-child(even),.cs-puzzelknop:focus-visible .cs-stuk:nth-child(even){transform:translateY(5px)}
-.cs-naad{fill:none;stroke:var(--wit);stroke-width:4;stroke-linejoin:round;vector-effect:non-scaling-stroke}
-.cs-steen rect{fill:var(--wit);stroke:var(--zwart);stroke-width:1.5;vector-effect:non-scaling-stroke}
-.cs-steen text{font:300 62px/1 var(--kop);fill:var(--zwart);pointer-events:none}
-@media (max-width:700px){.cs-puzzel.cs-breed{display:none}.cs-puzzel.cs-smal{display:block}}
+/* hoofdbeeld: één foto, opgebouwd uit vier blokjes met noppen */
+.cs-held{background:var(--zwart);padding-bottom:clamp(28px,3.4vw,52px)}
+.cs-beeldknop{display:block}
+.cs-blokkenbeeld{display:block;width:100%;height:auto;overflow:visible}
+.cs-blokkenbeeld.cs-smal{display:none}
+.cs-bouwsteen{transform-box:fill-box;animation:cs-val .55s cubic-bezier(.2,.8,.3,1) both;animation-delay:calc(var(--i) * .13s + .15s);transition:transform .25s}
+.cs-bouwsteen text{font:300 104px/1 var(--kop);fill:var(--wit);pointer-events:none}
+.cs-beeldknop:hover .cs-bouwsteen,.cs-beeldknop:focus-visible .cs-bouwsteen{transform:translateY(-6px);transition-delay:calc(var(--i) * .05s)}
+@keyframes cs-val{from{opacity:0;transform:translateY(-34px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.cs-bouwsteen{animation:none}}
+@media (max-width:700px){.cs-blokkenbeeld.cs-breed{display:none}.cs-blokkenbeeld.cs-smal{display:block}.cs-bouwsteen text{font-size:96px}}
 .cs-kolommen{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,360px);gap:clamp(24px,4vw,64px);align-items:start}
 .cs-stap{border:0;margin:0 0 clamp(28px,3vw,44px);padding:0;min-width:0}
 .cs-stap legend{padding:0;margin-bottom:20px}
