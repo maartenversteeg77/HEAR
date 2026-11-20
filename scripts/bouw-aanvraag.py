@@ -13,7 +13,7 @@ kop = idx[idx.index('<header class="top">'):idx.index('</script>') + 9]
 voet = idx[idx.index('<footer class="voet">'):idx.index('</footer>') + 9]
 e = lambda t: html.escape(t, quote=True)
 
-paren = [("<title>Aanvraag · HEAR</title>", "<title>Request · HEAR</title>")]  # (nl, en) als tekst tussen tags; attributen apart
+paren = [("<title>Aanvraag · HEAR</title>", "<title>Request · HEAR</title>"), ('<html lang="nl">', '<html lang="en">')]  # (nl, en) als tekst tussen tags; attributen apart
 def T(nl, en):
     paren.append((f'>{e(nl)}<', f'>{e(en)}<')); return e(nl)
 def A(nl, en):  # attribuutwaarde (placeholder, aria-label)
@@ -196,7 +196,7 @@ main = f"""<main class="wrap">
   function esc(t){{var d=document.createElement('div');d.textContent=t;return d.innerHTML}}
   function samenvat(){{var h='',ev=[],L=sv.dataset,so=document.getElementById('soort');
     if(so.value)ev.push(so.value==='anders'?(f.querySelector('[name=soort_anders]').value||so.options[so.selectedIndex].text):so.options[so.selectedIndex].text);
-    var dv=document.getElementById('v-datum').value;if(dv){{var dd=new Date(dv+'T12:00:00');ev.push(dd.toLocaleDateString(/^\/en\//.test(location.pathname)?'en-GB':'nl-NL',{{day:'numeric',month:'long',year:'numeric'}}))}}
+    var dv=document.getElementById('v-datum').value;if(dv){{var dd=new Date(dv+'T12:00:00');ev.push(dd.toLocaleDateString(location.pathname.indexOf('/en/')===0?'en-GB':'nl-NL',{{day:'numeric',month:'long',year:'numeric'}}))}}
     var tv=f.querySelector('[name=tijd]').value.trim();if(tv)ev.push(tv);var lv=document.getElementById('v-locatie').value.trim();if(lv)ev.push(lv);var gv=document.getElementById('v-gasten').value;if(gv)ev.push(gv+' '+L.gasten);
     if(ev.length)h+='<ul class="sv-event">'+ev.map(function(x){{return '<li>'+esc(x)+'</li>'}}).join('')+'</ul>';
     [].forEach.call(f.querySelectorAll('.poort'),function(p){{var q=p.querySelector('[data-poort]');if(!q.checked)return;var it=[];[].forEach.call(p.querySelectorAll('.poort-opties input[type=checkbox]:checked'),function(i){{if(!i.closest('label').classList.contains('reeds'))it.push(i.closest('label').querySelector('span').firstChild.textContent)}});
