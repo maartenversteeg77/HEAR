@@ -26,12 +26,11 @@ def e(t):
     return html.escape(t, quote=True)
 
 # (groep, waarde in de mail, titel, ondertitel, prijs, 'vanaf'?)
-# geluid: prijs per grootte (intiem, midsize, groot). Maarten gaf 750 / 1000 / 1250; de drie soorten houden hun onderlinge verschil van 100.
+# geluid: prijs per grootte (intiem, midsize, groot), bedragen van Maarten (20 nov)
 GROOTTES = ["intiem (tot 200 gasten)", "midsize (200 tot 500 gasten)", "groot (500 tot 1.000 gasten)"]
 GELUID = [
-    ("Geluid voor spraak", "Met handmicrofoons of reversmicrofoons", (650, 900, 1150)),
-    ("Geluid voor muziek", "Met dj-booth en dj-gear", (750, 1000, 1250)),
-    ("Geluid voor muziek en spraak", "Voor een event met sprekers en een dj", (850, 1100, 1350)),
+    ("Geluid voor spraak", "Met handmicrofoons of reversmicrofoons", (600, 900, 1200)),
+    ("Geluid voor spraak en muziek", "Met microfoons, dj-booth en dj-gear", (800, 1100, 1400)),
 ]
 # personeel: per uur, het aantal uren kiest de klant in de zin bovenaan
 TARIEF_TECHNICUS, TARIEF_DJ = 100, 150
