@@ -3244,8 +3244,8 @@
         ">Tell us what you need in a few steps. Then choose: a no-obligation proposal or a call.<"
       ],
       [
-        "Liever meteen bellen of appen? <a href=\"tel:+31624560220\">+31 6 24560220</a>.<br>Mailen kan ook: <a href=\"mailto:maarten@hear.nl\">maarten@hear.nl</a>.",
-        "Rather call or message straight away? <a href=\"tel:+31624560220\">+31 6 24560220</a>.<br>Email works too: <a href=\"mailto:maarten@hear.nl\">maarten@hear.nl</a>."
+        "Liever meteen bellen of appen? <a class=\"heel\" href=\"tel:+31624560220\">+31 6 24560220</a>.<br>Mailen kan ook: <a href=\"mailto:maarten@hear.nl\">maarten@hear.nl</a>.",
+        "Rather call or message straight away? <a class=\"heel\" href=\"tel:+31624560220\">+31 6 24560220</a>.<br>Email works too: <a href=\"mailto:maarten@hear.nl\">maarten@hear.nl</a>."
       ],
       [
         ">Soort event<",
@@ -3546,6 +3546,10 @@
       [
         ">Partyfotograaf<",
         ">Party photographer<"
+      ],
+      [
+        ">Ik weet nog niet wat ik nodig heb en bespreek dit graag in een call<",
+        ">I don&#x27;t know what I need yet and would like to discuss it in a call<"
       ],
       [
         ">Iets anders nodig? Namelijk<",

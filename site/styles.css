@@ -764,3 +764,8 @@ button.knop:disabled{opacity:.6;cursor:wait}
 }
 @media (max-width:560px){.extras-opties{grid-template-columns:1fr}}
 .quick.quick-breed p.quick-licht{font-weight:400;margin-top:1.1em}
+/* Aanvraagformulier (21 nov): telefoonnummer en mailadres breken niet af; generieke keuze boven het programma */
+.quick a.heel,.quick .quick-licht a{white-space:nowrap}
+.poort-los{background:#fff;border:1px solid var(--lijn);border-radius:8px;font-weight:400}
+.poort-los:has(input:checked){border-color:var(--koraal);box-shadow:0 0 0 1px var(--koraal)}
+.samenvatting .sv-eerste{margin-top:0;padding-top:0;border-top:0}

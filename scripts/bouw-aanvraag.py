@@ -22,7 +22,7 @@ def A(nl, en):  # attribuutwaarde (placeholder, aria-label)
 TITEL = "Aanvraag"
 KOP = "Vertel over je event"
 MAIL = '<a href="mailto:maarten@hear.nl">maarten@hear.nl</a>'
-TEL = '<a href="tel:+31624560220">+31 6 24560220</a>'
+TEL = '<a class="heel" href="tel:+31624560220">+31 6 24560220</a>'
 INTRO_HTML = "Vertel in een paar stappen wat je nodig hebt. Daarna kies je: een vrijblijvend voorstel of een call."
 paren.append((">" + INTRO_HTML + "<", ">Tell us what you need in a few steps. Then choose: a no-obligation proposal or a call.<"))
 INTRO2_HTML = "Liever meteen bellen of appen? " + TEL + ".<br>Mailen kan ook: " + MAIL + "."
@@ -114,7 +114,9 @@ def programma():
     blokken += poort("communicatie", "Hulp bij de communicatie rondom je event", "Help with the communication around your event", comm)
     extras = (f'<fieldset class="extras"><legend>{T("Heb je hier al eens aan gedacht?", "Have you thought about this?")}</legend><div class="extras-opties">'
               + "".join(vink("communicatie" if nl in comm_namen else "diensten", nl, en) for nl, en in EXTRAS) + '</div></fieldset>')
-    return (f'<div class="programma">{blokken}</div>{extras}'
+    weetniet = (f'<label class="vink poortvraag poort-los"><input type="checkbox" name="programma" id="weetniet" value="Weet nog niet wat nodig is, bespreekt dit graag in een call">'
+                f'<span>{T("Ik weet nog niet wat ik nodig heb en bespreek dit graag in een call", "I don\'t know what I need yet and would like to discuss it in a call")}</span></label>')
+    return (f'<div class="programma">{weetniet}{blokken}</div>{extras}'
             f'<label class="veld veld-breed"><span>{T("Iets anders nodig? Namelijk", "Need something else? Namely")}</span><input type="text" name="diensten_anders"></label>')
 
 SOORTEN = [("zakelijk", "Zakelijk (netwerk)event", "Corporate (networking) event"), ("lezing", "Lezing of seminar", "Lecture or seminar"),
@@ -218,6 +220,7 @@ main = f"""<main class="wrap">
     var dv=document.getElementById('v-datum').value;if(dv){{var dd=new Date(dv+'T12:00:00');ev.push(dd.toLocaleDateString(location.pathname.indexOf('/en/')===0?'en-GB':'nl-NL',{{day:'numeric',month:'long',year:'numeric'}}))}}
     var tv=f.querySelector('[name=tijd]').value.trim();if(tv)ev.push(tv);var lv=document.getElementById('v-locatie').value.trim();if(lv)ev.push(lv);var gv=document.getElementById('v-gasten').value;if(gv)ev.push(gv+' '+L.gasten);
     if(ev.length)h+='<ul class="sv-event">'+ev.map(function(x){{return '<li>'+esc(x)+'</li>'}}).join('')+'</ul>';
+    if(document.getElementById('weetniet').checked)h+='<p class="sv-regel sv-eerste">'+esc(document.getElementById('weetniet').closest('label').querySelector('span').textContent)+'</p>';
     [].forEach.call(f.querySelectorAll('.poort'),function(p){{var q=p.querySelector('[data-poort]');if(!q.checked)return;var it=[];[].forEach.call(p.querySelectorAll('.poort-opties input[type=checkbox]:checked'),function(i){{if(!i.closest('label').classList.contains('reeds'))it.push(i.closest('label').querySelector('span').firstChild.textContent)}});
       var an=p.querySelector('.poort-opties input[type=text]');if(an&&an.value.trim())it.push(an.value.trim());
       h+='<h3>'+esc(q.closest('label').querySelector('span').textContent)+'</h3>'+(it.length?'<ul>'+it.map(function(x){{return '<li>'+esc(x)+'</li>'}}).join('')+'</ul>':'')}});
@@ -233,6 +236,8 @@ main = f"""<main class="wrap">
   function route(){{var c=gekozen()==='call';cv.hidden=!c;gd.required=c;[].forEach.call(cv.querySelectorAll('input,select'),function(i){{i.disabled=!c}});mist.hidden=true;
     [].forEach.call(f.querySelectorAll('.routekaart'),function(k){{k.classList.toggle('aan',k.querySelector('input').checked)}})}}
   [].forEach.call(f.querySelectorAll('[name=route]'),function(r){{r.addEventListener('change',route)}});route();
+  /* 'ik weet het nog niet': zet de call alvast als keuze klaar */
+  var wn=document.getElementById('weetniet');wn.addEventListener('change',function(){{if(wn.checked){{f.querySelector('[name=route][value=call]').checked=true;route();samenvat()}}}});
   /* voor een voorstel is genoeg invoer nodig */
   function ontbreekt(){{var L=f.dataset,u=[];if(!document.getElementById('v-datum').value)u.push(L.mDatum);if(!document.getElementById('v-locatie').value.trim())u.push(L.mLocatie);if(!document.getElementById('v-gasten').value)u.push(L.mGasten);
     var stap=u.length?'1':'';if(!f.querySelector('[name=diensten]:checked:not(:disabled),[name=communicatie]:checked:not(:disabled)')&&!f.querySelector('[name=diensten_anders]').value.trim()){{u.push(L.mKeuze);stap=stap||'2'}}return {{lijst:u,stap:stap}}}}
