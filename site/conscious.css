@@ -6,13 +6,14 @@
 /* hoofdbeeld als puzzel */
 .cs-puzzel{display:block;width:100%;height:auto;overflow:visible}
 .cs-puzzel.cs-smal{display:none}
-.cs-stuk{cursor:pointer}
-.cs-stuk image{transition:transform .35s;transform-box:fill-box;transform-origin:center}
-.cs-stuk:hover image,.cs-stuk:focus-visible image{transform:scale(1.04)}
+.cs-puzzelknop{display:block}
+.cs-stuk{transition:transform .3s}
+.cs-puzzelknop:hover .cs-stuk:nth-child(odd),.cs-puzzelknop:focus-visible .cs-stuk:nth-child(odd){transform:translateY(-5px)}
+.cs-puzzelknop:hover .cs-stuk:nth-child(even),.cs-puzzelknop:focus-visible .cs-stuk:nth-child(even){transform:translateY(5px)}
 .cs-naad{fill:none;stroke:var(--wit);stroke-width:4;stroke-linejoin:round;vector-effect:non-scaling-stroke}
-.cs-stuk text{font:300 44px/1 var(--kop);fill:var(--wit);pointer-events:none}
-.cs-stuk:focus-visible .cs-naad{stroke:var(--koraal)}
-@media (max-width:700px){.cs-puzzel.cs-breed{display:none}.cs-puzzel.cs-smal{display:block}.cs-stuk text{font-size:40px}}
+.cs-steen rect{fill:var(--wit);stroke:var(--zwart);stroke-width:1.5;vector-effect:non-scaling-stroke}
+.cs-steen text{font:300 62px/1 var(--kop);fill:var(--zwart);pointer-events:none}
+@media (max-width:700px){.cs-puzzel.cs-breed{display:none}.cs-puzzel.cs-smal{display:block}}
 .cs-kolommen{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,360px);gap:clamp(24px,4vw,64px);align-items:start}
 .cs-stap{border:0;margin:0 0 clamp(28px,3vw,44px);padding:0;min-width:0}
 .cs-stap legend{padding:0;margin-bottom:20px}

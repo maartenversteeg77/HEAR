@@ -51,20 +51,24 @@ def blok(naam, titel, sub, prijs, groep, soort, prijzen, vanaf=False):
     return (f'<label class="cs-blok cs-{soort}"><input type="checkbox" name="{naam}" value="{e(titel)}" data-groep="{groep}" data-prijs="{prijs or 0}">'
             f'<span class="cs-blok-in"><span class="cs-titel">{titel}</span><span class="cs-sub">{sub}</span>{p}</span></label>')
 
-# Hoofdbeeld als puzzel: vier soorten events, elk een stukje. Klikken kiest het soort event in de lijst eronder.
-# (beeld, label, waarde in de keuzelijst, uitsnede, alt)
-STUKJES = [
-    ("img/case-gemeente.jpg", "Seminar", "congres of seminar", "xMidYMin", "Twee sprekers in gesprek op een podium voor een volle zaal"),
-    ("img/case-creativegrounds.jpg", "Borrel", "borrel of cocktailparty", "xMidYMin", "Gasten proosten bij een saxofonist"),
-    ("assets/image8.png", "Diner", "diner", "xMidYMid", "Diner aan ronde tafels in een zaal met gekleurd licht"),
-    ("img/case-prive-breed.jpg", "Feest", "bedrijfsfeest", "xMidYMax", "Gasten op de dansvloer in een zaal met gekleurd licht en ballonnen"),
-]
+# Hoofdbeeld als puzzel: één beeld in vier stukjes, op elk stukje een woord. Het geheel is één knop naar de bouwstenen.
+PUZZEL_BEELD = ("img/case-prive-breed.jpg", "xMidYMax", "Gasten op de dansvloer in een zaal met gekleurd licht en ballonnen")
+PUZZEL_WOORDEN = ["Stel", "je", "event", "samen"]
+
+def steen(mx, my, woord, bw=236, bh=92):
+    """Wit blokje met twee noppen, dezelfde vorm als de bouwstenen in de samensteller, met het woord erin."""
+    x, y = mx - bw / 2, my - bh / 2
+    nop = "".join(f'<rect x="{x + dx}" y="{y - 14}" width="38" height="15"/>' for dx in (24, 76))
+    return (f'<g class="cs-steen">{nop}<rect x="{x}" y="{y}" width="{bw}" height="{bh}"/>'
+            f'<text x="{mx}" y="{my + 2}" text-anchor="middle" dominant-baseline="central">{woord}</text></g>')
 
 def puzzel(kol, rij, w, h, r, klasse):
-    """SVG met kol x rij puzzelstukjes; elk stukje heeft een nop naar rechts en naar onder, en een uitsparing links en boven."""
+    """SVG met kol x rij puzzelstukjes uit één beeld; elk stukje heeft een nop naar rechts en naar onder, en een uitsparing links en boven."""
     n = round(r * 0.5)
+    beeld, uitsnede, alt = PUZZEL_BEELD
+    B, H = kol * w, rij * h
     deel = []
-    for k, (beeld, label, waarde, uitsnede, alt) in enumerate(STUKJES):
+    for k, woord in enumerate(PUZZEL_WOORDEN):
         c, q = k % kol, k // kol
         x, y = c * w, q * h
         cx, cy = x + w / 2, y + h / 2
@@ -73,16 +77,12 @@ def puzzel(kol, rij, w, h, r, klasse):
         d += (f"L{x + w},{cy - n}A{r},{r} 0 1 1 {x + w},{cy + n}" if c < kol - 1 else "") + f"L{x + w},{y + h}"
         d += (f"L{cx + n},{y + h}A{r},{r} 0 1 1 {cx - n},{y + h}" if q < rij - 1 else "") + f"L{x},{y + h}"
         d += (f"L{x},{cy + n}A{r},{r} 0 1 0 {x},{cy - n}" if c > 0 else "") + "Z"
-        u = 2 * r  # het beeld loopt door tot in de nop
         deel.append(
-            f'<a class="cs-stuk" href="#bouwstenen" data-soort="{e(waarde)}" aria-label="{e(label)}: {e(alt)}">'
-            f'<clipPath id="{klasse}{k}"><path d="{d}"/></clipPath>'
-            f'<g clip-path="url(#{klasse}{k})"><image href="{beeld}" x="{x}" y="{y}" width="{w + u}" height="{h + u}" preserveAspectRatio="{uitsnede} slice"/>'
-            f'<rect x="{x}" y="{y + h * 0.45}" width="{w + u}" height="{h * 0.55 + u}" fill="url(#{klasse}-waas)"/></g>'
-            f'<path class="cs-naad" d="{d}"/><text x="{x + 26}" y="{y + h - 26}">{label}</text></a>')
-    return (f'<svg class="cs-puzzel {klasse}" viewBox="0 0 {kol * w} {rij * h}" role="group" aria-label="Kies je soort event">'
-            f'<defs><linearGradient id="{klasse}-waas" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#191A19" stop-opacity="0"/><stop offset="1" stop-color="#191A19" stop-opacity=".82"/></linearGradient></defs>'
-            + "".join(deel) + "</svg>")
+            f'<g class="cs-stuk"><clipPath id="{klasse}{k}"><path d="{d}"/></clipPath>'
+            f'<g clip-path="url(#{klasse}{k})"><image href="{beeld}" x="0" y="0" width="{B}" height="{H}" preserveAspectRatio="{uitsnede} slice"/>'
+            f'<rect x="0" y="0" width="{B}" height="{H}" fill="#191A19" fill-opacity=".34"/></g>'
+            f'<path class="cs-naad" d="{d}"/>{steen(cx + (r * 0.9 if c > 0 else 0), cy + (r * 0.7 if q > 0 else 0), woord)}</g>')
+    return (f'<svg class="cs-puzzel {klasse}" viewBox="0 0 {B} {H}" aria-hidden="true">' + "".join(deel) + "</svg>")
 
 def pagina(prijzen):
     variant = "met prijzen" if prijzen else "zonder prijzen"
@@ -95,7 +95,7 @@ def pagina(prijzen):
               if prijzen else '<p class="cs-totaal cs-zonder"><span>Je hoort dezelfde werkdag wat dit kost.</span></p>')
     main = f"""<main class="wrap lp cs" data-prijzen="{1 if prijzen else 0}">
 <section class="casehead"><h1 class="kernzin">Jouw event bij Conscious Hotels of Hotel V</h1></section>
-<div class="lp-held cs-held">{puzzel(4, 1, 400, 500, 44, "cs-breed")}{puzzel(2, 2, 400, 380, 44, "cs-smal")}</div>
+<div class="lp-held cs-held"><a class="cs-puzzelknop" href="#bouwstenen" aria-label="Stel je event samen">{puzzel(4, 1, 400, 500, 44, "cs-breed")}{puzzel(2, 2, 400, 380, 44, "cs-smal")}</a></div>
 <section class="lp-band"><div class="lp-twee"><p class="lp-lead">Leuk dat je bij Conscious Hotels of Hotel V een event organiseert.</p><div class="lp-tekst"><p>Of het nou om een congres gaat, een cocktailparty met dj of misschien wel beide: wij verzorgen het voor je van A tot Z.</p><p>Vul hier je aanvraag in twee minuten in.</p></div></div></section>
 <form class="cs-form" method="post" action="/api/aanvraag" data-dank="Dank je. Je hoort dezelfde werkdag van me." data-fout="Versturen lukte niet. Mail naar maarten@hear.nl of bel +31 6 24560220.">
 <input type="hidden" name="bron" value="Landingspagina Conscious ({variant})"><input type="hidden" name="utm" value=""><input type="hidden" name="indicatie" value=""><input type="text" name="website" class="lp-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -142,7 +142,6 @@ function reken(){var k=[].slice.call(f.querySelectorAll('.cs-blok input:checked'
 f.addEventListener('change',function(ev){var i=ev.target;if(!i.matches||!i.matches('.cs-blok input'))return;
  if(i.checked&&i.dataset.groep)[].forEach.call(f.querySelectorAll('input[data-groep="'+i.dataset.groep+'"]'),function(o){if(o!==i)o.checked=false});reken()});
 reken();
-[].forEach.call(document.querySelectorAll('.cs-stuk'),function(a){a.addEventListener('click',function(){f.querySelector('[name=soort]').value=a.dataset.soort})});
 var m=f.querySelector('.lp-melding');f.addEventListener('submit',function(ev){if(!window.fetch)return;ev.preventDefault();var k=f.querySelector('button[type=submit]');k.disabled=true;
 fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}}).then(function(r){return r.json()}).then(function(r){m.hidden=false;
 if(r.ok){m.textContent=f.dataset.dank;[].forEach.call(f.querySelectorAll('.lp-form label,.lp-form button,.lp-privacy'),function(x){x.hidden=true})}else{m.textContent=f.dataset.fout;k.disabled=false}}).catch(function(){m.hidden=false;m.textContent=f.dataset.fout;k.disabled=false})});
