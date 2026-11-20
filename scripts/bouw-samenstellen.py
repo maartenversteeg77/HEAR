@@ -54,7 +54,7 @@ def blok(naam, titel, sub, prijs, groep, soort, prijzen, vanaf=False, prijstekst
     if prijzen and prijstekst:
         p = f'<span class="cs-prijs">{prijstekst}</span>'
     return (f'<label class="cs-blok cs-{soort}"><input type="checkbox" name="{naam}" value="{e(titel)}" data-groep="{groep}" data-prijs="{prijs or 0}"{staffel} data-kleur="{KLEUR[soort]}">'
-            f'<span class="cs-blok-in"><span class="cs-titel">{titel}</span><span class="cs-sub">{sub}</span>{p}'
+            f'<span class="cs-blok-in"><span class="cs-titel">{titel.replace("dansvloereffecten", "dansvloer&shy;effecten")}</span><span class="cs-sub">{sub}</span>{p}'
             f'{iso_stapel([KLEUR["wit"]], 30, 2.2, "cs-ic cs-ic-uit")}{iso_stapel([KLEUR[soort]], 30, 2.2, "cs-ic cs-ic-aan")}</span></label>')
 
 # De tekening van de blokjes staat in scripts/blokjes.py (gedeeld met de proef voor het aanvraagformulier).
@@ -63,7 +63,8 @@ HOOFDBEELD = ("img/case-prive-breed.jpg", "50% 88%", "Gasten op de dansvloer in 
 def pagina(prijzen):
     variant = "met prijzen" if prijzen else "zonder prijzen"
     geluid = "".join(blok("geluid", t, s, p, "geluid", "geluid", prijzen) for t, s, p in GELUID)
-    scherm = blok("scherm", "Ledscherm", "Voor presentatie of visuals, meerdere schermen mogelijk", 150, "", "scherm", prijzen, vanaf=True)
+    scherm = (blok("scherm", "Ledscherm voor presentaties", "Meerdere schermen mogelijk", 150, "", "scherm", prijzen, vanaf=True)
+              + blok("scherm", "Ledschermen voor VJ-dansvloereffecten", "", 600, "", "scherm", prijzen, vanaf=True))
     def mens(veld, titel, sub, tarief):
         pr = f'<span class="cs-prijs" data-tarief="{eur(tarief)} per uur">{eur(tarief)} per uur</span>' if prijzen else '<span class="cs-prijs" data-tarief=""></span>'
         return (f'<label class="cs-blok cs-personeel cs-mens" for="cs-{veld}" data-veld="{veld}" data-naam="{e(titel)}" data-tarief="{tarief}" data-kleur="{KLEUR["personeel"]}">'
@@ -73,7 +74,7 @@ def pagina(prijzen):
                  + mens("uren_dj", "Dj", "Voor je cocktail of feestavond", TARIEF_DJ))
     uren = lambda n: '<option value="0">geen</option>' + "".join(f'<option value="{i}">{i} uur</option>' for i in range(1, n + 1))
     licht = "".join(blok("licht", t, s, None, "", "licht", prijzen) for t, s in LICHT)
-    logo = blok("logo", "Ledscherm met logo", "Je logo en mooie animaties op led-panelen", None, "", "licht", prijzen, prijstekst="op aanvraag")
+    logo = blok("logo", "Ledscherm met logo", "Je logo en mooie animaties op led-panelen", None, "", "scherm", prijzen, prijstekst="op aanvraag")
     lichtprijs = '<p class="cs-noot">Sfeerlicht, decoratie en dansvloerlicht: één onderdeel € 350, twee € 600, alle drie € 800.</p>' if prijzen else ""
     totaal = ('<p class="cs-totaal"><span>Vanaf</span><b id="cs-som">€ 0</b><small>exclusief btw</small></p><p class="cs-voordeel" id="cs-voordeel" hidden></p>'
               if prijzen else '<p class="cs-totaal cs-zonder"><span>Je hoort dezelfde werkdag wat dit kost.</span></p>')
@@ -98,7 +99,9 @@ def pagina(prijzen):
 <div class="cs-blokken">{personeel}</div>
 <p class="cs-noot">Het aantal uren kies je bovenaan. Bij alleen muziek regelt de dj het geluid zelf.</p>
 <h3 class="cs-groep">Licht en aankleding</h3>
-<div class="cs-blokken">{licht}{scherm}{logo}</div>{lichtprijs}
+<div class="cs-blokken">{licht}</div>{lichtprijs}
+<h3 class="cs-groep">Ledscherm</h3>
+<div class="cs-blokken">{scherm}{logo}</div>
 </fieldset></div>
 <aside class="cs-stapel" aria-live="polite"><h2 class="cs-stapel-kop">Jouw event</h2><div class="cs-toren" id="cs-toren" hidden><span id="cs-toren-beeld"></span><ul class="cs-stenen" id="cs-stenen"></ul></div><p class="cs-leeg" id="cs-leeg">Kies je eerste bouwsteen.</p>{totaal}<a class="cs-verder" href="#contact">Naar je gegevens <i aria-hidden="true">→</i></a></aside>
 </div></section>

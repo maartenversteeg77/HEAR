@@ -132,3 +132,5 @@
 .cs-uren select{min-width:108px}
 .cs-mens{cursor:pointer}
 @media (max-width:900px){.cs-kies.cs-uren{flex-wrap:nowrap}.cs-kies.cs-uren select{width:auto;flex:1 1 0}}
+/* lange woorden in een tegel mogen de tegel niet breder maken (20 nov) */
+.cs-blok,.cs-blok-in{grid-template-columns:minmax(0,1fr)}
