@@ -462,15 +462,6 @@
           ]
         },
         {
-          "label": "Geuren-dj",
-          "kop": "Voor een multi-sensory ervaring",
-          "beeld": "img/diensten/geuren-dj.jpg",
-          "beeld_alt": "Een vrouw blaast een wolk geurende nevel uit een glazen kolf",
-          "tekst": [
-            "Twee dames brouwen zoete, frisse en warme geuren en verspreiden die in de zaal. Ze lopen (desgewenst) ook door de zaal om gasten te laten ruiken."
-          ]
-        },
-        {
           "label": "Playlist",
           "tekst": [],
           "html_na": "<p>Geen dj nodig, maar wel een fijne playlist? <a href=\"custom-dj-mix.html#coffee-cuts\">Kijk dan eens bij Coffee cuts →</a></p>"
