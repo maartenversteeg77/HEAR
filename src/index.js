@@ -86,11 +86,10 @@ export default {
       doel.search = url.search; doel.hash = url.hash;
       return Response.redirect(doel.toString(), 301);
     }
-    // de samensteller heette eerst anders (demo, 20 nov 2026); oude adressen doorsturen naar /samenstellen
-    const sm = /^\/conscious(-met-prijzen|-zonder-prijzen)?(\.html)?\/?$/.exec(url.pathname);
-    if (sm) {
-      const doel = new URL(sm[1] === "-zonder-prijzen" ? "/samenstellen-zonder-prijzen" : "/samenstellen", url);
-      doel.search = url.search; doel.hash = url.hash;
+    // de samensteller (proef, 20 nov 2026) is weggehaald; oude adressen gaan naar het aanvraagformulier
+    if (/^\/(conscious|samenstellen)(-met-prijzen|-zonder-prijzen)?(\.html)?\/?$/.test(url.pathname)) {
+      const doel = new URL("/aanvraag", url);
+      doel.search = url.search;
       return Response.redirect(doel.toString(), 302);
     }
     // korte advertentie-URL: hear.nl/coffeecuts is een eigen deelpagina (site/coffeecuts.html: eigen titel en deelbeeld,
