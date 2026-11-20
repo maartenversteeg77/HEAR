@@ -1,6 +1,8 @@
 /* Demo (20 nov): landingspagina Conscious Hotels / Hotel V. Alleen geladen door conscious-*.html. */
 .cs-form{display:contents}
-.cs .lp-tekst p:last-child{font-weight:500}
+.cs .lp-tekst p:nth-last-child(2){font-weight:500}
+.cs-hulp{margin-top:22px}
+.cs-hulp .wa{max-width:100%}
 .cs-bouw{background:var(--wit)}
 
 /* hoofdbeeld: één foto, opgebouwd uit vier blokjes met noppen */
