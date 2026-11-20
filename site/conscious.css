@@ -1,4 +1,4 @@
-/* Demo (20 nov): landingspagina Conscious Hotels / Hotel V. Alleen geladen door conscious-*.html. */
+/* Blokjes-samensteller (20 nov). Geladen door conscious-*.html (demo Conscious Hotels / Hotel V) en proef-aanvraag.html. */
 .cs-form{display:contents}
 .cs .lp-tekst p:nth-last-child(2){font-weight:500}
 .cs-hulp{margin-top:22px}
@@ -91,3 +91,22 @@
   .cs-kies.cs-gasten{flex-wrap:nowrap}
 }
 @media (max-width:380px){.cs-blokken{grid-template-columns:1fr}.cs-blok-in{min-height:0}}
+
+/* proef aanvraagformulier: startscherm met twee ingangen */
+.pa-start{padding-top:0!important;background:linear-gradient(var(--zwart) 46%,transparent 46%)}
+.pa-keuzes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(12px,1.6vw,24px)}
+.pa-keuze{position:relative;display:grid;align-content:end;gap:8px;min-height:clamp(220px,24vw,320px);padding:28px 84px 26px 28px;background:#fff;color:var(--zwart);border:1px solid var(--zwart);text-decoration:none;transition:transform .2s}
+.pa-keuze:hover,.pa-keuze:focus-visible{transform:translateY(-4px)}
+.pa-kop{font:300 clamp(28px,3vw,44px)/1.08 var(--kop);text-wrap:balance}
+.pa-sub{font-size:16px;color:var(--grijsd)}
+.pa-keuze i{position:absolute;right:26px;bottom:26px;font-style:normal;font-size:30px;line-height:1;color:var(--koraal)}
+.pa-keuze svg{position:absolute;left:26px;top:24px;width:88px;height:auto}
+.pa-zelf{background:var(--zwart);color:var(--wit);border-color:var(--zwart)}
+.pa-zelf .pa-sub{color:rgba(246,245,241,.72)}
+.pa-zelf.is-gekozen{outline:3px solid var(--koraal);outline-offset:3px}
+.pa-anders{font:400 17px/1.2 var(--tekst);padding:12px 14px;border:1px solid var(--zwart);border-radius:0;background:#fff;color:var(--zwart);min-width:240px}
+.cs-blokken:has(.cs-kort){grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.cs-kort .cs-blok-in{min-height:76px;grid-template-rows:auto}
+.cs-kort .cs-titel{min-height:44px;display:flex;align-items:center}
+@media (max-width:900px){.cs-blokken:has(.cs-kort){grid-template-columns:1fr;gap:8px}.cs-kort .cs-blok-in{min-height:58px}.cs-kort .cs-titel{min-height:34px}.cs-stapel .cs-totaal.cs-zonder{display:none}.cs-stapel:has(.cs-zonder){grid-template-columns:auto 1fr}.cs-stapel:has(.cs-zonder) .cs-verder{justify-self:end}.cs-stapel:has(.cs-zonder):has(.cs-toren[hidden]){grid-template-columns:1fr}}
+@media (max-width:700px){.pa-keuzes{grid-template-columns:1fr}.pa-keuze{min-height:170px;padding:22px 70px 20px 22px}.pa-keuze svg{width:64px;left:22px;top:18px}.pa-anders{width:100%}.cs-kort .cs-blok-in{min-height:70px}}

@@ -8,6 +8,8 @@ De definitieve pagina komt op hear.nl/conscious zodra Maarten een variant kiest.
 Kop, menu en voet komen uit site/nieuwjaarsborrel.html (draai dit script dus na bouw-doelgroepen).
 Niet gelinkt vanaf de site, noindex."""
 import pathlib, re, sys, html
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from blokjes import KLEUR, iso_stapel, ISO_JS
 site = pathlib.Path(__file__).resolve().parent.parent / "site"
 basis = (site / "nieuwjaarsborrel.html").read_text(encoding="utf-8")
 i = basis.index('<main class="wrap lp">')
@@ -57,37 +59,8 @@ def blok(naam, titel, sub, prijs, groep, soort, prijzen, vanaf=False, prijstekst
             f'<span class="cs-blok-in"><span class="cs-titel">{titel}</span><span class="cs-sub">{sub}</span>{p}'
             f'{iso_stapel([KLEUR["wit"]], 30, 2.2, "cs-ic cs-ic-uit")}{iso_stapel([KLEUR[soort]], 30, 2.2, "cs-ic cs-ic-aan")}</span></label>')
 
-# Blokjes, schuin van boven getekend met ronde noppen (20 nov, 'route 3'). Eigen tekening, in de kleuren van de samensteller.
-# Dezelfde tekening staat in het script onderaan de pagina (functie isoStapel) voor de stapel die groeit; houd beide gelijk.
-KLEUR = {"geluid": "#D47763", "personeel": "#7AC3C9", "licht": "#E9D36B", "scherm": "#C9C8C2", "wit": "#F6F5F1"}
+# De tekening van de blokjes staat in scripts/blokjes.py (gedeeld met de proef voor het aanvraagformulier).
 HOOFDBEELD = ("img/case-prive-breed.jpg", "50% 88%", "Gasten op de dansvloer in een zaal met gekleurd licht en ballonnen")
-
-def _tint(kleur, f):
-    n = int(kleur[1:], 16)
-    return "rgb(%d,%d,%d)" % tuple(round(v * f) for v in (n >> 16, (n >> 8) & 255, n & 255))
-
-def iso_stapel(kleuren, u=40, dik=2, klasse=""):
-    """SVG van op elkaar gestapelde blokjes (2 x 2 noppen), onderste eerst."""
-    c, s_, h = 0.866, 0.5, u * 0.9
-    W = D = 2 * u
-    rr = u * 0.29
-    rx, ry, sh = rr * 1.2247, rr * 0.7071, u * 0.2
-    st = f'stroke="#191A19" stroke-width="{dik}" stroke-linejoin="round"'
-    g = ""
-    for i, k in enumerate(kleuren):
-        z = i * h
-        P = lambda x, y, zz: ((x - y) * c, (x + y) * s_ - zz - z)
-        pts = lambda a: " ".join(f"{px:.1f},{py:.1f}" for px, py in a)
-        g += (f'<polygon points="{pts([P(0, D, h), P(W, D, h), P(W, D, 0), P(0, D, 0)])}" fill="{_tint(k, .86)}" {st}/>'
-              f'<polygon points="{pts([P(W, D, h), P(W, 0, h), P(W, 0, 0), P(W, D, 0)])}" fill="{_tint(k, .72)}" {st}/>'
-              f'<polygon points="{pts([P(0, 0, h), P(W, 0, h), P(W, D, h), P(0, D, h)])}" fill="{k}" {st}/>')
-        for a, b in sorted(((a, b) for a in (0, 1) for b in (0, 1)), key=lambda q: q[0] + q[1]):
-            px, py = P((a + .5) * u, (b + .5) * u, h)
-            g += (f'<path d="M{px - rx:.1f},{py - sh:.1f}V{py:.1f}A{rx:.1f},{ry:.1f} 0 0 0 {px + rx:.1f},{py:.1f}V{py - sh:.1f}Z" fill="{_tint(k, .8)}" {st}/>'
-                  f'<ellipse cx="{px:.1f}" cy="{py - sh:.1f}" rx="{rx:.1f}" ry="{ry:.1f}" fill="{k}" {st}/>')
-    x0, x1 = -D * c - 3, W * c + 3
-    y0, y1 = -h - (len(kleuren) - 1) * h - sh - ry - 3, (W + D) * s_ + 3
-    return f'<svg class="{klasse}" viewBox="{x0:.1f} {y0:.1f} {x1 - x0:.1f} {y1 - y0:.1f}" aria-hidden="true" focusable="false">{g}</svg>'
 
 def pagina(prijzen):
     variant = "met prijzen" if prijzen else "zonder prijzen"
@@ -138,12 +111,7 @@ def pagina(prijzen):
     js = """<script>(function(){
 var f=document.querySelector('.cs-form'),P=document.querySelector('.cs').dataset.prijzen==='1',stenen=document.getElementById('cs-stenen'),leeg=document.getElementById('cs-leeg'),som=document.getElementById('cs-som'),vd=document.getElementById('cs-voordeel'),ind=f.querySelector('[name=indicatie]');
 var LICHT=[0,350,600,800];
-function tint(k,f){var n=parseInt(k.slice(1),16);return 'rgb('+[n>>16,(n>>8)&255,n&255].map(function(v){return Math.round(v*f)}).join(',')+')'}
-function isoStapel(kl){var u=40,c=0.866,s=0.5,h=u*0.9,W=2*u,D=2*u,rr=u*0.29,rx=rr*1.2247,ry=rr*0.7071,sh=u*0.2,st='stroke="#191A19" stroke-width="2" stroke-linejoin="round"',g='';
- kl.forEach(function(k,i){var z=i*h;function P(x,y,zz){return [(x-y)*c,(x+y)*s-zz-z]}function pts(a){return a.map(function(p){return p[0].toFixed(1)+','+p[1].toFixed(1)}).join(' ')}
-  g+='<polygon points="'+pts([P(0,D,h),P(W,D,h),P(W,D,0),P(0,D,0)])+'" fill="'+tint(k,.86)+'" '+st+'/><polygon points="'+pts([P(W,D,h),P(W,0,h),P(W,0,0),P(W,D,0)])+'" fill="'+tint(k,.72)+'" '+st+'/><polygon points="'+pts([P(0,0,h),P(W,0,h),P(W,D,h),P(0,D,h)])+'" fill="'+k+'" '+st+'/>';
-  [[0,0],[0,1],[1,0],[1,1]].forEach(function(q){var p=P((q[0]+.5)*u,(q[1]+.5)*u,h);g+='<path d="M'+(p[0]-rx)+','+(p[1]-sh)+'V'+p[1]+'A'+rx+','+ry+' 0 0 0 '+(p[0]+rx)+','+p[1]+'V'+(p[1]-sh)+'Z" fill="'+tint(k,.8)+'" '+st+'/><ellipse cx="'+p[0]+'" cy="'+(p[1]-sh)+'" rx="'+rx+'" ry="'+ry+'" fill="'+k+'" '+st+'/>'})});
- var x0=-D*c-3,x1=W*c+3,y0=-h-(kl.length-1)*h-sh-ry-3,y1=(W+D)*s+3;return '<svg viewBox="'+x0+' '+y0+' '+(x1-x0)+' '+(y1-y0)+'" aria-hidden="true" focusable="false">'+g+'</svg>'}
+__ISO_JS__
 var toren=document.getElementById('cs-toren'),torenbeeld=document.getElementById('cs-toren-beeld');
 function eur(n){return '\\u20ac\\u00a0'+String(n).replace(/\\B(?=(\\d{3})+$)/g,'.')}
 function reken(){var k=[].slice.call(f.querySelectorAll('.cs-blok input:checked')),t=0,nl=0,vanaf=false,h='';
@@ -166,7 +134,7 @@ if(r.ok){m.textContent=f.dataset.dank;[].forEach.call(f.querySelectorAll('.lp-fo
     k = k.replace('<link rel="stylesheet" href="doelgroep.css">', '<link rel="stylesheet" href="doelgroep.css"><link rel="stylesheet" href="conscious.css">', 1)
     if "conscious.css" not in k or 'content="noindex' not in k:
         sys.exit("kop van nieuwjaarsborrel.html is veranderd: stylesheet of noindex niet gevonden")
-    return k + main + js + utm_js + voet
+    return k + main + js.replace('__ISO_JS__', ISO_JS) + utm_js + voet
 
 for prijzen, naam in ((True, "conscious-met-prijzen.html"), (False, "conscious-zonder-prijzen.html")):
     (site / naam).write_text(pagina(prijzen), encoding="utf-8")
