@@ -120,3 +120,4 @@ Mijn versies van het LinkedIn-beeld pakten hem niet. Zijn eindversie (13 novembe
 - Toestemming van mensen op foto's; een groter origineel van de dansers op het tuinfeest.
 - Opruimen: `site/v2.html` en `site/voorbeeld-producten.html` (proefpagina's, niet gelinkt).
 - Search Console: de lijst met niet-geïndexeerde adressen opnieuw bekijken zodra Google de sitemap heeft verwerkt.
+- Bouwvolgorde (20 nov): altijd de volledige build draaien, nooit alleen `bouw-en.py`: die zet de Engelse pagina's en nieuws terug zonder deelgegevens. Volgorde: doelgroepen cases diensten principes relevant privacy partners prijs mixes aanvraag nieuws en 404 sitemap proef-home conscious og icoon (og en icoon als laatste, anders missen de Conscious-pagina's hun deelgegevens en icoon).
