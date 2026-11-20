@@ -56,10 +56,9 @@ PROGRAMMA = [
         ("Soundsystem voor de dansvloer", "Sound system for the dance floor"),
         ("Dj", "DJ"),
         ("Dj-booth en dj-gear", "DJ booth and DJ gear"),
-        ("Lichtshow", "Light show"),
+        ("Lichtshow (o.a. moving heads)", "Light show (including moving heads)"),
         ("90's vintage licht", "90s vintage lighting"),
         SFEER, DECO,
-        ("Partyfotograaf", "Party photographer"),
     ]),
 ]
 # 'exoten': los van het programma, altijd zichtbaar, als inspiratie
@@ -67,6 +66,7 @@ EXTRAS = [
     ("Ledschermen met VJ", "LED screens with a live VJ"),
     ("Vocalist, saxofonist of percussionist", "Vocalist, saxophonist or percussionist"),
     ("Geuren-dj", "Scent DJ"),
+    ("Partyfotograaf", "Party photographer"),
 ]
 COMMUNICATIE = [
     ("Communicatieadvies", "Communication advice"),
