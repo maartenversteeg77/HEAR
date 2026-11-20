@@ -60,6 +60,13 @@
 .cs-verder i{font-style:normal;font-size:18px;line-height:.6}
 .cs-verder:hover{background:var(--wit)}
 
+/* appje in het aanvraagscherm */
+.cs-app{margin-top:32px;padding:22px 22px 24px;background:var(--zwart);color:var(--wit);max-width:440px}
+.cs-app p{margin:0 0 16px;font:300 clamp(22px,2vw,28px)/1.2 var(--kop);text-wrap:balance}
+.cs-appknop{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:15px 18px 14px;background:var(--wit);color:var(--zwart);text-decoration:none;font:500 13px/1 var(--tekst);letter-spacing:.14em;text-transform:uppercase}
+.cs-appknop i{font-style:normal;font-size:20px;line-height:.6}
+.cs-appknop:hover{background:var(--turquoise)}
+
 @media (max-width:900px){
   .cs-kolommen{grid-template-columns:minmax(0,1fr)}
   .cs-keuzes{min-width:0}
@@ -79,5 +86,6 @@
   .cs-blok-in{min-height:108px;padding:14px 12px 12px}
   .cs-titel{font-size:19px}
   .cs-kies{flex:1 1 100%}
+  .cs-app{max-width:none;margin-bottom:8px}
 }
 @media (max-width:380px){.cs-blokken{grid-template-columns:1fr}.cs-blok-in{min-height:0}}
