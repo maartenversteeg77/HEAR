@@ -5,17 +5,15 @@
 .cs-hulp .wa{max-width:100%}
 .cs-bouw{background:var(--wit)}
 
-/* hoofdbeeld: één foto, opgebouwd uit vier blokjes met noppen */
-.cs-held{background:var(--zwart);padding-bottom:clamp(28px,3.4vw,52px)}
-.cs-beeldknop{display:block}
-.cs-blokkenbeeld{display:block;width:100%;height:auto;overflow:visible}
-.cs-blokkenbeeld.cs-smal{display:none}
-.cs-bouwsteen{transform-box:fill-box;animation:cs-val .55s cubic-bezier(.2,.8,.3,1) both;animation-delay:calc(var(--i) * .13s + .15s);transition:transform .25s}
-.cs-bouwsteen text{font:300 104px/1 var(--kop);fill:var(--wit);pointer-events:none}
-.cs-beeldknop:hover .cs-bouwsteen,.cs-beeldknop:focus-visible .cs-bouwsteen{transform:translateY(-6px);transition-delay:calc(var(--i) * .05s)}
-@keyframes cs-val{from{opacity:0;transform:translateY(-34px)}to{opacity:1;transform:none}}
-@media (prefers-reduced-motion:reduce){.cs-bouwsteen{animation:none}}
-@media (max-width:700px){.cs-blokkenbeeld.cs-breed{display:none}.cs-blokkenbeeld.cs-smal{display:block}.cs-bouwsteen text{font-size:96px}}
+/* hoofdbeeld: één foto, met de blokjes bij de knop */
+.cs-foto{position:relative}
+.cs-samen{position:absolute;left:0;bottom:0;display:flex;align-items:center;gap:24px;background:var(--zwart);color:var(--wit);text-decoration:none;padding:22px 30px 22px 26px}
+.cs-samen svg{width:84px;height:auto;flex:none;transition:transform .25s}
+.cs-samen b{font:300 clamp(34px,3.2vw,46px)/1.05 var(--kop);display:block}
+.cs-samen i{font-style:normal;font-size:30px;line-height:1;color:var(--koraal);margin-left:10px;transition:transform .25s}
+.cs-samen:hover svg,.cs-samen:focus-visible svg{transform:translateY(-4px)}
+.cs-samen:hover i,.cs-samen:focus-visible i{transform:translateX(6px)}
+@media (max-width:860px){.cs-samen{position:static;padding:16px 18px;gap:18px}.cs-samen svg{width:60px}.cs-samen i{margin-left:auto}}
 .cs-kolommen{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,360px);gap:clamp(24px,4vw,64px);align-items:start}
 .cs-stap{border:0;margin:0 0 clamp(28px,3vw,44px);padding:0;min-width:0}
 .cs-stap legend{padding:0;margin-bottom:20px}
@@ -34,33 +32,30 @@
 .cs-blokken{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
 .cs-noot{margin:12px 0 0;font-size:14px;line-height:1.45;color:var(--grijsd);max-width:62ch}
 
-/* bouwsteen: een blokje met noppen */
-.cs-blok{position:relative;display:grid;cursor:pointer;padding-top:8px;min-width:0}
+/* bouwsteen: een tegel met rechtsboven een blokje dat kleurt als je hem kiest */
+.cs-blok{position:relative;display:grid;cursor:pointer;min-width:0}
 .cs-blok input{position:absolute;opacity:0;width:1px;height:1px}
-.cs-blok::before,.cs-blok::after{content:"";position:absolute;top:0;left:16px;width:24px;height:9px;border:1px solid var(--zwart);border-bottom:0;background:var(--steen,#fff);transition:background-color .15s}
-.cs-blok::after{left:50px}
-.cs-blok-in{display:grid;gap:4px;grid-template-rows:auto auto 1fr;min-height:118px;padding:16px 16px 14px;border:1px solid var(--zwart);background:var(--steen,#fff);transition:background-color .15s,transform .15s}
-.cs-titel{font:400 21px/1.15 var(--kop)}
+.cs-blok-in{position:relative;display:grid;gap:4px;grid-template-rows:auto auto 1fr;min-height:124px;padding:16px 64px 14px 16px;border:1px solid var(--zwart);background:#fff;transition:transform .15s,box-shadow .15s}
+.cs-titel{font:400 21px/1.15 var(--kop);hyphens:auto;overflow-wrap:anywhere}
 .cs-sub{font-size:14px;line-height:1.35;color:var(--grijsd)}
 .cs-prijs{align-self:end;padding-top:10px;font:500 14px/1 var(--tekst)}
+.cs-ic{position:absolute;right:10px;top:10px;width:46px;height:auto}
+.cs-ic-aan{display:none}
+.cs-blok.is-aan .cs-ic-aan{display:block}.cs-blok.is-aan .cs-ic-uit{display:none}
 .cs-blok:hover .cs-blok-in{transform:translateY(-2px)}
 .cs-blok input:focus-visible+.cs-blok-in{outline:2px solid var(--zwart);outline-offset:3px}
-.cs-blok.is-aan{--steen:var(--koraal)}
-.cs-blok.cs-personeel.is-aan{--steen:var(--turquoise)}
-.cs-blok.cs-licht.is-aan{--steen:#E9D36B}
-.cs-blok.cs-scherm.is-aan{--steen:#C9C8C2}
+.cs-blok.is-aan .cs-blok-in{box-shadow:inset 0 0 0 1px var(--zwart)}
 .cs-blok.is-aan .cs-sub{color:var(--zwart)}
-.cs-blok.is-aan .cs-titel::after{content:"✓";float:right;font:500 16px/1.4 var(--tekst)}
 
 /* de stapel rechts */
 .cs-stapel{position:sticky;top:24px;background:var(--zwart);color:var(--wit);padding:24px 22px 22px}
 .cs-stapel-kop{font:300 28px/1.1 var(--kop);margin:0 0 18px}
-.cs-stenen{list-style:none;margin:0;padding:0;display:grid;gap:9px}
-.cs-stenen li{position:relative;padding:11px 12px 10px;font:500 13px/1.25 var(--tekst);color:var(--zwart);background:var(--koraal)}
-.cs-stenen li::before{content:"";position:absolute;left:12px;top:-6px;width:22px;height:6px;background:inherit;box-shadow:32px 0 0 0 var(--koraal)}
-.cs-stenen li.cs-personeel{background:var(--turquoise)} .cs-stenen li.cs-personeel::before{box-shadow:32px 0 0 0 var(--turquoise)}
-.cs-stenen li.cs-licht{background:#E9D36B} .cs-stenen li.cs-licht::before{box-shadow:32px 0 0 0 #E9D36B}
-.cs-stenen li.cs-scherm{background:#C9C8C2} .cs-stenen li.cs-scherm::before{box-shadow:32px 0 0 0 #C9C8C2}
+.cs-toren{display:grid;grid-template-columns:104px minmax(0,1fr);gap:18px;align-items:end}
+.cs-toren[hidden]{display:none}
+.cs-toren svg{display:block;width:104px;height:auto}
+.cs-stenen{list-style:none;margin:0;padding:0 0 8px;display:grid;gap:9px;font:500 13px/1.25 var(--tekst)}
+.cs-stenen li{display:flex;gap:10px;align-items:baseline}
+.cs-stenen li::before{content:"";flex:none;width:10px;height:10px;background:var(--k);transform:translateY(1px)}
 .cs-leeg{margin:0;font-size:15px;color:rgba(246,245,241,.7)}
 .cs-leeg[hidden]{display:none}
 .cs-totaal{display:grid;grid-template-columns:auto 1fr;align-items:baseline;gap:0 12px;margin:22px 0 0;padding-top:16px;border-top:1px solid rgba(246,245,241,.3)}
@@ -86,19 +81,17 @@
   .cs-kolommen{grid-template-columns:minmax(0,1fr)}
   .cs-keuzes{min-width:0}
   .cs-kies select{width:100%;min-width:0;text-overflow:ellipsis}
-  .cs-stapel{position:sticky;top:auto;bottom:0;z-index:20;margin:0 calc(-1 * var(--rand));padding:12px var(--rand) 14px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:6px 14px}
-  .cs-stapel-kop,.cs-leeg,.cs-voordeel,.cs-totaal small{display:none}
-  .cs-stenen{grid-column:1/-1;display:flex;flex-wrap:nowrap;gap:6px;padding-top:6px;overflow-x:auto;scrollbar-width:none}
-  .cs-stenen li{flex:none;white-space:nowrap}
-  .cs-stenen:empty{display:none}
-  .cs-stenen li{padding:6px 8px 5px;font-size:11px}
-  .cs-stenen li::before{left:6px;top:-4px;width:12px;height:4px;box-shadow:none}
+  .cs-stapel{position:sticky;top:auto;bottom:0;z-index:20;margin:0 calc(-1 * var(--rand));padding:12px var(--rand) 14px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:6px 14px}
+  .cs-stapel-kop,.cs-leeg,.cs-voordeel,.cs-totaal small,.cs-stenen{display:none}
+  .cs-toren{display:block;align-self:end}.cs-toren svg{width:46px}
+  .cs-stapel:has(.cs-toren[hidden]){grid-template-columns:1fr auto}
   .cs-totaal{margin:0;padding:0;border:0;display:flex;gap:10px}
   .cs-totaal b{font-size:30px}
   .cs-totaal.cs-zonder span{font-size:16px}
   .cs-verder{margin:0;padding:12px 14px 11px;gap:10px}
   .cs-blokken{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-  .cs-blok-in{min-height:108px;padding:14px 12px 12px}
+  .cs-blok-in{min-height:112px;padding:14px 52px 12px 12px}
+  .cs-ic{width:38px;right:8px;top:8px}
   .cs-titel{font-size:19px}
   .cs-kies{flex:1 1 100%}
   .cs-kies.cs-gasten{flex-wrap:nowrap}
