@@ -769,3 +769,11 @@ button.knop:disabled{opacity:.6;cursor:wait}
 .poort-los{background:#fff;border:1px solid var(--lijn);border-radius:8px;font-weight:400}
 .poort-los:has(input:checked){border-color:var(--koraal);box-shadow:0 0 0 1px var(--koraal)}
 .samenvatting .sv-eerste{margin-top:0;padding-top:0;border-top:0}
+/* Aanvraagformulier (21 nov): inspiratie als openklapbaar blok, zelfde vorm als de programmadelen */
+details.extras{margin-top:12px!important;padding:0!important;border:1px solid var(--lijn)!important;border-radius:8px;background:#fff}
+details.extras[open]{border-color:var(--koraal)!important;box-shadow:0 0 0 1px var(--koraal)}
+details.extras summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 18px;font:500 17px/1.45 var(--tekst);color:var(--zwart)}
+details.extras summary::-webkit-details-marker{display:none}
+details.extras summary::after{content:"+";font:300 26px/1 var(--tekst);color:var(--koraal);flex:none}
+details.extras[open] summary::after{content:"–"}
+details.extras .extras-opties{padding:2px 18px 18px;margin-top:0}

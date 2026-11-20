@@ -112,8 +112,8 @@ def programma():
     comm = ("".join(vink("communicatie", nl, en) for nl, en in COMMUNICATIE)
             + f'<label class="veld veld-breed"><span>{T("Anders, namelijk", "Other, namely")}</span><input type="text" name="communicatie_anders"></label>')
     blokken += poort("communicatie", "Hulp bij de communicatie rondom je event", "Help with the communication around your event", comm)
-    extras = (f'<fieldset class="extras"><legend>{T("Heb je hier al eens aan gedacht?", "Have you thought about this?")}</legend><div class="extras-opties">'
-              + "".join(vink("communicatie" if nl in comm_namen else "diensten", nl, en) for nl, en in EXTRAS) + '</div></fieldset>')
+    extras = (f'<details class="extras"><summary><span>{T("Inspiratie: heb je hier al eens aan gedacht?", "Inspiration: have you thought about this?")}</span></summary><div class="extras-opties">'
+              + "".join(vink("communicatie" if nl in comm_namen else "diensten", nl, en) for nl, en in EXTRAS) + '</div></details>')
     weetniet = (f'<label class="vink poortvraag poort-los"><input type="checkbox" name="programma" id="weetniet" value="Weet nog niet wat nodig is, bespreekt dit graag in een call">'
                 f'<span>{T("Ik weet nog niet wat ik nodig heb en bespreek dit graag in een call", "I don\'t know what I need yet and would like to discuss it in a call")}</span></label>')
     return (f'<div class="programma">{weetniet}{blokken}</div>{extras}'
@@ -225,7 +225,7 @@ main = f"""<main class="wrap">
       var an=p.querySelector('.poort-opties input[type=text]');if(an&&an.value.trim())it.push(an.value.trim());
       h+='<h3>'+esc(q.closest('label').querySelector('span').textContent)+'</h3>'+(it.length?'<ul>'+it.map(function(x){{return '<li>'+esc(x)+'</li>'}}).join('')+'</ul>':'')}});
     var ex=[];[].forEach.call(f.querySelectorAll('.extras input:checked'),function(i){{if(!i.closest('label').classList.contains('reeds'))ex.push(i.closest('label').querySelector('span').firstChild.textContent)}});var da=f.querySelector('[name=diensten_anders]').value.trim();if(da)ex.push(da);
-    if(ex.length)h+='<h3>'+esc(f.querySelector('.extras legend').textContent)+'</h3><ul>'+ex.map(function(x){{return '<li>'+esc(x)+'</li>'}}).join('')+'</ul>';
+    if(ex.length)h+='<h3>'+esc(f.querySelector('.extras summary').textContent)+'</h3><ul>'+ex.map(function(x){{return '<li>'+esc(x)+'</li>'}}).join('')+'</ul>';
     if(f.querySelector('[name=budget_onbekend]').checked)h+='<p class="sv-regel">'+esc(L.onbekend)+'</p>';else if(budgetAan)h+='<p class="sv-regel">'+esc(L.budget)+': '+esc(document.getElementById('budget_uit').textContent)+'</p>';
     var rk=f.querySelector('[name=route]:checked');if(rk)h+='<p class="sv-regel sv-route">'+esc(rk.closest('label').querySelector('strong').textContent)+'</p>';
     sv.classList.toggle('leeg',!h);svi.innerHTML=h||'<p class="sv-leeg">'+esc(L.leeg)+'</p>'}}
