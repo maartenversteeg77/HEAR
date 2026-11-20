@@ -37,6 +37,8 @@ def tekstvak(naam, nl, en, rijen=4, verplicht=False, breed=True):
 # Programma: per onderdeel een poortvraag; de keuzes eronder verschijnen pas als het onderdeel is aangevinkt.
 # Samen dekken ze alles uit de catalogus (content/diensten.json) en de productkiezer op de homepage; aankoopadvies hoort hier niet (geen eventdienst).
 DENKMEE = ("Weet ik nog niet, denk met me mee", "Not sure yet, help me decide")
+SFEER = ("Sfeerverlichting", "Atmospheric lighting")
+DECO = ("Decoratie: led-tubes, spiegelbollen en props", "Decoration: LED tubes, mirror balls and props")
 PROGRAMMA = [
     ("sprekers", "Sprekers of presentaties", "Speakers or presentations", [
         ("Sprekersversterking en microfoons", "Speech amplification and microphones"),
@@ -48,21 +50,23 @@ PROGRAMMA = [
     ("borrel", "Borrel of diner met muziek", "Drinks or dinner with music", [
         ("Geluid voor borrel of feest", "Sound for a reception or party"),
         ("Playlist op maat", "Custom playlist"),
-        ("Coffee cuts of custom dj-mix", "Coffee cuts or a custom DJ mix"),
-        ("Sfeerverlichting", "Atmospheric lighting"),
-        ("Decoratie: led-tubes, spiegelbollen en props", "Decoration: LED tubes, mirror balls and props"),
+        SFEER, DECO,
     ]),
     ("feest", "Feest met dansvloer", "Party with a dance floor", [
+        ("Soundsystem voor de dansvloer", "Sound system for the dance floor"),
         ("Dj", "DJ"),
-        ("Dj-booth en gear voor je eigen dj", "DJ booth and gear for your own DJ"),
-        ("Dansvloer geluidsysteem", "Dance floor sound system"),
+        ("Dj-booth en dj-gear", "DJ booth and DJ gear"),
         ("Lichtshow", "Light show"),
         ("90's vintage licht", "90s vintage lighting"),
-        ("Ledschermen met VJ", "LED screens with a live VJ"),
-        ("Vocalist, saxofonist of percussionist", "Vocalist, saxophonist or percussionist"),
-        ("Geuren-dj", "Scent DJ"),
+        SFEER, DECO,
         ("Partyfotograaf", "Party photographer"),
     ]),
+]
+# 'exoten': los van het programma, altijd zichtbaar, als inspiratie
+EXTRAS = [
+    ("Ledschermen met VJ", "LED screens with a live VJ"),
+    ("Vocalist, saxofonist of percussionist", "Vocalist, saxophonist or percussionist"),
+    ("Geuren-dj", "Scent DJ"),
 ]
 COMMUNICATIE = [
     ("Communicatieadvies", "Communication advice"),
@@ -76,14 +80,22 @@ def poort(sleutel, nl, en, opties):
             f'<label class="vink poortvraag"><input type="checkbox" name="programma" value="{e(nl)}" data-poort="{sleutel}"><span>{T(nl, en)}</span></label>'
             f'<div class="poort-opties" id="poort-{sleutel}">{opties}</div></fieldset>')
 def programma():
+    # keuzes die bij meer dan één onderdeel horen (sfeerlicht, decoratie) lopen gelijk en tonen bij het tweede onderdeel 'reeds gekozen'
+    telling = {}
+    for _, _, _, items in PROGRAMMA:
+        for inl, _ in items: telling[inl] = telling.get(inl, 0) + 1
+    reeds = f'<em class="reeds-tag">{T("reeds gekozen", "already chosen")}</em>'
     blokken = ""
     for sleutel, nl, en, items in PROGRAMMA:
-        opties = "".join(f'<label class="vink"><input type="checkbox" name="diensten" value="{e(inl)}"><span>{T(inl, ien)}</span></label>' for inl, ien in items + [DENKMEE])
+        opties = "".join(f'<label class="vink"><input type="checkbox" name="diensten" value="{e(inl)}"{" data-gedeeld" if telling[inl] > 1 else ""}><span>{T(inl, ien)}{reeds if telling[inl] > 1 else ""}</span></label>' for inl, ien in items)
+        opties += f'<label class="vink"><input type="checkbox" name="diensten" value="{e(nl)}: weet ik nog niet, denk met me mee"><span>{T(*DENKMEE)}</span></label>'
         blokken += poort(sleutel, nl, en, opties)
     comm = ("".join(f'<label class="vink"><input type="checkbox" name="communicatie" value="{e(nl)}"><span>{T(nl, en)}</span></label>' for nl, en in COMMUNICATIE)
             + f'<label class="veld veld-breed"><span>{T("Anders, namelijk", "Other, namely")}</span><input type="text" name="communicatie_anders"></label>')
     blokken += poort("communicatie", "Hulp bij de communicatie rondom je event", "Help with the communication around your event", comm)
-    return (f'<div class="programma">{blokken}</div>'
+    extras = (f'<fieldset class="extras"><legend>{T("Heb je hier al eens aan gedacht?", "Have you thought about this?")}</legend><div class="extras-opties">'
+              + "".join(f'<label class="vink"><input type="checkbox" name="diensten" value="{e(nl)}"><span>{T(nl, en)}</span></label>' for nl, en in EXTRAS) + '</div></fieldset>')
+    return (f'<div class="programma">{blokken}</div>{extras}'
             f'<label class="veld veld-breed"><span>{T("Iets anders nodig? Namelijk", "Need something else? Namely")}</span><input type="text" name="diensten_anders"></label>')
 
 SOORTEN = [("zakelijk", "Zakelijk (netwerk)event", "Corporate (networking) event"), ("lezing", "Lezing of seminar", "Lecture or seminar"),
@@ -127,10 +139,10 @@ stap1 = stap(1, "Je event", "Your event", inhoud=f"""<p class="stapuitleg">{T("V
 {veld("locatie", "Locatie", "Venue", extra=' id="v-locatie"')}
 {veld("gasten", "Aantal gasten", "Number of guests", "number", extra=' min="1" inputmode="numeric" id="v-gasten"')}
 </div>""")
-stap2 = stap(2, "Je programma", "Your programme", f"""<p class="stapuitleg">{T("Vink aan wat er op het programma staat. Dan zie je wat wij daarbij kunnen doen.", "Tick what is on the programme. You will then see what we can do for each part.")}</p>
+stap2 = stap(2, "Je programma", "Your programme", f"""<p class="stapuitleg">{T("Vink aan wat er op het programma staat. Dan zie je wat we kunnen verzorgen.", "Tick what is on the programme. You will then see what we can take care of.")}</p>
 {programma()}""")
 stap3 = stap(3, "Budget en je verhaal", "Budget and your story", f"""{budget}
-<label class="veld veld-breed"><span>{T("Vertel iets over je event", "Tell us about your event")}</span><small class="veldhulp">{T("Bijvoorbeeld de doelgroep, het concept, de gewenste beleving of de ruimte. Mag, hoeft niet.", "For example the audience, the concept, the experience you are after or the room. Optional.")}</small><textarea name="bericht" rows="5"></textarea></label>""")
+<label class="veld veld-breed"><span>{T("Vertel iets over je event", "Tell us about your event")}</span><small class="veldhulp">{T("Bijvoorbeeld de doelgroep, het concept, de gewenste beleving of de ruimte. Dit veld is niet verplicht.", "For example the audience, the concept, the experience you are after or the room. This field is optional.")}</small><textarea name="bericht" rows="5"></textarea></label>""")
 stap4 = stap(4, "Hoe verder?", "What next?", f"""{route}
 {gesprek}
 <p class="stapuitleg tussenkop">{T("Velden met * zijn nodig om contact op te nemen.", "Fields marked * are needed to get in touch.")}</p><div class="velden">
@@ -158,7 +170,10 @@ form = f"""<form class="aanvraag" method="post" action="/api/aanvraag" id="aanvr
 main = f"""<main class="wrap">
 <section class="casehead"><a class="crumb" href="index.html"><span class="sectie">HEAR</span></a><h1 class="kernzin">{e(KOP)}</h1></section>
 <section class="quick quick-breed"><p>{INTRO_HTML}</p></section>
+<div class="aanvraag-kolommen">
 {form}
+<aside class="samenvatting" id="samenvatting" aria-live="polite" data-leeg="{A("Nog niets gekozen.", "Nothing chosen yet.")}" data-gasten="{A("gasten", "guests")}" data-budget="{A("Richtbudget", "Indicative budget")}" data-onbekend="{A("budget nog niet bekend", "budget not known yet")}"><h2>{T("Je aanvraag", "Your request")}</h2><div id="sv-inhoud"></div></aside>
+</div>
 </main>
 <script>
 (function(){{
@@ -170,7 +185,29 @@ main = f"""<main class="wrap">
   var so=document.getElementById('soort'),sa=document.getElementById('soort_anders_veld');if(so&&sa){{so.addEventListener('change',function(){{sa.hidden=so.value!=='anders'}})}}
   /* poortvragen: keuzes tonen als het onderdeel is aangevinkt; verborgen keuzes gaan niet mee */
   function poorten(){{[].forEach.call(f.querySelectorAll('[data-poort]'),function(p){{var b=document.getElementById('poort-'+p.dataset.poort);b.hidden=!p.checked;[].forEach.call(b.querySelectorAll('input'),function(i){{i.disabled=!p.checked}})}})}}
-  [].forEach.call(f.querySelectorAll('[data-poort]'),function(p){{p.addEventListener('change',poorten)}});poorten();
+  [].forEach.call(f.querySelectorAll('[data-poort]'),function(p){{p.addEventListener('change',function(){{poorten();gedeeld();samenvat()}})}});poorten();
+  /* gedeelde keuzes (bij meer dan één onderdeel) lopen gelijk; bij het andere onderdeel staat 'reeds gekozen' */
+  var eigenaar={{}};
+  function gedeeld(){{[].forEach.call(f.querySelectorAll('[data-gedeeld]'),function(i){{var e=eigenaar[i.value];i.closest('label').classList.toggle('reeds',i.checked&&!!e&&e!==i&&!e.disabled&&e.checked)}})}}
+  [].forEach.call(f.querySelectorAll('[data-gedeeld]'),function(i){{i.addEventListener('change',function(){{if(i.checked)eigenaar[i.value]=i;else delete eigenaar[i.value];
+    [].forEach.call(f.querySelectorAll('[data-gedeeld]'),function(x){{if(x!==i&&x.value===i.value)x.checked=i.checked}});gedeeld()}})}});
+  /* samenvatting rechts: wat er tot nu toe is ingevuld */
+  var sv=document.getElementById('samenvatting'),svi=document.getElementById('sv-inhoud'),budgetAan=false;
+  function esc(t){{var d=document.createElement('div');d.textContent=t;return d.innerHTML}}
+  function samenvat(){{var h='',ev=[],L=sv.dataset,so=document.getElementById('soort');
+    if(so.value)ev.push(so.value==='anders'?(f.querySelector('[name=soort_anders]').value||so.options[so.selectedIndex].text):so.options[so.selectedIndex].text);
+    var dv=document.getElementById('v-datum').value;if(dv){{var dd=new Date(dv+'T12:00:00');ev.push(dd.toLocaleDateString(/^\/en\//.test(location.pathname)?'en-GB':'nl-NL',{{day:'numeric',month:'long',year:'numeric'}}))}}
+    var tv=f.querySelector('[name=tijd]').value.trim();if(tv)ev.push(tv);var lv=document.getElementById('v-locatie').value.trim();if(lv)ev.push(lv);var gv=document.getElementById('v-gasten').value;if(gv)ev.push(gv+' '+L.gasten);
+    if(ev.length)h+='<ul class="sv-event">'+ev.map(function(x){{return '<li>'+esc(x)+'</li>'}}).join('')+'</ul>';
+    [].forEach.call(f.querySelectorAll('.poort'),function(p){{var q=p.querySelector('[data-poort]');if(!q.checked)return;var it=[];[].forEach.call(p.querySelectorAll('.poort-opties input[type=checkbox]:checked'),function(i){{if(!i.closest('label').classList.contains('reeds'))it.push(i.closest('label').querySelector('span').firstChild.textContent)}});
+      var an=p.querySelector('.poort-opties input[type=text]');if(an&&an.value.trim())it.push(an.value.trim());
+      h+='<h3>'+esc(q.closest('label').querySelector('span').textContent)+'</h3>'+(it.length?'<ul>'+it.map(function(x){{return '<li>'+esc(x)+'</li>'}}).join('')+'</ul>':'')}});
+    var ex=[];[].forEach.call(f.querySelectorAll('.extras input:checked'),function(i){{ex.push(i.closest('label').querySelector('span').textContent)}});var da=f.querySelector('[name=diensten_anders]').value.trim();if(da)ex.push(da);
+    if(ex.length)h+='<h3>'+esc(f.querySelector('.extras legend').textContent)+'</h3><ul>'+ex.map(function(x){{return '<li>'+esc(x)+'</li>'}}).join('')+'</ul>';
+    if(f.querySelector('[name=budget_onbekend]').checked)h+='<p class="sv-regel">'+esc(L.onbekend)+'</p>';else if(budgetAan)h+='<p class="sv-regel">'+esc(L.budget)+': '+esc(document.getElementById('budget_uit').textContent)+'</p>';
+    var rk=f.querySelector('[name=route]:checked');if(rk)h+='<p class="sv-regel sv-route">'+esc(rk.closest('label').querySelector('strong').textContent)+'</p>';
+    sv.classList.toggle('leeg',!h);svi.innerHTML=h||'<p class="sv-leeg">'+esc(L.leeg)+'</p>'}}
+  f.addEventListener('input',function(ev){{if(ev.target.name==='budget_van'||ev.target.name==='budget_tot')budgetAan=true;samenvat()}});f.addEventListener('change',samenvat);samenvat();
   /* route: bij een call de velden voor het contactmoment tonen */
   var cv=document.getElementById('callvelden'),gd=document.getElementById('gesprek-datum'),mist=document.getElementById('mist'),mt=document.getElementById('mist-tekst');
   function gekozen(){{var r=f.querySelector('[name=route]:checked');return r?r.value:''}}
@@ -185,7 +222,7 @@ main = f"""<main class="wrap">
   f.querySelectorAll('.stapknop').forEach(function(k){{k.addEventListener('click',function(){{var n=k.dataset.naar,huidig=k.closest('.stap');if(!n)return;
     if(k.classList.contains('vooruit')){{var ok=true;huidig.querySelectorAll('input,select,textarea').forEach(function(i){{if(ok&&!i.checkValidity()){{i.reportValidity();ok=false}}}});if(!ok)return}}ga(n)}})}});
   if(gd){{var nu=new Date();gd.min=nu.getFullYear()+'-'+String(nu.getMonth()+1).padStart(2,'0')+'-'+String(nu.getDate()).padStart(2,'0')}}
-  function bedankt(r){{st.forEach(function(x){{x.hidden=true}});m.hidden=true;var d=document.getElementById(r==='call'?'dank-call':'dank-voorstel');d.hidden=false;window.scrollTo({{top:f.getBoundingClientRect().top+window.scrollY-120,behavior:'smooth'}})}}
+  function bedankt(r){{st.forEach(function(x){{x.hidden=true}});m.hidden=true;sv.hidden=true;var d=document.getElementById(r==='call'?'dank-call':'dank-voorstel');d.hidden=false;window.scrollTo({{top:f.getBoundingClientRect().top+window.scrollY-120,behavior:'smooth'}})}}
   var q=location.search;
   if(/verzonden=1/.test(q)){{bedankt(/route=call/.test(q)?'call':'voorstel')}}
   else{{if(history.replaceState)history.replaceState({{stap:'1'}},'',location.pathname+location.search);ga(1,false);if(/fout=1/.test(q)){{m.hidden=false;m.textContent=f.dataset.fout;m.className='formmelding fout'}}}}

@@ -739,3 +739,27 @@ button.knop:disabled{opacity:.6;cursor:wait}
 .formmelding.dank[hidden]{display:none}
 .dank-foto{font:400 16px/1.5 var(--tekst)}
 @media (max-width:560px){.poort-opties{grid-template-columns:1fr;padding-left:18px}.routekaarten{grid-template-columns:1fr}}
+/* Aanvraagformulier: extra's, 'reeds gekozen' en de samenvatting rechts (20 nov, laat) */
+.extras{margin-top:26px!important;padding:18px 18px 16px!important;border:1px dashed var(--lijn)!important;border-radius:8px;background:transparent}
+.aanvraag .extras legend{font:300 clamp(19px,2vw,22px)/1.3 var(--kop);color:var(--zwart);padding:0 8px;margin:0 0 0 -8px}
+.extras-opties{display:grid;grid-template-columns:1fr 1fr;gap:10px 24px;margin-top:4px}
+.aanvraag .extras+.veld-breed{display:flex;margin-top:22px}
+.reeds-tag{display:none;font:500 11px/1 var(--tekst);font-style:normal;letter-spacing:.08em;text-transform:uppercase;color:var(--tekstgrijs);border:1px solid var(--lijn);border-radius:20px;padding:4px 8px 3px;margin-left:8px;white-space:nowrap;vertical-align:1px}
+.vink.reeds .reeds-tag{display:inline-block}
+.aanvraag-kolommen{display:grid;grid-template-columns:minmax(0,760px) minmax(240px,320px);gap:clamp(28px,4vw,64px);align-items:start}
+.samenvatting{position:sticky;top:96px;background:var(--zwart);color:var(--wit);padding:24px 22px 22px;font:400 15px/1.45 var(--tekst)}
+.samenvatting[hidden]{display:none}
+.samenvatting h2{font:300 28px/1.1 var(--kop);margin:0 0 16px;color:var(--wit)}
+.samenvatting h3{font:500 12px/1.3 var(--tekst);letter-spacing:.14em;text-transform:uppercase;color:var(--koraal);margin:18px 0 6px}
+.samenvatting ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.samenvatting .sv-event{padding-bottom:14px;border-bottom:1px solid rgba(246,245,241,.25)}
+.samenvatting .sv-regel{margin:16px 0 0;padding-top:14px;border-top:1px solid rgba(246,245,241,.25)}
+.samenvatting .sv-route{font-weight:500}
+.samenvatting .sv-leeg{margin:0;color:rgba(246,245,241,.7)}
+@media (max-width:1040px){
+  .aanvraag-kolommen{grid-template-columns:minmax(0,1fr)}
+  .aanvraag{padding-bottom:28px}
+  .samenvatting{position:static;margin:0 0 clamp(60px,8vw,110px);max-width:760px}
+  .samenvatting.leeg{display:none}
+}
+@media (max-width:560px){.extras-opties{grid-template-columns:1fr}}

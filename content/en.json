@@ -3384,8 +3384,12 @@
         ">Your event<"
       ],
       [
-        ">Vink aan wat er op het programma staat. Dan zie je wat wij daarbij kunnen doen.<",
-        ">Tick what is on the programme. You will then see what we can do for each part.<"
+        ">Vink aan wat er op het programma staat. Dan zie je wat we kunnen verzorgen.<",
+        ">Tick what is on the programme. You will then see what we can take care of.<"
+      ],
+      [
+        ">reeds gekozen<",
+        ">already chosen<"
       ],
       [
         ">Sprekersversterking en microfoons<",
@@ -3424,10 +3428,6 @@
         ">Custom playlist<"
       ],
       [
-        ">Coffee cuts of custom dj-mix<",
-        ">Coffee cuts or a custom DJ mix<"
-      ],
-      [
         ">Sfeerverlichting<",
         ">Atmospheric lighting<"
       ],
@@ -3440,16 +3440,16 @@
         ">Drinks or dinner with music<"
       ],
       [
+        ">Soundsystem voor de dansvloer<",
+        ">Sound system for the dance floor<"
+      ],
+      [
         ">Dj<",
         ">DJ<"
       ],
       [
-        ">Dj-booth en gear voor je eigen dj<",
-        ">DJ booth and gear for your own DJ<"
-      ],
-      [
-        ">Dansvloer geluidsysteem<",
-        ">Dance floor sound system<"
+        ">Dj-booth en dj-gear<",
+        ">DJ booth and DJ gear<"
       ],
       [
         ">Lichtshow<",
@@ -3458,18 +3458,6 @@
       [
         ">90&#x27;s vintage licht<",
         ">90s vintage lighting<"
-      ],
-      [
-        ">Ledschermen met VJ<",
-        ">LED screens with a live VJ<"
-      ],
-      [
-        ">Vocalist, saxofonist of percussionist<",
-        ">Vocalist, saxophonist or percussionist<"
-      ],
-      [
-        ">Geuren-dj<",
-        ">Scent DJ<"
       ],
       [
         ">Partyfotograaf<",
@@ -3504,6 +3492,22 @@
         ">Help with the communication around your event<"
       ],
       [
+        ">Heb je hier al eens aan gedacht?<",
+        ">Have you thought about this?<"
+      ],
+      [
+        ">Ledschermen met VJ<",
+        ">LED screens with a live VJ<"
+      ],
+      [
+        ">Vocalist, saxofonist of percussionist<",
+        ">Vocalist, saxophonist or percussionist<"
+      ],
+      [
+        ">Geuren-dj<",
+        ">Scent DJ<"
+      ],
+      [
         ">Iets anders nodig? Namelijk<",
         ">Need something else? Namely<"
       ],
@@ -3520,8 +3524,8 @@
         ">Tell us about your event<"
       ],
       [
-        ">Bijvoorbeeld de doelgroep, het concept, de gewenste beleving of de ruimte. Mag, hoeft niet.<",
-        ">For example the audience, the concept, the experience you are after or the room. Optional.<"
+        ">Bijvoorbeeld de doelgroep, het concept, de gewenste beleving of de ruimte. Dit veld is niet verplicht.<",
+        ">For example the audience, the concept, the experience you are after or the room. This field is optional.<"
       ],
       [
         ">Budget en je verhaal<",
@@ -3566,6 +3570,26 @@
       [
         ">Bedankt voor je aanvraag! We nemen contact met je op om de call in te plannen, meestal binnen 1 werkdag.<",
         ">Thank you for your request! We will get in touch to schedule the call, usually within 1 working day.<"
+      ],
+      [
+        "=\"Nog niets gekozen.\"",
+        "=\"Nothing chosen yet.\""
+      ],
+      [
+        "=\"gasten\"",
+        "=\"guests\""
+      ],
+      [
+        "=\"Richtbudget\"",
+        "=\"Indicative budget\""
+      ],
+      [
+        "=\"budget nog niet bekend\"",
+        "=\"budget not known yet\""
+      ],
+      [
+        ">Je aanvraag<",
+        ">Your request<"
       ],
       [
         "=\"Versturen lukte niet. Mail ons op maarten@hear.nl of bel +31 6 24560220.\"",
