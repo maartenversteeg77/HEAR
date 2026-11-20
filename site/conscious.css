@@ -12,6 +12,7 @@
 .cs-kies{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;font:300 clamp(22px,2.1vw,30px)/1.2 var(--kop)}
 .cs-kies select{font:400 17px/1.2 var(--tekst);padding:12px 40px 12px 14px;border:1px solid var(--zwart);border-radius:0;background:var(--vlak,#fff) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23191A19' stroke-width='1.6'/%3E%3C/svg%3E") no-repeat right 14px center;color:var(--zwart);-webkit-appearance:none;appearance:none;max-width:100%}
 
+.cs-kies input{font:400 17px/1.2 var(--tekst);padding:12px 10px 12px 14px;border:1px solid var(--zwart);border-radius:0;background:var(--vlak,#fff);color:var(--zwart);width:96px;box-sizing:border-box}
 .cs-groep{font:400 clamp(22px,2vw,28px)/1.1 var(--kop);margin:clamp(26px,3vw,40px) 0 6px}
 .cs-stap legend+.cs-groep{margin-top:0}
 .cs-intro{margin:0 0 14px;font-size:16px;color:var(--grijsd)}
@@ -86,6 +87,7 @@
   .cs-blok-in{min-height:108px;padding:14px 12px 12px}
   .cs-titel{font-size:19px}
   .cs-kies{flex:1 1 100%}
+  .cs-kies.cs-gasten{flex-wrap:nowrap}
   .cs-app{max-width:none;margin-bottom:8px}
 }
 @media (max-width:380px){.cs-blokken{grid-template-columns:1fr}.cs-blok-in{min-height:0}}

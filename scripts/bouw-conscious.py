@@ -70,6 +70,7 @@ def pagina(prijzen):
 <fieldset class="cs-stap cs-zin"><legend class="lp-strip">Je event</legend>
 <label class="cs-kies"><span>Ik organiseer een</span><select name="soort">{"".join(f"<option>{e(x)}</option>" for x in SOORTEN)}</select></label>
 <label class="cs-kies"><span>in</span><select name="locatie">{"".join(f"<option>{e(x)}</option>" for x in LOCATIES)}</select></label>
+<label class="cs-kies cs-gasten"><span>voor</span><input name="gasten" type="number" min="1" inputmode="numeric" aria-label="Aantal gasten"><span>gasten</span></label>
 </fieldset>
 <fieldset class="cs-stap"><legend class="lp-strip">Kies de bouwstenen van je event</legend>
 <h3 class="cs-groep">Geluid</h3><p class="cs-intro">Hoogwaardig geluid, afgestemd op de ruimte.</p>
@@ -88,7 +89,6 @@ def pagina(prijzen):
 <div class="cs-app"><p>Is iets niet duidelijk of heb je een vraag?</p><a class="cs-appknop" href="https://wa.me/31624560220?text=Hoi%20Maarten%2C%20ik%20heb%20een%20vraag%20over%20mijn%20event%20bij%20Conscious%20Hotels%20of%20Hotel%20V." target="_blank" rel="noopener"><span>Stuur me een appje</span><i aria-hidden="true">→</i></a></div></div>
 <div class="lp-form">
 <label>Datum van je event<input name="datum" type="date" required></label>
-<label>Aantal gasten<input name="gasten" type="number" min="1" inputmode="numeric"></label>
 <label>Naam<input name="naam" autocomplete="name" required></label>
 <label>Organisatie<input name="organisatie" autocomplete="organization"></label>
 <label>E-mail<input name="email" type="email" autocomplete="email" required></label>
