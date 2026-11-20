@@ -23,7 +23,7 @@ async function aanvraag(request, env) {
   const fd = await request.formData();
   if (schoon(fd.get("website"))) return antwoord(request, true); // honeypot: doen alsof het gelukt is
   const d = {};
-  for (const [k] of VELDEN) d[k] = (k === "diensten" || k === "programma" || k === "communicatie" || k === "cc_wens" || k === "licht" || k === "scherm") ? [...new Set(fd.getAll(k).map(schoon).filter(Boolean))].join(", ") : schoon(fd.get(k));
+  for (const [k] of VELDEN) d[k] = (k === "diensten" || k === "diensten_anders" || k === "programma" || k === "communicatie" || k === "cc_wens" || k === "licht" || k === "scherm") ? [...new Set(fd.getAll(k).map(schoon).filter(Boolean))].join(", ") : schoon(fd.get(k));
   if (fd.get("budget_onbekend")) d.budget = "weet ik nog niet";
   else if (fd.get("budget_van") || fd.get("budget_tot")) d.budget = `€ ${schoon(fd.get("budget_van"))} – € ${schoon(fd.get("budget_tot"))}`;
   const hoofdformulier = !schoon(fd.get("bron")); // aanvraagformulier: naam, e-mail en telefoon verplicht; bij een call ook het contactmoment
