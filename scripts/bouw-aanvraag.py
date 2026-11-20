@@ -39,6 +39,8 @@ def tekstvak(naam, nl, en, rijen=4, verplicht=False, breed=True):
 # Programma: per onderdeel een poortvraag; de keuzes eronder verschijnen pas als het onderdeel is aangevinkt.
 # Samen dekken ze alles uit de catalogus (content/diensten.json) en de productkiezer op de homepage; aankoopadvies hoort hier niet (geen eventdienst).
 DENKMEE = ("Weet ik nog niet, denk met me mee", "Not sure yet, help me decide")
+WEBCAST = ("Online uitzending (webcast)", "Online broadcast (webcast)")
+AFTERMOVIE = ("Aftermovie", "Aftermovie")
 SFEER = ("Sfeerverlichting", "Atmospheric lighting")
 DECO = ("Decoratie: led-tubes, spiegelbollen en props", "Decoration: LED tubes, mirror balls and props")
 PROGRAMMA = [
@@ -46,7 +48,7 @@ PROGRAMMA = [
         ("Sprekersversterking en microfoons", "Speech amplification and microphones"),
         ("Videoschermen en presentatie", "Video screens and presentation"),
         ("Theaterlicht voor product of spreker", "Theatre lighting for product or speaker"),
-        ("Online uitzending", "Online broadcast"),
+        WEBCAST,
         ("Technicus ter plekke", "Technician on site"),
     ]),
     ("merk", "Productlancering, merkactivatie of modeshow", "Product launch, brand activation or fashion show", [
@@ -77,34 +79,39 @@ EXTRAS = [
     ("Vocalist, saxofonist of percussionist", "Vocalist, saxophonist or percussionist"),
     ("Geuren-dj", "Scent DJ"),
     ("Partyfotograaf", "Party photographer"),
+    AFTERMOVIE, WEBCAST,
 ]
 COMMUNICATIE = [
     ("Communicatieadvies", "Communication advice"),
     ("Uitnodigingen en andere middelen", "Invitations and other materials"),
     ("Speeches en presentaties", "Speeches and presentations"),
     ("Bedrijfsvideo", "Corporate video"),
-    ("Aftermovie", "Aftermovie"),
+    AFTERMOVIE,
 ]
 def poort(sleutel, nl, en, opties):
     return (f'<fieldset class="poort"><legend class="sr">{T(nl, en)}</legend>'
             f'<label class="vink poortvraag"><input type="checkbox" name="programma" value="{e(nl)}" data-poort="{sleutel}"><span>{T(nl, en)}</span></label>'
             f'<div class="poort-opties" id="poort-{sleutel}">{opties}</div></fieldset>')
 def programma():
-    # keuzes die bij meer dan één onderdeel horen (sfeerlicht, decoratie) lopen gelijk en tonen bij het tweede onderdeel 'reeds gekozen'
+    # keuzes die op meer dan één plek staan (sfeerlicht, decoratie, aftermovie, webcast) lopen gelijk en tonen op de andere plek 'reeds gekozen'
     telling = {}
-    for _, _, _, items in PROGRAMMA:
-        for inl, _ in items: telling[inl] = telling.get(inl, 0) + 1
+    for groep in [items for _, _, _, items in PROGRAMMA] + [COMMUNICATIE, EXTRAS]:
+        for inl, _ in groep: telling[inl] = telling.get(inl, 0) + 1
     reeds = f'<em class="reeds-tag">{T("reeds gekozen", "already chosen")}</em>'
+    def vink(naam, inl, ien):
+        g = telling.get(inl, 0) > 1
+        return f'<label class="vink"><input type="checkbox" name="{naam}" value="{e(inl)}"{" data-gedeeld" if g else ""}><span>{T(inl, ien)}{reeds if g else ""}</span></label>'
+    comm_namen = {nl for nl, _ in COMMUNICATIE}
     blokken = ""
     for sleutel, nl, en, items in PROGRAMMA:
-        opties = "".join(f'<label class="vink"><input type="checkbox" name="diensten" value="{e(inl)}"{" data-gedeeld" if telling[inl] > 1 else ""}><span>{T(inl, ien)}{reeds if telling[inl] > 1 else ""}</span></label>' for inl, ien in items)
+        opties = "".join(vink("diensten", inl, ien) for inl, ien in items)
         opties += f'<label class="vink"><input type="checkbox" name="diensten" value="{e(nl)}: weet ik nog niet, denk met me mee"><span>{T(*DENKMEE)}</span></label>'
         blokken += poort(sleutel, nl, en, opties)
-    comm = ("".join(f'<label class="vink"><input type="checkbox" name="communicatie" value="{e(nl)}"><span>{T(nl, en)}</span></label>' for nl, en in COMMUNICATIE)
+    comm = ("".join(vink("communicatie", nl, en) for nl, en in COMMUNICATIE)
             + f'<label class="veld veld-breed"><span>{T("Anders, namelijk", "Other, namely")}</span><input type="text" name="communicatie_anders"></label>')
     blokken += poort("communicatie", "Hulp bij de communicatie rondom je event", "Help with the communication around your event", comm)
     extras = (f'<fieldset class="extras"><legend>{T("Heb je hier al eens aan gedacht?", "Have you thought about this?")}</legend><div class="extras-opties">'
-              + "".join(f'<label class="vink"><input type="checkbox" name="diensten" value="{e(nl)}"><span>{T(nl, en)}</span></label>' for nl, en in EXTRAS) + '</div></fieldset>')
+              + "".join(vink("communicatie" if nl in comm_namen else "diensten", nl, en) for nl, en in EXTRAS) + '</div></fieldset>')
     return (f'<div class="programma">{blokken}</div>{extras}'
             f'<label class="veld veld-breed"><span>{T("Iets anders nodig? Namelijk", "Need something else? Namely")}</span><input type="text" name="diensten_anders"></label>')
 
@@ -212,7 +219,7 @@ main = f"""<main class="wrap">
     [].forEach.call(f.querySelectorAll('.poort'),function(p){{var q=p.querySelector('[data-poort]');if(!q.checked)return;var it=[];[].forEach.call(p.querySelectorAll('.poort-opties input[type=checkbox]:checked'),function(i){{if(!i.closest('label').classList.contains('reeds'))it.push(i.closest('label').querySelector('span').firstChild.textContent)}});
       var an=p.querySelector('.poort-opties input[type=text]');if(an&&an.value.trim())it.push(an.value.trim());
       h+='<h3>'+esc(q.closest('label').querySelector('span').textContent)+'</h3>'+(it.length?'<ul>'+it.map(function(x){{return '<li>'+esc(x)+'</li>'}}).join('')+'</ul>':'')}});
-    var ex=[];[].forEach.call(f.querySelectorAll('.extras input:checked'),function(i){{ex.push(i.closest('label').querySelector('span').textContent)}});var da=f.querySelector('[name=diensten_anders]').value.trim();if(da)ex.push(da);
+    var ex=[];[].forEach.call(f.querySelectorAll('.extras input:checked'),function(i){{if(!i.closest('label').classList.contains('reeds'))ex.push(i.closest('label').querySelector('span').firstChild.textContent)}});var da=f.querySelector('[name=diensten_anders]').value.trim();if(da)ex.push(da);
     if(ex.length)h+='<h3>'+esc(f.querySelector('.extras legend').textContent)+'</h3><ul>'+ex.map(function(x){{return '<li>'+esc(x)+'</li>'}}).join('')+'</ul>';
     if(f.querySelector('[name=budget_onbekend]').checked)h+='<p class="sv-regel">'+esc(L.onbekend)+'</p>';else if(budgetAan)h+='<p class="sv-regel">'+esc(L.budget)+': '+esc(document.getElementById('budget_uit').textContent)+'</p>';
     var rk=f.querySelector('[name=route]:checked');if(rk)h+='<p class="sv-regel sv-route">'+esc(rk.closest('label').querySelector('strong').textContent)+'</p>';
