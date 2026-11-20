@@ -42,14 +42,18 @@ DIENSTEN = [
     ]),
     ("Licht en audiovisueel", "Light and audiovisual", [
         ("Sfeerverlichting", "Atmospheric lighting"),
+        ("Decoratie: led-tubes, spiegelbollen en props", "Decoration: LED tubes, mirror balls and props"),
         ("Lichtshow", "Light show"),
+        ("90's vintage licht", "90s vintage lighting"),
         ("Theaterlicht voor product of spreker", "Theatre lighting for product or speaker"),
         ("Videoschermen en presentatie", "Video screens and presentation"),
+        ("Ledschermen met VJ", "LED screens with a live VJ"),
         ("Online uitzending", "Online broadcast"),
     ]),
     ("Artiesten", "Artists", [
         ("Dj", "DJ"),
         ("Vocalist, saxofonist of percussionist", "Vocalist, saxophonist or percussionist"),
+        ("Geuren-dj", "Scent DJ"),
         ("Playlist op maat", "Custom playlist"),
         ("Partyfotograaf", "Party photographer"),
     ]),
