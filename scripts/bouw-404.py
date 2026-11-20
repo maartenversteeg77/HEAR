@@ -4,9 +4,9 @@ import pathlib, re
 site = pathlib.Path(__file__).resolve().parent.parent / "site"
 TEKST = {
     "nl": ("Deze pagina bestaat niet (meer)", "Misschien kwam je via een oude link. Hieronder vind je de weg terug.",
-           [("/", "Naar de homepage"), ("/cases.html", "Bekijk de cases"), ("/diensten.html", "Producten en diensten"), ("/aanvraag.html", "Plan een gesprek")]),
+           [("/", "Naar de homepage"), ("/cases.html", "Bekijk de cases"), ("/diensten.html", "Producten en diensten"), ("/aanvraag.html", "Vertel over je event")]),
     "en": ("This page doesn’t exist (anymore)", "You may have followed an old link. Here’s the way back.",
-           [("/en/", "To the homepage"), ("/en/cases.html", "See the cases"), ("/en/diensten.html", "Products and services"), ("/en/aanvraag.html", "Plan a call")]),
+           [("/en/", "To the homepage"), ("/en/cases.html", "See the cases"), ("/en/diensten.html", "Products and services"), ("/en/aanvraag.html", "Tell us about your event")]),
 }
 def absoluut(s, pre):
     s = re.sub(r'(href|src)="(?!https?:|/|#|mailto:|tel:|data:)([^"]*)"', lambda m: f'{m.group(1)}="{pre}{m.group(2)}"', s)

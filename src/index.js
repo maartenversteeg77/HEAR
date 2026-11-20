@@ -7,10 +7,10 @@ const NAAR = "maarten@hear.nl";
 const VAN = "HEAR aanvraag <aanvraag@hear.nl>";
 
 const VELDEN = [
-  ["gesprek", "Gesprek via"], ["gesprek_datum", "Voorkeursdatum gesprek"], ["gesprek_dagdeel", "Dagdeel"],
+  ["route", "Wil"], ["gesprek", "Gesprek via"], ["gesprek_datum", "Voorkeursdatum gesprek"], ["gesprek_dagdeel", "Dagdeel"],
   ["naam", "Naam"], ["organisatie", "Organisatie"], ["functie", "Functie"], ["email", "E-mail"], ["telefoon", "Telefoon"],
   ["rol", "Aanvrager is"], ["rol_anders", "Aanvrager is, anders"], ["soort", "Soort event"], ["soort_anders", "Soort, anders"], ["event", "Naam event"], ["locatie", "Locatie"], ["datum", "Datum"], ["tijd", "Tijd"],
-  ["gasten", "Aantal gasten"], ["doelgroep", "Doelgroep"], ["diensten", "Diensten"], ["diensten_anders", "Diensten, anders"], ["communicatie", "Communicatie"], ["communicatie_anders", "Communicatie, anders"],
+  ["gasten", "Aantal gasten"], ["doelgroep", "Doelgroep"], ["programma", "Programma"], ["diensten", "Diensten"], ["diensten_anders", "Diensten, anders"], ["communicatie", "Communicatie"], ["communicatie_anders", "Communicatie, anders"],
   ["geluid", "Geluid"], ["scherm", "Scherm"], ["uren_dag", "Uren dagprogramma"], ["uren_dj", "Uren dj"], ["personeel", "Personeel"], ["licht", "Licht en aankleding"], ["logo", "Logo"], ["indicatie", "Indicatie"],
   ["ruimte", "Ruimte"], ["concept", "Concept / programma"], ["bericht", "Bericht"],
   ["budget", "Richtbudget"],
@@ -23,19 +23,21 @@ async function aanvraag(request, env) {
   const fd = await request.formData();
   if (schoon(fd.get("website"))) return antwoord(request, true); // honeypot: doen alsof het gelukt is
   const d = {};
-  for (const [k] of VELDEN) d[k] = (k === "diensten" || k === "communicatie" || k === "cc_wens" || k === "licht" || k === "scherm") ? fd.getAll(k).map(schoon).filter(Boolean).join(", ") : schoon(fd.get(k));
+  for (const [k] of VELDEN) d[k] = (k === "diensten" || k === "programma" || k === "communicatie" || k === "cc_wens" || k === "licht" || k === "scherm") ? fd.getAll(k).map(schoon).filter(Boolean).join(", ") : schoon(fd.get(k));
   if (fd.get("budget_onbekend")) d.budget = "weet ik nog niet";
   else if (fd.get("budget_van") || fd.get("budget_tot")) d.budget = `€ ${schoon(fd.get("budget_van"))} – € ${schoon(fd.get("budget_tot"))}`;
-  const hoofdformulier = !schoon(fd.get("bron")); // aanvraagformulier: naam, e-mail, telefoon en contactmoment verplicht
-  if (!d.naam || !d.email || (hoofdformulier && (!d.telefoon || !d.gesprek_datum)) || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email)) return antwoord(request, false, 400);
+  const hoofdformulier = !schoon(fd.get("bron")); // aanvraagformulier: naam, e-mail en telefoon verplicht; bij een call ook het contactmoment
+  if (hoofdformulier && d.route === "voorstel") { d.gesprek = ""; d.gesprek_datum = ""; d.gesprek_dagdeel = ""; }
+  const route = d.route;
+  if (!d.naam || !d.email || (hoofdformulier && (!d.telefoon || (d.route === "call" && !d.gesprek_datum))) || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email)) return antwoord(request, false, 400);
 
   // leesbare waarden in de mail
-  const LABEL = { bellen: "telefoon", teams: "Microsoft Teams", meet: "Google Meet", zakelijk: "zakelijk (netwerk)event", lezing: "lezing of seminar",
+  const LABEL = { voorstel: "een vrijblijvend voorstel", call: "een call", bellen: "telefoon", teams: "Microsoft Teams", meet: "Google Meet", zakelijk: "zakelijk (netwerk)event", lezing: "lezing of seminar",
     personeelsfeest: "personeelsfeest", merkactivatie: "merkactivatie", dance: "dance event", anders: "anders" };
   const MAAND = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"];
   const datum = (v) => { const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(v); return m ? `${+m[3]} ${MAAND[+m[2] - 1]} ${m[1]}` : v; };
   const eur = (v) => Number(v).toLocaleString("nl-NL");
-  for (const k of ["gesprek", "soort"]) if (LABEL[d[k]]) d[k] = LABEL[d[k]];
+  for (const k of ["route", "gesprek", "soort"]) if (LABEL[d[k]]) d[k] = LABEL[d[k]];
   for (const k of ["gesprek_datum", "datum"]) if (d[k]) d[k] = datum(d[k]);
   if (!fd.get("budget_onbekend") && fd.get("budget_van")) d.budget = `€ ${eur(fd.get("budget_van"))} – € ${eur(fd.get("budget_tot"))}${+fd.get("budget_tot") >= 25000 ? "+" : ""}`;
   const regels = VELDEN.filter(([k]) => d[k]).map(([k, l]) => `${l}: ${d[k]}`).join("\n");
@@ -51,7 +53,7 @@ async function aanvraag(request, env) {
     headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, "Content-Type": "application/json" },
     body: JSON.stringify({ from: VAN, to: [NAAR], reply_to: d.email, subject: onderwerp, text: regels + extra + "\n" }),
   });
-  return antwoord(request, r.ok, r.ok ? 200 : 502);
+  return antwoord(request, r.ok, r.ok ? 200 : 502, route);
 }
 
 // Formulieren op maartenversteeg.nl (en de testversie op workers.dev) mogen ook hierheen posten.
@@ -60,13 +62,13 @@ function cors(request) {
   return /^https:\/\/((www\.)?maartenversteeg\.nl|[a-z0-9-]+\.[a-z0-9-]+\.workers\.dev)$/.test(o) ? { "Access-Control-Allow-Origin": o, "Vary": "Origin" } : {};
 }
 
-function antwoord(request, ok, status = 200) {
+function antwoord(request, ok, status = 200, route = "") {
   if ((request.headers.get("Accept") || "").includes("application/json"))
     return new Response(JSON.stringify({ ok }), { status, headers: { "Content-Type": "application/json", "Cache-Control": "no-store", ...cors(request) } });
   const terug = new URL(request.url);
   const en = (request.headers.get("Referer") || "").includes("/en/");
   terug.pathname = (en ? "/en" : "") + "/aanvraag.html";
-  terug.search = ok ? "?verzonden=1" : "?fout=1";
+  terug.search = ok ? "?verzonden=1" + (route === "call" ? "&route=call" : "") : "?fout=1";
   return Response.redirect(terug.toString(), 303);
 }
 

@@ -1,6 +1,8 @@
 """Bouwt site/aanvraag.html: het aanvraagformulier (besluit 28 okt 2026, na feedback van een eventcoördinator bij de overheid:
 WhatsApp is op werkplekken vaak geblokkeerd; een formulier is laagdrempeliger).
-Opbouw in drie stappen (28 okt): 1/3 kennismaken (hoe bespreken: bellen/Teams/Meet, voorkeursdatum en dagdeel, contactgegevens), 2/3 over je event, 3/3 wat je nodig hebt (diensten, budget, vrij veld). Zonder JavaScript staan de stappen onder elkaar.
+Opbouw sinds 20 nov 2026 (snelle route naast het gesprek): 1/4 je event, 2/4 je programma (poortvragen: pas na aanvinken
+verschijnen de keuzes die erbij horen), 3/4 budget en een vrij veld, 4/4 hoe verder (vrijblijvend voorstel of call) en contactgegevens.
+Zonder JavaScript staan de stappen onder elkaar en zijn alle keuzes zichtbaar.
 Het formulier post naar /api/aanvraag (src/index.js), dat de inzending mailt naar maarten@hear.nl. Geen opslag.
 Schrijft ook de Engelse paren naar content/en.json (paginas → aanvraag.html). Draaien vóór bouw-en.py."""
 import json, pathlib, html
@@ -20,8 +22,9 @@ def A(nl, en):  # attribuutwaarde (placeholder, aria-label)
 TITEL = "Aanvraag"
 KOP = "Vertel over je event"
 MAIL = '<a href="mailto:maarten@hear.nl">maarten@hear.nl</a>'
-INTRO_HTML = "Laat weten hoe en wanneer je wilt kennismaken. Daarna kun je alvast iets over je event vertellen. Liever mailen? Dat kan ook: " + MAIL + "."
-paren.append((INTRO_HTML, "Let us know how and when you would like to meet. After that, you can tell us a bit about your event. Prefer email? That works too: " + MAIL + "."))
+TEL = '<a href="tel:+31624560220">+31 6 24560220</a>'
+INTRO_HTML = "Vertel in een paar stappen wat je nodig hebt. Daarna kies je: een vrijblijvend voorstel of een call. Liever meteen bellen of appen? " + TEL + ". Mailen kan ook: " + MAIL + "."
+paren.append((INTRO_HTML, "Tell us what you need in a few steps. Then choose: a no-obligation proposal or a call. Rather call or message straight away? " + TEL + ". Email works too: " + MAIL + "."))
 
 def veld(naam, nl, en, type="text", verplicht=False, extra=""):
     req = " required" if verplicht else ""
@@ -31,30 +34,33 @@ def tekstvak(naam, nl, en, rijen=4, verplicht=False, breed=True):
     req = " required" if verplicht else ""
     return f'<label class="veld{" veld-breed" if breed else ""}"><span>{T(nl, en)}</span><textarea name="{naam}" rows="{rijen}"{req}></textarea></label>'
 
-# diensten uit de catalogus, vier kolommen
-DIENSTEN = [
-    ("Geluid", "Sound", [
+# Programma: per onderdeel een poortvraag; de keuzes eronder verschijnen pas als het onderdeel is aangevinkt.
+# Samen dekken ze alles uit de catalogus (content/diensten.json) en de productkiezer op de homepage; aankoopadvies hoort hier niet (geen eventdienst).
+DENKMEE = ("Weet ik nog niet, denk met me mee", "Not sure yet, help me decide")
+PROGRAMMA = [
+    ("sprekers", "Sprekers of presentaties", "Speakers or presentations", [
         ("Sprekersversterking en microfoons", "Speech amplification and microphones"),
-        ("Geluid voor borrel of feest", "Sound for a reception or party"),
-        ("Dansvloer geluidsysteem", "Dance floor sound system"),
-        ("Dj-booth en gear voor je eigen dj", "DJ booth and gear for your own DJ"),
+        ("Videoschermen en presentatie", "Video screens and presentation"),
+        ("Theaterlicht voor product of spreker", "Theatre lighting for product or speaker"),
+        ("Online uitzending", "Online broadcast"),
         ("Technicus ter plekke", "Technician on site"),
     ]),
-    ("Licht en audiovisueel", "Light and audiovisual", [
+    ("borrel", "Borrel of diner met muziek", "Drinks or dinner with music", [
+        ("Geluid voor borrel of feest", "Sound for a reception or party"),
+        ("Playlist op maat", "Custom playlist"),
+        ("Coffee cuts of custom dj-mix", "Coffee cuts or a custom DJ mix"),
         ("Sfeerverlichting", "Atmospheric lighting"),
         ("Decoratie: led-tubes, spiegelbollen en props", "Decoration: LED tubes, mirror balls and props"),
+    ]),
+    ("feest", "Feest met dansvloer", "Party with a dance floor", [
+        ("Dj", "DJ"),
+        ("Dj-booth en gear voor je eigen dj", "DJ booth and gear for your own DJ"),
+        ("Dansvloer geluidsysteem", "Dance floor sound system"),
         ("Lichtshow", "Light show"),
         ("90's vintage licht", "90s vintage lighting"),
-        ("Theaterlicht voor product of spreker", "Theatre lighting for product or speaker"),
-        ("Videoschermen en presentatie", "Video screens and presentation"),
         ("Ledschermen met VJ", "LED screens with a live VJ"),
-        ("Online uitzending", "Online broadcast"),
-    ]),
-    ("Artiesten", "Artists", [
-        ("Dj", "DJ"),
         ("Vocalist, saxofonist of percussionist", "Vocalist, saxophonist or percussionist"),
         ("Geuren-dj", "Scent DJ"),
-        ("Playlist op maat", "Custom playlist"),
         ("Partyfotograaf", "Party photographer"),
     ]),
 ]
@@ -65,17 +71,20 @@ COMMUNICATIE = [
     ("Bedrijfsvideo", "Corporate video"),
     ("Aftermovie", "Aftermovie"),
 ]
-def communicatie():
-    return (f'<fieldset class="communicatie"><legend>{T("Wij kunnen je ook helpen met de communicatie rondom je event. Vink aan wat je interessant vindt.", "We can also help with the communication around your event. Tick what interests you.")}</legend><div class="keuzelijst">'
-            + "".join(f'<label class="vink"><input type="checkbox" name="communicatie" value="{e(nl)}"><span>{T(nl, en)}</span></label>' for nl, en in COMMUNICATIE)
-            + f'</div><label class="veld veld-breed"><span>{T("Anders, namelijk", "Other, namely")}</span><input type="text" name="communicatie_anders"></label></fieldset>')
-def diensten():
-    kol = ""
-    for knl, ken, items in DIENSTEN:
-        kol += f'<fieldset class="dienstkolom"><legend>{T(knl, ken)}</legend>' + "".join(
-            f'<label class="vink"><input type="checkbox" name="diensten" value="{e(nl)}"><span>{T(nl, en)}</span></label>' for nl, en in items) + '</fieldset>'
-    return (f'<fieldset class="diensten"><legend class="sr">{T("Diensten", "Services")}</legend><div class="dienstgrid">{kol}</div>'
-            f'<label class="veld veld-breed"><span>{T("Anders, namelijk", "Other, namely")}</span><input type="text" name="diensten_anders"></label></fieldset>')
+def poort(sleutel, nl, en, opties):
+    return (f'<fieldset class="poort"><legend class="sr">{T(nl, en)}</legend>'
+            f'<label class="vink poortvraag"><input type="checkbox" name="programma" value="{e(nl)}" data-poort="{sleutel}"><span>{T(nl, en)}</span></label>'
+            f'<div class="poort-opties" id="poort-{sleutel}">{opties}</div></fieldset>')
+def programma():
+    blokken = ""
+    for sleutel, nl, en, items in PROGRAMMA:
+        opties = "".join(f'<label class="vink"><input type="checkbox" name="diensten" value="{e(inl)}"><span>{T(inl, ien)}</span></label>' for inl, ien in items + [DENKMEE])
+        blokken += poort(sleutel, nl, en, opties)
+    comm = ("".join(f'<label class="vink"><input type="checkbox" name="communicatie" value="{e(nl)}"><span>{T(nl, en)}</span></label>' for nl, en in COMMUNICATIE)
+            + f'<label class="veld veld-breed"><span>{T("Anders, namelijk", "Other, namely")}</span><input type="text" name="communicatie_anders"></label>')
+    blokken += poort("communicatie", "Hulp bij de communicatie rondom je event", "Help with the communication around your event", comm)
+    return (f'<div class="programma">{blokken}</div>'
+            f'<label class="veld veld-breed"><span>{T("Iets anders nodig? Namelijk", "Need something else? Namely")}</span><input type="text" name="diensten_anders"></label>')
 
 SOORTEN = [("zakelijk", "Zakelijk (netwerk)event", "Corporate (networking) event"), ("lezing", "Lezing of seminar", "Lecture or seminar"),
            ("personeelsfeest", "Personeelsfeest", "Staff party"), ("merkactivatie", "Merkactivatie", "Brand activation"), ("dance", "Dance event", "Dance event")]
@@ -92,64 +101,62 @@ budget = (f'<fieldset class="budget"><legend>{T("Richtbudget voor licht, geluid 
 
 GESPREK = [("bellen", "Bel mij", "Call me"), ("teams", "Microsoft Teams", "Microsoft Teams"), ("meet", "Google Meet", "Google Meet")]
 DAGDEEL = [("ochtend", "Ochtend", "Morning"), ("middag", "Middag", "Afternoon"), ("eind van de middag", "Eind van de middag", "Late afternoon")]
-gesprek = (f'<fieldset class="keuze veld-breed"><legend>{T("Hoe wil je je wensen bespreken?", "How would you like to discuss your plans?")}</legend><div class="keuzerij">'
+gesprek = (f'<div class="velden callvelden" id="callvelden"><fieldset class="keuze veld-breed"><legend>{T("Hoe wil je bellen?", "How would you like to talk?")}</legend><div class="keuzerij">'
            + "".join(f'<label class="vink"><input type="radio" name="gesprek" value="{w}"{" checked" if w == "bellen" else ""}><span>{T(nl, en)}</span></label>' for w, nl, en in GESPREK)
            + '</div></fieldset>'
-           + veld("gesprek_datum", "Wanneer schikt het?", "When suits you?", "date", True, ' id="gesprek-datum"')
+           + veld("gesprek_datum", "Wanneer schikt het?", "When suits you?", "date", False, ' id="gesprek-datum"')
            + f'<label class="veld"><span>{T("Dagdeel", "Time of day")}</span><select name="gesprek_dagdeel"><option value="">{T("Maakt niet uit", "No preference")}</option>'
-           + "".join(f'<option value="{w}">{T(nl, en)}</option>' for w, nl, en in DAGDEEL) + '</select></label>')
+           + "".join(f'<option value="{w}">{T(nl, en)}</option>' for w, nl, en in DAGDEEL) + '</select></label></div>')
+route = (f'<fieldset class="route"><legend class="sr">{T("Hoe verder?", "What next?")}</legend><div class="routekaarten">'
+         f'<label class="routekaart"><input type="radio" name="route" value="voorstel" required><strong>{T("Stuur me een vrijblijvend voorstel", "Send me a no-obligation proposal")}</strong><span>{T("Je hoort meestal binnen 1 werkdag van ons", "You will usually hear from us within 1 working day")}</span></label>'
+         f'<label class="routekaart"><input type="radio" name="route" value="call"><strong>{T("Plan een call", "Schedule a call")}</strong><span>{T("Telefoon, Teams of Meet", "Phone, Teams or Meet")}</span></label>'
+         f'</div></fieldset>'
+         f'<p class="formmelding fout" id="mist" hidden><span id="mist-tekst"></span> <button type="button" class="stapknop terug" id="mist-knop" data-naar="1">{T("Vul aan", "Complete it")}</button></p>')
 
 def stap(n, kop_nl, kop_en, inhoud, laatste=False, terug=None, verder=None):
     vorige = f'<button type="button" class="stapknop terug" data-naar="{terug or n-1}">{T("← Vorige", "← Back")}</button>' if n > 1 else ''
     volgende = (f'<button type="submit" class="wa knop">{T("Verstuur je aanvraag", "Send your request")}<i aria-hidden="true">→</i></button>'
                 if laatste else f'<button type="button" class="wa knop stapknop vooruit" data-naar="{verder or n+1}">{T("Volgende", "Next")}<i aria-hidden="true">→</i></button>')
-    return (f'<section class="stap" data-stap="{n}"><p class="stapteller">{n}/3</p><h2>{T(kop_nl, kop_en)}</h2>{inhoud}'
+    return (f'<section class="stap" data-stap="{n}"><p class="stapteller">{n}/4</p><h2>{T(kop_nl, kop_en)}</h2>{inhoud}'
             f'<p class="formvoet">{volgende}{vorige}</p></section>')
 
-stap1 = stap(1, "Kennismaken", "Getting acquainted", verder="keuze", inhoud=f'''<p class="stapuitleg">{T("Velden met * zijn nodig om contact op te nemen. We reageren meestal dezelfde werkdag.", "Fields marked * are needed to get in touch. We usually reply the same working day.")}</p><div class="velden">
+stap1 = stap(1, "Je event", "Your event", inhoud=f"""<p class="stapuitleg">{T("Vul in wat je al weet; weet je iets nog niet, laat het veld dan leeg.", "Fill in what you already know; if you don't know something yet, leave the field empty.")}</p><div class="velden">
+{soort}
+{veld("datum", "Datum van het event", "Date of the event", "date", extra=' id="v-datum"')}
+{veld("tijd", "Tijd, van tot", "Time, from to", extra=' placeholder="16:00 – 23:00"')}
+{veld("locatie", "Locatie", "Venue", extra=' id="v-locatie"')}
+{veld("gasten", "Aantal gasten", "Number of guests", "number", extra=' min="1" inputmode="numeric" id="v-gasten"')}
+</div>""")
+stap2 = stap(2, "Je programma", "Your programme", f"""<p class="stapuitleg">{T("Vink aan wat er op het programma staat. Dan zie je wat wij daarbij kunnen doen.", "Tick what is on the programme. You will then see what we can do for each part.")}</p>
+{programma()}""")
+stap3 = stap(3, "Budget en je verhaal", "Budget and your story", f"""{budget}
+<label class="veld veld-breed"><span>{T("Vertel iets over je event", "Tell us about your event")}</span><small class="veldhulp">{T("Bijvoorbeeld de doelgroep, het concept, de gewenste beleving of de ruimte. Mag, hoeft niet.", "For example the audience, the concept, the experience you are after or the room. Optional.")}</small><textarea name="bericht" rows="5"></textarea></label>""")
+stap4 = stap(4, "Hoe verder?", "What next?", f"""{route}
 {gesprek}
+<p class="stapuitleg tussenkop">{T("Velden met * zijn nodig om contact op te nemen.", "Fields marked * are needed to get in touch.")}</p><div class="velden">
 {veld("naam", "Naam", "Name", verplicht=True, extra=' autocomplete="name"')}
 {veld("organisatie", "Organisatie", "Organisation", extra=' autocomplete="organization"')}
 {veld("email", "E-mail", "Email", "email", True, ' autocomplete="email"')}
 {veld("telefoon", "Telefoonnummer", "Phone number", "tel", True, ' autocomplete="tel" id="telefoon"')}
-{veld("functie", "Je functie", "Your role")}
-</div>''')
-stap2 = stap(2, "Over je event", "About your event", terug="keuze", inhoud=f'''<p class="stapuitleg">{T("Vul in wat je al weet; weet je iets nog niet, laat het veld dan leeg.", "Fill in what you already know; if you don't know something yet, leave the field empty.")}</p><div class="velden">
-{veld("event", "Naam van het event", "Name of the event")}
-{soort}
-{veld("locatie", "Locatie", "Venue")}
-{tekstvak("ruimte", "Beschrijf de ruimte", "Describe the room", 2, breed=False)}
-{veld("datum", "Datum van het event", "Date of the event", "date")}
-{veld("tijd", "Tijd, van tot", "Time, from to", extra=' placeholder="16:00 – 23:00"')}
-{veld("gasten", "Aantal gasten", "Number of guests", "number", extra=' min="1" inputmode="numeric"')}
-{veld("doelgroep", "Doelgroep", "Audience")}
-{tekstvak("concept", "Het concept of het programma", "The concept or programme", 4)}
-</div>''')
-stap3 = stap(3, "Wat heb je nodig?", "What do you need?", f'''{diensten()}
-{communicatie()}
-{budget}
-{tekstvak("bericht", "Wil je verder nog iets kwijt?", "Anything else you want to tell us?", 5)}
-<p class="uitleg privacyregel"><span>{T("We gebruiken je gegevens alleen om je aanvraag te beantwoorden.", "We only use your details to answer your request.")}</span> <a href="privacy.html">Privacyverklaring</a></p>''', laatste=True)
+</div>
+<p class="uitleg privacyregel"><span>{T("We gebruiken je gegevens alleen om je aanvraag te beantwoorden.", "We only use your details to answer your request.")}</span> <a href="privacy.html">Privacyverklaring</a></p>""", laatste=True)
 
-keuze = (f'<section class="stap keuzescherm" data-stap="keuze"><p class="stapteller">{T("Bijna klaar, nog niet verstuurd", "Almost done, not sent yet")}</p>'
-         f'<h2>{T("Met een paar vragen over je event kunnen we het gesprek goed voorbereiden.", "A few questions about your event help us prepare the conversation.")}</h2>'
-         f'<p class="keuzetekst">{T("Liever eerst praten? Dat kan ook.", "Rather talk first? That works too.")}</p>'
-         f'<div class="keuzekaarten">'
-         f'<button type="button" class="keuzekaart stapknop hoofd" data-naar="2"><strong>{T("Ja, ik vertel meer over mijn event", "Yes, I\'ll tell you more about my event")}</strong><span>{T("Nog twee korte stappen", "Two more short steps")}</span><i aria-hidden="true">→</i></button>'
-         f'<button type="submit" class="keuzekaart kort"><strong>{T("Nu versturen", "Send now")}</strong><span>{T("De rest bespreken we in het gesprek", "We\'ll discuss the rest in the conversation")}</span><i aria-hidden="true">→</i></button>'
-         f'</div><p class="formvoet"><button type="button" class="stapknop terug" data-naar="1">{T("← Vorige", "← Back")}</button></p></section>')
+FOTO = f'<span class="dank-foto"><span>{T("Heb je foto\'s van de ruimte? Mail ze aan", "Do you have photos of the room? Email them to")}</span> {MAIL}</span>'
+dank = (f'<div class="formmelding ok dank" id="dank-voorstel" hidden><strong>{T("Bedankt voor je aanvraag! We gaan ermee aan de slag. Je hoort meestal binnen 1 werkdag van ons.", "Thank you for your request! We are on it. You will usually hear from us within 1 working day.")}</strong>{FOTO}</div>'
+        f'<div class="formmelding ok dank" id="dank-call" hidden><strong>{T("Bedankt voor je aanvraag! We nemen contact met je op om de call in te plannen, meestal binnen 1 werkdag.", "Thank you for your request! We will get in touch to schedule the call, usually within 1 working day.")}</strong>{FOTO}</div>')
 
-form = f'''<form class="aanvraag" method="post" action="/api/aanvraag" id="aanvraag">
+form = f"""<form class="aanvraag" method="post" action="/api/aanvraag" id="aanvraag">
 <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 {stap1}
-{keuze}
 {stap2}
 {stap3}
+{stap4}
 <p class="formmelding" id="melding" hidden></p>
-</form>'''
+{dank}
+</form>"""
 
-main = f'''<main class="wrap">
-<section class="casehead"><a class="crumb" href="index.html"><span class="sectie">HEAR</span></a><h1 class="kernzin">{T(KOP, "Tell us about your event")}</h1></section>
+main = f"""<main class="wrap">
+<section class="casehead"><a class="crumb" href="index.html"><span class="sectie">HEAR</span></a><h1 class="kernzin">{e(KOP)}</h1></section>
 <section class="quick quick-breed"><p>{INTRO_HTML}</p></section>
 {form}
 </main>
@@ -161,26 +168,46 @@ main = f'''<main class="wrap">
     function toon(){{var v=+a[0].value,t=+a[1].value;if(v>t){{if(this===a[0])a[1].value=v;else a[0].value=t;v=+a[0].value;t=+a[1].value}}o.textContent=eur(v)+' – '+eur(t)+(t>=25000?'+':'')}}
     a[0].addEventListener('input',toon);a[1].addEventListener('input',toon);toon()}}
   var so=document.getElementById('soort'),sa=document.getElementById('soort_anders_veld');if(so&&sa){{so.addEventListener('change',function(){{sa.hidden=so.value!=='anders'}})}}
+  /* poortvragen: keuzes tonen als het onderdeel is aangevinkt; verborgen keuzes gaan niet mee */
+  function poorten(){{[].forEach.call(f.querySelectorAll('[data-poort]'),function(p){{var b=document.getElementById('poort-'+p.dataset.poort);b.hidden=!p.checked;[].forEach.call(b.querySelectorAll('input'),function(i){{i.disabled=!p.checked}})}})}}
+  [].forEach.call(f.querySelectorAll('[data-poort]'),function(p){{p.addEventListener('change',poorten)}});poorten();
+  /* route: bij een call de velden voor het contactmoment tonen */
+  var cv=document.getElementById('callvelden'),gd=document.getElementById('gesprek-datum'),mist=document.getElementById('mist'),mt=document.getElementById('mist-tekst');
+  function gekozen(){{var r=f.querySelector('[name=route]:checked');return r?r.value:''}}
+  function route(){{var c=gekozen()==='call';cv.hidden=!c;gd.required=c;[].forEach.call(cv.querySelectorAll('input,select'),function(i){{i.disabled=!c}});mist.hidden=true;
+    [].forEach.call(f.querySelectorAll('.routekaart'),function(k){{k.classList.toggle('aan',k.querySelector('input').checked)}})}}
+  [].forEach.call(f.querySelectorAll('[name=route]'),function(r){{r.addEventListener('change',route)}});route();
+  /* voor een voorstel is genoeg invoer nodig */
+  function ontbreekt(){{var L=f.dataset,u=[];if(!document.getElementById('v-datum').value)u.push(L.mDatum);if(!document.getElementById('v-locatie').value.trim())u.push(L.mLocatie);if(!document.getElementById('v-gasten').value)u.push(L.mGasten);
+    var stap=u.length?'1':'';if(!f.querySelector('[name=diensten]:checked:not(:disabled),[name=communicatie]:checked:not(:disabled)')&&!f.querySelector('[name=diensten_anders]').value.trim()){{u.push(L.mKeuze);stap=stap||'2'}}return {{lijst:u,stap:stap}}}}
   var st=f.querySelectorAll('.stap');f.classList.add('in-stappen');
   function ga(n,geschiedenis){{n=String(n);if(geschiedenis!==false&&history.pushState){{var st0=history.state&&history.state.stap;if(st0!==n)history.pushState({{stap:n}},'','#stap-'+n)}}var doel;st.forEach(function(x){{var aan=x.dataset.stap===n;x.hidden=!aan;if(aan)doel=x}});var h=doel.querySelector('h2');window.scrollTo({{top:f.getBoundingClientRect().top+window.scrollY-120,behavior:'smooth'}});h&&h.focus&&h.setAttribute('tabindex','-1');h&&h.focus({{preventScroll:true}})}}
   f.querySelectorAll('.stapknop').forEach(function(k){{k.addEventListener('click',function(){{var n=k.dataset.naar,huidig=k.closest('.stap');if(!n)return;
     if(k.classList.contains('vooruit')){{var ok=true;huidig.querySelectorAll('input,select,textarea').forEach(function(i){{if(ok&&!i.checkValidity()){{i.reportValidity();ok=false}}}});if(!ok)return}}ga(n)}})}});
-  var gd=document.getElementById('gesprek-datum');if(gd){{var nu=new Date();gd.min=nu.getFullYear()+'-'+String(nu.getMonth()+1).padStart(2,'0')+'-'+String(nu.getDate()).padStart(2,'0')}}
-  if(history.replaceState)history.replaceState({{stap:'1'}},'',location.pathname+location.search);ga(1,false);
-  window.addEventListener('popstate',function(ev){{var n=(ev.state&&ev.state.stap)||'1';if(f.querySelector('.stap[data-stap="'+n+'"]'))ga(n,false)}});
-  var q=location.search;if(/verzonden=1/.test(q)){{m.hidden=false;m.textContent=f.dataset.dank;m.className='formmelding ok'}}else if(/fout=1/.test(q)){{m.hidden=false;m.textContent=f.dataset.fout;m.className='formmelding fout'}}
+  if(gd){{var nu=new Date();gd.min=nu.getFullYear()+'-'+String(nu.getMonth()+1).padStart(2,'0')+'-'+String(nu.getDate()).padStart(2,'0')}}
+  function bedankt(r){{st.forEach(function(x){{x.hidden=true}});m.hidden=true;var d=document.getElementById(r==='call'?'dank-call':'dank-voorstel');d.hidden=false;window.scrollTo({{top:f.getBoundingClientRect().top+window.scrollY-120,behavior:'smooth'}})}}
+  var q=location.search;
+  if(/verzonden=1/.test(q)){{bedankt(/route=call/.test(q)?'call':'voorstel')}}
+  else{{if(history.replaceState)history.replaceState({{stap:'1'}},'',location.pathname+location.search);ga(1,false);if(/fout=1/.test(q)){{m.hidden=false;m.textContent=f.dataset.fout;m.className='formmelding fout'}}}}
+  window.addEventListener('popstate',function(ev){{var n=(ev.state&&ev.state.stap)||'1';if(f.querySelector('.stap[data-stap="'+n+'"]')&&document.getElementById('dank-voorstel').hidden&&document.getElementById('dank-call').hidden)ga(n,false)}});
   f.addEventListener('submit',function(ev){{
+    var r=gekozen();
+    if(r==='voorstel'){{var o=ontbreekt();if(o.lijst.length){{ev.preventDefault();mt.textContent=f.dataset.mKop+' '+o.lijst.join(', ')+'.';document.getElementById('mist-knop').dataset.naar=o.stap;mist.hidden=false;return}}}}
     if(!window.fetch)return;ev.preventDefault();var b={{set disabled(v){{[].forEach.call(f.querySelectorAll('button[type=submit]'),function(x){{x.disabled=v}})}}}};b.disabled=true;
-    fetch(f.action,{{method:'POST',body:new FormData(f),headers:{{'Accept':'application/json'}}}}).then(function(r){{return r.json()}}).then(function(r){{
-      m.hidden=false;if(r.ok){{m.textContent=f.dataset.dank;m.className='formmelding ok';f.reset();st.forEach(function(x){{x.hidden=true}})}}else{{m.textContent=f.dataset.fout;m.className='formmelding fout';b.disabled=false}}
+    fetch(f.action,{{method:'POST',body:new FormData(f),headers:{{'Accept':'application/json'}}}}).then(function(x){{return x.json()}}).then(function(x){{
+      if(x.ok){{f.reset();poorten();bedankt(r)}}else{{m.hidden=false;m.textContent=f.dataset.fout;m.className='formmelding fout';b.disabled=false}}
     }}).catch(function(){{m.hidden=false;m.textContent=f.dataset.fout;m.className='formmelding fout';b.disabled=false}});
   }});
 }})();
-</script>'''
-main = main.replace('<form class="aanvraag"', f'<form class="aanvraag" data-dank="{A("Dank je. We nemen contact met je op om het gesprek in te plannen, meestal dezelfde werkdag.", "Thank you. We will get in touch to schedule the conversation, usually the same working day.")}" data-fout="{A("Versturen lukte niet. Mail ons op maarten@hear.nl of bel +31 6 24560220.", "Sending failed. Email us at maarten@hear.nl or call +31 6 24560220.")}"')
+</script>"""
+main = main.replace('<form class="aanvraag"', '<form class="aanvraag"'
+    + f' data-fout="{A("Versturen lukte niet. Mail ons op maarten@hear.nl of bel +31 6 24560220.", "Sending failed. Email us at maarten@hear.nl or call +31 6 24560220.")}"'
+    + f' data-m-kop="{A("Voor een voorstel hebben we nog nodig:", "For a proposal we still need:")}"'
+    + f' data-m-datum="{A("de datum", "the date")}" data-m-locatie="{A("de locatie", "the venue")}" data-m-gasten="{A("het aantal gasten", "the number of guests")}"'
+    + f' data-m-keuze="{A("minstens één keuze bij je programma", "at least one choice in your programme")}"')
 
-BESCHRIJVING = "Vraag licht, geluid, dj of advies aan voor je event. Vul in wat je al weet; we bellen je terug."
-doc = f'''<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{A(BESCHRIJVING, "Request light, sound, a DJ or advice for your event. Fill in what you already know; we call you back.")}"><title>{TITEL} · HEAR</title><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="styles.css"></head><body class="pagina">
+BESCHRIJVING = "Vraag licht, geluid, dj of advies aan voor je event. Kies zelf: een vrijblijvend voorstel of een call."
+doc = f'''<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{A(BESCHRIJVING, "Request light, sound, a DJ or advice for your event. You choose: a no-obligation proposal or a call.")}"><title>{TITEL} · HEAR</title><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="styles.css"></head><body class="pagina">
 {kop}
 {main}
 {voet}

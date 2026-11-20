@@ -296,16 +296,16 @@
       ">or fill in the form<"
     ],
     [
-      ">Plan een gesprek<",
-      ">Plan a call<"
+      ">Vertel over je event<",
+      ">Tell us about your event<"
     ],
     [
-      ">of plan een gesprek<",
-      ">or plan a call<"
+      ">of vertel over je event<",
+      ">or tell us about your event<"
     ],
     [
-      "<small>Bel, Teams of Meet: vertel over je event</small>",
-      "<small>Phone, Teams or Meet: tell us about your event</small>"
+      "<small>Voor een vrijblijvend voorstel of een call</small>",
+      "<small>For a no-obligation proposal or a call</small>"
     ],
     [
       ">of stel je vraag via WhatsApp<",
@@ -3236,8 +3236,8 @@
         "<title>Request · HEAR</title>"
       ],
       [
-        "Laat weten hoe en wanneer je wilt kennismaken. Daarna kun je alvast iets over je event vertellen. Liever mailen? Dat kan ook: <a href=\"mailto:maarten@hear.nl\">maarten@hear.nl</a>.",
-        "Let us know how and when you would like to meet. After that, you can tell us a bit about your event. Prefer email? That works too: <a href=\"mailto:maarten@hear.nl\">maarten@hear.nl</a>."
+        "Vertel in een paar stappen wat je nodig hebt. Daarna kies je: een vrijblijvend voorstel of een call. Liever meteen bellen of appen? <a href=\"tel:+31624560220\">+31 6 24560220</a>. Mailen kan ook: <a href=\"mailto:maarten@hear.nl\">maarten@hear.nl</a>.",
+        "Tell us what you need in a few steps. Then choose: a no-obligation proposal or a call. Rather call or message straight away? <a href=\"tel:+31624560220\">+31 6 24560220</a>. Email works too: <a href=\"mailto:maarten@hear.nl\">maarten@hear.nl</a>."
       ],
       [
         ">Soort event<",
@@ -3292,8 +3292,8 @@
         ">I don&#x27;t know yet<"
       ],
       [
-        ">Hoe wil je je wensen bespreken?<",
-        ">How would you like to discuss your plans?<"
+        ">Hoe wil je bellen?<",
+        ">How would you like to talk?<"
       ],
       [
         ">Bel mij<",
@@ -3332,52 +3332,32 @@
         ">Late afternoon<"
       ],
       [
-        ">Velden met * zijn nodig om contact op te nemen. We reageren meestal dezelfde werkdag.<",
-        ">Fields marked * are needed to get in touch. We usually reply the same working day.<"
+        ">Hoe verder?<",
+        ">What next?<"
       ],
       [
-        ">Naam<",
-        ">Name<"
+        ">Stuur me een vrijblijvend voorstel<",
+        ">Send me a no-obligation proposal<"
       ],
       [
-        ">Organisatie<",
-        ">Organisation<"
+        ">Je hoort meestal binnen 1 werkdag van ons<",
+        ">You will usually hear from us within 1 working day<"
       ],
       [
-        ">E-mail<",
-        ">Email<"
+        ">Plan een call<",
+        ">Schedule a call<"
       ],
       [
-        ">Telefoonnummer<",
-        ">Phone number<"
+        ">Telefoon, Teams of Meet<",
+        ">Phone, Teams or Meet<"
       ],
       [
-        ">Je functie<",
-        ">Your role<"
-      ],
-      [
-        ">Volgende<",
-        ">Next<"
-      ],
-      [
-        ">Kennismaken<",
-        ">Getting acquainted<"
+        ">Vul aan<",
+        ">Complete it<"
       ],
       [
         ">Vul in wat je al weet; weet je iets nog niet, laat het veld dan leeg.<",
         ">Fill in what you already know; if you don&#x27;t know something yet, leave the field empty.<"
-      ],
-      [
-        ">Naam van het event<",
-        ">Name of the event<"
-      ],
-      [
-        ">Locatie<",
-        ">Venue<"
-      ],
-      [
-        ">Beschrijf de ruimte<",
-        ">Describe the room<"
       ],
       [
         ">Datum van het event<",
@@ -3388,52 +3368,64 @@
         ">Time, from to<"
       ],
       [
+        ">Locatie<",
+        ">Venue<"
+      ],
+      [
         ">Aantal gasten<",
         ">Number of guests<"
       ],
       [
-        ">Doelgroep<",
-        ">Audience<"
+        ">Volgende<",
+        ">Next<"
       ],
       [
-        ">Het concept of het programma<",
-        ">The concept or programme<"
+        ">Je event<",
+        ">Your event<"
       ],
       [
-        ">← Vorige<",
-        ">← Back<"
-      ],
-      [
-        ">Over je event<",
-        ">About your event<"
-      ],
-      [
-        ">Geluid<",
-        ">Sound<"
+        ">Vink aan wat er op het programma staat. Dan zie je wat wij daarbij kunnen doen.<",
+        ">Tick what is on the programme. You will then see what we can do for each part.<"
       ],
       [
         ">Sprekersversterking en microfoons<",
         ">Speech amplification and microphones<"
       ],
       [
-        ">Geluid voor borrel of feest<",
-        ">Sound for a reception or party<"
+        ">Videoschermen en presentatie<",
+        ">Video screens and presentation<"
       ],
       [
-        ">Dansvloer geluidsysteem<",
-        ">Dance floor sound system<"
+        ">Theaterlicht voor product of spreker<",
+        ">Theatre lighting for product or speaker<"
       ],
       [
-        ">Dj-booth en gear voor je eigen dj<",
-        ">DJ booth and gear for your own DJ<"
+        ">Online uitzending<",
+        ">Online broadcast<"
       ],
       [
         ">Technicus ter plekke<",
         ">Technician on site<"
       ],
       [
-        ">Licht en audiovisueel<",
-        ">Light and audiovisual<"
+        ">Weet ik nog niet, denk met me mee<",
+        ">Not sure yet, help me decide<"
+      ],
+      [
+        ">Sprekers of presentaties<",
+        ">Speakers or presentations<"
+      ],
+      [
+        ">Geluid voor borrel of feest<",
+        ">Sound for a reception or party<"
+      ],
+      [
+        ">Playlist op maat<",
+        ">Custom playlist<"
+      ],
+      [
+        ">Coffee cuts of custom dj-mix<",
+        ">Coffee cuts or a custom DJ mix<"
       ],
       [
         ">Sfeerverlichting<",
@@ -3444,6 +3436,22 @@
         ">Decoration: LED tubes, mirror balls and props<"
       ],
       [
+        ">Borrel of diner met muziek<",
+        ">Drinks or dinner with music<"
+      ],
+      [
+        ">Dj<",
+        ">DJ<"
+      ],
+      [
+        ">Dj-booth en gear voor je eigen dj<",
+        ">DJ booth and gear for your own DJ<"
+      ],
+      [
+        ">Dansvloer geluidsysteem<",
+        ">Dance floor sound system<"
+      ],
+      [
         ">Lichtshow<",
         ">Light show<"
       ],
@@ -3452,28 +3460,8 @@
         ">90s vintage lighting<"
       ],
       [
-        ">Theaterlicht voor product of spreker<",
-        ">Theatre lighting for product or speaker<"
-      ],
-      [
-        ">Videoschermen en presentatie<",
-        ">Video screens and presentation<"
-      ],
-      [
         ">Ledschermen met VJ<",
         ">LED screens with a live VJ<"
-      ],
-      [
-        ">Online uitzending<",
-        ">Online broadcast<"
-      ],
-      [
-        ">Artiesten<",
-        ">Artists<"
-      ],
-      [
-        ">Dj<",
-        ">DJ<"
       ],
       [
         ">Vocalist, saxofonist of percussionist<",
@@ -3484,20 +3472,12 @@
         ">Scent DJ<"
       ],
       [
-        ">Playlist op maat<",
-        ">Custom playlist<"
-      ],
-      [
         ">Partyfotograaf<",
         ">Party photographer<"
       ],
       [
-        ">Diensten<",
-        ">Services<"
-      ],
-      [
-        ">Wij kunnen je ook helpen met de communicatie rondom je event. Vink aan wat je interessant vindt.<",
-        ">We can also help with the communication around your event. Tick what interests you.<"
+        ">Feest met dansvloer<",
+        ">Party with a dance floor<"
       ],
       [
         ">Communicatieadvies<",
@@ -3520,8 +3500,52 @@
         ">Aftermovie<"
       ],
       [
-        ">Wil je verder nog iets kwijt?<",
-        ">Anything else you want to tell us?<"
+        ">Hulp bij de communicatie rondom je event<",
+        ">Help with the communication around your event<"
+      ],
+      [
+        ">Iets anders nodig? Namelijk<",
+        ">Need something else? Namely<"
+      ],
+      [
+        ">← Vorige<",
+        ">← Back<"
+      ],
+      [
+        ">Je programma<",
+        ">Your programme<"
+      ],
+      [
+        ">Vertel iets over je event<",
+        ">Tell us about your event<"
+      ],
+      [
+        ">Bijvoorbeeld de doelgroep, het concept, de gewenste beleving of de ruimte. Mag, hoeft niet.<",
+        ">For example the audience, the concept, the experience you are after or the room. Optional.<"
+      ],
+      [
+        ">Budget en je verhaal<",
+        ">Budget and your story<"
+      ],
+      [
+        ">Velden met * zijn nodig om contact op te nemen.<",
+        ">Fields marked * are needed to get in touch.<"
+      ],
+      [
+        ">Naam<",
+        ">Name<"
+      ],
+      [
+        ">Organisatie<",
+        ">Organisation<"
+      ],
+      [
+        ">E-mail<",
+        ">Email<"
+      ],
+      [
+        ">Telefoonnummer<",
+        ">Phone number<"
       ],
       [
         ">We gebruiken je gegevens alleen om je aanvraag te beantwoorden.<",
@@ -3532,52 +3556,44 @@
         ">Send your request<"
       ],
       [
-        ">Wat heb je nodig?<",
-        ">What do you need?<"
+        ">Heb je foto&#x27;s van de ruimte? Mail ze aan<",
+        ">Do you have photos of the room? Email them to<"
       ],
       [
-        ">Bijna klaar, nog niet verstuurd<",
-        ">Almost done, not sent yet<"
+        ">Bedankt voor je aanvraag! We gaan ermee aan de slag. Je hoort meestal binnen 1 werkdag van ons.<",
+        ">Thank you for your request! We are on it. You will usually hear from us within 1 working day.<"
       ],
       [
-        ">Met een paar vragen over je event kunnen we het gesprek goed voorbereiden.<",
-        ">A few questions about your event help us prepare the conversation.<"
-      ],
-      [
-        ">Liever eerst praten? Dat kan ook.<",
-        ">Rather talk first? That works too.<"
-      ],
-      [
-        ">Ja, ik vertel meer over mijn event<",
-        ">Yes, I&#x27;ll tell you more about my event<"
-      ],
-      [
-        ">Nog twee korte stappen<",
-        ">Two more short steps<"
-      ],
-      [
-        ">Nu versturen<",
-        ">Send now<"
-      ],
-      [
-        ">De rest bespreken we in het gesprek<",
-        ">We&#x27;ll discuss the rest in the conversation<"
-      ],
-      [
-        ">Vertel over je event<",
-        ">Tell us about your event<"
-      ],
-      [
-        "=\"Dank je. We nemen contact met je op om het gesprek in te plannen, meestal dezelfde werkdag.\"",
-        "=\"Thank you. We will get in touch to schedule the conversation, usually the same working day.\""
+        ">Bedankt voor je aanvraag! We nemen contact met je op om de call in te plannen, meestal binnen 1 werkdag.<",
+        ">Thank you for your request! We will get in touch to schedule the call, usually within 1 working day.<"
       ],
       [
         "=\"Versturen lukte niet. Mail ons op maarten@hear.nl of bel +31 6 24560220.\"",
         "=\"Sending failed. Email us at maarten@hear.nl or call +31 6 24560220.\""
       ],
       [
-        "=\"Vraag licht, geluid, dj of advies aan voor je event. Vul in wat je al weet; we bellen je terug.\"",
-        "=\"Request light, sound, a DJ or advice for your event. Fill in what you already know; we call you back.\""
+        "=\"Voor een voorstel hebben we nog nodig:\"",
+        "=\"For a proposal we still need:\""
+      ],
+      [
+        "=\"de datum\"",
+        "=\"the date\""
+      ],
+      [
+        "=\"de locatie\"",
+        "=\"the venue\""
+      ],
+      [
+        "=\"het aantal gasten\"",
+        "=\"the number of guests\""
+      ],
+      [
+        "=\"minstens één keuze bij je programma\"",
+        "=\"at least one choice in your programme\""
+      ],
+      [
+        "=\"Vraag licht, geluid, dj of advies aan voor je event. Kies zelf: een vrijblijvend voorstel of een call.\"",
+        "=\"Request light, sound, a DJ or advice for your event. You choose: a no-obligation proposal or a call.\""
       ]
     ],
     "communicatieadvies.html": [

@@ -36,7 +36,7 @@ home = f"""<!doctype html>
 <link rel="stylesheet" href="home.css"><link rel="stylesheet" href="doelgroep.css"><link rel="stylesheet" href="proef.css">
 </head>
 <body class="home proef">
-<a class="proef-plan" href="aanvraag.html">Plan een gesprek</a>
+<a class="proef-plan" href="aanvraag.html">Vertel over je event</a>
 <main>
 {hero}
 <nav class="kamers" aria-label="Kies een onderdeel">{links}</nav>
@@ -48,7 +48,7 @@ home = f"""<!doctype html>
 
 BALK = ('<header class="kamer-top"><a class="kamer-terug" href="/proef-home.html"><i aria-hidden="true">←</i><span>Terug naar home</span></a>'
         '<a class="kamer-merk" href="/proef-home.html" aria-label="HEAR, terug naar home"><img src="/img/logo-white.png" alt="HEAR"></a>'
-        '<a class="proef-plan" href="/aanvraag.html">Plan een gesprek</a></header>')
+        '<a class="proef-plan" href="/aanvraag.html">Vertel over je event</a></header>')
 for bron, doel, naam in KAMERS:
     t = (site / bron).read_text(encoding="utf-8")
     m = pak(t, r'<header class="top">.*?</header>\s*<div class="menu" id="menu" hidden>.*?</div>\s*<script>.*?</script>', bron)
