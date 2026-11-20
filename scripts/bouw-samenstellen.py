@@ -29,7 +29,7 @@ def e(t):
 # geluid: prijs per grootte (intiem, midsize, groot). Maarten gaf 750 / 1000 / 1250; de drie soorten houden hun onderlinge verschil van 100.
 GROOTTES = ["intiem (tot 200 gasten)", "midsize (200 tot 500 gasten)", "groot (500 tot 1.000 gasten)"]
 GELUID = [
-    ("Geluid voor spraak", "Met mengtafel en tot vier handmicrofoons", (650, 900, 1150)),
+    ("Geluid voor spraak", "Met handmicrofoons of reversmicrofoons", (650, 900, 1150)),
     ("Geluid voor muziek", "Met dj-booth en dj-gear", (750, 1000, 1250)),
     ("Geluid voor muziek en spraak", "Voor een event met sprekers en een dj", (850, 1100, 1350)),
 ]
@@ -95,7 +95,6 @@ def pagina(prijzen):
 <fieldset class="cs-stap"><legend class="lp-strip">Kies de bouwstenen van je event</legend>
 <h3 class="cs-groep">Geluid</h3><p class="cs-intro">Hoogwaardig geluid, afgestemd op de ruimte.</p>
 <div class="cs-blokken">{geluid}</div>
-<p class="cs-noot">Meer dan vier sprekers of reversmicrofoons, bijvoorbeeld voor een rondetafelgesprek: op aanvraag.</p>
 <h3 class="cs-groep">Personeel</h3>
 <div class="cs-blokken">{personeel}</div>
 <p class="cs-noot">Het aantal uren kies je bovenaan. Bij alleen muziek regelt de dj het geluid zelf.</p>
