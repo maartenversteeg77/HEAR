@@ -33,7 +33,7 @@ GELUID = [
 PERSONEEL = [
     ("Geluidsman", "Bij spraakversterking voor een seminar of workshop", 400),
     ("Dj", "Voor je cocktail of feestavond", 600),
-    ("Dj en geluid voor sprekers", "Voor een event met sprekers en een dj", 800),
+    ("Geluidsman en daarna dj", "Voor een event met sprekers en een dj", 800),
 ]
 LICHT = [
     ("Sfeerlicht", "De ruimte in kleur"),

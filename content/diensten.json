@@ -18,6 +18,11 @@
               "regel": "Ovaal meubel van twee meter, verlichte voorkant"
             },
             {
+              "beeld": "img/diensten/dj-booth-led.jpg",
+              "naam": "Dj-booth in led",
+              "regel": "Met vijf zuilen en live VJ. Op aanvraag via een partner in ons netwerk"
+            },
+            {
               "beeld": "img/diensten/cdj-3000x.jpg",
               "naam": "Pioneer DJ CDJ-3000X",
               "regel": "Industry standard mediaplayer. Met extra groot scherm voor snelle trackselectie",
@@ -60,7 +65,7 @@
           "rijen": [
             3,
             3,
-            2
+            3
           ]
         },
         {
@@ -320,6 +325,11 @@
                 "tekst": "Bekijk de Infinity iFX-640",
                 "href": "https://vimeo.com/568318553"
               }
+            },
+            {
+              "beeld": "img/diensten/dj-booth-led.jpg",
+              "naam": "Dj-booth in led",
+              "regel": "Met vijf zuilen en live VJ. Op aanvraag via een partner in ons netwerk"
             }
           ]
         },
@@ -449,6 +459,15 @@
           "label": "Vocalisten en instrumentalisten",
           "tekst": [
             "Een saxofonist die meespeelt met de dj of een vocalist of percussionist. Live muziek bij een dj-set geeft een event iets dat mensen onthouden. Ook hier werk ik rechtstreeks of via een artiestenbureau."
+          ]
+        },
+        {
+          "label": "Geuren-dj",
+          "kop": "Voor een multi-sensory ervaring",
+          "beeld": "img/diensten/geuren-dj.jpg",
+          "beeld_alt": "Een vrouw blaast een wolk geurende nevel uit een glazen kolf",
+          "tekst": [
+            "Twee dames brouwen zoete, frisse en warme geuren en verspreiden die in de zaal. Ze lopen (desgewenst) ook door de zaal om gasten te laten ruiken."
           ]
         },
         {

@@ -2054,6 +2054,18 @@
       [
         "name=\"description\" content=\"Een dj die binnenkomt en meteen aan het werk kan: dat is het idee achter onze booth. Rider-approved spelers, mixer en monitoring staan klaar, met ruimte om\"",
         "name=\"description\" content=\"A DJ who walks in and can get straight to work: that&#x27;s the idea behind our booth. Rider-approved players, mixer and monitoring are ready, with room to\""
+      ],
+      [
+        "alt=\"Dj-booth in led\"",
+        "alt=\"LED DJ booth\""
+      ],
+      [
+        ">Dj-booth in led<",
+        ">LED DJ booth<"
+      ],
+      [
+        ">Met vijf zuilen en live VJ. Op aanvraag via een partner in ons netwerk<",
+        ">With five LED columns and a live VJ. Available on request through a partner in our network<"
       ]
     ],
     "high-end-audio.html": [
@@ -2396,6 +2408,18 @@
       [
         ">Dansvloerverlichting<",
         ">Dancefloor lighting<"
+      ],
+      [
+        "alt=\"Dj-booth in led\"",
+        "alt=\"LED DJ booth\""
+      ],
+      [
+        ">Dj-booth in led<",
+        ">LED DJ booth<"
+      ],
+      [
+        ">Met vijf zuilen en live VJ. Op aanvraag via een partner in ons netwerk<",
+        ">With five LED columns and a live VJ. Available on request through a partner in our network<"
       ]
     ],
     "vintage-lighting.html": [
@@ -2630,6 +2654,22 @@
       [
         "<p>Geen dj nodig, maar wel een fijne playlist? <a href=\"custom-dj-mix.html#coffee-cuts\">Kijk dan eens bij Coffee cuts →</a></p>",
         "<p>No DJ needed, but a good playlist would be nice? <a href=\"custom-dj-mix.html#coffee-cuts\">Take a look at Coffee cuts →</a></p>"
+      ],
+      [
+        ">GEUREN-DJ<",
+        ">SCENT DJ<"
+      ],
+      [
+        ">Voor een multi-sensory ervaring<",
+        ">For a multi-sensory experience<"
+      ],
+      [
+        "alt=\"Een vrouw blaast een wolk geurende nevel uit een glazen kolf\"",
+        "alt=\"A woman blows a cloud of scented mist from a glass flask\""
+      ],
+      [
+        ">Twee dames brouwen zoete, frisse en warme geuren en verspreiden die in de zaal. Ze lopen (desgewenst) ook door de zaal om gasten te laten ruiken.<",
+        ">Two women blend sweet, fresh and warm scents and release them into the room. If you like, they also walk through the crowd so guests can smell them up close.<"
       ]
     ],
     "custom-dj-mix.html": [
