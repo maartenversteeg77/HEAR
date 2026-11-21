@@ -553,3 +553,5 @@ h2.strip-kop a:hover,h2.strip-kop a:focus-visible{text-decoration:underline;text
   .pm-groepen .pl-tab{text-align:center;padding:13px 8px;font-size:11px;letter-spacing:.08em;text-wrap:balance}
   .pm-tab[hidden]{display:none}
 }
+/* Mobiel productblok (21 nov): elk product en elke dienst een eigen tab; de tabs vullen de regel en breken netjes af */
+@media (max-width:900px){.pm-tabs{display:flex;flex-wrap:wrap;gap:8px}.pm-tabs[hidden]{display:none}.pm-tab{flex:1 1 auto;white-space:nowrap;padding:12px 14px;font-size:13px}}
