@@ -3240,14 +3240,6 @@
         "<html lang=\"en\">"
       ],
       [
-        ">Vertel in een paar stappen wat je nodig hebt. Daarna kies je: een vrijblijvend voorstel of een call.<",
-        ">Tell us what you need in a few steps. Then choose: a no-obligation proposal or a call.<"
-      ],
-      [
-        "Liever meteen bellen of appen? <a class=\"heel\" href=\"tel:+31624560220\">+31 6 24560220</a>.<br>Mailen kan ook: <a href=\"mailto:maarten@hear.nl\">maarten@hear.nl</a>.",
-        "Rather call or message straight away? <a class=\"heel\" href=\"tel:+31624560220\">+31 6 24560220</a>.<br>Email works too: <a href=\"mailto:maarten@hear.nl\">maarten@hear.nl</a>."
-      ],
-      [
         ">Richtbudget voor licht, geluid en muziek<",
         ">Indicative budget for light, sound and music<"
       ],
@@ -3590,6 +3582,14 @@
       [
         ">We nemen contact met je op om de call in te plannen, meestal binnen 1 werkdag.<",
         ">We will get in touch to schedule the call, usually within 1 working day.<"
+      ],
+      [
+        ">Korte vraag?<",
+        ">Quick question?<"
+      ],
+      [
+        ">Mail<",
+        ">Email<"
       ],
       [
         "=\"Nog niets gekozen.\"",

@@ -803,3 +803,10 @@ details.extras .extras-opties{padding:2px 18px 18px;margin-top:0}
 @media (max-width:1040px){.samenvatting{display:none}.aanvraag{padding-bottom:clamp(60px,8vw,110px)}}
 /* Aanvraagformulier (21 nov): de kop van het zwarte vlak is een zin die doorloopt in de keuzes */
 .samenvatting h2{font-size:24px;line-height:1.2;text-wrap:balance}
+/* Aanvraagformulier (21 nov): geen intro meer; onderaan stap 1 'Korte vraag?' met WhatsApp en Mail */
+.kortevraag{display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px;margin-top:clamp(34px,4vw,52px);padding-top:22px;border-top:1px solid var(--lijn);max-width:760px}
+.kortevraag[hidden]{display:none}
+.kortevraag span{font:400 16px/1.4 var(--tekst);color:var(--tekstgrijs);margin-right:6px}
+.kv-knop{display:inline-block;font:500 14px/1 var(--tekst);color:var(--zwart);text-decoration:none;border:1px solid var(--zwart);border-radius:999px;padding:11px 20px 10px}
+.kv-knop:hover,.kv-knop:focus-visible{background:var(--zwart);color:var(--wit)}
+.aanvraag-kolommen{padding-top:clamp(36px,5vw,64px)}

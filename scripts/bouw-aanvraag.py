@@ -24,10 +24,7 @@ TITEL = "Aanvraag"
 KOP = "Vertel over je event"
 MAIL = '<a href="mailto:maarten@hear.nl">maarten@hear.nl</a>'
 TEL = '<a class="heel" href="tel:+31624560220">+31 6 24560220</a>'
-INTRO_HTML = "Vertel in een paar stappen wat je nodig hebt. Daarna kies je: een vrijblijvend voorstel of een call."
-paren.append((">" + INTRO_HTML + "<", ">Tell us what you need in a few steps. Then choose: a no-obligation proposal or a call.<"))
-INTRO2_HTML = "Liever meteen bellen of appen? " + TEL + ".<br>Mailen kan ook: " + MAIL + "."
-paren.append((INTRO2_HTML, "Rather call or message straight away? " + TEL + ".<br>Email works too: " + MAIL + "."))
+WA = "https://wa.me/31624560220?text=Hoi%20Maarten%2C%20ik%20heb%20een%20vraag%20over%20HEAR%20voor%20mijn%20event."
 
 def veld(naam, nl, en, type="text", verplicht=False, extra=""):
     req = " required" if verplicht else ""
@@ -191,12 +188,12 @@ form = f"""<form class="aanvraag" method="post" action="/api/aanvraag" id="aanvr
 {stap4}
 {stap5}
 <p class="formmelding" id="melding" hidden></p>
+<div class="kortevraag" id="kortevraag"><span>{T("Korte vraag?", "Quick question?")}</span><a class="kv-knop" href="{WA}">WhatsApp</a><a class="kv-knop" href="mailto:maarten@hear.nl">{T("Mail", "Email")}</a></div>
 {dank}
 </form>"""
 
 main = f"""<main class="wrap">
 <section class="casehead"><a class="crumb" href="index.html"><span class="sectie">HEAR</span></a><h1 class="kernzin">{e(KOP)}</h1></section>
-<section class="quick quick-breed" id="intro"><p>{INTRO_HTML}</p><p class="quick-licht">{INTRO2_HTML}</p></section>
 <div class="aanvraag-kolommen">
 {form}
 <aside class="samenvatting" id="samenvatting" aria-live="polite" data-leeg="{A("Nog niets gekozen.", "Nothing chosen yet.")}" data-gasten="{A(" gasten", " guests")}" data-budget="{A("Richtbudget", "Indicative budget")}" data-onbekend="{A("Weet ik nog niet", "I don\'t know yet")}" data-event="{A("Je event", "Your event")}" data-programma="{A("Je programma", "Your programme")}" data-anders="{A("Iets anders nodig", "Something else")}" data-toelichting="{A("Toelichting", "Details")}" data-verder="{A("Hoe verder", "What next")}" data-gegevens="{A("Je gegevens", "Your details")}" data-wijzig="{A("Wijzig", "Change")}"><h2 id="sv-kop" data-voorstel="{A("Ik ontvang graag een vrijblijvend voorstel voor", "I would like a no-obligation proposal for")}" data-call="{A("Ik bespreek graag in een call", "I would like to discuss in a call")}">{T("Ik ontvang graag een vrijblijvend voorstel voor", "I would like a no-obligation proposal for")}</h2><div id="sv-inhoud"></div></aside>
@@ -288,13 +285,13 @@ main = f"""<main class="wrap">
   function ontbreekt(){{var L=f.dataset,u=[];if(!document.getElementById('v-datum').value)u.push(L.mDatum);if(!document.getElementById('v-locatie').value.trim())u.push(L.mLocatie);if(!document.getElementById('v-gasten').value)u.push(L.mGasten);
     var stap=u.length?'1':'';if(!f.querySelector('[name=diensten]:checked:not(:disabled),[name=communicatie]:checked:not(:disabled)')&&![].some.call(f.querySelectorAll('[name=diensten_anders]'),function(i){{return !i.disabled&&i.value.trim()}})){{u.push(L.mKeuze);stap=stap||'2'}}if(!budgetAan&&!bo.checked){{u.push(L.mBudget);stap=stap||'3'}}return {{lijst:u,stap:stap}}}}
   var st=f.querySelectorAll('.stap');f.classList.add('in-stappen');
-  function ga(n,geschiedenis){{n=String(n);if(geschiedenis!==false&&history.pushState){{var st0=history.state&&history.state.stap;if(st0!==n)history.pushState({{stap:n}},'','#stap-'+n)}}var doel;st.forEach(function(x){{var aan=x.dataset.stap===n;x.hidden=!aan;if(aan)doel=x}});sv.hidden=n==='5';if(n==='5')controle();document.querySelector('.quick-licht').hidden=n!=='1';var h=doel.querySelector('h2');window.scrollTo({{top:f.getBoundingClientRect().top+window.scrollY-120,behavior:'smooth'}});h&&h.focus&&h.setAttribute('tabindex','-1');h&&h.focus({{preventScroll:true}})}}
+  function ga(n,geschiedenis){{n=String(n);if(geschiedenis!==false&&history.pushState){{var st0=history.state&&history.state.stap;if(st0!==n)history.pushState({{stap:n}},'','#stap-'+n)}}var doel;st.forEach(function(x){{var aan=x.dataset.stap===n;x.hidden=!aan;if(aan)doel=x}});sv.hidden=n==='5';if(n==='5')controle();document.getElementById('kortevraag').hidden=n!=='1';var h=doel.querySelector('h2');window.scrollTo({{top:f.getBoundingClientRect().top+window.scrollY-120,behavior:'smooth'}});h&&h.focus&&h.setAttribute('tabindex','-1');h&&h.focus({{preventScroll:true}})}}
   f.querySelectorAll('.stapknop').forEach(function(k){{k.addEventListener('click',function(){{var n=k.dataset.naar,huidig=k.closest('.stap');if(!n)return;
     if(k.classList.contains('vooruit')){{var ok=true;huidig.querySelectorAll('input,select,textarea').forEach(function(i){{if(ok&&!i.checkValidity()){{i.reportValidity();ok=false}}}});if(!ok)return;
       if(huidig.dataset.stap==='4'&&gekozen()==='voorstel'){{var o=ontbreekt();if(o.lijst.length){{mt.textContent=f.dataset.mKop+' '+o.lijst.join(', ')+'.';document.getElementById('mist-knop').dataset.naar=o.stap;mist.hidden=false;return}}}}}}ga(n)}})}});
   ct.addEventListener('click',function(ev){{var k=ev.target.closest&&ev.target.closest('.ct-wijzig');if(k)ga(k.dataset.naar)}});
   if(gd){{var nu=new Date();gd.min=nu.getFullYear()+'-'+String(nu.getMonth()+1).padStart(2,'0')+'-'+String(nu.getDate()).padStart(2,'0')}}
-  function bedankt(r){{st.forEach(function(x){{x.hidden=true}});m.hidden=true;sv.hidden=true;document.getElementById('intro').hidden=true;var d=document.getElementById(r==='call'?'dank-call':'dank-voorstel');d.hidden=false;window.scrollTo({{top:f.getBoundingClientRect().top+window.scrollY-120,behavior:'smooth'}})}}
+  function bedankt(r){{st.forEach(function(x){{x.hidden=true}});m.hidden=true;sv.hidden=true;document.getElementById('kortevraag').hidden=true;var d=document.getElementById(r==='call'?'dank-call':'dank-voorstel');d.hidden=false;window.scrollTo({{top:f.getBoundingClientRect().top+window.scrollY-120,behavior:'smooth'}})}}
   var q=location.search;
   if(/verzonden=1/.test(q)){{bedankt(/route=call/.test(q)?'call':'voorstel')}}
   else{{if(history.replaceState)history.replaceState({{stap:'1'}},'',location.pathname+location.search);ga(1,false);if(/fout=1/.test(q)){{m.hidden=false;m.textContent=f.dataset.fout;m.className='formmelding fout'}}}}
