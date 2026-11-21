@@ -103,11 +103,11 @@ def programma():
     reeds = f'<em class="reeds-tag">{T("reeds gekozen", "already chosen")}</em>'
     # dj, booth en playlist gelden per programmadeel (dj op het feest, playlist bij de borrel kan) en lopen dus niet gelijk;
     # binnen één deel sluiten dj en playlist elkaar uit
-    per_deel = {DJ[0]: "dj", BOOTH[0]: "", PLAYLIST[0]: "playlist"}
+    per_deel = {DJ[0]: "dj", BOOTH[0]: "booth", PLAYLIST[0]: "playlist"}
     def vink(naam, inl, ien):
         g = telling.get(inl, 0) > 1 and inl not in per_deel
         if per_deel.get(inl):
-            return f'<label class="vink"><input type="checkbox" name="{naam}" value="{e(inl)}" data-of="{per_deel[inl]}"><span>{T(inl, ien)}</span></label>'
+            return f'<label class="vink"><input type="checkbox" name="{naam}" value="{e(inl)}" data-of="{per_deel[inl]}"><span>{T(inl, ien)}{reeds}</span></label>'
         return f'<label class="vink"><input type="checkbox" name="{naam}" value="{e(inl)}"{" data-gedeeld" if g else ""}><span>{T(inl, ien)}{reeds if g else ""}</span></label>'
     comm_namen = {nl for nl, _ in COMMUNICATIE}
     blokken = ""
@@ -221,8 +221,18 @@ main = f"""<main class="wrap">
   function gedeeld(){{[].forEach.call(f.querySelectorAll('[data-gedeeld]'),function(i){{var e=eigenaar[i.value];i.closest('label').classList.toggle('reeds',i.checked&&!!e&&e!==i&&!e.disabled&&e.checked)}})}}
   [].forEach.call(f.querySelectorAll('[data-gedeeld]'),function(i){{i.addEventListener('change',function(){{if(i.checked)eigenaar[i.value]=i;else delete eigenaar[i.value];
     [].forEach.call(f.querySelectorAll('[data-gedeeld]'),function(x){{if(x!==i&&x.value===i.value)x.checked=i.checked}});gedeeld()}})}});
-  /* dj of playlist: binnen één programmadeel kan maar één van de twee */
-  [].forEach.call(f.querySelectorAll('[data-of]'),function(i){{i.addEventListener('change',function(){{if(!i.checked)return;[].forEach.call(i.closest('.poort-opties').querySelectorAll('[data-of]'),function(x){{if(x!==i&&x.dataset.of!==i.dataset.of)x.checked=false}})}})}});
+  /* dj, booth en playlist: binnen één programmadeel kan dj óf playlist; een keuze loopt mee naar de andere delen ('reeds gekozen'),
+     behalve naar een deel waar al het andere is gekozen. Tussen delen zetten ze elkaar niet uit. */
+  var OF=[].slice.call(f.querySelectorAll('[data-of]'));
+  function tegen(k){{return k==='dj'?'playlist':k==='playlist'?'dj':''}}
+  function heeft(blok,k){{return !!k&&[].some.call(blok.querySelectorAll('[data-of="'+k+'"]'),function(x){{return x.checked}})}}
+  function ofTags(){{OF.forEach(function(x){{x.closest('label').classList.toggle('reeds',x.checked&&x.dataset.auto==='1')}})}}
+  OF.forEach(function(i){{i.addEventListener('change',function(){{var k=i.dataset.of,blok=i.closest('.poort-opties'),wasAuto=i.dataset.auto==='1';i.dataset.auto='';
+    if(i.checked){{
+      [].forEach.call(blok.querySelectorAll('[data-of]'),function(x){{if(x===i)return;if(x.dataset.of===tegen(k)||(k==='playlist'&&x.dataset.of==='booth'&&x.dataset.auto==='1')){{var eigen=x.checked&&x.dataset.auto!=='1';x.checked=false;x.dataset.auto='';if(eigen)OF.forEach(function(y){{if(y!==x&&y.value===x.value&&y.dataset.auto==='1'){{y.checked=false;y.dataset.auto=''}}}})}}}});
+      OF.forEach(function(x){{if(x===i||x.value!==i.value||x.checked)return;var b2=x.closest('.poort-opties');if(heeft(b2,tegen(k))||(k==='booth'&&heeft(b2,'playlist')))return;x.checked=true;x.dataset.auto='1'}});
+    }}else if(!wasAuto){{OF.forEach(function(x){{if(x!==i&&x.value===i.value&&x.dataset.auto==='1'){{x.checked=false;x.dataset.auto=''}}}})}}
+    ofTags()}})}});
   /* samenvatting rechts: wat er tot nu toe is ingevuld */
   var sv=document.getElementById('samenvatting'),svi=document.getElementById('sv-inhoud');
   function esc(t){{var d=document.createElement('div');d.textContent=t;return d.innerHTML}}
@@ -295,7 +305,7 @@ main = f"""<main class="wrap">
     voorMail();
     if(!window.fetch)return;ev.preventDefault();var b={{set disabled(v){{[].forEach.call(f.querySelectorAll('button[type=submit]'),function(x){{x.disabled=v}})}}}};b.disabled=true;
     fetch(f.action,{{method:'POST',body:new FormData(f),headers:{{'Accept':'application/json'}}}}).then(function(x){{return x.json()}}).then(function(x){{
-      if(x.ok){{f.reset();budgetAan=false;toon();poorten();bedankt(r)}}else{{m.hidden=false;m.textContent=f.dataset.fout;m.className='formmelding fout';b.disabled=false}}
+      if(x.ok){{f.reset();budgetAan=false;toon();poorten();OF.forEach(function(x){{x.dataset.auto=''}});bedankt(r)}}else{{m.hidden=false;m.textContent=f.dataset.fout;m.className='formmelding fout';b.disabled=false}}
     }}).catch(function(){{m.hidden=false;m.textContent=f.dataset.fout;m.className='formmelding fout';b.disabled=false}});
   }});
 }})();
