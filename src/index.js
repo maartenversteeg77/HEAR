@@ -25,6 +25,7 @@ async function aanvraag(request, env) {
   const d = {};
   for (const [k] of VELDEN) d[k] = (k === "diensten" || k === "diensten_anders" || k === "programma" || k === "communicatie" || k === "cc_wens" || k === "licht" || k === "scherm") ? [...new Set(fd.getAll(k).map(schoon).filter(Boolean))].join(", ") : schoon(fd.get(k));
   if (fd.get("budget_onbekend")) d.budget = "weet ik nog niet";
+  else if (fd.has("budget_ingevuld") && !schoon(fd.get("budget_ingevuld"))) d.budget = fd.has("budget_van") ? "niet ingevuld" : ""; // schuif niet aangeraakt: de beginstand is geen antwoord
   else if (fd.get("budget_van") || fd.get("budget_tot")) d.budget = `€ ${schoon(fd.get("budget_van"))} – € ${schoon(fd.get("budget_tot"))}`;
   const hoofdformulier = !schoon(fd.get("bron")); // aanvraagformulier: naam, e-mail en telefoon verplicht; bij een call ook het contactmoment
   if (hoofdformulier && d.route === "voorstel") { d.gesprek = ""; d.gesprek_datum = ""; d.gesprek_dagdeel = ""; }
@@ -39,7 +40,7 @@ async function aanvraag(request, env) {
   const eur = (v) => Number(v).toLocaleString("nl-NL");
   for (const k of ["route", "gesprek", "soort"]) if (LABEL[d[k]]) d[k] = LABEL[d[k]];
   for (const k of ["gesprek_datum", "datum"]) if (d[k]) d[k] = datum(d[k]);
-  if (!fd.get("budget_onbekend") && fd.get("budget_van")) d.budget = `€ ${eur(fd.get("budget_van"))} – € ${eur(fd.get("budget_tot"))}${+fd.get("budget_tot") >= 25000 ? "+" : ""}`;
+  if (!fd.get("budget_onbekend") && fd.get("budget_van") && !(fd.has("budget_ingevuld") && !schoon(fd.get("budget_ingevuld")))) d.budget = `€ ${eur(fd.get("budget_van"))} – € ${eur(fd.get("budget_tot"))}${+fd.get("budget_tot") >= 25000 ? "+" : ""}`;
   const regels = VELDEN.filter(([k]) => d[k]).map(([k, l]) => `${l}: ${d[k]}`).join("\n");
   const bron = schoon(fd.get("bron"));
   const soortMail = bron === "Coffee cuts" ? "Coffee cuts-aanvraag" : /maartenversteeg/i.test(bron) ? "DJ-boeking via maartenversteeg.nl" : "Aanvraag via hear.nl";

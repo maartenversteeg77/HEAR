@@ -3252,8 +3252,12 @@
         ">Indicative budget for light, sound and music<"
       ],
       [
-        ">Een bandbreedte is genoeg.<",
-        ">A range is enough.<"
+        ">Schuif naar je richtbudget. Dan zoeken we de meeste beleving binnen die kaders.<",
+        ">Slide to your indicative budget. We will then look for the most impact within those limits.<"
+      ],
+      [
+        "=\"Nog niet ingevuld\"",
+        "=\"Not filled in yet\""
       ],
       [
         "=\"Van\"",
@@ -3618,6 +3622,10 @@
       [
         "=\"het aantal gasten\"",
         "=\"the number of guests\""
+      ],
+      [
+        "=\"je richtbudget (of vink aan dat je het nog niet weet)\"",
+        "=\"your indicative budget (or tick that you don&#x27;t know yet)\""
       ],
       [
         "=\"minstens één keuze bij je programma\"",

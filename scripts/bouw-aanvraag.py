@@ -121,8 +121,8 @@ def programma():
             f'<div class="weetniet-rij">{weetniet}</div>')
 
 budget = (f'<fieldset class="budget"><legend>{T("Richtbudget voor licht, geluid en muziek", "Indicative budget for light, sound and music")}</legend>'
-          f'<p class="uitleg">{T("Een bandbreedte is genoeg.", "A range is enough.")}</p>'
-          f'<div class="slider" id="budget"><input type="range" name="budget_van" min="1000" max="25000" step="500" value="2500" aria-label="{A("Van", "From")}">'
+          f'<p class="uitleg">{T("Schuif naar je richtbudget. Dan zoeken we de meeste beleving binnen die kaders.", "Slide to your indicative budget. We will then look for the most impact within those limits.")}</p>'
+          f'<div class="slider leeg" id="budget" data-leeg="{A("Nog niet ingevuld", "Not filled in yet")}"><input type="hidden" name="budget_ingevuld" value=""><input type="range" name="budget_van" min="1000" max="25000" step="500" value="2500" aria-label="{A("Van", "From")}">'
           f'<input type="range" name="budget_tot" min="1000" max="25000" step="500" value="7500" aria-label="{A("Tot", "To")}"><output id="budget_uit"></output></div>'
           f'<label class="vink"><input type="checkbox" name="budget_onbekend" value="ja"><span>{T("Weet ik nog niet", "I don\'t know yet")}</span></label></fieldset>')
 
@@ -194,11 +194,13 @@ main = f"""<main class="wrap">
 <script>
 (function(){{
   var f=document.getElementById('aanvraag'),m=document.getElementById('melding');
-  var s=document.getElementById('budget');if(s){{var a=s.querySelectorAll('input'),o=document.getElementById('budget_uit');
-    function eur(n){{return '€ '+Number(n).toLocaleString('nl-NL')}}
-    function toon(){{var v=+a[0].value,t=+a[1].value;if(v>t){{if(this===a[0])a[1].value=v;else a[0].value=t;v=+a[0].value;t=+a[1].value}}o.textContent=eur(v)+' – '+eur(t)+(t>=25000?'+':'')}}
-    a[0].addEventListener('input',toon);a[1].addEventListener('input',toon);toon()}}
-  
+  /* budget: zolang de schuif niet is aangeraakt, telt hij niet als antwoord */
+  var s=document.getElementById('budget'),a=s.querySelectorAll('input[type=range]'),o=document.getElementById('budget_uit'),bi=f.querySelector('[name=budget_ingevuld]'),bo=f.querySelector('[name=budget_onbekend]'),budgetAan=false;
+  function eur(n){{return '€ '+Number(n).toLocaleString('nl-NL')}}
+  function toon(){{var v=+a[0].value,t=+a[1].value;if(v>t){{if(this===a[0])a[1].value=v;else a[0].value=t;v=+a[0].value;t=+a[1].value}}
+    s.classList.toggle('leeg',!budgetAan||bo.checked);bi.value=budgetAan?'ja':'';o.textContent=budgetAan&&!bo.checked?eur(v)+' – '+eur(t)+(t>=25000?'+':''):(bo.checked?'':s.dataset.leeg)}}
+  function raak(){{budgetAan=true;bo.checked=false;toon.call(this)}}
+  [].forEach.call(a,function(x){{x.addEventListener('input',raak);x.addEventListener('pointerdown',raak);x.addEventListener('keydown',raak)}});bo.addEventListener('change',function(){{toon()}});toon();
   /* poortvragen: keuzes tonen als het onderdeel is aangevinkt; verborgen keuzes gaan niet mee */
   function poorten(){{[].forEach.call(f.querySelectorAll('[data-poort]'),function(p){{var b=document.getElementById('poort-'+p.dataset.poort);b.hidden=!p.checked;[].forEach.call(b.querySelectorAll('input'),function(i){{i.disabled=!p.checked}})}})}}
   [].forEach.call(f.querySelectorAll('[data-poort]'),function(p){{p.addEventListener('change',function(){{poorten();gedeeld();samenvat()}})}});poorten();
@@ -208,7 +210,7 @@ main = f"""<main class="wrap">
   [].forEach.call(f.querySelectorAll('[data-gedeeld]'),function(i){{i.addEventListener('change',function(){{if(i.checked)eigenaar[i.value]=i;else delete eigenaar[i.value];
     [].forEach.call(f.querySelectorAll('[data-gedeeld]'),function(x){{if(x!==i&&x.value===i.value)x.checked=i.checked}});gedeeld()}})}});
   /* samenvatting rechts: wat er tot nu toe is ingevuld */
-  var sv=document.getElementById('samenvatting'),svi=document.getElementById('sv-inhoud'),budgetAan=false;
+  var sv=document.getElementById('samenvatting'),svi=document.getElementById('sv-inhoud');
   function esc(t){{var d=document.createElement('div');d.textContent=t;return d.innerHTML}}
   function samenvat(){{var h='',ev=[],L=sv.dataset;
     var dv=document.getElementById('v-datum').value;if(dv){{var dd=new Date(dv+'T12:00:00');ev.push(dd.toLocaleDateString(location.pathname.indexOf('/en/')===0?'en-GB':'nl-NL',{{day:'numeric',month:'long',year:'numeric'}}))}}
@@ -224,7 +226,7 @@ main = f"""<main class="wrap">
     if(f.querySelector('[name=budget_onbekend]').checked)h+='<p class="sv-regel">'+esc(L.onbekend)+'</p>';else if(budgetAan)h+='<p class="sv-regel">'+esc(L.budget)+': '+esc(document.getElementById('budget_uit').textContent)+'</p>';
     var rk=f.querySelector('[name=route]:checked');if(rk)h+='<p class="sv-regel sv-route">'+esc(rk.closest('label').querySelector('strong').textContent)+'</p>';
     sv.classList.toggle('leeg',!h);svi.innerHTML=h||'<p class="sv-leeg">'+esc(L.leeg)+'</p>'}}
-  f.addEventListener('input',function(ev){{if(ev.target.name==='budget_van'||ev.target.name==='budget_tot')budgetAan=true;samenvat()}});f.addEventListener('change',samenvat);samenvat();
+  f.addEventListener('input',samenvat);f.addEventListener('pointerdown',function(){{setTimeout(samenvat,0)}});f.addEventListener('change',samenvat);samenvat();
   /* route: bij een call de velden voor het contactmoment tonen */
   var cv=document.getElementById('callvelden'),gd=document.getElementById('gesprek-datum'),mist=document.getElementById('mist'),mt=document.getElementById('mist-tekst');
   function gekozen(){{var r=f.querySelector('[name=route]:checked');return r?r.value:''}}
@@ -235,7 +237,7 @@ main = f"""<main class="wrap">
   var wn=document.getElementById('weetniet');wn.addEventListener('change',function(){{if(wn.checked){{f.querySelector('[name=route][value=call]').checked=true;route();samenvat()}}}});
   /* voor een voorstel is genoeg invoer nodig */
   function ontbreekt(){{var L=f.dataset,u=[];if(!document.getElementById('v-datum').value)u.push(L.mDatum);if(!document.getElementById('v-locatie').value.trim())u.push(L.mLocatie);if(!document.getElementById('v-gasten').value)u.push(L.mGasten);
-    var stap=u.length?'1':'';if(!f.querySelector('[name=diensten]:checked:not(:disabled),[name=communicatie]:checked:not(:disabled)')&&![].some.call(f.querySelectorAll('[name=diensten_anders]'),function(i){{return !i.disabled&&i.value.trim()}})){{u.push(L.mKeuze);stap=stap||'2'}}return {{lijst:u,stap:stap}}}}
+    var stap=u.length?'1':'';if(!f.querySelector('[name=diensten]:checked:not(:disabled),[name=communicatie]:checked:not(:disabled)')&&![].some.call(f.querySelectorAll('[name=diensten_anders]'),function(i){{return !i.disabled&&i.value.trim()}})){{u.push(L.mKeuze);stap=stap||'2'}}if(!budgetAan&&!bo.checked){{u.push(L.mBudget);stap=stap||'3'}}return {{lijst:u,stap:stap}}}}
   var st=f.querySelectorAll('.stap');f.classList.add('in-stappen');
   function ga(n,geschiedenis){{n=String(n);if(geschiedenis!==false&&history.pushState){{var st0=history.state&&history.state.stap;if(st0!==n)history.pushState({{stap:n}},'','#stap-'+n)}}var doel;st.forEach(function(x){{var aan=x.dataset.stap===n;x.hidden=!aan;if(aan)doel=x}});var h=doel.querySelector('h2');window.scrollTo({{top:f.getBoundingClientRect().top+window.scrollY-120,behavior:'smooth'}});h&&h.focus&&h.setAttribute('tabindex','-1');h&&h.focus({{preventScroll:true}})}}
   f.querySelectorAll('.stapknop').forEach(function(k){{k.addEventListener('click',function(){{var n=k.dataset.naar,huidig=k.closest('.stap');if(!n)return;
@@ -251,7 +253,7 @@ main = f"""<main class="wrap">
     if(r==='voorstel'){{var o=ontbreekt();if(o.lijst.length){{ev.preventDefault();mt.textContent=f.dataset.mKop+' '+o.lijst.join(', ')+'.';document.getElementById('mist-knop').dataset.naar=o.stap;mist.hidden=false;return}}}}
     if(!window.fetch)return;ev.preventDefault();var b={{set disabled(v){{[].forEach.call(f.querySelectorAll('button[type=submit]'),function(x){{x.disabled=v}})}}}};b.disabled=true;
     fetch(f.action,{{method:'POST',body:new FormData(f),headers:{{'Accept':'application/json'}}}}).then(function(x){{return x.json()}}).then(function(x){{
-      if(x.ok){{f.reset();poorten();bedankt(r)}}else{{m.hidden=false;m.textContent=f.dataset.fout;m.className='formmelding fout';b.disabled=false}}
+      if(x.ok){{f.reset();budgetAan=false;toon();poorten();bedankt(r)}}else{{m.hidden=false;m.textContent=f.dataset.fout;m.className='formmelding fout';b.disabled=false}}
     }}).catch(function(){{m.hidden=false;m.textContent=f.dataset.fout;m.className='formmelding fout';b.disabled=false}});
   }});
 }})();
@@ -260,6 +262,7 @@ main = main.replace('<form class="aanvraag"', '<form class="aanvraag"'
     + f' data-fout="{A("Versturen lukte niet. Mail ons op maarten@hear.nl of bel +31 6 24560220.", "Sending failed. Email us at maarten@hear.nl or call +31 6 24560220.")}"'
     + f' data-m-kop="{A("Voor een voorstel hebben we nog nodig:", "For a proposal we still need:")}"'
     + f' data-m-datum="{A("de datum", "the date")}" data-m-locatie="{A("de locatie", "the venue")}" data-m-gasten="{A("het aantal gasten", "the number of guests")}"'
+    + f' data-m-budget="{A("je richtbudget (of vink aan dat je het nog niet weet)", "your indicative budget (or tick that you don\'t know yet)")}"'
     + f' data-m-keuze="{A("minstens één keuze bij je programma", "at least one choice in your programme")}"')
 
 BESCHRIJVING = "Vraag licht, geluid, dj of advies aan voor je event. Kies zelf: een vrijblijvend voorstel of een call."
