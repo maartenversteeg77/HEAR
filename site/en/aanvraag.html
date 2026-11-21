@@ -70,7 +70,7 @@
 <p class="formmelding" id="melding" hidden></p>
 <div class="dank" id="dank-voorstel" hidden><h2>Thank you for your request!</h2><p>We are on it. You will usually hear from us within 1 working day.</p><h3>Do you have photos of the room?</h3><p><span>Email them to</span> <a href="mailto:maarten@hear.nl">maarten@hear.nl</a></p></div><div class="dank" id="dank-call" hidden><h2>Thank you for your request!</h2><p>We will get in touch to schedule the call, usually within 1 working day.</p><h3>Do you have photos of the room?</h3><p><span>Email them to</span> <a href="mailto:maarten@hear.nl">maarten@hear.nl</a></p></div>
 </form>
-<aside class="samenvatting" id="samenvatting" aria-live="polite" data-leeg="Nothing chosen yet." data-gasten=" guests" data-budget="Indicative budget" data-onbekend="I don&#x27;t know yet" data-event="Your event" data-programma="Your programme" data-anders="Something else" data-toelichting="Details" data-verder="What next" data-gegevens="Your details" data-wijzig="Change"><h2>Your request</h2><div id="sv-inhoud"></div></aside>
+<aside class="samenvatting" id="samenvatting" aria-live="polite" data-leeg="Nothing chosen yet." data-gasten=" guests" data-budget="Indicative budget" data-onbekend="I don&#x27;t know yet" data-event="Your event" data-programma="Your programme" data-anders="Something else" data-toelichting="Details" data-verder="What next" data-gegevens="Your details" data-wijzig="Change"><h2 id="sv-kop" data-voorstel="I would like a no-obligation proposal for" data-call="I would like to discuss in a call">I would like a no-obligation proposal for</h2><div id="sv-inhoud"></div></aside>
 </div>
 </main>
 <script>
@@ -128,11 +128,11 @@
     var rk=f.querySelector('[name=route]:checked');if(rk){var ri=[rk.closest('label').querySelector('strong').textContent];
       if(rk.value==='call'){var gk=f.querySelector('[name=gesprek]:checked'),cd=[];if(gk)cd.push(tekst(gk));var gdv=waarde('gesprek_datum');if(gdv)cd.push(new Date(gdv+'T12:00:00').toLocaleDateString(EN?'en-GB':'nl-NL',{day:'numeric',month:'long'}));
         var dl=f.querySelector('[name=gesprek_dagdeel]');if(dl&&dl.value)cd.push(dl.options[dl.selectedIndex].text.toLowerCase());if(cd.length)ri.push(cd.join(', '))}
-      S.push({k:L.verder,s:4,items:ri})}
+      S.push({k:L.verder,s:4,items:ri,route:true})}
     var pg=['naam','organisatie','email','telefoon'].map(waarde).filter(Boolean);if(pg.length)S.push({k:L.gegevens,s:4,items:pg,c:true});
     return S}
   function lijst(it){return it.length?'<ul>'+it.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul>':''}
-  function samenvat(){var S=verzamel().filter(function(x){return !x.c}),h='';
+  function samenvat(){var S=verzamel().filter(function(x){return !x.c&&!x.route}),h='',sk=document.getElementById('sv-kop'),rr=f.querySelector('[name=route]:checked');sk.textContent=rr&&rr.value==='call'?sk.dataset.call:sk.dataset.voorstel;
     S.forEach(function(x){if(x.event)h+='<ul class="sv-event">'+x.items.map(function(y){return '<li>'+esc(y)+'</li>'}).join('')+'</ul>';else if(x.kaal)h+=x.items.map(function(y){return '<p class="sv-regel">'+esc(y)+'</p>'}).join('');else h+='<h3>'+esc(x.k)+'</h3>'+lijst(x.items)});
     sv.classList.toggle('leeg',!h);svi.innerHTML=h||'<p class="sv-leeg">'+esc(sv.dataset.leeg)+'</p>'}
   /* controlestap: hetzelfde overzicht, volledig, met per onderdeel een knop om te wijzigen */

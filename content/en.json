@@ -3636,8 +3636,16 @@
         "=\"Change\""
       ],
       [
-        ">Je aanvraag<",
-        ">Your request<"
+        "=\"Ik ontvang graag een vrijblijvend voorstel voor\"",
+        "=\"I would like a no-obligation proposal for\""
+      ],
+      [
+        "=\"Ik bespreek graag in een call\"",
+        "=\"I would like to discuss in a call\""
+      ],
+      [
+        ">Ik ontvang graag een vrijblijvend voorstel voor<",
+        ">I would like a no-obligation proposal for<"
       ],
       [
         "=\"Versturen lukte niet. Mail ons op maarten@hear.nl of bel +31 6 24560220.\"",

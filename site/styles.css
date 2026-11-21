@@ -801,3 +801,5 @@ details.extras .extras-opties{padding:2px 18px 18px;margin-top:0}
 .ct-wijzig{background:none;border:0;padding:0;font:400 14px/1.4 var(--tekst);color:var(--tekstgrijs);text-decoration:underline;text-underline-offset:3px;cursor:pointer;flex:none}
 .ct-deel ul{list-style:none;margin:0;padding:0;display:grid;gap:3px;font:400 16px/1.5 var(--tekst);color:var(--zwart);overflow-wrap:anywhere}
 @media (max-width:1040px){.samenvatting{display:none}.aanvraag{padding-bottom:clamp(60px,8vw,110px)}}
+/* Aanvraagformulier (21 nov): de kop van het zwarte vlak is een zin die doorloopt in de keuzes */
+.samenvatting h2{font-size:24px;line-height:1.2;text-wrap:balance}
