@@ -83,6 +83,7 @@ EXTRAS = [
     LOGO, AFTERMOVIE, WEBCAST,
 ]
 COMMUNICATIE = [
+    ("Meedenken over eventconcept", "Help shaping the event concept"),
     ("Communicatieadvies", "Communication advice"),
     ("Uitnodigingen en andere communicatiemiddelen", "Invitations and other communication materials"),
     ("Speeches en presentaties schrijven", "Writing speeches and presentations"),
@@ -110,12 +111,12 @@ def programma():
         blokken += poort(sleutel, nl, en, opties)
     comm = ("".join(vink("communicatie", nl, en) for nl, en in COMMUNICATIE)
             + f'<label class="veld veld-breed"><span>{T("Anders, namelijk", "Other, namely")}</span><input type="text" name="communicatie_anders"></label>')
-    blokken += poort("communicatie", "Hulp bij de communicatie rondom je event", "Help with the communication around your event", comm)
+    communicatie = poort("communicatie", "Hulp bij de communicatie rondom je event", "Help with the communication around your event", comm)
     extras = (f'<details class="extras"><summary><span>{T("Inspiratie: heb je hier al eens aan gedacht?", "Inspiration: have you thought about this?")}</span></summary><div class="extras-opties">'
               + "".join(vink("communicatie" if nl in comm_namen else "diensten", nl, en) for nl, en in EXTRAS) + '</div></details>')
     weetniet = (f'<label class="vink poortvraag poort-los"><input type="checkbox" name="programma" id="weetniet" value="Weet nog niet wat nodig is, bespreekt dit graag in een call">'
                 f'<span>{T("Ik weet nog niet wat ik nodig heb en bespreek dit graag in een call", "I don\'t know what I need yet and would like to discuss it in a call")}</span></label>')
-    return (f'<div class="programma">{blokken}</div>{extras}'
+    return (f'<div class="programma">{blokken}</div>{extras}<div class="programma na-extras">{communicatie}</div>'
             f'<label class="veld veld-breed"><span>{T("Iets anders nodig? Namelijk", "Need something else? Namely")}</span><input type="text" name="diensten_anders" id="anders-los"></label>'
             f'<div class="weetniet-rij">{weetniet}</div>')
 
@@ -166,9 +167,11 @@ stap4 = stap(4, "Hoe verder?", "What next?", f"""{route}
 </div>
 <p class="uitleg privacyregel"><span>{T("We gebruiken je gegevens alleen om je aanvraag te beantwoorden.", "We only use your details to answer your request.")}</span> <a href="privacy.html">Privacyverklaring</a></p>""", laatste=True)
 
-FOTO = f'<span class="dank-foto"><span>{T("Heb je foto\'s van de ruimte? Mail ze naar", "Do you have photos of the room? Email them to")}</span> {MAIL}</span>'
-dank = (f'<div class="formmelding ok dank" id="dank-voorstel" hidden><strong>{T("Bedankt voor je aanvraag! We gaan ermee aan de slag. Je hoort meestal binnen 1 werkdag van ons.", "Thank you for your request! We are on it. You will usually hear from us within 1 working day.")}</strong>{FOTO}</div>'
-        f'<div class="formmelding ok dank" id="dank-call" hidden><strong>{T("Bedankt voor je aanvraag! We nemen contact met je op om de call in te plannen, meestal binnen 1 werkdag.", "Thank you for your request! We will get in touch to schedule the call, usually within 1 working day.")}</strong>{FOTO}</div>')
+def dankblok(sleutel, nl, en):
+    return (f'<div class="dank" id="dank-{sleutel}" hidden><h2>{T("Bedankt voor je aanvraag!", "Thank you for your request!")}</h2><p>{T(nl, en)}</p>'
+            f'<h3>{T("Heb je foto\'s van de ruimte?", "Do you have photos of the room?")}</h3><p><span>{T("Mail ze naar", "Email them to")}</span> {MAIL}</p></div>')
+dank = (dankblok("voorstel", "We gaan ermee aan de slag. Je hoort meestal binnen 1 werkdag van ons.", "We are on it. You will usually hear from us within 1 working day.")
+        + dankblok("call", "We nemen contact met je op om de call in te plannen, meestal binnen 1 werkdag.", "We will get in touch to schedule the call, usually within 1 working day."))
 
 form = f"""<form class="aanvraag" method="post" action="/api/aanvraag" id="aanvraag">
 <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -182,7 +185,7 @@ form = f"""<form class="aanvraag" method="post" action="/api/aanvraag" id="aanvr
 
 main = f"""<main class="wrap">
 <section class="casehead"><a class="crumb" href="index.html"><span class="sectie">HEAR</span></a><h1 class="kernzin">{e(KOP)}</h1></section>
-<section class="quick quick-breed"><p>{INTRO_HTML}</p><p class="quick-licht">{INTRO2_HTML}</p></section>
+<section class="quick quick-breed" id="intro"><p>{INTRO_HTML}</p><p class="quick-licht">{INTRO2_HTML}</p></section>
 <div class="aanvraag-kolommen">
 {form}
 <aside class="samenvatting" id="samenvatting" aria-live="polite" data-leeg="{A("Nog niets gekozen.", "Nothing chosen yet.")}" data-gasten="{A("gasten", "guests")}" data-budget="{A("Richtbudget", "Indicative budget")}" data-onbekend="{A("budget nog niet bekend", "budget not known yet")}"><h2>{T("Je aanvraag", "Your request")}</h2><div id="sv-inhoud"></div></aside>
@@ -238,7 +241,7 @@ main = f"""<main class="wrap">
   f.querySelectorAll('.stapknop').forEach(function(k){{k.addEventListener('click',function(){{var n=k.dataset.naar,huidig=k.closest('.stap');if(!n)return;
     if(k.classList.contains('vooruit')){{var ok=true;huidig.querySelectorAll('input,select,textarea').forEach(function(i){{if(ok&&!i.checkValidity()){{i.reportValidity();ok=false}}}});if(!ok)return}}ga(n)}})}});
   if(gd){{var nu=new Date();gd.min=nu.getFullYear()+'-'+String(nu.getMonth()+1).padStart(2,'0')+'-'+String(nu.getDate()).padStart(2,'0')}}
-  function bedankt(r){{st.forEach(function(x){{x.hidden=true}});m.hidden=true;sv.hidden=true;var d=document.getElementById(r==='call'?'dank-call':'dank-voorstel');d.hidden=false;window.scrollTo({{top:f.getBoundingClientRect().top+window.scrollY-120,behavior:'smooth'}})}}
+  function bedankt(r){{st.forEach(function(x){{x.hidden=true}});m.hidden=true;sv.hidden=true;document.getElementById('intro').hidden=true;var d=document.getElementById(r==='call'?'dank-call':'dank-voorstel');d.hidden=false;window.scrollTo({{top:f.getBoundingClientRect().top+window.scrollY-120,behavior:'smooth'}})}}
   var q=location.search;
   if(/verzonden=1/.test(q)){{bedankt(/route=call/.test(q)?'call':'voorstel')}}
   else{{if(history.replaceState)history.replaceState({{stap:'1'}},'',location.pathname+location.search);ga(1,false);if(/fout=1/.test(q)){{m.hidden=false;m.textContent=f.dataset.fout;m.className='formmelding fout'}}}}
