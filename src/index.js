@@ -40,7 +40,7 @@ async function aanvraag(request, env) {
   const eur = (v) => Number(v).toLocaleString("nl-NL");
   for (const k of ["route", "gesprek", "soort"]) if (LABEL[d[k]]) d[k] = LABEL[d[k]];
   for (const k of ["gesprek_datum", "datum"]) if (d[k]) d[k] = datum(d[k]);
-  if (!fd.get("budget_onbekend") && fd.get("budget_van") && !(fd.has("budget_ingevuld") && !schoon(fd.get("budget_ingevuld")))) d.budget = `€ ${eur(fd.get("budget_van"))} – € ${eur(fd.get("budget_tot"))}${+fd.get("budget_tot") >= 25000 ? "+" : ""}`;
+  if (!fd.get("budget_onbekend") && fd.get("budget_van") && !(fd.has("budget_ingevuld") && !schoon(fd.get("budget_ingevuld")))) d.budget = `€ ${eur(fd.get("budget_van"))} – € ${eur(fd.get("budget_tot"))}${+fd.get("budget_tot") >= 20000 ? "+" : ""}`;
   const regels = VELDEN.filter(([k]) => d[k]).map(([k, l]) => `${l}: ${d[k]}`).join("\n");
   const bron = schoon(fd.get("bron"));
   const soortMail = bron === "Coffee cuts" ? "Coffee cuts-aanvraag" : /maartenversteeg/i.test(bron) ? "DJ-boeking via maartenversteeg.nl" : "Aanvraag via hear.nl";

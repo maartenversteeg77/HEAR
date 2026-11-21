@@ -121,10 +121,12 @@ def programma():
             f'<label class="veld veld-breed"><span>{T("Iets anders nodig? Namelijk", "Need something else? Namely")}</span><input type="text" name="diensten_anders" id="anders-los"></label>'
             f'<div class="weetniet-rij">{weetniet}</div>')
 
+# relatieve schaal (Maarten, 21 nov): tot 2.000 per 250, tot 5.000 per 500, daarna grotere stappen; de hoogste stand is '20.000+'
+BUDGETSTAPPEN = [1000, 1250, 1500, 1750, 2000, 2500, 3000, 3500, 4000, 4500, 5000, 6000, 7500, 10000, 12500, 15000, 20000]
 budget = (f'<fieldset class="budget"><legend>{T("Richtbudget voor licht, geluid en muziek", "Indicative budget for light, sound and music")}</legend>'
           f'<p class="uitleg">{T("Schuif naar je richtbudget. Dan zoeken we de meeste beleving binnen die kaders.", "Slide to your indicative budget. We will then look for the most impact within those limits.")}</p>'
-          f'<div class="slider leeg" id="budget" data-leeg="{A("Nog niet ingevuld", "Not filled in yet")}"><input type="hidden" name="budget_ingevuld" value=""><input type="range" name="budget_van" min="1000" max="25000" step="500" value="2500" aria-label="{A("Van", "From")}">'
-          f'<input type="range" name="budget_tot" min="1000" max="25000" step="500" value="7500" aria-label="{A("Tot", "To")}"><output id="budget_uit"></output></div>'
+          f'<div class="slider leeg" id="budget" data-leeg="{A("Nog niet ingevuld", "Not filled in yet")}"><input type="hidden" name="budget_ingevuld" value=""><input type="hidden" name="budget_van" value=""><input type="hidden" name="budget_tot" value=""><input type="range" min="0" max="{len(BUDGETSTAPPEN) - 1}" step="1" value="{BUDGETSTAPPEN.index(2500)}" aria-label="{A("Van", "From")}">'
+          f'<input type="range" min="0" max="{len(BUDGETSTAPPEN) - 1}" step="1" value="{BUDGETSTAPPEN.index(7500)}" aria-label="{A("Tot", "To")}"><output id="budget_uit"></output></div>'
           f'<label class="vink"><input type="checkbox" name="budget_onbekend" value="ja"><span>{T("Weet ik nog niet", "I don\'t know yet")}</span></label></fieldset>')
 
 GESPREK = [("bellen", "Telefonisch", "By phone"), ("teams", "Microsoft Teams", "Microsoft Teams"), ("meet", "Google Meet", "Google Meet")]
@@ -201,8 +203,9 @@ main = f"""<main class="wrap">
   /* budget: zolang de schuif niet is aangeraakt, telt hij niet als antwoord */
   var s=document.getElementById('budget'),a=s.querySelectorAll('input[type=range]'),o=document.getElementById('budget_uit'),bi=f.querySelector('[name=budget_ingevuld]'),bo=f.querySelector('[name=budget_onbekend]'),budgetAan=false;
   function eur(n){{return '€ '+Number(n).toLocaleString('nl-NL')}}
-  function toon(){{var v=+a[0].value,t=+a[1].value;if(v>t){{if(this===a[0])a[1].value=v;else a[0].value=t;v=+a[0].value;t=+a[1].value}}
-    s.classList.toggle('leeg',!budgetAan||bo.checked);bi.value=budgetAan?'ja':'';o.textContent=budgetAan&&!bo.checked?eur(v)+' – '+eur(t)+(t>=25000?'+':''):(bo.checked?'':s.dataset.leeg)}}
+  var BS=[1000,1250,1500,1750,2000,2500,3000,3500,4000,4500,5000,6000,7500,10000,12500,15000,20000],hv=f.querySelector('[name=budget_van]'),ht=f.querySelector('[name=budget_tot]');
+  function toon(){{var i=+a[0].value,j=+a[1].value;if(i>j){{if(this===a[0])a[1].value=i;else a[0].value=j;i=+a[0].value;j=+a[1].value}}var v=BS[i],t=BS[j];hv.value=v;ht.value=t;
+    s.classList.toggle('leeg',!budgetAan||bo.checked);bi.value=budgetAan?'ja':'';o.textContent=budgetAan&&!bo.checked?eur(v)+' – '+eur(t)+(j===BS.length-1?'+':''):(bo.checked?'':s.dataset.leeg)}}
   function raak(){{budgetAan=true;bo.checked=false;toon.call(this)}}
   [].forEach.call(a,function(x){{x.addEventListener('input',raak);x.addEventListener('pointerdown',raak);x.addEventListener('keydown',raak)}});bo.addEventListener('change',function(){{toon()}});toon();
   /* poortvragen: keuzes tonen als het onderdeel is aangevinkt; verborgen keuzes gaan niet mee */
