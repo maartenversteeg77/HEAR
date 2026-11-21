@@ -52,9 +52,32 @@ async function aanvraag(request, env) {
   const r = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, "Content-Type": "application/json" },
-    body: JSON.stringify({ from: VAN, to: [NAAR], reply_to: d.email, subject: onderwerp, text: regels + extra + "\n" }),
+    body: JSON.stringify({ from: VAN, to: [NAAR], reply_to: d.email, subject: onderwerp, text: regels + extra + "\n",
+      ...(hoofdformulier ? { html: opgemaakt(d, schoon(fd.get("overzicht")), [bron && `Pagina: ${bron}`, utm && `Herkomst: ${utm}`].filter(Boolean)) } : {}) }),
   });
   return antwoord(request, r.ok, r.ok ? 200 : 502, route);
+}
+
+// Opgemaakte versie van de aanvraagmail: dezelfde indeling als het overzicht in het formulier.
+// "overzicht" is JSON uit het formulier ([{kop, items}]): de keuzes per programmadeel. Ontbreekt het of klopt het niet, dan vallen we terug op de platte lijsten.
+function esc(t) { return String(t).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+function opgemaakt(d, overzicht, voet) {
+  const kop = (t) => `<p style="margin:22px 0 4px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:bold;color:#D47763">${esc(t)}</p>`;
+  const blok = (t, regels) => { const r = regels.filter(Boolean); return r.length ? kop(t) + `<p style="margin:0">${r.map(esc).join("<br>")}</p>` : ""; };
+  let delen = [];
+  try { const j = JSON.parse(overzicht || "[]"); if (Array.isArray(j)) delen = j.slice(0, 12).map((x) => ({ kop: String(x.kop || "").slice(0, 120), items: (Array.isArray(x.items) ? x.items : []).slice(0, 30).map((i) => String(i).slice(0, 400)) })).filter((x) => x.kop); } catch (e) { delen = []; }
+  let h = `<div style="font-family:Helvetica,Arial,sans-serif;font-size:15px;line-height:1.55;color:#191A19;max-width:580px">`;
+  h += `<p style="margin:0 0 2px;font-size:21px">${esc(d.organisatie || d.naam)}</p>`;
+  if (d.route) h += `<p style="margin:0;font-size:16px"><b>Wil ${esc(d.route)}</b>${d.gesprek_datum ? esc(` · ${[d.gesprek, d.gesprek_datum, d.gesprek_dagdeel].filter(Boolean).join(", ")}`) : ""}</p>`;
+  else if (d.gesprek_datum) h += `<p style="margin:0;font-size:16px"><b>Gesprek</b>${esc(` · ${[d.gesprek, d.gesprek_datum, d.gesprek_dagdeel].filter(Boolean).join(", ")}`)}</p>`;
+  h += blok("Contact", [d.naam, d.organisatie, d.functie, d.email, d.telefoon]);
+  h += blok("Event", [d.event, d.soort, d.datum, d.tijd, d.locatie, d.gasten && `${d.gasten} gasten`, d.doelgroep]);
+  if (delen.length) for (const x of delen) h += kop(x.kop) + (x.items.length ? `<p style="margin:0">${x.items.map(esc).join("<br>")}</p>` : "");
+  else h += blok("Programma", [d.programma]) + blok("Diensten", [d.diensten, d.diensten_anders]) + blok("Communicatie", [d.communicatie, d.communicatie_anders]);
+  h += blok("Richtbudget", [d.budget]);
+  h += blok("Toelichting", [d.ruimte, d.concept, d.bericht]);
+  if (voet.length) h += `<p style="margin:26px 0 0;font-size:12px;color:#777">${voet.map(esc).join("<br>")}</p>`;
+  return h + "</div>";
 }
 
 // Formulieren op maartenversteeg.nl (en de testversie op workers.dev) mogen ook hierheen posten.

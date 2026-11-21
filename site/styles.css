@@ -793,3 +793,11 @@ details.extras .extras-opties{padding:2px 18px 18px;margin-top:0}
 .slider.leeg input[type=range]::-webkit-slider-thumb{background:#fff;border:2px solid var(--koraal)}
 .slider.leeg input[type=range]::-moz-range-thumb{background:#fff;border:2px solid var(--koraal)}
 .slider.leeg output{color:var(--zacht)}
+/* Aanvraagformulier (21 nov): controlestap; het vlak 'Je aanvraag' staat alleen nog op brede schermen */
+#controle{display:grid;gap:0;border-top:1px solid var(--lijn);margin:0 0 26px}
+.ct-deel{padding:16px 0 18px;border-bottom:1px solid var(--lijn)}
+.ct-kop{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin:0 0 6px}
+.ct-kop h3{font:500 12px/1.4 var(--tekst);letter-spacing:.14em;text-transform:uppercase;color:var(--koraal);margin:0}
+.ct-wijzig{background:none;border:0;padding:0;font:400 14px/1.4 var(--tekst);color:var(--tekstgrijs);text-decoration:underline;text-underline-offset:3px;cursor:pointer;flex:none}
+.ct-deel ul{list-style:none;margin:0;padding:0;display:grid;gap:3px;font:400 16px/1.5 var(--tekst);color:var(--zwart);overflow-wrap:anywhere}
+@media (max-width:1040px){.samenvatting{display:none}.aanvraag{padding-bottom:clamp(60px,8vw,110px)}}

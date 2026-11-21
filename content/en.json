@@ -3556,12 +3556,20 @@
         ">Phone number<"
       ],
       [
+        ">Klopt alles? Dan kun je versturen.<",
+        ">All correct? Then you can send it.<"
+      ],
+      [
         ">We gebruiken je gegevens alleen om je aanvraag te beantwoorden.<",
         ">We only use your details to answer your request.<"
       ],
       [
         ">Verstuur je aanvraag<",
         ">Send your request<"
+      ],
+      [
+        ">Controleer je aanvraag<",
+        ">Check your request<"
       ],
       [
         ">Bedankt voor je aanvraag!<",
@@ -3588,16 +3596,44 @@
         "=\"Nothing chosen yet.\""
       ],
       [
-        "=\"gasten\"",
-        "=\"guests\""
+        "=\" gasten\"",
+        "=\" guests\""
       ],
       [
         "=\"Richtbudget\"",
         "=\"Indicative budget\""
       ],
       [
-        "=\"budget nog niet bekend\"",
-        "=\"budget not known yet\""
+        "=\"Weet ik nog niet\"",
+        "=\"I don&#x27;t know yet\""
+      ],
+      [
+        "=\"Je event\"",
+        "=\"Your event\""
+      ],
+      [
+        "=\"Je programma\"",
+        "=\"Your programme\""
+      ],
+      [
+        "=\"Iets anders nodig\"",
+        "=\"Something else\""
+      ],
+      [
+        "=\"Toelichting\"",
+        "=\"Details\""
+      ],
+      [
+        "=\"Hoe verder\"",
+        "=\"What next\""
+      ],
+      [
+        "=\"Je gegevens\"",
+        "=\"Your details\""
+      ],
+      [
+        "=\"Wijzig\"",
+        "=\"Change\""
       ],
       [
         ">Je aanvraag<",
