@@ -123,8 +123,8 @@ def programma():
             f'<label class="veld veld-breed"><span>{T("Iets anders nodig? Namelijk", "Need something else? Namely")}</span><input type="text" name="diensten_anders" id="anders-los"></label>'
             f'<div class="weetniet-rij">{weetniet}</div>')
 
-# relatieve schaal (Maarten, 21 nov): tot 2.000 per 250, tot 5.000 per 500, daarna grotere stappen; de hoogste stand is '20.000+'
-BUDGETSTAPPEN = [1000, 1250, 1500, 1750, 2000, 2500, 3000, 3500, 4000, 4500, 5000, 6000, 7500, 10000, 12500, 15000, 20000]
+# relatieve schaal (Maarten, 21 nov): tot 2.000 per 250, tot 3.000 per 500, tot 6.000 per 1.000, daarna grotere stappen; de hoogste stand is '20.000+'
+BUDGETSTAPPEN = [1000, 1250, 1500, 1750, 2000, 2500, 3000, 4000, 5000, 6000, 7500, 10000, 12500, 15000, 20000]
 budget = (f'<fieldset class="budget"><legend>{T("Richtbudget voor licht, geluid en muziek", "Indicative budget for light, sound and music")}</legend>'
           f'<p class="uitleg">{T("Schuif naar je richtbudget. Dan zoeken we de meeste beleving binnen die kaders.", "Slide to your indicative budget. We will then look for the most impact within those limits.")}</p>'
           f'<div class="slider leeg" id="budget" data-leeg="{A("Nog niet ingevuld", "Not filled in yet")}"><input type="hidden" name="budget_ingevuld" value=""><input type="hidden" name="budget_van" value=""><input type="hidden" name="budget_tot" value=""><input type="range" min="0" max="{len(BUDGETSTAPPEN) - 1}" step="1" value="{BUDGETSTAPPEN.index(2500)}" aria-label="{A("Van", "From")}">'
@@ -205,7 +205,7 @@ main = f"""<main class="wrap">
   /* budget: zolang de schuif niet is aangeraakt, telt hij niet als antwoord */
   var s=document.getElementById('budget'),a=s.querySelectorAll('input[type=range]'),o=document.getElementById('budget_uit'),bi=f.querySelector('[name=budget_ingevuld]'),bo=f.querySelector('[name=budget_onbekend]'),budgetAan=false;
   function eur(n){{return '€ '+Number(n).toLocaleString('nl-NL')}}
-  var BS=[1000,1250,1500,1750,2000,2500,3000,3500,4000,4500,5000,6000,7500,10000,12500,15000,20000],hv=f.querySelector('[name=budget_van]'),ht=f.querySelector('[name=budget_tot]');
+  var BS=[1000,1250,1500,1750,2000,2500,3000,4000,5000,6000,7500,10000,12500,15000,20000],hv=f.querySelector('[name=budget_van]'),ht=f.querySelector('[name=budget_tot]');
   function toon(){{var i=+a[0].value,j=+a[1].value;if(i>j){{if(this===a[0])a[1].value=i;else a[0].value=j;i=+a[0].value;j=+a[1].value}}var v=BS[i],t=BS[j];hv.value=v;ht.value=t;
     s.classList.toggle('leeg',!budgetAan||bo.checked);bi.value=budgetAan?'ja':'';o.textContent=budgetAan&&!bo.checked?eur(v)+' – '+eur(t)+(j===BS.length-1?'+':''):(bo.checked?'':s.dataset.leeg)}}
   function raak(){{budgetAan=true;bo.checked=false;toon.call(this)}}
