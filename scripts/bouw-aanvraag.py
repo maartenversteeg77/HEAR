@@ -45,7 +45,7 @@ LOGO = ("Logoprojectie", "Logo projection")
 SFEER = ("Sfeerverlichting", "Atmospheric lighting")
 DECO = ("Decoratie: led-tubes, spiegelbollen en props", "Decoration: LED tubes, mirror balls and props")
 GELUID = ("Geluidssysteem", "Sound system")
-PLAYLIST = ("Playlist op maat", "Custom playlist")
+PLAYLIST = ("Maatwerk playlist, zonder live dj", "Bespoke playlist, without a live DJ")
 DJ = ("Dj", "DJ")
 BOOTH = ("Dj-booth en dj-gear", "DJ booth and DJ gear")
 SCHERM = ("Videoschermen en presentatie", "Video screens and presentation")
@@ -66,7 +66,7 @@ PROGRAMMA = [
         LOGO, DECO, SCHERM,
     ]),
     ("borrel", "Netwerkborrel of diner met muziek", "Networking drinks or dinner with music", [
-        GELUID, PLAYLIST, SFEER, DECO,
+        GELUID, DJ, BOOTH, PLAYLIST, SFEER, DECO,
     ]),
     ("feest", "Feest met dansvloer", "Party with a dance floor", [
         GELUID, DJ, BOOTH,
@@ -101,8 +101,13 @@ def programma():
     for groep in [items for _, _, _, items in PROGRAMMA] + [COMMUNICATIE, EXTRAS]:
         for inl, _ in groep: telling[inl] = telling.get(inl, 0) + 1
     reeds = f'<em class="reeds-tag">{T("reeds gekozen", "already chosen")}</em>'
+    # dj, booth en playlist gelden per programmadeel (dj op het feest, playlist bij de borrel kan) en lopen dus niet gelijk;
+    # binnen één deel sluiten dj en playlist elkaar uit
+    per_deel = {DJ[0]: "dj", BOOTH[0]: "", PLAYLIST[0]: "playlist"}
     def vink(naam, inl, ien):
-        g = telling.get(inl, 0) > 1
+        g = telling.get(inl, 0) > 1 and inl not in per_deel
+        if per_deel.get(inl):
+            return f'<label class="vink"><input type="checkbox" name="{naam}" value="{e(inl)}" data-of="{per_deel[inl]}"><span>{T(inl, ien)}</span></label>'
         return f'<label class="vink"><input type="checkbox" name="{naam}" value="{e(inl)}"{" data-gedeeld" if g else ""}><span>{T(inl, ien)}{reeds if g else ""}</span></label>'
     comm_namen = {nl for nl, _ in COMMUNICATIE}
     blokken = ""
@@ -216,6 +221,8 @@ main = f"""<main class="wrap">
   function gedeeld(){{[].forEach.call(f.querySelectorAll('[data-gedeeld]'),function(i){{var e=eigenaar[i.value];i.closest('label').classList.toggle('reeds',i.checked&&!!e&&e!==i&&!e.disabled&&e.checked)}})}}
   [].forEach.call(f.querySelectorAll('[data-gedeeld]'),function(i){{i.addEventListener('change',function(){{if(i.checked)eigenaar[i.value]=i;else delete eigenaar[i.value];
     [].forEach.call(f.querySelectorAll('[data-gedeeld]'),function(x){{if(x!==i&&x.value===i.value)x.checked=i.checked}});gedeeld()}})}});
+  /* dj of playlist: binnen één programmadeel kan maar één van de twee */
+  [].forEach.call(f.querySelectorAll('[data-of]'),function(i){{i.addEventListener('change',function(){{if(!i.checked)return;[].forEach.call(i.closest('.poort-opties').querySelectorAll('[data-of]'),function(x){{if(x!==i&&x.dataset.of!==i.dataset.of)x.checked=false}})}})}});
   /* samenvatting rechts: wat er tot nu toe is ingevuld */
   var sv=document.getElementById('samenvatting'),svi=document.getElementById('sv-inhoud');
   function esc(t){{var d=document.createElement('div');d.textContent=t;return d.innerHTML}}
