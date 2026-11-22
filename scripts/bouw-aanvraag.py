@@ -55,7 +55,7 @@ PROGRAMMA = [
         ("Technicus ter plekke", "Technician on site"),
     ]),
     ("merk", "Productlancering, merkactivatie of modeshow", "Product launch, brand activation or fashion show", [
-        GELUID, DJ, BOOTH,
+        GELUID, BOOTH, DJ,
         ("Muziek die past bij het merk (vooraf afgestemd)", "Music that fits the brand (agreed in advance)"),
         PLAYLIST,
         ("Licht in huisstijlkleuren", "Lighting in brand colours"),
@@ -63,10 +63,10 @@ PROGRAMMA = [
         LOGO, DECO, SCHERM,
     ]),
     ("borrel", "Netwerkborrel of diner met muziek", "Networking drinks or dinner with music", [
-        GELUID, DJ, BOOTH, PLAYLIST, SFEER, DECO,
+        GELUID, BOOTH, DJ, PLAYLIST, SFEER, DECO,
     ]),
     ("feest", "Feest met dansvloer", "Party with a dance floor", [
-        GELUID, DJ, BOOTH,
+        GELUID, BOOTH, DJ,
         ("Lichtshow (o.a. moving heads)", "Light show (including moving heads)"),
         ("90's vintage licht", "90s vintage lighting"),
         SFEER, DECO,
