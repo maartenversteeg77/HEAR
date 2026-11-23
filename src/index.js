@@ -14,6 +14,7 @@ const VELDEN = [
   ["geluid", "Geluid"], ["scherm", "Scherm"], ["uren_dag", "Uren dagprogramma"], ["uren_dj", "Uren dj"], ["personeel", "Personeel"], ["licht", "Licht en aankleding"], ["logo", "Logo"], ["indicatie", "Indicatie"],
   ["ruimte", "Ruimte"], ["concept", "Concept / programma"], ["bericht", "Bericht"],
   ["budget", "Richtbudget"],
+  ["cc_soort", "Playlist"], ["cc_zaak", "Soort zaak"], ["cc_capaciteit", "Capaciteit van de zaak"], ["cc_dienst", "Ontvangen op"], ["cc_playlist", "Link naar favoriete nummers"],
   ["cc_wens", "Coffee cuts, meer weten over"], ["cc_lengte", "Lengte playlist (uur)"], ["cc_sfeer", "Sfeer in de zaak / voorbeeldplek"], ["cc_lijkt", "Moet lijken op"], ["cc_nummers", "Voorbeelden van nummers"],
 ];
 

@@ -1,0 +1,68 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><!--icoon--><link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><!--/icoon--><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Coffee cuts en Cocktail cuts: warme muziek die past bij je zaak. Bestel gratis één playlist op maat."><meta name="deeltitel" content="Gratis playlist voor je zaak"><meta name="robots" content="noindex"><title>Probeer gratis één playlist voor je zaak | HEAR</title><!--og--><meta property="og:title" content="Gratis playlist voor je zaak"><meta property="og:description" content="Coffee cuts en Cocktail cuts: warme muziek die past bij je zaak. Bestel gratis één playlist op maat."><meta property="og:url" content="https://hear.nl/coffeecuts-trial"><meta property="og:site_name" content="HEAR"><meta property="og:type" content="website"><meta property="og:locale" content="nl_NL"><meta property="og:image" content="https://hear.nl/img/og/coffeecuts-trial.jpg?v=78a65358"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://hear.nl/img/og/coffeecuts-trial.jpg?v=78a65358"><!--/og--><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="doelgroep.css"></head><body class="pagina"><header class="top">
+  <a class="merk" href="index.html" aria-label="HEAR, naar de homepage"><img src="img/logo-white.png" alt="HEAR"></a>
+  <nav class="topnav" aria-label="Hoofdnavigatie">
+    <a href="cases.html">Cases</a>
+    <a href="doelgroepen.html">Voor wie we werken</a>
+    <a href="diensten.html">Producten</a>
+    <a href="nieuws/">Nieuws</a>
+    <a href="over-hear.html" >Over HEAR</a>
+  </nav>
+  <a class="plan" href="aanvraag.html">Vertel over je event</a>
+  <a class="taal" href="/en/index.html" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+  <button class="menuknop" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu openen">
+    <span></span><span></span>
+  </button>
+</header>
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Hoofdmenu">
+      <a class="menu-plan" href="aanvraag.html"><span>Vertel over je event</span><small>Voor een vrijblijvend voorstel of een call</small></a>
+      <a href="cases.html"><span>Voorbeeldcases</span><small>Events die tot de verbeelding spreken</small></a>
+      <a href="doelgroepen.html"><span>Voor wie we werken</span><small>Eventmanagers, dance-events, merken en eventlocaties</small></a>
+      <a href="diensten.html"><span>Producten en diensten</span><small>Licht, geluid, dj-gear en advies</small></a>
+      <a href="nieuws/"><span>Nieuws</span><small>Nieuwe producten, events en berichten</small></a>
+      <a href="over-hear.html"><span>Over HEAR</span><small>Founder story en waarden</small></a>
+  </nav>
+</div>
+<script>
+  (function(){
+    var k=document.querySelector('.menuknop'), m=document.getElementById('menu');
+    function zet(open){ k.setAttribute('aria-expanded',open); k.setAttribute('aria-label',open?'Menu sluiten':'Menu openen'); m.hidden=!open; document.body.classList.toggle('menu-open',open); }
+    k.addEventListener('click',function(){ zet(k.getAttribute('aria-expanded')!=='true'); });
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape') zet(false); });
+    // Vegen over de zwarte kop (mobiel): links = volgende, rechts = vorige pagina op dit niveau
+    var x0=null, y0=null, hk=null;  // gedelegeerd: de kop staat verderop in de pagina dan dit script
+    document.addEventListener('touchstart',function(e){ hk=e.target.closest&&e.target.closest('.casehead'); if(!hk) return; x0=e.touches[0].clientX; y0=e.touches[0].clientY; },{passive:true});
+    document.addEventListener('touchend',function(e){
+      if(x0===null||!hk) return; var dx=e.changedTouches[0].clientX-x0, dy=e.changedTouches[0].clientY-y0; x0=null;
+      if(Math.abs(dx)<60||Math.abs(dy)>50) return;
+      var a=hk.querySelector(dx<0?'.zijnav .pijl:last-child':'.zijnav .pijl:first-child'); if(a&&a.href) location.href=a.href;
+    },{passive:true});
+  })();
+</script><main class="wrap lp cct"><section class="casehead"><a class="crumb" href="custom-dj-mix.html#coffee-cuts"><span class="sectie">Coffee cuts en Cocktail cuts</span></a><h1 class="kernzin">Probeer gratis één playlist voor je zaak</h1></section>
+<div class="lp-held"><div class="actie-beeld"><img src="img/diensten/coffee-cuts.jpg" alt="Coffee cuts: glas koffie op een vinylplaat in de zon"><span class="actie-label">Gratis proberen</span><a class="wa actie-knop" href="#contact"><span>Bestel je gratis playlist</span><i aria-hidden="true">→</i></a></div></div>
+<section class="lp-band"><div class="lp-twee"><p class="lp-lead">Of je nu een koffiebar, een cocktailbar of een winkel hebt: je wilt warme muziek die past bij de identiteit van je zaak.</p><div class="lp-tekst"><p>Geen generieke (AI-&#8288;)tracks. Met Coffee cuts en Cocktail cuts stellen we een playlist samen voor jouw zaak, uit onze eigen collectie van nieuwe releases en classics.</p><p>Heb je een zakelijke streamingdienst zoals Soundtrack (voorheen Tunify), dan kun je de playlist daarin laden.</p></div></div></section>
+<section class="lp-band"><h2 class="lp-strip">Hoe het werkt</h2><div class="lp-aanbod" style="--kol:1"><div class="lp-kaart"><ul class="lp-lijst"><li>Je vult het formulier in.</li><li>We stellen één playlist samen, afgestemd op je zaak.</li><li>Je ontvangt hem op Spotify of Tidal.</li></ul></div></div></section>
+<section class="lp-band lp-contact" id="contact"><div class="lp-twee"><div><h2>Bestel je gratis playlist</h2><p>Vertel iets over je zaak, dan stel ik een playlist voor je samen.</p>
+<div class="lp-wie"><img src="img/maarten-adviseur.jpg" alt="Maarten Versteeg" loading="lazy" style="object-position:50% 20%"><div><b>Maarten Versteeg</b><span>Oprichter HEAR</span></div></div></div>
+<form class="lp-form" method="post" action="/api/aanvraag" data-dank="Dank je. Ik ga ermee aan de slag en je hoort van me." data-fout="Versturen lukte niet. Mail naar maarten@hear.nl of bel +31 6 24560220.">
+<input type="hidden" name="bron" value="Landingspagina Coffee cuts trial"><input type="hidden" name="utm" value=""><input type="text" name="website" class="lp-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<fieldset class="lp-keuze"><legend>Welke playlist wil je?</legend><label><input type="radio" name="cc_soort" value="Coffee cuts" required><span>Coffee cuts <small>voor overdag</small></span></label><label><input type="radio" name="cc_soort" value="Cocktail cuts"><span>Cocktail cuts <small>voor de avond</small></span></label></fieldset>
+<label>Naam van je zaak<input name="organisatie" autocomplete="organization" required></label>
+<label>Soort zaak<select name="cc_zaak" required><option value="">Kies…</option><option>Koffiebar</option><option>Restaurant</option><option>Cocktailbar</option><option>Hotel</option><option>Winkel</option><option>Anders</option></select></label>
+<label>Capaciteit van je zaak (aantal gasten)<input name="cc_capaciteit" type="number" min="1" inputmode="numeric" required></label>
+<label>Beschrijf de sfeer in je zaak, of noem een plek waar het op moet lijken<textarea name="cc_sfeer" required></textarea></label>
+<label>Link naar een playlist met 10 favoriete nummers, ter inspiratie<input name="cc_playlist" type="url" inputmode="url" placeholder="https://open.spotify.com/playlist/…"></label>
+<fieldset class="lp-keuze"><legend>Waar wil je de playlist ontvangen?</legend><label><input type="radio" name="cc_dienst" value="Spotify" required><span>Spotify</span></label><label><input type="radio" name="cc_dienst" value="Tidal"><span>Tidal</span></label></fieldset>
+<label>Naam<input name="naam" autocomplete="name" required></label>
+<label>E-mail<input name="email" type="email" autocomplete="email" required></label>
+<label>Telefoon<input name="telefoon" type="tel" autocomplete="tel"></label>
+<button type="submit">Bestel je gratis playlist</button><p class="lp-privacy">We gebruiken je gegevens alleen om je te antwoorden. <a href="privacy.html">Privacyverklaring</a></p>
+<p class="lp-melding" hidden></p></form></div></section></main><script>(function(){
+document.querySelectorAll('.lp-stappen').forEach(function(k){var S=[].map.call(k.querySelectorAll('.lp-stapjes li'),function(li){var b=li.querySelectorAll('b');return [b[1].textContent,li.querySelector('span').textContent]}),i=0,alle=false,t=k.querySelector('h3'),x=k.querySelector('h3+p'),L=k.querySelector('.lp-stapjes'),b=k.querySelector('.lp-stapbal');
+function r(){t.textContent=S[i][0];x.textContent=S[i][1];t.hidden=x.hidden=alle;L.hidden=!alle;
+b.innerHTML=S.map(function(s,n){return '<button type="button" class="lp-n" data-n="'+n+'"'+(n===i&&!alle?' aria-current="step"':'')+' aria-label="Stap '+(n+1)+': '+s[0]+'">'+(n+1)+'</button>'}).join('')+'<button type="button" class="lp-alle">'+(alle?'Toon per stap':'Bekijk alle stappen')+'</button>'+(alle?'':'<button type="button" class="lp-volg">'+(i<S.length-1?'Volgende':'Opnieuw')+'</button>');}
+b.addEventListener('click',function(ev){var o=ev.target.closest('button');if(!o)return;if(o.dataset.n){i=+o.dataset.n;alle=false}else if(o.classList.contains('lp-alle')){alle=!alle}else{i=i<S.length-1?i+1:0}r();});r();});
+document.querySelectorAll('.lp-form').forEach(function(f){var m=f.querySelector('.lp-melding');f.addEventListener('submit',function(ev){if(!window.fetch)return;ev.preventDefault();var k=f.querySelector('button');k.disabled=true;
+fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}}).then(function(r){return r.json()}).then(function(r){m.hidden=false;
+if(r.ok){m.textContent=f.dataset.dank;[].forEach.call(f.querySelectorAll('label,button,.lp-privacy'),function(x){x.hidden=true})}else{m.textContent=f.dataset.fout;k.disabled=false}}).catch(function(){m.hidden=false;m.textContent=f.dataset.fout;k.disabled=false});});});
+})();</script><script>(function(){try{var q=new URLSearchParams(location.search),k=["utm_source","utm_medium","utm_campaign","utm_term","utm_content"],v=k.map(function(n){return q.get(n)||""});var t=v.some(Boolean)?v.filter(Boolean).join(" / "):"";try{if(t)sessionStorage.setItem("hear_utm",t);else t=sessionStorage.getItem("hear_utm")||""}catch(e){}[].forEach.call(document.querySelectorAll('input[name="utm"]'),function(i){i.value=t})}catch(e){}})();</script><footer class="actie-voet"><p>HEAR is een handelsnaam van Maarten Versteeg communicatie advies B.V. · KvK 42181393 · <a href="privacy.html">Privacyverklaring</a></p></footer></body></html>
