@@ -811,7 +811,8 @@ details.extras .extras-opties{padding:2px 18px 18px;margin-top:0}
 .kv-knop:hover,.kv-knop:focus-visible{background:var(--zwart);color:var(--wit)}
 .kv-knop:has(.kv-ic){display:inline-flex;align-items:center;gap:8px;padding:9px 20px 9px 16px}
 .kv-ic{flex:none}
-.lp-vraag{margin-top:22px}
-.lp-vraag p{margin:0 0 12px}
+.lp-vraag{margin-top:30px}
+.lp-vraag p{margin:0 0 14px!important;font-weight:500;color:var(--zwart)}
+.case-section .lp-vraag{margin-top:0}
 .lp-vraag-knoppen{display:flex;flex-wrap:wrap;gap:10px 12px}
 .aanvraag-kolommen{padding-top:clamp(36px,5vw,64px)}
