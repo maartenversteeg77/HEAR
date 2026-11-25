@@ -54,9 +54,17 @@ def kaart(titel, items, meer=None, wens=False):
 def aanbod(kop, kaarten):
     return (f'<section class="lp-band"><h2 class="lp-strip">{kop}</h2>'
             f'<div class="lp-aanbod" style="--kol:{len(kaarten)}">{"".join(kaarten)}</div></section>')
-def intro(lead, alineas):
+IC_CHAT = '<svg class="kv-ic" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 11.6a8.4 8.4 0 0 1-12.3 7.5L3.5 20.5l1.5-4.5a8.4 8.4 0 1 1 15.5-4.4z"/></svg>'
+IC_MAIL = '<svg class="kv-ic" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.5 7 8.5 6.5L20.5 7"/></svg>'
+def vraagknoppen(tekst, wa_tekst, onderwerp):
+    """Regel tekst met daaronder twee knoppen: WhatsApp en Mail, elk met een icoon."""
+    from urllib.parse import quote
+    return (f'<div class="lp-vraag"><p>{tekst}</p><div class="lp-vraag-knoppen">'
+            f'<a class="kv-knop" href="https://wa.me/31624560220?text={quote(wa_tekst)}" target="_blank" rel="noopener" data-whatsapp>{IC_CHAT}WhatsApp</a>'
+            f'<a class="kv-knop" href="mailto:maarten@hear.nl?subject={quote(onderwerp)}">{IC_MAIL}Mail</a></div></div>')
+def intro(lead, alineas, na=""):
     return (f'<section class="lp-band"><div class="lp-twee"><p class="lp-lead">{lead}</p>'
-            f'<div class="lp-tekst">{"".join(f"<p>{a}</p>" for a in alineas)}</div></div></section>')
+            f'<div class="lp-tekst">{"".join(f"<p>{a}</p>" for a in alineas)}{na}</div></div></section>')
 def filo(label, kop, alineas):
     return (f'<section class="lp-band"><div class="lp-twee"><h2 class="lp-strip">{label}</h2><p class="lp-motto">{kop}</p>'
             f'<div class="lp-tekst">{"".join(f"<p>{a}</p>" for a in alineas)}</div></div></section>')
@@ -196,7 +204,8 @@ P["bijzondere-eventlocaties.html"] = dict(titel="Eigenaren en exploitanten van e
  beschrijving="Eén aanspreekpunt voor licht, geluid en muziek op je locatie: per klantvraag een passende opzet, en een vaste installatie voor wat je zelf doet.",
  delen=[
   intro("Vandaag een modeshow, morgen een seminar, overmorgen een bedrijfsfeest met dj. Elke klant vraagt om een andere opzet.",
-        ["Wij vertalen de vraag van je klant naar een passende opzet in licht, geluid en muziek. In overleg met jou loopt het contact met de eindklant via jou of via ons, en we houden je steeds op de hoogte. Als je wilt, koppelen we daar een digitale planner aan."]),
+        ["Wij vertalen de vraag van je klant naar een passende opzet in licht, geluid en muziek. In overleg met jou loopt het contact met de eindklant via jou of via ons, en we houden je steeds op de hoogte. Als je wilt, koppelen we daar een digitale planner aan."],
+        na=vraagknoppen("Informeer naar onze partnershipmodellen.", "Hoi Maarten, ik wil graag meer weten over de partnershipmodellen van HEAR.", "Partnershipmodellen HEAR")),
   momenten("Je klanten", "Je klanten en hun vragen", ["Een seminar met sprekers en een presentatie", "Een modeshow of collectiepresentatie",
    "Een bedrijfsfeest met dj", "Een productlancering", "Een diner met muziek op de achtergrond", "Een clubnacht of pop-up", "Een bruiloft of privéfeest"],
    sub="Je moet van alle markten thuis zijn. HEAR en ons netwerk kunnen die vragen voor je oppakken."),

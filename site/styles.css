@@ -809,4 +809,9 @@ details.extras .extras-opties{padding:2px 18px 18px;margin-top:0}
 .kortevraag span{font:400 16px/1.4 var(--tekst);color:var(--tekstgrijs);margin-right:6px}
 .kv-knop{display:inline-block;font:500 14px/1 var(--tekst);color:var(--zwart);text-decoration:none;border:1px solid var(--zwart);border-radius:999px;padding:11px 20px 10px}
 .kv-knop:hover,.kv-knop:focus-visible{background:var(--zwart);color:var(--wit)}
+.kv-knop:has(.kv-ic){display:inline-flex;align-items:center;gap:8px;padding:9px 20px 9px 16px}
+.kv-ic{flex:none}
+.lp-vraag{margin-top:22px}
+.lp-vraag p{margin:0 0 12px}
+.lp-vraag-knoppen{display:flex;flex-wrap:wrap;gap:10px 12px}
 .aanvraag-kolommen{padding-top:clamp(36px,5vw,64px)}
