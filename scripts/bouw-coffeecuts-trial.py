@@ -35,7 +35,6 @@ def keuze(naam, legenda, opties, verplicht=True):
 
 form = f"""<form class="lp-form" method="post" action="/api/aanvraag" data-dank="Dank je. Ik ga ermee aan de slag en je hoort van me." data-fout="Versturen lukte niet. Mail naar maarten@hear.nl of bel +31 6 24560220.">
 <input type="hidden" name="bron" value="Landingspagina Coffee cuts trial"><input type="hidden" name="utm" value=""><input type="text" name="website" class="lp-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-{keuze("cc_soort", "Welke playlist wil je?", SOORTEN)}
 <label>Naam van je zaak<input name="organisatie" autocomplete="organization" required></label>
 <label>Soort zaak<select name="cc_zaak" required><option value="">Kies…</option>{"".join(f"<option>{e(z)}</option>" for z in ZAKEN)}</select></label>
 <label>Capaciteit van je zaak (aantal gasten)<input name="cc_capaciteit" type="number" min="1" inputmode="numeric" required></label>
@@ -52,8 +51,7 @@ main = f"""<main class="wrap lp cct"><section class="casehead"><a class="crumb" 
 <div class="lp-held"><div class="actie-beeld"><img src="img/diensten/coffee-cuts.jpg" alt="Coffee cuts: glas koffie op een vinylplaat in de zon"><span class="actie-label">Gratis proberen</span><a class="wa actie-knop" href="#contact"><span>Bestel je gratis playlist</span><i aria-hidden="true">→</i></a></div></div>
 <section class="lp-band"><div class="lp-twee"><p class="lp-lead">Of je nu een koffiebar, een cocktailbar of een winkel hebt: je wilt warme muziek die past bij de identiteit van je zaak.</p><div class="lp-tekst"><p>Geen generieke (AI-&#8288;)tracks. Met Coffee cuts en Cocktail cuts stellen we een playlist samen voor jouw zaak, uit onze eigen collectie van nieuwe releases en classics.</p><p>Heb je een zakelijke streamingdienst zoals Soundtrack (voorheen Tunify), dan kun je de playlist daarin laden.</p></div></div></section>
 <section class="lp-band"><h2 class="lp-strip">Hoe het werkt</h2><div class="lp-aanbod" style="--kol:1"><div class="lp-kaart"><ul class="lp-lijst"><li>Je vult het formulier in.</li><li>We stellen één playlist samen, afgestemd op je zaak.</li><li>Je ontvangt hem op Spotify of Tidal.</li></ul></div></div></section>
-<section class="lp-band lp-contact" id="contact"><div class="lp-twee"><div><h2>Bestel je gratis playlist</h2><p>Vertel iets over je zaak, dan stel ik een playlist voor je samen.</p>
-<div class="lp-wie"><img src="img/maarten-adviseur.jpg" alt="Maarten Versteeg" loading="lazy" style="object-position:50% 20%"><div><b>Maarten Versteeg</b><span>Oprichter HEAR</span></div></div></div>
+<section class="lp-band lp-contact" id="contact"><div class="lp-twee"><div><h2>Bestel je gratis playlist</h2></div>
 {form}</div></section></main>"""
 
 (site / "coffeecuts-trial.html").write_text(kop + main + staart, encoding="utf-8")
